@@ -3,30 +3,133 @@
 		{
             "name": "UCRT64",
             "includePath": [
-                "${default}"
+				"C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/**",
+				"C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include-fixed/**",
+				// "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/finclude/**",
+				"C:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32/**",
+				"C:/msys64/ucrt64/include/c++/13.2.0/**",
+				"C:/msys64/ucrt64/include/**",
+                "${workspaceFolder}/include/**"
             ],
             "browse": {
                 "databaseFilename": "${default}",
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "${default}"
+                    "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include",
+					"C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include-fixed",
+					"C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/finclude",
+					"C:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32",
+					"C:/msys64/ucrt64/include/c++/13.2.0",
+					"C:/msys64/ucrt64/include",
+					"${workspaceFolder}/include"
                 ]
             },
             "defines": [
-				"${default}"
+				"UNICODE",
+				"_UNICODE"
             ],
-            "cStandard": "${default}",
-            "cppStandard": "${default}",
-            "intelliSenseMode": "${default}",
-            "compilerPath": "${default}",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "windows-gcc-x64",
+            "compilerPath": "C:\\msys64\\ucrt64\\bin\\x86_64-w64-mingw32-gcc.exe",
             "compilerArgs": [
-				"${default}"
+				"-DUNICODE",
+				"-D_UNICODE",
+
+				"-IC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include",
+				"-IC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include-fixed",
+				// "-IC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/finclude",
+				"-IC:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32",
+				"-IC:/msys64/ucrt64/include/c++/13.2.0",
+				"-IC:/msys64/ucrt64/include",
+				"-I${workspaceFolder}/include",
+
+				"-LC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0",
+				"-LC:/msys64/ucrt64/lib/gcc",
+				"-LC:/msys64/ucrt64/x86_64-w64-mingw32/lib",
+				"-LC:/msys64/ucrt64/lib",
+				"-LC:/msys64/ucrt64/bin",
+
+				// "-nostdlib++",
+				// "-nodefaultlibs",
+
+				"-lmingw32",
+				"-lgcc_s",
+				"-lgcc",
+				"-lmoldname",
+				"-lmingwex",
+
+				"-lkernel32",
+				"-luser32",
+				"-lgdi32",
+				"-lwinspool",
+				"-lshell32",
+				"-lole32",
+				"-loleaut32",
+				"-luuid",
+				"-lcomdlg32",
+				"-ladvapi32",
+
+				"-municode"
             ],
             "mergeConfigurations": true,
-            "configurationProvider": "${default}",
-			"customConfigurationVariables": {
-				"${default}": "${default}"
-			}
+            "configurationProvider": "${default}"
+        },
+		{
+            "name": "CLANG64",
+            "includePath": [
+                "C:/msys64/clang64/include/c++/v1/**",
+				"C:/msys64/clang64/lib/clang/16/include/**",
+				"C:/msys64/clang64/include/**",
+				"${workspaceFolder}/include/**"
+            ],
+            "browse": {
+                "databaseFilename": "${default}",
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "C:/msys64/clang64/include/c++/v1",
+					"C:/msys64/clang64/lib/clang/16/include",
+					"C:/msys64/clang64/include",
+					"${workspaceFolder}/include"
+                ]
+            },
+            "defines": [
+				"-DUNICODE",
+				"-D_UNICODE"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-clang-x64",
+            "compilerPath": "C:\\msys64\\clang64\\bin\\x86_64-w64-mingw32-clang.exe",
+            "compilerArgs": [
+				"-DUNICODE",
+				"-D_UNICODE",
+
+				"-IC:/msys64/clang64/include/c++/v1",
+				"-IC:/msys64/clang64/lib/clang/16/include",
+				"-IC:/msys64/clang64/include",
+				"-I${workspaceFolder}/include",
+
+				"-LC:/msys64/clang64/x86_64-w64-mingw32/lib",
+				"-LC:/msys64/clang64/x86_64-w64-mingw32/mingw/lib",
+				"-LC:/msys64/clang64/lib",
+				"-LC:/msys64/clang64/lib/clang/16/lib/windows",
+
+				"-lc++",
+				"-lmingw32",
+				"-lunwind",
+				"-lmoldname",
+				"-lmingwex",
+				"-ladvapi32",
+				"-lshell32",
+				"-luser32",
+				"-lkernel32",
+
+				"-municode"
+
+            ],
+            "mergeConfigurations": true,
+            "configurationProvider": "${default}"
         }
     ],
     "version": 4
