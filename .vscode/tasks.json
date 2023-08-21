@@ -7,30 +7,22 @@
 			"args": [
 				"-DUNICODE",
 				"-D_UNICODE",
-
 				"-IC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include",
 				"-IC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include-fixed",
-				// "-IC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/finclude",
 				"-IC:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32",
 				"-IC:/msys64/ucrt64/include/c++/13.2.0",
 				"-IC:/msys64/ucrt64/include",
 				"-I${workspaceFolder}/include",
-
 				"-LC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0",
 				"-LC:/msys64/ucrt64/lib/gcc",
 				"-LC:/msys64/ucrt64/x86_64-w64-mingw32/lib",
 				"-LC:/msys64/ucrt64/lib",
 				"-LC:/msys64/ucrt64/bin",
-
-				// "-nostdlib++",
-				// "-nodefaultlibs",
-
 				"-lmingw32",
 				"-lgcc_s",
 				"-lgcc",
 				"-lmoldname",
 				"-lmingwex",
-
 				"-lkernel32",
 				"-luser32",
 				"-lgdi32",
@@ -41,14 +33,7 @@
 				"-luuid",
 				"-lcomdlg32",
 				"-ladvapi32",
-
 				"-municode",
-				// "-ptrhead",
-				// "-Wpedantic",
-				// "-Wextra",
-				// "-std=gnu17",
-				// "-stdlib=libstdc++",
-
 				"-pipe",
 				"-O2",
 				"-x", "none",
@@ -76,17 +61,14 @@
 			"args": [
 				"-DUNICODE",
 				"-D_UNICODE",
-
 				"-IC:/msys64/clang64/include/c++/v1",
 				"-IC:/msys64/clang64/lib/clang/16/include",
 				"-IC:/msys64/clang64/include",
 				"-I${workspaceFolder}/include",
-
 				"-LC:/msys64/clang64/x86_64-w64-mingw32/lib",
 				"-LC:/msys64/clang64/x86_64-w64-mingw32/mingw/lib",
 				"-LC:/msys64/clang64/lib",
 				"-LC:/msys64/clang64/lib/clang/16/lib/windows",
-
 				"-lc++",
 				"-lmingw32",
 				"-lunwind",
@@ -96,12 +78,7 @@
 				"-lshell32",
 				"-luser32",
 				"-lkernel32",
-
 				"-municode",
-
-				// "-std=gnu17",
-				// "-stdlib=libstdc++",
-
 				"-pipe",
 				"-O2",
 				"-x", "none",
