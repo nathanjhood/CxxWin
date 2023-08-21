@@ -1,0 +1,21 @@
+/.cache
+
+/.vscode
+/.vscode/browse
+/.vscode/c_cpp_properties.json
+/.vscode/cmake-kits.json
+/.vscode/cmake-kits.schema.json
+/.vscode/settings.json
+/.vscode/tasks.json
+
+/bin
+/lib
+/out
+/usr
+
+# !/share/CxxWin/img/ApplicationIcon.png
+# !/share/CxxWin/img/Logo.png
+# !/share/CxxWin/img/SmallLogo.png
+# !/share/CxxWin/img/SmallLogo44x44.png
+# !/share/CxxWin/img/SplashScreen.png
+# !/share/CxxWin/img/StoreLogo.png

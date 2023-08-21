@@ -1,0 +1,47 @@
+# EditorConfig configuration for pacman
+# http://EditorConfig.org
+
+# Top-most EditorConfig file
+root = true
+
+# Unix-style newlines without trailing whitespaces, but with a newline
+# ending every file, utf-8 charset, set indent to tabs
+[*]
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+charset = utf-8
+indent_style = tab
+indent_size = 4
+max_line_length = 80
+
+[*.py]
+indent_style = space
+
+[*.{yml,yaml}]
+indent_style = space
+indent_size = 2
+
+[{Makefile,*.mak}]
+indent_style = tab
+
+[*.{md}]
+indent_style = space
+
+[meson.build]
+indent_style = space
+indent_size = 2
+
+[*.{c,c++,cc,cpp,cppm,cxx,h,h++,hh,hpp,hxx,inl,ipp,ixx,tlh,tli}]
+indent_style = space
+indent_size = 4
+
+# Windows specific files should retain windows line-endings
+[*.{sln,[sS][lL][nN]}]
+end_of_line = crlf
+[*.{cmd,[cC][mM][dD]}]
+end_of_line = crlf
+[*.{bat,[bB][aA][tT]}]
+end_of_line = crlf
+[*.{ps1,psm1}]
+end_of_line = crlf
