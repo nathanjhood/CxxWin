@@ -1,0 +1,33 @@
+{
+	"configurations": [
+		{
+            "name": "UCRT64",
+            "includePath": [
+                "${default}"
+            ],
+            "browse": {
+                "databaseFilename": "${default}",
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "${default}"
+                ]
+            },
+            "defines": [
+				"${default}"
+            ],
+            "cStandard": "${default}",
+            "cppStandard": "${default}",
+            "intelliSenseMode": "${default}",
+            "compilerPath": "${default}",
+            "compilerArgs": [
+				"${default}"
+            ],
+            "mergeConfigurations": true,
+            "configurationProvider": "${default}",
+			"customConfigurationVariables": {
+				"${default}": "${default}"
+			}
+        }
+    ],
+    "version": 4
+}

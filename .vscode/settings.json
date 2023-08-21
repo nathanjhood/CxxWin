@@ -1,0 +1,197 @@
+{
+	"cmake.configureOnEdit": false,
+	"cmake.configureOnOpen": false,
+	"cmake.automaticReconfigure": false,
+	"cmake.sourceDirectory": "${workspaceFolder}",
+	"cmake.buildDirectory": "${workspaceFolder}/usr",
+	"cmake.installPrefix": "${workspaceFolder}/usr/local",
+	"cmake.cmakePath": "C:/msys64/ucrt64/bin/cmake.exe",
+	"cmake.generator": "Unix Makefiles",
+
+	"C_Cpp.autoAddFileAssociations": true,
+
+	"C_Cpp.default.compilerPath": "C:\\msys64\\ucrt64\\bin\\x86_64-w64-mingw32-gcc.exe",
+	"C_Cpp.default.systemIncludePath": [
+		"C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include",
+		"C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include-fixed",
+		"C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/finclude",
+		"C:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32",
+		"C:/msys64/ucrt64/include/c++/13.2.0",
+		"C:/msys64/ucrt64/include",
+	],
+
+	"C_Cpp.default.cStandard": "gnu17",
+	"C_Cpp.default.cppStandard": "gnu++17",
+
+	"C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+
+	// "C_Cpp.clang_format_path": "C:/msys64/usr/bin/clang-format.exe",
+	"C_Cpp.formatting": "clangFormat",
+	"C_Cpp.clang_format_style": "file",
+	"C_Cpp.clang_format_fallbackStyle": "Microsoft",
+	"C_Cpp.clang_format_sortIncludes": true,
+
+	"C_Cpp.codeAnalysis.clangTidy.enabled": true,
+	"C_Cpp.codeAnalysis.clangTidy.checks.enabled": [
+		"bugprone-*",
+		"clang-analyzer-*",
+		"concurrency-*",
+		"cppcoreguidelines-*",
+		"readability-*"
+	],
+	"C_Cpp.codeAnalysis.clangTidy.checks.disabled": [
+		"abseil-*",
+		"altera-*",
+		"android-*",
+		"clang-analyzer-optin.osx.*",
+		"clang-analyzer-osx.*",
+		"darwin-*",
+		"fuchsia-*",
+		"google-*",
+		"hicpp-*",
+		"linuxkernel-must-use-errs",
+		"llvm-*",
+		"llvmlibc-*",
+		"misc-*",
+		"mpi-*",
+		"objc-*",
+		"openmp-*",
+
+		"bugprone-easily-swappable-parameters",
+		"modernize-use-nullptr",
+		"modernize-use-trailing-return-type",
+		"readability-convert-member-functions-to-static"
+	],
+
+	"C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
+	"C_Cpp.intelliSenseEngine": "default",
+	"C_Cpp.intelliSenseEngineFallback": "disabled",
+	"C_Cpp.intelliSenseCacheSize": 5120,
+	"C_Cpp.intelliSenseMemoryLimit": 4096,
+	"C_Cpp.intelliSenseCachePath": "${workspaceFolder}/.cache/vscode-cpptools/",
+
+	"C_Cpp.default.browse.databaseFilename": "${workspaceFolder}/.vscode/browse/.browse.vc.db",
+	"C_Cpp.default.browse.limitSymbolsToIncludedHeaders": true,
+	"C_Cpp.default.browse.path": [
+		"C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include",
+		"C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include-fixed",
+		"C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/finclude",
+		"C:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32",
+		"C:/msys64/ucrt64/include/c++/13.2.0",
+		"C:/msys64/ucrt64/include",
+		"${workspaceFolder}/include"
+	],
+
+	"C_Cpp.default.includePath": [
+		"${workspaceFolder}/include/**"
+	],
+
+	"C_Cpp.default.compilerArgs": [
+		// "--sysroot", "C:/msys64",
+		"-DUNICODE",
+		"-D_UNICODE",
+		// "-D_FILE_OFFSET_BITS=64",
+		// "-D_GNU_SOURCE=1",
+		// "-D_DEFAULT_SOURCE=1",
+		// "-D_XOPEN_SOURCE=700",
+		// "-D_XOPEN_SOURCE_EXTENDED",
+		// "-D__USE_MINGW_ANSI_STDIO",
+
+		"-IC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include",
+		"-IC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include-fixed",
+		"-IC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/finclude",
+		"-IC:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32",
+		"-IC:/msys64/ucrt64/include/c++/13.2.0",
+		"-IC:/msys64/ucrt64/include",
+		"-I${workspaceFolder}/include",
+
+		"-LC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0",
+		"-LC:/msys64/ucrt64/lib/gcc",
+		"-LC:/msys64/ucrt64/x86_64-w64-mingw32/lib",
+		"-LC:/msys64/ucrt64/lib",
+		"-LC:/msys64/ucrt64/bin",
+
+		// "-nostdlib++",
+		// "-nodefaultlibs",
+
+		"-lmingw32",
+		"-lgcc_s",
+		"-lgcc",
+		"-lmoldname",
+		"-lmingwex",
+
+		"-lkernel32",
+		"-luser32",
+		"-lgdi32",
+		"-lwinspool",
+		"-lshell32",
+		"-lole32",
+		"-loleaut32",
+		"-luuid",
+		"-lcomdlg32",
+		"-ladvapi32",
+
+		// "-lucrt",
+		// "-lc",
+		// "-lintl",
+		// "-larchive",
+		// "-lcurl",
+		// "-lgpgme",
+
+		// "-ftabstop=2",
+		// "-finput-charset=utf-8",
+		"-municode",
+		// "-ptrhead",
+		// "-Wpedantic",
+		// "-Wextra",
+		// "-std=gnu17",
+		// "-stdlib=libstdc++",
+		// "-pipe",
+		//"-x", "c"
+	],
+
+	"C_Cpp.default.defines": [
+		// "_DEBUG",
+		"UNICODE",
+		"_UNICODE",
+		// "_FILE_OFFSET_BITS=64",
+		// "_GNU_SOURCE=1",
+		// "_POSIX_SOURCE=199309L",
+		// "_DEFAULT_SOURCE=1",
+		// "_XOPEN_SOURCE=500",
+		// "_XOPEN_SOURCE_EXTENDED",
+		// "_ISOC99_SOURCE"
+		// "__USE_MINGW_ANSI_STDIO"
+		// "UCRT64_NEED_PLATFORM_H",
+		// "UCRT64_NEED_CSTANDARDS_H"
+	],
+
+	"C_Cpp.files.exclude": {
+		"**/.vscode": true,
+		"**/.vs": true
+	},
+
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/Thumbs.db": true
+	},
+
+	"files.associations": {
+		"*.clang-format": "yaml",
+		"*.clang-tidy": "yaml"
+	},
+
+	"terminal.integrated.profiles.windows": {
+		"MSYS2 UCRT64": {
+			"path": "cmd.exe",
+			"args": [
+				"/c",
+				"C:\\msys64\\msys2_shell.cmd -defterm -here -no-start -ucrt64"
+			]
+		}
+	}
+}
