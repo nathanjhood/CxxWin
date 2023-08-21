@@ -1,38 +1,38 @@
 {
 	"configurations": [
 		{
-            "name": "UCRT64",
-            "includePath": [
+      "name": "UCRT64",
+      "includePath": [
 				"C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/**",
 				"C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include-fixed/**",
 				// "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/finclude/**",
 				"C:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32/**",
 				"C:/msys64/ucrt64/include/c++/13.2.0/**",
 				"C:/msys64/ucrt64/include/**",
-                "${workspaceFolder}/include/**"
-            ],
-            "browse": {
-                "databaseFilename": "${default}",
-                "limitSymbolsToIncludedHeaders": true,
-                "path": [
-                    "C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include",
-					"C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include-fixed",
-					"C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/finclude",
-					"C:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32",
-					"C:/msys64/ucrt64/include/c++/13.2.0",
-					"C:/msys64/ucrt64/include",
-					"${workspaceFolder}/include"
-                ]
-            },
-            "defines": [
+        "${workspaceFolder}/include/**"
+      ],
+      "browse": {
+        "databaseFilename": "${default}",
+				"limitSymbolsToIncludedHeaders": true,
+				"path": [
+							"C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include",
+						"C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include-fixed",
+						"C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/finclude",
+						"C:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32",
+						"C:/msys64/ucrt64/include/c++/13.2.0",
+						"C:/msys64/ucrt64/include",
+						"${workspaceFolder}/include"
+        ]
+      },
+      "defines": [
 				"UNICODE",
 				"_UNICODE"
-            ],
-            "cStandard": "gnu17",
-            "cppStandard": "gnu++17",
-            "intelliSenseMode": "windows-gcc-x64",
-            "compilerPath": "C:\\msys64\\ucrt64\\bin\\x86_64-w64-mingw32-gcc.exe",
-            "compilerArgs": [
+      ],
+			"cStandard": "gnu17",
+			"cppStandard": "gnu++17",
+			"intelliSenseMode": "windows-gcc-x64",
+			"compilerPath": "C:\\msys64\\ucrt64\\bin\\x86_64-w64-mingw32-gcc.exe",
+			"compilerArgs": [
 				"-DUNICODE",
 				"-D_UNICODE",
 
@@ -71,37 +71,37 @@
 				"-ladvapi32",
 
 				"-municode"
-            ],
-            "mergeConfigurations": true,
-            "configurationProvider": "${default}"
-        },
+      ],
+      "mergeConfigurations": true,
+			"configurationProvider": "${default}"
+    },
 		{
-            "name": "CLANG64",
-            "includePath": [
-                "C:/msys64/clang64/include/c++/v1/**",
-				"C:/msys64/clang64/lib/clang/16/include/**",
-				"C:/msys64/clang64/include/**",
-				"${workspaceFolder}/include/**"
-            ],
-            "browse": {
-                "databaseFilename": "${default}",
-                "limitSymbolsToIncludedHeaders": true,
-                "path": [
-                    "C:/msys64/clang64/include/c++/v1",
+			"name": "CLANG64",
+			"includePath": [
+					"C:/msys64/clang64/include/c++/v1/**",
+					"C:/msys64/clang64/lib/clang/16/include/**",
+					"C:/msys64/clang64/include/**",
+					"${workspaceFolder}/include/**"
+			],
+			"browse": {
+				"databaseFilename": "${default}",
+				"limitSymbolsToIncludedHeaders": true,
+				"path": [
+          "C:/msys64/clang64/include/c++/v1",
 					"C:/msys64/clang64/lib/clang/16/include",
 					"C:/msys64/clang64/include",
 					"${workspaceFolder}/include"
-                ]
-            },
-            "defines": [
+        ]
+      },
+      "defines": [
 				"-DUNICODE",
 				"-D_UNICODE"
-            ],
-            "cStandard": "c17",
-            "cppStandard": "c++17",
-            "intelliSenseMode": "windows-clang-x64",
-            "compilerPath": "C:\\msys64\\clang64\\bin\\x86_64-w64-mingw32-clang.exe",
-            "compilerArgs": [
+      ],
+			"cStandard": "c17",
+			"cppStandard": "c++17",
+			"intelliSenseMode": "windows-clang-x64",
+			"compilerPath": "C:\\msys64\\clang64\\bin\\x86_64-w64-mingw32-clang.exe",
+			"compilerArgs": [
 				"-DUNICODE",
 				"-D_UNICODE",
 
@@ -127,10 +127,10 @@
 
 				"-municode"
 
-            ],
-            "mergeConfigurations": true,
-            "configurationProvider": "${default}"
-        }
-    ],
-    "version": 4
+      ],
+			"mergeConfigurations": true,
+			"configurationProvider": "${default}"
+    }
+  ],
+  "version": 4
 }

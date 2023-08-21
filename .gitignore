@@ -12,6 +12,13 @@
 /lib
 /out
 /usr
+/clang64
+/clang32
+/clangarm64
+/mingw64
+/mingw32
+/ucrt64
+
 
 # !/share/CxxWin/img/ApplicationIcon.png
 # !/share/CxxWin/img/Logo.png
