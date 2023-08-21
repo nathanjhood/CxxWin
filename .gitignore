@@ -1,12 +1,12 @@
 /.cache
 
-/.vscode
+# /.vscode
 /.vscode/browse
-/.vscode/c_cpp_properties.json
+!/.vscode/c_cpp_properties.json
 /.vscode/cmake-kits.json
 /.vscode/cmake-kits.schema.json
-/.vscode/settings.json
-/.vscode/tasks.json
+!/.vscode/settings.json
+!/.vscode/tasks.json
 
 /bin
 /lib
