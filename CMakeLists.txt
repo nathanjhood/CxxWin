@@ -7,6 +7,8 @@ list (APPEND CMAKE_MODULE_PATH
 project (CxxWin)
 enable_language (CXX)
 
+include(GNUInstallDirs)
+
 set (PROJECT_VERSION_MAJOR 1)
 set (PROJECT_VERSION_MINOR 0)
 set (PROJECT_VERSION_PATCH 0)
@@ -179,4 +181,44 @@ target_link_options (executable
 target_link_libraries (executable
 
     ${PROJECT_NAME}::window
+)
+
+
+
+install(
+	TARGETS window executable
+	EXPORT CxxWinTargets
+	LIBRARY DESTINATION "${CMAKE_INSTALL_LIBDIR}"
+	ARCHIVE DESTINATION "${CMAKE_INSTALL_LIBDIR}"
+	RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}"
+	INCLUDES DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}"
+)
+
+install (
+	EXPORT CxxWinTargets
+	FILE CxxWinTargets.cmake
+	NAMESPACE ${PROJECT_NAME}::
+	DESTINATION "${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}"
+)
+
+# ##-- Create package config
+include (CMakePackageConfigHelpers)
+
+configure_package_config_file (
+	"${CMAKE_CURRENT_SOURCE_DIR}/share/CxxWinConfig.cmake.in"
+	"${CMAKE_CURRENT_BINARY_DIR}/CxxWinConfig.cmake"
+	INSTALL_DESTINATION "${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}"
+)
+
+install (
+	FILES
+	"${CMAKE_CURRENT_BINARY_DIR}/CxxWinConfig.cmake"
+	DESTINATION
+	"${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}"
+)
+
+export(
+	EXPORT CxxWinTargets
+	FILE "${CMAKE_CURRENT_BINARY_DIR}/CxxWinTargets.cmake"
+	NAMESPACE ${PROJECT_NAME}::
 )
