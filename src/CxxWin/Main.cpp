@@ -14,7 +14,7 @@
 #ifdef __CYGWIN__
 int WINAPI WinMain  (HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR  pCmdLine, int nCmdShow)
 #else
-int WINAPI wWinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR pCmdLine, int nCmdShow)
+int WINAPI wWinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine, int nCmdShow)
 #endif
 {
 
