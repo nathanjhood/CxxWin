@@ -19,10 +19,11 @@
 /mingw32
 /ucrt64
 
+!/doc/CxxWin/Screenshot.png
 
-# !/share/CxxWin/img/ApplicationIcon.png
-# !/share/CxxWin/img/Logo.png
-# !/share/CxxWin/img/SmallLogo.png
-# !/share/CxxWin/img/SmallLogo44x44.png
-# !/share/CxxWin/img/SplashScreen.png
-# !/share/CxxWin/img/StoreLogo.png
+!/share/CxxWin/img/ApplicationIcon.png
+!/share/CxxWin/img/Logo.png
+!/share/CxxWin/img/SmallLogo.png
+!/share/CxxWin/img/SmallLogo44x44.png
+!/share/CxxWin/img/SplashScreen.png
+!/share/CxxWin/img/StoreLogo.png
