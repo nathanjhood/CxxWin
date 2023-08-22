@@ -56,7 +56,10 @@
 				"-lshell32",
 				"-luser32",
 				"-lkernel32",
-				"-mwindows"
+				"-mwin32",
+				"-mwindows",
+				"-mthreads",
+				"-m64"
 			],
 			"mergeConfigurations": true,
 			"configurationProvider": "${default}"
@@ -121,7 +124,11 @@
 				"-luuid",
 				"-lcomdlg32",
 				"-ladvapi32",
-				"-municode"
+				"-municode",
+				"-mwin32",
+				"-mwindows",
+				"-mthreads",
+				"-m64"
 			],
 			"mergeConfigurations": true,
 			"configurationProvider": "${default}"
@@ -172,7 +179,11 @@
 				"-lshell32",
 				"-luser32",
 				"-lkernel32",
-				"-municode"
+				"-municode",
+				"-mwin32",
+				"-mwindows",
+				"-mthreads",
+				"-m64"
 			],
 			"mergeConfigurations": true,
 			"configurationProvider": "${default}"
