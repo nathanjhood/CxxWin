@@ -26,14 +26,17 @@
 				"-lshell32",
 				"-luser32",
 				"-lkernel32",
+				"-mwin32",
 				"-mwindows",
+				"-mthreads",
+				"-m64",
 				"-pipe",
 				"-O2",
 				"-x", "none",
 				"${workspaceFolder}/src/CxxWin/MainWindow.cpp",
 				"${workspaceFolder}/src/CxxWin/Main.cpp",
 				"-o",
-				"${workspaceFolder}/out/usr/bin/CxxWin.exe"
+				"${workspaceFolder}/bin/msys2/CxxWin.exe"
 			],
 			"options": {
 				"cwd": "${workspaceFolder}"
@@ -81,13 +84,17 @@
 				"-lcomdlg32",
 				"-ladvapi32",
 				"-municode",
+				"-mwin32",
+				"-mwindows",
+				"-mthreads",
+				"-m64",
 				"-pipe",
 				"-O2",
 				"-x", "none",
 				"${workspaceFolder}/src/CxxWin/MainWindow.cpp",
 				"${workspaceFolder}/src/CxxWin/Main.cpp",
 				"-o",
-				"${workspaceFolder}/out/ucrt64/bin/CxxWin.exe"
+				"${workspaceFolder}/bin/ucrt64/CxxWin.exe"
 			],
 			"options": {
 				"cwd": "${workspaceFolder}"
