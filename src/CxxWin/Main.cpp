@@ -12,9 +12,9 @@
 #include "CxxWin/Main.h"
 
 #ifdef __CYGWIN__
-int WINAPI WinMain  (HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR  pCmdLine, int nCmdShow)
+int WINAPI WinMain  (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR  pCmdLine, int nCmdShow)
 #else
-int WINAPI wWinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine, int nCmdShow)
+int WINAPI wWinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR pCmdLine, int nCmdShow)
 #endif
 {
 

@@ -25,9 +25,14 @@
 #include "CxxWin/MainWindow.h"
 
 #ifdef __CYGWIN__
-int WINAPI WinMain  (HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR  pCmdLine, int nCmdShow);
+int WINAPI WinMain  (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR  pCmdLine, int nCmdShow);
 #else
-int WINAPI wWinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine, int nCmdShow);
+int WINAPI wWinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR pCmdLine, int nCmdShow);
 #endif
+
+/**
+int WINAPI WinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR lpCmdLine, int nShowCmd);
+int WINAPI wWinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR lpCmdLine, int nShowCmd);
+*/
 
 #endif /* _CXX_WIN_ENTRY_H_ */
