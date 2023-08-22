@@ -1,6 +1,67 @@
 {
 	"configurations": [
 		{
+			"name": "MSYS2",
+			"includePath": [
+				"C:/msys64/usr/lib/gcc/x86_64-pc-msys/11.3.0/include/c++/**",
+				"C:/msys64/usr/lib/gcc/x86_64-pc-msys/11.3.0/include/c++/x86_64-pc-msys/**",
+				"C:/msys64/usr/lib/gcc/x86_64-pc-msys/11.3.0/include/c++/backward/**",
+				"C:/msys64/usr/lib/gcc/x86_64-pc-msys/11.3.0/include/**",
+				"C:/msys64/usr/lib/gcc/x86_64-pc-msys/11.3.0/include-fixed/**",
+				"C:/msys64/usr/x86_64-pc-msys/include/**",
+				"C:/msys64/usr/x86_64-pc-msys/include/w32api/**",
+				"${workspaceFolder}/include/**"
+			],
+			"browse": {
+				"databaseFilename": "${default}",
+				"limitSymbolsToIncludedHeaders": true,
+				"path": [
+					"C:/msys64/usr/lib/gcc/x86_64-pc-msys/11.3.0/include/c++",
+					"C:/msys64/usr/lib/gcc/x86_64-pc-msys/11.3.0/include/c++/x86_64-pc-msys",
+					"C:/msys64/usr/lib/gcc/x86_64-pc-msys/11.3.0/include/c++/backward",
+					"C:/msys64/usr/lib/gcc/x86_64-pc-msys/11.3.0/include",
+					"C:/msys64/usr/lib/gcc/x86_64-pc-msys/11.3.0/include-fixed",
+					"C:/msys64/usr/x86_64-pc-msys/include",
+					"C:/msys64/usr/x86_64-pc-msys/include/w32api",
+					"${workspaceFolder}/include"
+				]
+			},
+			"defines": [
+				"UNICODE",
+				"_UNICODE"
+			],
+			"cStandard": "gnu17",
+			"cppStandard": "gnu++17",
+			"intelliSenseMode": "linux-gcc-x64",
+			"compilerPath": "C:/msys64/usr/bin/x86_64-pc-msys-gcc.exe",
+			"compilerArgs": [
+				"-DUNICODE",
+				"-D_UNICODE",
+				"-I/usr/lib/gcc/x86_64-pc-msys/11.3.0/include/c++",
+				"-I/usr/lib/gcc/x86_64-pc-msys/11.3.0/include/c++/x86_64-pc-msys",
+				"-I/usr/lib/gcc/x86_64-pc-msys/11.3.0/include/c++/backward",
+				"-I/usr/lib/gcc/x86_64-pc-msys/11.3.0/include",
+				"-I/usr/lib/gcc/x86_64-pc-msys/11.3.0/include-fixed",
+				"-I/usr/x86_64-pc-msys/include",
+				"-I/usr/x86_64-pc-msys/include/w32api",
+				"-I${workspaceFolder}/include",
+				"-L/usr/lib/gcc/x86_64-pc-msys/11.3.0",
+				"-L/usr/x86_64-pc-msys/lib",
+				"-L/usr/lib",
+				"-lstdc++",
+				"-lgcc_s",
+				"-lgcc",
+				"-lmsys-2.0",
+				"-ladvapi32",
+				"-lshell32",
+				"-luser32",
+				"-lkernel32",
+				"-mwindows"
+			],
+			"mergeConfigurations": true,
+			"configurationProvider": "${default}"
+		},
+		{
 			"name": "UCRT64",
 			"includePath": [
 				"C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/**",
@@ -169,8 +230,10 @@
 				"-ladvapi32",
 				"-lshell32",
 				"-luser32",
-				"-mwindows"
-			]
+				"-municode"
+			],
+			"mergeConfigurations": true,
+			"configurationProvider": "${default}"
 		}
 	],
 	"version": 4
