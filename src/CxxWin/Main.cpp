@@ -11,7 +11,11 @@
 
 #include "CxxWin/Main.h"
 
-int WINAPI wWinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine, int nCmdShow)
+#ifdef __CYGWIN__
+int WINAPI WinMain  (HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR  pCmdLine, int nCmdShow)
+#else
+int WINAPI wWinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR pCmdLine, int nCmdShow)
+#endif
 {
 
     MainWindow win;
