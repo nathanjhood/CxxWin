@@ -115,6 +115,62 @@
 			],
 			"mergeConfigurations": true,
 			"configurationProvider": "${default}"
+		},
+		{
+			"name": "MINGW64",
+			"includePath": [
+				"C:/msys64/mingw64/include/c++/13.2.0/**",
+				"C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/**",
+				"C:/msys64/mingw64/include/c++/13.2.0/backward/**",
+				"C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/**",
+				"C:/msys64/mingw64/include/**",
+				"C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include-fixed/**",
+				"${workspaceFolder}/include/**"
+			],
+			"browse": {
+				"databaseFilename": "${default}",
+				"limitSymbolsToIncludedHeaders": true,
+				"path": [
+					"C:/msys64/mingw64/include/c++/13.2.0",
+					"C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32",
+					"C:/msys64/mingw64/include/c++/13.2.0/backward",
+					"C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include",
+					"C:/msys64/mingw64/include",
+					"C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include-fixed",
+					"${workspaceFolder}/include"
+				]
+			},
+			"defines": [
+				"-DUNICODE",
+				"-D_UNICODE"
+			],
+			"cStandard": "gnu17",
+			"cppStandard": "gnu++17",
+			"intelliSenseMode": "windows-gcc-x64",
+			"compilerPath": "C:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe",
+			"compilerArgs": [
+				"-DUNICODE",
+				"-D_UNICODE",
+				"-IC:/msys64/mingw64/include/c++/13.2.0",
+				"-IC:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32",
+				"-IC:/msys64/mingw64/include/c++/13.2.0/backward",
+				"-IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include",
+				"-IC:/msys64/mingw64/include",
+				"-IC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include-fixed",
+				"-I${workspaceFolder}/include",
+				"-lstdc++",
+				"-lmingw32",
+				"-lgcc_s",
+				"-lgcc",
+				"-lmoldname",
+				"-lmingwex",
+				"-lkernel32",
+				"-lpthread",
+				"-ladvapi32",
+				"-lshell32",
+				"-luser32",
+				"-mwindows"
+			]
 		}
 	],
 	"version": 4
