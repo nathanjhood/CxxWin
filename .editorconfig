@@ -35,8 +35,34 @@ indent_style = space
 indent_style = space
 indent_size = 2
 
-[*.{c,c++,cc,cpp,cppm,cxx,h,h++,hh,hpp,hxx,inl,ipp,ixx,tlh,tli}]
+# All <CPP> extensions
+[*.{h,hh,hpp,hxx,h++,inl,ipp,ixx,tlh,tli}]
 indent_style = space
+indent_size = 4
+
+# All <C> extensions
+[*.{c,m}]
+indent_style = space
+indent_size = 4
+
+# All <CXX> extensions
+[*.{C,M,c++,cc,cpp,cxx,mm,mpp,CPP,ixx,cppm,ccm,cxxm,c++m}]
+indent_style = space
+indent_size = 4
+
+# All <Fortran> extensions
+[*.{f,F,fpp,FPP,f77,F77,f90,F90,for,For,FOR,f95,F95,f03,F03,f08,F08}]
+indent_style = space
+indent_size = 4
+
+# All <ASM> extensions
+[*.{s,S,asm}]
+indent_style = space
+indent_size = 4
+
+# All <RC> extensions
+[*.rc]
+charset = utf-16le
 indent_size = 4
 
 # Windows specific files should retain windows line-endings
