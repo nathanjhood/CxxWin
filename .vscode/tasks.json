@@ -33,8 +33,8 @@
 				"-pipe",
 				"-O2",
 				"-x", "none",
-				"${workspaceFolder}/src/CxxWin/MainWindow.cpp",
-				"${workspaceFolder}/src/CxxWin/Main.cpp",
+				"${workspaceFolder}/include/CxxWin/MainWindow.cpp",
+				"${workspaceFolder}/include/CxxWin/Main.cpp",
 				"-o",
 				"${workspaceFolder}/bin/msys2/CxxWin.exe"
 			],
@@ -91,8 +91,8 @@
 				"-pipe",
 				"-O2",
 				"-x", "none",
-				"${workspaceFolder}/src/CxxWin/MainWindow.cpp",
-				"${workspaceFolder}/src/CxxWin/Main.cpp",
+				"${workspaceFolder}/include/CxxWin/MainWindow.cpp",
+				"${workspaceFolder}/include/CxxWin/Main.cpp",
 				"-o",
 				"${workspaceFolder}/bin/ucrt64/CxxWin.exe"
 			],
@@ -136,8 +136,8 @@
 				"-pipe",
 				"-O2",
 				"-x", "none",
-				"${workspaceFolder}/src/CxxWin/MainWindow.cpp",
-				"${workspaceFolder}/src/CxxWin/Main.cpp",
+				"${workspaceFolder}/include/CxxWin/MainWindow.cpp",
+				"${workspaceFolder}/include/CxxWin/Main.cpp",
 				"-o",
 				"${workspaceFolder}/out/clang64/bin/CxxWin.exe"
 			],
@@ -182,8 +182,8 @@
 				"-pipe",
 				"-O2",
 				"-x", "none",
-				"${workspaceFolder}/src/CxxWin/MainWindow.cpp",
-				"${workspaceFolder}/src/CxxWin/Main.cpp",
+				"${workspaceFolder}/include/CxxWin/MainWindow.cpp",
+				"${workspaceFolder}/include/CxxWin/Main.cpp",
 				"-o",
 				"${workspaceFolder}/out/mingw64/bin/CxxWin.exe"
 			],
