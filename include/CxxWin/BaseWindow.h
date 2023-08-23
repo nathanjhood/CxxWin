@@ -1,9 +1,9 @@
 /**
  * @file CxxWin/BaseWindow.h
- * @author your name (you@domain.com)
+ * @author StoneyDSP (nathanjhood@googlemail.com)
  * @brief
- * @version 0.1
- * @date 2023-08-20
+ * @version 1.0.0-init
+ * @date 2023-08-23
  *
  * @copyright Copyright (c) 2023
  *
