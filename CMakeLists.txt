@@ -22,7 +22,7 @@ set (${PROJECT_NAME}_VERSION "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.
 set (${PROJECT_NAME}_DESCRIPTION "A quick one-and-done Win32 API project implementing a COM blank application window for Windows platforms in C++." CACHE STRING "Short project description given to the project command." FORCE)
 set (${PROJECT_NAME}_HOMEPAGE_URL "https://github.com/StoneyDSP/CxxWin.git" CACHE STRING "The homepage URL of the project." FORCE)
 
-option (OPTION_SHARED_LIBS "Global flag to cause ``add_library()`` to create shared libraries if on." OFF)
+option (OPTION_SHARED_LIBS "Global flag to cause ``add_library()`` to create shared libraries if on." ON)
 
 if (OPTION_SHARED_LIBS)
 	set (BUILD_SHARED_LIBS ON CACHE BOOL "Global flag to cause ``add_library()`` to create shared libraries if on." FORCE)
@@ -30,12 +30,18 @@ else ()
 	set (BUILD_SHARED_LIBS OFF CACHE BOOL "Global flag to cause ``add_library()`` to create shared libraries if on." FORCE)
 endif ()
 
+set(${PROJECT_NAME}_REQUIRED_DEFS)
+list(APPEND ${PROJECT_NAME}_REQUIRED_DEFS
+	UNICODE
+	_UNICODE
+)
+
 set(${PROJECT_NAME}_REQUIRED_FLAGS)
-if(CYGWIN OR MSYS)
-	list(APPEND ${PROJECT_NAME}_REQUIRED_FLAGS -mwindows)
-else()
-	list(APPEND ${PROJECT_NAME}_REQUIRED_FLAGS -mwindows -municode)
+if(NOT (CYGWIN OR MSYS))
+	list(APPEND ${PROJECT_NAME}_REQUIRED_FLAGS -municode)
 endif()
+
+list(APPEND ${PROJECT_NAME}_REQUIRED_FLAGS -mwindows)
 
 file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/Main.h" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}")
 file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/BaseWindow.h" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}")
@@ -91,8 +97,7 @@ set_target_properties (window
 target_compile_definitions (window
 
 	PUBLIC
-		UNICODE
-		_UNICODE
+		${${PROJECT_NAME}_REQUIRED_DEFS}
 )
 
 target_compile_options (window
@@ -145,7 +150,6 @@ target_sources (executable
 target_sources (executable
 
     PRIVATE
-
         # src/runtime/main.cpp
         "${CMAKE_CURRENT_SOURCE_DIR}/src/${PROJECT_NAME}/Main.cpp"
 )
@@ -162,8 +166,7 @@ set_target_properties (executable
 target_compile_definitions(executable
 
 	PUBLIC
-		UNICODE
-		_UNICODE
+		${${PROJECT_NAME}_REQUIRED_DEFS}
 )
 
 target_compile_options(executable
