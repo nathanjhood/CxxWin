@@ -1,30 +1,20 @@
 /**
- * @file CxxWin/entry.h
- * @author your name (you@domain.com)
+ * @file Main.h
+ * @author StoneyDSP (nathanjhood@googlemail.com)
  * @brief
- * @version 0.1
- * @date 2023-08-20
+ * @version 1.0.0-init
+ * @date 2023-08-23
  *
  * @copyright Copyright (c) 2023
  *
  */
 
-#ifndef _CXX_WIN_ENTRY_H_
-#define _CXX_WIN_ENTRY_H_
+#ifndef _CXX_WIN_MAIN_H_
+#define _CXX_WIN_MAIN_H_
 
-/* 'UNICODE' for 16-bit chars instead of ANSI-style 8-bit ('double-wide') */
-#ifndef   UNICODE
-#  define UNICODE
-#endif
-#ifndef   _UNICODE
-#  define _UNICODE
-#endif
+#include "MainWindow.h"
 
-#include <windows.h>
-
-#include "CxxWin/MainWindow.h"
-
-#ifdef __CYGWIN__
+#if !defined(UNICODE) || !defined(_UNICODE)
 int WINAPI WinMain  (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR  pCmdLine, int nCmdShow);
 #else
 int WINAPI wWinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR pCmdLine, int nCmdShow);
@@ -35,4 +25,4 @@ int WINAPI WinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR lpCmdLine
 int WINAPI wWinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR lpCmdLine, int nShowCmd);
 */
 
-#endif /* _CXX_WIN_ENTRY_H_ */
+#endif /* _CXX_WIN_MAIN_H_ */
