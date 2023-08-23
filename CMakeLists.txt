@@ -80,9 +80,8 @@ target_sources (window
 target_sources (window
 
     PRIVATE
-
         # src/runtime/main.cpp
-        "${CMAKE_CURRENT_SOURCE_DIR}/src/${PROJECT_NAME}/MainWindow.cpp"
+        "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/MainWindow.cpp"
 )
 
 set_target_properties (window
@@ -151,7 +150,7 @@ target_sources (executable
 
     PRIVATE
         # src/runtime/main.cpp
-        "${CMAKE_CURRENT_SOURCE_DIR}/src/${PROJECT_NAME}/Main.cpp"
+        "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/Main.cpp"
 )
 
 set_target_properties (executable
