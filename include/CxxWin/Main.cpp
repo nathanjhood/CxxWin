@@ -11,6 +11,8 @@
 
 #include "Main.h"
 
+#include "MainWindow.h"
+
 #if !defined(UNICODE) || !defined(_UNICODE)
 int WINAPI WinMain  (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR  pCmdLine, int nCmdShow)
 #else
@@ -35,4 +37,4 @@ int WINAPI wWinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR pCmdLi
     }
 
     return 0;
-};
+}
