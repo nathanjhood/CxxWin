@@ -12,15 +12,23 @@
 #ifndef _CXX_WIN_BASE_WINDOW_H_
 #define _CXX_WIN_BASE_WINDOW_H_
 
-/** 'UNICODE' for 16-bit chars instead of ANSI-style 8-bit ('double-wide') */
-#ifndef   UNICODE
-#  define UNICODE
+#ifndef UNICODE
+#define UNICODE
 #endif
-#ifndef   _UNICODE
-#  define _UNICODE
+#ifndef _UNICODE
+#define _UNICODE
+#endif
+
+#ifndef WINVER
+#  define WINVER 0x0A00
+#endif
+
+#ifndef _WIN32_WINNT
+#  define _WIN32_WINNT 0x0A00
 #endif
 
 #include <windows.h>
+/** WIN32_LEAN_AND_MEAN */
 
 struct StateInfo
 {
@@ -78,6 +86,10 @@ public:
 
         DERIVED_TYPE *pThis = NULL;
 
+        /**
+         * 'WM_NC*' definitions refer to 'non-client' events,
+         * i.e., mouse clicks outside of the app window. etc.
+         */
         if (uMsg == WM_NCCREATE)
         {
             CREATESTRUCT* pCreate = (CREATESTRUCT*)lParam;
@@ -103,7 +115,11 @@ public:
 
     BOOL Create(PCWSTR lpWindowName, DWORD dwStyle, DWORD dwExStyle = 0, int x = CW_USEDEFAULT, int y = CW_USEDEFAULT, int nWidth = CW_USEDEFAULT, int nHeight = CW_USEDEFAULT, HWND hWndParent = 0, HMENU hMenu = 0)
     {
+        /** Initiate a window class */
         WNDCLASS wc = {0};
+
+        /** Enable mouse double-clicks on the window...*/
+        wc.style = CS_DBLCLKS;
 
         wc.lpfnWndProc   = DERIVED_TYPE::WindowProc;
         wc.hInstance     = GetModuleHandle(NULL);
@@ -116,13 +132,13 @@ public:
         return (m_hwnd ? TRUE : FALSE);
     }
 
-    HWND Window() const { return m_hwnd; }
+    HWND Window() CONST { return m_hwnd; }
 
 protected:
 
-    virtual PCWSTR  ClassName() const = 0;
+    virtual PCWSTR  ClassName() CONST PURE;
 
-    virtual LRESULT HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam) = 0;
+    virtual LRESULT HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam) PURE;
 
     HWND m_hwnd;
 };
