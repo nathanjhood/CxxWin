@@ -25,10 +25,31 @@ indent_style = space
 indent_style = space
 indent_size = 2
 
+# Xml project files
+[*.{csproj,vbproj,vcxproj,vcxproj.filters,vcxitems,vcxitems.filters,proj,nativeproj,locproj,njsproj}]
+indent_size = 2
+end_of_line = crlf
+
+[*.{csproj,vbproj,proj,nativeproj,locproj}]
+charset = utf-8
+
+# Xml build files
+[*.builds]
+indent_size = 2
+
+# Xml files
+[*.{xml,stylecop,resx,ruleset}]
+indent_size = 2
+
+# Xml config files
+[*.{msbuild,props,targets,config,nuspec}]
+indent_size = 2
+end_of_line = crlf
+
 [{Makefile,*.mak}]
 indent_style = tab
 
-[*.{md}]
+[*.{md,rmd,mkd,mkdn,mdwn,mdown,markdown,litcoffee}]
 indent_style = space
 
 [meson.build]
@@ -64,6 +85,22 @@ indent_size = 4
 [*.rc]
 charset = utf-16le
 indent_size = 4
+end_of_line = crlf
+indent_style = space
+
+[*.py]
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+max_line_length = 80
+
+[*.cs]
+indent_style = space
+indent_size = 4
+
+# Shell scripts
+[*.sh]
+end_of_line = lf
 
 # Windows specific files should retain windows line-endings
 [*.{sln,[sS][lL][nN]}]
