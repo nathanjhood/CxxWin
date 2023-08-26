@@ -1,48 +1,78 @@
-#include "../cmrc.hpp"
+/***************************************************************************//**
+ * @file pfx.cpp
+ * @author StoneyDSP (nathanjhood@googlemail.com)
+ * @brief
+ * @version 1.0.0-init
+ * @date 2023-08-24
+ *
+ * @copyright Copyright (c) 2023
+ *
+ ******************************************************************************/
+
 #include <map>
 #include <utility>
 
-namespace cmrc {
-namespace key {
+#include "../cmrc.hpp"
 
-namespace res_chars {
-// These are the files which are available in this resource library
+namespace CMakeRC
+{
+namespace Key
+{
+/** These are the files which are available in this resource library */
+namespace res_chars
+{
 // Pointers to Windows_TemporaryKey.pfx
-extern const char* const f_8c2e_Windows_TemporaryKey_pfx_begin;
-extern const char* const f_8c2e_Windows_TemporaryKey_pfx_end;
+extern const char* const Windows_TemporaryKey_pfx_begin;
+extern const char* const Windows_TemporaryKey_pfx_end;
 }
 
-namespace {
-
-const cmrc::detail::index_type&
-get_root_index() {
-    static cmrc::detail::directory root_directory_;
-    static cmrc::detail::file_or_directory root_directory_fod{root_directory_};
-    static cmrc::detail::index_type root_index;
+namespace
+{
+/**
+ * @brief Get the root index object
+ *
+ * @return const CMakeRC::Detail::IndexType&
+ */
+const CMakeRC::Detail::IndexType& GetRootIndex()
+{
+    static CMakeRC::Detail::Directory root_directory_;
+    static CMakeRC::Detail::FileOrDirectory root_directory_fod{root_directory_};
+    static CMakeRC::Detail::IndexType root_index;
     root_index.emplace("", &root_directory_fod);
-    struct dir_inl {
-        class cmrc::detail::directory& directory;
+
+    struct dir_inl
+    {
+        class CMakeRC::Detail::Directory& Directory;
     };
+
     dir_inl root_directory_dir{root_directory_};
     (void)root_directory_dir;
 
     root_index.emplace(
         "Windows_TemporaryKey.pfx",
-        root_directory_dir.directory.add_file(
+        root_directory_dir.Directory.AddFile(
             "Windows_TemporaryKey.pfx",
-            res_chars::f_8c2e_Windows_TemporaryKey_pfx_begin,
-            res_chars::f_8c2e_Windows_TemporaryKey_pfx_end
+            res_chars::Windows_TemporaryKey_pfx_begin,
+            res_chars::Windows_TemporaryKey_pfx_end
         )
     );
     return root_index;
 }
 
+} /** namespace <unnamed> */
+
+/**
+ * @brief Get the 'EmbeddedFileSystem' object
+ *
+ * @namespace CMakeRC
+ * @namespace Img
+ * @return CMakeRC::EmbeddedFileSystem
+ */
+CMakeRC::EmbeddedFileSystem GetFileSystem()
+{
+    static auto& index = GetRootIndex();
+    return CMakeRC::EmbeddedFileSystem{index};
 }
 
-cmrc::embedded_filesystem get_filesystem() {
-    static auto& index = get_root_index();
-    return cmrc::embedded_filesystem{index};
-}
-
-} // key
-} // cmrc
+} /** namespace Key */
+} /** namespace CMakeRC */
