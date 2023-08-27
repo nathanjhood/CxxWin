@@ -1,10 +1,10 @@
 # CxxWin
 
-Win32 API with C++.
+Win32 API with C++ and Direct2D.
 
-A quick one-and-done Win32 API project implementing a COM blank application window for Windows platforms in C++.
+A quick one-and-done Win32 API project implementing a simple COM application window for Windows platforms in C++.
 
-![Screenshot](/doc/CxxWin/Screenshot.png)
+![Screenshot](/doc/CxxWin/screenshot_circles_example.png)
 
 See <a href="https://learn.microsoft.com/en-us/windows/win32/learnwin32/introduction-to-windows-programming-in-c--">the MSDN documentation for more</a>.
 
