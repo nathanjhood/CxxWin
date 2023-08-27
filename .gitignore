@@ -19,7 +19,8 @@
 /mingw32
 /ucrt64
 
-!/doc/CxxWin/Screenshot.png
+!/doc/CxxWin/screenshot_blank_example.png
+!/doc/CxxWin/screenshot_circles_example.png
 
 !/share/CxxWin/img/ApplicationIcon.png
 !/share/CxxWin/img/Logo.png
