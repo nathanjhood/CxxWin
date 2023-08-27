@@ -166,7 +166,16 @@
 		"stdexcept": "cpp",
 		"streambuf": "cpp",
 		"cinttypes": "cpp",
-		"typeinfo": "cpp"
+		"typeinfo": "cpp",
+		"condition_variable": "cpp",
+		"ctime": "cpp",
+		"list": "cpp",
+		"map": "cpp",
+		"ratio": "cpp",
+		"mutex": "cpp",
+		"semaphore": "cpp",
+		"stop_token": "cpp",
+		"thread": "cpp"
 	},
 
 	"terminal.integrated.profiles.windows": {
