@@ -76,13 +76,16 @@
 		"cppcoreguidelines-macro-usage",
 		"cppcoreguidelines-non-private-member-variables-in-classes",
 		"cppcoreguidelines-pro-type-reinterpret-cast",
+		"cppcoreguidelines-pro-type-union-access",
 		"modernize-use-auto",
 		"modernize-use-nullptr",
 		"modernize-use-nodiscard",
 		"modernize-use-trailing-return-type",
 		"performance-no-int-to-ptr",
 		"readability-convert-member-functions-to-static",
-		"readability-identifier-length"
+		"readability-else-after-return",
+		"readability-identifier-length",
+		"readability-qualified-auto"
 	],
 
 	"C_Cpp.intelliSenseEngine": "default",
