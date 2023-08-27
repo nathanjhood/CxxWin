@@ -17,17 +17,17 @@ float DPIScale::scale = 1.0F;
  * @brief Construct a new Main Window:: Main Window object
  *
  */
-MainWindow::MainWindow() :
-    pFactory(NULL),
-    pRenderTarget(NULL),
-    pBrush(NULL),
-    pBrushB(NULL),
-    pBrushC(NULL),
-    ellipseA(D2D1::Ellipse(D2D1::Point2F(), 0.0F, 0.0F)),
-    ellipseB(D2D1::Ellipse(D2D1::Point2F(), 0.0F, 0.0F)),
-    ellipseC(D2D1::Ellipse(D2D1::Point2F(), 0.0F, 0.0F)),
-    ellipseMouse(D2D1::Ellipse(D2D1::Point2F(), 0.0F, 0.0F)),
-    ptMouseDown(D2D1::Point2F())
+MainWindow::MainWindow()
+    : pFactory (NULL)
+    , pRenderTarget (NULL)
+    , pBrush (NULL)
+    , pBrushB (NULL)
+    , pBrushC (NULL)
+    , ellipseA (D2D1::Ellipse(D2D1::Point2F(), 0.0F, 0.0F))
+    , ellipseB (D2D1::Ellipse(D2D1::Point2F(), 0.0F, 0.0F))
+    , ellipseC (D2D1::Ellipse(D2D1::Point2F(), 0.0F, 0.0F))
+    , ellipseMouse (D2D1::Ellipse(D2D1::Point2F(), 0.0F, 0.0F))
+    , ptMouseDown (D2D1::Point2F())
 {
 
 }
