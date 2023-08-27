@@ -1,4 +1,4 @@
-/**
+/***************************************************************************//**
  * @file SmartPtr.h
  * @author StoneyDSP (nathanjhood@googlemail.com)
  * @brief
@@ -7,7 +7,7 @@
  *
  * @copyright Copyright (c) 2023
  *
- */
+ ******************************************************************************/
 
 #ifndef _CXX_WIN_SMARTPTR_H_
 #define _CXX_WIN_SMARTPTR_H_

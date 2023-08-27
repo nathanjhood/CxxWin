@@ -1,6 +1,5 @@
 {
 	"recommendations": [
-		"ms-vscode.cpptools",
-		"fougas.msys2"
+		"ms-vscode.cpptools"
 	]
 }
