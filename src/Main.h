@@ -36,6 +36,7 @@ int WINAPI wWinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdL
 #endif
 
 #ifdef RC_INVOKED
+#include "resource.h"
 
 VS_VERSION_INFO			VERSIONINFO
 FILEVERSION				1,0,0,0
@@ -70,4 +71,5 @@ BEGIN
 	END
 END
 
+CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "CxxWin-ucrt64.exe.manifest"
 #endif // RC_INVOKED
