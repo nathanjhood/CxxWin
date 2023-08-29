@@ -1,0 +1,39 @@
+//<SnippetResource_H>
+#include "resource.h"
+
+VS_VERSION_INFO			VERSIONINFO
+FILEVERSION				1,0,0,0
+PRODUCTVERSION 			1,0,0,0
+FILEFLAGSMASK 			VS_FFI_FILEFLAGSMASK
+#ifdef _DEBUG
+	FILEFLAGS			VS_FF_DEBUG | VS_FF_PRERELEASE
+#else
+	FILEFLAGS			0
+#endif
+FILEOS 					VOS_NT_WINDOWS32
+FILETYPE 				VFT_APP
+FILESUBTYPE 			VFT2_UNKNOWN
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+		BLOCK "080904b0"
+		BEGIN
+			VALUE "CompanyName", "StoneyDSP"
+			VALUE "FileDescription", "Win32 API from C++."
+			VALUE "FileVersion", "1.0.0.0"
+			VALUE "InternalName", "CxxWin"
+			VALUE "LegalCopyright", "Copyright (c) 2023 Nathan J. Hood (nathanjhood@googlemail.com)"
+			VALUE "OriginalFilename", "executable.exe"
+			VALUE "ProductName", "CxxWin"
+			VALUE "ProductVersion", "1.0.0.0"
+		END
+	END
+	BLOCK "VarFileInfo"
+	BEGIN
+		VALUE "Translation", 0x809, 1200
+	END
+END
+
+CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "CxxWin.manifest"
+
+//<SnippetResource_H>
