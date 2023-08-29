@@ -55,21 +55,25 @@
 		{
 			"type": "cppbuild",
 			"label": "UCRT64: gcc.exe build application",
+		{ "type": "cppbuild",
+			"label": "UCRT64: g++.exe compile sources",
 			"command": "C:/msys64/ucrt64/bin/x86_64-w64-mingw32-g++.exe",
 			"args": [
 				"-DUNICODE",
 				"-D_UNICODE",
+				"-I${workspaceFolder}/include",
 				"-pipe",
 				"-O2",
-				"-I${workspaceFolder}/include",
 				"-x", "c++",
 				"${workspaceFolder}/src/MainComponent.cpp",
 				"${workspaceFolder}/src/Main.cpp",
 				"-o",
-				"${workspaceFolder}/bin/CxxWin-ucrt64.exe",
-				"-municode",
+				"${workspaceFolder}/lib/CxxWin-ucrt64.obj",
 				"-mwindows",
-				"-ld2d1"
+				"-municode",
+				"-ld2d1",
+				"-lcomctl32",
+				"-Wl,--subsystem,windows"
 			],
 			"options": {
 				"cwd": "${workspaceFolder}"
