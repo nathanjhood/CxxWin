@@ -43,9 +43,8 @@ endif()
 
 list(APPEND ${PROJECT_NAME}_REQUIRED_FLAGS -mwindows)
 
-file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/Main.h" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}")
-file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/BaseWindow.h" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}")
-file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/MainWindow.h" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}")
+file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/src/Main.h" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}")
+file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/src/MainComponent.h" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}")
 
 add_library (window)
 add_library (${PROJECT_NAME}::window ALIAS window)
@@ -69,19 +68,16 @@ target_sources (window
             $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}>
             $<INSTALL_INTERFACE:include/${PROJECT_NAME}>
         FILES
-			# include/${PROJECT_NAME}/BaseWindow.h
-			$<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/BaseWindow.h>
-			$<INSTALL_INTERFACE:include/${PROJECT_NAME}/BaseWindow.h>
-            # include/${PROJECT_NAME}/MainWindow.h
-            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/MainWindow.h>
-            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/MainWindow.h>
+            # include/${PROJECT_NAME}/MainComponent.h
+            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/MainComponent.h>
+            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/MainComponent.h>
 )
 
 target_sources (window
 
     PRIVATE
         # src/runtime/main.cpp
-        "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/MainWindow.cpp"
+        "${CMAKE_CURRENT_SOURCE_DIR}/src/MainComponent.cpp"
 )
 
 set_target_properties (window
@@ -121,7 +117,7 @@ target_include_directories (executable
         $<INSTALL_INTERFACE:include>
 )
 
-set_target_properties (window
+set_target_properties (executable
 
     PROPERTIES
         RUNTIME_OUTPUT_DIRECTORY bin
@@ -150,7 +146,7 @@ target_sources (executable
 
     PRIVATE
         # src/runtime/main.cpp
-        "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/Main.cpp"
+        "${CMAKE_CURRENT_SOURCE_DIR}/src/Main.cpp"
 )
 
 set_target_properties (executable
