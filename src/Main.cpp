@@ -19,6 +19,12 @@ int WINAPI WinMain  (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 int WINAPI wWinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLine, int nShowCmd)
 #endif
 {
+    // Initialize common controls (legacy support)
+    INITCOMMONCONTROLSEX icc;
+    icc.dwSize = sizeof(icc);
+    icc.dwICC = ICC_WIN95_CLASSES;
+    InitCommonControlsEx(&icc);
+
     MainComponent win;
 
     if (!win.Create(win.ClassName(), WS_OVERLAPPEDWINDOW))
