@@ -1,4 +1,4 @@
-/**
+/***************************************************************************//**
  * @file win32_core.cpp
  * @author StoneyDSP (nathanjhood@googlemail.com)
  * @brief
@@ -7,12 +7,10 @@
  *
  * @copyright Copyright (c) 2023
  *
- */
+ ******************************************************************************/
 
 #ifdef _WIN32_CORE_H_
 #  error "Incorrect useage of CPP file!"
 #endif
 
 #include "win32_core.h"
-
-#include <windows.h>

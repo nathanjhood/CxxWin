@@ -1,3 +1,4 @@
+#pragma once
 /**
  * @file win32_SmartPointer.h
  * @author StoneyDSP (nathanjhood@googlemail.com)
@@ -8,11 +9,14 @@
  * @copyright Copyright (c) 2023
  *
  */
+#define WIN32_SMARTPOINTER_H
 
-#pragma once
-
-#include <windows.h>
-
+/**
+ * @brief
+ *
+ * @tparam T
+ * @param ppT
+ */
 template <class T>
 void SafeRelease(T** ppT)
 {

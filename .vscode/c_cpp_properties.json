@@ -73,7 +73,7 @@
 				"C:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32/**",
 				"C:/msys64/ucrt64/include/c++/13.2.0/**",
 				"C:/msys64/ucrt64/include/**",
-				"${default}"
+				"${workspaceFolder}/include"
 			],
 			"browse": {
 				"databaseFilename": "${default}",
@@ -85,7 +85,7 @@
 					"C:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32",
 					"C:/msys64/ucrt64/include/c++/13.2.0",
 					"C:/msys64/ucrt64/include",
-					"${default}"
+					"${workspaceFolder}/include/*"
 				]
 			},
 			"defines": [
@@ -97,40 +97,28 @@
 			"intelliSenseMode": "windows-gcc-x64",
 			"compilerPath": "C:\\msys64\\ucrt64\\bin\\x86_64-w64-mingw32-gcc-13.2.0.exe",
 			"compilerArgs": [
-				// "-DUNICODE",
-				// "-D_UNICODE",
-				// "-IC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include",
-				// "-IC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include-fixed",
-				// "-IC:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32",
-				// "-IC:/msys64/ucrt64/include/c++/13.2.0",
-				// "-IC:/msys64/ucrt64/include",
-				// "-I${workspaceFolder}/include",
-				// "-LC:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0",
-				// "-LC:/msys64/ucrt64/lib/gcc",
-				// "-LC:/msys64/ucrt64/x86_64-w64-mingw32/lib",
-				// "-LC:/msys64/ucrt64/lib",
-				// "-LC:/msys64/ucrt64/bin",
-				// "-lmingw32",
-				// "-lgcc_s",
-				// "-lgcc",
-				// "-lmoldname",
-				// "-lmingwex",
-				// "-lkernel32",
-				// "-luser32",
-				// "-lgdi32",
-				// "-lwinspool",
-				// "-lshell32",
-				// "-lole32",
-				// "-loleaut32",
-				// "-luuid",
-				// "-lcomdlg32",
-				// "-ladvapi32",
+
+				"-lmingw32",
+				"-lgcc_s",
+				"-lgcc",
+				"-lmoldname",
+				"-lmingwex",
+				"-lkernel32",
+				"-luser32",
+				"-lgdi32",
+				"-lwinspool",
+				"-lshell32",
+				"-lole32",
+				"-loleaut32",
+				"-luuid",
+				"-lcomdlg32",
+				"-ladvapi32",
 				"-ld2d1",
 				"-mwindows",
-				"-municode"
+				"-municode",
 				// "-mwin32"
 				// "-mthreads",
-				// "-m64"
+				"-m64"
 			],
 			"mergeConfigurations": false,
 			"configurationProvider": "${default}"

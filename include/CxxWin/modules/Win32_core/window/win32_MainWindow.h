@@ -1,3 +1,4 @@
+#pragma once
 /**
  * @file Cxxwin/MainWindow.h
  * @author StoneyDSP (nathanjhood@googlemail.com)
@@ -8,19 +9,28 @@
  * @copyright Copyright (c) 2023
  *
  */
+#define WIN32_MAINWINDOW_H
 
-#ifndef _WIN32_WINDOW_MAINWINDOW_H_
-#define _WIN32_WINDOW_MAINWINDOW_H_
-
-#include "win32_BaseWindow.h"
-
-void OnSize(HWND hwnd, UINT flag, int width, int height);
-
+/**
+ * @brief The 'MainWindow' class.
+ *
+ */
 class MainWindow : public BaseWindow<MainWindow>
 {
 public:
+    /**
+     * @brief
+     *
+     * @return PCWSTR
+     */
     PCWSTR ClassName() const;
+    /**
+     * @brief
+     *
+     * @param uMsg
+     * @param wParam
+     * @param lParam
+     * @return LRESULT
+     */
     LRESULT HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam);
 };
-
-#endif /** _WIN32_WINDOW_MAINWINDOW_H_ */

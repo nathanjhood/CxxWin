@@ -1,39 +1,51 @@
+#pragma once
 /**
  * @file win32_DPIScale.h
  * @author StoneyDSP (nathanjhood@googlemail.com)
- * @brief
+ * @brief DPI Scale
  * @version 1.0.0-init
  * @date 2023-08-25
  *
  * @copyright Copyright (c) 2023
  *
  */
+#define WIN32_DPISCALE_H
 
-#pragma once
-
-#ifndef WINVER
-#  define WINVER 0x0A00
-#endif
-
-#ifndef _WIN32_WINNT
-#  define _WIN32_WINNT 0x0A00
-#endif
-
-#ifdef D2D_USE_C_DEFINITIONS
-#  undef D2D_USE_C_DEFINITIONS
-#endif
-
-#include <windows.h>
-#include <d2d1.h>
-#pragma comment(lib, "d2d1")
-
+/**
+ * @brief The 'DPIScale' class.
+ *
+ */
 class DPIScale
 {
 public:
-    static void Initialize(HWND hwnd);
+    /**
+     * @brief The 'Initialize' function.
+     *
+     * @param pFactory
+     */
+    static void Initialize(ID2D1Factory* pFactory)
+    {
+        FLOAT dpiX, dpiY;
+        pFactory->GetDesktopDpi(&dpiX, &dpiY);
+        scaleX = dpiX / 96.0F;
+        scaleY = dpiY / 96.0F;
+    }
 
+    /**
+     * @brief Pixels to DIP's.
+     *
+     * @tparam T
+     * @param x
+     * @param y
+     * @return D2D1_POINT_2F
+     */
     template <typename T>
-    static D2D1_POINT_2F PixelsToDips(T x, T y);
+    static D2D1_POINT_2F PixelsToDips(T x, T y)
+    {
+        return D2D1::Point2F(static_cast<float>(x) / scaleX, static_cast<float>(y) / scaleY);
+    }
+
 private:
-    static float scale;
+    static float scaleX;
+    static float scaleY;
 };

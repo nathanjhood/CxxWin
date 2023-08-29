@@ -1,4 +1,5 @@
-/**
+#pragma once
+/***************************************************************************//**
  * @file Main.h
  * @author StoneyDSP (nathanjhood@googlemail.com)
  * @brief
@@ -7,10 +8,8 @@
  *
  * @copyright Copyright (c) 2023
  *
- */
-
-#ifndef _CXX_WIN_MAIN_H_
-#define _CXX_WIN_MAIN_H_
+ ******************************************************************************/
+#define MAIN_H
 
 #ifndef WINVER
 #  define WINVER 0x0A00
@@ -25,13 +24,14 @@
 #endif
 
 #include <windows.h>
+#include <windowsx.h>
 #include <d2d1.h>
 #pragma comment(lib, "d2d1")
 
 #if !defined(UNICODE) || !defined(_UNICODE)
-int WINAPI WinMain  (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR  pCmdLine, int nCmdShow);
+int WINAPI WinMain  (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd);
 #else
-int WINAPI wWinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR pCmdLine, int nCmdShow);
+int WINAPI wWinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLine, int nShowCmd);
 #endif
 
 #ifdef RC_INVOKED
@@ -69,6 +69,4 @@ BEGIN
 	END
 END
 
-#endif
-
-#endif /* _CXX_WIN_MAIN_H_ */
+#endif // RC_INVOKED
