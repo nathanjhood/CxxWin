@@ -1,17 +1,37 @@
-#pragma once
 /***************************************************************************//**
  * @file MainComponent.h
  * @author StoneyDSP (nathanjhood@googlemail.com)
- * @brief
+ * @brief Contains the declarations of 'MainComponent'.
  * @version 1.0.0-init
  * @date 2023-08-28
  *
  * @copyright Copyright (c) 2023
  *
  ******************************************************************************/
-#define MAIN_COMPONENT_H
 
-#include "CxxWin/modules/Win32_core/win32_core.h"
+#pragma once
+/** Contains the declarations of 'MainComponent'. */
+#define __MAIN_COMPONENT_H
+
+// #ifdef __cplusplus
+// extern "C" {
+// #endif
+
+// #if defined(window_WIN32_SHARED)
+// #if defined(window_WIN32_EXPORTS)
+// #   define window_EXPORT __declspec(dllexport)
+// #else
+// #   define window_EXPORT __declspec(dllimport)
+// #endif
+// #else
+// #   define window_EXPORT
+// #endif
+
+// #ifdef __cplusplus
+// }
+// #endif
+
+#include "modules/Win32_core/win32_core.h"
 
 /**
  * @brief The 'MainComponent' class.
@@ -21,7 +41,6 @@ class MainComponent                   : public MainWindow
 {
 public:
     MainComponent();
-    ~MainComponent();
 
     PCWSTR ClassName() CONST;
     LRESULT HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam);

@@ -1,7 +1,7 @@
 /***************************************************************************//**
  * @file MainComponent.cpp
  * @author StoneyDSP (nathanjhood@googlemail.com)
- * @brief
+ * @brief Contains the definitions of 'MainComponent'.
  * @version 1.0.0-init
  * @date 2023-08-28
  *
@@ -30,22 +30,13 @@ MainComponent::MainComponent()
 }
 
 /**
- * @brief Destroy the 'MainComponent' object.
- *
- */
-MainComponent::~MainComponent()
-{
-
-}
-
-/**
  * @brief
  *
  * @return PCWSTR
  */
 PCWSTR MainComponent::ClassName() const
 {
-    return L"CxxWin";
+    return TEXT("CxxWin");
 }
 
 /**
@@ -258,7 +249,7 @@ HRESULT MainComponent::OnCreate()
  */
 void MainComponent::OnClose() CONST
 {
-    if (MessageBox(m_hwnd, L"Sure?", ClassName(), MB_OKCANCEL) == IDOK)
+    if (MessageBox(m_hwnd, TEXT("Sure?"), ClassName(), MB_OKCANCEL) == IDOK)
     {
         DestroyWindow(m_hwnd);
     }
