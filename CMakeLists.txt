@@ -30,26 +30,45 @@ else ()
 	set (BUILD_SHARED_LIBS OFF CACHE BOOL "Global flag to cause ``add_library()`` to create shared libraries if on." FORCE)
 endif ()
 
-set(${PROJECT_NAME}_REQUIRED_DEFS)
-list(APPEND ${PROJECT_NAME}_REQUIRED_DEFS
-	UNICODE
-	_UNICODE
+set(CMAKE_CXX_FLAGS "-DUNICODE -D_UNICODE -std=c++17 -ld2d1 -lcomctl32 -Wl,--subsystem,windows" CACHE
+STRING "" FORCE)
+
+file(COPY
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/win32_core.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/win32_core.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/win32_core.mm"
+    DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core"
 )
 
-set(${PROJECT_NAME}_REQUIRED_FLAGS)
-if(NOT (CYGWIN OR MSYS))
-	list(APPEND ${PROJECT_NAME}_REQUIRED_FLAGS -municode)
-endif()
+file(COPY
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/native/win32_BasicNativeHeaders.h"
+    DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/native"
+)
 
-list(APPEND ${PROJECT_NAME}_REQUIRED_FLAGS -mwindows)
+file(COPY
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/window/win32_BaseWindow.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/window/win32_DPIScale.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/window/win32_MainWindow.h"
+    DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/window"
+)
 
-file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/src/Main.h" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}")
-file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/src/MainComponent.h" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}")
+file(COPY
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/system/win32_CompilerSupport.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/system/win32_PlatformDefs.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/system/win32_StandardHeader.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/system/win32_TargetPlatform.h"
+    DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/system"
+)
 
-add_library (window)
-add_library (${PROJECT_NAME}::window ALIAS window)
+file(COPY
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/memory/win32_SmartPointer.h"
+    DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/memory"
+)
 
-target_include_directories (window
+add_library (library)
+add_library (${PROJECT_NAME}::library ALIAS library)
+
+target_include_directories (library
 
     PRIVATE
 
@@ -57,30 +76,62 @@ target_include_directories (window
         $<INSTALL_INTERFACE:include>
 )
 
-target_sources (window
+target_sources (library
 
-    PRIVATE
+    PUBLIC
 
-        FILE_SET window_PRIVATE_HEADERS
+        FILE_SET library_HEADERS
         TYPE HEADERS
 
         BASE_DIRS
             $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}>
             $<INSTALL_INTERFACE:include/${PROJECT_NAME}>
         FILES
-            # include/${PROJECT_NAME}/MainComponent.h
-            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/MainComponent.h>
-            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/MainComponent.h>
+            # include/${PROJECT_NAME}/modules/Win32_core/system/win32_CompilerSupport.h"
+            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/system/win32_CompilerSupport.h>
+            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/modules/Win32_core/system/win32_CompilerSupport.h>
+
+            # include/${PROJECT_NAME}/modules/Win32_core/system/win32_PlatformDefs.h"
+            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/system/win32_PlatformDefs.h>
+            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/modules/Win32_core/system/win32_PlatformDefs.h>
+
+            # include/${PROJECT_NAME}/modules/Win32_core/native/win32_BasicNativeHeaders.h
+            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/native/win32_BasicNativeHeaders.h>
+            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/modules/Win32_core/native/win32_BasicNativeHeaders.h>
+
+            # include/${PROJECT_NAME}/modules/Win32_core/system/win32_TargetPlatform.h"
+            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/system/win32_TargetPlatform.h>
+            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/modules/Win32_core/system/win32_TargetPlatform.h>
+
+            # include/${PROJECT_NAME}/modules/Win32_core/system/win32_StandardHeader.h"
+            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/system/win32_StandardHeader.h>
+            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/modules/Win32_core/system/win32_StandardHeader.h>
+
+            # include/${PROJECT_NAME}/modules/Win32_core/win32_core.h
+            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/win32_core.h>
+            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/modules/Win32_core/win32_core.h>
+
+            # include/${PROJECT_NAME}/modules/Win32_core/window/win32_DPIScale.h
+            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/window/win32_DPIScale.h>
+            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/modules/Win32_core/window/win32_DPIScale.h>
+
+            # include/${PROJECT_NAME}/modules/Win32_core/window/win32_BaseWindow.h
+            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/window/win32_BaseWindow.h>
+            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/modules/Win32_core/window/win32_BaseWindow.h>
+
+            # include/${PROJECT_NAME}/modules/Win32_core/window/win32_MainWindow.h
+            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/window/win32_MainWindow.h>
+            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/modules/Win32_core/window/win32_MainWindow.h>
 )
 
-target_sources (window
+target_sources (library
 
     PRIVATE
-        # src/runtime/main.cpp
-        "${CMAKE_CURRENT_SOURCE_DIR}/src/MainComponent.cpp"
+        # "include/${PROJECT_NAME}/modules/Win32_core/win32_core.mm"
+        "include/${PROJECT_NAME}/modules/Win32_core/win32_core.cpp"
 )
 
-set_target_properties (window
+set_target_properties (library
 
     PROPERTIES
         RUNTIME_OUTPUT_DIRECTORY bin
@@ -89,21 +140,45 @@ set_target_properties (window
         PDB_OUTPUT_DIRECTORY     bin
 )
 
-target_compile_definitions (window
+target_compile_definitions (library
 
 	PUBLIC
-		${${PROJECT_NAME}_REQUIRED_DEFS}
+        UNICODE
+        _UNICODE
 )
 
-target_compile_options (window
-
-	PUBLIC
-		${${PROJECT_NAME}_REQUIRED_FLAGS}
+target_compile_features (library
+    PUBLIC
+        cxx_std_17
 )
-target_link_options (window
+
+target_compile_options (library
 
 	PUBLIC
-		${${PROJECT_NAME}_REQUIRED_FLAGS}
+        -municode -mwindows -Wl,--subsystem,windows
+)
+
+target_link_libraries (library
+
+    PUBLIC
+        d2d1
+        comctl32
+)
+
+# target_sources (modules
+
+#     PRIVATE
+#         "include/${PROJECT_NAME}/modules/Win32_core/win32_core.mm"
+#         # "include/${PROJECT_NAME}/modules/Win32_core/win32_core.cpp"
+#         # "include/${PROJECT_NAME}/modules/Win32_core/window/win32_MainWindow.cpp"
+#         # "include/${PROJECT_NAME}/modules/Win32_core/window/win32_BaseWindow.cpp"
+# )
+
+file(COPY
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/Main.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/MainComponent.h"
+    DESTINATION
+    "${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}"
 )
 
 add_executable (executable)
@@ -117,26 +192,21 @@ target_include_directories (executable
         $<INSTALL_INTERFACE:include>
 )
 
-set_target_properties (executable
-
-    PROPERTIES
-        RUNTIME_OUTPUT_DIRECTORY bin
-        LIBRARY_OUTPUT_DIRECTORY lib
-        ARCHIVE_OUTPUT_DIRECTORY lib
-        PDB_OUTPUT_DIRECTORY     bin
-)
-
 target_sources (executable
 
-    PRIVATE
+    PUBLIC
 
-        FILE_SET executable_PRIVATE_HEADERS
+        FILE_SET executable_HEADERS
         TYPE HEADERS
 
         BASE_DIRS
             $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}>
             $<INSTALL_INTERFACE:include/${PROJECT_NAME}>
         FILES
+            # include/${PROJECT_NAME}/MainComponent.h
+            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/MainComponent.h>
+            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/MainComponent.h>
+
             # include/${PROJECT_NAME}/main.h
             $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/Main.h>
             $<INSTALL_INTERFACE:include/${PROJECT_NAME}/Main.h>
@@ -145,8 +215,8 @@ target_sources (executable
 target_sources (executable
 
     PRIVATE
-        # src/runtime/main.cpp
-        "${CMAKE_CURRENT_SOURCE_DIR}/src/Main.cpp"
+        "include/${PROJECT_NAME}/MainComponent.cpp"
+        "include/${PROJECT_NAME}/Main.cpp"
 )
 
 set_target_properties (executable
@@ -158,38 +228,42 @@ set_target_properties (executable
         PDB_OUTPUT_DIRECTORY     bin
 )
 
-target_compile_definitions(executable
+target_compile_definitions (executable
 
 	PUBLIC
-		${${PROJECT_NAME}_REQUIRED_DEFS}
+        UNICODE
+        _UNICODE
 )
 
-target_compile_options(executable
-
-	PUBLIC
-		${${PROJECT_NAME}_REQUIRED_FLAGS}
+target_compile_features (executable
+    PUBLIC
+        cxx_std_17
 )
 
-target_link_options (executable
+target_compile_options (executable
 
 	PUBLIC
-		${${PROJECT_NAME}_REQUIRED_FLAGS}
+        -municode -mwindows -Wl,--subsystem,windows
 )
 
 target_link_libraries (executable
 
-    ${PROJECT_NAME}::window
+    PUBLIC
+        ${PROJECT_NAME}::library
+        d2d1
+        comctl32
 )
 
-
-
+# Create targets to export
 install(
-	TARGETS window executable
+	TARGETS library executable
 	EXPORT CxxWinTargets
 	LIBRARY DESTINATION "${CMAKE_INSTALL_LIBDIR}"
 	ARCHIVE DESTINATION "${CMAKE_INSTALL_LIBDIR}"
 	RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}"
 	INCLUDES DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}"
+    FILE_SET library_HEADERS
+    FILE_SET executable_HEADERS
 )
 
 install (
@@ -199,24 +273,26 @@ install (
 	DESTINATION "${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}"
 )
 
-# ##-- Create package config
+# Export targets to binary dir
+export(
+	EXPORT CxxWinTargets
+	FILE "${CMAKE_CURRENT_BINARY_DIR}/CxxWinTargets.cmake"
+	NAMESPACE ${PROJECT_NAME}::
+)
+
+# ##-- Create CMake package config
 include (CMakePackageConfigHelpers)
 
 configure_package_config_file (
 	"${CMAKE_CURRENT_SOURCE_DIR}/share/CxxWinConfig.cmake.in"
 	"${CMAKE_CURRENT_BINARY_DIR}/CxxWinConfig.cmake"
-	INSTALL_DESTINATION "${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}"
+	INSTALL_DESTINATION
+    "${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}"
 )
 
 install (
 	FILES
-	"${CMAKE_CURRENT_BINARY_DIR}/CxxWinConfig.cmake"
+	    "${CMAKE_CURRENT_BINARY_DIR}/CxxWinConfig.cmake"
 	DESTINATION
-	"${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}"
-)
-
-export(
-	EXPORT CxxWinTargets
-	FILE "${CMAKE_CURRENT_BINARY_DIR}/CxxWinTargets.cmake"
-	NAMESPACE ${PROJECT_NAME}::
+	    "${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}"
 )
