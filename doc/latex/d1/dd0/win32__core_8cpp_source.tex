@@ -1,0 +1,118 @@
+\doxysection{win32\+\_\+core.\+cpp}
+\hypertarget{win32__core_8cpp_source}{}\label{win32__core_8cpp_source}\index{include/CxxWin/modules/Win32\_core/win32\_core.cpp@{include/CxxWin/modules/Win32\_core/win32\_core.cpp}}
+\mbox{\hyperlink{win32__core_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifdef\ \_WIN32\_CORE\_H\_}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#\ \ error\ "{}Incorrect\ useage\ of\ CPP\ file!"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{win32__core_8h}{win32\_core.h}}"{}}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{comment}{//\ \#ifndef\ WINVER}}
+\DoxyCodeLine{00019\ \textcolor{comment}{//\ \#\ \ define\ WINVER\ 0x0A00}}
+\DoxyCodeLine{00020\ \textcolor{comment}{//\ \#endif}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{comment}{//\ \#ifndef\ \_WIN32\_WINNT}}
+\DoxyCodeLine{00023\ \textcolor{comment}{//\ \#\ \ define\ \_WIN32\_WINNT\ 0x0A00}}
+\DoxyCodeLine{00024\ \textcolor{comment}{//\ \#endif}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{comment}{//\ \#ifdef\ D2D\_USE\_C\_DEFINITIONS}}
+\DoxyCodeLine{00027\ \textcolor{comment}{//\ \#\ \ undef\ D2D\_USE\_C\_DEFINITIONS}}
+\DoxyCodeLine{00028\ \textcolor{comment}{//\ \#endif}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{comment}{//\ \#include\ <windows.h>}}
+\DoxyCodeLine{00031\ \textcolor{comment}{//\ \#include\ <windowsx.h>}}
+\DoxyCodeLine{00032\ \textcolor{comment}{//\ \#include\ <commctrl.h>}}
+\DoxyCodeLine{00033\ \textcolor{comment}{//\ \#include\ <d2d1.h>}}
+\DoxyCodeLine{00034\ \textcolor{comment}{//\ \#pragma\ comment(lib,\ "{}d2d1"{})}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#include\ <cctype>}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#include\ <cstdarg>}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#include\ <locale>}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#include\ <thread>}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#if\ !defined(\_\_PLATFORM\_IS\_ANDROID)\ ||\ !defined(\_\_PLATFORM\_IS\_BSD)}}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#\ \ include\ <sys/timeb.h>}}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#\ \ include\ <cwctype>}}
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#if\ defined(\_\_PLATFORM\_IS\_WINDOWS)}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#\ \ include\ <ctime>}}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#\ \ if\ defined(\_\_PLATFORM\_IS\_MINGW)}}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#\ \ \ \ include\ <ws2spi.h>}}
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#\ \ \ \ include\ <cstdio>}}
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#\ \ \ \ include\ <locale.h>}}
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#\ \ else}}
+\DoxyCodeLine{00055\ \textcolor{comment}{//\ JUCE\_BEGIN\_IGNORE\_WARNINGS\_MSVC\ (4091)}}
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#\ \ \ \ include\ <Dbghelp.h>}}
+\DoxyCodeLine{00057\ \textcolor{comment}{//\ JUCE\_END\_IGNORE\_WARNINGS\_MSVC}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#\ \ \ \ if\ !defined(\_\_DONT\_AUTOLINK\_TO\_WIN32\_LIBRARIES)}}
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#\ \ \ \ \ \ pragma\ comment\ (lib,\ "{}DbgHelp.lib"{}})}
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#\ \ \ \ endif}}
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\#\ \ endif}}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\#\ \ if\ defined(\_\_PLATFORM\_IS\_LINUX)\ ||\ defined(\_\_PLATFORM\_IS\_BSD)\ ||\ defined(\_\_PLATFORM\_IS\_ANDROID)}}
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#\ \ \ \ include\ <sys/types.h>}}
+\DoxyCodeLine{00067\ \textcolor{preprocessor}{\#\ \ \ \ include\ <sys/socket.h>}}
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#\ \ \ \ include\ <sys/errno.h>}}
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\#\ \ \ \ include\ <unistd.h>}}
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\#\ \ \ \ include\ <netinet/in.h>}}
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\#\ \ endif}}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \textcolor{preprocessor}{\ \#if\ defined(\_\_PLATFORM\_IS\_WASM)}}
+\DoxyCodeLine{00074\ \textcolor{preprocessor}{\ \ \#include\ <stdio.h>}}
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\ \ \#include\ <sys/types.h>}}
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\ \ \#include\ <sys/socket.h>}}
+\DoxyCodeLine{00077\ \textcolor{preprocessor}{\ \ \#include\ <errno.h>}}
+\DoxyCodeLine{00078\ \textcolor{preprocessor}{\ \ \#include\ <unistd.h>}}
+\DoxyCodeLine{00079\ \textcolor{preprocessor}{\ \ \#include\ <netinet/in.h>}}
+\DoxyCodeLine{00080\ \textcolor{preprocessor}{\ \ \#include\ <sys/stat.h>}}
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\ \#endif}}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\ \#if\ defined(\_\_PLATFORM\_IS\_LINUX)\ ||\ (\_\_PLATFORM\_IS\_BSD)}}
+\DoxyCodeLine{00084\ \textcolor{preprocessor}{\ \ \#include\ <stdio.h>}}
+\DoxyCodeLine{00085\ \textcolor{preprocessor}{\ \ \#include\ <langinfo.h>}}
+\DoxyCodeLine{00086\ \textcolor{preprocessor}{\ \ \#include\ <ifaddrs.h>}}
+\DoxyCodeLine{00087\ \textcolor{preprocessor}{\ \ \#include\ <sys/resource.h>}}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \textcolor{preprocessor}{\ \ \#if\ USE\_CURL}}
+\DoxyCodeLine{00090\ \textcolor{preprocessor}{\ \ \ \#include\ <curl/curl.h>}}
+\DoxyCodeLine{00091\ \textcolor{preprocessor}{\ \ \#endif}}
+\DoxyCodeLine{00092\ \textcolor{preprocessor}{\ \#endif}}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \textcolor{preprocessor}{\ \#include\ <pwd.h>}}
+\DoxyCodeLine{00095\ \textcolor{preprocessor}{\ \#include\ <fcntl.h>}}
+\DoxyCodeLine{00096\ \textcolor{preprocessor}{\ \#include\ <netdb.h>}}
+\DoxyCodeLine{00097\ \textcolor{preprocessor}{\ \#include\ <arpa/inet.h>}}
+\DoxyCodeLine{00098\ \textcolor{preprocessor}{\ \#include\ <netinet/tcp.h>}}
+\DoxyCodeLine{00099\ \textcolor{preprocessor}{\ \#include\ <sys/time.h>}}
+\DoxyCodeLine{00100\ \textcolor{preprocessor}{\ \#include\ <net/if.h>}}
+\DoxyCodeLine{00101\ \textcolor{preprocessor}{\ \#include\ <sys/ioctl.h>}}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \textcolor{preprocessor}{\ \#if\ !defined(\_\_PLATFORM\_IS\_ANDROID)\ ||\ !defined(\_\_PLATFORM\_IS\_WASM)}}
+\DoxyCodeLine{00104\ \textcolor{preprocessor}{\ \ \#include\ <execinfo.h>}}
+\DoxyCodeLine{00105\ \textcolor{preprocessor}{\ \#endif}}
+\DoxyCodeLine{00106\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \textcolor{preprocessor}{\#if\ defined(\_\_PLATFORM\_IS\_MAC)\ ||\ defined(\_\_PLATFORM\_IS\_IOS)}}
+\DoxyCodeLine{00109\ \textcolor{preprocessor}{\ \#include\ <xlocale.h>}}
+\DoxyCodeLine{00110\ \textcolor{preprocessor}{\ \#include\ <mach/mach.h>}}
+\DoxyCodeLine{00111\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \textcolor{preprocessor}{\#if\ defined(\_\_PLATFORM\_IS\_ANDROID)}}
+\DoxyCodeLine{00114\ \textcolor{preprocessor}{\ \#include\ <ifaddrs.h>}}
+\DoxyCodeLine{00115\ \textcolor{preprocessor}{\ \#include\ <android/log.h>}}
+\DoxyCodeLine{00116\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ \textcolor{preprocessor}{\#undef\ check}}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ \textcolor{comment}{//==============================================================================}}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00122\ \textcolor{comment}{//\ include\ lib\ .cpp\ files\ here}}
+
+\end{DoxyCode}

@@ -1,0 +1,18 @@
+\doxysection{win32\+\_\+\+Smart\+Pointer.\+h}
+\hypertarget{win32___smart_pointer_8h_source}{}\label{win32___smart_pointer_8h_source}\index{include/CxxWin/modules/Win32\_core/memory/win32\_SmartPointer.h@{include/CxxWin/modules/Win32\_core/memory/win32\_SmartPointer.h}}
+\mbox{\hyperlink{win32___smart_pointer_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ WIN32\_SMARTPOINTER\_H}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00021\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{win32___smart_pointer_8h_addcff46553dcb0ebaef1aef403cdda0b}{SafeRelease}}(T**\ ppT)}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordflow}{if}\ (*ppT)}
+\DoxyCodeLine{00024\ \ \ \ \ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ (*ppT)-\/>Release();}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ *ppT\ =\ NULL;}
+\DoxyCodeLine{00027\ \ \ \ \ \}}
+\DoxyCodeLine{00028\ \}}
+
+\end{DoxyCode}

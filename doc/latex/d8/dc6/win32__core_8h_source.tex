@@ -1,0 +1,44 @@
+\doxysection{win32\+\_\+core.\+h}
+\hypertarget{win32__core_8h_source}{}\label{win32__core_8h_source}\index{include/CxxWin/modules/Win32\_core/win32\_core.h@{include/CxxWin/modules/Win32\_core/win32\_core.h}}
+\mbox{\hyperlink{win32__core_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ \_WIN32\_CORE\_H\_}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{comment}{//\ \#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00015\ \textcolor{comment}{//\ extern\ "{}C"{}\ \{}}
+\DoxyCodeLine{00016\ \textcolor{comment}{//\ \#endif}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{comment}{//\ \#if\ defined(modules\_WIN32\_SHARED)}}
+\DoxyCodeLine{00019\ \textcolor{comment}{//\ \#if\ defined(modules\_WIN32\_EXPORTS)}}
+\DoxyCodeLine{00020\ \textcolor{comment}{//\ \#\ \ \ define\ modules\_EXPORT\ \_\_declspec(dllexport)}}
+\DoxyCodeLine{00021\ \textcolor{comment}{//\ \#else}}
+\DoxyCodeLine{00022\ \textcolor{comment}{//\ \#\ \ \ define\ modules\_EXPORT\ \_\_declspec(dllimport)}}
+\DoxyCodeLine{00023\ \textcolor{comment}{//\ \#endif}}
+\DoxyCodeLine{00024\ \textcolor{comment}{//\ \#else}}
+\DoxyCodeLine{00025\ \textcolor{comment}{//\ \#\ \ \ define\ modules\_EXPORT}}
+\DoxyCodeLine{00026\ \textcolor{comment}{//\ \#endif}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{comment}{//\ \#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00029\ \textcolor{comment}{//\ \}}}
+\DoxyCodeLine{00030\ \textcolor{comment}{//\ \#endif}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#include\ "{}system/win32\_TargetPlatform.h"{}}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{win32___basic_native_headers_8h}{native/win32\_BasicNativeHeaders.h}}"{}}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#ifdef\ \_\_PLATFORM\_IS\_WINDOWS}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#\ \ undef\ small}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{win32___standard_header_8h}{system/win32\_StandardHeader.h}}"{}}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{win32___smart_pointer_8h}{memory/win32\_SmartPointer.h}}"{}}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{win32___d_p_i_scale_8h}{window/win32\_DPIScale.h}}"{}}}
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{win32___base_window_8h}{window/win32\_BaseWindow.h}}"{}}}
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#include\ "{}window/win32\_MainWindow.h"{}}}
+\DoxyCodeLine{00047\ }
+
+\end{DoxyCode}

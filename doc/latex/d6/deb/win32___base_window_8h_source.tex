@@ -1,0 +1,99 @@
+\doxysection{win32\+\_\+\+Base\+Window.\+h}
+\hypertarget{win32___base_window_8h_source}{}\label{win32___base_window_8h_source}\index{include/CxxWin/modules/Win32\_core/window/win32\_BaseWindow.h@{include/CxxWin/modules/Win32\_core/window/win32\_BaseWindow.h}}
+\mbox{\hyperlink{win32___base_window_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ WIN32\_BASEWINDOW\_H}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ DERIVED\_TYPE>}
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_base_window}{BaseWindow}}}
+\DoxyCodeLine{00021\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_base_window_a60209fc8aa81ab0efa29263dabc52cbf}{BaseWindow}}()\ :\ \mbox{\hyperlink{class_base_window_a86f5232fa1bbb141f60548a42331fc7e}{m\_hwnd}}(NULL)}
+\DoxyCodeLine{00029\ \ \ \ \ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{static}\ LRESULT\ CALLBACK\ \mbox{\hyperlink{class_base_window_a61198ed120a54deccbd3e73221bf9c4d}{WindowProc}}(HWND\ hwnd,\ UINT\ uMsg,\ WPARAM\ wParam,\ LPARAM\ lParam)}
+\DoxyCodeLine{00045\ \ \ \ \ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ DERIVED\_TYPE\ *pThis\ =\ NULL;}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 'WM\_NC*'\ definitions\ refer\ to\ 'non-\/client'\ events,}}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ i.e.,\ mouse\ clicks\ outside\ of\ the\ app\ window.\ etc}}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (uMsg\ ==\ WM\_NCCREATE)}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ CREATESTRUCT*\ pCreate\ =\ (CREATESTRUCT*)lParam;}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ pThis\ =\ (DERIVED\_TYPE*)pCreate-\/>lpCreateParams;}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ SetWindowLongPtr(hwnd,\ GWLP\_USERDATA,\ (LONG\_PTR)pThis);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ pThis-\/>m\_hwnd\ =\ hwnd;}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ pThis\ =\ (DERIVED\_TYPE*)GetWindowLongPtr(hwnd,\ GWLP\_USERDATA);}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (pThis)}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ pThis-\/>HandleMessage(uMsg,\ wParam,\ lParam);}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ DefWindowProc(hwnd,\ uMsg,\ wParam,\ lParam);}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00071\ \ \ \ \ \}}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00087\ \ \ \ \ BOOL\ \mbox{\hyperlink{class_base_window_acfcb0a79ccf1f3780e353f24983b93bf}{Create}}(}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ PCWSTR\ lpWindowName,}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ DWORD\ dwStyle,}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ DWORD\ dwExStyle\ =\ 0,}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ x\ =\ CW\_USEDEFAULT,}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ y\ =\ CW\_USEDEFAULT,}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ nWidth\ =\ CW\_USEDEFAULT,}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ nHeight\ =\ CW\_USEDEFAULT,}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ HWND\ hWndParent\ =\ 0,}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ HMENU\ hMenu\ =\ 0}
+\DoxyCodeLine{00097\ \ \ \ \ )}
+\DoxyCodeLine{00098\ \ \ \ \ \{}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Initiate\ a\ window\ class}}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ WNDCLASS\ wc\ =\ \{0\};}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Enable\ mouse\ double-\/clicks\ on\ the\ window...}}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ wc.style\ =\ CS\_DBLCLKS;}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ wc.lpfnWndProc\ \ \ =\ DERIVED\_TYPE::WindowProc;}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ wc.hInstance\ \ \ \ \ =\ GetModuleHandle(NULL);}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ wc.lpszClassName\ =\ \mbox{\hyperlink{class_base_window_a76d1b80a812caf760c0efbed6e64b2e1}{ClassName}}();}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ RegisterClass(\&wc);}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_window_a86f5232fa1bbb141f60548a42331fc7e}{m\_hwnd}}\ =\ CreateWindowEx(}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ dwExStyle,}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_base_window_a76d1b80a812caf760c0efbed6e64b2e1}{ClassName}}(),}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ lpWindowName,}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ dwStyle,}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ x,}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ y,}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ nWidth,}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ nHeight,}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \ \ \ \ hWndParent,}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \ \ \ \ hMenu,}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \ \ GetModuleHandle(NULL),}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{this}}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{class_base_window_a86f5232fa1bbb141f60548a42331fc7e}{m\_hwnd}}\ ?\ TRUE\ :\ FALSE);}
+\DoxyCodeLine{00127\ \ \ \ \ \}}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00134\ \ \ \ \ HWND\ \mbox{\hyperlink{class_base_window_aa1507d2052aaec416ac8b085add33ba0}{Window}}()\ CONST\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_base_window_a86f5232fa1bbb141f60548a42331fc7e}{m\_hwnd}};\ \}}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00136\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00143\ \ \ \ \ \textcolor{keyword}{virtual}\ PCWSTR\ \ \mbox{\hyperlink{class_base_window_a76d1b80a812caf760c0efbed6e64b2e1}{ClassName}}()\ CONST\ PURE;}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00153\ \ \ \ \ virtual\ LRESULT\ \mbox{\hyperlink{class_base_window_a7612d6d879e60f4b7ded0cf0ac3dd8a9}{HandleMessage}}(UINT\ uMsg,\ WPARAM\ wParam,\ LPARAM\ lParam)\ PURE;}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00159\ \ \ \ \ HWND\ \mbox{\hyperlink{class_base_window_a86f5232fa1bbb141f60548a42331fc7e}{m\_hwnd}};}
+\DoxyCodeLine{00160\ \};}
+
+\end{DoxyCode}

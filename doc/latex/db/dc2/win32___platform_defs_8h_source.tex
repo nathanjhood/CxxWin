@@ -1,0 +1,26 @@
+\doxysection{win32\+\_\+\+Platform\+Defs.\+h}
+\hypertarget{win32___platform_defs_8h_source}{}\label{win32___platform_defs_8h_source}\index{include/CxxWin/modules/Win32\_core/system/win32\_PlatformDefs.h@{include/CxxWin/modules/Win32\_core/system/win32\_PlatformDefs.h}}
+\mbox{\hyperlink{win32___platform_defs_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{comment}{//==============================================================================}}
+\DoxyCodeLine{00040\ \textcolor{comment}{}\textcolor{preprocessor}{\#define\ \_\_DECLARE\_NON\_COPYABLE(className)\ \(\backslash\)}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\ \ \ \ className\ (const\ className\&)\ =\ delete;\(\backslash\)}}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\ \ \ \ className\&\ operator=\ (const\ className\&)\ =\ delete;}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#define\ \_\_DECLARE\_NON\_MOVEABLE(className)\ \(\backslash\)}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\ \ \ \ className\ (className\&\&)\ =\ delete;\(\backslash\)}}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\ \ \ \ className\&\ operator=\ (className\&\&)\ =\ delete;}}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#define\ \_\_DECLARE\_NON\_COPYABLE\_WITH\_LEAK\_DETECTOR(className)\ \(\backslash\)}}
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\ \ \ \ \_\_DECLARE\_NON\_COPYABLE(className)\ \(\backslash\)}}
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\ \ \ \ \_\_LEAK\_DETECTOR(className)}}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#define\ \_\_PREVENT\_HEAP\_ALLOCATION\ \(\backslash\)}}
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\ \ \ private:\ \(\backslash\)}}
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\ \ \ \ static\ void*\ operator\ new\ (size\_t)\ =\ delete;\ \(\backslash\)}}
+\DoxyCodeLine{00064\ \textcolor{preprocessor}{\ \ \ \ static\ void\ operator\ delete\ (void*)\ =\ delete;}}
+
+\end{DoxyCode}
