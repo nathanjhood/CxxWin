@@ -1,14 +1,14 @@
-#pragma once
-/**
+/***************************************************************************//**
  * @file win32_DPIScale.h
  * @author StoneyDSP (nathanjhood@googlemail.com)
- * @brief DPI Scale
+ * @brief Contains the 'DPIScale' class.
+ *
  * @version 1.0.0-init
  * @date 2023-08-25
  *
  * @copyright Copyright (c) 2023
  *
- */
+ ******************************************************************************/
 #define WIN32_DPISCALE_H
 
 /**

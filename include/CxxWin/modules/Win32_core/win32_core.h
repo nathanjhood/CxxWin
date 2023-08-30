@@ -11,40 +11,47 @@
  ******************************************************************************/
 #define _WIN32_CORE_H_
 
-#ifndef WINVER
-#  define WINVER 0x0A00 // _WIN32_WINNT_WINTHRESHOLD
-#endif
+// #ifdef __cplusplus
+// extern "C" {
+// #endif
 
-#ifndef _WIN32_WINNT
-#  define _WIN32_WINNT 0x0A00 // _WIN32_WINNT_WINTHRESHOLD
-#endif
+// #if defined(modules_WIN32_SHARED)
+// #if defined(modules_WIN32_EXPORTS)
+// #   define modules_EXPORT __declspec(dllexport)
+// #else
+// #   define modules_EXPORT __declspec(dllimport)
+// #endif
+// #else
+// #   define modules_EXPORT
+// #endif
 
-#ifdef D2D_USE_C_DEFINITIONS
-#  undef D2D_USE_C_DEFINITIONS
-#endif
-
-#include <windows.h>
-#include <windowsx.h>
-#include <d2d1.h>
-#pragma comment(lib, "d2d1")
-
-#include "memory/win32_SmartPointer.h"
+// #ifdef __cplusplus
+// }
+// #endif
 
 #include "system/win32_TargetPlatform.h"
 
-#include "window/win32_DPIScale.h"
+#include "native/win32_BasicNativeHeaders.h"
 
+#ifdef __PLATFORM_IS_WINDOWS
+#  undef small
+#endif
+
+#include "system/win32_StandardHeader.h"
+
+#include "memory/win32_SmartPointer.h"
+
+#include "window/win32_DPIScale.h"
 #include "window/win32_BaseWindow.h"
 #include "window/win32_MainWindow.h"
 
 /**
  * @brief The 'DPIScale' datatype.
- *
+ * typedef class DPIScale DPIScale;
  */
-typedef class DPIScale DPIScale;
+
 
 /**
  * @brief The 'MainWindow' datatype.
- *
+ * typedef class MainWindow MainWindow;
  */
-typedef class MainWindow MainWindow;

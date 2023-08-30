@@ -1,4 +1,3 @@
-#pragma once
 /**
  * @file Cxxwin/MainWindow.h
  * @author StoneyDSP (nathanjhood@googlemail.com)

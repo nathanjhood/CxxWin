@@ -1,8 +1,8 @@
-#pragma once
 /***************************************************************************//**
  * @file win32_BaseWindow.h
  * @author StoneyDSP (nathanjhood@googlemail.com)
  * @brief Contains the 'BaseWindow' interface.
+ *
  * @version 1.0.0-init
  * @date 2023-08-23
  *
