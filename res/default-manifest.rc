@@ -1,5 +1,16 @@
 #include <windows.h>
 
+#include <ole2.h>
+
+
+#include <winuser.rh>
+#include <commctrl.rh>
+#include <dde.rh>
+#include <winnt.rh>
+#include <dlgs.h>
+#include <winver.h>
+
+
 LANGUAGE 0, 0
 
 /* CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST MOVEABLE PURE DISCARDABLE */
