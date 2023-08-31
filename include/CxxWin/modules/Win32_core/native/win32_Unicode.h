@@ -35,7 +35,7 @@
 #define __TYPEDEF_UAW(type)	\
     typedef __NAME_UAW(type) type;
 
-#endif /* !defined(_INC_CRT_UNICODE_MACROS) */
+#endif /* !defined(_NEED_UNICODE) */
 
 /** The generic function prototype uses the data type LPCTSTR. */
 WINUSERAPI LPCTSTR WINAPI SetTst(LPCTSTR lpString) { return lpString; };
