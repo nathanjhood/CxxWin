@@ -11,6 +11,17 @@
 
 #pragma once
 
+/**
+ * Compiler support
+ *
+ */
+#if defined (__clang__)
+#elif defined (__GNUC__)
+#elif defined (_MSC_VER)
+#else
+#  error "Compiler unknown?"
+#endif
+
 #if defined(__clang__) && !defined(__ibxml__)
 
 #  define __C_COMPILER_IS_CLANG 1
@@ -68,7 +79,7 @@
  * Guard C code in headers, while including them from C++.
  *
  */
-#ifdef  __CPLUSPLUS
+#ifdef  __USING_CXX
 #  define __BEGIN_DECLS  extern "C" {
 #  define __END_DECLS    }
 #else
