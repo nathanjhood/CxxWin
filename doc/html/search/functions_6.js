@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pixelstodips_0',['PixelsToDips',['../d7/def/class_d_p_i_scale.html#ae59ec79121ae8a341ead48127e063dbd',1,'DPIScale']]]
+  ['maincomponent_0',['MainComponent',['../d2/d5e/class_main_component.html#a85254935b98beac9128189c6a577d7be',1,'MainComponent']]]
 ];

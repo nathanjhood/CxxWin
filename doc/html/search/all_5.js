@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['initialize_0',['Initialize',['../d7/def/class_d_p_i_scale.html#a73eed9079f664208ee120707b0dd59e8',1,'DPIScale']]]
+  ['getinterface_0',['getInterface',['../da/d00/class_smart_pointer.html#a698ca40a80fd57a62e769371505f2c78',1,'SmartPointer']]]
 ];

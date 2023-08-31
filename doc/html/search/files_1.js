@@ -9,5 +9,6 @@ var searchData=
   ['win32_5fdpiscale_2eh_6',['win32_DPIScale.h',['../d7/de0/win32___d_p_i_scale_8h.html',1,'']]],
   ['win32_5fplatformdefs_2eh_7',['win32_PlatformDefs.h',['../db/dc2/win32___platform_defs_8h.html',1,'']]],
   ['win32_5fsmartpointer_2eh_8',['win32_SmartPointer.h',['../db/d4a/win32___smart_pointer_8h.html',1,'']]],
-  ['win32_5fstandardheader_2eh_9',['win32_StandardHeader.h',['../dd/db7/win32___standard_header_8h.html',1,'']]]
+  ['win32_5fstandardheader_2eh_9',['win32_StandardHeader.h',['../dd/db7/win32___standard_header_8h.html',1,'']]],
+  ['win32_5funicode_2eh_10',['win32_Unicode.h',['../df/d8e/win32___unicode_8h.html',1,'']]]
 ];

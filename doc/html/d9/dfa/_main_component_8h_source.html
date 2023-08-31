@@ -120,25 +120,28 @@ $(function() {
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="../../d2/d5e/class_main_component.html#a7d3e5127fce1bd8fde64ada377c54852">   66</a></span>    ID2D1Factory*                       <a class="code hl_variable" href="../../d2/d5e/class_main_component.html#a7d3e5127fce1bd8fde64ada377c54852">pFactory</a>;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    ID2D1HwndRenderTarget*              pRenderTarget;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    ID2D1SolidColorBrush*               pBrush;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    ID2D1SolidColorBrush*               pBrushB;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    ID2D1SolidColorBrush*               pBrushC;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    D2D1_ELLIPSE                        ellipseA;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    D2D1_ELLIPSE                        ellipseB;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    D2D1_ELLIPSE                        ellipseC;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    D2D1_POINT_2F                       ptMouse;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>};</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">// IFileOpenDialog*                     pFileOpen;</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="comment">// SmartPointer&lt;IFileOpenDialog&gt;        pFileOpen;</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <a class="code hl_class" href="../../da/d00/class_smart_pointer.html">SmartPointer&lt;ID2D1Factory&gt;</a>          pFactory;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <a class="code hl_class" href="../../da/d00/class_smart_pointer.html">SmartPointer&lt;ID2D1HwndRenderTarget&gt;</a> pRenderTarget;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <a class="code hl_class" href="../../da/d00/class_smart_pointer.html">SmartPointer&lt;ID2D1SolidColorBrush&gt;</a>  *pBrush;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <a class="code hl_class" href="../../da/d00/class_smart_pointer.html">SmartPointer&lt;ID2D1SolidColorBrush&gt;</a>  pBrushB;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <a class="code hl_class" href="../../da/d00/class_smart_pointer.html">SmartPointer&lt;ID2D1SolidColorBrush&gt;</a>  pBrushC;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    D2D1_ELLIPSE                        ellipseA;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    D2D1_ELLIPSE                        ellipseB;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    D2D1_ELLIPSE                        ellipseC;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    D2D1_POINT_2F                       ptMouse;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>};</div>
 <div class="ttc" id="aclass_main_component_html"><div class="ttname"><a href="../../d2/d5e/class_main_component.html">MainComponent</a></div><div class="ttdoc">The 'MainComponent' class.</div><div class="ttdef"><b>Definition</b> MainComponent.h:41</div></div>
 <div class="ttc" id="aclass_main_component_html_a10413353888f65b0282eb32cf4a012ef"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a10413353888f65b0282eb32cf4a012ef">MainComponent::ClassName</a></div><div class="ttdeci">PCWSTR ClassName() CONST</div><div class="ttdef"><b>Definition</b> MainComponent.cpp:37</div></div>
 <div class="ttc" id="aclass_main_component_html_a28a911446776a6ea7777f0cde9960d16"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a28a911446776a6ea7777f0cde9960d16">MainComponent::HandleMessage</a></div><div class="ttdeci">LRESULT HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam)</div><div class="ttdoc">A typical window procedure is simply a large 'switch()' statement that switches on the 'uMsg' code.</div><div class="ttdef"><b>Definition</b> MainComponent.cpp:52</div></div>
-<div class="ttc" id="aclass_main_component_html_a7d3e5127fce1bd8fde64ada377c54852"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a7d3e5127fce1bd8fde64ada377c54852">MainComponent::pFactory</a></div><div class="ttdeci">ID2D1Factory * pFactory</div><div class="ttdoc">Pointer to an 'ID2D1Factory' struct.</div><div class="ttdef"><b>Definition</b> MainComponent.h:66</div></div>
 <div class="ttc" id="aclass_main_component_html_a85254935b98beac9128189c6a577d7be"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a85254935b98beac9128189c6a577d7be">MainComponent::MainComponent</a></div><div class="ttdeci">MainComponent()</div><div class="ttdoc">Construct a new 'MainComponent' object.</div><div class="ttdef"><b>Definition</b> MainComponent.cpp:18</div></div>
 <div class="ttc" id="aclass_main_component_html_a9dc97c9d3abef9e02c68956cf99e43da"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a9dc97c9d3abef9e02c68956cf99e43da">MainComponent::OnCreate</a></div><div class="ttdeci">HRESULT OnCreate()</div><div class="ttdef"><b>Definition</b> MainComponent.cpp:241</div></div>
 <div class="ttc" id="aclass_main_component_html_ad513e8d388d5e229c0d4850a7d09b5f0"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#ad513e8d388d5e229c0d4850a7d09b5f0">MainComponent::CreateGraphicsResources</a></div><div class="ttdeci">HRESULT CreateGraphicsResources()</div><div class="ttdef"><b>Definition</b> MainComponent.cpp:181</div></div>
 <div class="ttc" id="aclass_main_window_html"><div class="ttname"><a href="../../d9/dc6/class_main_window.html">MainWindow</a></div><div class="ttdoc">The 'MainWindow' class.</div><div class="ttdef"><b>Definition</b> win32_MainWindow.h:18</div></div>
+<div class="ttc" id="aclass_smart_pointer_html"><div class="ttname"><a href="../../da/d00/class_smart_pointer.html">SmartPointer</a></div><div class="ttdoc">The 'SmartPointer' class.</div><div class="ttdef"><b>Definition</b> win32_SmartPointer.h:20</div></div>
 <div class="ttc" id="awin32__core_8h_html"><div class="ttname"><a href="../../d8/dc6/win32__core_8h.html">win32_core.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

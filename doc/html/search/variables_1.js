@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pfactory_0',['pFactory',['../d2/d5e/class_main_component.html#a7d3e5127fce1bd8fde64ada377c54852',1,'MainComponent']]]
+  ['ptr_0',['ptr',['../da/d00/class_smart_pointer.html#aac6766043d71d6919260b32e3025f5ad',1,'SmartPointer']]]
 ];

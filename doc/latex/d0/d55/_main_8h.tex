@@ -17,7 +17,15 @@ Contains the declarations of \textquotesingle{}Main\textquotesingle{}.
 \item 
 \Hypertarget{_main_8h_ac11a9f698adda87a72e4d287beaabc5f}\label{_main_8h_ac11a9f698adda87a72e4d287beaabc5f} 
 int WINAPI {\bfseries Win\+Main} (HINSTANCE h\+Instance, HINSTANCE h\+Prev\+Instance, LPSTR lp\+Cmd\+Line, int n\+Show\+Cmd)
-\end{DoxyCompactItemize}
+\item 
+\Hypertarget{_main_8h_a36c9aedf8f8f6535fa510604a5be7ed6}\label{_main_8h_a36c9aedf8f8f6535fa510604a5be7ed6} 
+WINUSERAPI LPCTSTR WINAPI {\bfseries Set\+Tst} (LPCTSTR lp\+String)
+\begin{DoxyCompactList}\small\item\em The generic function prototype uses the data type LPCTSTR. \end{DoxyCompactList}\item 
+WINUSERAPI LPCSTR WINAPI \mbox{\hyperlink{_main_8h_adbd3ae3bd6712756d6247b486004ac85}{Set\+TstA}} (LPCSTR lp\+String)
+\begin{DoxyCompactList}\small\item\em The header file provides the generic function name implemented as a macro. \end{DoxyCompactList}\item 
+\Hypertarget{_main_8h_a2aadf2ca30086f4dbb0d0401607a2f51}\label{_main_8h_a2aadf2ca30086f4dbb0d0401607a2f51} 
+WINUSERAPI LPCWSTR WINAPI {\bfseries Set\+TstW} (LPCWSTR lp\+String)
+\begin{DoxyCompactList}\small\item\em The Unicode prototype uses the data type LPCWSTR. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -35,3 +43,21 @@ Stoney\+DSP (\href{mailto:nathanjhood@googlemail.com}{\texttt{ nathanjhood@googl
 \begin{DoxyCopyright}{Copyright}
 Copyright (c) 2023 
 \end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_main_8h_adbd3ae3bd6712756d6247b486004ac85}\label{_main_8h_adbd3ae3bd6712756d6247b486004ac85} 
+\index{Main.h@{Main.h}!SetTstA@{SetTstA}}
+\index{SetTstA@{SetTstA}!Main.h@{Main.h}}
+\doxysubsubsection{\texorpdfstring{SetTstA()}{SetTstA()}}
+{\footnotesize\ttfamily WINUSERAPI LPCSTR WINAPI Set\+TstA (\begin{DoxyParamCaption}\item[{LPCSTR}]{lp\+String }\end{DoxyParamCaption})}
+
+
+
+The header file provides the generic function name implemented as a macro. 
+
+The preprocessor expands the macro into either the Windows code page or Unicode function name. The letter \"{}\+A\"{} (ANSI) or \"{}\+W\"{} (Unicode) is added at the end of the generic function name, as appropriate. The header file then provides two specific prototypes, one for Windows code pages and one for Unicode.
+
+\#if defined(\+UNICODE) \#define Set\+Tst Set\+TstW \#else \#define Set\+Tst Set\+TstA \#endif
+
+\doxylink{}{\#define Set\+Tst \+\_\+\+\_\+\+NAME\+\_\+\+AW(\+Set\+Tst) The Windows code page prototype uses the data type LPCSTR. }
