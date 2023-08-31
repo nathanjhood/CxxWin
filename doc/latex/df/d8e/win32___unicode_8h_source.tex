@@ -1,0 +1,34 @@
+\doxysection{win32\+\_\+\+Unicode.\+h}
+\hypertarget{win32___unicode_8h_source}{}\label{win32___unicode_8h_source}\index{include/CxxWin/modules/Win32\_core/native/win32\_Unicode.h@{include/CxxWin/modules/Win32\_core/native/win32\_Unicode.h}}
+\mbox{\hyperlink{win32___unicode_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#if\ !defined(\_INC\_CRT\_UNICODE\_MACROS)}}
+\DoxyCodeLine{00013\ \textcolor{comment}{/*\ \_INC\_CRT\_UNICODE\_MACROS\ defined\ based\ on\ UNICODE\ flag\ */}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#if\ defined(UNICODE)}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#\ define\ \_INC\_CRT\_UNICODE\_MACROS\ 1}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#\ define\ \_\_NAME\_AW(func)\ func\#\#W}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#\ define\ \_\_NAME\_AW\_EXT(func,ext)\ func\#\#W\#\#ext}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#\ define\ \_\_NAME\_UAW(func)\ func\#\#\_W}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#\ define\ \_\_NAME\_UAW\_EXT(func,ext)\ func\#\#\_W\_\#\#ext}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#\ define\ \_\_STRING\_AW(str)\ L\#\#str\ \ \ \ }\textcolor{comment}{/*\ same\ as\ TEXT()\ from\ winnt.h\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#\ define\ \_\_PROCNAMEEXT\_AW\ "{}W"{}}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#\ define\ \_INC\_CRT\_UNICODE\_MACROS\ 2}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#\ define\ \_\_NAME\_AW(func)\ func\#\#A}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#\ define\ \_\_NAME\_AW\_EXT(func,ext)\ func\#\#A\#\#ext}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#\ define\ \_\_NAME\_UAW(func)\ func\#\#\_A}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#\ define\ \_\_NAME\_UAW\_EXT(func,ext)\ func\#\#\_A\_\#\#ext}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#\ define\ \_\_STRING\_AW(str)\ str\ \ \ }\textcolor{comment}{/*\ same\ as\ TEXT()\ from\ winnt.h\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#\ define\ \_\_PROCNAMEEXT\_AW\ "{}A"{}}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#define\ \_\_TYPEDEF\_AW(type)\ \ \(\backslash\)}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\ \ \ \ typedef\ \_\_NAME\_AW(type)\ type;}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#define\ \_\_TYPEDEF\_UAW(type)\ \(\backslash\)}}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\ \ \ \ typedef\ \_\_NAME\_UAW(type)\ type;}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !defined(\_INC\_CRT\_UNICODE\_MACROS)\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

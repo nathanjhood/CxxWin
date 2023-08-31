@@ -1,0 +1,310 @@
+\doxysection{Smart\+Pointer\texorpdfstring{$<$}{<} Com\+Class \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_smart_pointer}{}\label{class_smart_pointer}\index{SmartPointer$<$ ComClass $>$@{SmartPointer$<$ ComClass $>$}}
+
+
+The \textquotesingle{}\doxylink{class_smart_pointer}{Smart\+Pointer}\textquotesingle{} class.  
+
+
+
+
+{\ttfamily \#include $<$win32\+\_\+\+Smart\+Pointer.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_smart_pointer_af23b718566d4beddf609e63d1f278459}\label{class_smart_pointer_af23b718566d4beddf609e63d1f278459} 
+{\bfseries Smart\+Pointer} () noexcept
+\begin{DoxyCompactList}\small\item\em Default-\/construct a new \textquotesingle{}\doxylink{class_smart_pointer}{Smart\+Pointer}\textquotesingle{} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_smart_pointer_a97fa335bc801171776f623bbb92b4757}{Smart\+Pointer}} (Com\+Class \texorpdfstring{$\ast$}{*}obj)
+\begin{DoxyCompactList}\small\item\em Copy-\/\+Construct a new \textquotesingle{}\doxylink{class_smart_pointer}{Smart\+Pointer}\textquotesingle{} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_smart_pointer_a68ce3998e4b3ac9ffaca59064adfdb11}{Smart\+Pointer}} (\mbox{\hyperlink{class_smart_pointer}{Smart\+Pointer}} \&other)
+\begin{DoxyCompactList}\small\item\em Move-\/\+Construct a new \textquotesingle{}\doxylink{class_smart_pointer}{Smart\+Pointer}\textquotesingle{} object. \end{DoxyCompactList}\item 
+\Hypertarget{class_smart_pointer_a85bb3a40507619ca59672273ba90271d}\label{class_smart_pointer_a85bb3a40507619ca59672273ba90271d} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Smart\+Pointer} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \textquotesingle{}\doxylink{class_smart_pointer}{Smart\+Pointer}\textquotesingle{} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_smart_pointer_a1a542a4be21e5f557947e271f136063a}{operator Com\+Class \texorpdfstring{$\ast$}{*}}} () CONST noexcept
+\begin{DoxyCompactList}\small\item\em Conversion operator. \end{DoxyCompactList}\item 
+Com\+Class \& \mbox{\hyperlink{class_smart_pointer_a684cf8a7fadb2431ef8486fe166537d9}{operator\texorpdfstring{$\ast$}{*}}} () CONST noexcept
+\begin{DoxyCompactList}\small\item\em Conversion operator. \end{DoxyCompactList}\item 
+Com\+Class \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_smart_pointer_a01c7fb69b9c39d04e85e6990dd24c5e9}{operator-\/$>$}} () CONST noexcept
+\begin{DoxyCompactList}\small\item\em Conversion operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_smart_pointer}{Smart\+Pointer}} \& \mbox{\hyperlink{class_smart_pointer_a4f673e8467aec54e7978e49b5f069861}{operator=}} (Com\+Class \texorpdfstring{$\ast$}{*}const new\+Ptr)
+\begin{DoxyCompactList}\small\item\em Copy operator (pass-\/by-\/value). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_smart_pointer}{Smart\+Pointer}} \& \mbox{\hyperlink{class_smart_pointer_a644b2ef229ecdc6f0459b76a1ba46bb0}{operator=}} (const Com\+Class \&new\+Ptr)
+\begin{DoxyCompactList}\small\item\em Copy operator (const pass-\/by-\/reference). \end{DoxyCompactList}\item 
+Com\+Class \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_smart_pointer_a388d5622da034786e168895b1b936100}{reset\+And\+Get\+Address}} ()
+\begin{DoxyCompactList}\small\item\em Release and nullify this pointer, and return it\textquotesingle{}s memory address. \end{DoxyCompactList}\item 
+HRESULT \mbox{\hyperlink{class_smart_pointer_a04517d2b42a71842cb23a24186a4c88e}{Co\+Create\+Instance}} (REFCLSID class\+UUID, DWORD dw\+Cls\+Context=CLSCTX\+\_\+\+INPROC\+\_\+\+SERVER)
+\item 
+{\footnotesize template$<$class other\+Com\+Class $>$ }\\HRESULT \mbox{\hyperlink{class_smart_pointer_a4458f95c33d46be35a4ce0d3ed21be8d}{Query\+Interface}} (REFCLSID class\+UUID, \mbox{\hyperlink{class_smart_pointer}{Smart\+Pointer}}$<$ other\+Com\+Class $>$ \&dest\+Obj) CONST
+\begin{DoxyCompactList}\small\item\em Query the interface to the underlying object. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class other\+Com\+Class $>$ }\\HRESULT \mbox{\hyperlink{class_smart_pointer_ae8195378156382f79c9cbd10b18f961d}{Query\+Interface}} (\mbox{\hyperlink{class_smart_pointer}{Smart\+Pointer}}$<$ other\+Com\+Class $>$ \&dest\+Obj) CONST
+\begin{DoxyCompactList}\small\item\em Query the interface to the underlying object. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class other\+Com\+Class $>$ }\\\mbox{\hyperlink{class_smart_pointer}{Smart\+Pointer}}$<$ other\+Com\+Class $>$ \mbox{\hyperlink{class_smart_pointer_a698ca40a80fd57a62e769371505f2c78}{get\+Interface}} () CONST
+\begin{DoxyCompactList}\small\item\em Get an interface to the underlying object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_smart_pointer_a2bfb0ebe9f8d89c4c3158e752e66737f}\label{class_smart_pointer_a2bfb0ebe9f8d89c4c3158e752e66737f} 
+void {\bfseries release} ()
+\begin{DoxyCompactList}\small\item\em Call the templated object\textquotesingle{}s underlying \textquotesingle{}Release()\textquotesingle{} method, which must be implemented. \end{DoxyCompactList}\item 
+Com\+Class \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_smart_pointer_a9e700118998b3b6740c5cadbc38123d2}{operator\&}} () noexcept
+\begin{DoxyCompactList}\small\item\em Conversion operator (innaccessible). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_smart_pointer_aac6766043d71d6919260b32e3025f5ad}\label{class_smart_pointer_aac6766043d71d6919260b32e3025f5ad} 
+Com\+Class \texorpdfstring{$\ast$}{*} {\bfseries ptr} = nullptr
+\begin{DoxyCompactList}\small\item\em The underlying pointer member. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class Com\+Class$>$\newline
+class Smart\+Pointer$<$ Com\+Class $>$}
+The \textquotesingle{}\doxylink{class_smart_pointer}{Smart\+Pointer}\textquotesingle{} class. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Com\+Class} & \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_smart_pointer_a97fa335bc801171776f623bbb92b4757}\label{class_smart_pointer_a97fa335bc801171776f623bbb92b4757} 
+\index{SmartPointer$<$ ComClass $>$@{SmartPointer$<$ ComClass $>$}!SmartPointer@{SmartPointer}}
+\index{SmartPointer@{SmartPointer}!SmartPointer$<$ ComClass $>$@{SmartPointer$<$ ComClass $>$}}
+\doxysubsubsection{\texorpdfstring{SmartPointer()}{SmartPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Com\+Class $>$ \\
+\mbox{\hyperlink{class_smart_pointer}{Smart\+Pointer}}$<$ Com\+Class $>$\mbox{\hyperlink{class_smart_pointer}{\+::\+Smart\+Pointer}} (\begin{DoxyParamCaption}\item[{Com\+Class \texorpdfstring{$\ast$}{*}}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy-\/\+Construct a new \textquotesingle{}\doxylink{class_smart_pointer}{Smart\+Pointer}\textquotesingle{} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_smart_pointer_a68ce3998e4b3ac9ffaca59064adfdb11}\label{class_smart_pointer_a68ce3998e4b3ac9ffaca59064adfdb11} 
+\index{SmartPointer$<$ ComClass $>$@{SmartPointer$<$ ComClass $>$}!SmartPointer@{SmartPointer}}
+\index{SmartPointer@{SmartPointer}!SmartPointer$<$ ComClass $>$@{SmartPointer$<$ ComClass $>$}}
+\doxysubsubsection{\texorpdfstring{SmartPointer()}{SmartPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Com\+Class $>$ \\
+\mbox{\hyperlink{class_smart_pointer}{Smart\+Pointer}}$<$ Com\+Class $>$\mbox{\hyperlink{class_smart_pointer}{\+::\+Smart\+Pointer}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smart_pointer}{Smart\+Pointer}}$<$ Com\+Class $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move-\/\+Construct a new \textquotesingle{}\doxylink{class_smart_pointer}{Smart\+Pointer}\textquotesingle{} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_smart_pointer_a04517d2b42a71842cb23a24186a4c88e}\label{class_smart_pointer_a04517d2b42a71842cb23a24186a4c88e} 
+\index{SmartPointer$<$ ComClass $>$@{SmartPointer$<$ ComClass $>$}!CoCreateInstance@{CoCreateInstance}}
+\index{CoCreateInstance@{CoCreateInstance}!SmartPointer$<$ ComClass $>$@{SmartPointer$<$ ComClass $>$}}
+\doxysubsubsection{\texorpdfstring{CoCreateInstance()}{CoCreateInstance()}}
+{\footnotesize\ttfamily template$<$class Com\+Class $>$ \\
+HRESULT \mbox{\hyperlink{class_smart_pointer}{Smart\+Pointer}}$<$ Com\+Class $>$\+::\+Co\+Create\+Instance (\begin{DoxyParamCaption}\item[{REFCLSID}]{class\+UUID,  }\item[{DWORD}]{dw\+Cls\+Context = {\ttfamily CLSCTX\+\_\+INPROC\+\_\+SERVER} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em class\+UUID} & \\
+\hline
+{\em dw\+Cls\+Context} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+HRESULT 
+\end{DoxyReturn}
+\Hypertarget{class_smart_pointer_a698ca40a80fd57a62e769371505f2c78}\label{class_smart_pointer_a698ca40a80fd57a62e769371505f2c78} 
+\index{SmartPointer$<$ ComClass $>$@{SmartPointer$<$ ComClass $>$}!getInterface@{getInterface}}
+\index{getInterface@{getInterface}!SmartPointer$<$ ComClass $>$@{SmartPointer$<$ ComClass $>$}}
+\doxysubsubsection{\texorpdfstring{getInterface()}{getInterface()}}
+{\footnotesize\ttfamily template$<$class Com\+Class $>$ \\
+template$<$class other\+Com\+Class $>$ \\
+\mbox{\hyperlink{class_smart_pointer}{Smart\+Pointer}}$<$ other\+Com\+Class $>$ \mbox{\hyperlink{class_smart_pointer}{Smart\+Pointer}}$<$ Com\+Class $>$\+::get\+Interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get an interface to the underlying object. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em other\+Com\+Class} & \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+Smart\+Pointer$<$other\+Com\+Class$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_smart_pointer_a1a542a4be21e5f557947e271f136063a}\label{class_smart_pointer_a1a542a4be21e5f557947e271f136063a} 
+\index{SmartPointer$<$ ComClass $>$@{SmartPointer$<$ ComClass $>$}!operator ComClass \texorpdfstring{$\ast$}{*}@{operator ComClass \texorpdfstring{$\ast$}{*}}}
+\index{operator ComClass \texorpdfstring{$\ast$}{*}@{operator ComClass \texorpdfstring{$\ast$}{*}}!SmartPointer$<$ ComClass $>$@{SmartPointer$<$ ComClass $>$}}
+\doxysubsubsection{\texorpdfstring{operator ComClass \texorpdfstring{$\ast$}{*}()}{operator ComClass *()}}
+{\footnotesize\ttfamily template$<$class Com\+Class $>$ \\
+\mbox{\hyperlink{class_smart_pointer}{Smart\+Pointer}}$<$ Com\+Class $>$\+::operator Com\+Class \texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Conversion operator. 
+
+\begin{DoxyReturn}{Returns}
+Com\+Class\texorpdfstring{$\ast$}{*} 
+\end{DoxyReturn}
+\Hypertarget{class_smart_pointer_a9e700118998b3b6740c5cadbc38123d2}\label{class_smart_pointer_a9e700118998b3b6740c5cadbc38123d2} 
+\index{SmartPointer$<$ ComClass $>$@{SmartPointer$<$ ComClass $>$}!operator\&@{operator\&}}
+\index{operator\&@{operator\&}!SmartPointer$<$ ComClass $>$@{SmartPointer$<$ ComClass $>$}}
+\doxysubsubsection{\texorpdfstring{operator\&()}{operator\&()}}
+{\footnotesize\ttfamily template$<$class Com\+Class $>$ \\
+Com\+Class \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_smart_pointer}{Smart\+Pointer}}$<$ Com\+Class $>$\+::operator\& (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}, {\ttfamily [noexcept]}}
+
+
+
+Conversion operator (innaccessible). 
+
+\begin{DoxyReturn}{Returns}
+Com\+Class\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} 
+\end{DoxyReturn}
+\Hypertarget{class_smart_pointer_a684cf8a7fadb2431ef8486fe166537d9}\label{class_smart_pointer_a684cf8a7fadb2431ef8486fe166537d9} 
+\index{SmartPointer$<$ ComClass $>$@{SmartPointer$<$ ComClass $>$}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!SmartPointer$<$ ComClass $>$@{SmartPointer$<$ ComClass $>$}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}}
+{\footnotesize\ttfamily template$<$class Com\+Class $>$ \\
+Com\+Class \& \mbox{\hyperlink{class_smart_pointer}{Smart\+Pointer}}$<$ Com\+Class $>$\+::operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Conversion operator. 
+
+\begin{DoxyReturn}{Returns}
+Com\+Class\& 
+\end{DoxyReturn}
+\Hypertarget{class_smart_pointer_a01c7fb69b9c39d04e85e6990dd24c5e9}\label{class_smart_pointer_a01c7fb69b9c39d04e85e6990dd24c5e9} 
+\index{SmartPointer$<$ ComClass $>$@{SmartPointer$<$ ComClass $>$}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!SmartPointer$<$ ComClass $>$@{SmartPointer$<$ ComClass $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/$>$()}{operator->()}}
+{\footnotesize\ttfamily template$<$class Com\+Class $>$ \\
+Com\+Class \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_smart_pointer}{Smart\+Pointer}}$<$ Com\+Class $>$\+::operator-\/$>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Conversion operator. 
+
+\begin{DoxyReturn}{Returns}
+Com\+Class\texorpdfstring{$\ast$}{*} 
+\end{DoxyReturn}
+\Hypertarget{class_smart_pointer_a4f673e8467aec54e7978e49b5f069861}\label{class_smart_pointer_a4f673e8467aec54e7978e49b5f069861} 
+\index{SmartPointer$<$ ComClass $>$@{SmartPointer$<$ ComClass $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!SmartPointer$<$ ComClass $>$@{SmartPointer$<$ ComClass $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Com\+Class $>$ \\
+\mbox{\hyperlink{class_smart_pointer}{Smart\+Pointer}} \& \mbox{\hyperlink{class_smart_pointer}{Smart\+Pointer}}$<$ Com\+Class $>$\+::operator= (\begin{DoxyParamCaption}\item[{Com\+Class \texorpdfstring{$\ast$}{*}const}]{new\+Ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy operator (pass-\/by-\/value). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Ptr} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_smart_pointer}{Smart\+Pointer}\& 
+\end{DoxyReturn}
+\Hypertarget{class_smart_pointer_a644b2ef229ecdc6f0459b76a1ba46bb0}\label{class_smart_pointer_a644b2ef229ecdc6f0459b76a1ba46bb0} 
+\index{SmartPointer$<$ ComClass $>$@{SmartPointer$<$ ComClass $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!SmartPointer$<$ ComClass $>$@{SmartPointer$<$ ComClass $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Com\+Class $>$ \\
+\mbox{\hyperlink{class_smart_pointer}{Smart\+Pointer}} \& \mbox{\hyperlink{class_smart_pointer}{Smart\+Pointer}}$<$ Com\+Class $>$\+::operator= (\begin{DoxyParamCaption}\item[{const Com\+Class \&}]{new\+Ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy operator (const pass-\/by-\/reference). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Ptr} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_smart_pointer}{Smart\+Pointer}\& 
+\end{DoxyReturn}
+\Hypertarget{class_smart_pointer_a4458f95c33d46be35a4ce0d3ed21be8d}\label{class_smart_pointer_a4458f95c33d46be35a4ce0d3ed21be8d} 
+\index{SmartPointer$<$ ComClass $>$@{SmartPointer$<$ ComClass $>$}!QueryInterface@{QueryInterface}}
+\index{QueryInterface@{QueryInterface}!SmartPointer$<$ ComClass $>$@{SmartPointer$<$ ComClass $>$}}
+\doxysubsubsection{\texorpdfstring{QueryInterface()}{QueryInterface()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Com\+Class $>$ \\
+template$<$class other\+Com\+Class $>$ \\
+HRESULT \mbox{\hyperlink{class_smart_pointer}{Smart\+Pointer}}$<$ Com\+Class $>$\+::\+Query\+Interface (\begin{DoxyParamCaption}\item[{REFCLSID}]{class\+UUID,  }\item[{\mbox{\hyperlink{class_smart_pointer}{Smart\+Pointer}}$<$ other\+Com\+Class $>$ \&}]{dest\+Obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Query the interface to the underlying object. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em other\+Com\+Class} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em class\+UUID} & \\
+\hline
+{\em dest\+Obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+HRESULT 
+\end{DoxyReturn}
+\Hypertarget{class_smart_pointer_ae8195378156382f79c9cbd10b18f961d}\label{class_smart_pointer_ae8195378156382f79c9cbd10b18f961d} 
+\index{SmartPointer$<$ ComClass $>$@{SmartPointer$<$ ComClass $>$}!QueryInterface@{QueryInterface}}
+\index{QueryInterface@{QueryInterface}!SmartPointer$<$ ComClass $>$@{SmartPointer$<$ ComClass $>$}}
+\doxysubsubsection{\texorpdfstring{QueryInterface()}{QueryInterface()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Com\+Class $>$ \\
+template$<$class other\+Com\+Class $>$ \\
+HRESULT \mbox{\hyperlink{class_smart_pointer}{Smart\+Pointer}}$<$ Com\+Class $>$\+::\+Query\+Interface (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smart_pointer}{Smart\+Pointer}}$<$ other\+Com\+Class $>$ \&}]{dest\+Obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Query the interface to the underlying object. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em other\+Com\+Class} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em dest\+Obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+HRESULT 
+\end{DoxyReturn}
+\Hypertarget{class_smart_pointer_a388d5622da034786e168895b1b936100}\label{class_smart_pointer_a388d5622da034786e168895b1b936100} 
+\index{SmartPointer$<$ ComClass $>$@{SmartPointer$<$ ComClass $>$}!resetAndGetAddress@{resetAndGetAddress}}
+\index{resetAndGetAddress@{resetAndGetAddress}!SmartPointer$<$ ComClass $>$@{SmartPointer$<$ ComClass $>$}}
+\doxysubsubsection{\texorpdfstring{resetAndGetAddress()}{resetAndGetAddress()}}
+{\footnotesize\ttfamily template$<$class Com\+Class $>$ \\
+Com\+Class \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_smart_pointer}{Smart\+Pointer}}$<$ Com\+Class $>$\+::reset\+And\+Get\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Release and nullify this pointer, and return it\textquotesingle{}s memory address. 
+
+\begin{DoxyReturn}{Returns}
+Com\+Class\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Cxx\+Win/modules/\+Win32\+\_\+core/memory/\mbox{\hyperlink{win32___smart_pointer_8h}{win32\+\_\+\+Smart\+Pointer.\+h}}\end{DoxyCompactItemize}
