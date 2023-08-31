@@ -57,12 +57,9 @@ public:
 
 private:
 
-    /**
-     * @brief Pointer to an 'ID2D1Factory' struct.
-     *
-     * @headerfile d2d1.h
-     *
-     */
+    // IFileOpenDialog*                     pFileOpen;
+    // SmartPointer<IFileOpenDialog>        pFileOpen;
+
     ID2D1Factory*                       pFactory;
     ID2D1HwndRenderTarget*              pRenderTarget;
     ID2D1SolidColorBrush*               pBrush;
