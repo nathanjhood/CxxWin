@@ -77,11 +77,11 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a href="../../df/d8e/win32___unicode_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#if !defined(_INC_CRT_UNICODE_MACROS)</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">/* _INC_CRT_UNICODE_MACROS defined based on UNICODE flag */</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#if !defined(_NEED_UNICODE)</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">/* _NEED_UNICODE defined based on UNICODE flag */</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#if defined(UNICODE)</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor"># define _INC_CRT_UNICODE_MACROS 1</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor"># define _NEED_UNICODE 1</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor"># define __NAME_AW(func) func##W</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor"># define __NAME_AW_EXT(func,ext) func##W##ext</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor"># define __NAME_UAW(func) func##_W</span></div>
@@ -89,7 +89,7 @@ $(function() {
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor"># define __STRING_AW(str) L##str    </span><span class="comment">/* same as TEXT() from winnt.h */</span><span class="preprocessor"></span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor"># define __PROCNAMEEXT_AW &quot;W&quot;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor"># define _INC_CRT_UNICODE_MACROS 2</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor"># define _NEED_UNICODE 2</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor"># define __NAME_AW(func) func##A</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor"># define __NAME_AW_EXT(func,ext) func##A##ext</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor"># define __NAME_UAW(func) func##_A</span></div>
@@ -103,7 +103,21 @@ $(function() {
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#define __TYPEDEF_UAW(type) \</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">    typedef __NAME_UAW(type) type;</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#endif </span><span class="comment">/* !defined(_INC_CRT_UNICODE_MACROS) */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#endif </span><span class="comment">/* !defined(_NEED_UNICODE) */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../df/d8e/win32___unicode_8h.html#a36c9aedf8f8f6535fa510604a5be7ed6">   41</a></span>WINUSERAPI LPCTSTR WINAPI <a class="code hl_define" href="../../df/d8e/win32___unicode_8h.html#ab6d84b3c78034bf55156f442d1346d6a">SetTst</a>(LPCTSTR lpString) { <span class="keywordflow">return</span> lpString; };</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">auto</span> unicodeTstA = <a class="code hl_define" href="../../df/d8e/win32___unicode_8h.html#ab6d84b3c78034bf55156f442d1346d6a">SetTst</a>(TEXT(<span class="stringliteral">&quot;Calling original function&quot;</span>));</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../df/d8e/win32___unicode_8h.html#ab6d84b3c78034bf55156f442d1346d6a">   62</a></span><span class="preprocessor">#define SetTst __NAME_AW(SetTst)</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="../../df/d8e/win32___unicode_8h.html#adbd3ae3bd6712756d6247b486004ac85">   65</a></span>WINUSERAPI LPCSTR WINAPI <a class="code hl_function" href="../../df/d8e/win32___unicode_8h.html#adbd3ae3bd6712756d6247b486004ac85">SetTstA</a>(LPCSTR lpString) { <span class="keywordflow">return</span> lpString; };</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="../../df/d8e/win32___unicode_8h.html#a2aadf2ca30086f4dbb0d0401607a2f51">   67</a></span>WINUSERAPI LPCWSTR WINAPI <a class="code hl_function" href="../../df/d8e/win32___unicode_8h.html#a2aadf2ca30086f4dbb0d0401607a2f51">SetTstW</a>(LPCWSTR lpString) { <span class="keywordflow">return</span> lpString; };</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keyword">auto</span> unicodeTstB = <a class="code hl_define" href="../../df/d8e/win32___unicode_8h.html#ab6d84b3c78034bf55156f442d1346d6a">SetTst</a>(TEXT(<span class="stringliteral">&quot;Calling corrected function&quot;</span>));</div>
+<div class="ttc" id="awin32___unicode_8h_html_a2aadf2ca30086f4dbb0d0401607a2f51"><div class="ttname"><a href="../../df/d8e/win32___unicode_8h.html#a2aadf2ca30086f4dbb0d0401607a2f51">SetTstW</a></div><div class="ttdeci">WINUSERAPI LPCWSTR WINAPI SetTstW(LPCWSTR lpString)</div><div class="ttdoc">The Unicode prototype uses the data type LPCWSTR.</div><div class="ttdef"><b>Definition</b> win32_Unicode.h:67</div></div>
+<div class="ttc" id="awin32___unicode_8h_html_ab6d84b3c78034bf55156f442d1346d6a"><div class="ttname"><a href="../../df/d8e/win32___unicode_8h.html#ab6d84b3c78034bf55156f442d1346d6a">SetTst</a></div><div class="ttdeci">#define SetTst</div><div class="ttdoc">The header file provides the generic function name implemented as a macro.</div><div class="ttdef"><b>Definition</b> win32_Unicode.h:62</div></div>
+<div class="ttc" id="awin32___unicode_8h_html_adbd3ae3bd6712756d6247b486004ac85"><div class="ttname"><a href="../../df/d8e/win32___unicode_8h.html#adbd3ae3bd6712756d6247b486004ac85">SetTstA</a></div><div class="ttdeci">WINUSERAPI LPCSTR WINAPI SetTstA(LPCSTR lpString)</div><div class="ttdoc">The Windows code page prototype uses the data type LPCSTR.</div><div class="ttdef"><b>Definition</b> win32_Unicode.h:65</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
