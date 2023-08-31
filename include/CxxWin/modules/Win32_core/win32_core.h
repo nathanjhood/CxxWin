@@ -38,6 +38,7 @@
 #endif
 
 #include "system/win32_StandardHeader.h"
+#include "native/win32_Unicode.h"
 
 #include "memory/win32_SmartPointer.h"
 
