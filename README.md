@@ -19,9 +19,11 @@ The examples given in the MSDN documentation have here been both modernized, and
 
 The codebase automatically calls on the correct charset (think "ANSI" or "Unicode") for the build environment, pulls in the required header sets, and links itself to the required system libraries, thanks to modern compiler feature detection macros.
 
-In principle, the codebase is structured such that the Win32-based code is layered into subsets of modules, primarily containing headers that define classes and helper functions that your project should inherit (using OOP and COM - see the docs linked above) in a local project-level set of files.
+Additionally, a 'high DPI aware manifest' is embedded into the application definition file, along with further compiler-level specifications to embed the application with some backwards compatibility for pre- Windows 7 environments. Modern compiler and language features automatically link the codebase with it's required system libraries and headers based on system platform, architecture, and other environmental features. Many portability and reusability features are coded in, meaning a lower dependency on buildsystems and less complex "configure/compile/build/link" runs. Some common build scripts are included to demonstrate this
 
 ## How it works
+
+In principle, the codebase is structured such that the Win32-based code is layered into subsets of modules, primarily containing headers that define classes and helper functions that your project should inherit (using OOP and COM - see the docs linked above) in a local project-level set of files.
 
 For this purposes of this demo project, the "local project" files are located at the root of the '/include/(projectName)/' directory, and are as follows:
 
@@ -29,9 +31,13 @@ For this purposes of this demo project, the "local project" files are located at
 
     These two files declare and define (respectively) your project's 'main window' and it's functionality, it's contents, and it's behaviour. The class is named 'MainComponent', and inherits from both the 'MainWindow' and, in turn, the 'BaseWindow' classes. The 'DPIScale' class is also utilized here; a pair of static members of 'DPIScale' are initialized and utilized as co-ordinates for our 'main window'. A 'SmartPointer' class (plus some helpers) is also used to handle the critical safe allocation and de-allocation of our handles on system-level memory resources, such as keyboard and mouse input.
 
+    This part of the codebase will typically be compiled into a binary library file, such as a '.dll'. Other binaries can then link to it, providing access to it's contents to the linkee.
+
 - WinMain.h, WinMain.cpp
 
-    These two files declare and define (respectively) your project's 'runtime entry point' - this code is essentially the interface for the resulting '*.exe' file itself and what happens when you launch that file. As you might expect, it *includes* the 'MainComponent' files (the code for the main window) using the usual preprocessor include directive. However, all of the main window's behaviour shall remain in it's own files. The primary task of the 'WinMain' function is to handle "messages" in response to a well-defined set of user inputs, run a quick sanity check on the message, and either pass it to our 'MainComponent' for further processing (see the 'HandleMessage()' and 'WindowProc()' Window object functions), or safely resume it's current state. It is *critical* that all memory resources are free when this function ends (such as when the program is closed), which requires the use of 'SmartPointer' - type classes and functionality (such as 'std::unique_ptr' and friends provide for raw data types). Additionally, a 'high DPI aware manifest' is embedded into the definition file, along with further compiler-level specifications to embed the application with some backwards compatibility for pre- Windows 7 environments.
+    These two files declare and define (respectively) your project's 'runtime entry point' - this code is essentially the interface for the resulting '*.exe' file itself and what happens when you launch that file. As you might expect, it *includes* the 'MainComponent' files (the code for the main window) using the usual preprocessor include directive. However, all of the main window's behaviour shall remain in it's own files. The primary task of the 'WinMain' function is to handle "messages" in response to a well-defined set of user inputs, run a quick sanity check on the message, and either pass it to our 'MainComponent' for further processing (see the 'HandleMessage()' and 'WindowProc()' Window object functions), or safely resume it's current state. It is *critical* that all memory resources are free when this function ends (such as when the program is closed), which requires the use of 'SmartPointer' - type classes and functionality (such as 'std::unique_ptr' and friends provide for raw data types).
+
+    This part of the codebase will typically, but not always, be compiled into a binary executable file, such as a '.exe'. Remember that it *includes* the 'MainComponent.h' file using a single-line preprocessor directive, which makes *every symbol declaration and inlined function* in 'MainComponent.h' - *and* in it's own "include"s of other files - accessible to 'WinMain()'. In this scenario, any compiled library binaries associated with included header(s) will need to be linked with at the end of the building process, making the actual *definitions* of those included declarations also accessible (any definition that gets used by our application *needs* to be defined, somewhere, in order to be compiled into a translation unit for the linker to eventually link with).
 
 Any further additional functionality added to the project should likewise be declared and defined in it's own set of files, and included similarly - usually, you will probably just leave this pair of 'WinMain' files alone for the most part, and new files containing new functionality will probably find themeselves included elsewhere in your program, eventually reaching the 'WinMain' files via the already-defined inclusion of 'MainComponent'.
 
@@ -42,3 +48,13 @@ BONUS: check '/.vscode/tasks.json' for instructions on how to build on Windows w
 BONUS 2: Additional support for CMake builds, making the configure/build process as easy as two console commands. If attempting to build Win32 API apps with CMake using Msys64/MinGW toolchains, check <a href="https://github.com/StoneyDSP/msys2-toolchain.git">my MSYS2 toolchain helper</a> project.
 
 ## Thanks for reading!
+
+### References:
+
+- <a href="https://learn.microsoft.com/en-us/windows/win32/learnwin32/introduction-to-windows-programming-in-c--">MSDN documentation: Win32 API in C</a>
+
+- <a href="https://github.com/microsoft/Windows-classic-samples.git">Classic Windows programming samples</a>
+
+- <a href="https://github.com/juce-framework/JUCE.git">JUCE Framework</a>
+
+- <a href="https://www.msys2.org/docs/environments/">Msys64 subsystems</a>
