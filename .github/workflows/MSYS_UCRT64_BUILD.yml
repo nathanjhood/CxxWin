@@ -11,9 +11,9 @@ env:
   SOURCE_DIR: "D:/a/CxxWin/Cxxwin"
   MSYS_INSTALL_PATH: "D:/a/_temp/msys64"
   MSYS_TYPE: UCRT64
-  msys_type: ucrt64
-  MSYS_DIR: "${{ env.MSYS_INSTALL_PATH }}/${{ env.msys_type }}"
-  BINARY_DIR: "${{ env.SOURCE_DIR }}/out/${{ env.msys_type }}"
+  MSYS_T_LOWER: ucrt64
+  MSYS_DIR: "${{ env.MSYS_INSTALL_PATH }}/${{ env.MSYS_T_LOWER }}"
+  BINARY_DIR: "${{ env.SOURCE_DIR }}/out/${{ env.MSYS_T_LOWER }}"
 
 jobs:
   msys-ucrt64:
