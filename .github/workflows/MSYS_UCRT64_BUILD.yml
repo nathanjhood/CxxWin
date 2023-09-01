@@ -54,12 +54,12 @@ jobs:
         working-directory: ${{github.workspace}}
         # Configure CMake in a 'bin' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
         # See https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html?highlight=cmake_build_type
-        run: cmake -S $(cygpath -u "${{github.workspace}}") -DCMAKE_C_COMPILER:FILEPATH=x86_64-w64-mingw32-gcc.exe -DCMAKE_CXX_COMPILER:FILEPATH=x86_64-w64-mingw32-g++.exe -DCMAKE_RC_COMPILER:FILEPATH=windres.exe -DCMAKE_LINKER:FILEPATH=ld.exe -DCMAKE_MAKE_PROGRAM:FILEPATH=mingw32-make.exe -B $(cygpath -u "${{github.workspace}}\out\ucrt64") -DCMAKE_BUILD_TYPE:STRING=${{env.BUILD_TYPE}} -G "MinGW Makefiles"
+        run: /ucrt64/bin/cmake.exe -S $(cygpath -u "${{github.workspace}}") -DCMAKE_C_COMPILER:FILEPATH=x86_64-w64-mingw32-gcc.exe -DCMAKE_CXX_COMPILER:FILEPATH=x86_64-w64-mingw32-g++.exe -DCMAKE_RC_COMPILER:FILEPATH=windres.exe -DCMAKE_LINKER:FILEPATH=ld.exe -DCMAKE_MAKE_PROGRAM:FILEPATH=mingw32-make.exe -B $(cygpath -u "${{github.workspace}}\out\ucrt64") -DCMAKE_BUILD_TYPE:STRING=${{env.BUILD_TYPE}} -G "MinGW Makefiles"
       
       - name: Build
         working-directory: ${{github.workspace}}
         # Build your program with the given configuration
-        run: cmake --build $(cygpath -u "${{github.workspace}}\out\ucrt64")
+        run: /ucrt64/bin/cmake.exe --build $(cygpath -u "${{github.workspace}}\out\ucrt64")
 
       # - name: Test
       #   working-directory: ${{github.workspace}}/build/x64-windows
@@ -70,12 +70,12 @@ jobs:
       - name: Package Source
         working-directory: ${{github.workspace}}
         # Build your program with the given configuration
-        run: cpack --config $(cygpath -u "${{github.workspace}}\out\ucrt64\CPackSourceConfig.cmake")
+        run: /ucrt64/bin/cpack.exe --config $(cygpath -u "${{github.workspace}}\out\ucrt64\CPackSourceConfig.cmake")
 
       - name: Zip
         working-directory: ${{github.workspace}}
-        run: cpack -G ZIP --config $(cygpath -u "${{github.workspace}}\out\ucrt64\CPackSourceConfig.cmake")
+        run: /ucrt64/bin/cpack.exe -G ZIP --config $(cygpath -u "${{github.workspace}}\out\ucrt64\CPackSourceConfig.cmake")
 
       - name: Tar
         working-directory: ${{github.workspace}}
-        run: cpack -G TGZ --config $(cygpath -u "${{github.workspace}}\out\ucrt64\CPackSourceConfig.cmake")
+        run: /ucrt64/bin/cpack.exe -G TGZ --config $(cygpath -u "${{github.workspace}}\out\ucrt64\CPackSourceConfig.cmake")
