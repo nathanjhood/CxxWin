@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['saferelease_0',['SafeRelease',['../win32___smart_pointer_8h.html#af2a61687a5b06408434bd3187635b3e3',1,'win32_SmartPointer.h']]],
+  ['saferelease_0',['SafeRelease',['../win32___smart_pointer_8h.html#a53522409e1312cfaf53cebc29bff8008',1,'win32_SmartPointer.h']]],
   ['settst_1',['SetTst',['../win32___unicode_8h.html#ab6d84b3c78034bf55156f442d1346d6a',1,'SetTst:&#160;win32_Unicode.h'],['../win32___unicode_8h.html#a36c9aedf8f8f6535fa510604a5be7ed6',1,'SetTst(LPCTSTR lpString):&#160;win32_Unicode.h']]],
   ['settsta_2',['SetTstA',['../win32___unicode_8h.html#adbd3ae3bd6712756d6247b486004ac85',1,'win32_Unicode.h']]],
   ['settstw_3',['SetTstW',['../win32___unicode_8h.html#a2aadf2ca30086f4dbb0d0401607a2f51',1,'win32_Unicode.h']]],

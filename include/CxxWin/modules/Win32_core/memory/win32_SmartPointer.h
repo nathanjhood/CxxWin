@@ -343,11 +343,11 @@ public:
 /**
  * @brief
  *
- * @tparam CommClass
+ * @tparam ComClass
  * @param ptr
  */
-template <class CommClass>
-void SafeRelease(CommClass** ptr)
+template <class ComClass>
+void SafeRelease(ComClass** ptr)
 {
     if (*ptr)
     {
