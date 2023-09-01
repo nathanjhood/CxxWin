@@ -13,12 +13,8 @@
 /** Contains the declarations of 'MainComponent'. */
 #define _MAIN_COMPONENT_HPP_
 
-// #ifdef __cplusplus
-// extern "C" {
-// #endif
-
 #include "modules/Win32_core/win32_core.hpp"
-#include "modules/Win32_resource/win32_resource.hpp"
+// #include "modules/Win32_resource/win32_resource.hpp"
 
 /**
  * @brief The 'MainComponent' class.

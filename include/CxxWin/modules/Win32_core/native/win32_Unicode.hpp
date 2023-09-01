@@ -45,34 +45,3 @@
     typedef __NAME_UAW(type) type;
 
 #endif /* !defined(_NEED_UNICODE) */
-
-/** The generic function prototype uses the data type LPCTSTR. */
-WINUSERAPI LPCTSTR WINAPI SetTst(LPCTSTR lpString) { return lpString; };
-
-auto unicodeTstA = SetTst(TEXT("Calling original function"));
-
-/**
- * The header file provides the generic function name implemented as a macro.
- * The preprocessor expands the macro into either the Windows code page or
- * Unicode function name. The letter "A" (ANSI) or "W" (Unicode) is added at
- * the end of the generic function name, as appropriate. The header file then
- * provides two specific prototypes, one for Windows code pages and one for
- * Unicode.
- *
- * #if defined(UNICODE)
- * #define SetTst SetTstW
- * #else
- * #define SetTst SetTstA
- * #endif
- *
- * @link https://learn.microsoft.com/en-us/windows/win32/intl/conventions-for-function-prototypes
- *
- */
-#define SetTst __NAME_AW(SetTst)
-
-/** The Windows code page prototype uses the data type LPCSTR. */
-WINUSERAPI LPCSTR WINAPI SetTstA(LPCSTR lpString) { return lpString; };
-/** The Unicode prototype uses the data type LPCWSTR. */
-WINUSERAPI LPCWSTR WINAPI SetTstW(LPCWSTR lpString) { return lpString; };
-
-auto unicodeTstB = SetTst(TEXT("Calling corrected function"));

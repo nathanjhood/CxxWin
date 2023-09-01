@@ -18,9 +18,9 @@ get_source_info ()
 set (PROJECT_VERSION_TWEAK "${git_revision}")
 # set(PROJECT_VERSION_TWEAK "x")
 
-set (${PROJECT_NAME}_VERSION "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJECT_VERSION_PATCH}-${PROJECT_VERSION_TWEAK}" CACHE STRING "Value given to the ``VERSION`` option of the most recent call to the ``project()`` command, if any." FORCE)
-set (${PROJECT_NAME}_DESCRIPTION "A quick one-and-done Win32 API project implementing a COM blank application window for Windows platforms in C++." CACHE STRING "Short project description given to the project command." FORCE)
-set (${PROJECT_NAME}_HOMEPAGE_URL "https://github.com/StoneyDSP/CxxWin.git" CACHE STRING "The homepage URL of the project." FORCE)
+set (PROJECT_VERSION "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJECT_VERSION_PATCH}-${PROJECT_VERSION_TWEAK}" CACHE STRING "Value given to the ``VERSION`` option of the most recent call to the ``project()`` command, if any." FORCE)
+set (PROJECT_DESCRIPTION "A quick one-and-done Win32 API project implementing a COM blank application window for Windows platforms in C++." CACHE STRING "Short project description given to the project command." FORCE)
+set (PROJECT_HOMEPAGE_URL "https://github.com/StoneyDSP/CxxWin.git" CACHE STRING "The homepage URL of the project." FORCE)
 
 option (OPTION_SHARED_LIBS "Global flag to cause ``add_library()`` to create shared libraries if on." ON)
 
@@ -30,39 +30,106 @@ else ()
 	set (BUILD_SHARED_LIBS OFF CACHE BOOL "Global flag to cause ``add_library()`` to create shared libraries if on." FORCE)
 endif ()
 
-set(CMAKE_CXX_FLAGS "-DUNICODE -D_UNICODE -std=c++17 -ld2d1 -lcomctl32 -Wl,--subsystem,windows" CACHE
-STRING "" FORCE)
+#set(CMAKE_CXX_FLAGS "-DUNICODE -D_UNICODE -std=c++17 -ld2d1 -lcomctl32 -Wl,--subsystem,windows" CACHE STRING "" FORCE)
 
+#[===[.md
+Win32::Core
+]===]
 file(COPY
-    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/win32_core.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/win32_core.hpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/win32_core.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/win32_core.mm"
     DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core"
 )
 
+#[===[.md
+Win32::Core::Memory
+]===]
 file(COPY
-    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/native/win32_BasicNativeHeaders.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/memory/win32_SmartPointer.hpp"
+    DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/memory"
+)
+
+#[===[.md
+Win32::Core::Native
+]===]
+file(COPY
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/native/win32_BasicNativeHeaders.hpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/native/win32_Unicode.hpp"
     DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/native"
 )
 
+#[===[.md
+Win32::Core::System
+]===]
 file(COPY
-    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/window/win32_BaseWindow.h"
-    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/window/win32_DPIScale.h"
-    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/window/win32_MainWindow.h"
-    DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/window"
-)
-
-file(COPY
-    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/system/win32_CompilerSupport.h"
-    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/system/win32_PlatformDefs.h"
-    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/system/win32_StandardHeader.h"
-    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/system/win32_TargetPlatform.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/system/win32_CompilerSupport.hpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/system/win32_PlatformDefs.hpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/system/win32_StandardHeader.hpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/system/win32_TargetPlatform.hpp"
     DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/system"
 )
 
+#[===[.md
+Win32::Core::Window
+]===]
 file(COPY
-    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/memory/win32_SmartPointer.h"
-    DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/memory"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/window/win32_BaseWindow.hpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/window/win32_DPIScale.hpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_core/window/win32_MainWindow.hpp"
+    DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/window"
+)
+
+#[===[.md
+Win32::Resource
+]===]
+file(COPY
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_resource/win32_resource.hpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_resource/win32_resource.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_resource/win32_resource.mm"
+    DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_resource"
+)
+
+#[===[.md
+CMakeRC::
+]===]
+file(COPY
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_resource/cmrc.hpp"
+    DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_resource"
+)
+
+#[===[.md
+Win32::Resource::Img
+]===]
+file(COPY
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_resource/img/win32_png.hpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_resource/img/win32_ApplicationIcon_png.hpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_resource/img/win32_Logo_png.hpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_resource/img/win32_SmallLogo_png.hpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_resource/img/win32_SmallLogo44x44_png.hpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_resource/img/win32_SplashScreen_png.hpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_resource/img/win32_StoreLogo_png.hpp"
+    DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_resource/img"
+)
+
+#[===[.md
+Win32::Resource::Key
+]===]
+file(COPY
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_resource/key/win32_pfx.hpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/modules/Win32_resource/key/win32_Windows_TemporaryKey_pfx.hpp"
+    DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_resource/key"
+)
+
+add_compile_definitions (UNICODE _UNICODE)
+add_compile_options (
+    -municode
+    -mwindows
+    -Wl,--subsystem,windows
+)
+add_link_options (
+    -municode
+    -mwindows
 )
 
 add_library (library)
@@ -87,41 +154,49 @@ target_sources (library
             $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}>
             $<INSTALL_INTERFACE:include/${PROJECT_NAME}>
         FILES
-            # include/${PROJECT_NAME}/modules/Win32_core/system/win32_CompilerSupport.h"
-            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/system/win32_CompilerSupport.h>
-            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/modules/Win32_core/system/win32_CompilerSupport.h>
-
-            # include/${PROJECT_NAME}/modules/Win32_core/system/win32_PlatformDefs.h"
-            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/system/win32_PlatformDefs.h>
-            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/modules/Win32_core/system/win32_PlatformDefs.h>
+            # include/${PROJECT_NAME}/modules/Win32_core/memory/win32_SmartPointer.h
+            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/memory/win32_SmartPointer.hpp>
+            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/modules/Win32_core/memory/win32_SmartPointer.hpp>
 
             # include/${PROJECT_NAME}/modules/Win32_core/native/win32_BasicNativeHeaders.h
-            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/native/win32_BasicNativeHeaders.h>
-            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/modules/Win32_core/native/win32_BasicNativeHeaders.h>
+            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/native/win32_BasicNativeHeaders.hpp>
+            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/modules/Win32_core/native/win32_BasicNativeHeaders.hpp>
 
-            # include/${PROJECT_NAME}/modules/Win32_core/system/win32_TargetPlatform.h"
-            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/system/win32_TargetPlatform.h>
-            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/modules/Win32_core/system/win32_TargetPlatform.h>
+            # include/${PROJECT_NAME}/modules/Win32_core/native/win32_Unicode.h
+            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/native/win32_Unicode.hpp>
+            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/modules/Win32_core/native/win32_Unicode.hpp>
+
+            # include/${PROJECT_NAME}/modules/Win32_core/system/win32_CompilerSupport.h"
+            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/system/win32_CompilerSupport.hpp>
+            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/modules/Win32_core/system/win32_CompilerSupport.hpp>
+
+            # include/${PROJECT_NAME}/modules/Win32_core/system/win32_PlatformDefs.h"
+            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/system/win32_PlatformDefs.hpp>
+            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/modules/Win32_core/system/win32_PlatformDefs.hpp>
 
             # include/${PROJECT_NAME}/modules/Win32_core/system/win32_StandardHeader.h"
-            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/system/win32_StandardHeader.h>
-            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/modules/Win32_core/system/win32_StandardHeader.h>
+            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/system/win32_StandardHeader.hpp>
+            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/modules/Win32_core/system/win32_StandardHeader.hpp>
 
-            # include/${PROJECT_NAME}/modules/Win32_core/win32_core.h
-            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/win32_core.h>
-            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/modules/Win32_core/win32_core.h>
-
-            # include/${PROJECT_NAME}/modules/Win32_core/window/win32_DPIScale.h
-            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/window/win32_DPIScale.h>
-            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/modules/Win32_core/window/win32_DPIScale.h>
+            # include/${PROJECT_NAME}/modules/Win32_core/system/win32_TargetPlatform.h"
+            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/system/win32_TargetPlatform.hpp>
+            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/modules/Win32_core/system/win32_TargetPlatform.hpp>
 
             # include/${PROJECT_NAME}/modules/Win32_core/window/win32_BaseWindow.h
-            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/window/win32_BaseWindow.h>
-            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/modules/Win32_core/window/win32_BaseWindow.h>
+            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/window/win32_BaseWindow.hpp>
+            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/modules/Win32_core/window/win32_BaseWindow.hpp>
+
+            # include/${PROJECT_NAME}/modules/Win32_core/window/win32_DPIScale.h
+            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/window/win32_DPIScale.hpp>
+            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/modules/Win32_core/window/win32_DPIScale.hpp>
 
             # include/${PROJECT_NAME}/modules/Win32_core/window/win32_MainWindow.h
-            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/window/win32_MainWindow.h>
-            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/modules/Win32_core/window/win32_MainWindow.h>
+            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/window/win32_MainWindow.hpp>
+            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/modules/Win32_core/window/win32_MainWindow.hpp>
+
+            # include/${PROJECT_NAME}/modules/Win32_core/win32_core.h
+            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/modules/Win32_core/win32_core.hpp>
+            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/modules/Win32_core/win32_core.hpp>
 )
 
 target_sources (library
@@ -155,7 +230,9 @@ target_compile_features (library
 target_compile_options (library
 
 	PUBLIC
-        -municode -mwindows -Wl,--subsystem,windows
+        -municode
+        -mwindows
+        -Wl,--subsystem,windows
 )
 
 target_link_libraries (library
@@ -165,20 +242,25 @@ target_link_libraries (library
         comctl32
 )
 
-# target_sources (modules
+target_link_options (library
 
-#     PRIVATE
-#         "include/${PROJECT_NAME}/modules/Win32_core/win32_core.mm"
-#         # "include/${PROJECT_NAME}/modules/Win32_core/win32_core.cpp"
-#         # "include/${PROJECT_NAME}/modules/Win32_core/window/win32_MainWindow.cpp"
-#         # "include/${PROJECT_NAME}/modules/Win32_core/window/win32_BaseWindow.cpp"
-# )
+    PUBLIC
+        -municode
+        -mwindows
+)
 
 file(COPY
-    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/Main.h"
-    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/MainComponent.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/WinMain.hpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/MainComponent.hpp"
     DESTINATION
     "${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}"
+)
+
+file(COPY
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/WinMain.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/${PROJECT_NAME}/MainComponent.cpp"
+    DESTINATION
+    "${CMAKE_CURRENT_BINARY_DIR}/src/${PROJECT_NAME}"
 )
 
 add_executable (executable)
@@ -204,19 +286,19 @@ target_sources (executable
             $<INSTALL_INTERFACE:include/${PROJECT_NAME}>
         FILES
             # include/${PROJECT_NAME}/MainComponent.h
-            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/MainComponent.h>
-            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/MainComponent.h>
+            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/MainComponent.hpp>
+            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/MainComponent.hpp>
 
-            # include/${PROJECT_NAME}/main.h
-            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/Main.h>
-            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/Main.h>
+            # include/${PROJECT_NAME}/WinMain.h
+            $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include/${PROJECT_NAME}/WinMain.hpp>
+            $<INSTALL_INTERFACE:include/${PROJECT_NAME}/WinMain.hpp>
 )
 
 target_sources (executable
 
     PRIVATE
-        "include/${PROJECT_NAME}/MainComponent.cpp"
-        "include/${PROJECT_NAME}/Main.cpp"
+        "${CMAKE_CURRENT_BINARY_DIR}/src/${PROJECT_NAME}/MainComponent.cpp"
+        "${CMAKE_CURRENT_BINARY_DIR}/src/${PROJECT_NAME}/WinMain.cpp"
 )
 
 set_target_properties (executable
@@ -243,7 +325,9 @@ target_compile_features (executable
 target_compile_options (executable
 
 	PUBLIC
-        -municode -mwindows -Wl,--subsystem,windows
+        -municode
+        -mwindows
+        -Wl,--subsystem,windows
 )
 
 target_link_libraries (executable
@@ -252,6 +336,13 @@ target_link_libraries (executable
         ${PROJECT_NAME}::library
         d2d1
         comctl32
+)
+
+target_link_options (executable
+
+    PUBLIC
+        -municode
+        -mwindows
 )
 
 # Create targets to export
@@ -296,3 +387,75 @@ install (
 	DESTINATION
 	    "${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}"
 )
+
+
+
+#[===[.md
+
+---------------
+ CPACK
+---------------
+
+# include(JoinPaths)
+# join_paths(libdir_for_pc_file "\${exec_prefix}" "${CMAKE_INSTALL_LIBDIR}")
+# join_paths(includedir_for_pc_file "\${prefix}" "${CMAKE_INSTALL_INCLUDEDIR}/${PROJECT_NAME}")
+
+# # message(STATUS "Creating pkgconfig file...")
+# configure_file(
+#     ${PROJECT_SOURCE_DIR}/support/cmake/cmodule.pc.in
+#     ${PROJECT_BINARY_DIR}/lib/pkgconfig/${PROJECT_NAME_LOWER}.pc
+#     @ONLY
+# )
+# # message(STATUS "Created pkgconfig file at ${${PROJECT_NAME_UPPER}_PACKAGE_CONFIG}\n")
+
+
+#[===[.md
+
+Configure CPack.
+
+#]===]
+
+set(CPACK_PACKAGE_VENDOR "StoneyDSP")
+set(CPACK_PACKAGE_NAME "${PROJECT_NAME}-${PROJECT_VERSION}")
+set(CPACK_PACKAGE_FILE_NAME "${PROJECT_NAME}-${PROJECT_VERSION}-${CMAKE_SYSTEM_NAME}-${CMAKE_SYSTEM_PROCESSOR}") # Compiled binary distribution
+set(CPACK_SOURCE_PACKAGE_FILE_NAME "${PROJECT_NAME}-${PROJECT_VERSION}-Source") # No system spec as this is un-compiled source file distribution
+# set(CPACK_PACKAGE_CHECKSUM "${PROJECT_VENDOR}-${PROJECT_NAME}-${PROJECT_VERSION}")
+set(CPACK_PACKAGE_DESCRIPTION_SUMMARY ${PROJECT_DESCRIPTION})
+set(CPACK_PACKAGE_VERSION_MAJOR ${PROJECT_VERSION_MAJOR})
+set(CPACK_PACKAGE_VERSION_MINOR ${PROJECT_VERSION_VERSION_MINOR})
+set(CPACK_PACKAGE_VERSION_PATCH ${PROJECT_VERSION_VERSION_PATCH})
+set(CPACK_PACKAGE_VERSION_TWEAK ${PROJECT_VERSION_VERSION_TWEAK})
+set(CPACK_RESOURCE_FILE_LICENSE ${CMAKE_CURRENT_LIST_DIR}/LICENSE)
+set(CPACK_RESOURCE_FILE_README ${CMAKE_CURRENT_LIST_DIR}/README.md)
+set(CPACK_INCLUDE_TOPLEVEL_DIRECTORY OFF)
+set(CPACK_COMPONENT_INCLUDE_TOPLEVEL_DIRECTORY OFF)
+# set(CPACK_PACKAGE_DIRECTORY )
+set(CPACK_SOURCE_GENERATOR "TGZ;ZIP")
+set(CPACK_SOURCE_IGNORE_FILES
+    /.git/*
+    /.cmake
+    /.github
+    /.vs
+    /.vscode
+    /.cache
+    /.config
+    /.local
+    /bin
+    /lib
+    /usr
+    /out
+    /build
+    /Release
+    /Debug
+    /MinSizeRel
+    /RelWithDebInfo
+    /downloads
+    /installed
+    /node_modules
+    /vcpkg
+    /.*build.*
+    /package-lock.json
+    /yarn.lock
+    /\\\\.DS_Store
+)
+include(CPack)
