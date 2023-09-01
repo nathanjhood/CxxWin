@@ -8,15 +8,19 @@ env:
   # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
   CMAKE_CONFIGURATION_TYPES: Debug;Release;RelWithDebInfo;MinSizeRel
   CMAKE_BUILD_TYPE: Release
+  SOURCE_DIR: "D:/a/CxxWin/Cxxwin"
+  MSYS_INSTALL_PATH: "D:/a/_temp/msys64"
   MSYS_TYPE: UCRT64
-  SOURCE_DIR: D:\a\CxxWin\Cxxwin
+  msys_type: ucrt64
+  MSYS_DIR: "${{ env.MSYS_INSTALL_PATH }}/${{ env.msys_type }}"
+  BINARY_DIR: "${{ env.SOURCE_DIR }}/out/${{ env.msys_type }}"
 
 jobs:
   msys-ucrt64:
     runs-on: windows-latest
-    # defaults:
-    #  run:
-    #    shell: msys2 {0}
+    defaults:
+     run:
+       shell: msys2 {0}
     steps:
       - uses: actions/checkout@v3
       
@@ -53,12 +57,12 @@ jobs:
         working-directory: ${{ env.SOURCE_DIR }}
         # Configure CMake in a 'bin' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
         # See https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html?highlight=cmake_build_type
-        run: D:\a\_temp\msys64\ucrt64\bin\cmake.exe -S "${{ env.SOURCE_DIR }}" "-DCMAKE_C_COMPILER:FILEPATH=D:\a\_temp\msys64\ucrt64\bin\x86_64-w64-mingw32-gcc.exe" "-DCMAKE_CXX_COMPILER:FILEPATH=D:\a\_temp\msys64\ucrt64\bin\x86_64-w64-mingw32-g++.exe" "-DCMAKE_RC_COMPILER:FILEPATH=D:\a\_temp\msys64\ucrt64\bin\windres.exe" "-DCMAKE_LINKER:FILEPATH=D:\a\_temp\msys64\ucrt64\bin\ld.exe" "-DCMAKE_MAKE_PROGRAM:FILEPATH=D:\a\_temp\msys64\ucrt64\mingw32-make.exe" -B "${{ env.SOURCE_DIR }}\out\ucrt64" "-DCMAKE_BUILD_TYPE:STRING=${{env.BUILD_TYPE}}" -G "MinGW Makefiles"
+        run: ${{ env.MSYS_DIR }}/bin/cmake.exe -S "${{ env.SOURCE_DIR }}" "-DCMAKE_C_COMPILER:FILEPATH=${{ env.MSYS_DIR }}/bin/x86_64-w64-mingw32-gcc.exe" "-DCMAKE_CXX_COMPILER:FILEPATH=${{ env.MSYS_DIR }}/bin/x86_64-w64-mingw32-g++.exe" "-DCMAKE_RC_COMPILER:FILEPATH=${{ env.MSYS_DIR }}/bin/windres.exe" "-DCMAKE_LINKER:FILEPATH=${{ env.MSYS_DIR }}/bin/ld.exe" "-DCMAKE_MAKE_PROGRAM:FILEPATH=${{ env.MSYS_DIR }}/bin/mingw32-make.exe" -B "${{ env.BINARY_DIR }}" "-DCMAKE_BUILD_TYPE:STRING=${{env.BUILD_TYPE}}" -G "MinGW Makefiles"
       
       - name: Build
         working-directory: ${{ env.SOURCE_DIR }}
         # Build your program with the given configuration
-        run: D:\a\_temp\msys64\ucrt64\bin\cmake.exe --build "${{ env.SOURCE_DIR }}\out\ucrt64"
+        run: ${{ env.MSYS_DIR }}/bin/cmake.exe --build "${{ env.BINARY_DIR }}"
 
       # - name: Test
       #   working-directory: ${{github.workspace}}/build/x64-windows
@@ -69,12 +73,12 @@ jobs:
       - name: Package Source
         working-directory: ${{ env.SOURCE_DIR }}
         # Build your program with the given configuration
-        run: D:\a\_temp\msys64\ucrt64\bin\cpack.exe --config "${{ env.SOURCE_DIR }}\out\ucrt64\CPackSourceConfig.cmake"
+        run: ${{ env.MSYS_DIR }}/bin/cpack.exe --config "${{ env.BINARY_DIR }}/CPackSourceConfig.cmake"
 
       - name: Zip
         working-directory: ${{ env.SOURCE_DIR }}
-        run: D:\a\_temp\msys64\ucrt64\bin\cpack.exe -G ZIP --config "${{ env.SOURCE_DIR }}\out\ucrt64\CPackSourceConfig.cmake"
+        run: ${{ env.MSYS_DIR }}/bin/cpack.exe -G ZIP --config "${{ env.BINARY_DIR }}/CPackSourceConfig.cmake"
 
       - name: Tar
         working-directory: ${{ env.SOURCE_DIR }}
-        run: D:\a\_temp\msys64\ucrt64\bin\cpack.exe -G TGZ --config "${{ env.SOURCE_DIR }}\out\ucrt64\CPackSourceConfig.cmake"
+        run: ${{ env.MSYS_DIR }}/bin/cpack.exe -G TGZ --config "${{ env.BINARY_DIR }}/CPackSourceConfig.cmake"
