@@ -56,9 +56,7 @@ jobs:
 
       - name: Prepare Env
         working-directory: ${{ env.SOURCE_DIR }}
-        run: |
-          echo 'Sourcing env vars'
-          ./msystem.sh
+        run: source ${{ env.SOURCE_DIR }}/msystem.sh
 
       - name: Configure
         working-directory: ${{ env.SOURCE_DIR }}
