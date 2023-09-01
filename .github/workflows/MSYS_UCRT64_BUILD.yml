@@ -10,7 +10,7 @@ env:
   CMAKE_BUILD_TYPE: Debug
 
 jobs:
-  msys2-ucrt64:
+  msys-ucrt64:
     runs-on: windows-latest
     defaults:
       run:
@@ -30,7 +30,7 @@ jobs:
           # A directory to store and save the cache
           path: |
             ${{github.workspace}}\out\ucrt64
-            D:\a\_temp\setup-msys2\var\cache\pacman\pkg
+            $(cygpath -u "D:\a\_temp\setup-msys2\var\cache\pacman\pkg")
           # An explicit key for restoring and saving the cache
           key: ${{ runner.os }}-pacman-ucrt64
           # An ordered list of keys to use for restoring the cache if no cache hit occurred for key
@@ -43,7 +43,7 @@ jobs:
           # A directory to store and save the cache
           path: |
             $(cygpath -u "${{github.workspace}}\out\ucrt64")
-            D:\a\_temp\setup-msys2\var\cache\pacman\pkg
+            $(cygpath -u "D:\a\_temp\setup-msys2\var\cache\pacman\pkg")
           # An explicit key for restoring and saving the cache
           key: ${{ steps.cache-restore-pacman-ucrt64.outputs.cache-primary-key }}
           # An ordered list of keys to use for restoring the cache if no cache hit occurred for key
@@ -58,23 +58,23 @@ jobs:
       - name: Build
         working-directory: ${{github.workspace}}
         # Build your program with the given configuration
-        run: cmake --build ${{github.workspace}}/out/ucrt64 --config ${{env.BUILD_TYPE}} --target all
-
-      - name: Install
-        working-directory: ${{github.workspace}}
-        # Build your program with the given configuration
-        run: cpack --config $(cygpath -u "${{github.workspace}}\out\ucrt64\CPackSourceConfig.cmake")
+        run: cmake $(cygpath -u "${{github.workspace}}\out\ucrt64") --config ${{env.BUILD_TYPE}} --target all
 
       # - name: Test
       #   working-directory: ${{github.workspace}}/build/x64-windows
       #   # Execute tests defined by the CMake configuration.
       #   # See https://cmake.org/cmake/help/latest/manual/ctest.1.html for more detail
       #   run: ctest -C ${{env.BUILD_TYPE}}
+      
+      - name: Package Source
+        working-directory: ${{github.workspace}}
+        # Build your program with the given configuration
+        run: cpack --config $(cygpath -u "${{github.workspace}}\out\ucrt64\CPackSourceConfig.cmake")
 
       - name: Zip
         working-directory: ${{github.workspace}}
-        run: cpack -G ZIP --config ${{github.workspace}}/out/ucrt64
+        run: cpack -G ZIP --config $(cygpath -u "${{github.workspace}}\out\ucrt64\CPackSourceConfig.cmake")
 
       - name: Tar
         working-directory: ${{github.workspace}}
-        run: cpack -G TGZ --config ${{github.workspace}}/out/ucrt64
+        run: cpack -G TGZ --config $(cygpath -u "${{github.workspace}}\out\ucrt64\CPackSourceConfig.cmake")
