@@ -1,0 +1,57 @@
+name: msys_ucrt64_build
+
+on:
+  pull_request:
+    branches: [ "main", "develop" ]
+
+env:
+  # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
+  CMAKE_CONFIGURATION_TYPES: Debug;Release;RelWithDebInfo;MinSizeRel
+  CMAKE_BUILD_TYPE: Debug
+
+jobs:
+  msys2-ucrt64:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: msys2 {0}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: msys2/setup-msys2@v2
+        with:
+          msystem: UCRT64
+          update: true
+          install: git mingw-w64-ucrt-x86_64-toolchain
+      - name: CI-Build
+        run: |
+          echo 'Running in MSYS2!'
+
+      - name: Configure
+        working-directory: ${{github.workspace}}
+        # Configure CMake in a 'bin' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
+        # See https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html?highlight=cmake_build_type
+        run: cmake -S ${{github.workspace}} -DCMAKE_C_COMPILER:FILEPATH=x86_64-w64-mingw32-gcc.exe -DCMAKE_CXX_COMPILER:FILEPATH=x86_64-w64-mingw32-g++.exe -DCMAKE_RC_COMPILER:FILEPATH=windres.exe -DCMAKE_LINKER:FILEPATH=ld.exe -DCMAKE_MAKE_PROGRAM:FILEPATH=mingw32-make.exe -B ${{github.workspace}}/out/ucrt64 -DCMAKE_BUILD_TYPE:STRING=${{env.BUILD_TYPE}} -G "MinGW Makefiles"
+
+      - name: Build
+        working-directory: ${{github.workspace}}
+        # Build your program with the given configuration
+        run: cmake --build ${{github.workspace}}/out/ucrt64 --config ${{env.BUILD_TYPE}} --target all
+
+      - name: Install
+        working-directory: ${{github.workspace}}
+        # Build your program with the given configuration
+        run: cpack --config ${{github.workspace}}/out/ucrt64/CPackSourceConfig.cmake
+
+      # - name: Test
+      #   working-directory: ${{github.workspace}}/build/x64-windows
+      #   # Execute tests defined by the CMake configuration.
+      #   # See https://cmake.org/cmake/help/latest/manual/ctest.1.html for more detail
+      #   run: ctest -C ${{env.BUILD_TYPE}}
+
+      - name: Zip
+        working-directory: ${{github.workspace}}
+        run: cpack -G ZIP --config ${{github.workspace}}/out/ucrt64
+
+      - name: Tar
+        working-directory: ${{github.workspace}}
+        run: cpack -G TGZ --config ${{github.workspace}}/out/ucrt64
