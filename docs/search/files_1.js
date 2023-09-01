@@ -10,5 +10,7 @@ var searchData=
   ['win32_5fplatformdefs_2eh_7',['win32_PlatformDefs.h',['../win32___platform_defs_8h.html',1,'']]],
   ['win32_5fsmartpointer_2eh_8',['win32_SmartPointer.h',['../win32___smart_pointer_8h.html',1,'']]],
   ['win32_5fstandardheader_2eh_9',['win32_StandardHeader.h',['../win32___standard_header_8h.html',1,'']]],
-  ['win32_5funicode_2eh_10',['win32_Unicode.h',['../win32___unicode_8h.html',1,'']]]
+  ['win32_5funicode_2eh_10',['win32_Unicode.h',['../win32___unicode_8h.html',1,'']]],
+  ['winmain_2ecpp_11',['WinMain.cpp',['../_win_main_8cpp.html',1,'']]],
+  ['winmain_2eh_12',['WinMain.h',['../_win_main_8h.html',1,'']]]
 ];

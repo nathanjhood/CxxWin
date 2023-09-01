@@ -1,7 +1,7 @@
 /***************************************************************************//**
- * @file Main.cpp
+ * @file WinMain.cpp
  * @author StoneyDSP (nathanjhood@googlemail.com)
- * @brief Contains the definitions of 'Main'.
+ * @brief Contains the definitions of 'WinMain'.
  * @version 1.0.0-init
  * @date 2023-08-23
  *
@@ -9,7 +9,7 @@
  *
  ******************************************************************************/
 
-#include "Main.h"
+#include "WinMain.h"
 
 #if !defined(UNICODE) || !defined(_UNICODE)
 int WINAPI WinMain  (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd)

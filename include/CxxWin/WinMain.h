@@ -1,7 +1,7 @@
 /***************************************************************************//**
- * @file Main.h
+ * @file WinMain.h
  * @author StoneyDSP (nathanjhood@googlemail.com)
- * @brief Contains the declarations of 'Main'.
+ * @brief Contains the declarations of 'WinMain'.
  * @version 1.0.0-init
  * @date 2023-08-23
  *
@@ -10,7 +10,7 @@
  ******************************************************************************/
 
 #pragma once
-/** Contains the declarations of 'Main'. */
+/** Contains the declarations of 'WinMain'. */
 #define __MAIN_H
 
 

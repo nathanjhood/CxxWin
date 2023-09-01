@@ -12,5 +12,7 @@ var searchData=
   ['win32_5fstandardheader_2eh_9',['win32_StandardHeader.h',['../win32___standard_header_8h.html',1,'']]],
   ['win32_5funicode_2eh_10',['win32_Unicode.h',['../win32___unicode_8h.html',1,'']]],
   ['window_11',['Window',['../class_base_window.html#aa1507d2052aaec416ac8b085add33ba0',1,'BaseWindow']]],
-  ['windowproc_12',['WindowProc',['../class_base_window.html#a61198ed120a54deccbd3e73221bf9c4d',1,'BaseWindow']]]
+  ['windowproc_12',['WindowProc',['../class_base_window.html#a61198ed120a54deccbd3e73221bf9c4d',1,'BaseWindow']]],
+  ['winmain_2ecpp_13',['WinMain.cpp',['../_win_main_8cpp.html',1,'']]],
+  ['winmain_2eh_14',['WinMain.h',['../_win_main_8h.html',1,'']]]
 ];
