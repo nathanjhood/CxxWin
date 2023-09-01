@@ -5,7 +5,7 @@
  * @brief Provides some preprocessor feature detection handlers to attempt to
  * ascertain information about the build architecture and platform.
  *
- * @version 1.0.0-init
+ * @version 1.0.0
  * @date 2023-08-24
  *
  * @copyright Copyright (c) 2023

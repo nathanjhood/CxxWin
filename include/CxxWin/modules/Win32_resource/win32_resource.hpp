@@ -2,7 +2,7 @@
  * @file win32_resource.hpp
  * @author StoneyDSP (nathanjhood@googlemail.com)
  * @brief
- * @version 1.0.0-init
+ * @version 1.0.0
  * @date 2023-09-01
  *
  * @copyright

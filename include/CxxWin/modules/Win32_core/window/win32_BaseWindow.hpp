@@ -4,7 +4,7 @@
  *
  * @brief Contains the 'BaseWindow' interface.
  *
- * @version 1.0.0-init
+ * @version 1.0.0
  * @date 2023-08-23
  *
  * @copyright Copyright (c) 2023

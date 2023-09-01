@@ -1,8 +1,10 @@
 /***************************************************************************//**
  * @file WinMain.cpp
  * @author StoneyDSP (nathanjhood@googlemail.com)
+ *
  * @brief Contains the definitions of 'WinMain'.
- * @version 1.0.0-init
+ *
+ * @version 1.0.0
  * @date 2023-08-23
  *
  * @copyright Copyright (c) 2023

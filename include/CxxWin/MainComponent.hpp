@@ -2,7 +2,7 @@
  * @file MainComponent.hpp
  * @author StoneyDSP (nathanjhood@googlemail.com)
  * @brief Contains the declarations of 'MainComponent'.
- * @version 1.0.0-init
+ * @version 1.0.0
  * @date 2023-08-28
  *
  * @copyright Copyright (c) 2023
@@ -15,20 +15,6 @@
 
 // #ifdef __cplusplus
 // extern "C" {
-// #endif
-
-// #if defined(window_WIN32_SHARED)
-// #if defined(window_WIN32_EXPORTS)
-// #   define window_EXPORT __declspec(dllexport)
-// #else
-// #   define window_EXPORT __declspec(dllimport)
-// #endif
-// #else
-// #   define window_EXPORT
-// #endif
-
-// #ifdef __cplusplus
-// }
 // #endif
 
 #include "modules/Win32_core/win32_core.hpp"

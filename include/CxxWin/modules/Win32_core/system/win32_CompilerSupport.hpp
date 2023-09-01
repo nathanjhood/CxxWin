@@ -5,7 +5,7 @@
  * @brief Contains preprocessor definitions that attempt to detect compiler
  * information.
  *
- * @version 1.0.0-init
+ * @version 1.0.0
  * @date 2023-08-30
  *
  * @copyright Copyright (c) 2023

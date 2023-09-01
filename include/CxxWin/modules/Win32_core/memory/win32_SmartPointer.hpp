@@ -4,7 +4,7 @@
  *
  * @brief Contains the definition of a simple COM 'SmartPointer' class.
  *
- * @version 1.0.0-init
+ * @version 1.0.0
  * @date 2023-08-25
  *
  * @copyright  This file is part of the JUCE library.

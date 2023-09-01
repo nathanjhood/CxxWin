@@ -5,7 +5,7 @@
 # author StoneyDSP (nathanjhood@googlemail.com)
 # brief: 'windres.exe' is essentially a front-end for the preprocessor
 # with a definition - 'RC_INVOKED' - added to include 'ifdef'd code.
-# version 1.0.0-init
+# version 1.0.0
 # date 2023-08-23
 #
 # copyright Copyright (c) 2023

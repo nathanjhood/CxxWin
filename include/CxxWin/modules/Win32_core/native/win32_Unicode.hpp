@@ -5,7 +5,7 @@
  * @brief Provides preprocessor handling for switching the behaviour of some
  * important functions such as 'TEXT()', between 'ANSI' and 'Unicode' styles.
  *
- * @version 1.0.0-init
+ * @version 1.0.0
  * @date 2023-08-31
  *
  * @copyright Copyright (c) 2023

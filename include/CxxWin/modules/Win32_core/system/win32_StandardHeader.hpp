@@ -5,7 +5,7 @@
  * @brief Contains some standard definitions, functions, and includes familiar
  * to all supported platforms and architectures.
  *
- * @version 1.0.0-init
+ * @version 1.0.0
  * @date 2023-08-24
  *
  * @copyright Copyright (c) 2023

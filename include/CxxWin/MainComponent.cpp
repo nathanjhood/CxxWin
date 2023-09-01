@@ -2,14 +2,14 @@
  * @file MainComponent.cpp
  * @author StoneyDSP (nathanjhood@googlemail.com)
  * @brief Contains the definitions of 'MainComponent'.
- * @version 1.0.0-init
+ * @version 1.0.0
  * @date 2023-08-28
  *
  * @copyright Copyright (c) 2023
  *
  ******************************************************************************/
 
-#include "MainComponent.h"
+#include "MainComponent.hpp"
 
 /**
  * @brief Construct a new 'MainComponent' object.

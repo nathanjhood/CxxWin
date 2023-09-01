@@ -5,7 +5,7 @@
  * @brief Contains preprocessor definitions to declare classes and structs as
  * 'non-copyable', 'non-moveable', and to add a leak detector for debugging.
  *
- * @version 1.0.0-init
+ * @version 1.0.0
  * @date 2023-08-30
  *
  * @copyright Copyright (c) 2023

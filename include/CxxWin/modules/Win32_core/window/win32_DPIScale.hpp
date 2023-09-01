@@ -4,7 +4,7 @@
  *
  * @brief Contains the 'DPIScale' class.
  *
- * @version 1.0.0-init
+ * @version 1.0.0
  * @date 2023-08-25
  *
  * @copyright Copyright (c) 2023

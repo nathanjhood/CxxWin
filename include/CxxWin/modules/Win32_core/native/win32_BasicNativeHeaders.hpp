@@ -5,7 +5,7 @@
  * @brief Uses compiler feature detection macros to scan for and include required
  * system headers and libraries.
  *
- * @version 1.0.0-init
+ * @version 1.0.0
  * @date 2023-08-30
  *
  * @copyright Copyright (c) 2023

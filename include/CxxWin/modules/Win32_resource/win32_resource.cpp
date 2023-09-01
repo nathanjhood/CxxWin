@@ -2,7 +2,7 @@
  * @file win32_resource.cpp
  * @author StoneyDSP (nathanjhood@googlemail.com)
  * @brief
- * @version 1.0.0-init
+ * @version 1.0.0
  * @date 2023-09-01
  *
  * @copyright Copyright (c) 2023
@@ -10,7 +10,7 @@
  ******************************************************************************/
 
 #ifdef _WIN32_RESOURCE_H_
-#  error "Incorrect useage of .cpp file!"
+#  error "Incorrect useage of 'win32_resource.cpp' file!"
 #endif
 
 #include "win32_resource.hpp"

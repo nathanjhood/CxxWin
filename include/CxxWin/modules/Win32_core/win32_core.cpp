@@ -2,7 +2,7 @@
  * @file win32_core.cpp
  * @author StoneyDSP (nathanjhood@googlemail.com)
  * @brief
- * @version 1.0.0-init
+ * @version 1.0.0
  * @date 2023-08-24
  *
  * @copyright Copyright (c) 2023
@@ -10,29 +10,10 @@
  ******************************************************************************/
 
 #ifdef _WIN32_CORE_H_
-#  error "Incorrect useage of CPP file!"
+#  error "Incorrect useage of 'win32_core.cpp' file!"
 #endif
 
-#include "win32_core.h"
-
-// #ifndef WINVER
-// #  define WINVER 0x0A00
-// #endif
-
-// #ifndef _WIN32_WINNT
-// #  define _WIN32_WINNT 0x0A00
-// #endif
-
-// #ifdef D2D_USE_C_DEFINITIONS
-// #  undef D2D_USE_C_DEFINITIONS
-// #endif
-
-// #include <windows.h>
-// #include <windowsx.h>
-// #include <commctrl.h>
-// #include <d2d1.h>
-// #pragma comment(lib, "d2d1")
-
+#include "win32_core.hpp"
 
 #include <cctype>
 #include <cstdarg>
