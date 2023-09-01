@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['_5f_5fbegin_5fdecls_0',['__BEGIN_DECLS',['../win32___compiler_support_8h.html#a568e6bde99652b7fd271ad206cfe38f5',1,'win32_CompilerSupport.h']]],
+  ['_5f_5fcxx_5fcompiler_5fname_1',['__CXX_COMPILER_NAME',['../win32___compiler_support_8h.html#a1088043cdbd3ef615c4030d29cd5cded',1,'win32_CompilerSupport.h']]],
+  ['_5f_5fdeclare_5fnon_5fcopyable_2',['__DECLARE_NON_COPYABLE',['../win32___platform_defs_8h.html#a964d381579febb0cc83dcc69890beec0',1,'win32_PlatformDefs.h']]],
+  ['_5f_5fdeclare_5fnon_5fcopyable_5fwith_5fleak_5fdetector_3',['__DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR',['../win32___platform_defs_8h.html#a25195203b724562392caff0a9a74ba84',1,'win32_PlatformDefs.h']]],
+  ['_5f_5fdeclare_5fnon_5fmoveable_4',['__DECLARE_NON_MOVEABLE',['../win32___platform_defs_8h.html#adc9b0f127fefc464e5b4e704259c8ced',1,'win32_PlatformDefs.h']]],
+  ['_5f_5fhas_5fattribute_5',['__has_attribute',['../win32___standard_header_8h.html#a54d2d7742701f3f112afbcd8d4f9ccdb',1,'win32_StandardHeader.h']]],
+  ['_5f_5fprevent_5fheap_5fallocation_6',['__PREVENT_HEAP_ALLOCATION',['../win32___platform_defs_8h.html#aa48cf96123b508654d4c4e9a56e831cb',1,'win32_PlatformDefs.h']]],
+  ['_5f_5frc_5fresource_5ft_7',['__RC_RESOURCE_T',['../win32__resource_8hpp.html#a2e76c05ee6a9e027f414ed73d775ac84',1,'win32_resource.hpp']]],
+  ['_5f_5frc_5fresource_5ft_5fptr_8',['__RC_RESOURCE_T_PTR',['../win32__resource_8hpp.html#ac60ad59d611c5f6b55f27384e0a0183c',1,'win32_resource.hpp']]],
+  ['_5fmain_5fcomponent_5fhpp_5f_9',['_MAIN_COMPONENT_HPP_',['../_main_component_8hpp.html#af2a6f9782c805e3b834d63724be264a6',1,'MainComponent.hpp']]],
+  ['_5fwin32_5fresource_5fimg_5fapplication_5ficon_5fpng_5fhpp_5f_10',['_WIN32_RESOURCE_IMG_APPLICATION_ICON_PNG_HPP_',['../win32___application_icon__png_8hpp.html#a60d10ece0adf45e1e0484835187fec06',1,'win32_ApplicationIcon_png.hpp']]],
+  ['_5fwin32_5fresource_5fimg_5flogo_5fpng_5fh_5f_11',['_WIN32_RESOURCE_IMG_LOGO_PNG_H_',['../win32___logo__png_8hpp.html#a35fbc02181a8e672638f81fc92507069',1,'win32_Logo_png.hpp']]],
+  ['_5fwin32_5fresource_5fimg_5fsmall_5flogo_5f44x44_5fpng_5fh_5f_12',['_WIN32_RESOURCE_IMG_SMALL_LOGO_44X44_PNG_H_',['../win32___small_logo44x44__png_8hpp.html#a66cbdd7f21436963df66dffeda709b9e',1,'win32_SmallLogo44x44_png.hpp']]],
+  ['_5fwin32_5fresource_5fimg_5fsmall_5flogo_5fpng_5fh_5f_13',['_WIN32_RESOURCE_IMG_SMALL_LOGO_PNG_H_',['../win32___small_logo__png_8hpp.html#a059207ec4ff811c8f8669e739405505b',1,'win32_SmallLogo_png.hpp']]],
+  ['_5fwin32_5fresource_5fkey_5fpfx_5fh_5f_14',['_WIN32_RESOURCE_KEY_PFX_H_',['../win32__pfx_8hpp.html#a1480db072c39b460818b0690961368ca',1,'win32_pfx.hpp']]],
+  ['_5fwin32_5fresource_5fkey_5fwindows_5ftemporary_5fkey_5fpfx_5fhpp_5f_15',['_WIN32_RESOURCE_KEY_WINDOWS_TEMPORARY_KEY_PFX_HPP_',['../win32___windows___temporary_key__pfx_8hpp.html#a9146324ef890b65ce575c516a760cc1d',1,'win32_Windows_TemporaryKey_pfx.hpp']]],
+  ['_5fwinmain_5fhpp_5f_16',['_WINMAIN_HPP_',['../_win_main_8hpp.html#ac043de19782e10d161acc05fb100a427',1,'WinMain.hpp']]]
+];

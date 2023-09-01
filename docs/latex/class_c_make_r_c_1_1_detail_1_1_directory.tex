@@ -1,0 +1,122 @@
+\doxysection{CMake\+RC\+::Detail\+::Directory Class Reference}
+\hypertarget{class_c_make_r_c_1_1_detail_1_1_directory}{}\label{class_c_make_r_c_1_1_detail_1_1_directory}\index{CMakeRC::Detail::Directory@{CMakeRC::Detail::Directory}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator}{Iterator}}
+\begin{DoxyCompactList}\small\item\em The \textquotesingle{}\doxylink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator}{Iterator}\textquotesingle{} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_c_make_r_c_1_1_detail_1_1_directory_a4c195199ab78279ab571a8cf2dea871d}\label{class_c_make_r_c_1_1_detail_1_1_directory_a4c195199ab78279ab571a8cf2dea871d} 
+using {\bfseries Const\+Iterator} = \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator}{Iterator}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_c_make_r_c_1_1_detail_1_1_directory_a11b5d65496f7c6548acb3a021c52dab9}\label{class_c_make_r_c_1_1_detail_1_1_directory_a11b5d65496f7c6548acb3a021c52dab9} 
+{\bfseries Directory} ()=default
+\begin{DoxyCompactList}\small\item\em Construct a new \textquotesingle{}\doxylink{class_c_make_r_c_1_1_detail_1_1_directory}{Directory}\textquotesingle{} object. \end{DoxyCompactList}\item 
+\Hypertarget{class_c_make_r_c_1_1_detail_1_1_directory_a14df5ba2e753400f86921ee8d51978de}\label{class_c_make_r_c_1_1_detail_1_1_directory_a14df5ba2e753400f86921ee8d51978de} 
+{\bfseries Directory} (const \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory}{Directory}} \&)=delete
+\begin{DoxyCompactList}\small\item\em (inaccessible) Move-\/\+Construct a new \textquotesingle{}\doxylink{class_c_make_r_c_1_1_detail_1_1_directory}{Directory}\textquotesingle{} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_c_make_r_c_1_1_detail_1_1_created_sub_directory}{Created\+Sub\+Directory}} \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_a69a33c818bec9e2afb82de42aeb331df}{Add\+Sub\+Dir}} (std\+::string name) \&
+\item 
+\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory}{File\+Or\+Directory}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_a2d68a46ef296e1419b9284404dd7f6e8}{Add\+File}} (std\+::string name, \mbox{\hyperlink{win32__resource_8hpp_af13d0262d2bbd96845361a8cc0e0c268}{RCRESOURCEPTR}} begin, \mbox{\hyperlink{win32__resource_8hpp_af13d0262d2bbd96845361a8cc0e0c268}{RCRESOURCEPTR}} end) \&
+\item 
+const \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory}{File\+Or\+Directory}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_a1a37503b11b08f3267f6c33cee47fc23}{Get}} (const std\+::string \&path) const
+\item 
+\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator}{Iterator}} \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_ae1569fc4fb303b079330ca6f4241d2c2}{Begin}} () const noexcept
+\item 
+\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator}{Iterator}} \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_a3a51d595262bb6ca91f85b4e106b105f}{End}} () const noexcept
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_c_make_r_c_1_1_detail_1_1_directory_a9702671345e2a242f6f245987b5367fc}\label{class_c_make_r_c_1_1_detail_1_1_directory_a9702671345e2a242f6f245987b5367fc} 
+using {\bfseries Base\+Iterator} = std\+::map$<$ std\+::string, \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory}{File\+Or\+Directory}} $>$\+::const\+\_\+iterator
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_c_make_r_c_1_1_detail_1_1_directory_a3148cfe9eccc3819c5c15e2e1c3db8ac}\label{class_c_make_r_c_1_1_detail_1_1_directory_a3148cfe9eccc3819c5c15e2e1c3db8ac} 
+std\+::list$<$ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_data}{File\+Data}} $>$ {\bfseries \+\_\+files}
+\item 
+\Hypertarget{class_c_make_r_c_1_1_detail_1_1_directory_a23ae57416849fce4dfc61d24a43c61ce}\label{class_c_make_r_c_1_1_detail_1_1_directory_a23ae57416849fce4dfc61d24a43c61ce} 
+std\+::list$<$ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory}{Directory}} $>$ {\bfseries \+\_\+dirs}
+\item 
+\Hypertarget{class_c_make_r_c_1_1_detail_1_1_directory_abab781792e29a0f758f09fe378fe7aba}\label{class_c_make_r_c_1_1_detail_1_1_directory_abab781792e29a0f758f09fe378fe7aba} 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory}{File\+Or\+Directory}} $>$ {\bfseries \+\_\+index}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_c_make_r_c_1_1_detail_1_1_directory_a2d68a46ef296e1419b9284404dd7f6e8}\label{class_c_make_r_c_1_1_detail_1_1_directory_a2d68a46ef296e1419b9284404dd7f6e8} 
+\index{CMakeRC::Detail::Directory@{CMakeRC::Detail::Directory}!AddFile@{AddFile}}
+\index{AddFile@{AddFile}!CMakeRC::Detail::Directory@{CMakeRC::Detail::Directory}}
+\doxysubsubsection{\texorpdfstring{AddFile()}{AddFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory}{File\+Or\+Directory}} \texorpdfstring{$\ast$}{*} CMake\+RC\+::\+Detail\+::\+Directory\+::\+Add\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{\mbox{\hyperlink{win32__resource_8hpp_af13d0262d2bbd96845361a8cc0e0c268}{RCRESOURCEPTR}}}]{begin,  }\item[{\mbox{\hyperlink{win32__resource_8hpp_af13d0262d2bbd96845361a8cc0e0c268}{RCRESOURCEPTR}}}]{end }\end{DoxyParamCaption}) \&\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+{\em begin} & \\
+\hline
+{\em end} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+File\+Or\+Directory\texorpdfstring{$\ast$}{*} 
+\end{DoxyReturn}
+\Hypertarget{class_c_make_r_c_1_1_detail_1_1_directory_a69a33c818bec9e2afb82de42aeb331df}\label{class_c_make_r_c_1_1_detail_1_1_directory_a69a33c818bec9e2afb82de42aeb331df} 
+\index{CMakeRC::Detail::Directory@{CMakeRC::Detail::Directory}!AddSubDir@{AddSubDir}}
+\index{AddSubDir@{AddSubDir}!CMakeRC::Detail::Directory@{CMakeRC::Detail::Directory}}
+\doxysubsubsection{\texorpdfstring{AddSubDir()}{AddSubDir()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_make_r_c_1_1_detail_1_1_created_sub_directory}{Created\+Sub\+Directory}} CMake\+RC\+::\+Detail\+::\+Directory\+::\+Add\+Sub\+Dir (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption}) \&\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{struct_c_make_r_c_1_1_detail_1_1_created_sub_directory}{Created\+Sub\+Directory} 
+\end{DoxyReturn}
+\Hypertarget{class_c_make_r_c_1_1_detail_1_1_directory_ae1569fc4fb303b079330ca6f4241d2c2}\label{class_c_make_r_c_1_1_detail_1_1_directory_ae1569fc4fb303b079330ca6f4241d2c2} 
+\index{CMakeRC::Detail::Directory@{CMakeRC::Detail::Directory}!Begin@{Begin}}
+\index{Begin@{Begin}!CMakeRC::Detail::Directory@{CMakeRC::Detail::Directory}}
+\doxysubsubsection{\texorpdfstring{Begin()}{Begin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator}{Iterator}} CMake\+RC\+::\+Detail\+::\+Directory\+::\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator}{Iterator} 
+\end{DoxyReturn}
+\Hypertarget{class_c_make_r_c_1_1_detail_1_1_directory_a3a51d595262bb6ca91f85b4e106b105f}\label{class_c_make_r_c_1_1_detail_1_1_directory_a3a51d595262bb6ca91f85b4e106b105f} 
+\index{CMakeRC::Detail::Directory@{CMakeRC::Detail::Directory}!End@{End}}
+\index{End@{End}!CMakeRC::Detail::Directory@{CMakeRC::Detail::Directory}}
+\doxysubsubsection{\texorpdfstring{End()}{End()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator}{Iterator}} CMake\+RC\+::\+Detail\+::\+Directory\+::\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator}{Iterator} 
+\end{DoxyReturn}
+\Hypertarget{class_c_make_r_c_1_1_detail_1_1_directory_a1a37503b11b08f3267f6c33cee47fc23}\label{class_c_make_r_c_1_1_detail_1_1_directory_a1a37503b11b08f3267f6c33cee47fc23} 
+\index{CMakeRC::Detail::Directory@{CMakeRC::Detail::Directory}!Get@{Get}}
+\index{Get@{Get}!CMakeRC::Detail::Directory@{CMakeRC::Detail::Directory}}
+\doxysubsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory}{File\+Or\+Directory}} \texorpdfstring{$\ast$}{*} CMake\+RC\+::\+Detail\+::\+Directory\+::\+Get (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+const File\+Or\+Directory\texorpdfstring{$\ast$}{*} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Cxx\+Win/modules/\+Win32\+\_\+resource/\mbox{\hyperlink{cmrc_8hpp}{cmrc.\+hpp}}\end{DoxyCompactItemize}

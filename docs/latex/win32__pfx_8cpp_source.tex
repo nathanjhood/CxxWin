@@ -1,0 +1,46 @@
+\doxysection{win32\+\_\+pfx.\+cpp}
+\hypertarget{win32__pfx_8cpp_source}{}\label{win32__pfx_8cpp_source}\index{include/CxxWin/modules/Win32\_resource/key/win32\_pfx.cpp@{include/CxxWin/modules/Win32\_resource/key/win32\_pfx.cpp}}
+\mbox{\hyperlink{win32__pfx_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{win32__pfx_8hpp}{win32\_pfx.hpp}}"{}}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_c_make_r_c_1_1_key}{CMakeRC::Key}}}
+\DoxyCodeLine{00025\ \{}
+\DoxyCodeLine{00026\ \textcolor{keyword}{namespace}}
+\DoxyCodeLine{00027\ \{}
+\DoxyCodeLine{00033\ \textcolor{keyword}{const}\ IDXRES\&\ GetRootIndex()}
+\DoxyCodeLine{00034\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory}{CMakeRC::Detail::Directory}}\ root\_directory\_;}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory}{CMakeRC::Detail::FileOrDirectory}}\ root\_directory\_fod\{root\_directory\_\};}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{static}\ CMakeRC::Detail::IndexType\ root\_index;}
+\DoxyCodeLine{00038\ \ \ \ \ root\_index.emplace(\textcolor{stringliteral}{"{}"{}},\ \&root\_directory\_fod);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{struct\ }dir\_inl}
+\DoxyCodeLine{00041\ \ \ \ \ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory}{CMakeRC::Detail::Directory}}\&\ Directory;}
+\DoxyCodeLine{00043\ \ \ \ \ \};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ dir\_inl\ root\_directory\_dir\{root\_directory\_\};}
+\DoxyCodeLine{00046\ \ \ \ \ (void)root\_directory\_dir;}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ root\_index.emplace(}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Windows\_TemporaryKey.pfx"{}},}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ root\_directory\_dir.Directory.AddFile(}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Windows\_TemporaryKey.pfx"{}},}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_c_make_r_c_1_1_key_1_1_windows___temporary_key_a2c69701281426a4b05274544083e2eaa}{Windows\_TemporaryKey::Windows\_TemporaryKey\_pfx\_begin}},}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_c_make_r_c_1_1_key_1_1_windows___temporary_key_a05f95a7cbbe5563a026b239b4c040994}{Windows\_TemporaryKey::Windows\_TemporaryKey\_pfx\_end}}}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{00055\ \ \ \ \ );}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordflow}{return}\ root\_index;}
+\DoxyCodeLine{00057\ \}}
+\DoxyCodeLine{00058\ \}\ \textcolor{comment}{//\ namespace}}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00066\ FSEMBEDDED\ \mbox{\hyperlink{namespace_c_make_r_c_1_1_key_abec17c77f3a6bae3a6a946644079c963}{GetFileSystem}}()}
+\DoxyCodeLine{00067\ \{}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{auto}\&\ index\ =\ GetRootIndex();}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_make_r_c_1_1_embedded_file_system}{CMakeRC::EmbeddedFileSystem}}\{index\};}
+\DoxyCodeLine{00070\ \}}
+\DoxyCodeLine{00071\ \}\ \textcolor{comment}{//\ namespace\ CMakeRC::Key}}
+
+\end{DoxyCode}

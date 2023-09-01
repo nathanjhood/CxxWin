@@ -1,0 +1,20 @@
+\doxysection{Win\+Main.\+hpp}
+\hypertarget{_win_main_8hpp_source}{}\label{_win_main_8hpp_source}\index{include/CxxWin/WinMain.hpp@{include/CxxWin/WinMain.hpp}}
+\mbox{\hyperlink{_win_main_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ \_WINMAIN\_HPP\_}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_main_component_8hpp}{MainComponent.hpp}}"{}}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{comment}{//\ Switch\ entry\ point\ definition\ between\ 'ANSI'\ and\ 'Unicode'\ types.}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#if\ !defined(UNICODE)\ ||\ !defined(\_UNICODE)}}
+\DoxyCodeLine{00021\ \textcolor{keyword}{typedef}\ LPSTR\ LPCMDLINE;}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ WinMain\ WinMain}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00025\ \textcolor{keyword}{typedef}\ LPWSTR\ LPCMDLINE;}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ WinMain\ wWinMain}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ UNICODE}}
+
+\end{DoxyCode}
