@@ -21,7 +21,7 @@ jobs:
         with:
           msystem: UCRT64
           update: true
-          install: git mingw-w64-ucrt-x86_64-toolchain
+          install: git cmake make mingw-w64-ucrt-x86_64-gcc mingw-w64-ucrt-x86_64-cmake mingw-w64-ucrt-x86_64-make
       - name: CI-Build
         run: |
           echo 'Running in MSYS2!'
@@ -55,3 +55,13 @@ jobs:
       - name: Tar
         working-directory: ${{github.workspace}}
         run: cpack -G TGZ --config ${{github.workspace}}/out/ucrt64
+
+      - name: Cache
+        uses: actions/cache@v1.2.1
+        with:
+          # A directory to store and save the cache
+          path: ${{github.workspace}}/out/ucrt64
+          # An explicit key for restoring and saving the cache
+          key: ucrt64
+          # An ordered list of keys to use for restoring the cache if no cache hit occurred for key
+          # restore-keys: # optional
