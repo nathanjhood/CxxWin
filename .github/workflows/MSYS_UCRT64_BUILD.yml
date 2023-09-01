@@ -9,6 +9,7 @@ env:
   CMAKE_CONFIGURATION_TYPES: Debug;Release;RelWithDebInfo;MinSizeRel
   CMAKE_BUILD_TYPE: Release
   MSYS_TYPE: UCRT64
+  SOURCE_DIR: D:/a/CxxWin/Cxxwin
 
 jobs:
   msys-ucrt64:
@@ -49,15 +50,15 @@ jobs:
       #     # restore-keys: # optional
 
       - name: Configure
-        working-directory: ${{github.workspace}}
+        working-directory: ${{ env.SOURCE_DIR }}
         # Configure CMake in a 'bin' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
         # See https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html?highlight=cmake_build_type
-        run: D:/a/_temp/msys64/ucrt64/bin/cmake.exe -S ${{github.workspace}} -DCMAKE_C_COMPILER:FILEPATH=D:/a/_temp/msys64/ucrt64/bin/ucrt64/bin/x86_64-w64-mingw32-gcc.exe -DCMAKE_CXX_COMPILER:FILEPATH=D:/a/_temp/msys64/ucrt64/bin/ucrt64/bin/x86_64-w64-mingw32-g++.exe -DCMAKE_RC_COMPILER:FILEPATH=D:/a/_temp/msys64/ucrt64/bin/ucrt64/bin/windres.exe -DCMAKE_LINKER:FILEPATH=D:/a/_temp/msys64/ucrt64/bin/ucrt64/bin/ld.exe -DCMAKE_MAKE_PROGRAM:FILEPATH=D:/a/_temp/msys64/ucrt64/bin/ucrt64/bin/mingw32-make.exe -B ${{github.workspace}}/out/ucrt64 -DCMAKE_BUILD_TYPE:STRING=${{env.BUILD_TYPE}} -G "MinGW Makefiles"
+        run: D:/a/_temp/msys64/ucrt64/bin/cmake.exe -S "${{ env.SOURCE_DIR }}" "-DCMAKE_C_COMPILER:FILEPATH=D:/a/_temp/msys64/ucrt64/bin/ucrt64/bin/x86_64-w64-mingw32-gcc.exe" "-DCMAKE_CXX_COMPILER:FILEPATH=D:/a/_temp/msys64/ucrt64/bin/ucrt64/bin/x86_64-w64-mingw32-g++.exe" "-DCMAKE_RC_COMPILER:FILEPATH=D:/a/_temp/msys64/ucrt64/bin/ucrt64/bin/windres.exe" "-DCMAKE_LINKER:FILEPATH=D:/a/_temp/msys64/ucrt64/bin/ucrt64/bin/ld.exe" "-DCMAKE_MAKE_PROGRAM:FILEPATH=D:/a/_temp/msys64/ucrt64/bin/ucrt64/bin/mingw32-make.exe" -B "${{ env.SOURCE_DIR }}/out/ucrt64" "-DCMAKE_BUILD_TYPE:STRING=${{env.BUILD_TYPE}}" -G "MinGW Makefiles"
       
       - name: Build
-        working-directory: ${{github.workspace}}
+        working-directory: ${{ env.SOURCE_DIR }}
         # Build your program with the given configuration
-        run: D:/a/_temp/msys64/ucrt64/bin/ucrt64/bin/cmake.exe --build ${{github.workspace}}/out/ucrt64
+        run: D:/a/_temp/msys64/ucrt64/bin/ucrt64/bin/cmake.exe --build "${{ env.SOURCE_DIR }}/out/ucrt64"
 
       # - name: Test
       #   working-directory: ${{github.workspace}}/build/x64-windows
@@ -66,14 +67,14 @@ jobs:
       #   run: ctest -C ${{env.BUILD_TYPE}}
       
       - name: Package Source
-        working-directory: ${{github.workspace}}
+        working-directory: ${{ env.SOURCE_DIR }}
         # Build your program with the given configuration
-        run: D:/a/_temp/msys64/ucrt64/bin/ucrt64/bin/cpack.exe --config ${{github.workspace}}/out/ucrt64/CPackSourceConfig.cmake
+        run: D:/a/_temp/msys64/ucrt64/bin/ucrt64/bin/cpack.exe --config "${{ env.SOURCE_DIR }}/out/ucrt64/CPackSourceConfig.cmake"
 
       - name: Zip
-        working-directory: ${{github.workspace}}
-        run: D:/a/_temp/msys64/ucrt64/bin/ucrt64/bin/cpack.exe -G ZIP --config ${{github.workspace}}\out\ucrt64\CPackSourceConfig.cmake
+        working-directory: ${{ env.SOURCE_DIR }}
+        run: D:/a/_temp/msys64/ucrt64/bin/ucrt64/bin/cpack.exe -G ZIP --config "${{ env.SOURCE_DIR }}/out/ucrt64/CPackSourceConfig.cmake"
 
       - name: Tar
-        working-directory: ${{github.workspace}}
-        run: D:/a/_temp/msys64/ucrt64/bin/ucrt64/bin/cpack.exe -G TGZ --config ${{github.workspace}}\out\ucrt64\CPackSourceConfig.cmake
+        working-directory: ${{ env.SOURCE_DIR }}
+        run: D:/a/_temp/msys64/ucrt64/bin/ucrt64/bin/cpack.exe -G TGZ --config "${{ env.SOURCE_DIR }}/out/ucrt64/CPackSourceConfig.cmake"
