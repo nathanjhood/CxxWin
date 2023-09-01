@@ -56,18 +56,18 @@ jobs:
 
       - name: Prepare Env
         working-directory: ${{ env.SOURCE_DIR }}
-        run: source ${{ env.SOURCE_DIR }}/msystem.sh
+        run: source ./msystem.sh
 
       - name: Configure
         working-directory: ${{ env.SOURCE_DIR }}
         # Configure CMake in a 'bin' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
         # See https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html?highlight=cmake_build_type
-        run: ${{ env.MSYS_DIR }}/bin/cmake.exe -S "${{ env.SOURCE_DIR }}" "-DCMAKE_C_COMPILER:FILEPATH=${{ env.MSYS_DIR }}/bin/x86_64-w64-mingw32-gcc.exe" "-DCMAKE_CXX_COMPILER:FILEPATH=${{ env.MSYS_DIR }}/bin/x86_64-w64-mingw32-g++.exe" "-DCMAKE_RC_COMPILER:FILEPATH=${{ env.MSYS_DIR }}/bin/windres.exe" "-DCMAKE_LINKER:FILEPATH=${{ env.MSYS_DIR }}/bin/ld.exe" "-DCMAKE_MAKE_PROGRAM:FILEPATH=${{ env.MSYS_DIR }}/bin/mingw32-make.exe" -B "${{ env.BINARY_DIR }}" "-DCMAKE_BUILD_TYPE:STRING=${{env.BUILD_TYPE}}" -G "MinGW Makefiles"
+        run: /ucrt64/bin/cmake.exe -S . "-DCMAKE_CXX_COMPILER:FILEPATH=C:/msys64/ucrt64/bin/x86_64-w64-mingw32-g++.exe" "-DCMAKE_C_COMPILER:FILEPATH=C:/msys64/ucrt64/bin/x86_64-w64-mingw32-gcc.exe" "-DCMAKE_RC_COMPILER:FILEPATH=C:/msys64/ucrt64/bin/windres.exe" "-DCMAKE_LINKER:FILEPATH=C:/msys64/ucrt64/bin/ld.exe" "-DCMAKE_MAKE_PROGRAM:FILEPATH=C:/msys64/ucrt64/bin/mingw32-make.exe" "-DCMAKE_INSTALL_PREFIX:FILEPATH=${CMAKE_BINARY_DIR}/install" "-DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE" -B ./out/ucrt64 -G "MinGW Makefiles"
       
       - name: Build
         working-directory: ${{ env.SOURCE_DIR }}
         # Build your program with the given configuration
-        run: ${{ env.MSYS_DIR }}/bin/cmake.exe --build "${{ env.BINARY_DIR }}"
+        run: /ucrt64/bin/cmake.exe --build ./out/ucrt64
 
       # - name: Test
       #   working-directory: ${{github.workspace}}/build/x64-windows
@@ -78,12 +78,12 @@ jobs:
       - name: Package Source
         working-directory: ${{ env.SOURCE_DIR }}
         # Build your program with the given configuration
-        run: ${{ env.MSYS_DIR }}/bin/cpack.exe --config "${{ env.BINARY_DIR }}/CPackSourceConfig.cmake"
+        run: /ucrt64/bin/cpack.exe --config ./out/ucrt64/CPackSourceConfig.cmake
 
       - name: Zip
         working-directory: ${{ env.SOURCE_DIR }}
-        run: ${{ env.MSYS_DIR }}/bin/cpack.exe -G ZIP --config "${{ env.BINARY_DIR }}/CPackSourceConfig.cmake"
+        run: /ucrt64/bin/cpack.exe -G ZIP --config ./out/ucrt64/CPackSourceConfig.cmake
 
       - name: Tar
         working-directory: ${{ env.SOURCE_DIR }}
-        run: ${{ env.MSYS_DIR }}/bin/cpack.exe -G TGZ --config "${{ env.BINARY_DIR }}/CPackSourceConfig.cmake"
+        run: /ucrt64/bin/cpack.exe -G TGZ --config ./out/ucrt64/CPackSourceConfig.cmake
