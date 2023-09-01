@@ -1,3 +1,7 @@
+!*.png
+!*.svg
+
+
 /.cache
 
 # /.vscode
