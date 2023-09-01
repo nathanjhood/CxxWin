@@ -19,16 +19,16 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - name: Cache Restore
-        id: cache-restore-pacman-ucrt64
-        uses: actions/cache/restore@v3
-        with:
-          # A directory to store and save the cache
-          path: "C:/hostedtoolcache/windows"
-          # An explicit key for restoring and saving the cache
-          key: ${{ runner.os }}-pacman-ucrt64
-          # An ordered list of keys to use for restoring the cache if no cache hit occurred for key
-          # restore-keys: # optional
+      # - name: Cache Restore
+      #   id: cache-restore-pacman-ucrt64
+      #   uses: actions/cache/restore@v3
+      #   with:
+      #     # A directory to store and save the cache
+      #     path: "C:/hostedtoolcache/windows"
+      #     # An explicit key for restoring and saving the cache
+      #     key: ${{ runner.os }}-pacman-ucrt64
+      #     # An ordered list of keys to use for restoring the cache if no cache hit occurred for key
+      #     # restore-keys: # optional
           
       - uses: msys2/setup-msys2@v2
         with:
@@ -36,17 +36,17 @@ jobs:
           update: true
           install: git mingw-w64-ucrt-x86_64-gcc mingw-w64-ucrt-x86_64-cmake mingw-w64-ucrt-x86_64-make
           
-      - name: Cache Save
-        id: cache-save-pacman-ucrt64
-        uses: actions/cache/save@v3
-        with:
-          # A directory to store and save the cache
-          path: "C:/hostedtoolcache/windows"
-          # $(cygpath -u "${{github.workspace}}\out\ucrt64")
-          # An explicit key for restoring and saving the cache
-          key: ${{ steps.cache-restore-pacman-ucrt64.outputs.cache-primary-key }}
-          # An ordered list of keys to use for restoring the cache if no cache hit occurred for key
-          # restore-keys: # optional
+      # - name: Cache Save
+      #   id: cache-save-pacman-ucrt64
+      #   uses: actions/cache/save@v3
+      #   with:
+      #     # A directory to store and save the cache
+      #     path: "C:/hostedtoolcache/windows"
+      #     # $(cygpath -u "${{github.workspace}}\out\ucrt64")
+      #     # An explicit key for restoring and saving the cache
+      #     key: ${{ steps.cache-restore-pacman-ucrt64.outputs.cache-primary-key }}
+      #     # An ordered list of keys to use for restoring the cache if no cache hit occurred for key
+      #     # restore-keys: # optional
 
       - name: Configure
         working-directory: ${{github.workspace}}
