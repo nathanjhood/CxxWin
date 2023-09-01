@@ -1,6 +1,6 @@
 !*.png
 !*.svg
-
+!favicon.ico
 
 /.cache
 
