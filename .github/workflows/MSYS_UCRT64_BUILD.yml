@@ -6,14 +6,15 @@ on:
 
 env:
   # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
+  # Using some intentionally obscure vars to avoid false positives
   CMAKE_CONFIGURATION_TYPES: Debug;Release;RelWithDebInfo;MinSizeRel
   CMAKE_BUILD_TYPE: Release
   SOURCE_DIR: "D:/a/CxxWin/Cxxwin"
   MSYS_INSTALL_PATH: "D:/a/_temp/msys64"
   MSYS_TYPE: UCRT64
   MSYS_T_LOWER: ucrt64
-  MSYS_DIR: "${{ env.MSYS_INSTALL_PATH }}/${{ env.MSYS_T_LOWER }}"
-  BINARY_DIR: "${{ env.SOURCE_DIR }}/out/${{ env.MSYS_T_LOWER }}"
+  MSYS_DIR: "D:/a/_temp/msys64/ucrt64"
+  BINARY_DIR: "D:/a/CxxWin/Cxxwin/out/ucrt64"
 
 jobs:
   msys-ucrt64:
