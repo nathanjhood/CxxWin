@@ -544,9 +544,7 @@ namespace CMakeRC::Key
 {
 namespace Windows_TemporaryKey
 {
-/** @brief Pointer to the beginning of 'Windows_TemporaryKey_pfx_array'. */
 extern RCRESOURCEPTR const Windows_TemporaryKey_pfx_begin = ::Windows_TemporaryKey_pfx_array;
-/** @brief Pointer to the end of 'Windows_TemporaryKey_pfx_array'. */
 extern RCRESOURCEPTR const Windows_TemporaryKey_pfx_end = ::Windows_TemporaryKey_pfx_array + 2560;
 } // namespace Windows_TemporaryKey
 } // namespace CMakeRC::Key
