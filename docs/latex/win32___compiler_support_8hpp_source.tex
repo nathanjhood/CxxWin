@@ -1,0 +1,120 @@
+\doxysection{win32\+\_\+\+Compiler\+Support.\+hpp}
+\hypertarget{win32___compiler_support_8hpp_source}{}\label{win32___compiler_support_8hpp_source}\index{include/CxxWin/modules/Win32\_core/system/win32\_CompilerSupport.hpp@{include/CxxWin/modules/Win32\_core/system/win32\_CompilerSupport.hpp}}
+\mbox{\hyperlink{win32___compiler_support_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ \_WIN32\_COMPILERSUPPORT\_HPP\_}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#if\ defined\ (\_\_clang\_\_)}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#elif\ defined\ (\_\_GNUC\_\_)}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#elif\ defined\ (\_MSC\_VER)}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#\ \ error\ "{}Compiler\ unknown?"{}}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#if\ defined(\_\_clang\_\_)\ \&\&\ !defined(\_\_ibxml\_\_)}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#\ \ define\ \_\_C\_COMPILER\_IS\_CLANG\ 1}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#\ \ define\ \_\_C\_COMPILER\_NAME\ \_\_PM\_STRING(Clang)}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#\ \ define\ \_\_C\_COMPILER\_VERSION\_MAJOR\ \_\_clang\_major\_\_}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#\ \ define\ \_\_C\_COMPILER\_VERSION\_MINOR\ \_\_clang\_minor\_\_}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#\ \ define\ \_\_C\_COMPILER\_VERSION\_PATCH\ \_\_clang\_patchlevel\_\_}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#\ \ define\ \_\_C\_COMPILER\_VERSION\ (\_\_clang\_major\_\_\ *\ 100\ +\ \_\_clang\_minor\_\_)}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#elif\ defined(\_\_GNUC\_\_)\ \&\&\ !defined(\_\_clang\_\_)\ \&\&\ !defined(\_\_INTEL\_COMPILER)\ \&\&\ !defined(\_\_NVCOMPILER)}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#\ \ define\ \_\_C\_COMPILER\_IS\_GNU\ 1}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#\ \ define\ \_\_C\_COMPILER\_NAME\ \_\_PM\_STRING(GNU)}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#\ \ define\ \_\_C\_COMPILER\_VERSION\_MAJOR\ \_\_GNUC\_\_}}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#\ \ define\ \_\_C\_COMPILER\_VERSION\_MINOR\ \_\_GNUC\_MINOR\_\_}}
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#\ \ define\ \_\_C\_COMPILER\_VERSION\_PATCH\ \_\_GNUC\_PATCHLEVEL\_\_}}
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#\ \ define\ \_\_C\_COMPILER\_VERSION\ (\_\_GNUC\_\_\ *\ 100\ +\ \_\_GNUC\_MINOR\_\_)}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{preprocessor}{\#\ \ define\ \_\_CXX\_COMPILER\_NAME\ \_\_C\_COMPILER\_NAME}}
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#\ \ define\ \_\_CXX\_COMPILER\_VERSION\_MAJOR\ \_\_C\_COMPILER\_VERSION\_MAJOR}}
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#\ \ define\ \_\_CXX\_COMPILER\_VERSION\_MINOR\ \_\_C\_COMPILER\_VERSION\_MINOR}}
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#\ \ define\ \_\_CXX\_COMPILER\_VERSION\_PATCH\ \_\_C\_COMPILER\_VERSION\_PATCH}}
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#\ \ define\ \_\_CXX\_COMPILER\_VERSION\ \_\_C\_COMPILER\_VERSION}}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\#ifdef\ \_\_ICL}}
+\DoxyCodeLine{00064\ \textcolor{preprocessor}{\#\ \ \ define\ \_\_ICC\_VERSION\ \_\_ICL}}
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\#elif\ defined(\_\_INTEL\_COMPILER)}}
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#\ \ \ define\ \_\_ICC\_VERSION\ \_\_INTEL\_COMPILER}}
+\DoxyCodeLine{00067\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#\ \ \ define\ \_\_ICC\_VERSION\ 0}}
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\#ifdef\ \_MSC\_VER}}
+\DoxyCodeLine{00072\ \textcolor{preprocessor}{\#\ \ \ define\ \_\_MSC\_VERSION\ \_MSC\_VER}}
+\DoxyCodeLine{00073\ \textcolor{preprocessor}{\#\ \ \ define\ \_\_MSC\_WARNING(...)\ \_\_pragma(warning(\_\_VA\_ARGS\_\_))}}
+\DoxyCodeLine{00074\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#\ \ \ define\ \_\_MSC\_VERSION\ 0}}
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\#\ \ \ define\ \_\_MSC\_WARNING(...)}}
+\DoxyCodeLine{00077\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \textcolor{preprocessor}{\#if\ defined(\_\_cplusplus)}}
+\DoxyCodeLine{00080\ \textcolor{preprocessor}{\#\ \ \ define\ \_\_USING\_CXX\ \_\_cplusplus}}
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\#elif\ defined(\_MSVC\_LANG)}}
+\DoxyCodeLine{00082\ \textcolor{preprocessor}{\#\ \ \ define\ \_\_USING\_CXX\ \_MSVC\_LANG}}
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00084\ \textcolor{preprocessor}{\#\ \ \ undef\ \ \_\_USING\_CXX}}
+\DoxyCodeLine{00085\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00091\ \textcolor{preprocessor}{\#ifdef\ \ \_\_USING\_CXX}}
+\DoxyCodeLine{00092\ \textcolor{preprocessor}{\#\ \ define\ \_\_BEGIN\_DECLS\ \ extern\ "{}C"{}}\ \{}
+\DoxyCodeLine{00093\ \textcolor{preprocessor}{\#\ \ define\ \_\_END\_DECLS\ \ \ \ \}}}
+\DoxyCodeLine{00094\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00095\ \textcolor{preprocessor}{\#\ \ define\ \_\_BEGIN\_DECLS}}
+\DoxyCodeLine{00096\ \textcolor{preprocessor}{\#\ \ define\ \_\_END\_DECLS}}
+\DoxyCodeLine{00097\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \textcolor{preprocessor}{\#ifdef\ \_\_has\_feature}}
+\DoxyCodeLine{00100\ \textcolor{preprocessor}{\#\ \ \ define\ \_\_HAS\_FEATURE(x)\ \_\_has\_feature(x)}}
+\DoxyCodeLine{00101\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00102\ \textcolor{preprocessor}{\#\ \ \ define\ \_\_HAS\_FEATURE(x)\ 0}}
+\DoxyCodeLine{00103\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \textcolor{preprocessor}{\#if\ defined(\_\_has\_include)\ ||\ \_\_ICC\_VERSION\ >=\ 1600\ ||\ \_\_MSC\_VERSION\ >=\ 1900}}
+\DoxyCodeLine{00106\ \textcolor{preprocessor}{\#\ \ \ define\ \_\_HAS\_INCLUDE(x)\ \_\_has\_include(x)}}
+\DoxyCodeLine{00107\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00108\ \textcolor{preprocessor}{\#\ \ \ define\ \_\_HAS\_INCLUDE(x)\ 0}}
+\DoxyCodeLine{00109\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \textcolor{preprocessor}{\#ifdef\ \_\_has\_attribute}}
+\DoxyCodeLine{00112\ \textcolor{preprocessor}{\#\ \ \ define\ \_\_HAS\_ATTRIBUTE(x)\ \_\_has\_attribute(x)}}
+\DoxyCodeLine{00113\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00114\ \textcolor{preprocessor}{\#\ \ \ define\ \_\_HAS\_ATTRIBUTE(x)\ 0}}
+\DoxyCodeLine{00115\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00117\ \textcolor{preprocessor}{\#ifdef\ \_\_has\_c\_attribute}}
+\DoxyCodeLine{00118\ \textcolor{preprocessor}{\#\ \ \ define\ \_\_HAS\_C\_ATTRIBUTE(x)\ \_\_has\_c\_attribute(x)}}
+\DoxyCodeLine{00119\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00120\ \textcolor{preprocessor}{\#\ \ \ define\ \_\_HAS\_C\_ATTRIBUTE(x)\ 0}}
+\DoxyCodeLine{00121\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ \textcolor{preprocessor}{\#ifdef\ \_\_has\_cpp\_attribute}}
+\DoxyCodeLine{00124\ \textcolor{preprocessor}{\#\ \ \ define\ \_\_HAS\_CPP\_ATTRIBUTE(x)\ \_\_has\_cpp\_attribute(x)}}
+\DoxyCodeLine{00125\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00126\ \textcolor{preprocessor}{\#\ \ \ define\ \_\_HAS\_CPP\_ATTRIBUTE(x)\ 0}}
+\DoxyCodeLine{00127\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00129\ \textcolor{preprocessor}{\#ifdef\ \_\_has\_builtin}}
+\DoxyCodeLine{00130\ \textcolor{preprocessor}{\#\ \ \ define\ \_\_HAS\_BUILTIN(x)\ \_\_has\_builtin(x)}}
+\DoxyCodeLine{00131\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00132\ \textcolor{preprocessor}{\#\ \ \ define\ \_\_HAS\_BUILTIN(x)\ 0}}
+\DoxyCodeLine{00133\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00135\ \textcolor{preprocessor}{\#ifdef\ \_\_has\_extension}}
+\DoxyCodeLine{00136\ \textcolor{preprocessor}{\#\ \ \ define\ \_\_HAS\_EXTENSION(x)\ \_\_has\_extension(x)}}
+\DoxyCodeLine{00137\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00138\ \textcolor{preprocessor}{\#\ \ \ define\ \_\_HAS\_EXTENSION(x)\ 0}}
+\DoxyCodeLine{00139\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

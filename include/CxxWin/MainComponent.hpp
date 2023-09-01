@@ -31,7 +31,7 @@
 // }
 // #endif
 
-#include "modules/Win32_core/win32_core.h"
+#include "modules/Win32_core/win32_core.hpp"
 #include "modules/Win32_resource/win32_resource.hpp"
 
 /**

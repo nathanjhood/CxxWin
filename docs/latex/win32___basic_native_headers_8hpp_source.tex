@@ -1,0 +1,277 @@
+\doxysection{win32\+\_\+\+Basic\+Native\+Headers.\+hpp}
+\hypertarget{win32___basic_native_headers_8hpp_source}{}\label{win32___basic_native_headers_8hpp_source}\index{include/CxxWin/modules/Win32\_core/native/win32\_BasicNativeHeaders.hpp@{include/CxxWin/modules/Win32\_core/native/win32\_BasicNativeHeaders.hpp}}
+\mbox{\hyperlink{win32___basic_native_headers_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ \_WIN32\_BASICNATIVEHEADERS\_HPP\_}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#undef\ T}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{comment}{//==============================================================================}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#if\ defined(\_\_PLATFORM\_IS\_MAC)\ ||\ defined(\_\_PLATFORM\_IS\_IOS)}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\ \#if\ \_\_PLATFORM\_IS\_IOS}}
+\DoxyCodeLine{00026\ \textcolor{comment}{//\ \ \ \#if\ \_\_MODULE\_AVAILABLE\_juce\_opengl}}
+\DoxyCodeLine{00027\ \textcolor{comment}{//\ \ \ \ \#define\ GLES\_SILENCE\_DEPRECATION\ 1}}
+\DoxyCodeLine{00028\ \textcolor{comment}{//\ \ \ \#endif}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\ \ \#define\ Component\ CarbonDummyCompName}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\ \ \#import\ <Foundation/Foundation.h>}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\ \ \#undef\ Component}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\ \ \#import\ <UIKit/UIKit.h>}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\ \ \#import\ <CoreData/CoreData.h>}}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\ \ \#import\ <MobileCoreServices/MobileCoreServices.h>}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\ \ \#include\ <sys/fcntl.h>}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\ \#else}}
+\DoxyCodeLine{00039\ \textcolor{comment}{//\ \ \ \#if\ \_\_MODULE\_AVAILABLE\_juce\_opengl}}
+\DoxyCodeLine{00040\ \textcolor{comment}{//\ \ \ \ \#define\ GL\_SILENCE\_DEPRECATION\ 1}}
+\DoxyCodeLine{00041\ \textcolor{comment}{//\ \ \ \#endif}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\ \ \#import\ <Cocoa/Cocoa.h>}}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\ \ \#import\ <CoreAudio/HostTime.h>}}
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\ \ \#include\ <sys/dir.h>}}
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\ \#endif}}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\ \#include\ <sys/socket.h>}}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\ \#include\ <sys/sysctl.h>}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\ \#include\ <sys/stat.h>}}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\ \#include\ <sys/param.h>}}
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\ \#include\ <sys/mount.h>}}
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\ \#include\ <sys/utsname.h>}}
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\ \#include\ <sys/mman.h>}}
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\ \#include\ <fnmatch.h>}}
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\ \#include\ <utime.h>}}
+\DoxyCodeLine{00057\ \textcolor{preprocessor}{\ \#include\ <dlfcn.h>}}
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\ \#include\ <ifaddrs.h>}}
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\ \#include\ <net/if\_dl.h>}}
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\ \#include\ <mach/mach\_time.h>}}
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\ \#include\ <mach-\/o/dyld.h>}}
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\ \#include\ <objc/runtime.h>}}
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\ \#include\ <objc/objc.h>}}
+\DoxyCodeLine{00064\ \textcolor{preprocessor}{\ \#include\ <objc/message.h>}}
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\ \#include\ <poll.h>}}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \textcolor{comment}{//==============================================================================}}
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#elif\ defined(\_\_PLATFORM\_IS\_WINDOWS)}}
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\ \#if\ MSVC}}
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\ \ \#ifndef\ \_CPPRTTI}}
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\ \ \ \#warning\ "{}You\ are\ compiling\ without\ RTTI\ enabled..."{}}}
+\DoxyCodeLine{00072\ \textcolor{preprocessor}{\ \ \#endif}}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \textcolor{preprocessor}{\ \ \#ifndef\ \_CPPUNWIND}}
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\ \ \ \#warning\ "{}You\ are\ compiling\ without\ exceptions\ enabled..."{}}}
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\ \ \#endif}}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{preprocessor}{\ \ \#pragma\ warning\ (push,\ 0)\ }\textcolor{comment}{//\ disable\ all\ warnings\ whilst\ including\ system\ headers}}
+\DoxyCodeLine{00079\ \textcolor{preprocessor}{\ \#endif}}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\ \#define\ NOMINMAX}}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\ \#define\ \_WINSOCK\_DEPRECATED\_NO\_WARNINGS\ 1}}
+\DoxyCodeLine{00084\ \textcolor{preprocessor}{\ \#define\ STRICT\ 1}}
+\DoxyCodeLine{00085\ \textcolor{preprocessor}{\ \#define\ WIN32\_LEAN\_AND\_MEAN\ 1}}
+\DoxyCodeLine{00086\ \textcolor{preprocessor}{\ \#if\ \_\_PLATFORM\_IS\_MINGW}}
+\DoxyCodeLine{00087\ \textcolor{preprocessor}{\ \ \#if\ !\ defined\ (\_WIN32\_WINNT)}}
+\DoxyCodeLine{00088\ \textcolor{preprocessor}{\ \ \ \#define\ \_WIN32\_WINNT\ 0x0600}}
+\DoxyCodeLine{00089\ \textcolor{preprocessor}{\ \ \#endif}}
+\DoxyCodeLine{00090\ \textcolor{preprocessor}{\ \#else}}
+\DoxyCodeLine{00091\ \textcolor{preprocessor}{\ \ \#define\ \_WIN32\_WINNT\ 0x0602}}
+\DoxyCodeLine{00092\ \textcolor{preprocessor}{\ \#endif}}
+\DoxyCodeLine{00093\ \textcolor{preprocessor}{\ \#define\ \_UNICODE\ 1}}
+\DoxyCodeLine{00094\ \textcolor{preprocessor}{\ \#define\ UNICODE\ 1}}
+\DoxyCodeLine{00095\ \textcolor{preprocessor}{\ \#ifndef\ \_WIN32\_IE}}
+\DoxyCodeLine{00096\ \textcolor{preprocessor}{\ \ \#define\ \_WIN32\_IE\ 0x0501}}
+\DoxyCodeLine{00097\ \textcolor{preprocessor}{\ \#endif}}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \textcolor{preprocessor}{\ \#include\ <windows.h>}}
+\DoxyCodeLine{00100\ \textcolor{preprocessor}{\ \#include\ <shellapi.h>}}
+\DoxyCodeLine{00101\ \textcolor{preprocessor}{\ \#include\ <tchar.h>}}
+\DoxyCodeLine{00102\ \textcolor{preprocessor}{\ \#include\ <stddef.h>}}
+\DoxyCodeLine{00103\ \textcolor{preprocessor}{\ \#include\ <ctime>}}
+\DoxyCodeLine{00104\ \textcolor{preprocessor}{\ \#include\ <wininet.h>}}
+\DoxyCodeLine{00105\ \textcolor{preprocessor}{\ \#include\ <nb30.h>}}
+\DoxyCodeLine{00106\ \textcolor{preprocessor}{\ \#include\ <winsock2.h>}}
+\DoxyCodeLine{00107\ \textcolor{preprocessor}{\ \#include\ <ws2tcpip.h>}}
+\DoxyCodeLine{00108\ \textcolor{preprocessor}{\ \#include\ <iphlpapi.h>}}
+\DoxyCodeLine{00109\ \textcolor{preprocessor}{\ \#include\ <accctrl.h>}}
+\DoxyCodeLine{00110\ \textcolor{preprocessor}{\ \#include\ <aclapi.h>}}
+\DoxyCodeLine{00111\ \textcolor{preprocessor}{\ \#include\ <mapi.h>}}
+\DoxyCodeLine{00112\ \textcolor{preprocessor}{\ \#include\ <float.h>}}
+\DoxyCodeLine{00113\ \textcolor{preprocessor}{\ \#include\ <process.h>}}
+\DoxyCodeLine{00114\ \textcolor{preprocessor}{\ \#include\ <shlobj.h>}}
+\DoxyCodeLine{00115\ \textcolor{preprocessor}{\ \#include\ <shlwapi.h>}}
+\DoxyCodeLine{00116\ \textcolor{preprocessor}{\ \#include\ <mmsystem.h>}}
+\DoxyCodeLine{00117\ \textcolor{preprocessor}{\ \#include\ <winioctl.h>}}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \textcolor{preprocessor}{\ \#include\ <windowsx.h>}}
+\DoxyCodeLine{00120\ \textcolor{preprocessor}{\ \#include\ <ole2.h>}}
+\DoxyCodeLine{00121\ \textcolor{preprocessor}{\ \#include\ <d2d1.h>}}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ \textcolor{preprocessor}{\ \#if\ defined(\_\_PLATFORM\_IS\_MINGW)}}
+\DoxyCodeLine{00124\ \textcolor{preprocessor}{\ \ \#include\ <basetyps.h>}}
+\DoxyCodeLine{00125\ \textcolor{preprocessor}{\ \ \#include\ <sys/time.h>}}
+\DoxyCodeLine{00126\ \textcolor{preprocessor}{\ \ \#ifndef\ alloca}}
+\DoxyCodeLine{00127\ \textcolor{preprocessor}{\ \ \ \#define\ alloca\ \_\_builtin\_alloca}}
+\DoxyCodeLine{00128\ \textcolor{preprocessor}{\ \ \#endif}}
+\DoxyCodeLine{00129\ \textcolor{preprocessor}{\ \#else}}
+\DoxyCodeLine{00130\ \textcolor{preprocessor}{\ \ \#include\ <crtdbg.h>}}
+\DoxyCodeLine{00131\ \textcolor{preprocessor}{\ \ \#include\ <comutil.h>}}
+\DoxyCodeLine{00132\ \textcolor{preprocessor}{\ \#endif}}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ \textcolor{preprocessor}{\ \#ifndef\ S\_FALSE}}
+\DoxyCodeLine{00135\ \textcolor{preprocessor}{\ \ \#define\ S\_FALSE\ (1)\ }\textcolor{comment}{//\ (apparently\ some\ obscure\ win32\ dev\ environments\ don't\ define\ this)}}
+\DoxyCodeLine{00136\ \textcolor{preprocessor}{\ \#endif}}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00138\ \textcolor{preprocessor}{\ \#undef\ PACKED}}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00140\ \textcolor{preprocessor}{\ \#if\ MSVC}}
+\DoxyCodeLine{00141\ \textcolor{preprocessor}{\ \ \#pragma\ warning\ (pop)}}
+\DoxyCodeLine{00142\ \textcolor{preprocessor}{\ \ \#pragma\ warning\ (4:\ 4511\ 4512\ 4100)}}
+\DoxyCodeLine{00143\ \textcolor{preprocessor}{\ \#endif}}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00145\ \textcolor{preprocessor}{\ \#if\ \ !\ defined(\_\_DONT\_AUTOLINK\_TO\_WIN32\_LIBRARIES)}}
+\DoxyCodeLine{00146\ \textcolor{preprocessor}{\ \ \#pragma\ comment\ (lib,\ "{}kernel32.lib"{}})}
+\DoxyCodeLine{00147\ \textcolor{preprocessor}{\ \ \#pragma\ comment\ (lib,\ "{}user32.lib"{}})}
+\DoxyCodeLine{00148\ \textcolor{preprocessor}{\ \ \#pragma\ comment\ (lib,\ "{}wininet.lib"{}})}
+\DoxyCodeLine{00149\ \textcolor{preprocessor}{\ \ \#pragma\ comment\ (lib,\ "{}advapi32.lib"{}})}
+\DoxyCodeLine{00150\ \textcolor{preprocessor}{\ \ \#pragma\ comment\ (lib,\ "{}ws2\_32.lib"{}})}
+\DoxyCodeLine{00151\ \textcolor{preprocessor}{\ \ \#pragma\ comment\ (lib,\ "{}version.lib"{}})}
+\DoxyCodeLine{00152\ \textcolor{preprocessor}{\ \ \#pragma\ comment\ (lib,\ "{}shlwapi.lib"{}})}
+\DoxyCodeLine{00153\ \textcolor{preprocessor}{\ \ \#pragma\ comment\ (lib,\ "{}winmm.lib"{}})}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00155\ \textcolor{preprocessor}{\ \ \#pragma\ comment\ (lib,\ "{}d2d1.lib"{}})}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00157\ \textcolor{preprocessor}{\ \ \#ifdef\ \_NATIVE\_WCHAR\_T\_DEFINED}}
+\DoxyCodeLine{00158\ \textcolor{preprocessor}{\ \ \ \#ifdef\ \_DEBUG}}
+\DoxyCodeLine{00159\ \textcolor{preprocessor}{\ \ \ \ \#pragma\ comment\ (lib,\ "{}comsuppwd.lib"{}})}
+\DoxyCodeLine{00160\ \textcolor{preprocessor}{\ \ \ \#else}}
+\DoxyCodeLine{00161\ \textcolor{preprocessor}{\ \ \ \ \#pragma\ comment\ (lib,\ "{}comsuppw.lib"{}})}
+\DoxyCodeLine{00162\ \textcolor{preprocessor}{\ \ \ \#endif}}
+\DoxyCodeLine{00163\ \textcolor{preprocessor}{\ \ \#else}}
+\DoxyCodeLine{00164\ \textcolor{preprocessor}{\ \ \ \#ifdef\ \_DEBUG}}
+\DoxyCodeLine{00165\ \textcolor{preprocessor}{\ \ \ \ \#pragma\ comment\ (lib,\ "{}comsuppd.lib"{}})}
+\DoxyCodeLine{00166\ \textcolor{preprocessor}{\ \ \ \#else}}
+\DoxyCodeLine{00167\ \textcolor{preprocessor}{\ \ \ \ \#pragma\ comment\ (lib,\ "{}comsupp.lib"{}})}
+\DoxyCodeLine{00168\ \textcolor{preprocessor}{\ \ \ \#endif}}
+\DoxyCodeLine{00169\ \textcolor{preprocessor}{\ \ \#endif}}
+\DoxyCodeLine{00170\ \textcolor{preprocessor}{\ \#endif}}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00172\ \ \textcolor{comment}{/*\ Used\ with\ DynamicLibrary\ to\ simplify\ importing\ functions\ from\ a\ win32\ DLL.}}
+\DoxyCodeLine{00173\ \textcolor{comment}{}}
+\DoxyCodeLine{00174\ \textcolor{comment}{\ \ \ \ dll:\ the\ DynamicLibrary\ object}}
+\DoxyCodeLine{00175\ \textcolor{comment}{\ \ \ \ functionName:\ function\ to\ import}}
+\DoxyCodeLine{00176\ \textcolor{comment}{\ \ \ \ localFunctionName:\ name\ you\ want\ to\ use\ to\ actually\ call\ it\ (must\ be\ different)}}
+\DoxyCodeLine{00177\ \textcolor{comment}{\ \ \ \ returnType:\ the\ return\ type}}
+\DoxyCodeLine{00178\ \textcolor{comment}{\ \ \ \ params:\ list\ of\ params\ (bracketed)}}
+\DoxyCodeLine{00179\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00180\ \textcolor{preprocessor}{\ \#define\ \_\_LOAD\_WINAPI\_FUNCTION(dll,\ functionName,\ localFunctionName,\ returnType,\ params)\ \(\backslash\)}}
+\DoxyCodeLine{00181\ \textcolor{preprocessor}{\ \ \ \ typedef\ returnType\ (WINAPI\ *type\#\#localFunctionName)\ params;\ \(\backslash\)}}
+\DoxyCodeLine{00182\ \textcolor{preprocessor}{\ \ \ \ type\#\#localFunctionName\ localFunctionName\ =\ (type\#\#localFunctionName)\ dll.getFunction\ (\#functionName);}}
+\DoxyCodeLine{00183\ }
+\DoxyCodeLine{00184\ \textcolor{comment}{//==============================================================================}}
+\DoxyCodeLine{00185\ \textcolor{preprocessor}{\#elif\ \_\_PLATFORM\_IS\_LINUX}}
+\DoxyCodeLine{00186\ \textcolor{preprocessor}{\ \#include\ <arpa/inet.h>}}
+\DoxyCodeLine{00187\ \textcolor{preprocessor}{\ \#include\ <dlfcn.h>}}
+\DoxyCodeLine{00188\ \textcolor{preprocessor}{\ \#include\ <errno.h>}}
+\DoxyCodeLine{00189\ \textcolor{preprocessor}{\ \#include\ <fcntl.h>}}
+\DoxyCodeLine{00190\ \textcolor{preprocessor}{\ \#include\ <fnmatch.h>}}
+\DoxyCodeLine{00191\ \textcolor{preprocessor}{\ \#include\ <net/if.h>}}
+\DoxyCodeLine{00192\ \textcolor{preprocessor}{\ \#include\ <netdb.h>}}
+\DoxyCodeLine{00193\ \textcolor{preprocessor}{\ \#include\ <netinet/in.h>}}
+\DoxyCodeLine{00194\ \textcolor{preprocessor}{\ \#include\ <pthread.h>}}
+\DoxyCodeLine{00195\ \textcolor{preprocessor}{\ \#include\ <pwd.h>}}
+\DoxyCodeLine{00196\ \textcolor{preprocessor}{\ \#include\ <sched.h>}}
+\DoxyCodeLine{00197\ \textcolor{preprocessor}{\ \#include\ <signal.h>}}
+\DoxyCodeLine{00198\ \textcolor{preprocessor}{\ \#include\ <stddef.h>}}
+\DoxyCodeLine{00199\ \textcolor{preprocessor}{\ \#include\ <sys/dir.h>}}
+\DoxyCodeLine{00200\ \textcolor{preprocessor}{\ \#include\ <sys/file.h>}}
+\DoxyCodeLine{00201\ \textcolor{preprocessor}{\ \#include\ <sys/ioctl.h>}}
+\DoxyCodeLine{00202\ \textcolor{preprocessor}{\ \#include\ <sys/mman.h>}}
+\DoxyCodeLine{00203\ \textcolor{preprocessor}{\ \#include\ <sys/prctl.h>}}
+\DoxyCodeLine{00204\ \textcolor{preprocessor}{\ \#include\ <sys/ptrace.h>}}
+\DoxyCodeLine{00205\ \textcolor{preprocessor}{\ \#include\ <sys/socket.h>}}
+\DoxyCodeLine{00206\ \textcolor{preprocessor}{\ \#include\ <sys/stat.h>}}
+\DoxyCodeLine{00207\ \textcolor{preprocessor}{\ \#include\ <sys/syscall.h>}}
+\DoxyCodeLine{00208\ \textcolor{preprocessor}{\ \#include\ <sys/sysinfo.h>}}
+\DoxyCodeLine{00209\ \textcolor{preprocessor}{\ \#include\ <sys/time.h>}}
+\DoxyCodeLine{00210\ \textcolor{preprocessor}{\ \#include\ <sys/types.h>}}
+\DoxyCodeLine{00211\ \textcolor{preprocessor}{\ \#include\ <sys/vfs.h>}}
+\DoxyCodeLine{00212\ \textcolor{preprocessor}{\ \#include\ <sys/wait.h>}}
+\DoxyCodeLine{00213\ \textcolor{preprocessor}{\ \#include\ <sys/timerfd.h>}}
+\DoxyCodeLine{00214\ \textcolor{preprocessor}{\ \#include\ <sys/eventfd.h>}}
+\DoxyCodeLine{00215\ \textcolor{preprocessor}{\ \#include\ <utime.h>}}
+\DoxyCodeLine{00216\ \textcolor{preprocessor}{\ \#include\ <poll.h>}}
+\DoxyCodeLine{00217\ }
+\DoxyCodeLine{00218\ \textcolor{comment}{//==============================================================================}}
+\DoxyCodeLine{00219\ \textcolor{preprocessor}{\#elif\ \_\_PLATFORM\_IS\_BSD}}
+\DoxyCodeLine{00220\ \textcolor{preprocessor}{\ \#include\ <arpa/inet.h>}}
+\DoxyCodeLine{00221\ \textcolor{preprocessor}{\ \#include\ <dirent.h>}}
+\DoxyCodeLine{00222\ \textcolor{preprocessor}{\ \#include\ <dlfcn.h>}}
+\DoxyCodeLine{00223\ \textcolor{preprocessor}{\ \#include\ <errno.h>}}
+\DoxyCodeLine{00224\ \textcolor{preprocessor}{\ \#include\ <fcntl.h>}}
+\DoxyCodeLine{00225\ \textcolor{preprocessor}{\ \#include\ <fnmatch.h>}}
+\DoxyCodeLine{00226\ \textcolor{preprocessor}{\ \#include\ <ifaddrs.h>}}
+\DoxyCodeLine{00227\ \textcolor{preprocessor}{\ \#include\ <langinfo.h>}}
+\DoxyCodeLine{00228\ \textcolor{preprocessor}{\ \#include\ <net/if.h>}}
+\DoxyCodeLine{00229\ \textcolor{preprocessor}{\ \#include\ <net/if\_dl.h>}}
+\DoxyCodeLine{00230\ \textcolor{preprocessor}{\ \#include\ <netdb.h>}}
+\DoxyCodeLine{00231\ \textcolor{preprocessor}{\ \#include\ <netinet/in.h>}}
+\DoxyCodeLine{00232\ \textcolor{preprocessor}{\ \#include\ <pthread.h>}}
+\DoxyCodeLine{00233\ \textcolor{preprocessor}{\ \#include\ <pwd.h>}}
+\DoxyCodeLine{00234\ \textcolor{preprocessor}{\ \#include\ <sched.h>}}
+\DoxyCodeLine{00235\ \textcolor{preprocessor}{\ \#include\ <signal.h>}}
+\DoxyCodeLine{00236\ \textcolor{preprocessor}{\ \#include\ <stddef.h>}}
+\DoxyCodeLine{00237\ \textcolor{preprocessor}{\ \#include\ <sys/file.h>}}
+\DoxyCodeLine{00238\ \textcolor{preprocessor}{\ \#include\ <sys/ioctl.h>}}
+\DoxyCodeLine{00239\ \textcolor{preprocessor}{\ \#include\ <sys/mman.h>}}
+\DoxyCodeLine{00240\ \textcolor{preprocessor}{\ \#include\ <sys/mount.h>}}
+\DoxyCodeLine{00241\ \textcolor{preprocessor}{\ \#include\ <sys/ptrace.h>}}
+\DoxyCodeLine{00242\ \textcolor{preprocessor}{\ \#include\ <sys/socket.h>}}
+\DoxyCodeLine{00243\ \textcolor{preprocessor}{\ \#include\ <sys/stat.h>}}
+\DoxyCodeLine{00244\ \textcolor{preprocessor}{\ \#include\ <sys/sysctl.h>}}
+\DoxyCodeLine{00245\ \textcolor{preprocessor}{\ \#include\ <sys/time.h>}}
+\DoxyCodeLine{00246\ \textcolor{preprocessor}{\ \#include\ <sys/types.h>}}
+\DoxyCodeLine{00247\ \textcolor{preprocessor}{\ \#include\ <sys/user.h>}}
+\DoxyCodeLine{00248\ \textcolor{preprocessor}{\ \#include\ <sys/wait.h>}}
+\DoxyCodeLine{00249\ \textcolor{preprocessor}{\ \#include\ <utime.h>}}
+\DoxyCodeLine{00250\ \textcolor{preprocessor}{\ \#include\ <poll.h>}}
+\DoxyCodeLine{00251\ }
+\DoxyCodeLine{00252\ \textcolor{comment}{//==============================================================================}}
+\DoxyCodeLine{00253\ \textcolor{preprocessor}{\#elif\ \_\_PLATFORM\_IS\_ANDROID}}
+\DoxyCodeLine{00254\ \textcolor{preprocessor}{\ \#include\ <jni.h>}}
+\DoxyCodeLine{00255\ \textcolor{preprocessor}{\ \#include\ <pthread.h>}}
+\DoxyCodeLine{00256\ \textcolor{preprocessor}{\ \#include\ <sched.h>}}
+\DoxyCodeLine{00257\ \textcolor{preprocessor}{\ \#include\ <sys/time.h>}}
+\DoxyCodeLine{00258\ \textcolor{preprocessor}{\ \#include\ <utime.h>}}
+\DoxyCodeLine{00259\ \textcolor{preprocessor}{\ \#include\ <errno.h>}}
+\DoxyCodeLine{00260\ \textcolor{preprocessor}{\ \#include\ <fcntl.h>}}
+\DoxyCodeLine{00261\ \textcolor{preprocessor}{\ \#include\ <dlfcn.h>}}
+\DoxyCodeLine{00262\ \textcolor{preprocessor}{\ \#include\ <sys/stat.h>}}
+\DoxyCodeLine{00263\ \textcolor{preprocessor}{\ \#include\ <sys/statfs.h>}}
+\DoxyCodeLine{00264\ \textcolor{preprocessor}{\ \#include\ <sys/ptrace.h>}}
+\DoxyCodeLine{00265\ \textcolor{preprocessor}{\ \#include\ <sys/sysinfo.h>}}
+\DoxyCodeLine{00266\ \textcolor{preprocessor}{\ \#include\ <sys/mman.h>}}
+\DoxyCodeLine{00267\ \textcolor{preprocessor}{\ \#include\ <pwd.h>}}
+\DoxyCodeLine{00268\ \textcolor{preprocessor}{\ \#include\ <dirent.h>}}
+\DoxyCodeLine{00269\ \textcolor{preprocessor}{\ \#include\ <fnmatch.h>}}
+\DoxyCodeLine{00270\ \textcolor{preprocessor}{\ \#include\ <sys/wait.h>}}
+\DoxyCodeLine{00271\ \textcolor{preprocessor}{\ \#include\ <sys/timerfd.h>}}
+\DoxyCodeLine{00272\ \textcolor{preprocessor}{\ \#include\ <sys/eventfd.h>}}
+\DoxyCodeLine{00273\ \textcolor{preprocessor}{\ \#include\ <android/api-\/level.h>}}
+\DoxyCodeLine{00274\ \textcolor{preprocessor}{\ \#include\ <poll.h>}}
+\DoxyCodeLine{00275\ }
+\DoxyCodeLine{00276\ \ \textcolor{comment}{//\ If\ you\ are\ getting\ include\ errors\ here,\ then\ you\ need\ to\ re-\/build}}
+\DoxyCodeLine{00277\ \ \textcolor{comment}{//\ the\ Projucer\ and\ re-\/save\ your\ .jucer\ file.}}
+\DoxyCodeLine{00278\ \textcolor{preprocessor}{\ \#include\ <cpu-\/features.h>}}
+\DoxyCodeLine{00279\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00280\ }
+\DoxyCodeLine{00281\ \textcolor{comment}{//\ Need\ to\ clear\ various\ moronic\ redefinitions\ made\ by\ system\ headers..}}
+\DoxyCodeLine{00282\ \textcolor{preprocessor}{\#undef\ max}}
+\DoxyCodeLine{00283\ \textcolor{preprocessor}{\#undef\ min}}
+\DoxyCodeLine{00284\ \textcolor{preprocessor}{\#undef\ direct}}
+\DoxyCodeLine{00285\ \textcolor{preprocessor}{\#undef\ check}}
+
+\end{DoxyCode}

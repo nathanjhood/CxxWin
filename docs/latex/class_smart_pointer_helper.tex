@@ -1,5 +1,14 @@
 \doxysection{Smart\+Pointer\+Helper\texorpdfstring{$<$}{<} Com\+Classes \texorpdfstring{$>$}{>} Class Template Reference}
 \hypertarget{class_smart_pointer_helper}{}\label{class_smart_pointer_helper}\index{SmartPointerHelper$<$ ComClasses $>$@{SmartPointerHelper$<$ ComClasses $>$}}
+
+
+The \textquotesingle{}\doxylink{class_smart_pointer_helper}{Smart\+Pointer\+Helper}\textquotesingle{} class.  
+
+
+
+
+{\ttfamily \#include $<$win32\+\_\+\+Smart\+Pointer.\+hpp$>$}
+
 Inheritance diagram for Smart\+Pointer\+Helper\texorpdfstring{$<$}{<} Com\+Classes \texorpdfstring{$>$}{>}\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,11 +18,10 @@ Inheritance diagram for Smart\+Pointer\+Helper\texorpdfstring{$<$}{<} Com\+Class
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_smart_pointer_helper_aa049cb2ece5d84617e0c37f885ea4f62}\label{class_smart_pointer_helper_aa049cb2ece5d84617e0c37f885ea4f62} 
-{\bfseries Smart\+Pointer\+Helper} (unsigned int init\+Ref=1)
-\item 
+\mbox{\hyperlink{class_smart_pointer_helper_aa049cb2ece5d84617e0c37f885ea4f62}{Smart\+Pointer\+Helper}} (unsigned int init\+Ref=1)
+\begin{DoxyCompactList}\small\item\em Construct a new \textquotesingle{}\doxylink{class_smart_pointer_helper}{Smart\+Pointer\+Helper}\textquotesingle{} object. \end{DoxyCompactList}\item 
 HRESULT STDMETHODCALLTYPE \mbox{\hyperlink{class_smart_pointer_helper_ac41955be7a9eddf7a087305d7e20f08a}{Query\+Interface}} (REFIID ref\+Id, void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}result)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Query the interface to the underlying COM object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_smart_pointer_helper_base}{Smart\+Pointer\+Helper\+Base$<$ Com\+Classes... $>$}}}
 \begin{DoxyCompactItemize}
 \item 
@@ -32,12 +40,43 @@ ULONG STDMETHODCALLTYPE \mbox{\hyperlink{class_smart_pointer_helper_base_a3d16d2
 HRESULT STDMETHODCALLTYPE \mbox{\hyperlink{class_smart_pointer_helper_base_accdc2a95363ae4f3e76d5dc00e8fef38}{cast\+To\+Type}} (void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}result)
 \begin{DoxyCompactList}\small\item\em Add a new reference to the pointer (increasing the counter by one), and attempt to cast to type \textquotesingle{}T\textquotesingle{}. \end{DoxyCompactList}\item 
 HRESULT STDMETHODCALLTYPE \mbox{\hyperlink{class_smart_pointer_helper_base_af53910e1f9f795cd1016ff8cef9798af}{Query\+Interface}} (REFIID ref\+Id, void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}result)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Query the interface to the underlying COM object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_smart_pointer_helper_base}{Smart\+Pointer\+Helper\+Base$<$ Com\+Classes... $>$}}}
 \begin{DoxyCompactItemize}
 \item 
 ULONG {\bfseries ref\+Count}
 \begin{DoxyCompactList}\small\item\em The underlying reference counter to the pointer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class... Com\+Classes$>$\newline
+class Smart\+Pointer\+Helper$<$ Com\+Classes $>$}
+The \textquotesingle{}\doxylink{class_smart_pointer_helper}{Smart\+Pointer\+Helper}\textquotesingle{} class. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Com\+Classes} & \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_smart_pointer_helper_aa049cb2ece5d84617e0c37f885ea4f62}\label{class_smart_pointer_helper_aa049cb2ece5d84617e0c37f885ea4f62} 
+\index{SmartPointerHelper$<$ ComClasses $>$@{SmartPointerHelper$<$ ComClasses $>$}!SmartPointerHelper@{SmartPointerHelper}}
+\index{SmartPointerHelper@{SmartPointerHelper}!SmartPointerHelper$<$ ComClasses $>$@{SmartPointerHelper$<$ ComClasses $>$}}
+\doxysubsubsection{\texorpdfstring{SmartPointerHelper()}{SmartPointerHelper()}}
+{\footnotesize\ttfamily template$<$class... Com\+Classes$>$ \\
+\mbox{\hyperlink{class_smart_pointer_helper}{Smart\+Pointer\+Helper}}$<$ Com\+Classes $>$\mbox{\hyperlink{class_smart_pointer_helper}{\+::\+Smart\+Pointer\+Helper}} (\begin{DoxyParamCaption}\item[{unsigned int}]{init\+Ref = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Construct a new \textquotesingle{}\doxylink{class_smart_pointer_helper}{Smart\+Pointer\+Helper}\textquotesingle{} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em init\+Ref} & \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Member Function Documentation}
@@ -47,6 +86,10 @@ ULONG {\bfseries ref\+Count}
 \doxysubsubsection{\texorpdfstring{QueryInterface()}{QueryInterface()}}
 {\footnotesize\ttfamily template$<$class... Com\+Classes$>$ \\
 HRESULT STDMETHODCALLTYPE \mbox{\hyperlink{class_smart_pointer_helper}{Smart\+Pointer\+Helper}}$<$ Com\+Classes $>$\+::\+Query\+Interface (\begin{DoxyParamCaption}\item[{REFIID}]{ref\+Id,  }\item[{void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Query the interface to the underlying COM object. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -62,4 +105,4 @@ HRESULT
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/\+Cxx\+Win/modules/\+Win32\+\_\+core/memory/\mbox{\hyperlink{win32___smart_pointer_8h}{win32\+\_\+\+Smart\+Pointer.\+h}}\end{DoxyCompactItemize}
+include/\+Cxx\+Win/modules/\+Win32\+\_\+core/memory/\mbox{\hyperlink{win32___smart_pointer_8hpp}{win32\+\_\+\+Smart\+Pointer.\+hpp}}\end{DoxyCompactItemize}

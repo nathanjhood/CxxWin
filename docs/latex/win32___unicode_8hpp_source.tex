@@ -1,0 +1,48 @@
+\doxysection{win32\+\_\+\+Unicode.\+hpp}
+\hypertarget{win32___unicode_8hpp_source}{}\label{win32___unicode_8hpp_source}\index{include/CxxWin/modules/Win32\_core/native/win32\_Unicode.hpp@{include/CxxWin/modules/Win32\_core/native/win32\_Unicode.hpp}}
+\mbox{\hyperlink{win32___unicode_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ \_WIN32\_UNOCIDE\_HPP\_}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#if\ !defined(\_NEED\_UNICODE)}}
+\DoxyCodeLine{00022\ \textcolor{comment}{/*\ \_NEED\_UNICODE\ defined\ based\ on\ UNICODE\ flag\ */}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#if\ defined(UNICODE)}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#\ define\ \_NEED\_UNICODE\ 1}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#\ define\ \_\_NAME\_AW(func)\ func\#\#W}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#\ define\ \_\_NAME\_AW\_EXT(func,ext)\ func\#\#W\#\#ext}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#\ define\ \_\_NAME\_UAW(func)\ func\#\#\_W}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#\ define\ \_\_NAME\_UAW\_EXT(func,ext)\ func\#\#\_W\_\#\#ext}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#\ define\ \_\_STRING\_AW(str)\ L\#\#str\ \ \ \ }\textcolor{comment}{/*\ same\ as\ TEXT()\ from\ winnt.h\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#\ define\ \_\_PROCNAMEEXT\_AW\ "{}W"{}}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#\ define\ \_NEED\_UNICODE\ 2}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#\ define\ \_\_NAME\_AW(func)\ func\#\#A}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#\ define\ \_\_NAME\_AW\_EXT(func,ext)\ func\#\#A\#\#ext}}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#\ define\ \_\_NAME\_UAW(func)\ func\#\#\_A}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#\ define\ \_\_NAME\_UAW\_EXT(func,ext)\ func\#\#\_A\_\#\#ext}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#\ define\ \_\_STRING\_AW(str)\ str\ \ \ }\textcolor{comment}{/*\ same\ as\ TEXT()\ from\ winnt.h\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#\ define\ \_\_PROCNAMEEXT\_AW\ "{}A"{}}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#define\ \_\_TYPEDEF\_AW(type)\ \ \(\backslash\)}}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\ \ \ \ typedef\ \_\_NAME\_AW(type)\ type;}}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#define\ \_\_TYPEDEF\_UAW(type)\ \(\backslash\)}}
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\ \ \ \ typedef\ \_\_NAME\_UAW(type)\ type;}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !defined(\_NEED\_UNICODE)\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00050\ WINUSERAPI\ LPCTSTR\ WINAPI\ \mbox{\hyperlink{win32___unicode_8hpp_ab6d84b3c78034bf55156f442d1346d6a}{SetTst}}(LPCTSTR\ lpString)\ \{\ \textcolor{keywordflow}{return}\ lpString;\ \};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{keyword}{auto}\ unicodeTstA\ =\ \mbox{\hyperlink{win32___unicode_8hpp_ab6d84b3c78034bf55156f442d1346d6a}{SetTst}}(TEXT(\textcolor{stringliteral}{"{}Calling\ original\ function"{}}));}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\#define\ SetTst\ \_\_NAME\_AW(SetTst)}}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00074\ WINUSERAPI\ LPCSTR\ WINAPI\ \mbox{\hyperlink{win32___unicode_8hpp_adbd3ae3bd6712756d6247b486004ac85}{SetTstA}}(LPCSTR\ lpString)\ \{\ \textcolor{keywordflow}{return}\ lpString;\ \};}
+\DoxyCodeLine{00076\ WINUSERAPI\ LPCWSTR\ WINAPI\ \mbox{\hyperlink{win32___unicode_8hpp_a2aadf2ca30086f4dbb0d0401607a2f51}{SetTstW}}(LPCWSTR\ lpString)\ \{\ \textcolor{keywordflow}{return}\ lpString;\ \};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{keyword}{auto}\ unicodeTstB\ =\ \mbox{\hyperlink{win32___unicode_8hpp_ab6d84b3c78034bf55156f442d1346d6a}{SetTst}}(TEXT(\textcolor{stringliteral}{"{}Calling\ corrected\ function"{}}));}
+
+\end{DoxyCode}

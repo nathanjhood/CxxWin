@@ -1,0 +1,27 @@
+\doxysection{win32\+\_\+\+Platform\+Defs.\+hpp}
+\hypertarget{win32___platform_defs_8hpp_source}{}\label{win32___platform_defs_8hpp_source}\index{include/CxxWin/modules/Win32\_core/system/win32\_PlatformDefs.hpp@{include/CxxWin/modules/Win32\_core/system/win32\_PlatformDefs.hpp}}
+\mbox{\hyperlink{win32___platform_defs_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ \_WIN32\_PLATFORMDEFS\_HPP\_}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{comment}{//==============================================================================}}
+\DoxyCodeLine{00048\ \textcolor{comment}{}\textcolor{preprocessor}{\#define\ \_\_DECLARE\_NON\_COPYABLE(className)\ \(\backslash\)}}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\ \ \ \ className\ (const\ className\&)\ =\ delete;\(\backslash\)}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\ \ \ \ className\&\ operator=\ (const\ className\&)\ =\ delete;}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#define\ \_\_DECLARE\_NON\_MOVEABLE(className)\ \(\backslash\)}}
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\ \ \ \ className\ (className\&\&)\ =\ delete;\(\backslash\)}}
+\DoxyCodeLine{00057\ \textcolor{preprocessor}{\ \ \ \ className\&\ operator=\ (className\&\&)\ =\ delete;}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\#define\ \_\_DECLARE\_NON\_COPYABLE\_WITH\_LEAK\_DETECTOR(className)\ \(\backslash\)}}
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\ \ \ \ \_\_DECLARE\_NON\_COPYABLE(className)\ \(\backslash\)}}
+\DoxyCodeLine{00064\ \textcolor{preprocessor}{\ \ \ \ \_\_LEAK\_DETECTOR(className)}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\#define\ \_\_PREVENT\_HEAP\_ALLOCATION\ \(\backslash\)}}
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\ \ \ private:\ \(\backslash\)}}
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\ \ \ \ static\ void*\ operator\ new\ (size\_t)\ =\ delete;\ \(\backslash\)}}
+\DoxyCodeLine{00072\ \textcolor{preprocessor}{\ \ \ \ static\ void\ operator\ delete\ (void*)\ =\ delete;}}
+
+\end{DoxyCode}

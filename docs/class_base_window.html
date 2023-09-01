@@ -82,17 +82,19 @@ $(function() {
 <p>The '<a class="el" href="class_base_window.html" title="The &#39;BaseWindow&#39; abstract class.">BaseWindow</a>' abstract class.  
  <a href="class_base_window.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="win32___base_window_8h_source.html">win32_BaseWindow.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="win32___base_window_8hpp_source.html">win32_BaseWindow.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a60209fc8aa81ab0efa29263dabc52cbf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_window.html#a60209fc8aa81ab0efa29263dabc52cbf">BaseWindow</a> ()</td></tr>
-<tr class="memdesc:a60209fc8aa81ab0efa29263dabc52cbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new '<a class="el" href="class_base_window.html" title="The &#39;BaseWindow&#39; abstract class.">BaseWindow</a>' object.  <br /></td></tr>
+<tr class="memitem:a60209fc8aa81ab0efa29263dabc52cbf"><td class="memItemLeft" align="right" valign="top"><a id="a60209fc8aa81ab0efa29263dabc52cbf" name="a60209fc8aa81ab0efa29263dabc52cbf"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BaseWindow</b> ()</td></tr>
+<tr class="memdesc:a60209fc8aa81ab0efa29263dabc52cbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new '<a class="el" href="class_base_window.html" title="The &#39;BaseWindow&#39; abstract class.">BaseWindow</a>' object. <br /></td></tr>
 <tr class="separator:a60209fc8aa81ab0efa29263dabc52cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfcb0a79ccf1f3780e353f24983b93bf"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_window.html#acfcb0a79ccf1f3780e353f24983b93bf">Create</a> (PCWSTR lpWindowName, DWORD dwStyle, DWORD dwExStyle=0, int x=CW_USEDEFAULT, int y=CW_USEDEFAULT, int nWidth=CW_USEDEFAULT, int nHeight=CW_USEDEFAULT, HWND hWndParent=0, HMENU hMenu=0)</td></tr>
+<tr class="memdesc:acfcb0a79ccf1f3780e353f24983b93bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new '<a class="el" href="class_base_window.html" title="The &#39;BaseWindow&#39; abstract class.">BaseWindow</a>' -derived object.  <br /></td></tr>
 <tr class="separator:acfcb0a79ccf1f3780e353f24983b93bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1507d2052aaec416ac8b085add33ba0"><td class="memItemLeft" align="right" valign="top">HWND&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_window.html#aa1507d2052aaec416ac8b085add33ba0">Window</a> () CONST</td></tr>
-<tr class="memdesc:aa1507d2052aaec416ac8b085add33ba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the handle to the window object.  <br /></td></tr>
+<tr class="memdesc:aa1507d2052aaec416ac8b085add33ba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the handle to the '<a class="el" href="class_base_window.html" title="The &#39;BaseWindow&#39; abstract class.">BaseWindow</a>' -derived object.  <br /></td></tr>
 <tr class="separator:aa1507d2052aaec416ac8b085add33ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
@@ -104,6 +106,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a76d1b80a812caf760c0efbed6e64b2e1"><td class="memItemLeft" align="right" valign="top">virtual PCWSTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_window.html#a76d1b80a812caf760c0efbed6e64b2e1">ClassName</a> () CONST PURE</td></tr>
+<tr class="memdesc:a76d1b80a812caf760c0efbed6e64b2e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a string of the name of '<a class="el" href="class_base_window.html" title="The &#39;BaseWindow&#39; abstract class.">BaseWindow</a>' -derived object.  <br /></td></tr>
 <tr class="separator:a76d1b80a812caf760c0efbed6e64b2e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7612d6d879e60f4b7ded0cf0ac3dd8a9"><td class="memItemLeft" align="right" valign="top">virtual LRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_window.html#a7612d6d879e60f4b7ded0cf0ac3dd8a9">HandleMessage</a> (UINT uMsg, WPARAM wParam, LPARAM lParam) PURE</td></tr>
 <tr class="memdesc:a7612d6d879e60f4b7ded0cf0ac3dd8a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle the incoming messages.  <br /></td></tr>
@@ -113,7 +116,7 @@ Protected Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a86f5232fa1bbb141f60548a42331fc7e"><td class="memItemLeft" align="right" valign="top"><a id="a86f5232fa1bbb141f60548a42331fc7e" name="a86f5232fa1bbb141f60548a42331fc7e"></a>
 HWND&#160;</td><td class="memItemRight" valign="bottom"><b>m_hwnd</b></td></tr>
-<tr class="memdesc:a86f5232fa1bbb141f60548a42331fc7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The handle to the window object. <br /></td></tr>
+<tr class="memdesc:a86f5232fa1bbb141f60548a42331fc7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The handle to the '<a class="el" href="class_base_window.html" title="The &#39;BaseWindow&#39; abstract class.">BaseWindow</a>' -derived object. <br /></td></tr>
 <tr class="separator:a86f5232fa1bbb141f60548a42331fc7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -125,37 +128,7 @@ class BaseWindow&lt; DERIVED_TYPE &gt;</div><p>The '<a class="el" href="class_ba
   </table>
   </dd>
 </dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a60209fc8aa81ab0efa29263dabc52cbf" name="a60209fc8aa81ab0efa29263dabc52cbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60209fc8aa81ab0efa29263dabc52cbf">&#9670;&#160;</a></span>BaseWindow()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class DERIVED_TYPE &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_base_window.html">BaseWindow</a>&lt; DERIVED_TYPE &gt;<a class="el" href="class_base_window.html">::BaseWindow</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Construct a new '<a class="el" href="class_base_window.html" title="The &#39;BaseWindow&#39; abstract class.">BaseWindow</a>' object. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a76d1b80a812caf760c0efbed6e64b2e1" name="a76d1b80a812caf760c0efbed6e64b2e1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a76d1b80a812caf760c0efbed6e64b2e1">&#9670;&#160;</a></span>ClassName()</h2>
 
@@ -180,6 +153,8 @@ template&lt;class DERIVED_TYPE &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Return a string of the name of '<a class="el" href="class_base_window.html" title="The &#39;BaseWindow&#39; abstract class.">BaseWindow</a>' -derived object. </p>
 <dl class="section return"><dt>Returns</dt><dd>PCWSTR </dd></dl>
 
 <p>Reimplemented in <a class="el" href="class_main_component.html#a10413353888f65b0282eb32cf4a012ef">MainComponent</a>.</p>
@@ -263,6 +238,8 @@ template&lt;class DERIVED_TYPE &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Create a new '<a class="el" href="class_base_window.html" title="The &#39;BaseWindow&#39; abstract class.">BaseWindow</a>' -derived object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lpWindowName</td><td></td></tr>
@@ -363,7 +340,7 @@ template&lt;class DERIVED_TYPE &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the handle to the window object. </p>
+<p>Return the handle to the '<a class="el" href="class_base_window.html" title="The &#39;BaseWindow&#39; abstract class.">BaseWindow</a>' -derived object. </p>
 <dl class="section return"><dt>Returns</dt><dd>HWND </dd></dl>
 
 </div>
@@ -432,7 +409,7 @@ template&lt;class DERIVED_TYPE &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/CxxWin/modules/Win32_core/window/<a class="el" href="win32___base_window_8h_source.html">win32_BaseWindow.h</a></li>
+<li>include/CxxWin/modules/Win32_core/window/<a class="el" href="win32___base_window_8hpp_source.html">win32_BaseWindow.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

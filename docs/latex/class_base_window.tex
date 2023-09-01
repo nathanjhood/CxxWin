@@ -7,17 +7,18 @@ The \textquotesingle{}\doxylink{class_base_window}{Base\+Window}\textquotesingle
 
 
 
-{\ttfamily \#include $<$win32\+\_\+\+Base\+Window.\+h$>$}
+{\ttfamily \#include $<$win32\+\_\+\+Base\+Window.\+hpp$>$}
 
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_base_window_a60209fc8aa81ab0efa29263dabc52cbf}{Base\+Window}} ()
+\Hypertarget{class_base_window_a60209fc8aa81ab0efa29263dabc52cbf}\label{class_base_window_a60209fc8aa81ab0efa29263dabc52cbf} 
+{\bfseries Base\+Window} ()
 \begin{DoxyCompactList}\small\item\em Construct a new \textquotesingle{}\doxylink{class_base_window}{Base\+Window}\textquotesingle{} object. \end{DoxyCompactList}\item 
 BOOL \mbox{\hyperlink{class_base_window_acfcb0a79ccf1f3780e353f24983b93bf}{Create}} (PCWSTR lp\+Window\+Name, DWORD dw\+Style, DWORD dw\+Ex\+Style=0, int x=CW\+\_\+\+USEDEFAULT, int y=CW\+\_\+\+USEDEFAULT, int n\+Width=CW\+\_\+\+USEDEFAULT, int n\+Height=CW\+\_\+\+USEDEFAULT, HWND h\+Wnd\+Parent=0, HMENU h\+Menu=0)
-\item 
+\begin{DoxyCompactList}\small\item\em Create a new \textquotesingle{}\doxylink{class_base_window}{Base\+Window}\textquotesingle{} -\/derived object. \end{DoxyCompactList}\item 
 HWND \mbox{\hyperlink{class_base_window_aa1507d2052aaec416ac8b085add33ba0}{Window}} () CONST
-\begin{DoxyCompactList}\small\item\em Returns the handle to the window object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Return the handle to the \textquotesingle{}\doxylink{class_base_window}{Base\+Window}\textquotesingle{} -\/derived object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -27,7 +28,7 @@ static LRESULT CALLBACK \mbox{\hyperlink{class_base_window_a61198ed120a54deccbd3
 \begin{DoxyCompactItemize}
 \item 
 virtual PCWSTR \mbox{\hyperlink{class_base_window_a76d1b80a812caf760c0efbed6e64b2e1}{Class\+Name}} () CONST PURE
-\item 
+\begin{DoxyCompactList}\small\item\em Return a string of the name of \textquotesingle{}\doxylink{class_base_window}{Base\+Window}\textquotesingle{} -\/derived object. \end{DoxyCompactList}\item 
 virtual LRESULT \mbox{\hyperlink{class_base_window_a7612d6d879e60f4b7ded0cf0ac3dd8a9}{Handle\+Message}} (UINT u\+Msg, WPARAM w\+Param, LPARAM l\+Param) PURE
 \begin{DoxyCompactList}\small\item\em Handle the incoming messages. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Attributes}
@@ -35,7 +36,7 @@ virtual LRESULT \mbox{\hyperlink{class_base_window_a7612d6d879e60f4b7ded0cf0ac3d
 \item 
 \Hypertarget{class_base_window_a86f5232fa1bbb141f60548a42331fc7e}\label{class_base_window_a86f5232fa1bbb141f60548a42331fc7e} 
 HWND {\bfseries m\+\_\+hwnd}
-\begin{DoxyCompactList}\small\item\em The handle to the window object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The handle to the \textquotesingle{}\doxylink{class_base_window}{Base\+Window}\textquotesingle{} -\/derived object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -50,20 +51,6 @@ The \textquotesingle{}\doxylink{class_base_window}{Base\+Window}\textquotesingle
 \end{DoxyTemplParams}
 
 
-\doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{class_base_window_a60209fc8aa81ab0efa29263dabc52cbf}\label{class_base_window_a60209fc8aa81ab0efa29263dabc52cbf} 
-\index{BaseWindow$<$ DERIVED\_TYPE $>$@{BaseWindow$<$ DERIVED\_TYPE $>$}!BaseWindow@{BaseWindow}}
-\index{BaseWindow@{BaseWindow}!BaseWindow$<$ DERIVED\_TYPE $>$@{BaseWindow$<$ DERIVED\_TYPE $>$}}
-\doxysubsubsection{\texorpdfstring{BaseWindow()}{BaseWindow()}}
-{\footnotesize\ttfamily template$<$class DERIVED\+\_\+\+TYPE $>$ \\
-\mbox{\hyperlink{class_base_window}{Base\+Window}}$<$ DERIVED\+\_\+\+TYPE $>$\mbox{\hyperlink{class_base_window}{\+::\+Base\+Window}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Construct a new \textquotesingle{}\doxylink{class_base_window}{Base\+Window}\textquotesingle{} object. 
-
-
-
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_base_window_a76d1b80a812caf760c0efbed6e64b2e1}\label{class_base_window_a76d1b80a812caf760c0efbed6e64b2e1} 
 \index{BaseWindow$<$ DERIVED\_TYPE $>$@{BaseWindow$<$ DERIVED\_TYPE $>$}!ClassName@{ClassName}}
@@ -71,6 +58,10 @@ Construct a new \textquotesingle{}\doxylink{class_base_window}{Base\+Window}\tex
 \doxysubsubsection{\texorpdfstring{ClassName()}{ClassName()}}
 {\footnotesize\ttfamily template$<$class DERIVED\+\_\+\+TYPE $>$ \\
 virtual PCWSTR \mbox{\hyperlink{class_base_window}{Base\+Window}}$<$ DERIVED\+\_\+\+TYPE $>$\+::\+Class\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Return a string of the name of \textquotesingle{}\doxylink{class_base_window}{Base\+Window}\textquotesingle{} -\/derived object. 
 
 \begin{DoxyReturn}{Returns}
 PCWSTR 
@@ -85,6 +76,10 @@ Reimplemented in \mbox{\hyperlink{class_main_component_a10413353888f65b0282eb32c
 \doxysubsubsection{\texorpdfstring{Create()}{Create()}}
 {\footnotesize\ttfamily template$<$class DERIVED\+\_\+\+TYPE $>$ \\
 BOOL \mbox{\hyperlink{class_base_window}{Base\+Window}}$<$ DERIVED\+\_\+\+TYPE $>$\+::\+Create (\begin{DoxyParamCaption}\item[{PCWSTR}]{lp\+Window\+Name,  }\item[{DWORD}]{dw\+Style,  }\item[{DWORD}]{dw\+Ex\+Style = {\ttfamily 0},  }\item[{int}]{x = {\ttfamily CW\+\_\+USEDEFAULT},  }\item[{int}]{y = {\ttfamily CW\+\_\+USEDEFAULT},  }\item[{int}]{n\+Width = {\ttfamily CW\+\_\+USEDEFAULT},  }\item[{int}]{n\+Height = {\ttfamily CW\+\_\+USEDEFAULT},  }\item[{HWND}]{h\+Wnd\+Parent = {\ttfamily 0},  }\item[{HMENU}]{h\+Menu = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a new \textquotesingle{}\doxylink{class_base_window}{Base\+Window}\textquotesingle{} -\/derived object. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -146,7 +141,7 @@ HWND \mbox{\hyperlink{class_base_window}{Base\+Window}}$<$ DERIVED\+\_\+\+TYPE $
 
 
 
-Returns the handle to the window object. 
+Return the handle to the \textquotesingle{}\doxylink{class_base_window}{Base\+Window}\textquotesingle{} -\/derived object. 
 
 \begin{DoxyReturn}{Returns}
 HWND 
@@ -182,4 +177,4 @@ It contains your program\textquotesingle{}s response to a particular message. Th
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/\+Cxx\+Win/modules/\+Win32\+\_\+core/window/\mbox{\hyperlink{win32___base_window_8h}{win32\+\_\+\+Base\+Window.\+h}}\end{DoxyCompactItemize}
+include/\+Cxx\+Win/modules/\+Win32\+\_\+core/window/\mbox{\hyperlink{win32___base_window_8hpp}{win32\+\_\+\+Base\+Window.\+hpp}}\end{DoxyCompactItemize}

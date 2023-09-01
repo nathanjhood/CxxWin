@@ -1,5 +1,5 @@
 /***************************************************************************//**
- * @file win32_png.h
+ * @file win32_png.hpp
  * @author StoneyDSP (nathanjhood@googlemail.com)
  *
  * @brief Contains definitions of functions that provide access to

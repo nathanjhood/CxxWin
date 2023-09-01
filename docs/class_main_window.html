@@ -79,7 +79,7 @@ $(function() {
 <p>The '<a class="el" href="class_main_window.html" title="The &#39;MainWindow&#39; class.">MainWindow</a>' class.  
  <a href="class_main_window.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="win32___main_window_8h_source.html">win32_MainWindow.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="win32___main_window_8hpp_source.html">win32_MainWindow.hpp</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for MainWindow:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -100,13 +100,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a590370509ff31b48345edf4fd1dee572"><td class="memItemLeft" align="right" valign="top">LRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a590370509ff31b48345edf4fd1dee572">HandleMessage</a> (UINT uMsg, WPARAM wParam, LPARAM lParam)</td></tr>
 <tr class="separator:a590370509ff31b48345edf4fd1dee572"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_base_window"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_base_window')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_base_window.html">BaseWindow&lt; MainWindow &gt;</a></td></tr>
-<tr class="memitem:a60209fc8aa81ab0efa29263dabc52cbf inherit pub_methods_class_base_window"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_window.html#a60209fc8aa81ab0efa29263dabc52cbf">BaseWindow</a> ()</td></tr>
-<tr class="memdesc:a60209fc8aa81ab0efa29263dabc52cbf inherit pub_methods_class_base_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new '<a class="el" href="class_base_window.html" title="The &#39;BaseWindow&#39; abstract class.">BaseWindow</a>' object.  <br /></td></tr>
+<tr class="memitem:a60209fc8aa81ab0efa29263dabc52cbf inherit pub_methods_class_base_window"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>BaseWindow</b> ()</td></tr>
+<tr class="memdesc:a60209fc8aa81ab0efa29263dabc52cbf inherit pub_methods_class_base_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new '<a class="el" href="class_base_window.html" title="The &#39;BaseWindow&#39; abstract class.">BaseWindow</a>' object. <br /></td></tr>
 <tr class="separator:a60209fc8aa81ab0efa29263dabc52cbf inherit pub_methods_class_base_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfcb0a79ccf1f3780e353f24983b93bf inherit pub_methods_class_base_window"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_window.html#acfcb0a79ccf1f3780e353f24983b93bf">Create</a> (PCWSTR lpWindowName, DWORD dwStyle, DWORD dwExStyle=0, int x=CW_USEDEFAULT, int y=CW_USEDEFAULT, int nWidth=CW_USEDEFAULT, int nHeight=CW_USEDEFAULT, HWND hWndParent=0, HMENU hMenu=0)</td></tr>
+<tr class="memdesc:acfcb0a79ccf1f3780e353f24983b93bf inherit pub_methods_class_base_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new '<a class="el" href="class_base_window.html" title="The &#39;BaseWindow&#39; abstract class.">BaseWindow</a>' -derived object.  <br /></td></tr>
 <tr class="separator:acfcb0a79ccf1f3780e353f24983b93bf inherit pub_methods_class_base_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1507d2052aaec416ac8b085add33ba0 inherit pub_methods_class_base_window"><td class="memItemLeft" align="right" valign="top">HWND&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_window.html#aa1507d2052aaec416ac8b085add33ba0">Window</a> () CONST</td></tr>
-<tr class="memdesc:aa1507d2052aaec416ac8b085add33ba0 inherit pub_methods_class_base_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the handle to the window object.  <br /></td></tr>
+<tr class="memdesc:aa1507d2052aaec416ac8b085add33ba0 inherit pub_methods_class_base_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the handle to the '<a class="el" href="class_base_window.html" title="The &#39;BaseWindow&#39; abstract class.">BaseWindow</a>' -derived object.  <br /></td></tr>
 <tr class="separator:aa1507d2052aaec416ac8b085add33ba0 inherit pub_methods_class_base_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
@@ -117,6 +119,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a61198ed120a54deccbd3e73221bf9c4d inherit pub_static_methods_class_base_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_base_window"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_base_window')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_base_window.html">BaseWindow&lt; MainWindow &gt;</a></td></tr>
 <tr class="memitem:a76d1b80a812caf760c0efbed6e64b2e1 inherit pro_methods_class_base_window"><td class="memItemLeft" align="right" valign="top">virtual PCWSTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_window.html#a76d1b80a812caf760c0efbed6e64b2e1">ClassName</a> () CONST PURE</td></tr>
+<tr class="memdesc:a76d1b80a812caf760c0efbed6e64b2e1 inherit pro_methods_class_base_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a string of the name of '<a class="el" href="class_base_window.html" title="The &#39;BaseWindow&#39; abstract class.">BaseWindow</a>' -derived object.  <br /></td></tr>
 <tr class="separator:a76d1b80a812caf760c0efbed6e64b2e1 inherit pro_methods_class_base_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7612d6d879e60f4b7ded0cf0ac3dd8a9 inherit pro_methods_class_base_window"><td class="memItemLeft" align="right" valign="top">virtual LRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_base_window.html#a7612d6d879e60f4b7ded0cf0ac3dd8a9">HandleMessage</a> (UINT uMsg, WPARAM wParam, LPARAM lParam) PURE</td></tr>
 <tr class="memdesc:a7612d6d879e60f4b7ded0cf0ac3dd8a9 inherit pro_methods_class_base_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle the incoming messages.  <br /></td></tr>
@@ -124,7 +127,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_base_window"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_base_window')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_base_window.html">BaseWindow&lt; MainWindow &gt;</a></td></tr>
 <tr class="memitem:a86f5232fa1bbb141f60548a42331fc7e inherit pro_attribs_class_base_window"><td class="memItemLeft" align="right" valign="top">
 HWND&#160;</td><td class="memItemRight" valign="bottom"><b>m_hwnd</b></td></tr>
-<tr class="memdesc:a86f5232fa1bbb141f60548a42331fc7e inherit pro_attribs_class_base_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">The handle to the window object. <br /></td></tr>
+<tr class="memdesc:a86f5232fa1bbb141f60548a42331fc7e inherit pro_attribs_class_base_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">The handle to the '<a class="el" href="class_base_window.html" title="The &#39;BaseWindow&#39; abstract class.">BaseWindow</a>' -derived object. <br /></td></tr>
 <tr class="separator:a86f5232fa1bbb141f60548a42331fc7e inherit pro_attribs_class_base_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -202,7 +205,7 @@ HWND&#160;</td><td class="memItemRight" valign="bottom"><b>m_hwnd</b></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/CxxWin/modules/Win32_core/window/<a class="el" href="win32___main_window_8h_source.html">win32_MainWindow.h</a></li>
+<li>include/CxxWin/modules/Win32_core/window/<a class="el" href="win32___main_window_8hpp_source.html">win32_MainWindow.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

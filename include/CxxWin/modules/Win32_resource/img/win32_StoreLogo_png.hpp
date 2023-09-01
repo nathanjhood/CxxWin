@@ -1,5 +1,5 @@
 /***************************************************************************//**
- * @file win32_StoreLogo_png.cpp
+ * @file win32_StoreLogo_png.hpp
  * @author StoneyDSP (nathanjhood@googlemail.com)
  *
  * @brief Contains a default definition of 'StoreLogo_png_array' (see

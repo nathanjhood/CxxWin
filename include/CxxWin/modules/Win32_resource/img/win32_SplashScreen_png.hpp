@@ -1,5 +1,5 @@
 /***************************************************************************//**
- * @file win32_SplashScreen_png.cpp
+ * @file win32_SplashScreen_png.hpp
  * @author StoneyDSP (nathanjhood@googlemail.com)
  *
  * @brief Contains a default declaration of 'SplashScreen_png_array' (see

@@ -7,7 +7,7 @@ The \textquotesingle{}\doxylink{class_smart_pointer}{Smart\+Pointer}\textquotesi
 
 
 
-{\ttfamily \#include $<$win32\+\_\+\+Smart\+Pointer.\+h$>$}
+{\ttfamily \#include $<$win32\+\_\+\+Smart\+Pointer.\+hpp$>$}
 
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -37,19 +37,19 @@ Com\+Class \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink
 HRESULT \mbox{\hyperlink{class_smart_pointer_a04517d2b42a71842cb23a24186a4c88e}{Co\+Create\+Instance}} (REFCLSID class\+UUID, DWORD dw\+Cls\+Context=CLSCTX\+\_\+\+INPROC\+\_\+\+SERVER)
 \item 
 {\footnotesize template$<$class other\+Com\+Class $>$ }\\HRESULT \mbox{\hyperlink{class_smart_pointer_a4458f95c33d46be35a4ce0d3ed21be8d}{Query\+Interface}} (REFCLSID class\+UUID, \mbox{\hyperlink{class_smart_pointer}{Smart\+Pointer}}$<$ other\+Com\+Class $>$ \&dest\+Obj) CONST
-\begin{DoxyCompactList}\small\item\em Query the interface to the underlying object. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Query the interface to the underlying COM object. \end{DoxyCompactList}\item 
 {\footnotesize template$<$class other\+Com\+Class $>$ }\\HRESULT \mbox{\hyperlink{class_smart_pointer_ae8195378156382f79c9cbd10b18f961d}{Query\+Interface}} (\mbox{\hyperlink{class_smart_pointer}{Smart\+Pointer}}$<$ other\+Com\+Class $>$ \&dest\+Obj) CONST
-\begin{DoxyCompactList}\small\item\em Query the interface to the underlying object. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Query the interface to the underlying COM object. \end{DoxyCompactList}\item 
 {\footnotesize template$<$class other\+Com\+Class $>$ }\\\mbox{\hyperlink{class_smart_pointer}{Smart\+Pointer}}$<$ other\+Com\+Class $>$ \mbox{\hyperlink{class_smart_pointer_a698ca40a80fd57a62e769371505f2c78}{get\+Interface}} () CONST
-\begin{DoxyCompactList}\small\item\em Get an interface to the underlying object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get an interface to the underlying COM object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{class_smart_pointer_a2bfb0ebe9f8d89c4c3158e752e66737f}\label{class_smart_pointer_a2bfb0ebe9f8d89c4c3158e752e66737f} 
 void {\bfseries release} ()
-\begin{DoxyCompactList}\small\item\em Call the templated object\textquotesingle{}s underlying \textquotesingle{}Release()\textquotesingle{} method, which must be implemented. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Call the templated COM object pointer\textquotesingle{}s underlying \textquotesingle{}Release()\textquotesingle{} method. \end{DoxyCompactList}\item 
 Com\+Class \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_smart_pointer_a9e700118998b3b6740c5cadbc38123d2}{operator\&}} () noexcept
-\begin{DoxyCompactList}\small\item\em Conversion operator (innaccessible). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \textquotesingle{}Address-\/\+Of\textquotesingle{} operator (innaccessible). \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -133,7 +133,7 @@ template$<$class other\+Com\+Class $>$ \\
 
 
 
-Get an interface to the underlying object. 
+Get an interface to the underlying COM object. 
 
 
 \begin{DoxyTemplParams}{Template Parameters}
@@ -166,7 +166,7 @@ Com\+Class \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink
 
 
 
-Conversion operator (innaccessible). 
+\textquotesingle{}Address-\/\+Of\textquotesingle{} operator (innaccessible). 
 
 \begin{DoxyReturn}{Returns}
 Com\+Class\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} 
@@ -247,7 +247,7 @@ HRESULT \mbox{\hyperlink{class_smart_pointer}{Smart\+Pointer}}$<$ Com\+Class $>$
 
 
 
-Query the interface to the underlying object. 
+Query the interface to the underlying COM object. 
 
 
 \begin{DoxyTemplParams}{Template Parameters}
@@ -274,7 +274,7 @@ HRESULT \mbox{\hyperlink{class_smart_pointer}{Smart\+Pointer}}$<$ Com\+Class $>$
 
 
 
-Query the interface to the underlying object. 
+Query the interface to the underlying COM object. 
 
 
 \begin{DoxyTemplParams}{Template Parameters}
@@ -307,4 +307,4 @@ Com\+Class\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/\+Cxx\+Win/modules/\+Win32\+\_\+core/memory/\mbox{\hyperlink{win32___smart_pointer_8h}{win32\+\_\+\+Smart\+Pointer.\+h}}\end{DoxyCompactItemize}
+include/\+Cxx\+Win/modules/\+Win32\+\_\+core/memory/\mbox{\hyperlink{win32___smart_pointer_8hpp}{win32\+\_\+\+Smart\+Pointer.\+hpp}}\end{DoxyCompactItemize}

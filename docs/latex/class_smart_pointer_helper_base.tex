@@ -7,7 +7,7 @@ The \textquotesingle{}\doxylink{class_smart_pointer_helper_base}{Smart\+Pointer\
 
 
 
-{\ttfamily \#include $<$win32\+\_\+\+Smart\+Pointer.\+h$>$}
+{\ttfamily \#include $<$win32\+\_\+\+Smart\+Pointer.\+hpp$>$}
 
 Inheritance diagram for Smart\+Pointer\+Helper\+Base\texorpdfstring{$<$}{<} First, Com\+Classes \texorpdfstring{$>$}{>}\+:\begin{figure}[H]
 \begin{center}
@@ -33,7 +33,7 @@ ULONG STDMETHODCALLTYPE \mbox{\hyperlink{class_smart_pointer_helper_base_a3d16d2
 {\footnotesize template$<$class Type $>$ }\\HRESULT STDMETHODCALLTYPE \mbox{\hyperlink{class_smart_pointer_helper_base_accdc2a95363ae4f3e76d5dc00e8fef38}{cast\+To\+Type}} (void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}result)
 \begin{DoxyCompactList}\small\item\em Add a new reference to the pointer (increasing the counter by one), and attempt to cast to type \textquotesingle{}T\textquotesingle{}. \end{DoxyCompactList}\item 
 HRESULT STDMETHODCALLTYPE \mbox{\hyperlink{class_smart_pointer_helper_base_af53910e1f9f795cd1016ff8cef9798af}{Query\+Interface}} (REFIID ref\+Id, void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}result)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Query the interface to the underlying COM object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -125,6 +125,10 @@ HRESULT
 HRESULT STDMETHODCALLTYPE \mbox{\hyperlink{class_smart_pointer_helper_base}{Smart\+Pointer\+Helper\+Base}}$<$ First, Com\+Classes $>$\+::\+Query\+Interface (\begin{DoxyParamCaption}\item[{REFIID}]{ref\+Id,  }\item[{void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
 
 
+
+Query the interface to the underlying COM object. 
+
+
 \begin{DoxyParams}{Parameters}
 {\em ref\+Id} & \\
 \hline
@@ -152,4 +156,4 @@ ULONG
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-include/\+Cxx\+Win/modules/\+Win32\+\_\+core/memory/\mbox{\hyperlink{win32___smart_pointer_8h}{win32\+\_\+\+Smart\+Pointer.\+h}}\end{DoxyCompactItemize}
+include/\+Cxx\+Win/modules/\+Win32\+\_\+core/memory/\mbox{\hyperlink{win32___smart_pointer_8hpp}{win32\+\_\+\+Smart\+Pointer.\+hpp}}\end{DoxyCompactItemize}
