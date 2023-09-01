@@ -17,12 +17,7 @@ jobs:
         shell: msys2 {0}
     steps:
       - uses: actions/checkout@v3
-      - uses: msys2/setup-msys2@v2
-        with:
-          msystem: UCRT64
-          update: true
-          install: git cmake make mingw-w64-ucrt-x86_64-gcc mingw-w64-ucrt-x86_64-cmake mingw-w64-ucrt-x86_64-make
-
+      
       - name: Cache Restore
         id: cache-restore-pacman-ucrt64
         uses: actions/cache/restore@v3
@@ -35,6 +30,12 @@ jobs:
           key: ${{ runner.os }}-pacman-ucrt64
           # An ordered list of keys to use for restoring the cache if no cache hit occurred for key
           # restore-keys: # optional
+          
+      - uses: msys2/setup-msys2@v2
+        with:
+          msystem: UCRT64
+          update: true
+          install: git cmake make mingw-w64-ucrt-x86_64-gcc mingw-w64-ucrt-x86_64-cmake mingw-w64-ucrt-x86_64-make
           
       - name: Cache Save
         id: cache-save-pacman-ucrt64
@@ -58,7 +59,7 @@ jobs:
       - name: Build
         working-directory: ${{github.workspace}}
         # Build your program with the given configuration
-        run: cmake $(cygpath -u "${{github.workspace}}\out\ucrt64") --config ${{env.BUILD_TYPE}} --target all
+        run: cmake --build $(cygpath -u "${{github.workspace}}\out\ucrt64")
 
       # - name: Test
       #   working-directory: ${{github.workspace}}/build/x64-windows
