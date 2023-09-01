@@ -1,23 +1,28 @@
 /***************************************************************************//**
- * @file WinMain.h
+ * @file WinMain.hpp
  * @author StoneyDSP (nathanjhood@googlemail.com)
+ *
  * @brief Contains the declarations of 'WinMain'.
+ *
  * @version 1.0.0-init
  * @date 2023-08-23
  *
  * @copyright Copyright (c) 2023
  *
  ******************************************************************************/
-
 #pragma once
 /** Contains the declarations of 'WinMain'. */
-#define __MAIN_H
+#define _WINMAIN_HPP_
 
+#include "MainComponent.hpp"
 
-#include "MainComponent.h"
-
+// Switch entry point definition between 'ANSI' and 'Unicode' types.
 #if !defined(UNICODE) || !defined(_UNICODE)
-int WINAPI WinMain  (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd);
+typedef LPSTR LPCMDLINE;
+/** Contains the ANSI-style declaration of 'WinMain'. */
+#define WinMain WinMain
 #else
-int WINAPI wWinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLine, int nShowCmd);
-#endif
+typedef LPWSTR LPCMDLINE;
+/** Contains the Unicode-style declaration of 'WinMain'. */
+#define WinMain wWinMain
+#endif // UNICODE

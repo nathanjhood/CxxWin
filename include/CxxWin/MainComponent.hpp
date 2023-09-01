@@ -1,5 +1,5 @@
 /***************************************************************************//**
- * @file MainComponent.h
+ * @file MainComponent.hpp
  * @author StoneyDSP (nathanjhood@googlemail.com)
  * @brief Contains the declarations of 'MainComponent'.
  * @version 1.0.0-init
@@ -11,7 +11,7 @@
 
 #pragma once
 /** Contains the declarations of 'MainComponent'. */
-#define __MAIN_COMPONENT_H
+#define _MAIN_COMPONENT_HPP_
 
 // #ifdef __cplusplus
 // extern "C" {
@@ -32,6 +32,7 @@
 // #endif
 
 #include "modules/Win32_core/win32_core.h"
+#include "modules/Win32_resource/win32_resource.hpp"
 
 /**
  * @brief The 'MainComponent' class.

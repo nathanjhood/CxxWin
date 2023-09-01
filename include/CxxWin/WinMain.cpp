@@ -9,13 +9,18 @@
  *
  ******************************************************************************/
 
-#include "WinMain.h"
+#include "WinMain.hpp"
 
-#if !defined(UNICODE) || !defined(_UNICODE)
-int WINAPI WinMain  (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd)
-#else
-int WINAPI wWinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLine, int nShowCmd)
-#endif
+/**
+ * @brief The main entry point for the runtime executable binary.
+ *
+ * @param hInstance
+ * @param hPrevInstance
+ * @param lpCmdLine
+ * @param nShowCmd
+ * @return int
+ */
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPCMDLINE lpCmdLine, int nShowCmd)
 {
     // Initialize common controls (legacy support)
     // INITCOMMONCONTROLSEX icc;
