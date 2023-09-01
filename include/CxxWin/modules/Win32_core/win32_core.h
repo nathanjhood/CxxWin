@@ -1,4 +1,3 @@
-#pragma once
 /***************************************************************************//**
  * @file win32_core.h
  * @author StoneyDSP (nathanjhood@googlemail.com)
@@ -9,25 +8,9 @@
  * @copyright Copyright (c) 2023
  *
  ******************************************************************************/
+#pragma once
+
 #define _WIN32_CORE_H_
-
-// #ifdef __cplusplus
-// extern "C" {
-// #endif
-
-// #if defined(modules_WIN32_SHARED)
-// #if defined(modules_WIN32_EXPORTS)
-// #   define modules_EXPORT __declspec(dllexport)
-// #else
-// #   define modules_EXPORT __declspec(dllimport)
-// #endif
-// #else
-// #   define modules_EXPORT
-// #endif
-
-// #ifdef __cplusplus
-// }
-// #endif
 
 #include "system/win32_TargetPlatform.h"
 
