@@ -28,12 +28,7 @@
 
 namespace
 {
-/**
- * @brief An array of bytes representing "ApplicationIcon.png".
- *
- * @see 'ApplicationIcon.png'
- *
- */
+/** @brief An array of bytes representing "ApplicationIcon.png". */
 RCRESOURCE ApplicationIcon_png_array[2336];
 } // namespace
 
