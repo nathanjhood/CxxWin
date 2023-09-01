@@ -1,5 +1,7 @@
 # CxxWin
 
+![Win-Msys2-UCRT64](https://github.com/StoneyDSP/CxxWin/actions/workflows/MSYS_UCRT64_BUILD.yml/badge.svg)
+
 ## Win32 API with C++ and Direct2D.
 
 A quick one-and-done Win32 API project implementing a simple COM application window for Windows platforms in C++.
