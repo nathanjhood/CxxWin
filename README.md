@@ -4,6 +4,8 @@
 
 A quick one-and-done Win32 API project implementing a simple COM application window for Windows platforms in C++.
 
+![Screenshot](https://raw.githubusercontent.com/StoneyDSP/CxxWin/main/share/doc/CxxWin/screenshot_installer_example.png)
+
 This simple application draws three semi-transparent circles within a main window, given a shared set of co-ordinates for their (relative) position and size. The main window itself is fully resizeable; the rendered circles will automatically re-calculate their own properties in relation to the resizing of the main window, while maintaining the shared position and size co-ordinates. In cases where two circles overlap, their alpha channels shall blend (the background fill is also factored into this), causing a pleasing overlapping effect.
 
 ![Screenshot](https://raw.githubusercontent.com/StoneyDSP/CxxWin/main/share/doc/CxxWin/screenshot_circles_example.png)
