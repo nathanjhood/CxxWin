@@ -96,7 +96,7 @@
 /** Current version number (minor). */
 #define CXXWIN_VERSION_MINOR      0
 /** Current version number (patch). */
-#define CXXWIN_VERSION_PATCH      0
+#define CXXWIN_VERSION_PATCH      1
 
 /** Current version number.
 
@@ -110,6 +110,10 @@
 #define CXXWIN_VERSION_ID \
     [[maybe_unused]] volatile auto CxxWinVersionId = "cxxwin_version_" STRINGIFY(CXXWIN_VERSION_MAJOR) "_" STRINGIFY(CXXWIN_VERSION_MINOR) "_" STRINGIFY(CXXWIN_VERSION_PATCH);
 #endif
+
+#define CXXWIN_LONG_NAME TEXT("CxxWin") STRINGIFY(.) STRINGIFY(CXXWIN_VERSION_MAJOR) STRINGIFY(.) STRINGIFY(CXXWIN_VERSION_MINOR) STRINGIFY(.) STRINGIFY(CXXWIN_VERSION_PATCH)
+
+// const wchar_t* str = { CXXWIN_LONG_NAME };
 
 //==============================================================================
 

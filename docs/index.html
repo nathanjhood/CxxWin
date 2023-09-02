@@ -72,10 +72,11 @@ $(function() {
   <div class="headertitle"><div class="title">CxxWin </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__r_e_a_d_m_e"></a> </p>
+<div class="textblock"><p><a class="anchor" id="md__r_e_a_d_m_e"></a> <img src="https://github.com/StoneyDSP/CxxWin/actions/workflows/MSYS_UCRT64_BUILD.yml/badge.svg" alt="Win-Msys2-UCRT64" style="pointer-events: none;" class="inline"/></p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Win32 API with C++ and Direct2D.</h1>
 <p>A quick one-and-done Win32 API project implementing a simple COM application window for Windows platforms in C++.</p>
+<p><img src="https://raw.githubusercontent.com/StoneyDSP/CxxWin/main/share/doc/CxxWin/screenshot_installer_example.png" alt="Screenshot" class="inline"/></p>
 <p>This simple application draws three semi-transparent circles within a main window, given a shared set of co-ordinates for their (relative) position and size. The main window itself is fully resizeable; the rendered circles will automatically re-calculate their own properties in relation to the resizing of the main window, while maintaining the shared position and size co-ordinates. In cases where two circles overlap, their alpha channels shall blend (the background fill is also factored into this), causing a pleasing overlapping effect.</p>
 <p><img src="https://raw.githubusercontent.com/StoneyDSP/CxxWin/main/share/doc/CxxWin/screenshot_circles_example.png" alt="Screenshot" class="inline"/></p>
 <p>While none of the above makes for a particularly interesting nor useful application on it's own, the codebase is written in C++ using the Win32 API, using Direct2D and Microsoft's COM (Component Object Model) class inheritance model, of which C++ is a first class language. The resulting application makes use of the most recent advances in C++ language standards and compiler features, is buildable on and for systems pre-dating Windows 7, and uses a logical, modular, object-based approach for portability, reusability, and maintainability.</p>

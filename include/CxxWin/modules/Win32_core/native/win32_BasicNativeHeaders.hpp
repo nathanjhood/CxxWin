@@ -117,8 +117,9 @@
  #include <winioctl.h>
 
  #include <windowsx.h>
- #include <ole2.h>
  #include <d2d1.h>
+ #include <ole2.h>
+
 
  #if defined(__PLATFORM_IS_MINGW)
   #include <basetyps.h>
@@ -142,7 +143,7 @@
   #pragma warning (4: 4511 4512 4100)
  #endif
 
- #if /*! defined(__PLATFORM_IS_MINGW) && */ ! defined(__DONT_AUTOLINK_TO_WIN32_LIBRARIES)
+ #if !defined(__PLATFORM_IS_MINGW) && ! defined(__DONT_AUTOLINK_TO_WIN32_LIBRARIES)
   #pragma comment (lib, "kernel32.lib")
   #pragma comment (lib, "user32.lib")
   #pragma comment (lib, "wininet.lib")
@@ -153,6 +154,38 @@
   #pragma comment (lib, "winmm.lib")
 
   #pragma comment (lib, "d2d1.lib")
+  #pragma comment (lib, "ole32.lib")
+
+  #ifdef _NATIVE_WCHAR_T_DEFINED
+   #ifdef _DEBUG
+    #pragma comment (lib, "comsuppwd.lib")
+   #else
+    #pragma comment (lib, "comsuppw.lib")
+   #endif
+  #else
+   #ifdef _DEBUG
+    #pragma comment (lib, "comsuppd.lib")
+   #else
+    #pragma comment (lib, "comsupp.lib")
+   #endif
+  #endif
+ #elif defined(__PLATFORM_IS_MINGW) && ! defined(__DONT_AUTOLINK_TO_WIN32_LIBRARIES)
+  #pragma comment (lib, "mingw32.lib")
+  #pragma comment (lib, "mingwex.lib")
+  #pragma comment (lib, "moldname.lib")
+  #pragma comment (lib, "kernel32.lib")
+  #pragma comment (lib, "shell32.lib")
+  #pragma comment (lib, "user32.lib")
+//   #pragma comment (lib, "wininet.lib")
+  #pragma comment (lib, "advapi32.lib")
+//   #pragma comment (lib, "ws2_32.lib")
+//   #pragma comment (lib, "version.lib")
+//   #pragma comment (lib, "shlwapi.lib")
+//   #pragma comment (lib, "winmm.lib")
+
+  #pragma comment (lib, "d2d1.lib")
+  #pragma comment (lib, "ole32.lib")
+  #pragma comment (lib, "comdlg32.lib")
 
   #ifdef _NATIVE_WCHAR_T_DEFINED
    #ifdef _DEBUG

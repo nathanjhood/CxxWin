@@ -1,0 +1,36 @@
+\doxysection{win32\+\_\+\+Main\+Window.\+cpp}
+\hypertarget{win32___main_window_8cpp_source}{}\label{win32___main_window_8cpp_source}\index{include/CxxWin/modules/Win32\_core/window/win32\_MainWindow.cpp@{include/CxxWin/modules/Win32\_core/window/win32\_MainWindow.cpp}}
+\mbox{\hyperlink{win32___main_window_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00021\ PCWSTR\ \mbox{\hyperlink{class_main_window_ac73b70e36c04de55a2b049637408c21e}{MainWindow::ClassName}}()\ CONST}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordflow}{return}\ TEXT(\textcolor{stringliteral}{"{}UDEFINED"{}});}
+\DoxyCodeLine{00024\ \}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00034\ LRESULT\ \mbox{\hyperlink{class_main_window_a590370509ff31b48345edf4fd1dee572}{MainWindow::HandleMessage}}(UINT\ uMsg,\ WPARAM\ wParam,\ LPARAM\ lParam)}
+\DoxyCodeLine{00035\ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordflow}{switch}\ (uMsg)}
+\DoxyCodeLine{00037\ \ \ \ \ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ WM\_DESTROY:}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Destroy\ 'WinMain()'?\ So\ be\ it...}}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ PostQuitMessage(0);}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ WM\_PAINT:}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ PAINTSTRUCT\ ps;}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ HDC\ hdc\ =\ BeginPaint(\mbox{\hyperlink{class_base_window_a86f5232fa1bbb141f60548a42331fc7e}{m\_hwnd}},\ \&ps);}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ FillRect(hdc,\ \&ps.rcPaint,\ (HBRUSH)\ (COLOR\_WINDOW+1));}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ EndPaint(\mbox{\hyperlink{class_base_window_a86f5232fa1bbb141f60548a42331fc7e}{m\_hwnd}},\ \&ps);}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ DefWindowProc(\mbox{\hyperlink{class_base_window_a86f5232fa1bbb141f60548a42331fc7e}{m\_hwnd}},\ uMsg,\ wParam,\ lParam);}
+\DoxyCodeLine{00055\ \ \ \ \ \}}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordflow}{return}\ TRUE;}
+\DoxyCodeLine{00057\ \}}
+
+\end{DoxyCode}

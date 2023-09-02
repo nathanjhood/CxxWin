@@ -7,26 +7,30 @@
 \DoxyCodeLine{00014\ }
 \DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ \_WIN32\_DPISCALE\_HPP\_}}
 \DoxyCodeLine{00017\ }
-\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_d_p_i_scale}{DPIScale}}}
-\DoxyCodeLine{00023\ \{}
-\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_d_p_i_scale_a73eed9079f664208ee120707b0dd59e8}{Initialize}}(ID2D1Factory*\ pFactory)}
-\DoxyCodeLine{00031\ \ \ \ \ \{}
-\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ FLOAT\ dpiX,\ dpiY;}
-\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ pFactory-\/>GetDesktopDpi(\&dpiX,\ \&dpiY);}
-\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ scaleX\ =\ dpiX\ /\ 96.0F;}
-\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ scaleY\ =\ dpiY\ /\ 96.0F;}
-\DoxyCodeLine{00036\ \ \ \ \ \}}
-\DoxyCodeLine{00037\ }
-\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
-\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{static}\ D2D1\_POINT\_2F\ \mbox{\hyperlink{class_d_p_i_scale_ae59ec79121ae8a341ead48127e063dbd}{PixelsToDips}}(T\ x,\ T\ y)}
-\DoxyCodeLine{00048\ \ \ \ \ \{}
-\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ D2D1::Point2F(\textcolor{keyword}{static\_cast<}FLOAT\textcolor{keyword}{>}(x)\ /\ scaleX,\ \textcolor{keyword}{static\_cast<}FLOAT\textcolor{keyword}{>}(y)\ /\ scaleY);}
-\DoxyCodeLine{00050\ \ \ \ \ \}}
-\DoxyCodeLine{00051\ }
-\DoxyCodeLine{00052\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{static}\ FLOAT\ scaleX;}
-\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{static}\ FLOAT\ scaleY;}
-\DoxyCodeLine{00055\ \};}
+\DoxyCodeLine{00018\ \textcolor{comment}{//\ namespace\ Win32}}
+\DoxyCodeLine{00019\ \textcolor{comment}{//\ \{}}
+\DoxyCodeLine{00020\ \textcolor{comment}{//\ namespace\ Core}}
+\DoxyCodeLine{00021\ \textcolor{comment}{//\ \{}}
+\DoxyCodeLine{00022\ \textcolor{comment}{//\ namespace\ Window}}
+\DoxyCodeLine{00023\ \textcolor{comment}{//\ \{}}
+\DoxyCodeLine{00028\ \textcolor{comment}{}\textcolor{keyword}{class\ }\mbox{\hyperlink{class_d_p_i_scale}{DPIScale}}}
+\DoxyCodeLine{00029\ \{}
+\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_d_p_i_scale_a16d2a9e0076698eb6a77e357fb81b89a}{Initialize}}(ID2D1Factory*\ pFactory);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{static}\ D2D1\_POINT\_2F\ \mbox{\hyperlink{class_d_p_i_scale_a7b527c2c60184cb8afb7262894db385f}{PixelsToDips}}(T\ x,\ T\ y);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{static}\ FLOAT\ \mbox{\hyperlink{class_d_p_i_scale_a3bb7db817a90eb4208dd3cbb37b450d2}{scaleX}};}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{static}\ FLOAT\ \mbox{\hyperlink{class_d_p_i_scale_a42354861f68caeee9c38bd96d9079abd}{scaleY}};}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#define\ \_DPIScale\_T\ DPIScale}}
+\DoxyCodeLine{00044\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{win32___d_p_i_scale_8hpp_a9fc44a3f14ec042350763628e1ba60c1}{\_DPIScale\_T}}\ \mbox{\hyperlink{class_d_p_i_scale}{DPIScale}};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{comment}{//\ \}\ //\ namespace\ Window}}
+\DoxyCodeLine{00047\ \textcolor{comment}{//\ \}\ //\ namespace\ Core}}
+\DoxyCodeLine{00048\ \textcolor{comment}{//\ \}\ //\ namespace\ Win32}}
 
 \end{DoxyCode}

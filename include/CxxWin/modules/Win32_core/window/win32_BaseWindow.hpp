@@ -15,6 +15,12 @@
 /** @brief Contains the 'BaseWindow' interface. */
 #define _WIN32_BASEWINDOW_HPP_
 
+// namespace Win32
+// {
+// namespace Core
+// {
+// namespace Window
+// {
 /**
  * @brief The 'BaseWindow' abstract class.
  *
@@ -156,4 +162,13 @@ protected:
      *
      */
     HWND m_hwnd;
+
+    __PREVENT_HEAP_ALLOCATION
+private:
+    __DECLARE_NON_COPYABLE(BaseWindow)
+    __DECLARE_NON_MOVEABLE(BaseWindow)
 };
+
+// } // namespace Window
+// } // namespace Core
+// } // namespace Win32

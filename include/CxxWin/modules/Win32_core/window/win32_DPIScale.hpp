@@ -15,6 +15,12 @@
 /** @brief Contains the 'DPIScale' class. */
 #define _WIN32_DPISCALE_HPP_
 
+// namespace Win32
+// {
+// namespace Core
+// {
+// namespace Window
+// {
 /**
  * @brief The 'DPIScale' class.
  *
@@ -22,34 +28,21 @@
 class DPIScale
 {
 public:
-    /**
-     * @brief The 'Initialize' function.
-     *
-     * @param pFactory
-     */
-    static void Initialize(ID2D1Factory* pFactory)
-    {
-        FLOAT dpiX, dpiY;
-        pFactory->GetDesktopDpi(&dpiX, &dpiY);
-        scaleX = dpiX / 96.0F;
-        scaleY = dpiY / 96.0F;
-    }
+    static void Initialize(ID2D1Factory* pFactory);
 
-    /**
-     * @brief Pixels to DIP's.
-     *
-     * @tparam T
-     * @param x
-     * @param y
-     * @return D2D1_POINT_2F
-     */
     template <typename T>
-    static D2D1_POINT_2F PixelsToDips(T x, T y)
-    {
-        return D2D1::Point2F(static_cast<FLOAT>(x) / scaleX, static_cast<FLOAT>(y) / scaleY);
-    }
+    static D2D1_POINT_2F PixelsToDips(T x, T y);
 
 private:
     static FLOAT scaleX;
     static FLOAT scaleY;
 };
+
+/** @brief The 'DPIScale' datatype. */
+#define _DPIScale_T DPIScale
+/** @brief The 'DPIScale' datatype. */
+typedef class _DPIScale_T DPIScale;
+
+// } // namespace Window
+// } // namespace Core
+// } // namespace Win32

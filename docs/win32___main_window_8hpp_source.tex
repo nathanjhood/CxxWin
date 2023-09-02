@@ -6,11 +6,31 @@
 \DoxyCodeLine{00015\ \textcolor{preprocessor}{\#pragma\ once}}
 \DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ \_WIN32\_MAINWINDOW\_HPP\_}}
 \DoxyCodeLine{00023\ }
-\DoxyCodeLine{00028\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_window}{MainWindow}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_base_window}{BaseWindow}}<MainWindow>}
-\DoxyCodeLine{00029\ \{}
-\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00036\ \ \ \ \ PCWSTR\ \mbox{\hyperlink{class_main_window_a18a1d6b708993d8a378e91070e114568}{ClassName}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00045\ \ \ \ \ LRESULT\ \mbox{\hyperlink{class_main_window_a590370509ff31b48345edf4fd1dee572}{HandleMessage}}(UINT\ uMsg,\ WPARAM\ wParam,\ LPARAM\ lParam);}
-\DoxyCodeLine{00046\ \};}
+\DoxyCodeLine{00024\ \textcolor{comment}{//\ namespace\ Win32}}
+\DoxyCodeLine{00025\ \textcolor{comment}{//\ \{}}
+\DoxyCodeLine{00026\ \textcolor{comment}{//\ namespace\ Core}}
+\DoxyCodeLine{00027\ \textcolor{comment}{//\ \{}}
+\DoxyCodeLine{00028\ \textcolor{comment}{//\ namespace\ Window}}
+\DoxyCodeLine{00029\ \textcolor{comment}{//\ \{}}
+\DoxyCodeLine{00034\ \textcolor{comment}{}\textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_window}{MainWindow}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_base_window}{BaseWindow}}<MainWindow>}
+\DoxyCodeLine{00035\ \{}
+\DoxyCodeLine{00036\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{class_main_window_a0230fe7f0fab30b98c45cebfc5e224db}{MainWindow}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ PCWSTR\ \mbox{\hyperlink{class_main_window_ac73b70e36c04de55a2b049637408c21e}{ClassName}}()\ CONST;}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ LRESULT\ \mbox{\hyperlink{class_main_window_a590370509ff31b48345edf4fd1dee572}{HandleMessage}}(UINT\ uMsg,\ WPARAM\ wParam,\ LPARAM\ lParam);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{win32___platform_defs_8hpp_a964d381579febb0cc83dcc69890beec0}{\_\_DECLARE\_NON\_COPYABLE}}(\mbox{\hyperlink{class_main_window}{MainWindow}})}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{win32___platform_defs_8hpp_adc9b0f127fefc464e5b4e704259c8ced}{\_\_DECLARE\_NON\_MOVEABLE}}(\mbox{\hyperlink{class_main_window}{MainWindow}})}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{win32___platform_defs_8hpp_aa48cf96123b508654d4c4e9a56e831cb}{\_\_PREVENT\_HEAP\_ALLOCATION}}}
+\DoxyCodeLine{00047\ \};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#define\ \_MainWindow\_T\ MainWindow}}
+\DoxyCodeLine{00052\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{win32___main_window_8hpp_a603260483c79f64303e7b8162a6e4e2e}{\_MainWindow\_T}}\ \mbox{\hyperlink{class_main_window}{MainWindow}};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{comment}{//\ \}\ //\ namespace\ Window}}
+\DoxyCodeLine{00055\ \textcolor{comment}{//\ \}\ //\ namespace\ Core}}
+\DoxyCodeLine{00056\ \textcolor{comment}{//\ \}\ //\ namespace\ Win32}}
 
 \end{DoxyCode}

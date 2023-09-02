@@ -30,13 +30,3 @@
 #include "window/win32_DPIScale.hpp"
 #include "window/win32_BaseWindow.hpp"
 #include "window/win32_MainWindow.hpp"
-
-/** @brief The 'DPIScale' datatype. */
-#define _DPIScale_T DPIScale
-/** @brief The 'DPIScale' datatype. */
-typedef class _DPIScale_T DPIScale;
-
-/** @brief The 'DPIScale' datatype. */
-#define _MainWindow_T MainWindow
-/** @brief The 'MainWindow' datatype. */
-typedef class _MainWindow_T MainWindow;

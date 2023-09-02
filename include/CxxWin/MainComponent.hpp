@@ -16,11 +16,13 @@
 #include "modules/Win32_core/win32_core.hpp"
 // #include "modules/Win32_resource/win32_resource.hpp"
 
+// namespace Win32
+// {
 /**
  * @brief The 'MainComponent' class.
  *
  */
-class MainComponent                   : public MainWindow
+class MainComponent              : public MainWindow
 {
 public:
     MainComponent();
@@ -54,3 +56,5 @@ private:
 
     D2D1_POINT_2F                       ptMouse;
 };
+
+// } // namespace Win32

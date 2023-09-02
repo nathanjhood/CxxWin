@@ -34,15 +34,24 @@
 \DoxyCodeLine{00046\ }
 \DoxyCodeLine{00047\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !defined(\_NEED\_UNICODE)\ */}\textcolor{preprocessor}{}}
 \DoxyCodeLine{00048\ }
-\DoxyCodeLine{00050\ WINUSERAPI\ LPCTSTR\ WINAPI\ \mbox{\hyperlink{win32___unicode_8hpp_ab6d84b3c78034bf55156f442d1346d6a}{SetTst}}(LPCTSTR\ lpString)\ \{\ \textcolor{keywordflow}{return}\ lpString;\ \};}
-\DoxyCodeLine{00051\ }
-\DoxyCodeLine{00052\ \textcolor{keyword}{auto}\ unicodeTstA\ =\ \mbox{\hyperlink{win32___unicode_8hpp_ab6d84b3c78034bf55156f442d1346d6a}{SetTst}}(TEXT(\textcolor{stringliteral}{"{}Calling\ original\ function"{}}));}
-\DoxyCodeLine{00053\ }
-\DoxyCodeLine{00071\ \textcolor{preprocessor}{\#define\ SetTst\ \_\_NAME\_AW(SetTst)}}
-\DoxyCodeLine{00072\ }
-\DoxyCodeLine{00074\ WINUSERAPI\ LPCSTR\ WINAPI\ \mbox{\hyperlink{win32___unicode_8hpp_adbd3ae3bd6712756d6247b486004ac85}{SetTstA}}(LPCSTR\ lpString)\ \{\ \textcolor{keywordflow}{return}\ lpString;\ \};}
-\DoxyCodeLine{00076\ WINUSERAPI\ LPCWSTR\ WINAPI\ \mbox{\hyperlink{win32___unicode_8hpp_a2aadf2ca30086f4dbb0d0401607a2f51}{SetTstW}}(LPCWSTR\ lpString)\ \{\ \textcolor{keywordflow}{return}\ lpString;\ \};}
-\DoxyCodeLine{00077\ }
-\DoxyCodeLine{00078\ \textcolor{keyword}{auto}\ unicodeTstB\ =\ \mbox{\hyperlink{win32___unicode_8hpp_ab6d84b3c78034bf55156f442d1346d6a}{SetTst}}(TEXT(\textcolor{stringliteral}{"{}Calling\ corrected\ function"{}}));}
+\DoxyCodeLine{00049\ \textcolor{keyword}{namespace\ }Win32}
+\DoxyCodeLine{00050\ \{}
+\DoxyCodeLine{00051\ \textcolor{keyword}{namespace\ }Core}
+\DoxyCodeLine{00052\ \{}
+\DoxyCodeLine{00053\ \textcolor{keyword}{namespace\ }Native}
+\DoxyCodeLine{00054\ \{}
+\DoxyCodeLine{00055\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_win32_1_1_core_1_1_native_1_1_unicode_handler}{UnicodeHandler}}}
+\DoxyCodeLine{00056\ \{}
+\DoxyCodeLine{00057\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00058\ \ \ \ \ BOOL\ SetVar(HWND\ hwnd,\ LPCTSTR\ lpText);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ BOOL\ SetVarA(HWND\ hwnd,\ LPCSTR\ lpText);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ BOOL\ SetVarW(HWND\ hwnd,\ LPCWSTR\ lpText);}
+\DoxyCodeLine{00063\ \};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \}}
+\DoxyCodeLine{00066\ \}}
+\DoxyCodeLine{00067\ \}}
 
 \end{DoxyCode}

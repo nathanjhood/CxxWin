@@ -101,3 +101,6 @@
 //==============================================================================
 
 // include lib .cpp files here
+
+#include "window/win32_DPIScale.cpp"
+#include "window/win32_MainWindow.cpp"
