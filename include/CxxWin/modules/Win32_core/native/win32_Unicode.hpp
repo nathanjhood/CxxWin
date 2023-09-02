@@ -45,3 +45,23 @@
     typedef __NAME_UAW(type) type;
 
 #endif /* !defined(_NEED_UNICODE) */
+
+namespace Win32
+{
+namespace Core
+{
+namespace Native
+{
+class UnicodeHandler
+{
+public:
+    BOOL SetVar(HWND hwnd, LPCTSTR lpText);
+
+    BOOL SetVarA(HWND hwnd, LPCSTR lpText);
+
+    BOOL SetVarW(HWND hwnd, LPCWSTR lpText);
+};
+
+}
+}
+}

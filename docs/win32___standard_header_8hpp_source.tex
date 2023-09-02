@@ -65,7 +65,7 @@
 \DoxyCodeLine{00093\ \textcolor{comment}{//==============================================================================}}
 \DoxyCodeLine{00095\ \textcolor{comment}{}\textcolor{preprocessor}{\#define\ CXXWIN\_VERSION\_MAJOR\ \ \ \ \ \ 1}}
 \DoxyCodeLine{00097\ \textcolor{preprocessor}{\#define\ CXXWIN\_VERSION\_MINOR\ \ \ \ \ \ 0}}
-\DoxyCodeLine{00099\ \textcolor{preprocessor}{\#define\ CXXWIN\_VERSION\_PATCH\ \ \ \ \ \ 0}}
+\DoxyCodeLine{00099\ \textcolor{preprocessor}{\#define\ CXXWIN\_VERSION\_PATCH\ \ \ \ \ \ 1}}
 \DoxyCodeLine{00100\ }
 \DoxyCodeLine{00107\ \textcolor{preprocessor}{\#define\ CXXWIN\_VERSION\ \ \ ((CXXWIN\_VERSION\_MAJOR\ <<\ 16)\ +\ (CXXWIN\_VERSION\_MINOR\ <<\ 8)\ +\ CXXWIN\_VERSION\_PATCH)}}
 \DoxyCodeLine{00108\ }
@@ -74,91 +74,95 @@
 \DoxyCodeLine{00111\ \textcolor{preprocessor}{\ \ \ \ [[maybe\_unused]]\ volatile\ auto\ CxxWinVersionId\ =\ "{}cxxwin\_version\_"{}}\ STRINGIFY(CXXWIN\_VERSION\_MAJOR)\ "{}\_"{}\ STRINGIFY(CXXWIN\_VERSION\_MINOR)\ "{}\_"{}\ STRINGIFY(CXXWIN\_VERSION\_PATCH);}
 \DoxyCodeLine{00112\ \textcolor{preprocessor}{\#endif}}
 \DoxyCodeLine{00113\ }
-\DoxyCodeLine{00114\ \textcolor{comment}{//==============================================================================}}
+\DoxyCodeLine{00114\ \textcolor{preprocessor}{\#define\ CXXWIN\_LONG\_NAME\ TEXT("{}CxxWin"{}})\ STRINGIFY(.)\ STRINGIFY(CXXWIN\_VERSION\_MAJOR)\ STRINGIFY(.)\ STRINGIFY(CXXWIN\_VERSION\_MINOR)\ STRINGIFY(.)\ STRINGIFY(CXXWIN\_VERSION\_PATCH)}
 \DoxyCodeLine{00115\ }
-\DoxyCodeLine{00116\ \textcolor{preprocessor}{\#include\ <algorithm>}}
-\DoxyCodeLine{00117\ \textcolor{preprocessor}{\#include\ <array>}}
-\DoxyCodeLine{00118\ \textcolor{preprocessor}{\#include\ <atomic>}}
-\DoxyCodeLine{00119\ \textcolor{preprocessor}{\#include\ <cmath>}}
-\DoxyCodeLine{00120\ \textcolor{preprocessor}{\#include\ <condition\_variable>}}
-\DoxyCodeLine{00121\ \textcolor{preprocessor}{\#include\ <cstddef>}}
-\DoxyCodeLine{00122\ \textcolor{preprocessor}{\#include\ <functional>}}
-\DoxyCodeLine{00123\ \textcolor{preprocessor}{\#include\ <future>}}
-\DoxyCodeLine{00124\ \textcolor{preprocessor}{\#include\ <iomanip>}}
-\DoxyCodeLine{00125\ \textcolor{preprocessor}{\#include\ <iostream>}}
-\DoxyCodeLine{00126\ \textcolor{preprocessor}{\#include\ <limits>}}
-\DoxyCodeLine{00127\ \textcolor{preprocessor}{\#include\ <list>}}
-\DoxyCodeLine{00128\ \textcolor{preprocessor}{\#include\ <map>}}
-\DoxyCodeLine{00129\ \textcolor{preprocessor}{\#include\ <memory>}}
-\DoxyCodeLine{00130\ \textcolor{preprocessor}{\#include\ <mutex>}}
-\DoxyCodeLine{00131\ \textcolor{preprocessor}{\#include\ <numeric>}}
-\DoxyCodeLine{00132\ \textcolor{preprocessor}{\#include\ <optional>}}
-\DoxyCodeLine{00133\ \textcolor{preprocessor}{\#include\ <queue>}}
-\DoxyCodeLine{00134\ \textcolor{preprocessor}{\#include\ <set>}}
-\DoxyCodeLine{00135\ \textcolor{preprocessor}{\#include\ <sstream>}}
-\DoxyCodeLine{00136\ \textcolor{preprocessor}{\#include\ <thread>}}
-\DoxyCodeLine{00137\ \textcolor{preprocessor}{\#include\ <typeindex>}}
-\DoxyCodeLine{00138\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
-\DoxyCodeLine{00139\ \textcolor{preprocessor}{\#include\ <unordered\_set>}}
-\DoxyCodeLine{00140\ \textcolor{preprocessor}{\#include\ <utility>}}
-\DoxyCodeLine{00141\ \textcolor{preprocessor}{\#include\ <variant>}}
-\DoxyCodeLine{00142\ \textcolor{preprocessor}{\#include\ <vector>}}
-\DoxyCodeLine{00143\ }
-\DoxyCodeLine{00144\ \textcolor{comment}{//==============================================================================}}
-\DoxyCodeLine{00145\ }
-\DoxyCodeLine{00146\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{win32___compiler_support_8hpp}{win32\_CompilerSupport.hpp}}"{}}}
-\DoxyCodeLine{00147\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{win32___platform_defs_8hpp}{win32\_PlatformDefs.hpp}}"{}}}
-\DoxyCodeLine{00148\ }
-\DoxyCodeLine{00149\ \textcolor{comment}{//==============================================================================}}
-\DoxyCodeLine{00150\ \textcolor{comment}{//\ Now\ we'll\ include\ some\ common\ OS\ headers..}}
-\DoxyCodeLine{00151\ \textcolor{comment}{//\ JUCE\_BEGIN\_IGNORE\_WARNINGS\_MSVC\ (4514\ 4245\ 4100)}}
+\DoxyCodeLine{00116\ \textcolor{comment}{//\ const\ wchar\_t*\ str\ =\ \{\ CXXWIN\_LONG\_NAME\ \};}}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ \textcolor{comment}{//==============================================================================}}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{00121\ \textcolor{preprocessor}{\#include\ <array>}}
+\DoxyCodeLine{00122\ \textcolor{preprocessor}{\#include\ <atomic>}}
+\DoxyCodeLine{00123\ \textcolor{preprocessor}{\#include\ <cmath>}}
+\DoxyCodeLine{00124\ \textcolor{preprocessor}{\#include\ <condition\_variable>}}
+\DoxyCodeLine{00125\ \textcolor{preprocessor}{\#include\ <cstddef>}}
+\DoxyCodeLine{00126\ \textcolor{preprocessor}{\#include\ <functional>}}
+\DoxyCodeLine{00127\ \textcolor{preprocessor}{\#include\ <future>}}
+\DoxyCodeLine{00128\ \textcolor{preprocessor}{\#include\ <iomanip>}}
+\DoxyCodeLine{00129\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00130\ \textcolor{preprocessor}{\#include\ <limits>}}
+\DoxyCodeLine{00131\ \textcolor{preprocessor}{\#include\ <list>}}
+\DoxyCodeLine{00132\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00133\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00134\ \textcolor{preprocessor}{\#include\ <mutex>}}
+\DoxyCodeLine{00135\ \textcolor{preprocessor}{\#include\ <numeric>}}
+\DoxyCodeLine{00136\ \textcolor{preprocessor}{\#include\ <optional>}}
+\DoxyCodeLine{00137\ \textcolor{preprocessor}{\#include\ <queue>}}
+\DoxyCodeLine{00138\ \textcolor{preprocessor}{\#include\ <set>}}
+\DoxyCodeLine{00139\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00140\ \textcolor{preprocessor}{\#include\ <thread>}}
+\DoxyCodeLine{00141\ \textcolor{preprocessor}{\#include\ <typeindex>}}
+\DoxyCodeLine{00142\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00143\ \textcolor{preprocessor}{\#include\ <unordered\_set>}}
+\DoxyCodeLine{00144\ \textcolor{preprocessor}{\#include\ <utility>}}
+\DoxyCodeLine{00145\ \textcolor{preprocessor}{\#include\ <variant>}}
+\DoxyCodeLine{00146\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ \textcolor{comment}{//==============================================================================}}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00150\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{win32___compiler_support_8hpp}{win32\_CompilerSupport.hpp}}"{}}}
+\DoxyCodeLine{00151\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{win32___platform_defs_8hpp}{win32\_PlatformDefs.hpp}}"{}}}
 \DoxyCodeLine{00152\ }
-\DoxyCodeLine{00153\ \textcolor{preprocessor}{\#if\ MSVC}}
-\DoxyCodeLine{00154\ \textcolor{preprocessor}{\#\ \ include\ <intrin.h>}}
-\DoxyCodeLine{00155\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00153\ \textcolor{comment}{//==============================================================================}}
+\DoxyCodeLine{00154\ \textcolor{comment}{//\ Now\ we'll\ include\ some\ common\ OS\ headers..}}
+\DoxyCodeLine{00155\ \textcolor{comment}{//\ JUCE\_BEGIN\_IGNORE\_WARNINGS\_MSVC\ (4514\ 4245\ 4100)}}
 \DoxyCodeLine{00156\ }
-\DoxyCodeLine{00157\ }
-\DoxyCodeLine{00158\ \textcolor{preprocessor}{\#if\ defined(\_\_PLATFORM\_IS\_MAC)\ ||\ defined(\_\_PLATFORM\_IS\_IOS)}}
-\DoxyCodeLine{00159\ \textcolor{preprocessor}{\#\ \ include\ <libkern/OSAtomic.h>}}
-\DoxyCodeLine{00160\ \textcolor{preprocessor}{\#\ \ include\ <xlocale.h>}}
-\DoxyCodeLine{00161\ \textcolor{preprocessor}{\#\ \ include\ <signal.h>}}
-\DoxyCodeLine{00162\ \textcolor{preprocessor}{\#endif}}
-\DoxyCodeLine{00163\ }
-\DoxyCodeLine{00164\ \textcolor{preprocessor}{\#if\ defined(\_\_PLATFORM\_IS\_LINUX)\ ||\ defined(\_\_PLATFORM\_IS\_BSD)}}
-\DoxyCodeLine{00165\ \textcolor{preprocessor}{\#\ \ include\ <cstring>}}
-\DoxyCodeLine{00166\ \textcolor{preprocessor}{\#\ \ include\ <signal.h>}}
+\DoxyCodeLine{00157\ \textcolor{preprocessor}{\#if\ MSVC}}
+\DoxyCodeLine{00158\ \textcolor{preprocessor}{\#\ \ include\ <intrin.h>}}
+\DoxyCodeLine{00159\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00162\ \textcolor{preprocessor}{\#if\ defined(\_\_PLATFORM\_IS\_MAC)\ ||\ defined(\_\_PLATFORM\_IS\_IOS)}}
+\DoxyCodeLine{00163\ \textcolor{preprocessor}{\#\ \ include\ <libkern/OSAtomic.h>}}
+\DoxyCodeLine{00164\ \textcolor{preprocessor}{\#\ \ include\ <xlocale.h>}}
+\DoxyCodeLine{00165\ \textcolor{preprocessor}{\#\ \ include\ <signal.h>}}
+\DoxyCodeLine{00166\ \textcolor{preprocessor}{\#endif}}
 \DoxyCodeLine{00167\ }
-\DoxyCodeLine{00168\ \textcolor{preprocessor}{\#\ \ if\ \_\_INTEL\_COMPILER}}
-\DoxyCodeLine{00169\ \textcolor{preprocessor}{\#\ \ \ \ if\ \_\_ia64\_\_}}
-\DoxyCodeLine{00170\ \textcolor{preprocessor}{\#\ \ \ \ \ \ include\ <ia64intrin.h>}}
-\DoxyCodeLine{00171\ \textcolor{preprocessor}{\#\ \ \ \ else}}
-\DoxyCodeLine{00172\ \textcolor{preprocessor}{\#\ \ \ \ \ \ include\ <ia32intrin.h>}}
-\DoxyCodeLine{00173\ \textcolor{preprocessor}{\#\ \ \ \ endif}}
-\DoxyCodeLine{00174\ \textcolor{preprocessor}{\#\ \ endif}}
-\DoxyCodeLine{00175\ \textcolor{preprocessor}{\#endif}}
-\DoxyCodeLine{00176\ }
-\DoxyCodeLine{00177\ \textcolor{preprocessor}{\#if\ MSVC\ \&\&\ \_DEBUG}}
-\DoxyCodeLine{00178\ \textcolor{preprocessor}{\#\ \ include\ <crtdbg.h>}}
+\DoxyCodeLine{00168\ \textcolor{preprocessor}{\#if\ defined(\_\_PLATFORM\_IS\_LINUX)\ ||\ defined(\_\_PLATFORM\_IS\_BSD)}}
+\DoxyCodeLine{00169\ \textcolor{preprocessor}{\#\ \ include\ <cstring>}}
+\DoxyCodeLine{00170\ \textcolor{preprocessor}{\#\ \ include\ <signal.h>}}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00172\ \textcolor{preprocessor}{\#\ \ if\ \_\_INTEL\_COMPILER}}
+\DoxyCodeLine{00173\ \textcolor{preprocessor}{\#\ \ \ \ if\ \_\_ia64\_\_}}
+\DoxyCodeLine{00174\ \textcolor{preprocessor}{\#\ \ \ \ \ \ include\ <ia64intrin.h>}}
+\DoxyCodeLine{00175\ \textcolor{preprocessor}{\#\ \ \ \ else}}
+\DoxyCodeLine{00176\ \textcolor{preprocessor}{\#\ \ \ \ \ \ include\ <ia32intrin.h>}}
+\DoxyCodeLine{00177\ \textcolor{preprocessor}{\#\ \ \ \ endif}}
+\DoxyCodeLine{00178\ \textcolor{preprocessor}{\#\ \ endif}}
 \DoxyCodeLine{00179\ \textcolor{preprocessor}{\#endif}}
 \DoxyCodeLine{00180\ }
-\DoxyCodeLine{00181\ \textcolor{comment}{//\ JUCE\_END\_IGNORE\_WARNINGS\_MSVC}}
-\DoxyCodeLine{00182\ }
-\DoxyCodeLine{00183\ \textcolor{preprocessor}{\#ifdef\ \_\_PLATFORM\_IS\_MINGW}}
-\DoxyCodeLine{00184\ \textcolor{preprocessor}{\#\ \ include\ <cstring>}}
-\DoxyCodeLine{00185\ \textcolor{preprocessor}{\#\ \ include\ <sys/types.h>}}
-\DoxyCodeLine{00186\ \textcolor{preprocessor}{\#endif}}
-\DoxyCodeLine{00187\ }
-\DoxyCodeLine{00188\ \textcolor{preprocessor}{\#ifdef\ \_\_PLATFORM\_IS\_ANDROID}}
-\DoxyCodeLine{00189\ \textcolor{preprocessor}{\#\ \ include\ <cstring>}}
-\DoxyCodeLine{00190\ \textcolor{preprocessor}{\#\ \ include\ <byteswap.h>}}
-\DoxyCodeLine{00191\ \textcolor{preprocessor}{\#endif}}
-\DoxyCodeLine{00192\ }
-\DoxyCodeLine{00193\ \textcolor{comment}{//\ undef\ symbols\ that\ are\ sometimes\ set\ by\ 3rd-\/party\ headers..}}
-\DoxyCodeLine{00194\ \textcolor{comment}{//\ \#undef\ TYPE\_BOOL}}
-\DoxyCodeLine{00195\ \textcolor{preprocessor}{\#undef\ max}}
-\DoxyCodeLine{00196\ \textcolor{preprocessor}{\#undef\ min}}
-\DoxyCodeLine{00197\ \textcolor{preprocessor}{\#undef\ major}}
-\DoxyCodeLine{00198\ \textcolor{preprocessor}{\#undef\ minor}}
-\DoxyCodeLine{00199\ \textcolor{preprocessor}{\#undef\ KeyPress}}
+\DoxyCodeLine{00181\ \textcolor{preprocessor}{\#if\ MSVC\ \&\&\ \_DEBUG}}
+\DoxyCodeLine{00182\ \textcolor{preprocessor}{\#\ \ include\ <crtdbg.h>}}
+\DoxyCodeLine{00183\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00185\ \textcolor{comment}{//\ JUCE\_END\_IGNORE\_WARNINGS\_MSVC}}
+\DoxyCodeLine{00186\ }
+\DoxyCodeLine{00187\ \textcolor{preprocessor}{\#ifdef\ \_\_PLATFORM\_IS\_MINGW}}
+\DoxyCodeLine{00188\ \textcolor{preprocessor}{\#\ \ include\ <cstring>}}
+\DoxyCodeLine{00189\ \textcolor{preprocessor}{\#\ \ include\ <sys/types.h>}}
+\DoxyCodeLine{00190\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00191\ }
+\DoxyCodeLine{00192\ \textcolor{preprocessor}{\#ifdef\ \_\_PLATFORM\_IS\_ANDROID}}
+\DoxyCodeLine{00193\ \textcolor{preprocessor}{\#\ \ include\ <cstring>}}
+\DoxyCodeLine{00194\ \textcolor{preprocessor}{\#\ \ include\ <byteswap.h>}}
+\DoxyCodeLine{00195\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00197\ \textcolor{comment}{//\ undef\ symbols\ that\ are\ sometimes\ set\ by\ 3rd-\/party\ headers..}}
+\DoxyCodeLine{00198\ \textcolor{comment}{//\ \#undef\ TYPE\_BOOL}}
+\DoxyCodeLine{00199\ \textcolor{preprocessor}{\#undef\ max}}
+\DoxyCodeLine{00200\ \textcolor{preprocessor}{\#undef\ min}}
+\DoxyCodeLine{00201\ \textcolor{preprocessor}{\#undef\ major}}
+\DoxyCodeLine{00202\ \textcolor{preprocessor}{\#undef\ minor}}
+\DoxyCodeLine{00203\ \textcolor{preprocessor}{\#undef\ KeyPress}}
 
 \end{DoxyCode}

@@ -33,24 +33,24 @@
 
 #if defined(__clang__) && !defined(__ibxml__)
 
-#  define __C_COMPILER_IS_CLANG 1
+#  define __C_COMPILER_IS_CLANG INT 1
 
 #  define __C_COMPILER_NAME __PM_STRING(Clang)
-#  define __C_COMPILER_VERSION_MAJOR __clang_major__
-#  define __C_COMPILER_VERSION_MINOR __clang_minor__
-#  define __C_COMPILER_VERSION_PATCH __clang_patchlevel__
+#  define __C_COMPILER_VERSION_MAJOR INT __clang_major__
+#  define __C_COMPILER_VERSION_MINOR INT __clang_minor__
+#  define __C_COMPILER_VERSION_PATCH INT __clang_patchlevel__
 
-#  define __C_COMPILER_VERSION (__clang_major__ * 100 + __clang_minor__)
+#  define __C_COMPILER_VERSION (__clang_major__ * INT 100 + __clang_minor__)
 
 #elif defined(__GNUC__) && !defined(__clang__) && !defined(__INTEL_COMPILER) && !defined(__NVCOMPILER)
 
-#  define __C_COMPILER_IS_GNU 1
+#  define __C_COMPILER_IS_GNU INT 1
 
-#  define __C_COMPILER_NAME __PM_STRING(GNU)
-#  define __C_COMPILER_VERSION_MAJOR __GNUC__
-#  define __C_COMPILER_VERSION_MINOR __GNUC_MINOR__
-#  define __C_COMPILER_VERSION_PATCH __GNUC_PATCHLEVEL__
-#  define __C_COMPILER_VERSION (__GNUC__ * 100 + __GNUC_MINOR__)
+#  define __C_COMPILER_NAME TEXT("GNU")
+#  define __C_COMPILER_VERSION_MAJOR INT __GNUC__
+#  define __C_COMPILER_VERSION_MINOR INT __GNUC_MINOR__
+#  define __C_COMPILER_VERSION_PATCH INT __GNUC_PATCHLEVEL__
+#  define __C_COMPILER_VERSION (__GNUC__ * INT 100 + __GNUC_MINOR__)
 
 #endif
 
@@ -61,9 +61,9 @@
 #  define __CXX_COMPILER_VERSION __C_COMPILER_VERSION
 
 #ifdef __ICL
-#	define __ICC_VERSION __ICL
+#	define __ICC_VERSION INT __ICL
 #elif defined(__INTEL_COMPILER)
-#	define __ICC_VERSION __INTEL_COMPILER
+#	define __ICC_VERSION INT __INTEL_COMPILER
 #else
 #	define __ICC_VERSION 0
 #endif
@@ -99,41 +99,41 @@
 #ifdef __has_feature
 #	define __HAS_FEATURE(x) __has_feature(x)
 #else
-#	define __HAS_FEATURE(x) 0
+#	define __HAS_FEATURE(x) FALSE
 #endif
 
 #if defined(__has_include) || __ICC_VERSION >= 1600 || __MSC_VERSION >= 1900
 #	define __HAS_INCLUDE(x) __has_include(x)
 #else
-#	define __HAS_INCLUDE(x) 0
+#	define __HAS_INCLUDE(x) FALSE
 #endif
 
 #ifdef __has_attribute
 #	define __HAS_ATTRIBUTE(x) __has_attribute(x)
 #else
-#	define __HAS_ATTRIBUTE(x) 0
+#	define __HAS_ATTRIBUTE(x) FALSE
 #endif
 
 #ifdef __has_c_attribute
 #	define __HAS_C_ATTRIBUTE(x) __has_c_attribute(x)
 #else
-#	define __HAS_C_ATTRIBUTE(x) 0
+#	define __HAS_C_ATTRIBUTE(x) FALSE
 #endif
 
 #ifdef __has_cpp_attribute
 #	define __HAS_CPP_ATTRIBUTE(x) __has_cpp_attribute(x)
 #else
-#	define __HAS_CPP_ATTRIBUTE(x) 0
+#	define __HAS_CPP_ATTRIBUTE(x) FALSE
 #endif
 
 #ifdef __has_builtin
 #	define __HAS_BUILTIN(x) __has_builtin(x)
 #else
-#	define __HAS_BUILTIN(x) 0
+#	define __HAS_BUILTIN(x) FALSE
 #endif
 
 #ifdef __has_extension
 #	define __HAS_EXTENSION(x) __has_extension(x)
 #else
-#	define __HAS_EXTENSION(x) 0
+#	define __HAS_EXTENSION(x) FALSE
 #endif

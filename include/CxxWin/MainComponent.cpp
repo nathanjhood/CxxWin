@@ -9,6 +9,8 @@
  *
  ******************************************************************************/
 
+// #include "modules/Win32_core/win32_core.mm"
+
 #include "MainComponent.hpp"
 
 /**
@@ -36,7 +38,7 @@ MainComponent::MainComponent()
  */
 PCWSTR MainComponent::ClassName() const
 {
-    return TEXT("CxxWin");
+    return CXXWIN_LONG_NAME;
 }
 
 /**
@@ -265,15 +267,3 @@ void MainComponent::OnDestroy()
     SafeRelease(&pFactory);
     PostQuitMessage(0);
 }
-
-/**
- * @brief
- *
- */
-float DPIScale::scaleX = { 1.0F };
-
-/**
- * @brief
- *
- */
-float DPIScale::scaleY = { 1.0F };

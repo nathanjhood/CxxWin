@@ -108,19 +108,26 @@ $(function() {
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#endif </span><span class="comment">/* !defined(_NEED_UNICODE) */</span><span class="preprocessor"></span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="win32___unicode_8hpp.html#a36c9aedf8f8f6535fa510604a5be7ed6">   50</a></span>WINUSERAPI LPCTSTR WINAPI <a class="code hl_define" href="win32___unicode_8hpp.html#ab6d84b3c78034bf55156f442d1346d6a">SetTst</a>(LPCTSTR lpString) { <span class="keywordflow">return</span> lpString; };</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">auto</span> unicodeTstA = <a class="code hl_define" href="win32___unicode_8hpp.html#ab6d84b3c78034bf55156f442d1346d6a">SetTst</a>(TEXT(<span class="stringliteral">&quot;Calling original function&quot;</span>));</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="win32___unicode_8hpp.html#ab6d84b3c78034bf55156f442d1346d6a">   71</a></span><span class="preprocessor">#define SetTst __NAME_AW(SetTst)</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="win32___unicode_8hpp.html#adbd3ae3bd6712756d6247b486004ac85">   74</a></span>WINUSERAPI LPCSTR WINAPI <a class="code hl_function" href="win32___unicode_8hpp.html#adbd3ae3bd6712756d6247b486004ac85">SetTstA</a>(LPCSTR lpString) { <span class="keywordflow">return</span> lpString; };</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="win32___unicode_8hpp.html#a2aadf2ca30086f4dbb0d0401607a2f51">   76</a></span>WINUSERAPI LPCWSTR WINAPI <a class="code hl_function" href="win32___unicode_8hpp.html#a2aadf2ca30086f4dbb0d0401607a2f51">SetTstW</a>(LPCWSTR lpString) { <span class="keywordflow">return</span> lpString; };</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keyword">auto</span> unicodeTstB = <a class="code hl_define" href="win32___unicode_8hpp.html#ab6d84b3c78034bf55156f442d1346d6a">SetTst</a>(TEXT(<span class="stringliteral">&quot;Calling corrected function&quot;</span>));</div>
-<div class="ttc" id="awin32___unicode_8hpp_html_a2aadf2ca30086f4dbb0d0401607a2f51"><div class="ttname"><a href="win32___unicode_8hpp.html#a2aadf2ca30086f4dbb0d0401607a2f51">SetTstW</a></div><div class="ttdeci">WINUSERAPI LPCWSTR WINAPI SetTstW(LPCWSTR lpString)</div><div class="ttdoc">The Unicode prototype uses the data type LPCWSTR.</div><div class="ttdef"><b>Definition</b> win32_Unicode.hpp:76</div></div>
-<div class="ttc" id="awin32___unicode_8hpp_html_ab6d84b3c78034bf55156f442d1346d6a"><div class="ttname"><a href="win32___unicode_8hpp.html#ab6d84b3c78034bf55156f442d1346d6a">SetTst</a></div><div class="ttdeci">#define SetTst</div><div class="ttdoc">The header file provides the generic function name implemented as a macro.</div><div class="ttdef"><b>Definition</b> win32_Unicode.hpp:71</div></div>
-<div class="ttc" id="awin32___unicode_8hpp_html_adbd3ae3bd6712756d6247b486004ac85"><div class="ttname"><a href="win32___unicode_8hpp.html#adbd3ae3bd6712756d6247b486004ac85">SetTstA</a></div><div class="ttdeci">WINUSERAPI LPCSTR WINAPI SetTstA(LPCSTR lpString)</div><div class="ttdoc">The Windows code page prototype uses the data type LPCSTR.</div><div class="ttdef"><b>Definition</b> win32_Unicode.hpp:74</div></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">namespace </span>Win32</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">namespace </span>Core</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>{</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">namespace </span>Native</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>{</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_win32_1_1_core_1_1_native_1_1_unicode_handler.html">   55</a></span><span class="keyword">class </span><a class="code hl_class" href="class_win32_1_1_core_1_1_native_1_1_unicode_handler.html">UnicodeHandler</a></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>{</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    BOOL SetVar(HWND hwnd, LPCTSTR lpText);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    BOOL SetVarA(HWND hwnd, LPCSTR lpText);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    BOOL SetVarW(HWND hwnd, LPCWSTR lpText);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>};</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
+<div class="ttc" id="aclass_win32_1_1_core_1_1_native_1_1_unicode_handler_html"><div class="ttname"><a href="class_win32_1_1_core_1_1_native_1_1_unicode_handler.html">Win32::Core::Native::UnicodeHandler</a></div><div class="ttdef"><b>Definition</b> win32_Unicode.hpp:56</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

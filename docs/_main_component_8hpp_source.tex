@@ -6,46 +6,46 @@
 \DoxyCodeLine{00012\ \textcolor{preprocessor}{\#pragma\ once}}
 \DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ \_MAIN\_COMPONENT\_HPP\_}}
 \DoxyCodeLine{00015\ }
-\DoxyCodeLine{00016\ \textcolor{comment}{//\ \#ifdef\ \_\_cplusplus}}
-\DoxyCodeLine{00017\ \textcolor{comment}{//\ extern\ "{}C"{}\ \{}}
-\DoxyCodeLine{00018\ \textcolor{comment}{//\ \#endif}}
-\DoxyCodeLine{00019\ }
-\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ "{}modules/Win32\_core/win32\_core.hpp"{}}}
-\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{win32__resource_8hpp}{modules/Win32\_resource/win32\_resource.hpp}}"{}}}
-\DoxyCodeLine{00022\ }
-\DoxyCodeLine{00027\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_component}{MainComponent}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_main_window}{MainWindow}}}
-\DoxyCodeLine{00028\ \{}
-\DoxyCodeLine{00029\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_main_component_a85254935b98beac9128189c6a577d7be}{MainComponent}}();}
-\DoxyCodeLine{00031\ }
-\DoxyCodeLine{00032\ \ \ \ \ PCWSTR\ \mbox{\hyperlink{class_main_component_a10413353888f65b0282eb32cf4a012ef}{ClassName}}()\ CONST;}
-\DoxyCodeLine{00033\ \ \ \ \ LRESULT\ \mbox{\hyperlink{class_main_component_a28a911446776a6ea7777f0cde9960d16}{HandleMessage}}(UINT\ uMsg,\ WPARAM\ wParam,\ LPARAM\ lParam);}
-\DoxyCodeLine{00034\ }
-\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ CalculateLayout();}
-\DoxyCodeLine{00036\ \ \ \ \ HRESULT\ \mbox{\hyperlink{class_main_component_ad513e8d388d5e229c0d4850a7d09b5f0}{CreateGraphicsResources}}();}
-\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ DiscardGraphicsResources();}
-\DoxyCodeLine{00038\ }
-\DoxyCodeLine{00039\ \ \ \ \ HRESULT\ \mbox{\hyperlink{class_main_component_a9dc97c9d3abef9e02c68956cf99e43da}{OnCreate}}();}
-\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ OnPaint();}
-\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ Resize();}
-\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ OnClose()\ CONST;}
-\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ OnDestroy();}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}modules/Win32\_core/win32\_core.hpp"{}}}
+\DoxyCodeLine{00017\ \textcolor{comment}{//\ \#include\ "{}modules/Win32\_resource/win32\_resource.hpp"{}}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{comment}{//\ namespace\ Win32}}
+\DoxyCodeLine{00020\ \textcolor{comment}{//\ \{}}
+\DoxyCodeLine{00025\ \textcolor{comment}{}\textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_component}{MainComponent}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_main_window}{MainWindow}}}
+\DoxyCodeLine{00026\ \{}
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_main_component_a85254935b98beac9128189c6a577d7be}{MainComponent}}();}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ PCWSTR\ \mbox{\hyperlink{class_main_component_a10413353888f65b0282eb32cf4a012ef}{ClassName}}()\ CONST;}
+\DoxyCodeLine{00031\ \ \ \ \ LRESULT\ \mbox{\hyperlink{class_main_component_a28a911446776a6ea7777f0cde9960d16}{HandleMessage}}(UINT\ uMsg,\ WPARAM\ wParam,\ LPARAM\ lParam);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ CalculateLayout();}
+\DoxyCodeLine{00034\ \ \ \ \ HRESULT\ \mbox{\hyperlink{class_main_component_ad513e8d388d5e229c0d4850a7d09b5f0}{CreateGraphicsResources}}();}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ DiscardGraphicsResources();}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ HRESULT\ \mbox{\hyperlink{class_main_component_a9dc97c9d3abef9e02c68956cf99e43da}{OnCreate}}();}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ OnPaint();}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ Resize();}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ OnClose()\ CONST;}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ OnDestroy();}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{private}:}
 \DoxyCodeLine{00044\ }
-\DoxyCodeLine{00045\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00046\ }
-\DoxyCodeLine{00047\ \ \ \ \ \textcolor{comment}{//\ IFileOpenDialog*\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ pFileOpen;}}
-\DoxyCodeLine{00048\ \ \ \ \ \textcolor{comment}{//\ SmartPointer<IFileOpenDialog>\ \ \ \ \ \ \ \ pFileOpen;}}
-\DoxyCodeLine{00049\ }
-\DoxyCodeLine{00050\ \ \ \ \ ID2D1Factory*\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ pFactory;}
-\DoxyCodeLine{00051\ \ \ \ \ ID2D1HwndRenderTarget*\ \ \ \ \ \ \ \ \ \ \ \ \ \ pRenderTarget;}
-\DoxyCodeLine{00052\ \ \ \ \ ID2D1SolidColorBrush*\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ pBrush;}
-\DoxyCodeLine{00053\ \ \ \ \ ID2D1SolidColorBrush*\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ pBrushB;}
-\DoxyCodeLine{00054\ \ \ \ \ ID2D1SolidColorBrush*\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ pBrushC;}
-\DoxyCodeLine{00055\ \ \ \ \ D2D1\_ELLIPSE\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ellipseA;}
-\DoxyCodeLine{00056\ \ \ \ \ D2D1\_ELLIPSE\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ellipseB;}
-\DoxyCodeLine{00057\ \ \ \ \ D2D1\_ELLIPSE\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ellipseC;}
-\DoxyCodeLine{00058\ }
-\DoxyCodeLine{00059\ \ \ \ \ D2D1\_POINT\_2F\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ptMouse;}
-\DoxyCodeLine{00060\ \};}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{comment}{//\ IFileOpenDialog*\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ pFileOpen;}}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{comment}{//\ SmartPointer<IFileOpenDialog>\ \ \ \ \ \ \ \ pFileOpen;}}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ ID2D1Factory*\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ pFactory;}
+\DoxyCodeLine{00049\ \ \ \ \ ID2D1HwndRenderTarget*\ \ \ \ \ \ \ \ \ \ \ \ \ \ pRenderTarget;}
+\DoxyCodeLine{00050\ \ \ \ \ ID2D1SolidColorBrush*\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ pBrush;}
+\DoxyCodeLine{00051\ \ \ \ \ ID2D1SolidColorBrush*\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ pBrushB;}
+\DoxyCodeLine{00052\ \ \ \ \ ID2D1SolidColorBrush*\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ pBrushC;}
+\DoxyCodeLine{00053\ \ \ \ \ D2D1\_ELLIPSE\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ellipseA;}
+\DoxyCodeLine{00054\ \ \ \ \ D2D1\_ELLIPSE\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ellipseB;}
+\DoxyCodeLine{00055\ \ \ \ \ D2D1\_ELLIPSE\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ellipseC;}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ D2D1\_POINT\_2F\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ptMouse;}
+\DoxyCodeLine{00058\ \};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{comment}{//\ \}\ //\ namespace\ Win32}}
 
 \end{DoxyCode}

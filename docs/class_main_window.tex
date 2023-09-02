@@ -18,7 +18,10 @@ Inheritance diagram for Main\+Window\+:\begin{figure}[H]
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-PCWSTR \mbox{\hyperlink{class_main_window_a18a1d6b708993d8a378e91070e114568}{Class\+Name}} () const
+\Hypertarget{class_main_window_a0230fe7f0fab30b98c45cebfc5e224db}\label{class_main_window_a0230fe7f0fab30b98c45cebfc5e224db} 
+{\bfseries Main\+Window} ()=default
+\begin{DoxyCompactList}\small\item\em Default-\/\+Construct a new Main Window object. \end{DoxyCompactList}\item 
+PCWSTR \mbox{\hyperlink{class_main_window_ac73b70e36c04de55a2b049637408c21e}{Class\+Name}} () CONST
 \item 
 LRESULT \mbox{\hyperlink{class_main_window_a590370509ff31b48345edf4fd1dee572}{Handle\+Message}} (UINT u\+Msg, WPARAM w\+Param, LPARAM l\+Param)
 \end{DoxyCompactItemize}
@@ -37,7 +40,6 @@ HWND \mbox{\hyperlink{class_base_window_aa1507d2052aaec416ac8b085add33ba0}{Windo
 \item 
 static LRESULT CALLBACK \mbox{\hyperlink{class_base_window_a61198ed120a54deccbd3e73221bf9c4d}{Window\+Proc}} (HWND hwnd, UINT u\+Msg, WPARAM w\+Param, LPARAM l\+Param)
 \begin{DoxyCompactList}\small\item\em \textquotesingle{}LRESULT\textquotesingle{} is an integer value that your program returns to Windows. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_base_window}{Base\+Window$<$ Main\+Window $>$}}}
 \begin{DoxyCompactItemize}
 \item 
 virtual PCWSTR \mbox{\hyperlink{class_base_window_a76d1b80a812caf760c0efbed6e64b2e1}{Class\+Name}} () CONST PURE
@@ -55,15 +57,19 @@ HWND {\bfseries m\+\_\+hwnd}
 The \textquotesingle{}\doxylink{class_main_window}{Main\+Window}\textquotesingle{} class. 
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{class_main_window_a18a1d6b708993d8a378e91070e114568}\label{class_main_window_a18a1d6b708993d8a378e91070e114568} 
+\Hypertarget{class_main_window_ac73b70e36c04de55a2b049637408c21e}\label{class_main_window_ac73b70e36c04de55a2b049637408c21e} 
 \index{MainWindow@{MainWindow}!ClassName@{ClassName}}
 \index{ClassName@{ClassName}!MainWindow@{MainWindow}}
 \doxysubsubsection{\texorpdfstring{ClassName()}{ClassName()}}
-{\footnotesize\ttfamily PCWSTR Main\+Window\+::\+Class\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily PCWSTR Main\+Window\+::\+Class\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 \begin{DoxyReturn}{Returns}
 PCWSTR 
 \end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_base_window_a76d1b80a812caf760c0efbed6e64b2e1}{Base\+Window$<$ Main\+Window $>$}}.
+
 \Hypertarget{class_main_window_a590370509ff31b48345edf4fd1dee572}\label{class_main_window_a590370509ff31b48345edf4fd1dee572} 
 \index{MainWindow@{MainWindow}!HandleMessage@{HandleMessage}}
 \index{HandleMessage@{HandleMessage}!MainWindow@{MainWindow}}
@@ -88,6 +94,7 @@ Reimplemented from \mbox{\hyperlink{class_base_window_a7612d6d879e60f4b7ded0cf0a
 
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-include/\+Cxx\+Win/modules/\+Win32\+\_\+core/window/\mbox{\hyperlink{win32___main_window_8hpp}{win32\+\_\+\+Main\+Window.\+hpp}}\end{DoxyCompactItemize}
+include/\+Cxx\+Win/modules/\+Win32\+\_\+core/window/\mbox{\hyperlink{win32___main_window_8hpp}{win32\+\_\+\+Main\+Window.\+hpp}}\item 
+include/\+Cxx\+Win/modules/\+Win32\+\_\+core/window/\mbox{\hyperlink{win32___main_window_8cpp}{win32\+\_\+\+Main\+Window.\+cpp}}\end{DoxyCompactItemize}

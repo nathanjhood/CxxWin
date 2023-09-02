@@ -46,8 +46,8 @@
     };@endcode
 */
 #define __DECLARE_NON_COPYABLE(className) \
-    className (const className&) = delete;\
-    className& operator= (const className&) = delete;
+    className (CONST className&) = delete;\
+    className& operator= (CONST className&) = delete;
 
 /** This is a shorthand macro for deleting a class's move constructor and
     move assignment operator.
