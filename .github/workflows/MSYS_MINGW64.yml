@@ -38,7 +38,7 @@ jobs:
 
       - uses: msys2/setup-msys2@v2
         with:
-          msystem: ${{env.MSYS_TYPE}}
+          msystem: MINGW64
           update: true
           install: git mingw-w64-x86_64-gcc mingw-w64-x86_64-cmake mingw-w64-x86_64-make
 
