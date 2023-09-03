@@ -1,214 +1,541 @@
-#!/usr/bin/sh
+#!/usr/bin/env sh
 
-# unset MSYSTEM_PREFIX
-# unset MSYSTEM_CARCH
-# unset MSYSTEM_CHOST
+# Once sourced, this script provides common information associated with the
+# current MSYSTEM. For example, the compiler architecture and host type.
 
-# unset MINGW_CHOST
-# unset MINGW_PREFIX
-# unset MINGW_PACKAGE_PREFIX
+# The MSYSTEM_ prefix is used for avoiding too generic names. For example,
+# makepkg is sensitive to the value of CARCH, so MSYSTEM_CARCH is defined
+# instead. The MINGW_ prefix does not influence makepkg-mingw variables and
+# is not used for the MSYS shell.
 
-case "${MSYSTEM}" in
-    MINGW32)
-        # MSYSTEM_PREFIX='/mingw32'
-        # MSYSTEM_CARCH='i686'
-        # MSYSTEM_CHOST='i686-w64-mingw32'
-        # MINGW_CHOST="${MSYSTEM_CHOST}"
-        # MINGW_PREFIX="${MSYSTEM_PREFIX}"
-        # MINGW_PACKAGE_PREFIX="mingw-w64-${MSYSTEM_CARCH}"
-        # export MSYSTEM_PREFIX MSYSTEM_CARCH MSYSTEM_CHOST MINGW_CHOST MINGW_PREFIX MINGW_PACKAGE_PREFIX
-        ;;
-    MINGW64)
-        # MSYSTEM_PREFIX='/mingw64'
-        # MSYSTEM_CARCH='x86_64'
-        # MSYSTEM_CHOST='x86_64-w64-mingw32'
-        # MINGW_CHOST="${MSYSTEM_CHOST}"
-        # MINGW_PREFIX="${MSYSTEM_PREFIX}"
-        # MINGW_PACKAGE_PREFIX="mingw-w64-${MSYSTEM_CARCH}"
-        # export MSYSTEM_PREFIX MSYSTEM_CARCH MSYSTEM_CHOST MINGW_CHOST MINGW_PREFIX MINGW_PACKAGE_PREFIX
-        ;;
-    CLANG32)
-        # MSYSTEM_PREFIX='/clang32'
-        # MSYSTEM_CARCH='i686'
-        # MSYSTEM_CHOST='i686-w64-mingw32'
-        # MINGW_CHOST="${MSYSTEM_CHOST}"
-        # MINGW_PREFIX="${MSYSTEM_PREFIX}"
-        # MINGW_PACKAGE_PREFIX="mingw-w64-clang-${MSYSTEM_CARCH}"
-        # export MSYSTEM_PREFIX MSYSTEM_CARCH MSYSTEM_CHOST MINGW_CHOST MINGW_PREFIX MINGW_PACKAGE_PREFIX
-        ;;
-    CLANG64)
-        # MSYSTEM_PREFIX='/clang64'
-        # MSYSTEM_CARCH='x86_64'
-        # MSYSTEM_CHOST='x86_64-w64-mingw32'
-        # MINGW_CHOST="${MSYSTEM_CHOST}"
-        # MINGW_PREFIX="${MSYSTEM_PREFIX}"
-        # MINGW_PACKAGE_PREFIX="mingw-w64-clang-${MSYSTEM_CARCH}"
-        # export MSYSTEM_PREFIX MSYSTEM_CARCH MSYSTEM_CHOST MINGW_CHOST MINGW_PREFIX MINGW_PACKAGE_PREFIX
-        ;;
-    CLANGARM64)
-        # MSYSTEM_PREFIX='/clangarm64'
-        # MSYSTEM_CARCH='aarch64'
-        # MSYSTEM_CHOST='aarch64-w64-mingw32'
-        # MINGW_CHOST="${MSYSTEM_CHOST}"
-        # MINGW_PREFIX="${MSYSTEM_PREFIX}"
-        # MINGW_PACKAGE_PREFIX="mingw-w64-clang-${MSYSTEM_CARCH}"
-        # export MSYSTEM_PREFIX MSYSTEM_CARCH MSYSTEM_CHOST MINGW_CHOST MINGW_PREFIX MINGW_PACKAGE_PREFIX
-        ;;
-    UCRT64)
-		## System
-		CARCH="x86_64"
-		CHOST="x86_64-w64-mingw32"
-		# MSYSTEM_PREFIX='/ucrt64'
-        # MSYSTEM_CARCH='x86_64'
-        # MSYSTEM_CHOST='x86_64-w64-mingw32'
-        # MINGW_CHOST="${MSYSTEM_CHOST}"
-        # MINGW_PREFIX="${MSYSTEM_PREFIX}"
-        # MINGW_PACKAGE_PREFIX="mingw-w64-ucrt-${MSYSTEM_CARCH}"
-		## Toolchain
-		CC="${MSYSTEM_PREFIX}/bin/x86_64-w64-mingw32-gcc.exe"
-		CXX="${MSYSTEM_PREFIX}/bin/x86_64-w64-mingw32-g++.exe"
-		RC="${MSYSTEM_PREFIX}/bin/windres.exe"
-		## Bin utils
-		AR="${MSYSTEM_PREFIX}/x86_64-w64-mingw32/bin/ar.exe"
-		AS="${MSYSTEM_PREFIX}/x86_64-w64-mingw32/bin/as.exe"
-		DLLTOOL="${MSYSTEM_PREFIX}/x86_64-w64-mingw32/bin/dlltool.exe"
-		LD="${MSYSTEM_PREFIX}/x86_64-w64-mingw32/bin/ld.exe"
-		NM="${MSYSTEM_PREFIX}/x86_64-w64-mingw32/bin/nm.exe"
-		OBJCOPY="${MSYSTEM_PREFIX}/x86_64-w64-mingw32/bin/objcopy.exe"
-		OBJDUMP="${MSYSTEM_PREFIX}/x86_64-w64-mingw32/bin/objdump.exe"
-		RANLIB="${MSYSTEM_PREFIX}/x86_64-w64-mingw32/bin/ranlib.exe"
-		READELF="${MSYSTEM_PREFIX}/x86_64-w64-mingw32/bin/readelf.exe"
-		STRIP="${MSYSTEM_PREFIX}/x86_64-w64-mingw32/bin/strip.exe"
-		## Make
-		MAKE="${MSYSTEM_PREFIX}/bin/mingw32-make.exe"
-		## Flags
-		CPPFLAGS="-D__USE_MINGW_ANSI_STDIO=1"
-		CFLAGS="-march=nocona -msahf -mtune=generic -O2 -pipe -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong"
-		CXXFLAGS="-march=nocona -msahf -mtune=generic -O2 -pipe"
-		LDFLAGS="-pipe -ld2d1 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32"
-		export CARCH CHOST CC CXX LD RC AR NM RANLIB MAKE CPPFLAGS CFLAGS CXXFLAGS LDFLAGS
-        # export MSYSTEM_PREFIX MSYSTEM_CARCH MSYSTEM_CHOST MINGW_CHOST MINGW_PREFIX MINGW_PACKAGE_PREFIX
-        ;;
-    *)
-        # MSYSTEM_PREFIX='/usr'
-        # MSYSTEM_CARCH="$(/usr/bin/uname -m)"
-        # MSYSTEM_CHOST="${MSYSTEM_CARCH}-pc-msys"
-        # export MSYSTEM_PREFIX MSYSTEM_CARCH MSYSTEM_CHOST
-        ;;
-esac
+msystem_toolchain_configure ()
+{
 
-# DirectX compatibility environment variable
-DXSDK_DIR=${MINGW_PREFIX}/${MINGW_CHOST}
+	# Parts of this function are adapted from the following:
+	# MSYSTEM Environment Information
+	# Copyright (C) 2016 Renato Silva
+	# Licensed under public domain
 
-#-- Make Flags: change this for DistCC/SMP systems
-MAKEFLAGS="-j$(($(nproc)+1))"
-#-- Debugging flags
-DEBUG_CFLAGS="-ggdb -Og"
-DEBUG_CXXFLAGS="-ggdb -Og"
+	# Flags
+	# -march (or -mcpu) builds exclusively for an architecture
+	# -mtune optimizes for an architecture, but builds for whole processor family
 
-ACLOCAL_PATH="${MINGW_PREFIX}/share/aclocal:/usr/share/aclocal"
-PKG_CONFIG_PATH="${MINGW_PREFIX}/lib/pkgconfig:${MINGW_PREFIX}/share/pkgconfig"
+	if [[ "${MSYSTEM}" == "" ]]; then
+		export MSYSTEM="${MSYSTEM:-MSYS}"
+	fi
 
-#########################################################################
-# BUILD ENVIRONMENT
-#########################################################################
-#
-# Makepkg defaults: BUILDENV=(!distcc !color !ccache check !sign)
-#  A negated environment option will do the opposite of the comments below.
-#
-#-- distcc:   Use the Distributed C/C++/ObjC compiler
-#-- color:    Colorize output messages
-#-- ccache:   Use ccache to cache compilation
-#-- check:    Run the check() function if present in the PKGBUILD
-#-- sign:     Generate PGP signature file
-#
-BUILDENV=(!distcc color !ccache check !sign)
-#
-#-- If using DistCC, your MAKEFLAGS will also need modification. In addition,
-#-- specify a space-delimited list of hosts running in the DistCC cluster.
-#DISTCC_HOSTS=""
-#
-#-- Specify a directory for package building.
-#BUILDDIR=/tmp/makepkg
+	unset MSYSTEM_PREFIX
+	unset MSYSTEM_CARCH
+	unset MSYSTEM_CHOST
 
-#########################################################################
-# GLOBAL PACKAGE OPTIONS
-#   These are default values for the options=() settings
-#########################################################################
-#
-# Makepkg defaults: OPTIONS=(!strip docs libtool staticlibs emptydirs !zipman !purge !debug !lto)
-#  A negated option will do the opposite of the comments below.
-#
-#-- strip:      Strip symbols from binaries/libraries
-#-- docs:       Save doc directories specified by DOC_DIRS
-#-- libtool:    Leave libtool (.la) files in packages
-#-- staticlibs: Leave static library (.a) files in packages
-#-- emptydirs:  Leave empty directories in packages
-#-- zipman:     Compress manual (man and info) pages in MAN_DIRS with gzip
-#-- purge:      Remove files specified by PURGE_TARGETS
-#-- debug:      Add debugging flags as specified in DEBUG_* variables
-#-- lto:        Add compile flags for building with link time optimization
-#
-OPTIONS=(strip docs !libtool staticlibs emptydirs zipman purge !debug !lto)
+	unset MINGW_CHOST
+	unset MINGW_PREFIX
+	unset MINGW_PACKAGE_PREFIX
 
-#-- File integrity checks to use. Valid: md5, sha1, sha256, sha384, sha512
-INTEGRITY_CHECK=(sha256)
-#-- Options to be used when stripping binaries. See `man strip' for details.
-STRIP_BINARIES="--strip-all"
-#-- Options to be used when stripping shared libraries. See `man strip' for details.
-STRIP_SHARED="--strip-unneeded"
-#-- Options to be used when stripping static libraries. See `man strip' for details.
-STRIP_STATIC="--strip-debug"
-#-- Manual (man and info) directories to compress (if zipman is specified)
-MAN_DIRS=("${MINGW_PREFIX#/}"{{,/local}{,/share},/opt/*}/{man,info})
-#-- Doc directories to remove (if !docs is specified)
-DOC_DIRS=("${MINGW_PREFIX#/}"/{,local/}{,share/}{doc,gtk-doc})
-#-- Files to be removed from all packages (if purge is specified)
-PURGE_TARGETS=("${MINGW_PREFIX#/}"/{,share}/info/dir .packlist *.pod)
+	# Set the install location to prefix all absolute paths for compilers, etc.
+	unset MSYS_INSTALL_PATH
+	MSYS_INSTALL_PATH="C:/msys64"
 
-#########################################################################
-# PACKAGE OUTPUT
-#########################################################################
-#
-# Default: put built package and cached source in build directory
-#
-#-- Destination: specify a fixed directory where all packages will be placed
-#PKGDEST=/var/packages-mingw64
-#-- Source cache: specify a fixed directory where source files will be cached
-#SRCDEST=/var/sources
-#-- Source packages: specify a fixed directory where all src packages will be placed
-#SRCPKGDEST=/var/srcpackages-mingw64
-#-- Log files: specify a fixed directory where all log files will be placed
-#LOGDEST=/var/makepkglogs
-#-- Packager: name/email of the person or organization building packages
-#PACKAGER="John Doe <john@doe.com>"
-#-- Specify a key to use for package signing
-#GPGKEY=""
+	# Boolean to control which BinUtils to choose from.
+	#
+	# if DXMODE=0, then BinUtils will be '$(msys_install_path)/$(msystem_prefix)/bin/*.exe'
+	# else if DXMODE=1, then BinUtils will be '$(msys_install_path)/$(dxsdk_dir)/bin/*.exe'
+	unset DX_MODE
+	DX_MODE=1
 
-#########################################################################
-# COMPRESSION DEFAULTS
-#########################################################################
-#
-COMPRESSGZ=(gzip -c -f -n)
-COMPRESSBZ2=(bzip2 -c -f)
-COMPRESSXZ=(xz -c -z -T0 -)
-COMPRESSZST=(zstd -c -T0 --ultra -20 -)
-COMPRESSLRZ=(lrzip -q)
-COMPRESSLZO=(lzop -q)
-COMPRESSZ=(compress -c -f)
-COMPRESSLZ4=(lz4 -q)
-COMPRESSLZ=(lzip -c -f)
+	case "${MSYSTEM}" in
+		MINGW32)
+			# Platform
+			CARCH="i686"
+			CHOST="i686-w64-mingw32"
+			COMPILER_NAME="GNU"
+			COMPILER_VERSION="13.2.0"
+			NPROCS="-j$(($(/usr/bin/nproc)+1))"
+			# Variables
+			MSYSTEM_PREFIX='/mingw32'
+			MSYSTEM_CARCH='i686'
+			MSYSTEM_CHOST='i686-w64-mingw32'
+			MINGW_CHOST="${MSYSTEM_CHOST}"
+			MINGW_PREFIX="${MSYSTEM_PREFIX}"
+			MINGW_PACKAGE_PREFIX="mingw-w64-${MSYSTEM_CARCH}"
+			# DirectX compatibility environment variable
+			DXSDK_DIR=${MSYSTEM_PREFIX}/${MSYSTEM_CHOST}
+			if [[ "$DX_MODE" == 1 ]]; then
+				BINUTILS_PATH="${DXSDK_DIR}"
+			else
+				BINUTILS_PATH="${MSYSTEM_PREFIX}"
+			fi
+			# BinUtils
+			AR="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/ar.exe"
+			AS="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/as.exe"
+			LD="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/ld.exe"
+			NM="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/nm.exe"
+			DLLTOOL="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/dlltool.exe"
+			RANLIB="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/ranlib.exe"
+			READELF="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/readelf.exe"
+			OBJCOPY="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/objcopy.exe"
+			OBJDUMP="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/objdump.exe"
+			STRIP="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/strip.exe"
+			# Compilers
+			RC="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/windres.exe"
+			CC="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/${MSYSTEM_CHOST}-gcc.exe"
+			CXX="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/${MSYSTEM_CHOST}-g++.exe"
+			OBJCC="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/${MSYSTEM_CHOST}-gcc.exe"
+			OBJCXX="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/${MSYSTEM_CHOST}-g++.exe"
+			Fortran="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/gfortran.exe"
+			CPP="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/cpp.exe"
+			# Flags
+			CPPFLAGS="-D__USE_MINGW_ANSI_STDIO=1"
+			CFLAGS="-march=pentium4 -mtune=generic -pipe -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong"
+			CXXFLAGS="-march=pentium4 -mtune=generic -pipe"
+			LDFLAGS="-pipe -Wl,--no-seh -Wl,--large-address-aware"
+			RELEASE_FLAGS="-O2 -DNDEBUG"
+			DEBUG_FLAGS="-Og -g -ggdb -D_DEBUG"
+			MINSIZEREL_FLAGS="-Os -DNDEBUG"
+			RELWITHDEBINFO_FLAGS="-O2 -g -ggdb -DNDEBUG"
+			# Generation
+			MAKEFLAGS="${NPROCS}" #-- Make Flags: change this for DistCC/SMP systems
+			MAKE="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/mingw32-make.exe"
+			CMAKE="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/cmake.exe"
+			CPACK="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/cpack.exe"
+			CTEST="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/ctest.exe"
+			CEDIT="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/ccmake.exe"
+			NINJA="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/ninja.exe"
+			GENERATOR="MinGW Makefiles"
+			BUILDDIR="${MSYSTEM_PREFIX}"
+			;;
+		MINGW64)
+			# Platform
+			CARCH="x86_64"
+			CHOST="x86_64-w64-mingw32"
+			COMPILER_NAME="GNU"
+			COMPILER_VERSION="13.2.0"
+			NPROCS="-j$(($(/usr/bin/nproc)+1))"
+			# Variables
+			MSYSTEM_PREFIX='/mingw64'
+			MSYSTEM_CARCH='x86_64'
+			MSYSTEM_CHOST='x86_64-w64-mingw32'
+			MINGW_CHOST="${MSYSTEM_CHOST}"
+			MINGW_PREFIX="${MSYSTEM_PREFIX}"
+			MINGW_PACKAGE_PREFIX="mingw-w64-${MSYSTEM_CARCH}"
+			# DirectX compatibility environment variable
+			DXSDK_DIR=${MSYSTEM_PREFIX}/${MSYSTEM_CHOST}
+			if [[ "$DX_MODE" == 1 ]]; then
+				BINUTILS_PATH="${DXSDK_DIR}"
+			else
+				BINUTILS_PATH="${MSYSTEM_PREFIX}"
+			fi
+			# BinUtils
+			AR="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/ar.exe"
+			AS="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/as.exe"
+			LD="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/ld.exe"
+			NM="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/nm.exe"
+			DLLTOOL="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/dlltool.exe"
+			RANLIB="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/ranlib.exe"
+			READELF="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/readelf.exe"
+			OBJCOPY="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/objcopy.exe"
+			OBJDUMP="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/objdump.exe"
+			STRIP="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/strip.exe"
+			# Compilers
+			RC="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/windres.exe"
+			CC="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/${MSYSTEM_CHOST}-gcc.exe"
+			CXX="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/${MSYSTEM_CHOST}-g++.exe"
+			OBJCC="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/${MSYSTEM_CHOST}-gcc.exe"
+			OBJCXX="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/${MSYSTEM_CHOST}-g++.exe"
+			Fortran="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/gfortran.exe"
+			CPP="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/cpp.exe"
+			# Flags
+			CPPFLAGS="-D__USE_MINGW_ANSI_STDIO=1"
+			CFLAGS="-march=nocona -msahf -mtune=generic -pipe -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong"
+			CXXFLAGS="-march=nocona -msahf -mtune=generic -pipe"
+			LDFLAGS="-pipe"
+			RELEASE_FLAGS="-O2 -DNDEBUG"
+			DEBUG_FLAGS="-Og -g -ggdb -D_DEBUG"
+			MINSIZEREL_FLAGS="-Os -DNDEBUG"
+			RELWITHDEBINFO_FLAGS="-O2 -g -ggdb -DNDEBUG"
+			# Generation
+			MAKEFLAGS="${NPROCS}" #-- Make Flags: change this for DistCC/SMP systems
+			MAKE="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/mingw32-make.exe"
+			CMAKE="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/cmake.exe"
+			CPACK="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/cpack.exe"
+			CTEST="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/ctest.exe"
+			CEDIT="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/ccmake.exe"
+			NINJA="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/ninja.exe"
+			GENERATOR="MinGW Makefiles"
+			BUILDDIR="${MSYSTEM_PREFIX}"
+			;;
+		CLANG32)
+			# Variables
+			MSYSTEM_PREFIX='/clang32'
+			MSYSTEM_CARCH='i686'
+			MSYSTEM_CHOST='i686-w64-mingw32'
+			MINGW_CHOST="${MSYSTEM_CHOST}"
+			MINGW_PREFIX="${MSYSTEM_PREFIX}"
+			MINGW_PACKAGE_PREFIX="mingw-w64-clang-${MSYSTEM_CARCH}"
+			export MSYSTEM_PREFIX MSYSTEM_CARCH MSYSTEM_CHOST MINGW_CHOST MINGW_PREFIX MINGW_PACKAGE_PREFIX
+			CARCH="i686"
+			CHOST="i686-w64-mingw32"
+			COMPILER_NAME="CLANG"
+			COMPILER_VERSION="16.0.5"
+			# Compilers
+			CC="clang"
+			CXX="clang++"
+			# Flags
+			CPPFLAGS="-D__USE_MINGW_ANSI_STDIO=1"
+			CFLAGS="-march=pentium4 -mtune=generic -O2 -pipe -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong"
+			CXXFLAGS="-march=pentium4 -mtune=generic -O2 -pipe"
+			LDFLAGS="-pipe -Wl,--no-seh -Wl,--large-address-aware"
+			;;
+		CLANG64)
+			CARCH="x86_64"
+			CHOST="x86_64-w64-mingw32"
+			COMPILER_NAME="CLANG"
+			COMPILER_VERSION="16.0.5"
+			NPROCS="-j$(($(/usr/bin/nproc)+1))"
+			# Variables
+			MSYSTEM_PREFIX='/clang64'
+			MSYSTEM_CARCH='x86_64'
+			MSYSTEM_CHOST='x86_64-w64-mingw32'
+			MINGW_CHOST="${MSYSTEM_CHOST}"
+			MINGW_PREFIX="${MSYSTEM_PREFIX}"
+			MINGW_PACKAGE_PREFIX="mingw-w64-clang-${MSYSTEM_CARCH}"
+			#export MSYSTEM_PREFIX MSYSTEM_CARCH MSYSTEM_CHOST MINGW_CHOST MINGW_PREFIX MINGW_PACKAGE_PREFIX
+			# DirectX compatibility environment variable
+			# DXSDK_DIR=${MSYSTEM_PREFIX}/${MSYSTEM_CHOST}
+			# if [[ "$DX_MODE" == 1 ]]; then
+			# 	BINUTILS_PATH="${DXSDK_DIR}"
+			# else
+			# 	BINUTILS_PATH="${MSYSTEM_PREFIX}"
+			# fi
+			BINUTILS_PATH="${MSYSTEM_PREFIX}"
+			# BinUtils
+			AR="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/llvm-ar.exe"
+			AS="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/llvm-as.exe"
+			LD="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/lld.exe"
+			NM="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/llvm-nm.exe"
+			DLLTOOL="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/llvm-dlltool.exe"
+			RANLIB="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/llvm-ranlib.exe"
+			READELF="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/llvm-readelf.exe"
+			OBJCOPY="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/llvm-objcopy.exe"
+			OBJDUMP="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/llvm-objdump.exe"
+			STRIP="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/llvm-strip.exe"
+			# Compilers
+			RC="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/windres.exe"
+			CC="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/${MSYSTEM_CHOST}-clang.exe"
+			CXX="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/${MSYSTEM_CHOST}-clang++.exe"
+			OBJCC="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/${MSYSTEM_CHOST}-clang.exe"
+			OBJCXX="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/${MSYSTEM_CHOST}-clang++.exe"
+			Fortran="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/flang.exe"
+			CPP="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/cpp.exe"
+			# Flags
+			CPPFLAGS="-D__USE_MINGW_ANSI_STDIO=1"
+			CFLAGS="-march=nocona -msahf -mtune=generic -pipe -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong"
+			CXXFLAGS="-march=nocona -msahf -mtune=generic -pipe"
+			LDFLAGS="-pipe"
+			RELEASE_FLAGS="-O2 -DNDEBUG"
+			DEBUG_FLAGS="-Og -g -ggdb -D_DEBUG"
+			MINSIZEREL_FLAGS="-Os -DNDEBUG"
+			RELWITHDEBINFO_FLAGS="-O2 -g -ggdb -DNDEBUG"
+			# Generation
+			MAKEFLAGS="${NPROCS}" #-- Make Flags: change this for DistCC/SMP systems
+			MAKE="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/mingw32-make.exe"
+			CMAKE="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/cmake.exe"
+			CPACK="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/cpack.exe"
+			CTEST="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/ctest.exe"
+			CEDIT="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/ccmake.exe"
+			NINJA="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/ninja.exe"
+			GENERATOR="MinGW Makefiles"
+			BUILDDIR="${MSYSTEM_PREFIX}"
+			;;
+		CLANGARM64)
+			# Variables
+			MSYSTEM_PREFIX='/clangarm64'
+			MSYSTEM_CARCH='aarch64'
+			MSYSTEM_CHOST='aarch64-w64-mingw32'
+			MINGW_CHOST="${MSYSTEM_CHOST}"
+			MINGW_PREFIX="${MSYSTEM_PREFIX}"
+			MINGW_PACKAGE_PREFIX="mingw-w64-clang-${MSYSTEM_CARCH}"
+			export MSYSTEM_PREFIX MSYSTEM_CARCH MSYSTEM_CHOST MINGW_CHOST MINGW_PREFIX MINGW_PACKAGE_PREFIX
+			CARCH="aarch64"
+			CHOST="aarch64-w64-mingw32"
+			COMPILER_NAME="CLANG"
+			COMPILER_VERSION="16.0.5"
+			# Compilers
+			CC="clang"
+			CXX="clang++"
+			# Flags
+			CPPFLAGS="-D__USE_MINGW_ANSI_STDIO=1"
+			CFLAGS="-O2 -pipe -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong"
+			CXXFLAGS="-O2 -pipe"
+			LDFLAGS="-pipe"
+			;;
+		UCRT64)
+			# Platform
+			CARCH="x86_64"
+			CHOST="x86_64-w64-mingw32"
+			COMPILER_NAME="GNU"
+			COMPILER_VERSION="13.2.0"
+			NPROCS="-j$(($(/usr/bin/nproc)+1))"
+			# Variables
+			MSYSTEM_PREFIX='/ucrt64'
+			MSYSTEM_CARCH='x86_64'
+			MSYSTEM_CHOST='x86_64-w64-mingw32'
+			MINGW_CHOST="${MSYSTEM_CHOST}"
+			MINGW_PREFIX="${MSYSTEM_PREFIX}"
+			MINGW_PACKAGE_PREFIX="mingw-w64-ucrt-${MSYSTEM_CARCH}"
+			# DirectX compatibility environment variable
+			DXSDK_DIR=${MSYSTEM_PREFIX}/${MSYSTEM_CHOST}
+			if [[ "$DX_MODE" == 1 ]]; then
+				BINUTILS_PATH="${DXSDK_DIR}"
+			else
+				BINUTILS_PATH="${MSYSTEM_PREFIX}"
+			fi
+			# BinUtils
+			AR="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/ar.exe"
+			AS="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/as.exe"
+			LD="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/ld.exe"
+			NM="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/nm.exe"
+			DLLTOOL="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/dlltool.exe"
+			RANLIB="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/ranlib.exe"
+			READELF="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/readelf.exe"
+			OBJCOPY="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/objcopy.exe"
+			OBJDUMP="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/objdump.exe"
+			STRIP="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/strip.exe"
+			# Compilers
+			RC="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/windres.exe"
+			CC="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/${MSYSTEM_CHOST}-gcc.exe"
+			CXX="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/${MSYSTEM_CHOST}-g++.exe"
+			OBJCC="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/${MSYSTEM_CHOST}-gcc.exe"
+			OBJCXX="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/${MSYSTEM_CHOST}-g++.exe"
+			Fortran="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/gfortran.exe"
+			CPP="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/cpp.exe"
+			# Flags
+			CPPFLAGS="-D__USE_MINGW_ANSI_STDIO=1"
+			CFLAGS="-march=nocona -msahf -mtune=generic -pipe -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong"
+			CXXFLAGS="-march=nocona -msahf -mtune=generic -pipe"
+			LDFLAGS="-pipe"
+			RELEASE_FLAGS="-O2 -DNDEBUG"
+			DEBUG_FLAGS="-Og -g -ggdb -D_DEBUG"
+			MINSIZEREL_FLAGS="-Os -DNDEBUG"
+			RELWITHDEBINFO_FLAGS="-O2 -g -ggdb -DNDEBUG"
+			# Generation
+			MAKEFLAGS="${NPROCS}" #-- Make Flags: change this for DistCC/SMP systems
+			MAKE="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/mingw32-make.exe"
+			CMAKE="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/cmake.exe"
+			CPACK="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/cpack.exe"
+			CTEST="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/ctest.exe"
+			CEDIT="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/ccmake.exe"
+			NINJA="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/ninja.exe"
+			GENERATOR="MinGW Makefiles"
+			BUILDDIR="${MSYSTEM_PREFIX}"
+			;;
+		*)
+			MSYSTEM_PREFIX='/usr'
+			MSYSTEM_CARCH="$(/usr/bin/uname -m)"
+			MSYSTEM_CHOST="${MSYSTEM_CARCH}-pc-msys"
+			export MSYSTEM_PREFIX MSYSTEM_CARCH MSYSTEM_CHOST
+			CARCH="$(/usr/bin/uname -m)"
+			CHOST="$(/usr/bin/uname -m)-pc-msys"
+			COMPILER_NAME="GNU"
+			COMPILER_VERSION="11.3.0"
+			# DirectX compatibility environment variable
+			DXSDK_DIR=${MSYSTEM_PREFIX}/${MSYSTEM_CHOST}
+			if [[ "$DX_MODE" == 1 ]]; then
+				BINUTILS_PATH="${DXSDK_DIR}"
+			else
+				BINUTILS_PATH="${MSYSTEM_PREFIX}"
+			fi
+			# BinUtils
+			AR="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/ar.exe"
+			AS="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/as.exe"
+			LD="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/ld.exe"
+			NM="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/nm.exe"
+			DLLTOOL="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/dlltool.exe"
+			RANLIB="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/ranlib.exe"
+			READELF="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/readelf.exe"
+			OBJCOPY="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/objcopy.exe"
+			OBJDUMP="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/objdump.exe"
+			STRIP="${MSYS_INSTALL_PATH}${BINUTILS_PATH}/bin/strip.exe"
+			# Compilers
+			RC="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/windres.exe"
+			CC="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/${MSYSTEM_CHOST}-gcc.exe"
+			CXX="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/${MSYSTEM_CHOST}-g++.exe"
+			OBJCC="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/${MSYSTEM_CHOST}-gcc.exe"
+			OBJCXX="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/${MSYSTEM_CHOST}-g++.exe"
+			Fortran="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/gfortran.exe"
+			CPP="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/cpp.exe"
+			# Flags
+			CPPFLAGS=""
+			CFLAGS="-march=nocona -msahf -mtune=generic -pipe"
+			CXXFLAGS="-march=nocona -msahf -mtune=generic -pipe"
+			LDFLAGS="-pipe"
+			RELEASE_FLAGS="-O2 -DNDEBUG"
+			DEBUG_FLAGS="-Og -g -ggdb -D_DEBUG"
+			MINSIZEREL_FLAGS="-Os -DNDEBUG"
+			RELWITHDEBINFO_FLAGS="-O2 -g -ggdb -DNDEBUG"
+			# Generation
+			MAKEFLAGS="${NPROCS}" #-- Make Flags: change this for DistCC/SMP systems
+			MAKE="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/make.exe"
+			CMAKE="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/cmake.exe"
+			CPACK="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/cpack.exe"
+			CTEST="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/ctest.exe"
+			CEDIT="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/ccmake.exe"
+			NINJA="${MSYS_INSTALL_PATH}${MSYSTEM_PREFIX}/bin/ninja.exe"
+			GENERATOR="MSYS Makefiles"
+			BUILDDIR="${MSYSTEM_PREFIX}"
+			;;
+	esac
 
-#########################################################################
-# EXTENSION DEFAULTS
-#########################################################################
-#
-PKGEXT='.pkg.tar.zst'
-SRCEXT='.src.tar.zst'
+	export \
+		CARCH \
+		CHOST \
+		MSYSTEM_PREFIX \
+		MSYSTEM_CARCH \
+		MSYSTEM_CHOST \
+		DXSDK_DIR \
+		RC \
+		CC \
+		CXX \
+		OBJCC \
+		OBJCXX \
+		Fortran \
+		CPP \
+		AR \
+		AS \
+		LD \
+		NM \
+		DLLTOOL \
+		RANLIB \
+		READELF \
+		OBJCOPY \
+		OBJDUMP \
+		STRIP \
+		RCFLAGS \
+		CFLAGS \
+		CXXFLAGS \
+		OBJCFLAGS \
+		OBJCXXFLAGS \
+		FortranFLAGS \
+		CPPFLAGS \
+		LDFLAGS \
+		MAKEFLAGS \
+		MAKE \
+		CMAKE \
+		NINJA
 
-#########################################################################
-# OTHER
-#########################################################################
-#
-#-- Command used to run pacman as root, instead of trying sudo and su
-PACMAN_AUTH=()
+	# Custom vars here in case we decide to mute them for some reason...
+	export \
+		MSYS_INSTALL_PATH \
+		COMPILER_NAME \
+		COMPILER_VERSION \
+		BINUTILS_PATH \
+		GENERATOR \
+		BUILDDIR
+
+
+	if [[ "$MSYSTEM" != "MSYS" ]]; then
+		export \
+			MINGW_CHOST \
+			MINGW_PREFIX \
+			MINGW_PACKAGE_PREFIX
+	fi
+
+
+	echo ""
+	echo "Msys64 Install Path: ${MSYS_INSTALL_PATH}"
+	echo ""
+	echo "Platform:"
+	echo "MSYSTEM: ${MSYSTEM}"
+	echo "Msystem Prefix: ${MSYSTEM_PREFIX}"
+	echo "C Arch: ${CARCH}"
+	echo "C Host: ${CHOST}"
+	echo ""
+	echo "Compilers:"
+	echo "ASM Compiler: ${AS}"
+	echo "C Compiler: ${CC}"
+	echo "C++ Compiler: ${CXX}"
+	echo "RC Compiler: ${RC}"
+	echo "Pre-processor: ${CPP}"
+	echo "Linker: ${LD}"
+	echo ""
+	echo "Flags:"
+	echo "C Compiler Flags: ${CFLAGS}"
+	echo "C++ Compiler Flags: ${CXXFLAGS}"
+	echo "RC Compiler Flags: ${RCFLAGS}"
+	echo "Pre-processor Flags: ${CPPFLAGS}"
+	echo "Linker Flags: ${LDFLAGS}"
+	echo ""
+	echo "Tools:"
+	echo "AR: ${AR}"
+	echo "DLLTOOL: ${DLLTOOL}"
+	echo "NM: ${NM}"
+	echo "OBJCOPY: ${OBJCOPY}"
+	echo "OBJDUMP: ${OBJDUMP}"
+	echo "RANLIB: ${RANLIB}"
+	echo "READELF: ${READELF}"
+	echo "STRIP: ${STRIP}"
+}
+
+
+msystem_toolchain_versions ()
+{
+	echo ""
+	echo "Checking RC Compiler..."
+	echo ""
+	echo "$(${RC} --version)"
+	echo ""
+
+	echo ""
+	echo "Checking C Compiler..."
+	echo ""
+	echo "$(${CC} --version)"
+	echo ""
+
+	echo ""
+	echo "Checking C++ Compiler..."
+	echo ""
+	echo "$(${CXX} --version)"
+	echo ""
+
+	echo ""
+	echo "Checking ASM Compiler..."
+	echo ""
+	echo "$(${AS} --version)"
+	echo ""
+
+	echo ""
+	echo "Checking Pre-processr..."
+	echo ""
+	echo "$(${CPP} --version)"
+	echo ""
+
+	echo ""
+	echo "Checking LD Linker..."
+	echo ""
+	echo "$(${LD} --version)"
+	echo ""
+
+	echo ""
+	echo "Checking Make Program..."
+	echo ""
+	echo "$(${MAKE} --version)"
+	echo ""
+
+	echo ""
+	echo "Checking CMake Program..."
+	echo ""
+	echo "$(${CMAKE} --version)"
+	echo ""
+
+	echo ""
+	echo "Checking Ninja Build..."
+	echo ""
+	echo "$(${NINJA} --version)"
+	echo ""
+}
+
+if [[ $1 == "-v" || $1 == "--version" ]]; then
+	msystem_toolchain_versions
+else
+	msystem_toolchain_configure
+fi
