@@ -32,9 +32,10 @@ var searchData=
   ['win32_5fstorelogo_5fpng_2ecpp_29',['win32_StoreLogo_png.cpp',['../win32___store_logo__png_8cpp.html',1,'']]],
   ['win32_5fstorelogo_5fpng_2ehpp_30',['win32_StoreLogo_png.hpp',['../win32___store_logo__png_8hpp.html',1,'']]],
   ['win32_5ftargetplatform_2ehpp_31',['win32_TargetPlatform.hpp',['../win32___target_platform_8hpp.html',1,'']]],
-  ['win32_5funicode_2ehpp_32',['win32_Unicode.hpp',['../win32___unicode_8hpp.html',1,'']]],
-  ['win32_5fwindows_5ftemporarykey_5fpfx_2ecpp_33',['win32_Windows_TemporaryKey_pfx.cpp',['../win32___windows___temporary_key__pfx_8cpp.html',1,'']]],
-  ['win32_5fwindows_5ftemporarykey_5fpfx_2ehpp_34',['win32_Windows_TemporaryKey_pfx.hpp',['../win32___windows___temporary_key__pfx_8hpp.html',1,'']]],
-  ['winmain_2ecpp_35',['WinMain.cpp',['../_win_main_8cpp.html',1,'']]],
-  ['winmain_2ehpp_36',['WinMain.hpp',['../_win_main_8hpp.html',1,'']]]
+  ['win32_5ftoolchain_2ehpp_32',['win32_Toolchain.hpp',['../win32___toolchain_8hpp.html',1,'']]],
+  ['win32_5funicode_2ehpp_33',['win32_Unicode.hpp',['../win32___unicode_8hpp.html',1,'']]],
+  ['win32_5fwindows_5ftemporarykey_5fpfx_2ecpp_34',['win32_Windows_TemporaryKey_pfx.cpp',['../win32___windows___temporary_key__pfx_8cpp.html',1,'']]],
+  ['win32_5fwindows_5ftemporarykey_5fpfx_2ehpp_35',['win32_Windows_TemporaryKey_pfx.hpp',['../win32___windows___temporary_key__pfx_8hpp.html',1,'']]],
+  ['winmain_2ecpp_36',['WinMain.cpp',['../_win_main_8cpp.html',1,'']]],
+  ['winmain_2ehpp_37',['WinMain.hpp',['../_win_main_8hpp.html',1,'']]]
 ];

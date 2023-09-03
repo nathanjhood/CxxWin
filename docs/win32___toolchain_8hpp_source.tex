@@ -1,0 +1,77 @@
+\doxysection{win32\+\_\+\+Toolchain.\+hpp}
+\hypertarget{win32___toolchain_8hpp_source}{}\label{win32___toolchain_8hpp_source}\index{include/CxxWin/modules/Win32\_core/system/win32\_Toolchain.hpp@{include/CxxWin/modules/Win32\_core/system/win32\_Toolchain.hpp}}
+\mbox{\hyperlink{win32___toolchain_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ \_WIN32\_CORE\_SYSTEM\_TOOLCHAIN\_HPP\_}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{comment}{//\ Platforms\ with\ libdl}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#if\ defined(\_\_PLATFORM\_IS\_LINUX)\ ||\ defined(\_\_PLATFORM\_IS\_ANDROID)\ ||\ defined(\_\_PLATFORM\_IS\_OSX)}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\ \#pragma\ comment\ (lib,\ "{}dl.lib"{}})}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{comment}{//\ Platforms\ with\ libm}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#if\ defined(\_\_PLATFORM\_IS\_LINUX)\ ||\ defined(\_\_PLATFORM\_IS\_ANDROID)\ ||\ defined(\_\_PLATFORM\_IS\_FREEBSD)\ ||\ defined(\_\_PLATFORM\_IS\_OPENBSD)\ ||\ defined(\_\_PLATFORM\_IS\_OSX)\ ||\ defined(\_\_PLATFORM\_IS\_MINGW)}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\ \#pragma\ comment\ (lib,\ "{}m.lib"{}})}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{comment}{//\ Platforms\ with\ pthread}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#if\ defined(\_\_PLATFORM\_IS\_LINUX)\ ||\ defined(\_\_PLATFORM\_IS\_ANDROID)\ ||\ defined(\_\_PLATFORM\_IS\_FREEBSD)\ ||\ defined(\_\_PLATFORM\_IS\_OPENBSD)\ ||\ defined(\_\_PLATFORM\_IS\_OSX)\ ||\ defined(\_\_PLATFORM\_IS\_MINGW)}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\ \#pragma\ comment\ (lib,\ "{}pthread.lib"{}})}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{comment}{//\ Platforms\ with\ libstdc++}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#if\ defined(\_\_PLATFORM\_IS\_LINUX)\ ||\ defined(\_\_PLATFORM\_IS\_ANDROID)\ ||\ defined(\_\_PLATFORM\_IS\_FREEBSD)\ ||\ defined(\_\_PLATFORM\_IS\_OPENBSD)||\ defined(\_\_PLATFORM\_IS\_MINGW)}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\ \#pragma\ comment\ (lib,\ "{}stdc++.lib"{}})}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{comment}{//\ Platforms\ with\ libc++}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#if\ defined(\_\_PLATFORM\_IS\_OSX)}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\ \#pragma\ comment\ (lib,\ "{}c++.lib"{}})}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{comment}{//\ Platforms\ with\ librt}}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#if\ defined(\_\_PLATFORM\_IS\_LINUX)\ ||\ defined(\_\_PLATFORM\_IS\_ANDROID)\ ||\ defined(\_\_PLATFORM\_IS\_FREEBSD)\ ||\ defined(\_\_PLATFORM\_IS\_OSX)\ ||\ defined(\_\_PLATFORM\_IS\_MINGW)}}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\ \#pragma\ comment\ (lib,\ "{}rt.lib"{}})}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{comment}{//\ \#\ Platforms\ with\ GCC\ libs}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#if\ defined(\_\_PLATFORM\_IS\_LINUX)\ ||\ defined(\_\_PLATFORM\_IS\_ANDROID)\ ||\ defined(\_\_PLATFORM\_IS\_FREEBSD)\ ||\ defined(\_\_PLATFORM\_IS\_OPENBSD)\ ||\ defined(\_\_PLATFORM\_IS\_OSX)\ ||\ defined(\_\_PLATFORM\_IS\_MINGW)}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\ \#pragma\ comment\ (lib,\ "{}gcc.lib"{}})}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\ \#pragma\ comment\ (lib,\ "{}gcc\_s.lib"{}})}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{comment}{//\ Platforms\ with\ system\ iconv}}
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#if\ defined(\_\_PLATFORM\_IS\_OSX)}}
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\ \#pragma\ comment\ (lib,\ "{}iconv.lib"{}})}
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{comment}{//\ \#\ Windows\ system\ libs}}
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#if\ defined(\_\_PLATFORM\_IS\_WINDOWS)}}
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\ \#pragma\ comment\ (lib,\ "{}advapi32.lib"{}})}
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\ \#pragma\ comment\ (lib,\ "{}bcrypt.lib"{}})}
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\ \#pragma\ comment\ (lib,\ "{}dinput8.lib"{}})}
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\ \#pragma\ comment\ (lib,\ "{}gdi32.lib"{}})}
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\ \#pragma\ comment\ (lib,\ "{}imm32.lib"{}})}
+\DoxyCodeLine{00064\ \textcolor{preprocessor}{\ \#pragma\ comment\ (lib,\ "{}oleaut32.lib"{}})}
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\ \#pragma\ comment\ (lib,\ "{}ole32.lib"{}})}
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\ \#pragma\ comment\ (lib,\ "{}psapi.lib"{}})}
+\DoxyCodeLine{00067\ \textcolor{preprocessor}{\ \#pragma\ comment\ (lib,\ "{}secur32.lib"{}})}
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\ \#pragma\ comment\ (lib,\ "{}setupapi.lib"{}})}
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\ \#pragma\ comment\ (lib,\ "{}shell32.lib"{}})}
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\ \#pragma\ comment\ (lib,\ "{}shlwapi.lib"{}})}
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\ \#pragma\ comment\ (lib,\ "{}strmiids.lib"{}})}
+\DoxyCodeLine{00072\ \textcolor{preprocessor}{\ \#pragma\ comment\ (lib,\ "{}user32.lib"{}})}
+\DoxyCodeLine{00073\ \textcolor{preprocessor}{\ \#pragma\ comment\ (lib,\ "{}uuid.lib"{}})}
+\DoxyCodeLine{00074\ \textcolor{preprocessor}{\ \#pragma\ comment\ (lib,\ "{}version.lib"{}})}
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\ \#pragma\ comment\ (lib,\ "{}vfw32.lib"{}})}
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\ \#pragma\ comment\ (lib,\ "{}winmm.lib"{}})}
+\DoxyCodeLine{00077\ \textcolor{preprocessor}{\ \#pragma\ comment\ (lib,\ "{}wsock32.lib"{}})}
+\DoxyCodeLine{00078\ \textcolor{preprocessor}{\ \#pragma\ comment\ (lib,\ "{}Ws2\_32.lib"{}})}
+\DoxyCodeLine{00079\ \textcolor{preprocessor}{\ \#pragma\ comment\ (lib,\ "{}wldap32.lib"{}})}
+\DoxyCodeLine{00080\ \textcolor{preprocessor}{\ \#pragma\ comment\ (lib,\ "{}crypt32.lib"{}})}
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
