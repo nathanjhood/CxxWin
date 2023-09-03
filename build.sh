@@ -1,4 +1,9 @@
-#!/usr/bin/sh
+#!/usr/bin/env sh
 
-cmake \
-	--build ./out --target all
+echo ""
+echo "${CMAKE} --build ./out${BUILDDIR}"
+echo ""
+echo "$(${MAKE} --version)"
+echo ""
+
+${CMAKE} --build ./out${BUILDDIR}

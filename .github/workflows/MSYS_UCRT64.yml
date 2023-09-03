@@ -1,8 +1,8 @@
-name: msys_ucrt64_build
+name: msys_ucrt64
 
 on:
   pull_request:
-    branches: [ "main", "develop" ]
+    branches: [ "main", "development" ]
 
 env:
   # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
@@ -24,7 +24,7 @@ jobs:
        shell: msys2 {0}
     steps:
       - uses: actions/checkout@v3
-      
+
       # - name: Cache Restore
       #   id: cache-restore-pacman-ucrt64
       #   uses: actions/cache/restore@v3
@@ -35,13 +35,13 @@ jobs:
       #     key: ${{ runner.os }}-pacman-ucrt64
       #     # An ordered list of keys to use for restoring the cache if no cache hit occurred for key
       #     # restore-keys: # optional
-          
+
       - uses: msys2/setup-msys2@v2
         with:
-          msystem: ${{env.MSYS_TYPE}} 
+          msystem: ${{env.MSYS_TYPE}}
           update: true
           install: git mingw-w64-ucrt-x86_64-gcc mingw-w64-ucrt-x86_64-cmake mingw-w64-ucrt-x86_64-make
-          
+
       # - name: Cache Save
       #   id: cache-save-pacman-ucrt64
       #   uses: actions/cache/save@v3
@@ -63,7 +63,7 @@ jobs:
         # Configure CMake in a 'bin' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
         # See https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html?highlight=cmake_build_type
         run: /ucrt64/bin/cmake.exe -S . "-DCMAKE_CXX_COMPILER:FILEPATH=D:/a/_temp/msys64/ucrt64/bin/x86_64-w64-mingw32-g++.exe" "-DCMAKE_C_COMPILER:FILEPATH=D:/a/_temp/msys64/ucrt64/bin/x86_64-w64-mingw32-gcc.exe" "-DCMAKE_RC_COMPILER:FILEPATH=D:/a/_temp/msys64/ucrt64/bin/windres.exe" "-DCMAKE_LINKER:FILEPATH=D:/a/_temp/msys64/ucrt64/bin/ld.exe" "-DCMAKE_MAKE_PROGRAM:FILEPATH=D:/a/_temp/msys64/ucrt64/bin/mingw32-make.exe" "-DCMAKE_INSTALL_PREFIX:FILEPATH=${CMAKE_BINARY_DIR}/install" "-DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE" -B ./out/ucrt64 -G "MinGW Makefiles"
-      
+
       - name: Build
         working-directory: ${{ env.SOURCE_DIR }}
         # Build your program with the given configuration
@@ -74,7 +74,7 @@ jobs:
       #   # Execute tests defined by the CMake configuration.
       #   # See https://cmake.org/cmake/help/latest/manual/ctest.1.html for more detail
       #   run: ctest -C ${{env.BUILD_TYPE}}
-      
+
       - name: Package Source
         working-directory: ${{ env.SOURCE_DIR }}
         # Build your program with the given configuration
