@@ -2,6 +2,9 @@
 
 ![Win-Msys2-UCRT64](https://github.com/StoneyDSP/CxxWin/actions/workflows/MSYS_UCRT64.yml/badge.svg)
 ![Win-Msys2-MINGW64](https://github.com/StoneyDSP/CxxWin/actions/workflows/MSYS_MINGW64.yml/badge.svg)
+![Win-Msys2-CLANG64](https://github.com/StoneyDSP/CxxWin/actions/workflows/MSYS_CLANG64.yml/badge.svg)
+![Win-Msys2-MINGW32](https://github.com/StoneyDSP/CxxWin/actions/workflows/MSYS_MINGW32.yml/badge.svg)
+![Win-Msys2-CLANG32](https://github.com/StoneyDSP/CxxWin/actions/workflows/MSYS_CLANG32.yml/badge.svg)
 
 ## Win32 API with C++ and Direct2D.
 

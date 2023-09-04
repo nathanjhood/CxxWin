@@ -5,6 +5,11 @@ list (APPEND CMAKE_MODULE_PATH
 )
 
 project (CxxWin)
+enable_language (ASM)
+# enable_language (OBJC)
+# enable_language (OBJCXX)
+# enable_language (Fortran)
+# enable_language (C)
 enable_language (CXX)
 
 set(CMAKE_CXX_STANDARD 17)
@@ -452,6 +457,8 @@ set(CPACK_SOURCE_IGNORE_FILES
     /.cache
     /.config
     /.local
+    /doc
+    /docs
     /bin
     /lib
     /usr
