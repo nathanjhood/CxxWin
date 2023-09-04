@@ -40,7 +40,7 @@ jobs:
         with:
           msystem: CLANG64
           update: true
-          install: git mingw-w64-clang-x64_86-clang mingw-w64-clang-x64_86-cmake mingw-w64-clang-x64_86-make
+          install: git mingw-w64-clang-x86_64-toolchain mingw-w64-clang-x86_64-cmake mingw-w64-clang-x86_64-make
 
       # - name: Cache Save
       #   id: cache-save-pacman-clang64
