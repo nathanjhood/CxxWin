@@ -88,8 +88,11 @@ $(function() {
 Win32 API with C++ and Direct2D.</h1>
 <p>A quick one-and-done <a class="el" href="d6/dd1/namespace_win32.html">Win32</a> API project implementing a simple COM application window for Windows platforms in C++.</p>
 <p>This simple application draws three semi-transparent circles within a main window, given a shared set of co-ordinates for their (relative) position and size. The main window itself is fully resizeable; the rendered circles will automatically re-calculate their own properties in relation to the resizing of the main window, while maintaining the shared position and size co-ordinates. In cases where two circles overlap, their alpha channels shall blend (the background fill is also factored into this), causing a pleasing overlapping effect.</p>
-<p><img src="https://raw.githubusercontent.com/StoneyDSP/CxxWin/main/share/doc/CxxWin/screenshot_circles_example.png" alt="Screenshot" class="inline"/></p>
-<p>While none of the above makes for a particularly interesting nor useful application on it's own, the codebase is written in C++ using the <a class="el" href="d6/dd1/namespace_win32.html">Win32</a> API, using Direct2D and Microsoft's COM (Component Object Model) class inheritance model, of which C++ is a first class language. The resulting application makes use of the most recent advances in C++ language standards and compiler features, is buildable on and for systems pre-dating Windows 7, and uses a logical, modular, object-based approach for portability, reusability, and maintainability.</p>
+<div class="image">
+<img src="screenshot_circles_example.png" alt=""/>
+<div class="caption">
+Screenshot</div></div>
+    <p>While none of the above makes for a particularly interesting nor useful application on it's own, the codebase is written in C++ using the <a class="el" href="d6/dd1/namespace_win32.html">Win32</a> API, using Direct2D and Microsoft's COM (Component Object Model) class inheritance model, of which C++ is a first class language. The resulting application makes use of the most recent advances in C++ language standards and compiler features, is buildable on and for systems pre-dating Windows 7, and uses a logical, modular, object-based approach for portability, reusability, and maintainability.</p>
 <p>See <a href="https://learn.microsoft.com/en-us/windows/win32/learnwin32/introduction-to-windows-programming-in-c--">the MSDN documentation for more</a>.</p>
 <h1><a class="anchor" id="autotoc_md2"></a>
 Modernized, modularized, hardened...</h1>
