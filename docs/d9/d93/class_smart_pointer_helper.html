@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.9.7-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -9,32 +10,19 @@
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
-<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="../../resize.js"></script>
-<script type="text/javascript" src="../../navtreedata.js"></script>
-<script type="text/javascript" src="../../navtree.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  },
-  loader: {
-    load: ['[tex]/ams']
-  },
-  tex: {
-    macros: {},
-    packages: ['base','configmacros','ams']
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <script type="text/javascript" src="../../darkmode_toggle.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxy_stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -69,23 +57,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('d9/d93/class_smart_pointer_helper.html','../../'); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -107,6 +78,7 @@ $(document).ready(function(){initNavTree('d9/d93/class_smart_pointer_helper.html
 </div>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -176,6 +148,8 @@ class SmartPointerHelper&lt; ComClasses &gt;</div><p>The '<a class="el" href="..
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d42/win32___smart_pointer_8hpp_source.html#l00114">114</a> of file <a class="el" href="../../d6/d42/win32___smart_pointer_8hpp_source.html">win32_SmartPointer.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5ebedea882de1289a08b66f6fc806b9e" name="a5ebedea882de1289a08b66f6fc806b9e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5ebedea882de1289a08b66f6fc806b9e">&#9670;&#160;</a></span>SmartPointerHelper()</h2>
@@ -211,6 +185,13 @@ template&lt;class... ComClasses&gt; </div>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html#l00336">336</a> of file <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html">win32_SmartPointer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  337</span> : <a class="code hl_class" href="../../dd/dbb/class_smart_pointer_helper_base.html">SmartPointerHelperBase</a>&lt;ComClasses...&gt;(initRef)</div>
+<div class="line"><span class="lineno">  338</span>{</div>
+<div class="line"><span class="lineno">  339</span> </div>
+<div class="line"><span class="lineno">  340</span>}</div>
+<div class="ttc" id="aclass_smart_pointer_helper_base_html"><div class="ttname"><a href="../../dd/dbb/class_smart_pointer_helper_base.html">SmartPointerHelperBase</a></div><div class="ttdoc">The 'SmartPointerHelperBase' class.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d42/win32___smart_pointer_8hpp_source.html#l00085">win32_SmartPointer.hpp:86</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -252,6 +233,30 @@ template&lt;class... ComClasses&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>HRESULT </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html#l00350">350</a> of file <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html">win32_SmartPointer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  351</span>{</div>
+<div class="line"><span class="lineno">  352</span>    CONST std::tuple&lt;IID, void*&gt; bases[]</div>
+<div class="line"><span class="lineno">  353</span>    {</div>
+<div class="line"><span class="lineno">  354</span>        std::make_tuple (__uuidof(ComClasses), <span class="keyword">static_cast&lt;</span><span class="keywordtype">void</span>*<span class="keyword">&gt;</span> (<span class="keyword">static_cast&lt;</span>ComClasses*<span class="keyword">&gt;</span> (<span class="keyword">this</span>)))...</div>
+<div class="line"><span class="lineno">  355</span>    };</div>
+<div class="line"><span class="lineno">  356</span> </div>
+<div class="line"><span class="lineno">  357</span>    <span class="comment">// Query a ranged &#39;for&#39; loop (each &#39;base&#39; in the &#39;bases&#39; tuple array)</span></div>
+<div class="line"><span class="lineno">  358</span>    <span class="keywordflow">for</span> (CONST <span class="keyword">auto</span>&amp; base : bases)</div>
+<div class="line"><span class="lineno">  359</span>    {</div>
+<div class="line"><span class="lineno">  360</span>        <span class="keywordflow">if</span> (refId == std::get&lt;0&gt; (base))</div>
+<div class="line"><span class="lineno">  361</span>        {</div>
+<div class="line"><span class="lineno">  362</span>            this-&gt;<a class="code hl_function" href="../../dd/dbb/class_smart_pointer_helper_base.html#a2c9426410eeb136beba8123b5d84dc6e">AddRef</a>();</div>
+<div class="line"><span class="lineno">  363</span>            *result = std::get&lt;1&gt; (base);</div>
+<div class="line"><span class="lineno">  364</span> </div>
+<div class="line"><span class="lineno">  365</span>            <span class="keywordflow">return</span> S_OK;</div>
+<div class="line"><span class="lineno">  366</span>        }</div>
+<div class="line"><span class="lineno">  367</span>    }</div>
+<div class="line"><span class="lineno">  368</span> </div>
+<div class="line"><span class="lineno">  369</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../dd/dbb/class_smart_pointer_helper_base.html#a93350be3711ec44389ccb85607da79e8">SmartPointerHelperBase&lt;ComClasses...&gt;::QueryInterface</a> (refId, result);</div>
+<div class="line"><span class="lineno">  370</span>}</div>
+<div class="ttc" id="aclass_smart_pointer_helper_base_html_a2c9426410eeb136beba8123b5d84dc6e"><div class="ttname"><a href="../../dd/dbb/class_smart_pointer_helper_base.html#a2c9426410eeb136beba8123b5d84dc6e">SmartPointerHelperBase&lt; ComClasses... &gt;::AddRef</a></div><div class="ttdeci">ULONG STDMETHODCALLTYPE AddRef()</div><div class="ttdoc">Add a new reference to the pointer, increasing the counter by one.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d31/win32___smart_pointer_8cpp_source.html#l00092">win32_SmartPointer.cpp:255</a></div></div>
+<div class="ttc" id="aclass_smart_pointer_helper_base_html_a93350be3711ec44389ccb85607da79e8"><div class="ttname"><a href="../../dd/dbb/class_smart_pointer_helper_base.html#a93350be3711ec44389ccb85607da79e8">SmartPointerHelperBase::QueryInterface</a></div><div class="ttdeci">HRESULT STDMETHODCALLTYPE QueryInterface(REFIID riid, void **ppvObject)</div><div class="ttdoc">Query a COM object for a pointer to one its interfaces, identifying the interface by a reference to i...</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d31/win32___smart_pointer_8cpp_source.html#l00318">win32_SmartPointer.cpp:318</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -259,13 +264,10 @@ template&lt;class... ComClasses&gt; </div>
 <li>include/CxxWin/modules/Win32_core/memory/<a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html">win32_SmartPointer.cpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.7-->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="../../d9/d93/class_smart_pointer_helper.html">SmartPointerHelper</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
 </body>
 </html>

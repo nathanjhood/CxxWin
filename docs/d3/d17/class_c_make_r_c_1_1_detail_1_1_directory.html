@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.9.7-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -9,32 +10,19 @@
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
-<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="../../resize.js"></script>
-<script type="text/javascript" src="../../navtreedata.js"></script>
-<script type="text/javascript" src="../../navtree.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  },
-  loader: {
-    load: ['[tex]/ams']
-  },
-  tex: {
-    macros: {},
-    packages: ['base','configmacros','ams']
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <script type="text/javascript" src="../../darkmode_toggle.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxy_stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -69,23 +57,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('d3/d17/class_c_make_r_c_1_1_detail_1_1_directory.html','../../'); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -107,6 +78,11 @@ $(document).ready(function(){initNavTree('d3/d17/class_c_make_r_c_1_1_detail_1_1
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d6/dcb/namespace_c_make_r_c.html">CMakeRC</a></li><li class="navelem"><a class="el" href="../../d9/def/namespace_c_make_r_c_1_1_detail.html">Detail</a></li><li class="navelem"><a class="el" href="../../d3/d17/class_c_make_r_c_1_1_detail_1_1_directory.html">Directory</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -165,7 +141,10 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:abab781792e29a0f758f09fe378fe7aba"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="../../d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory.html">FileOrDirectory</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d17/class_c_make_r_c_1_1_detail_1_1_directory.html#abab781792e29a0f758f09fe378fe7aba">_index</a></td></tr>
 <tr class="separator:abab781792e29a0f758f09fe378fe7aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="../../df/dcb/cmrc_8hpp_source.html#l00338">338</a> of file <a class="el" href="../../df/dcb/cmrc_8hpp_source.html">cmrc.hpp</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a9702671345e2a242f6f245987b5367fc" name="a9702671345e2a242f6f245987b5367fc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9702671345e2a242f6f245987b5367fc">&#9670;&#160;</a></span>BaseIterator</h2>
 
@@ -186,6 +165,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="../../df/dcb/cmrc_8hpp_source.html#l00340">340</a> of file <a class="el" href="../../df/dcb/cmrc_8hpp_source.html">cmrc.hpp</a>.</p>
+
 </div>
 </div>
 <a id="a4c195199ab78279ab571a8cf2dea871d" name="a4c195199ab78279ab571a8cf2dea871d"></a>
@@ -199,6 +180,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/dcb/cmrc_8hpp_source.html#l00518">518</a> of file <a class="el" href="../../df/dcb/cmrc_8hpp_source.html">cmrc.hpp</a>.</p>
 
 </div>
 </div>
@@ -308,6 +291,15 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>FileOrDirectory* </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="../../df/dcb/cmrc_8hpp_source.html#l00377">377</a> of file <a class="el" href="../../df/dcb/cmrc_8hpp_source.html">cmrc.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  378</span>    {</div>
+<div class="line"><span class="lineno">  379</span>        assert(<a class="code hl_variable" href="../../d3/d17/class_c_make_r_c_1_1_detail_1_1_directory.html#abab781792e29a0f758f09fe378fe7aba">_index</a>.find(name) == <a class="code hl_variable" href="../../d3/d17/class_c_make_r_c_1_1_detail_1_1_directory.html#abab781792e29a0f758f09fe378fe7aba">_index</a>.end());</div>
+<div class="line"><span class="lineno">  380</span>        <a class="code hl_variable" href="../../d3/d17/class_c_make_r_c_1_1_detail_1_1_directory.html#a3148cfe9eccc3819c5c15e2e1c3db8ac">_files</a>.emplace_back(begin, end);</div>
+<div class="line"><span class="lineno">  381</span>        <span class="keywordflow">return</span> &amp;<a class="code hl_variable" href="../../d3/d17/class_c_make_r_c_1_1_detail_1_1_directory.html#abab781792e29a0f758f09fe378fe7aba">_index</a>.emplace(name, FileOrDirectory{<a class="code hl_variable" href="../../d3/d17/class_c_make_r_c_1_1_detail_1_1_directory.html#a3148cfe9eccc3819c5c15e2e1c3db8ac">_files</a>.back()}).first-&gt;second;</div>
+<div class="line"><span class="lineno">  382</span>    }</div>
+<div class="ttc" id="aclass_c_make_r_c_1_1_detail_1_1_directory_html_a3148cfe9eccc3819c5c15e2e1c3db8ac"><div class="ttname"><a href="../../d3/d17/class_c_make_r_c_1_1_detail_1_1_directory.html#a3148cfe9eccc3819c5c15e2e1c3db8ac">CMakeRC::Detail::Directory::_files</a></div><div class="ttdeci">std::list&lt; FileData &gt; _files</div><div class="ttdef"><b>Definition</b> <a href="../../df/dcb/cmrc_8hpp_source.html#l00540">cmrc.hpp:540</a></div></div>
+<div class="ttc" id="aclass_c_make_r_c_1_1_detail_1_1_directory_html_abab781792e29a0f758f09fe378fe7aba"><div class="ttname"><a href="../../d3/d17/class_c_make_r_c_1_1_detail_1_1_directory.html#abab781792e29a0f758f09fe378fe7aba">CMakeRC::Detail::Directory::_index</a></div><div class="ttdeci">std::map&lt; std::string, FileOrDirectory &gt; _index</div><div class="ttdef"><b>Definition</b> <a href="../../df/dcb/cmrc_8hpp_source.html#l00542">cmrc.hpp:542</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a69a33c818bec9e2afb82de42aeb331df" name="a69a33c818bec9e2afb82de42aeb331df"></a>
@@ -341,6 +333,15 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../d5/d8a/struct_c_make_r_c_1_1_detail_1_1_created_sub_directory.html">CreatedSubDirectory</a> </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="../../df/dcb/cmrc_8hpp_source.html#l00361">361</a> of file <a class="el" href="../../df/dcb/cmrc_8hpp_source.html">cmrc.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  362</span>    {</div>
+<div class="line"><span class="lineno">  363</span>        <a class="code hl_variable" href="../../d3/d17/class_c_make_r_c_1_1_detail_1_1_directory.html#a23ae57416849fce4dfc61d24a43c61ce">_dirs</a>.emplace_back();</div>
+<div class="line"><span class="lineno">  364</span>        <span class="keyword">auto</span>&amp; back = <a class="code hl_variable" href="../../d3/d17/class_c_make_r_c_1_1_detail_1_1_directory.html#a23ae57416849fce4dfc61d24a43c61ce">_dirs</a>.back();</div>
+<div class="line"><span class="lineno">  365</span>        <span class="keyword">auto</span>&amp; fod = <a class="code hl_variable" href="../../d3/d17/class_c_make_r_c_1_1_detail_1_1_directory.html#abab781792e29a0f758f09fe378fe7aba">_index</a>.emplace(name, FileOrDirectory{back}).first-&gt;second;</div>
+<div class="line"><span class="lineno">  366</span>        <span class="keywordflow">return</span> CreatedSubDirectory{back, fod};</div>
+<div class="line"><span class="lineno">  367</span>    }</div>
+<div class="ttc" id="aclass_c_make_r_c_1_1_detail_1_1_directory_html_a23ae57416849fce4dfc61d24a43c61ce"><div class="ttname"><a href="../../d3/d17/class_c_make_r_c_1_1_detail_1_1_directory.html#a23ae57416849fce4dfc61d24a43c61ce">CMakeRC::Detail::Directory::_dirs</a></div><div class="ttdeci">std::list&lt; Directory &gt; _dirs</div><div class="ttdef"><b>Definition</b> <a href="../../df/dcb/cmrc_8hpp_source.html#l00541">cmrc.hpp:541</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae1569fc4fb303b079330ca6f4241d2c2" name="ae1569fc4fb303b079330ca6f4241d2c2"></a>
@@ -367,6 +368,11 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../de/d22/class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator.html" title="The &#39;Iterator&#39; class.">Iterator</a> </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="../../df/dcb/cmrc_8hpp_source.html#l00525">525</a> of file <a class="el" href="../../df/dcb/cmrc_8hpp_source.html">cmrc.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  526</span>    {</div>
+<div class="line"><span class="lineno">  527</span>        <span class="keywordflow">return</span> Iterator(<a class="code hl_variable" href="../../d3/d17/class_c_make_r_c_1_1_detail_1_1_directory.html#abab781792e29a0f758f09fe378fe7aba">_index</a>.begin(), <a class="code hl_variable" href="../../d3/d17/class_c_make_r_c_1_1_detail_1_1_directory.html#abab781792e29a0f758f09fe378fe7aba">_index</a>.end());</div>
+<div class="line"><span class="lineno">  528</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3a51d595262bb6ca91f85b4e106b105f" name="a3a51d595262bb6ca91f85b4e106b105f"></a>
@@ -393,6 +399,11 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../de/d22/class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator.html" title="The &#39;Iterator&#39; class.">Iterator</a> </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="../../df/dcb/cmrc_8hpp_source.html#l00535">535</a> of file <a class="el" href="../../df/dcb/cmrc_8hpp_source.html">cmrc.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  536</span>    {</div>
+<div class="line"><span class="lineno">  537</span>        <span class="keywordflow">return</span> Iterator();</div>
+<div class="line"><span class="lineno">  538</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1a37503b11b08f3267f6c33cee47fc23" name="a1a37503b11b08f3267f6c33cee47fc23"></a>
@@ -426,6 +437,34 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>const FileOrDirectory* </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="../../df/dcb/cmrc_8hpp_source.html#l00390">390</a> of file <a class="el" href="../../df/dcb/cmrc_8hpp_source.html">cmrc.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  391</span>    {</div>
+<div class="line"><span class="lineno">  392</span>        <span class="keyword">auto</span> pair = <a class="code hl_function" href="../../d9/def/namespace_c_make_r_c_1_1_detail.html#a66d1ba033d0fd3128f0c20fc3652070a">SplitPath</a>(path);</div>
+<div class="line"><span class="lineno">  393</span>        <span class="keyword">auto</span> child = <a class="code hl_variable" href="../../d3/d17/class_c_make_r_c_1_1_detail_1_1_directory.html#abab781792e29a0f758f09fe378fe7aba">_index</a>.find(pair.first);</div>
+<div class="line"><span class="lineno">  394</span> </div>
+<div class="line"><span class="lineno">  395</span>        <span class="keywordflow">if</span> (child == <a class="code hl_variable" href="../../d3/d17/class_c_make_r_c_1_1_detail_1_1_directory.html#abab781792e29a0f758f09fe378fe7aba">_index</a>.end())</div>
+<div class="line"><span class="lineno">  396</span>        {</div>
+<div class="line"><span class="lineno">  397</span>            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  398</span>        }</div>
+<div class="line"><span class="lineno">  399</span>        <span class="keyword">auto</span>&amp; entry  = child-&gt;second;</div>
+<div class="line"><span class="lineno">  400</span> </div>
+<div class="line"><span class="lineno">  401</span>        <span class="keywordflow">if</span> (pair.second.empty())</div>
+<div class="line"><span class="lineno">  402</span>        {</div>
+<div class="line"><span class="lineno">  403</span>            <span class="comment">// We&#39;re at the end of the path</span></div>
+<div class="line"><span class="lineno">  404</span>            <span class="keywordflow">return</span> &amp;entry;</div>
+<div class="line"><span class="lineno">  405</span>        }</div>
+<div class="line"><span class="lineno">  406</span> </div>
+<div class="line"><span class="lineno">  407</span>        <span class="keywordflow">if</span> (entry.IsFile())</div>
+<div class="line"><span class="lineno">  408</span>        {</div>
+<div class="line"><span class="lineno">  409</span>            <span class="comment">// We can&#39;t traverse into a file. Stop.</span></div>
+<div class="line"><span class="lineno">  410</span>            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  411</span>        }</div>
+<div class="line"><span class="lineno">  412</span> </div>
+<div class="line"><span class="lineno">  413</span>        <span class="comment">// Keep going down</span></div>
+<div class="line"><span class="lineno">  414</span>        <span class="keywordflow">return</span> entry.AsDirectory().Get(pair.second);</div>
+<div class="line"><span class="lineno">  415</span>    }</div>
+<div class="ttc" id="anamespace_c_make_r_c_1_1_detail_html_a66d1ba033d0fd3128f0c20fc3652070a"><div class="ttname"><a href="../../d9/def/namespace_c_make_r_c_1_1_detail.html#a66d1ba033d0fd3128f0c20fc3652070a">CMakeRC::Detail::SplitPath</a></div><div class="ttdeci">std::pair&lt; std::string, std::string &gt; SplitPath(const std::string &amp;path)</div><div class="ttdef"><b>Definition</b> <a href="../../df/dcb/cmrc_8hpp_source.html#l00308">cmrc.hpp:308</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -449,6 +488,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="../../df/dcb/cmrc_8hpp_source.html#l00541">541</a> of file <a class="el" href="../../df/dcb/cmrc_8hpp_source.html">cmrc.hpp</a>.</p>
+
 </div>
 </div>
 <a id="a3148cfe9eccc3819c5c15e2e1c3db8ac" name="a3148cfe9eccc3819c5c15e2e1c3db8ac"></a>
@@ -470,6 +511,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/dcb/cmrc_8hpp_source.html#l00540">540</a> of file <a class="el" href="../../df/dcb/cmrc_8hpp_source.html">cmrc.hpp</a>.</p>
 
 </div>
 </div>
@@ -493,19 +536,18 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="../../df/dcb/cmrc_8hpp_source.html#l00542">542</a> of file <a class="el" href="../../df/dcb/cmrc_8hpp_source.html">cmrc.hpp</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/CxxWin/modules/Win32_resource/<a class="el" href="../../df/dcb/cmrc_8hpp_source.html">cmrc.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.7-->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="../../d6/dcb/namespace_c_make_r_c.html">CMakeRC</a></li><li class="navelem"><a class="el" href="../../d9/def/namespace_c_make_r_c_1_1_detail.html">Detail</a></li><li class="navelem"><a class="el" href="../../d3/d17/class_c_make_r_c_1_1_detail_1_1_directory.html">Directory</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
 </body>
 </html>

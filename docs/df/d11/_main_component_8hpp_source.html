@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.9.7-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -9,32 +10,19 @@
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
-<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="../../resize.js"></script>
-<script type="text/javascript" src="../../navtreedata.js"></script>
-<script type="text/javascript" src="../../navtree.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  },
-  loader: {
-    load: ['[tex]/ams']
-  },
-  tex: {
-    macros: {},
-    packages: ['base','configmacros','ams']
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <script type="text/javascript" src="../../darkmode_toggle.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxy_stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -69,23 +57,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('df/d11/_main_component_8hpp_source.html','../../'); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -107,6 +78,11 @@ $(document).ready(function(){initNavTree('df/d11/_main_component_8hpp_source.htm
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_9bc32812666c1354c5bb25d7268c0a0c.html">CxxWin</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">MainComponent.hpp</div></div>
 </div><!--header-->
@@ -156,37 +132,34 @@ $(document).ready(function(){initNavTree('df/d11/_main_component_8hpp_source.htm
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>};</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">// } // namespace Win32</span></div>
-<div class="ttc" id="aclass_main_component_html"><div class="ttname"><a href="../../d2/d5e/class_main_component.html">MainComponent</a></div><div class="ttdoc">The 'MainComponent' class.</div><div class="ttdef"><b>Definition</b> MainComponent.hpp:26</div></div>
-<div class="ttc" id="aclass_main_component_html_a04f9037978c0eda84b67aec48f09a7f5"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a04f9037978c0eda84b67aec48f09a7f5">MainComponent::Resize</a></div><div class="ttdeci">void Resize()</div><div class="ttdef"><b>Definition</b> MainComponent.cpp:105</div></div>
-<div class="ttc" id="aclass_main_component_html_a10413353888f65b0282eb32cf4a012ef"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a10413353888f65b0282eb32cf4a012ef">MainComponent::ClassName</a></div><div class="ttdeci">PCWSTR ClassName() CONST</div><div class="ttdef"><b>Definition</b> MainComponent.cpp:39</div></div>
-<div class="ttc" id="aclass_main_component_html_a10c91bf54dfeee51d23f9d5007c94fcf"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a10c91bf54dfeee51d23f9d5007c94fcf">MainComponent::OnClose</a></div><div class="ttdeci">void OnClose() CONST</div><div class="ttdef"><b>Definition</b> MainComponent.cpp:253</div></div>
-<div class="ttc" id="aclass_main_component_html_a13b313e495b2911a9aded8b3bf50953d"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a13b313e495b2911a9aded8b3bf50953d">MainComponent::CalculateLayout</a></div><div class="ttdeci">void CalculateLayout()</div><div class="ttdef"><b>Definition</b> MainComponent.cpp:124</div></div>
-<div class="ttc" id="aclass_main_component_html_a2879d344d4000e1bec8782b6e152a0de"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a2879d344d4000e1bec8782b6e152a0de">MainComponent::OnDestroy</a></div><div class="ttdeci">void OnDestroy()</div><div class="ttdef"><b>Definition</b> MainComponent.cpp:265</div></div>
-<div class="ttc" id="aclass_main_component_html_a28a911446776a6ea7777f0cde9960d16"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a28a911446776a6ea7777f0cde9960d16">MainComponent::HandleMessage</a></div><div class="ttdeci">LRESULT HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam)</div><div class="ttdoc">A typical window procedure is simply a large 'switch()' statement that switches on the 'uMsg' code.</div><div class="ttdef"><b>Definition</b> MainComponent.cpp:54</div></div>
-<div class="ttc" id="aclass_main_component_html_a47ac035cb7b724fe01a45a421d63cc7f"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a47ac035cb7b724fe01a45a421d63cc7f">MainComponent::DiscardGraphicsResources</a></div><div class="ttdeci">void DiscardGraphicsResources()</div><div class="ttdef"><b>Definition</b> MainComponent.cpp:231</div></div>
-<div class="ttc" id="aclass_main_component_html_a51d0525d05ee8a081a9203870dda47ee"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a51d0525d05ee8a081a9203870dda47ee">MainComponent::pBrush</a></div><div class="ttdeci">ID2D1SolidColorBrush * pBrush</div><div class="ttdef"><b>Definition</b> MainComponent.hpp:50</div></div>
-<div class="ttc" id="aclass_main_component_html_a69d6b4a4e7e62fe992112be1820f1b05"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a69d6b4a4e7e62fe992112be1820f1b05">MainComponent::pBrushB</a></div><div class="ttdeci">ID2D1SolidColorBrush * pBrushB</div><div class="ttdef"><b>Definition</b> MainComponent.hpp:51</div></div>
-<div class="ttc" id="aclass_main_component_html_a7d3e5127fce1bd8fde64ada377c54852"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a7d3e5127fce1bd8fde64ada377c54852">MainComponent::pFactory</a></div><div class="ttdeci">ID2D1Factory * pFactory</div><div class="ttdef"><b>Definition</b> MainComponent.hpp:48</div></div>
-<div class="ttc" id="aclass_main_component_html_a85254935b98beac9128189c6a577d7be"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a85254935b98beac9128189c6a577d7be">MainComponent::MainComponent</a></div><div class="ttdeci">MainComponent()</div><div class="ttdoc">Construct a new 'MainComponent' object.</div><div class="ttdef"><b>Definition</b> MainComponent.cpp:20</div></div>
-<div class="ttc" id="aclass_main_component_html_a9691c0d06ca0ed4ad9f7a09c8b81593a"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a9691c0d06ca0ed4ad9f7a09c8b81593a">MainComponent::ellipseC</a></div><div class="ttdeci">D2D1_ELLIPSE ellipseC</div><div class="ttdef"><b>Definition</b> MainComponent.hpp:55</div></div>
-<div class="ttc" id="aclass_main_component_html_a9dc97c9d3abef9e02c68956cf99e43da"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a9dc97c9d3abef9e02c68956cf99e43da">MainComponent::OnCreate</a></div><div class="ttdeci">HRESULT OnCreate()</div><div class="ttdef"><b>Definition</b> MainComponent.cpp:244</div></div>
-<div class="ttc" id="aclass_main_component_html_a9ea90fecfbc01684557afd2403c07b9d"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a9ea90fecfbc01684557afd2403c07b9d">MainComponent::pBrushC</a></div><div class="ttdeci">ID2D1SolidColorBrush * pBrushC</div><div class="ttdef"><b>Definition</b> MainComponent.hpp:52</div></div>
-<div class="ttc" id="aclass_main_component_html_aacab24f179f68622014e624c71d5cf71"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#aacab24f179f68622014e624c71d5cf71">MainComponent::pRenderTarget</a></div><div class="ttdeci">ID2D1HwndRenderTarget * pRenderTarget</div><div class="ttdef"><b>Definition</b> MainComponent.hpp:49</div></div>
-<div class="ttc" id="aclass_main_component_html_ab97d350faaca1a25a99f8309302bdeb6"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#ab97d350faaca1a25a99f8309302bdeb6">MainComponent::ptMouse</a></div><div class="ttdeci">D2D1_POINT_2F ptMouse</div><div class="ttdef"><b>Definition</b> MainComponent.hpp:57</div></div>
-<div class="ttc" id="aclass_main_component_html_ac0fd3834382e2478b512564e2b4710f9"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#ac0fd3834382e2478b512564e2b4710f9">MainComponent::ellipseA</a></div><div class="ttdeci">D2D1_ELLIPSE ellipseA</div><div class="ttdef"><b>Definition</b> MainComponent.hpp:53</div></div>
-<div class="ttc" id="aclass_main_component_html_ad513e8d388d5e229c0d4850a7d09b5f0"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#ad513e8d388d5e229c0d4850a7d09b5f0">MainComponent::CreateGraphicsResources</a></div><div class="ttdeci">HRESULT CreateGraphicsResources()</div><div class="ttdoc">Initialize graphics resources such as brushes, colours, and layouts for further processing.</div><div class="ttdef"><b>Definition</b> MainComponent.cpp:184</div></div>
-<div class="ttc" id="aclass_main_component_html_ae1a328c17e46ca15ffc552df49bf887e"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#ae1a328c17e46ca15ffc552df49bf887e">MainComponent::OnPaint</a></div><div class="ttdeci">void OnPaint()</div><div class="ttdef"><b>Definition</b> MainComponent.cpp:154</div></div>
-<div class="ttc" id="aclass_main_component_html_af4f7ab51fc49751836a90ece6cf9b440"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#af4f7ab51fc49751836a90ece6cf9b440">MainComponent::ellipseB</a></div><div class="ttdeci">D2D1_ELLIPSE ellipseB</div><div class="ttdef"><b>Definition</b> MainComponent.hpp:54</div></div>
-<div class="ttc" id="aclass_main_window_html"><div class="ttname"><a href="../../d9/dc6/class_main_window.html">MainWindow</a></div><div class="ttdoc">The 'MainWindow' class.</div><div class="ttdef"><b>Definition</b> win32_MainWindow.hpp:35</div></div>
+<div class="ttc" id="aclass_main_component_html"><div class="ttname"><a href="../../d2/d5e/class_main_component.html">MainComponent</a></div><div class="ttdoc">The 'MainComponent' class.</div><div class="ttdef"><b>Definition</b> <a href="../../df/d11/_main_component_8hpp_source.html#l00025">MainComponent.hpp:26</a></div></div>
+<div class="ttc" id="aclass_main_component_html_a04f9037978c0eda84b67aec48f09a7f5"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a04f9037978c0eda84b67aec48f09a7f5">MainComponent::Resize</a></div><div class="ttdeci">void Resize()</div><div class="ttdef"><b>Definition</b> <a href="../../db/dfc/_main_component_8cpp_source.html#l00105">MainComponent.cpp:105</a></div></div>
+<div class="ttc" id="aclass_main_component_html_a10413353888f65b0282eb32cf4a012ef"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a10413353888f65b0282eb32cf4a012ef">MainComponent::ClassName</a></div><div class="ttdeci">PCWSTR ClassName() CONST</div><div class="ttdef"><b>Definition</b> <a href="../../db/dfc/_main_component_8cpp_source.html#l00039">MainComponent.cpp:39</a></div></div>
+<div class="ttc" id="aclass_main_component_html_a10c91bf54dfeee51d23f9d5007c94fcf"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a10c91bf54dfeee51d23f9d5007c94fcf">MainComponent::OnClose</a></div><div class="ttdeci">void OnClose() CONST</div><div class="ttdef"><b>Definition</b> <a href="../../db/dfc/_main_component_8cpp_source.html#l00253">MainComponent.cpp:253</a></div></div>
+<div class="ttc" id="aclass_main_component_html_a13b313e495b2911a9aded8b3bf50953d"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a13b313e495b2911a9aded8b3bf50953d">MainComponent::CalculateLayout</a></div><div class="ttdeci">void CalculateLayout()</div><div class="ttdef"><b>Definition</b> <a href="../../db/dfc/_main_component_8cpp_source.html#l00124">MainComponent.cpp:124</a></div></div>
+<div class="ttc" id="aclass_main_component_html_a2879d344d4000e1bec8782b6e152a0de"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a2879d344d4000e1bec8782b6e152a0de">MainComponent::OnDestroy</a></div><div class="ttdeci">void OnDestroy()</div><div class="ttdef"><b>Definition</b> <a href="../../db/dfc/_main_component_8cpp_source.html#l00265">MainComponent.cpp:265</a></div></div>
+<div class="ttc" id="aclass_main_component_html_a28a911446776a6ea7777f0cde9960d16"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a28a911446776a6ea7777f0cde9960d16">MainComponent::HandleMessage</a></div><div class="ttdeci">LRESULT HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam)</div><div class="ttdoc">A typical window procedure is simply a large 'switch()' statement that switches on the 'uMsg' code.</div><div class="ttdef"><b>Definition</b> <a href="../../db/dfc/_main_component_8cpp_source.html#l00054">MainComponent.cpp:54</a></div></div>
+<div class="ttc" id="aclass_main_component_html_a47ac035cb7b724fe01a45a421d63cc7f"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a47ac035cb7b724fe01a45a421d63cc7f">MainComponent::DiscardGraphicsResources</a></div><div class="ttdeci">void DiscardGraphicsResources()</div><div class="ttdef"><b>Definition</b> <a href="../../db/dfc/_main_component_8cpp_source.html#l00231">MainComponent.cpp:231</a></div></div>
+<div class="ttc" id="aclass_main_component_html_a51d0525d05ee8a081a9203870dda47ee"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a51d0525d05ee8a081a9203870dda47ee">MainComponent::pBrush</a></div><div class="ttdeci">ID2D1SolidColorBrush * pBrush</div><div class="ttdef"><b>Definition</b> <a href="../../df/d11/_main_component_8hpp_source.html#l00050">MainComponent.hpp:50</a></div></div>
+<div class="ttc" id="aclass_main_component_html_a69d6b4a4e7e62fe992112be1820f1b05"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a69d6b4a4e7e62fe992112be1820f1b05">MainComponent::pBrushB</a></div><div class="ttdeci">ID2D1SolidColorBrush * pBrushB</div><div class="ttdef"><b>Definition</b> <a href="../../df/d11/_main_component_8hpp_source.html#l00051">MainComponent.hpp:51</a></div></div>
+<div class="ttc" id="aclass_main_component_html_a7d3e5127fce1bd8fde64ada377c54852"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a7d3e5127fce1bd8fde64ada377c54852">MainComponent::pFactory</a></div><div class="ttdeci">ID2D1Factory * pFactory</div><div class="ttdef"><b>Definition</b> <a href="../../df/d11/_main_component_8hpp_source.html#l00048">MainComponent.hpp:48</a></div></div>
+<div class="ttc" id="aclass_main_component_html_a85254935b98beac9128189c6a577d7be"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a85254935b98beac9128189c6a577d7be">MainComponent::MainComponent</a></div><div class="ttdeci">MainComponent()</div><div class="ttdoc">Construct a new 'MainComponent' object.</div><div class="ttdef"><b>Definition</b> <a href="../../db/dfc/_main_component_8cpp_source.html#l00020">MainComponent.cpp:20</a></div></div>
+<div class="ttc" id="aclass_main_component_html_a9691c0d06ca0ed4ad9f7a09c8b81593a"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a9691c0d06ca0ed4ad9f7a09c8b81593a">MainComponent::ellipseC</a></div><div class="ttdeci">D2D1_ELLIPSE ellipseC</div><div class="ttdef"><b>Definition</b> <a href="../../df/d11/_main_component_8hpp_source.html#l00055">MainComponent.hpp:55</a></div></div>
+<div class="ttc" id="aclass_main_component_html_a9dc97c9d3abef9e02c68956cf99e43da"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a9dc97c9d3abef9e02c68956cf99e43da">MainComponent::OnCreate</a></div><div class="ttdeci">HRESULT OnCreate()</div><div class="ttdef"><b>Definition</b> <a href="../../db/dfc/_main_component_8cpp_source.html#l00244">MainComponent.cpp:244</a></div></div>
+<div class="ttc" id="aclass_main_component_html_a9ea90fecfbc01684557afd2403c07b9d"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#a9ea90fecfbc01684557afd2403c07b9d">MainComponent::pBrushC</a></div><div class="ttdeci">ID2D1SolidColorBrush * pBrushC</div><div class="ttdef"><b>Definition</b> <a href="../../df/d11/_main_component_8hpp_source.html#l00052">MainComponent.hpp:52</a></div></div>
+<div class="ttc" id="aclass_main_component_html_aacab24f179f68622014e624c71d5cf71"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#aacab24f179f68622014e624c71d5cf71">MainComponent::pRenderTarget</a></div><div class="ttdeci">ID2D1HwndRenderTarget * pRenderTarget</div><div class="ttdef"><b>Definition</b> <a href="../../df/d11/_main_component_8hpp_source.html#l00049">MainComponent.hpp:49</a></div></div>
+<div class="ttc" id="aclass_main_component_html_ab97d350faaca1a25a99f8309302bdeb6"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#ab97d350faaca1a25a99f8309302bdeb6">MainComponent::ptMouse</a></div><div class="ttdeci">D2D1_POINT_2F ptMouse</div><div class="ttdef"><b>Definition</b> <a href="../../df/d11/_main_component_8hpp_source.html#l00057">MainComponent.hpp:57</a></div></div>
+<div class="ttc" id="aclass_main_component_html_ac0fd3834382e2478b512564e2b4710f9"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#ac0fd3834382e2478b512564e2b4710f9">MainComponent::ellipseA</a></div><div class="ttdeci">D2D1_ELLIPSE ellipseA</div><div class="ttdef"><b>Definition</b> <a href="../../df/d11/_main_component_8hpp_source.html#l00053">MainComponent.hpp:53</a></div></div>
+<div class="ttc" id="aclass_main_component_html_ad513e8d388d5e229c0d4850a7d09b5f0"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#ad513e8d388d5e229c0d4850a7d09b5f0">MainComponent::CreateGraphicsResources</a></div><div class="ttdeci">HRESULT CreateGraphicsResources()</div><div class="ttdoc">Initialize graphics resources such as brushes, colours, and layouts for further processing.</div><div class="ttdef"><b>Definition</b> <a href="../../db/dfc/_main_component_8cpp_source.html#l00184">MainComponent.cpp:184</a></div></div>
+<div class="ttc" id="aclass_main_component_html_ae1a328c17e46ca15ffc552df49bf887e"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#ae1a328c17e46ca15ffc552df49bf887e">MainComponent::OnPaint</a></div><div class="ttdeci">void OnPaint()</div><div class="ttdef"><b>Definition</b> <a href="../../db/dfc/_main_component_8cpp_source.html#l00154">MainComponent.cpp:154</a></div></div>
+<div class="ttc" id="aclass_main_component_html_af4f7ab51fc49751836a90ece6cf9b440"><div class="ttname"><a href="../../d2/d5e/class_main_component.html#af4f7ab51fc49751836a90ece6cf9b440">MainComponent::ellipseB</a></div><div class="ttdeci">D2D1_ELLIPSE ellipseB</div><div class="ttdef"><b>Definition</b> <a href="../../df/d11/_main_component_8hpp_source.html#l00054">MainComponent.hpp:54</a></div></div>
+<div class="ttc" id="aclass_main_window_html"><div class="ttname"><a href="../../d9/dc6/class_main_window.html">MainWindow</a></div><div class="ttdoc">The 'MainWindow' class.</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d93/win32___main_window_8hpp_source.html#l00034">win32_MainWindow.hpp:35</a></div></div>
 <div class="ttc" id="awin32__core_8hpp_html"><div class="ttname"><a href="../../d6/dbf/win32__core_8hpp.html">win32_core.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
-</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.7-->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_9bc32812666c1354c5bb25d7268c0a0c.html">CxxWin</a></li><li class="navelem"><a class="el" href="../../df/d11/_main_component_8hpp.html">MainComponent.hpp</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
 </body>
 </html>

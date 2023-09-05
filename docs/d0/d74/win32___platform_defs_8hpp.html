@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.9.7-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -9,32 +10,19 @@
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
-<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="../../resize.js"></script>
-<script type="text/javascript" src="../../navtreedata.js"></script>
-<script type="text/javascript" src="../../navtree.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  },
-  loader: {
-    load: ['[tex]/ams']
-  },
-  tex: {
-    macros: {},
-    packages: ['base','configmacros','ams']
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <script type="text/javascript" src="../../darkmode_toggle.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxy_stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -69,23 +57,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('d0/d74/win32___platform_defs_8hpp.html','../../'); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -107,6 +78,11 @@ $(document).ready(function(){initNavTree('d0/d74/win32___platform_defs_8hpp.html
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_9bc32812666c1354c5bb25d7268c0a0c.html">CxxWin</a></li><li class="navelem"><a class="el" href="../../dir_34a2d04789e6072590dc7fd23c3451f8.html">modules</a></li><li class="navelem"><a class="el" href="../../dir_88bab166860255f959016b8c5e7512af.html">Win32_core</a></li><li class="navelem"><a class="el" href="../../dir_88c30591ba125011a5eb0023131b82dc.html">system</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a>  </div>
@@ -143,6 +119,8 @@ Macros</h2></td></tr>
 <dl class="section version"><dt>Version</dt><dd>1.0.0 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2023-08-30</dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2023 </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="../../d0/d74/win32___platform_defs_8hpp_source.html">win32_PlatformDefs.hpp</a>.</p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a964d381579febb0cc83dcc69890beec0" name="a964d381579febb0cc83dcc69890beec0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a964d381579febb0cc83dcc69890beec0">&#9670;&#160;</a></span>__DECLARE_NON_COPYABLE</h2>
@@ -179,8 +157,10 @@ Macros</h2></td></tr>
 <div class="line"><span class="keyword">private</span>:</div>
 <div class="line">    <a class="code hl_define" href="../../d0/d74/win32___platform_defs_8hpp.html#a964d381579febb0cc83dcc69890beec0">__DECLARE_NON_COPYABLE</a> (MyClass)</div>
 <div class="line">};</div>
-<div class="ttc" id="awin32___platform_defs_8hpp_html_a964d381579febb0cc83dcc69890beec0"><div class="ttname"><a href="../../d0/d74/win32___platform_defs_8hpp.html#a964d381579febb0cc83dcc69890beec0">__DECLARE_NON_COPYABLE</a></div><div class="ttdeci">#define __DECLARE_NON_COPYABLE(className)</div><div class="ttdoc">This is a shorthand macro for deleting a class's copy constructor and copy assignment operator.</div><div class="ttdef"><b>Definition</b> win32_PlatformDefs.hpp:48</div></div>
+<div class="ttc" id="awin32___platform_defs_8hpp_html_a964d381579febb0cc83dcc69890beec0"><div class="ttname"><a href="../../d0/d74/win32___platform_defs_8hpp.html#a964d381579febb0cc83dcc69890beec0">__DECLARE_NON_COPYABLE</a></div><div class="ttdeci">#define __DECLARE_NON_COPYABLE(className)</div><div class="ttdoc">This is a shorthand macro for deleting a class's copy constructor and copy assignment operator.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/d74/win32___platform_defs_8hpp_source.html#l00048">win32_PlatformDefs.hpp:48</a></div></div>
 </div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="../../d0/d74/win32___platform_defs_8hpp_source.html#l00048">48</a> of file <a class="el" href="../../d0/d74/win32___platform_defs_8hpp_source.html">win32_PlatformDefs.hpp</a>.</p>
+
 </div>
 </div>
 <a id="a25195203b724562392caff0a9a74ba84" name="a25195203b724562392caff0a9a74ba84"></a>
@@ -202,6 +182,8 @@ Macros</h2></td></tr>
 <div class="line">    __LEAK_DETECTOR(className)</div>
 </div><!-- fragment -->
 <p>This is a shorthand way of writing both a __DECLARE_NON_COPYABLE and __LEAK_DETECTOR macro for a class. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d0/d74/win32___platform_defs_8hpp_source.html#l00062">62</a> of file <a class="el" href="../../d0/d74/win32___platform_defs_8hpp_source.html">win32_PlatformDefs.hpp</a>.</p>
 
 </div>
 </div>
@@ -225,6 +207,8 @@ Macros</h2></td></tr>
 </div><!-- fragment -->
 <p>This is a shorthand macro for deleting a class's move constructor and move assignment operator. </p>
 
+<p class="definition">Definition at line <a class="el" href="../../d0/d74/win32___platform_defs_8hpp_source.html#l00055">55</a> of file <a class="el" href="../../d0/d74/win32___platform_defs_8hpp_source.html">win32_PlatformDefs.hpp</a>.</p>
+
 </div>
 </div>
 <a id="aa48cf96123b508654d4c4e9a56e831cb" name="aa48cf96123b508654d4c4e9a56e831cb"></a>
@@ -244,6 +228,8 @@ Macros</h2></td></tr>
 </div><!-- fragment -->
 <p>This macro can be added to class definitions to disable the use of new/delete to allocate the object on the heap, forcing it to only be used as a stack or member variable. </p>
 
+<p class="definition">Definition at line <a class="el" href="../../d0/d74/win32___platform_defs_8hpp_source.html#l00069">69</a> of file <a class="el" href="../../d0/d74/win32___platform_defs_8hpp_source.html">win32_PlatformDefs.hpp</a>.</p>
+
 </div>
 </div>
 <a id="a09f9dc37c074670133452cb5d04c2056" name="a09f9dc37c074670133452cb5d04c2056"></a>
@@ -260,16 +246,15 @@ Macros</h2></td></tr>
 
 <p>Contains preprocessor definitions to declare classes and structs as 'non-copyable', 'non-moveable', and to add a leak detector for debugging. </p>
 
+<p class="definition">Definition at line <a class="el" href="../../d0/d74/win32___platform_defs_8hpp_source.html#l00020">20</a> of file <a class="el" href="../../d0/d74/win32___platform_defs_8hpp_source.html">win32_PlatformDefs.hpp</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
-</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.7-->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_9bc32812666c1354c5bb25d7268c0a0c.html">CxxWin</a></li><li class="navelem"><a class="el" href="../../dir_34a2d04789e6072590dc7fd23c3451f8.html">modules</a></li><li class="navelem"><a class="el" href="../../dir_88bab166860255f959016b8c5e7512af.html">Win32_core</a></li><li class="navelem"><a class="el" href="../../dir_88c30591ba125011a5eb0023131b82dc.html">system</a></li><li class="navelem"><a class="el" href="../../d0/d74/win32___platform_defs_8hpp.html">win32_PlatformDefs.hpp</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
 </body>
 </html>

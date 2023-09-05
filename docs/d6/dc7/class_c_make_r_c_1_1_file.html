@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.9.7-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -9,32 +10,19 @@
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
-<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="../../resize.js"></script>
-<script type="text/javascript" src="../../navtreedata.js"></script>
-<script type="text/javascript" src="../../navtree.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  },
-  loader: {
-    load: ['[tex]/ams']
-  },
-  tex: {
-    macros: {},
-    packages: ['base','configmacros','ams']
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <script type="text/javascript" src="../../darkmode_toggle.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxy_stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -69,23 +57,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('d6/dc7/class_c_make_r_c_1_1_file.html','../../'); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -107,6 +78,11 @@ $(document).ready(function(){initNavTree('d6/dc7/class_c_make_r_c_1_1_file.html'
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d6/dcb/namespace_c_make_r_c.html">CMakeRC</a></li><li class="navelem"><a class="el" href="../../d6/dc7/class_c_make_r_c_1_1_file.html">File</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -159,7 +135,10 @@ Private Attributes</h2></td></tr>
 <tr class="memdesc:a701343f0f39c2d7e037a7359f98f62da"><td class="mdescLeft">&#160;</td><td class="mdescRight">The last char of an array which contains a 'file' object.  <br /></td></tr>
 <tr class="separator:a701343f0f39c2d7e037a7359f98f62da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="../../df/dcb/cmrc_8hpp_source.html#l00098">98</a> of file <a class="el" href="../../df/dcb/cmrc_8hpp_source.html">cmrc.hpp</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a409b19a989325a4f9c1cc853a90aa45d" name="a409b19a989325a4f9c1cc853a90aa45d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a409b19a989325a4f9c1cc853a90aa45d">&#9670;&#160;</a></span>ConstIterator</h2>
 
@@ -171,6 +150,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/dcb/cmrc_8hpp_source.html#l00102">102</a> of file <a class="el" href="../../df/dcb/cmrc_8hpp_source.html">cmrc.hpp</a>.</p>
 
 </div>
 </div>
@@ -185,6 +166,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/dcb/cmrc_8hpp_source.html#l00101">101</a> of file <a class="el" href="../../df/dcb/cmrc_8hpp_source.html">cmrc.hpp</a>.</p>
 
 </div>
 </div>
@@ -259,6 +242,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="../../df/dcb/cmrc_8hpp_source.html#l00115">115</a> of file <a class="el" href="../../df/dcb/cmrc_8hpp_source.html">cmrc.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  115</span>: <a class="code hl_variable" href="../../d6/dc7/class_c_make_r_c_1_1_file.html#ae620455a132951e883cb61ff4af16f02">_begin</a>(beg), <a class="code hl_variable" href="../../d6/dc7/class_c_make_r_c_1_1_file.html#a701343f0f39c2d7e037a7359f98f62da">_end</a>(end) {}</div>
+<div class="ttc" id="aclass_c_make_r_c_1_1_file_html_a701343f0f39c2d7e037a7359f98f62da"><div class="ttname"><a href="../../d6/dc7/class_c_make_r_c_1_1_file.html#a701343f0f39c2d7e037a7359f98f62da">CMakeRC::File::_end</a></div><div class="ttdeci">RCRESOURCEPTR _end</div><div class="ttdoc">The last char of an array which contains a 'file' object.</div><div class="ttdef"><b>Definition</b> <a href="../../df/dcb/cmrc_8hpp_source.html#l00172">cmrc.hpp:172</a></div></div>
+<div class="ttc" id="aclass_c_make_r_c_1_1_file_html_ae620455a132951e883cb61ff4af16f02"><div class="ttname"><a href="../../d6/dc7/class_c_make_r_c_1_1_file.html#ae620455a132951e883cb61ff4af16f02">CMakeRC::File::_begin</a></div><div class="ttdeci">RCRESOURCEPTR _begin</div><div class="ttdoc">The first char of an array which contains a 'file' object.</div><div class="ttdef"><b>Definition</b> <a href="../../df/dcb/cmrc_8hpp_source.html#l00167">cmrc.hpp:167</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -288,6 +276,11 @@ Private Attributes</h2></td></tr>
 <p>Return the beginning of an array which contains a '<a class="el" href="../../d6/dc7/class_c_make_r_c_1_1_file.html">File</a>' object. </p>
 <dl class="section return"><dt>Returns</dt><dd>Iterator </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="../../df/dcb/cmrc_8hpp_source.html#l00121">121</a> of file <a class="el" href="../../df/dcb/cmrc_8hpp_source.html">cmrc.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  122</span>    {</div>
+<div class="line"><span class="lineno">  123</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d6/dc7/class_c_make_r_c_1_1_file.html#ae620455a132951e883cb61ff4af16f02">_begin</a>;</div>
+<div class="line"><span class="lineno">  124</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="affe52cb4e1449c3c522aec515631828e" name="affe52cb4e1449c3c522aec515631828e"></a>
@@ -316,6 +309,11 @@ Private Attributes</h2></td></tr>
 <p>Return the beginning of an array which contains a '<a class="el" href="../../d6/dc7/class_c_make_r_c_1_1_file.html">File</a>' object. </p>
 <dl class="section return"><dt>Returns</dt><dd>Iterator </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="../../df/dcb/cmrc_8hpp_source.html#l00130">130</a> of file <a class="el" href="../../df/dcb/cmrc_8hpp_source.html">cmrc.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  131</span>    {</div>
+<div class="line"><span class="lineno">  132</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d6/dc7/class_c_make_r_c_1_1_file.html#ae620455a132951e883cb61ff4af16f02">_begin</a>;</div>
+<div class="line"><span class="lineno">  133</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2f16cd3bfd3bc7aeaef3eebbb882b684" name="a2f16cd3bfd3bc7aeaef3eebbb882b684"></a>
@@ -344,6 +342,11 @@ Private Attributes</h2></td></tr>
 <p>Return the end of an array which contains a '<a class="el" href="../../d6/dc7/class_c_make_r_c_1_1_file.html">File</a>' object. </p>
 <dl class="section return"><dt>Returns</dt><dd>Iterator </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="../../df/dcb/cmrc_8hpp_source.html#l00148">148</a> of file <a class="el" href="../../df/dcb/cmrc_8hpp_source.html">cmrc.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  149</span>    {</div>
+<div class="line"><span class="lineno">  150</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d6/dc7/class_c_make_r_c_1_1_file.html#a701343f0f39c2d7e037a7359f98f62da">_end</a>;</div>
+<div class="line"><span class="lineno">  151</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a690dfb10e300098bf1ce19e38bee236b" name="a690dfb10e300098bf1ce19e38bee236b"></a>
@@ -372,6 +375,11 @@ Private Attributes</h2></td></tr>
 <p>Return the end of an array which contains a '<a class="el" href="../../d6/dc7/class_c_make_r_c_1_1_file.html">File</a>' object. </p>
 <dl class="section return"><dt>Returns</dt><dd>Iterator </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="../../df/dcb/cmrc_8hpp_source.html#l00139">139</a> of file <a class="el" href="../../df/dcb/cmrc_8hpp_source.html">cmrc.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  140</span>    {</div>
+<div class="line"><span class="lineno">  141</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d6/dc7/class_c_make_r_c_1_1_file.html#a701343f0f39c2d7e037a7359f98f62da">_end</a>;</div>
+<div class="line"><span class="lineno">  142</span>    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae50497b1ca22530f084d3b9cc48da9a6" name="ae50497b1ca22530f084d3b9cc48da9a6"></a>
@@ -400,6 +408,13 @@ Private Attributes</h2></td></tr>
 <p>Return the size of an array which contains a '<a class="el" href="../../d6/dc7/class_c_make_r_c_1_1_file.html">File</a>' object. </p>
 <dl class="section return"><dt>Returns</dt><dd>std::size_t </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="../../df/dcb/cmrc_8hpp_source.html#l00157">157</a> of file <a class="el" href="../../df/dcb/cmrc_8hpp_source.html">cmrc.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  158</span>    {</div>
+<div class="line"><span class="lineno">  159</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(std::distance(<a class="code hl_function" href="../../d6/dc7/class_c_make_r_c_1_1_file.html#a8190a209e6a026ee8fab3244412d11bb">Begin</a>(), <a class="code hl_function" href="../../d6/dc7/class_c_make_r_c_1_1_file.html#a690dfb10e300098bf1ce19e38bee236b">End</a>()));</div>
+<div class="line"><span class="lineno">  160</span>    }</div>
+<div class="ttc" id="aclass_c_make_r_c_1_1_file_html_a690dfb10e300098bf1ce19e38bee236b"><div class="ttname"><a href="../../d6/dc7/class_c_make_r_c_1_1_file.html#a690dfb10e300098bf1ce19e38bee236b">CMakeRC::File::End</a></div><div class="ttdeci">Iterator End() const noexcept</div><div class="ttdoc">Return the end of an array which contains a 'File' object.</div><div class="ttdef"><b>Definition</b> <a href="../../df/dcb/cmrc_8hpp_source.html#l00139">cmrc.hpp:139</a></div></div>
+<div class="ttc" id="aclass_c_make_r_c_1_1_file_html_a8190a209e6a026ee8fab3244412d11bb"><div class="ttname"><a href="../../d6/dc7/class_c_make_r_c_1_1_file.html#a8190a209e6a026ee8fab3244412d11bb">CMakeRC::File::Begin</a></div><div class="ttdeci">Iterator Begin() const noexcept</div><div class="ttdoc">Return the beginning of an array which contains a 'File' object.</div><div class="ttdef"><b>Definition</b> <a href="../../df/dcb/cmrc_8hpp_source.html#l00121">cmrc.hpp:121</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -425,6 +440,8 @@ Private Attributes</h2></td></tr>
 
 <p>The first char of an array which contains a 'file' object. </p>
 
+<p class="definition">Definition at line <a class="el" href="../../df/dcb/cmrc_8hpp_source.html#l00167">167</a> of file <a class="el" href="../../df/dcb/cmrc_8hpp_source.html">cmrc.hpp</a>.</p>
+
 </div>
 </div>
 <a id="a701343f0f39c2d7e037a7359f98f62da" name="a701343f0f39c2d7e037a7359f98f62da"></a>
@@ -449,19 +466,18 @@ Private Attributes</h2></td></tr>
 
 <p>The last char of an array which contains a 'file' object. </p>
 
+<p class="definition">Definition at line <a class="el" href="../../df/dcb/cmrc_8hpp_source.html#l00172">172</a> of file <a class="el" href="../../df/dcb/cmrc_8hpp_source.html">cmrc.hpp</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/CxxWin/modules/Win32_resource/<a class="el" href="../../df/dcb/cmrc_8hpp_source.html">cmrc.hpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.7-->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="../../d6/dcb/namespace_c_make_r_c.html">CMakeRC</a></li><li class="navelem"><a class="el" href="../../d6/dc7/class_c_make_r_c_1_1_file.html">File</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
 </body>
 </html>

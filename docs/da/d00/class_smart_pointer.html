@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.9.7-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
@@ -9,32 +10,19 @@
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
-<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="../../resize.js"></script>
-<script type="text/javascript" src="../../navtreedata.js"></script>
-<script type="text/javascript" src="../../navtree.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript">
-window.MathJax = {
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore',
-    processHtmlClass: 'tex2jax_process'
-  },
-  loader: {
-    load: ['[tex]/ams']
-  },
-  tex: {
-    macros: {},
-    packages: ['base','configmacros','ams']
-  }
-};
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
 </script>
-<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <script type="text/javascript" src="../../darkmode_toggle.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxy_stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -69,23 +57,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('da/d00/class_smart_pointer.html','../../'); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -107,6 +78,7 @@ $(document).ready(function(){initNavTree('da/d00/class_smart_pointer.html','../.
 </div>
 </div>
 
+</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -194,6 +166,8 @@ class SmartPointer&lt; ComClass &gt;</div><p>The '<a class="el" href="../../da/d
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d42/win32___smart_pointer_8hpp_source.html#l00037">37</a> of file <a class="el" href="../../d6/d42/win32___smart_pointer_8hpp_source.html">win32_SmartPointer.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af23b718566d4beddf609e63d1f278459" name="af23b718566d4beddf609e63d1f278459"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af23b718566d4beddf609e63d1f278459">&#9670;&#160;</a></span>SmartPointer() <span class="overload">[1/3]</span></h2>
@@ -219,6 +193,11 @@ template&lt;class ComClass &gt; </div>
 
 <p>Default-construct a new '<a class="el" href="../../da/d00/class_smart_pointer.html" title="The &#39;SmartPointer&#39; class.">SmartPointer</a>' object. </p>
 
+<p class="definition">Definition at line <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html#l00034">34</a> of file <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html">win32_SmartPointer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   35</span>{</div>
+<div class="line"><span class="lineno">   36</span> </div>
+<div class="line"><span class="lineno">   37</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a97fa335bc801171776f623bbb92b4757" name="a97fa335bc801171776f623bbb92b4757"></a>
@@ -247,6 +226,14 @@ template&lt;class ComClass &gt; </div>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html#l00045">45</a> of file <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html">win32_SmartPointer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   46</span> : <a class="code hl_variable" href="../../da/d00/class_smart_pointer.html#aac6766043d71d6919260b32e3025f5ad">ptr</a>(obj)</div>
+<div class="line"><span class="lineno">   47</span>{</div>
+<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../da/d00/class_smart_pointer.html#aac6766043d71d6919260b32e3025f5ad">ptr</a>)</div>
+<div class="line"><span class="lineno">   49</span>        <a class="code hl_variable" href="../../da/d00/class_smart_pointer.html#aac6766043d71d6919260b32e3025f5ad">ptr</a>-&gt;AddRef();</div>
+<div class="line"><span class="lineno">   50</span>}</div>
+<div class="ttc" id="aclass_smart_pointer_html_aac6766043d71d6919260b32e3025f5ad"><div class="ttname"><a href="../../da/d00/class_smart_pointer.html#aac6766043d71d6919260b32e3025f5ad">SmartPointer::ptr</a></div><div class="ttdeci">ComClass * ptr</div><div class="ttdoc">The underlying pointer member.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d42/win32___smart_pointer_8hpp_source.html#l00075">win32_SmartPointer.hpp:75</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a68ce3998e4b3ac9ffaca59064adfdb11" name="a68ce3998e4b3ac9ffaca59064adfdb11"></a>
@@ -275,6 +262,13 @@ template&lt;class ComClass &gt; </div>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html#l00058">58</a> of file <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html">win32_SmartPointer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>                                                        : <a class="code hl_variable" href="../../da/d00/class_smart_pointer.html#aac6766043d71d6919260b32e3025f5ad">ptr</a>(other.<a class="code hl_variable" href="../../da/d00/class_smart_pointer.html#aac6766043d71d6919260b32e3025f5ad">ptr</a>)</div>
+<div class="line"><span class="lineno">   59</span>{</div>
+<div class="line"><span class="lineno">   60</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../da/d00/class_smart_pointer.html#aac6766043d71d6919260b32e3025f5ad">ptr</a>)</div>
+<div class="line"><span class="lineno">   61</span>        <a class="code hl_variable" href="../../da/d00/class_smart_pointer.html#aac6766043d71d6919260b32e3025f5ad">ptr</a>-&gt;AddRef();</div>
+<div class="line"><span class="lineno">   62</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a85bb3a40507619ca59672273ba90271d" name="a85bb3a40507619ca59672273ba90271d"></a>
@@ -293,6 +287,12 @@ template&lt;class ComClass &gt; </div>
 
 <p>Destroy the '<a class="el" href="../../da/d00/class_smart_pointer.html" title="The &#39;SmartPointer&#39; class.">SmartPointer</a>' object. </p>
 
+<p class="definition">Definition at line <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html#l00069">69</a> of file <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html">win32_SmartPointer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   70</span>{</div>
+<div class="line"><span class="lineno">   71</span>    <a class="code hl_function" href="../../da/d00/class_smart_pointer.html#a2bfb0ebe9f8d89c4c3158e752e66737f">release</a>();</div>
+<div class="line"><span class="lineno">   72</span>}</div>
+<div class="ttc" id="aclass_smart_pointer_html_a2bfb0ebe9f8d89c4c3158e752e66737f"><div class="ttname"><a href="../../da/d00/class_smart_pointer.html#a2bfb0ebe9f8d89c4c3158e752e66737f">SmartPointer::release</a></div><div class="ttdeci">void release()</div><div class="ttdoc">Call the templated COM object pointer's underlying 'Release()' method.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d31/win32___smart_pointer_8cpp_source.html#l00232">win32_SmartPointer.cpp:232</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -334,6 +334,24 @@ template&lt;class ComClass &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>HRESULT </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html#l00159">159</a> of file <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html">win32_SmartPointer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  160</span>{</div>
+<div class="line"><span class="lineno">  161</span>    <span class="comment">// This *must* call the global function, not the local.</span></div>
+<div class="line"><span class="lineno">  162</span>    <span class="comment">// Consider overriding the return type def if any clashes...</span></div>
+<div class="line"><span class="lineno">  163</span>    <span class="comment">// (see JUCE Com Pointer)</span></div>
+<div class="line"><span class="lineno">  164</span>    HRESULT hr = <a class="code hl_function" href="../../da/d00/class_smart_pointer.html#af569386f98a741151e4a6c9148fc415c">::CoCreateInstance</a>(</div>
+<div class="line"><span class="lineno">  165</span>        rclsid,</div>
+<div class="line"><span class="lineno">  166</span>        <span class="keyword">nullptr</span>,</div>
+<div class="line"><span class="lineno">  167</span>        dwClsContext,</div>
+<div class="line"><span class="lineno">  168</span>        __uuidof(ComClass),</div>
+<div class="line"><span class="lineno">  169</span>        (<span class="keywordtype">void</span>**) <a class="code hl_function" href="../../da/d00/class_smart_pointer.html#a388d5622da034786e168895b1b936100">resetAndGetAddress</a>()</div>
+<div class="line"><span class="lineno">  170</span>    );</div>
+<div class="line"><span class="lineno">  171</span>    <span class="comment">// assert(hr != CO_E_NOTINITIALIZED);</span></div>
+<div class="line"><span class="lineno">  172</span>    <span class="keywordflow">return</span> (hr != CO_E_NOTINITIALIZED) ? hr : CO_E_NOTINITIALIZED;</div>
+<div class="line"><span class="lineno">  173</span>}</div>
+<div class="ttc" id="aclass_smart_pointer_html_a388d5622da034786e168895b1b936100"><div class="ttname"><a href="../../da/d00/class_smart_pointer.html#a388d5622da034786e168895b1b936100">SmartPointer::resetAndGetAddress</a></div><div class="ttdeci">ComClass ** resetAndGetAddress()</div><div class="ttdoc">Release and nullify this pointer, and return it's memory address.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d31/win32___smart_pointer_8cpp_source.html#l00141">win32_SmartPointer.cpp:141</a></div></div>
+<div class="ttc" id="aclass_smart_pointer_html_af569386f98a741151e4a6c9148fc415c"><div class="ttname"><a href="../../da/d00/class_smart_pointer.html#af569386f98a741151e4a6c9148fc415c">SmartPointer::CoCreateInstance</a></div><div class="ttdeci">HRESULT CoCreateInstance(REFCLSID rclsid, DWORD dwClsContext=CLSCTX_INPROC_SERVER)</div><div class="ttdoc">Creates and default-initializes a single object of the class associated with a specified 'CLSID'.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d31/win32___smart_pointer_8cpp_source.html#l00159">win32_SmartPointer.cpp:159</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a698ca40a80fd57a62e769371505f2c78" name="a698ca40a80fd57a62e769371505f2c78"></a>
@@ -361,6 +379,18 @@ template&lt;class otherComClass &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>SmartPointer&lt;otherComClass&gt; </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html#l00215">215</a> of file <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html">win32_SmartPointer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  216</span>{</div>
+<div class="line"><span class="lineno">  217</span>    <a class="code hl_class" href="../../da/d00/class_smart_pointer.html">SmartPointer&lt;otherComClass&gt;</a> destObj;</div>
+<div class="line"><span class="lineno">  218</span> </div>
+<div class="line"><span class="lineno">  219</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="../../da/d00/class_smart_pointer.html#a0fc132c1d919b1c6523789ed8687d44c">QueryInterface</a>(destObj) == S_OK)</div>
+<div class="line"><span class="lineno">  220</span>        <span class="keywordflow">return</span> destObj;</div>
+<div class="line"><span class="lineno">  221</span> </div>
+<div class="line"><span class="lineno">  222</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  223</span>}</div>
+<div class="ttc" id="aclass_smart_pointer_html"><div class="ttname"><a href="../../da/d00/class_smart_pointer.html">SmartPointer</a></div><div class="ttdoc">The 'SmartPointer' class.</div><div class="ttdef"><b>Definition</b> <a href="../../d6/d42/win32___smart_pointer_8hpp_source.html#l00037">win32_SmartPointer.hpp:38</a></div></div>
+<div class="ttc" id="aclass_smart_pointer_html_a0fc132c1d919b1c6523789ed8687d44c"><div class="ttname"><a href="../../da/d00/class_smart_pointer.html#a0fc132c1d919b1c6523789ed8687d44c">SmartPointer::QueryInterface</a></div><div class="ttdeci">HRESULT QueryInterface(REFCLSID rclsid, SmartPointer&lt; otherComClass &gt; &amp;destObj) CONST</div><div class="ttdoc">Query the interface to the underlying COM object.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d31/win32___smart_pointer_8cpp_source.html#l00185">win32_SmartPointer.cpp:185</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1a542a4be21e5f557947e271f136063a" name="a1a542a4be21e5f557947e271f136063a"></a>
@@ -388,6 +418,11 @@ template&lt;class ComClass &gt; </div>
 <p>Conversion operator. </p>
 <dl class="section return"><dt>Returns</dt><dd>ComClass* </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html#l00080">80</a> of file <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html">win32_SmartPointer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   81</span>{</div>
+<div class="line"><span class="lineno">   82</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="../../da/d00/class_smart_pointer.html#aac6766043d71d6919260b32e3025f5ad">ptr</a>;</div>
+<div class="line"><span class="lineno">   83</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a166c58abb98f9ad23318ca64baf65dfa" name="a166c58abb98f9ad23318ca64baf65dfa"></a>
@@ -445,6 +480,11 @@ template&lt;class ComClass &gt; </div>
 <p>Conversion operator. </p>
 <dl class="section return"><dt>Returns</dt><dd>ComClass&amp; </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html#l00091">91</a> of file <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html">win32_SmartPointer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   92</span>{</div>
+<div class="line"><span class="lineno">   93</span>    <span class="keywordflow">return</span> *<a class="code hl_variable" href="../../da/d00/class_smart_pointer.html#aac6766043d71d6919260b32e3025f5ad">ptr</a>;</div>
+<div class="line"><span class="lineno">   94</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a01c7fb69b9c39d04e85e6990dd24c5e9" name="a01c7fb69b9c39d04e85e6990dd24c5e9"></a>
@@ -472,6 +512,11 @@ template&lt;class ComClass &gt; </div>
 <p>Conversion operator. </p>
 <dl class="section return"><dt>Returns</dt><dd>ComClass* </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html#l00102">102</a> of file <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html">win32_SmartPointer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  103</span>{</div>
+<div class="line"><span class="lineno">  104</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="../../da/d00/class_smart_pointer.html#aac6766043d71d6919260b32e3025f5ad">ptr</a>;</div>
+<div class="line"><span class="lineno">  105</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a888097211726dc2ed5ee0e948ff49bf7" name="a888097211726dc2ed5ee0e948ff49bf7"></a>
@@ -501,6 +546,15 @@ template&lt;class ComClass &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../da/d00/class_smart_pointer.html" title="The &#39;SmartPointer&#39; class.">SmartPointer</a>&amp; </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html#l00114">114</a> of file <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html">win32_SmartPointer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  115</span>{</div>
+<div class="line"><span class="lineno">  116</span>    <span class="keywordflow">if</span> (newPtr != <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  117</span>        newPtr-&gt;AddRef();</div>
+<div class="line"><span class="lineno">  118</span>    <a class="code hl_function" href="../../da/d00/class_smart_pointer.html#a2bfb0ebe9f8d89c4c3158e752e66737f">release</a>();</div>
+<div class="line"><span class="lineno">  119</span>    <a class="code hl_variable" href="../../da/d00/class_smart_pointer.html#aac6766043d71d6919260b32e3025f5ad">ptr</a> = newPtr;</div>
+<div class="line"><span class="lineno">  120</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><span class="lineno">  121</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a89af65521b23dbc25c36f8ecc197acba" name="a89af65521b23dbc25c36f8ecc197acba"></a>
@@ -530,6 +584,12 @@ template&lt;class ComClass &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../da/d00/class_smart_pointer.html" title="The &#39;SmartPointer&#39; class.">SmartPointer</a>&amp; </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html#l00130">130</a> of file <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html">win32_SmartPointer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  131</span>{</div>
+<div class="line"><span class="lineno">  132</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/d00/class_smart_pointer.html#a888097211726dc2ed5ee0e948ff49bf7">operator= </a>(newPtr.ptr);</div>
+<div class="line"><span class="lineno">  133</span>}</div>
+<div class="ttc" id="aclass_smart_pointer_html_a888097211726dc2ed5ee0e948ff49bf7"><div class="ttname"><a href="../../da/d00/class_smart_pointer.html#a888097211726dc2ed5ee0e948ff49bf7">SmartPointer::operator=</a></div><div class="ttdeci">SmartPointer &amp; operator=(ComClass *CONST newPtr)</div><div class="ttdoc">Copy operator (pass-by-value).</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d31/win32___smart_pointer_8cpp_source.html#l00114">win32_SmartPointer.cpp:114</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0fc132c1d919b1c6523789ed8687d44c" name="a0fc132c1d919b1c6523789ed8687d44c"></a>
@@ -578,6 +638,14 @@ template&lt;class otherComClass &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>HRESULT </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html#l00185">185</a> of file <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html">win32_SmartPointer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  186</span>{</div>
+<div class="line"><span class="lineno">  187</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../da/d00/class_smart_pointer.html#aac6766043d71d6919260b32e3025f5ad">ptr</a> == <span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  188</span>        <span class="keywordflow">return</span> E_POINTER;</div>
+<div class="line"><span class="lineno">  189</span> </div>
+<div class="line"><span class="lineno">  190</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="../../da/d00/class_smart_pointer.html#aac6766043d71d6919260b32e3025f5ad">ptr</a>-&gt;QueryInterface(rclsid, (<span class="keywordtype">void</span>**) destObj.<a class="code hl_function" href="../../da/d00/class_smart_pointer.html#a388d5622da034786e168895b1b936100">resetAndGetAddress</a>());</div>
+<div class="line"><span class="lineno">  191</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ae8195378156382f79c9cbd10b18f961d" name="ae8195378156382f79c9cbd10b18f961d"></a>
@@ -615,6 +683,11 @@ template&lt;class otherComClass &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>HRESULT </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html#l00202">202</a> of file <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html">win32_SmartPointer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  203</span>{</div>
+<div class="line"><span class="lineno">  204</span>    <span class="keywordflow">return</span> this-&gt;<a class="code hl_function" href="../../da/d00/class_smart_pointer.html#a0fc132c1d919b1c6523789ed8687d44c">QueryInterface</a>(__uuidof(otherComClass), destObj);</div>
+<div class="line"><span class="lineno">  205</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a2bfb0ebe9f8d89c4c3158e752e66737f" name="a2bfb0ebe9f8d89c4c3158e752e66737f"></a>
@@ -641,6 +714,11 @@ template&lt;class ComClass &gt; </div>
 
 <p>Call the templated COM object pointer's underlying 'Release()' method. </p>
 
+<p class="definition">Definition at line <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html#l00232">232</a> of file <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html">win32_SmartPointer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  233</span>{</div>
+<div class="line"><span class="lineno">  234</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../da/d00/class_smart_pointer.html#aac6766043d71d6919260b32e3025f5ad">ptr</a> != <span class="keyword">nullptr</span>) <a class="code hl_variable" href="../../da/d00/class_smart_pointer.html#aac6766043d71d6919260b32e3025f5ad">ptr</a>-&gt;Release();</div>
+<div class="line"><span class="lineno">  235</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a388d5622da034786e168895b1b936100" name="a388d5622da034786e168895b1b936100"></a>
@@ -660,6 +738,13 @@ template&lt;class ComClass &gt; </div>
 <p>Release and nullify this pointer, and return it's memory address. </p>
 <dl class="section return"><dt>Returns</dt><dd>ComClass** </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html#l00141">141</a> of file <a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html">win32_SmartPointer.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  142</span>{</div>
+<div class="line"><span class="lineno">  143</span>    <a class="code hl_function" href="../../da/d00/class_smart_pointer.html#a2bfb0ebe9f8d89c4c3158e752e66737f">release</a>();</div>
+<div class="line"><span class="lineno">  144</span>    <a class="code hl_variable" href="../../da/d00/class_smart_pointer.html#aac6766043d71d6919260b32e3025f5ad">ptr</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  145</span>    <span class="keywordflow">return</span> &amp;<a class="code hl_variable" href="../../da/d00/class_smart_pointer.html#aac6766043d71d6919260b32e3025f5ad">ptr</a>;</div>
+<div class="line"><span class="lineno">  146</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -687,6 +772,8 @@ template&lt;class ComClass &gt; </div>
 
 <p>The underlying pointer member. </p>
 
+<p class="definition">Definition at line <a class="el" href="../../d6/d42/win32___smart_pointer_8hpp_source.html#l00075">75</a> of file <a class="el" href="../../d6/d42/win32___smart_pointer_8hpp_source.html">win32_SmartPointer.hpp</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -694,13 +781,10 @@ template&lt;class ComClass &gt; </div>
 <li>include/CxxWin/modules/Win32_core/memory/<a class="el" href="../../d9/d31/win32___smart_pointer_8cpp_source.html">win32_SmartPointer.cpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.9.7-->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="../../da/d00/class_smart_pointer.html">SmartPointer</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
 </body>
 </html>
