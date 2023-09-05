@@ -1,0 +1,279 @@
+\doxysection{Main\+Component Class Reference}
+\hypertarget{class_main_component}{}\label{class_main_component}\index{MainComponent@{MainComponent}}
+
+
+The \textquotesingle{}\doxylink{class_main_component}{Main\+Component}\textquotesingle{} class.  
+
+
+
+
+{\ttfamily \#include $<$Main\+Component.\+hpp$>$}
+
+Inheritance diagram for Main\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d2/d5e/class_main_component}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_main_component_a85254935b98beac9128189c6a577d7be}{Main\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \textquotesingle{}\doxylink{class_main_component}{Main\+Component}\textquotesingle{} object. \end{DoxyCompactList}\item 
+PCWSTR \mbox{\hyperlink{class_main_component_a10413353888f65b0282eb32cf4a012ef}{Class\+Name}} () CONST
+\item 
+LRESULT \mbox{\hyperlink{class_main_component_a28a911446776a6ea7777f0cde9960d16}{Handle\+Message}} (UINT u\+Msg, WPARAM w\+Param, LPARAM l\+Param)
+\begin{DoxyCompactList}\small\item\em A typical window procedure is simply a large \textquotesingle{}switch()\textquotesingle{} statement that switches on the \textquotesingle{}u\+Msg\textquotesingle{} code. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_component_a13b313e495b2911a9aded8b3bf50953d}{Calculate\+Layout}} ()
+\item 
+HRESULT \mbox{\hyperlink{class_main_component_ad513e8d388d5e229c0d4850a7d09b5f0}{Create\+Graphics\+Resources}} ()
+\begin{DoxyCompactList}\small\item\em Initialize graphics resources such as brushes, colours, and layouts for further processing. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_component_a47ac035cb7b724fe01a45a421d63cc7f}{Discard\+Graphics\+Resources}} ()
+\item 
+HRESULT \mbox{\hyperlink{class_main_component_a9dc97c9d3abef9e02c68956cf99e43da}{On\+Create}} ()
+\item 
+void \mbox{\hyperlink{class_main_component_ae1a328c17e46ca15ffc552df49bf887e}{On\+Paint}} ()
+\item 
+void \mbox{\hyperlink{class_main_component_a04f9037978c0eda84b67aec48f09a7f5}{Resize}} ()
+\item 
+void \mbox{\hyperlink{class_main_component_a10c91bf54dfeee51d23f9d5007c94fcf}{On\+Close}} () CONST
+\item 
+void \mbox{\hyperlink{class_main_component_a2879d344d4000e1bec8782b6e152a0de}{On\+Destroy}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_main_window}{Main\+Window}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_main_window_a0230fe7f0fab30b98c45cebfc5e224db}{Main\+Window}} ()=default
+\begin{DoxyCompactList}\small\item\em Default-\/\+Construct a new Main Window object. \end{DoxyCompactList}\item 
+PCWSTR \mbox{\hyperlink{class_main_window_ac73b70e36c04de55a2b049637408c21e}{Class\+Name}} () CONST
+\item 
+LRESULT \mbox{\hyperlink{class_main_window_a590370509ff31b48345edf4fd1dee572}{Handle\+Message}} (UINT u\+Msg, WPARAM w\+Param, LPARAM l\+Param)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_base_window}{Base\+Window$<$ Main\+Window $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_base_window_a60209fc8aa81ab0efa29263dabc52cbf}{Base\+Window}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \textquotesingle{}\doxylink{class_base_window}{Base\+Window}\textquotesingle{} object. \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{class_base_window_acfcb0a79ccf1f3780e353f24983b93bf}{Create}} (PCWSTR lp\+Window\+Name, DWORD dw\+Style, DWORD dw\+Ex\+Style=0, int x=CW\+\_\+\+USEDEFAULT, int y=CW\+\_\+\+USEDEFAULT, int n\+Width=CW\+\_\+\+USEDEFAULT, int n\+Height=CW\+\_\+\+USEDEFAULT, HWND h\+Wnd\+Parent=0, HMENU h\+Menu=0)
+\begin{DoxyCompactList}\small\item\em Create a new \textquotesingle{}\doxylink{class_base_window}{Base\+Window}\textquotesingle{} -\/derived object. \end{DoxyCompactList}\item 
+HWND \mbox{\hyperlink{class_base_window_aa1507d2052aaec416ac8b085add33ba0}{Window}} () CONST
+\begin{DoxyCompactList}\small\item\em Return the handle to the \textquotesingle{}\doxylink{class_base_window}{Base\+Window}\textquotesingle{} -\/derived object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+ID2\+D1\+Factory \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_main_component_a7d3e5127fce1bd8fde64ada377c54852}{p\+Factory}}
+\item 
+ID2\+D1\+Hwnd\+Render\+Target \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_main_component_aacab24f179f68622014e624c71d5cf71}{p\+Render\+Target}}
+\item 
+ID2\+D1\+Solid\+Color\+Brush \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_main_component_a51d0525d05ee8a081a9203870dda47ee}{p\+Brush}}
+\item 
+ID2\+D1\+Solid\+Color\+Brush \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_main_component_a69d6b4a4e7e62fe992112be1820f1b05}{p\+BrushB}}
+\item 
+ID2\+D1\+Solid\+Color\+Brush \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_main_component_a9ea90fecfbc01684557afd2403c07b9d}{p\+BrushC}}
+\item 
+D2\+D1\+\_\+\+ELLIPSE \mbox{\hyperlink{class_main_component_ac0fd3834382e2478b512564e2b4710f9}{ellipseA}}
+\item 
+D2\+D1\+\_\+\+ELLIPSE \mbox{\hyperlink{class_main_component_af4f7ab51fc49751836a90ece6cf9b440}{ellipseB}}
+\item 
+D2\+D1\+\_\+\+ELLIPSE \mbox{\hyperlink{class_main_component_a9691c0d06ca0ed4ad9f7a09c8b81593a}{ellipseC}}
+\item 
+D2\+D1\+\_\+\+POINT\+\_\+2F \mbox{\hyperlink{class_main_component_ab97d350faaca1a25a99f8309302bdeb6}{pt\+Mouse}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_base_window}{Base\+Window$<$ Main\+Window $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+static LRESULT CALLBACK \mbox{\hyperlink{class_base_window_a61198ed120a54deccbd3e73221bf9c4d}{Window\+Proc}} (HWND hwnd, UINT u\+Msg, WPARAM w\+Param, LPARAM l\+Param)
+\begin{DoxyCompactList}\small\item\em \textquotesingle{}LRESULT\textquotesingle{} is an integer value that your program returns to Windows. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual PCWSTR \mbox{\hyperlink{class_base_window_a76d1b80a812caf760c0efbed6e64b2e1}{Class\+Name}} () CONST PURE
+\begin{DoxyCompactList}\small\item\em Return a string of the name of \textquotesingle{}\doxylink{class_base_window}{Base\+Window}\textquotesingle{} -\/derived object. \end{DoxyCompactList}\item 
+virtual LRESULT \mbox{\hyperlink{class_base_window_a7612d6d879e60f4b7ded0cf0ac3dd8a9}{Handle\+Message}} (UINT u\+Msg, WPARAM w\+Param, LPARAM l\+Param) PURE
+\begin{DoxyCompactList}\small\item\em Handle the incoming messages. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_base_window}{Base\+Window$<$ Main\+Window $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+HWND \mbox{\hyperlink{class_base_window_a86f5232fa1bbb141f60548a42331fc7e}{m\+\_\+hwnd}}
+\begin{DoxyCompactList}\small\item\em The handle to the \textquotesingle{}\doxylink{class_base_window}{Base\+Window}\textquotesingle{} -\/derived object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \textquotesingle{}\doxylink{class_main_component}{Main\+Component}\textquotesingle{} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_main_component_a85254935b98beac9128189c6a577d7be}\label{class_main_component_a85254935b98beac9128189c6a577d7be} 
+\index{MainComponent@{MainComponent}!MainComponent@{MainComponent}}
+\index{MainComponent@{MainComponent}!MainComponent@{MainComponent}}
+\doxysubsubsection{\texorpdfstring{MainComponent()}{MainComponent()}}
+{\footnotesize\ttfamily Main\+Component\+::\+Main\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \textquotesingle{}\doxylink{class_main_component}{Main\+Component}\textquotesingle{} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_main_component_a13b313e495b2911a9aded8b3bf50953d}\label{class_main_component_a13b313e495b2911a9aded8b3bf50953d} 
+\index{MainComponent@{MainComponent}!CalculateLayout@{CalculateLayout}}
+\index{CalculateLayout@{CalculateLayout}!MainComponent@{MainComponent}}
+\doxysubsubsection{\texorpdfstring{CalculateLayout()}{CalculateLayout()}}
+{\footnotesize\ttfamily void Main\+Component\+::\+Calculate\+Layout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_main_component_a10413353888f65b0282eb32cf4a012ef}\label{class_main_component_a10413353888f65b0282eb32cf4a012ef} 
+\index{MainComponent@{MainComponent}!ClassName@{ClassName}}
+\index{ClassName@{ClassName}!MainComponent@{MainComponent}}
+\doxysubsubsection{\texorpdfstring{ClassName()}{ClassName()}}
+{\footnotesize\ttfamily PCWSTR Main\+Component\+::\+Class\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+PCWSTR 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_base_window_a76d1b80a812caf760c0efbed6e64b2e1}{Base\+Window$<$ Main\+Window $>$}}.
+
+\Hypertarget{class_main_component_ad513e8d388d5e229c0d4850a7d09b5f0}\label{class_main_component_ad513e8d388d5e229c0d4850a7d09b5f0} 
+\index{MainComponent@{MainComponent}!CreateGraphicsResources@{CreateGraphicsResources}}
+\index{CreateGraphicsResources@{CreateGraphicsResources}!MainComponent@{MainComponent}}
+\doxysubsubsection{\texorpdfstring{CreateGraphicsResources()}{CreateGraphicsResources()}}
+{\footnotesize\ttfamily HRESULT Main\+Component\+::\+Create\+Graphics\+Resources (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialize graphics resources such as brushes, colours, and layouts for further processing. 
+
+\begin{DoxyReturn}{Returns}
+HRESULT 
+\end{DoxyReturn}
+\Hypertarget{class_main_component_a47ac035cb7b724fe01a45a421d63cc7f}\label{class_main_component_a47ac035cb7b724fe01a45a421d63cc7f} 
+\index{MainComponent@{MainComponent}!DiscardGraphicsResources@{DiscardGraphicsResources}}
+\index{DiscardGraphicsResources@{DiscardGraphicsResources}!MainComponent@{MainComponent}}
+\doxysubsubsection{\texorpdfstring{DiscardGraphicsResources()}{DiscardGraphicsResources()}}
+{\footnotesize\ttfamily void Main\+Component\+::\+Discard\+Graphics\+Resources (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_main_component_a28a911446776a6ea7777f0cde9960d16}\label{class_main_component_a28a911446776a6ea7777f0cde9960d16} 
+\index{MainComponent@{MainComponent}!HandleMessage@{HandleMessage}}
+\index{HandleMessage@{HandleMessage}!MainComponent@{MainComponent}}
+\doxysubsubsection{\texorpdfstring{HandleMessage()}{HandleMessage()}}
+{\footnotesize\ttfamily LRESULT Main\+Component\+::\+Handle\+Message (\begin{DoxyParamCaption}\item[{UINT}]{u\+Msg,  }\item[{WPARAM}]{w\+Param,  }\item[{LPARAM}]{l\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A typical window procedure is simply a large \textquotesingle{}switch()\textquotesingle{} statement that switches on the \textquotesingle{}u\+Msg\textquotesingle{} code. 
+
+Add cases for each message that you want to handle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em u\+Msg} & \\
+\hline
+{\em w\+Param} & \\
+\hline
+{\em l\+Param} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+LRESULT 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_base_window_a7612d6d879e60f4b7ded0cf0ac3dd8a9}{Base\+Window$<$ Main\+Window $>$}}.
+
+\Hypertarget{class_main_component_a10c91bf54dfeee51d23f9d5007c94fcf}\label{class_main_component_a10c91bf54dfeee51d23f9d5007c94fcf} 
+\index{MainComponent@{MainComponent}!OnClose@{OnClose}}
+\index{OnClose@{OnClose}!MainComponent@{MainComponent}}
+\doxysubsubsection{\texorpdfstring{OnClose()}{OnClose()}}
+{\footnotesize\ttfamily void Main\+Component\+::\+On\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_main_component_a9dc97c9d3abef9e02c68956cf99e43da}\label{class_main_component_a9dc97c9d3abef9e02c68956cf99e43da} 
+\index{MainComponent@{MainComponent}!OnCreate@{OnCreate}}
+\index{OnCreate@{OnCreate}!MainComponent@{MainComponent}}
+\doxysubsubsection{\texorpdfstring{OnCreate()}{OnCreate()}}
+{\footnotesize\ttfamily HRESULT Main\+Component\+::\+On\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+HRESULT 
+\end{DoxyReturn}
+\Hypertarget{class_main_component_a2879d344d4000e1bec8782b6e152a0de}\label{class_main_component_a2879d344d4000e1bec8782b6e152a0de} 
+\index{MainComponent@{MainComponent}!OnDestroy@{OnDestroy}}
+\index{OnDestroy@{OnDestroy}!MainComponent@{MainComponent}}
+\doxysubsubsection{\texorpdfstring{OnDestroy()}{OnDestroy()}}
+{\footnotesize\ttfamily void Main\+Component\+::\+On\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_main_component_ae1a328c17e46ca15ffc552df49bf887e}\label{class_main_component_ae1a328c17e46ca15ffc552df49bf887e} 
+\index{MainComponent@{MainComponent}!OnPaint@{OnPaint}}
+\index{OnPaint@{OnPaint}!MainComponent@{MainComponent}}
+\doxysubsubsection{\texorpdfstring{OnPaint()}{OnPaint()}}
+{\footnotesize\ttfamily void Main\+Component\+::\+On\+Paint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{class_main_component_a04f9037978c0eda84b67aec48f09a7f5}\label{class_main_component_a04f9037978c0eda84b67aec48f09a7f5} 
+\index{MainComponent@{MainComponent}!Resize@{Resize}}
+\index{Resize@{Resize}!MainComponent@{MainComponent}}
+\doxysubsubsection{\texorpdfstring{Resize()}{Resize()}}
+{\footnotesize\ttfamily void Main\+Component\+::\+Resize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_main_component_ac0fd3834382e2478b512564e2b4710f9}\label{class_main_component_ac0fd3834382e2478b512564e2b4710f9} 
+\index{MainComponent@{MainComponent}!ellipseA@{ellipseA}}
+\index{ellipseA@{ellipseA}!MainComponent@{MainComponent}}
+\doxysubsubsection{\texorpdfstring{ellipseA}{ellipseA}}
+{\footnotesize\ttfamily D2\+D1\+\_\+\+ELLIPSE Main\+Component\+::ellipseA\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_main_component_af4f7ab51fc49751836a90ece6cf9b440}\label{class_main_component_af4f7ab51fc49751836a90ece6cf9b440} 
+\index{MainComponent@{MainComponent}!ellipseB@{ellipseB}}
+\index{ellipseB@{ellipseB}!MainComponent@{MainComponent}}
+\doxysubsubsection{\texorpdfstring{ellipseB}{ellipseB}}
+{\footnotesize\ttfamily D2\+D1\+\_\+\+ELLIPSE Main\+Component\+::ellipseB\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_main_component_a9691c0d06ca0ed4ad9f7a09c8b81593a}\label{class_main_component_a9691c0d06ca0ed4ad9f7a09c8b81593a} 
+\index{MainComponent@{MainComponent}!ellipseC@{ellipseC}}
+\index{ellipseC@{ellipseC}!MainComponent@{MainComponent}}
+\doxysubsubsection{\texorpdfstring{ellipseC}{ellipseC}}
+{\footnotesize\ttfamily D2\+D1\+\_\+\+ELLIPSE Main\+Component\+::ellipseC\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_main_component_a51d0525d05ee8a081a9203870dda47ee}\label{class_main_component_a51d0525d05ee8a081a9203870dda47ee} 
+\index{MainComponent@{MainComponent}!pBrush@{pBrush}}
+\index{pBrush@{pBrush}!MainComponent@{MainComponent}}
+\doxysubsubsection{\texorpdfstring{pBrush}{pBrush}}
+{\footnotesize\ttfamily ID2\+D1\+Solid\+Color\+Brush\texorpdfstring{$\ast$}{*} Main\+Component\+::p\+Brush\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_main_component_a69d6b4a4e7e62fe992112be1820f1b05}\label{class_main_component_a69d6b4a4e7e62fe992112be1820f1b05} 
+\index{MainComponent@{MainComponent}!pBrushB@{pBrushB}}
+\index{pBrushB@{pBrushB}!MainComponent@{MainComponent}}
+\doxysubsubsection{\texorpdfstring{pBrushB}{pBrushB}}
+{\footnotesize\ttfamily ID2\+D1\+Solid\+Color\+Brush\texorpdfstring{$\ast$}{*} Main\+Component\+::p\+BrushB\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_main_component_a9ea90fecfbc01684557afd2403c07b9d}\label{class_main_component_a9ea90fecfbc01684557afd2403c07b9d} 
+\index{MainComponent@{MainComponent}!pBrushC@{pBrushC}}
+\index{pBrushC@{pBrushC}!MainComponent@{MainComponent}}
+\doxysubsubsection{\texorpdfstring{pBrushC}{pBrushC}}
+{\footnotesize\ttfamily ID2\+D1\+Solid\+Color\+Brush\texorpdfstring{$\ast$}{*} Main\+Component\+::p\+BrushC\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_main_component_a7d3e5127fce1bd8fde64ada377c54852}\label{class_main_component_a7d3e5127fce1bd8fde64ada377c54852} 
+\index{MainComponent@{MainComponent}!pFactory@{pFactory}}
+\index{pFactory@{pFactory}!MainComponent@{MainComponent}}
+\doxysubsubsection{\texorpdfstring{pFactory}{pFactory}}
+{\footnotesize\ttfamily ID2\+D1\+Factory\texorpdfstring{$\ast$}{*} Main\+Component\+::p\+Factory\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_main_component_aacab24f179f68622014e624c71d5cf71}\label{class_main_component_aacab24f179f68622014e624c71d5cf71} 
+\index{MainComponent@{MainComponent}!pRenderTarget@{pRenderTarget}}
+\index{pRenderTarget@{pRenderTarget}!MainComponent@{MainComponent}}
+\doxysubsubsection{\texorpdfstring{pRenderTarget}{pRenderTarget}}
+{\footnotesize\ttfamily ID2\+D1\+Hwnd\+Render\+Target\texorpdfstring{$\ast$}{*} Main\+Component\+::p\+Render\+Target\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_main_component_ab97d350faaca1a25a99f8309302bdeb6}\label{class_main_component_ab97d350faaca1a25a99f8309302bdeb6} 
+\index{MainComponent@{MainComponent}!ptMouse@{ptMouse}}
+\index{ptMouse@{ptMouse}!MainComponent@{MainComponent}}
+\doxysubsubsection{\texorpdfstring{ptMouse}{ptMouse}}
+{\footnotesize\ttfamily D2\+D1\+\_\+\+POINT\+\_\+2F Main\+Component\+::pt\+Mouse\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Cxx\+Win/\mbox{\hyperlink{_main_component_8hpp}{Main\+Component.\+hpp}}\item 
+include/\+Cxx\+Win/\mbox{\hyperlink{_main_component_8cpp}{Main\+Component.\+cpp}}\end{DoxyCompactItemize}

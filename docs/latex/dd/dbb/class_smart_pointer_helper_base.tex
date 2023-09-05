@@ -1,0 +1,185 @@
+\doxysection{Smart\+Pointer\+Helper\+Base\texorpdfstring{$<$}{<} First, Com\+Classes \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_smart_pointer_helper_base}{}\label{class_smart_pointer_helper_base}\index{SmartPointerHelperBase$<$ First, ComClasses $>$@{SmartPointerHelperBase$<$ First, ComClasses $>$}}
+
+
+The \textquotesingle{}\doxylink{class_smart_pointer_helper_base}{Smart\+Pointer\+Helper\+Base}\textquotesingle{} class.  
+
+
+
+
+{\ttfamily \#include $<$win32\+\_\+\+Smart\+Pointer.\+hpp$>$}
+
+Inheritance diagram for Smart\+Pointer\+Helper\+Base\texorpdfstring{$<$}{<} First, Com\+Classes \texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.964912cm]{dd/dbb/class_smart_pointer_helper_base}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_smart_pointer_helper_base_ac76861e9458ab17c981b2b76f5890321}{Smart\+Pointer\+Helper\+Base}} (unsigned int init\+Ref)
+\begin{DoxyCompactList}\small\item\em Construct a new \textquotesingle{}\doxylink{class_smart_pointer_helper_base}{Smart\+Pointer\+Helper\+Base}\textquotesingle{} object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_smart_pointer_helper_base_aef037e04d1a2ee08824b405b077d4b09}{\texorpdfstring{$\sim$}{\string~}\+Smart\+Pointer\+Helper\+Base}} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the \textquotesingle{}\doxylink{class_smart_pointer_helper_base}{Smart\+Pointer\+Helper\+Base}\textquotesingle{} object. \end{DoxyCompactList}\item 
+ULONG STDMETHODCALLTYPE \mbox{\hyperlink{class_smart_pointer_helper_base_a2c9426410eeb136beba8123b5d84dc6e}{Add\+Ref}} ()
+\begin{DoxyCompactList}\small\item\em Add a new reference to the pointer, increasing the counter by one. \end{DoxyCompactList}\item 
+ULONG STDMETHODCALLTYPE \mbox{\hyperlink{class_smart_pointer_helper_base_a693a3f65e96897ad99ccc1e95c7c0fcd}{Release}} ()
+\begin{DoxyCompactList}\small\item\em Release a reference to the pointer, decreasing the counter by one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Type $>$ }\\HRESULT STDMETHODCALLTYPE \mbox{\hyperlink{class_smart_pointer_helper_base_accdc2a95363ae4f3e76d5dc00e8fef38}{cast\+To\+Type}} (void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}result)
+\begin{DoxyCompactList}\small\item\em Add a new reference to the pointer (increasing the counter by one), and attempt to cast to type \textquotesingle{}T\textquotesingle{}. \end{DoxyCompactList}\item 
+HRESULT STDMETHODCALLTYPE \mbox{\hyperlink{class_smart_pointer_helper_base_a93350be3711ec44389ccb85607da79e8}{Query\+Interface}} (REFIID riid, void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}ppv\+Object)
+\begin{DoxyCompactList}\small\item\em Query a COM object for a pointer to one its interfaces, identifying the interface by a reference to its interface identifier (IID). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+ULONG \mbox{\hyperlink{class_smart_pointer_helper_base_ad2bc91bd39ccd269a3eec9cdcce0f8cf}{ref\+Count}}
+\begin{DoxyCompactList}\small\item\em The underlying reference counter to the pointer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class First, class... Com\+Classes$>$\newline
+class Smart\+Pointer\+Helper\+Base$<$ First, Com\+Classes $>$}
+The \textquotesingle{}\doxylink{class_smart_pointer_helper_base}{Smart\+Pointer\+Helper\+Base}\textquotesingle{} class. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em First} & \\
+\hline
+{\em Com\+Classes} & \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_smart_pointer_helper_base_ac76861e9458ab17c981b2b76f5890321}\label{class_smart_pointer_helper_base_ac76861e9458ab17c981b2b76f5890321} 
+\index{SmartPointerHelperBase$<$ First, ComClasses $>$@{SmartPointerHelperBase$<$ First, ComClasses $>$}!SmartPointerHelperBase@{SmartPointerHelperBase}}
+\index{SmartPointerHelperBase@{SmartPointerHelperBase}!SmartPointerHelperBase$<$ First, ComClasses $>$@{SmartPointerHelperBase$<$ First, ComClasses $>$}}
+\doxysubsubsection{\texorpdfstring{SmartPointerHelperBase()}{SmartPointerHelperBase()}}
+{\footnotesize\ttfamily template$<$class First , class... Com\+Classes$>$ \\
+\mbox{\hyperlink{class_smart_pointer_helper_base}{Smart\+Pointer\+Helper\+Base}}$<$ First, Com\+Classes $>$\mbox{\hyperlink{class_smart_pointer_helper_base}{\+::\+Smart\+Pointer\+Helper\+Base}} (\begin{DoxyParamCaption}\item[{unsigned int}]{init\+Ref }\end{DoxyParamCaption})}
+
+
+
+Construct a new \textquotesingle{}\doxylink{class_smart_pointer_helper_base}{Smart\+Pointer\+Helper\+Base}\textquotesingle{} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em init\+Ref} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_smart_pointer_helper_base_aef037e04d1a2ee08824b405b077d4b09}\label{class_smart_pointer_helper_base_aef037e04d1a2ee08824b405b077d4b09} 
+\index{SmartPointerHelperBase$<$ First, ComClasses $>$@{SmartPointerHelperBase$<$ First, ComClasses $>$}!````~SmartPointerHelperBase@{\texorpdfstring{$\sim$}{\string~}SmartPointerHelperBase}}
+\index{````~SmartPointerHelperBase@{\texorpdfstring{$\sim$}{\string~}SmartPointerHelperBase}!SmartPointerHelperBase$<$ First, ComClasses $>$@{SmartPointerHelperBase$<$ First, ComClasses $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SmartPointerHelperBase()}{\string~SmartPointerHelperBase()}}
+{\footnotesize\ttfamily template$<$class First , class... Com\+Classes$>$ \\
+virtual \mbox{\hyperlink{class_smart_pointer_helper_base}{Smart\+Pointer\+Helper\+Base}}$<$ First, Com\+Classes $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{class_smart_pointer_helper_base}{Smart\+Pointer\+Helper\+Base}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destroy the \textquotesingle{}\doxylink{class_smart_pointer_helper_base}{Smart\+Pointer\+Helper\+Base}\textquotesingle{} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_smart_pointer_helper_base_a2c9426410eeb136beba8123b5d84dc6e}\label{class_smart_pointer_helper_base_a2c9426410eeb136beba8123b5d84dc6e} 
+\index{SmartPointerHelperBase$<$ First, ComClasses $>$@{SmartPointerHelperBase$<$ First, ComClasses $>$}!AddRef@{AddRef}}
+\index{AddRef@{AddRef}!SmartPointerHelperBase$<$ First, ComClasses $>$@{SmartPointerHelperBase$<$ First, ComClasses $>$}}
+\doxysubsubsection{\texorpdfstring{AddRef()}{AddRef()}}
+{\footnotesize\ttfamily template$<$class First , class... Com\+Classes$>$ \\
+ULONG STDMETHODCALLTYPE \mbox{\hyperlink{class_smart_pointer_helper_base}{Smart\+Pointer\+Helper\+Base}}$<$ First, Com\+Classes $>$\+::\+Add\+Ref}
+
+
+
+Add a new reference to the pointer, increasing the counter by one. 
+
+\begin{DoxyReturn}{Returns}
+ULONG 
+\end{DoxyReturn}
+\Hypertarget{class_smart_pointer_helper_base_accdc2a95363ae4f3e76d5dc00e8fef38}\label{class_smart_pointer_helper_base_accdc2a95363ae4f3e76d5dc00e8fef38} 
+\index{SmartPointerHelperBase$<$ First, ComClasses $>$@{SmartPointerHelperBase$<$ First, ComClasses $>$}!castToType@{castToType}}
+\index{castToType@{castToType}!SmartPointerHelperBase$<$ First, ComClasses $>$@{SmartPointerHelperBase$<$ First, ComClasses $>$}}
+\doxysubsubsection{\texorpdfstring{castToType()}{castToType()}}
+{\footnotesize\ttfamily template$<$class First , class... Com\+Classes$>$ \\
+template$<$class Type $>$ \\
+HRESULT STDMETHODCALLTYPE \mbox{\hyperlink{class_smart_pointer_helper_base}{Smart\+Pointer\+Helper\+Base}}$<$ First, Com\+Classes $>$\+::cast\+To\+Type (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Add a new reference to the pointer (increasing the counter by one), and attempt to cast to type \textquotesingle{}T\textquotesingle{}. 
+
+The returned \textquotesingle{}HRESULT\textquotesingle{} can be checked so that any unsuccessful casts might then be freed with the \textquotesingle{}\doxylink{class_smart_pointer_helper_base_a693a3f65e96897ad99ccc1e95c7c0fcd}{Release()}\textquotesingle{} method.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Type} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em result} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+HRESULT 
+\end{DoxyReturn}
+\Hypertarget{class_smart_pointer_helper_base_a93350be3711ec44389ccb85607da79e8}\label{class_smart_pointer_helper_base_a93350be3711ec44389ccb85607da79e8} 
+\index{SmartPointerHelperBase$<$ First, ComClasses $>$@{SmartPointerHelperBase$<$ First, ComClasses $>$}!QueryInterface@{QueryInterface}}
+\index{QueryInterface@{QueryInterface}!SmartPointerHelperBase$<$ First, ComClasses $>$@{SmartPointerHelperBase$<$ First, ComClasses $>$}}
+\doxysubsubsection{\texorpdfstring{QueryInterface()}{QueryInterface()}}
+{\footnotesize\ttfamily template$<$class First , class... Com\+Classes$>$ \\
+HRESULT \mbox{\hyperlink{class_smart_pointer_helper_base}{Smart\+Pointer\+Helper\+Base}}$<$ First, Com\+Classes $>$\+::\+Query\+Interface (\begin{DoxyParamCaption}\item[{REFIID}]{riid,  }\item[{void \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{ppv\+Object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Query a COM object for a pointer to one its interfaces, identifying the interface by a reference to its interface identifier (IID). 
+
+If the COM object implements the interface, then it returns a pointer to that interface after calling \textquotesingle{}\doxylink{class_smart_pointer_helper_base_a2c9426410eeb136beba8123b5d84dc6e}{Smart\+Pointer\+Helper\+Base\+::\+Add\+Ref()}\textquotesingle{} on it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em riid} & A reference to the identifier of the interface being queried for.\\
+\hline
+{\em ppv\+Object} & The address of a pointer to an interface with the IID specified in the \textquotesingle{}riid\textquotesingle{} parameter. Because you pass the address of an interface pointer, the method can overwrite that address with the pointer to the interface being queried for. Upon successful return, \texorpdfstring{$\ast$}{*}ppv\+Object (the dereferenced address) contains a pointer to the requested interface. If the object doesn\textquotesingle{}t support the interface, the method sets \texorpdfstring{$\ast$}{*}ppv\+Object (the dereferenced address) to nullptr.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+HRESULT; This method returns \textquotesingle{}S\+\_\+\+OK\textquotesingle{} if the interface is supported, and \textquotesingle{}E\+\_\+\+NOINTERFACE\textquotesingle{} otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_smart_pointer_helper_base_a693a3f65e96897ad99ccc1e95c7c0fcd}\label{class_smart_pointer_helper_base_a693a3f65e96897ad99ccc1e95c7c0fcd} 
+\index{SmartPointerHelperBase$<$ First, ComClasses $>$@{SmartPointerHelperBase$<$ First, ComClasses $>$}!Release@{Release}}
+\index{Release@{Release}!SmartPointerHelperBase$<$ First, ComClasses $>$@{SmartPointerHelperBase$<$ First, ComClasses $>$}}
+\doxysubsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily template$<$class First , class... Com\+Classes$>$ \\
+ULONG \mbox{\hyperlink{class_smart_pointer_helper_base}{Smart\+Pointer\+Helper\+Base}}$<$ First, Com\+Classes $>$\+::\+Release}
+
+
+
+Release a reference to the pointer, decreasing the counter by one. 
+
+\begin{DoxyReturn}{Returns}
+ULONG 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_smart_pointer_helper_base_ad2bc91bd39ccd269a3eec9cdcce0f8cf}\label{class_smart_pointer_helper_base_ad2bc91bd39ccd269a3eec9cdcce0f8cf} 
+\index{SmartPointerHelperBase$<$ First, ComClasses $>$@{SmartPointerHelperBase$<$ First, ComClasses $>$}!refCount@{refCount}}
+\index{refCount@{refCount}!SmartPointerHelperBase$<$ First, ComClasses $>$@{SmartPointerHelperBase$<$ First, ComClasses $>$}}
+\doxysubsubsection{\texorpdfstring{refCount}{refCount}}
+{\footnotesize\ttfamily template$<$class First , class... Com\+Classes$>$ \\
+ULONG \mbox{\hyperlink{class_smart_pointer_helper_base}{Smart\+Pointer\+Helper\+Base}}$<$ First, Com\+Classes $>$\+::ref\+Count\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The underlying reference counter to the pointer. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Cxx\+Win/modules/\+Win32\+\_\+core/memory/\mbox{\hyperlink{win32___smart_pointer_8hpp}{win32\+\_\+\+Smart\+Pointer.\+hpp}}\item 
+include/\+Cxx\+Win/modules/\+Win32\+\_\+core/memory/\mbox{\hyperlink{win32___smart_pointer_8cpp}{win32\+\_\+\+Smart\+Pointer.\+cpp}}\end{DoxyCompactItemize}

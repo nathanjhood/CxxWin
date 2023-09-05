@@ -1,0 +1,130 @@
+\doxysection{include/\+Cxx\+Win/modules/\+Win32\+\_\+core/native/win32\+\_\+\+Unicode.hpp File Reference}
+\hypertarget{win32___unicode_8hpp}{}\label{win32___unicode_8hpp}\index{include/CxxWin/modules/Win32\_core/native/win32\_Unicode.hpp@{include/CxxWin/modules/Win32\_core/native/win32\_Unicode.hpp}}
+
+
+Provides preprocessor handling for switching the behaviour of some important functions such as \textquotesingle{}TEXT()\textquotesingle{}, between \textquotesingle{}ANSI\textquotesingle{} and \textquotesingle{}Unicode\textquotesingle{} styles.  
+
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_win32_1_1_core_1_1_native_1_1_unicode_handler}{Win32\+::\+Core\+::\+Native\+::\+Unicode\+Handler}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_win32}{Win32}}
+\item 
+namespace \mbox{\hyperlink{namespace_win32_1_1_core}{Win32\+::\+Core}}
+\item 
+namespace \mbox{\hyperlink{namespace_win32_1_1_core_1_1_native}{Win32\+::\+Core\+::\+Native}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{win32___unicode_8hpp_a8d3caeafbdeaac188f81d07656727fd6}{\+\_\+\+WIN32\+\_\+\+UNOCIDE\+\_\+\+HPP\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Provides preprocessor handling for switching the behaviour of some important functions such as \textquotesingle{}TEXT()\textquotesingle{}, between \textquotesingle{}ANSI\textquotesingle{} and \textquotesingle{}Unicode\textquotesingle{} styles. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{win32___unicode_8hpp_a273a349f02e26bdb5ba08461085bfe33}{\+\_\+\+NEED\+\_\+\+UNICODE}}~2
+\item 
+\#define \mbox{\hyperlink{win32___unicode_8hpp_abf9442f4ff47ef00d0eb7cb89c6dbe25}{\+\_\+\+\_\+\+NAME\+\_\+\+AW}}(func)~func\#\#A
+\item 
+\#define \mbox{\hyperlink{win32___unicode_8hpp_a070ad3774a36cbe5ba8a00456aa14145}{\+\_\+\+\_\+\+NAME\+\_\+\+AW\+\_\+\+EXT}}(func,  ext)~func\#\#A\#\#ext
+\item 
+\#define \mbox{\hyperlink{win32___unicode_8hpp_acae9c8c2fef8d3d772158a9f0d09785a}{\+\_\+\+\_\+\+NAME\+\_\+\+UAW}}(func)~func\#\#\+\_\+A
+\item 
+\#define \mbox{\hyperlink{win32___unicode_8hpp_a083ea8a4789494cf0fee2e814adccdd9}{\+\_\+\+\_\+\+NAME\+\_\+\+UAW\+\_\+\+EXT}}(func,  ext)~func\#\#\+\_\+\+A\+\_\+\#\#ext
+\item 
+\#define \mbox{\hyperlink{win32___unicode_8hpp_aa26766709d1a5678faa69f7d5a791556}{\+\_\+\+\_\+\+STRING\+\_\+\+AW}}(str)~str /\texorpdfstring{$\ast$}{*} same as TEXT() from winnt.\+h \texorpdfstring{$\ast$}{*}/
+\item 
+\#define \mbox{\hyperlink{win32___unicode_8hpp_acc6ec428c466f0fb74fb301db19b500e}{\+\_\+\+\_\+\+PROCNAMEEXT\+\_\+\+AW}}~\"{}A\"{}
+\item 
+\#define \mbox{\hyperlink{win32___unicode_8hpp_a2237d82d5ede1078d7fd34fc533efb4d}{\+\_\+\+\_\+\+TYPEDEF\+\_\+\+AW}}(type)~    typedef \mbox{\hyperlink{win32___unicode_8hpp_abf9442f4ff47ef00d0eb7cb89c6dbe25}{\+\_\+\+\_\+\+NAME\+\_\+\+AW}}(type) type;
+\item 
+\#define \mbox{\hyperlink{win32___unicode_8hpp_a2967e34e4ed1c51a9f53d4707fa8a0cd}{\+\_\+\+\_\+\+TYPEDEF\+\_\+\+UAW}}(type)~    typedef \mbox{\hyperlink{win32___unicode_8hpp_acae9c8c2fef8d3d772158a9f0d09785a}{\+\_\+\+\_\+\+NAME\+\_\+\+UAW}}(type) type;
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides preprocessor handling for switching the behaviour of some important functions such as \textquotesingle{}TEXT()\textquotesingle{}, between \textquotesingle{}ANSI\textquotesingle{} and \textquotesingle{}Unicode\textquotesingle{} styles. 
+
+\begin{DoxyAuthor}{Author}
+Stoney\+DSP (\href{mailto:nathanjhood@googlemail.com}{\texttt{ nathanjhood@googlemail.\+com}})
+\end{DoxyAuthor}
+
+
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/08-\/31
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{win32___unicode_8hpp_abf9442f4ff47ef00d0eb7cb89c6dbe25}\label{win32___unicode_8hpp_abf9442f4ff47ef00d0eb7cb89c6dbe25} 
+\index{win32\_Unicode.hpp@{win32\_Unicode.hpp}!\_\_NAME\_AW@{\_\_NAME\_AW}}
+\index{\_\_NAME\_AW@{\_\_NAME\_AW}!win32\_Unicode.hpp@{win32\_Unicode.hpp}}
+\doxysubsubsection{\texorpdfstring{\_\_NAME\_AW}{\_\_NAME\_AW}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+NAME\+\_\+\+AW(\begin{DoxyParamCaption}\item[{}]{func }\end{DoxyParamCaption})~func\#\#A}
+
+\Hypertarget{win32___unicode_8hpp_a070ad3774a36cbe5ba8a00456aa14145}\label{win32___unicode_8hpp_a070ad3774a36cbe5ba8a00456aa14145} 
+\index{win32\_Unicode.hpp@{win32\_Unicode.hpp}!\_\_NAME\_AW\_EXT@{\_\_NAME\_AW\_EXT}}
+\index{\_\_NAME\_AW\_EXT@{\_\_NAME\_AW\_EXT}!win32\_Unicode.hpp@{win32\_Unicode.hpp}}
+\doxysubsubsection{\texorpdfstring{\_\_NAME\_AW\_EXT}{\_\_NAME\_AW\_EXT}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+NAME\+\_\+\+AW\+\_\+\+EXT(\begin{DoxyParamCaption}\item[{}]{func,  }\item[{}]{ext }\end{DoxyParamCaption})~func\#\#A\#\#ext}
+
+\Hypertarget{win32___unicode_8hpp_acae9c8c2fef8d3d772158a9f0d09785a}\label{win32___unicode_8hpp_acae9c8c2fef8d3d772158a9f0d09785a} 
+\index{win32\_Unicode.hpp@{win32\_Unicode.hpp}!\_\_NAME\_UAW@{\_\_NAME\_UAW}}
+\index{\_\_NAME\_UAW@{\_\_NAME\_UAW}!win32\_Unicode.hpp@{win32\_Unicode.hpp}}
+\doxysubsubsection{\texorpdfstring{\_\_NAME\_UAW}{\_\_NAME\_UAW}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+NAME\+\_\+\+UAW(\begin{DoxyParamCaption}\item[{}]{func }\end{DoxyParamCaption})~func\#\#\+\_\+A}
+
+\Hypertarget{win32___unicode_8hpp_a083ea8a4789494cf0fee2e814adccdd9}\label{win32___unicode_8hpp_a083ea8a4789494cf0fee2e814adccdd9} 
+\index{win32\_Unicode.hpp@{win32\_Unicode.hpp}!\_\_NAME\_UAW\_EXT@{\_\_NAME\_UAW\_EXT}}
+\index{\_\_NAME\_UAW\_EXT@{\_\_NAME\_UAW\_EXT}!win32\_Unicode.hpp@{win32\_Unicode.hpp}}
+\doxysubsubsection{\texorpdfstring{\_\_NAME\_UAW\_EXT}{\_\_NAME\_UAW\_EXT}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+NAME\+\_\+\+UAW\+\_\+\+EXT(\begin{DoxyParamCaption}\item[{}]{func,  }\item[{}]{ext }\end{DoxyParamCaption})~func\#\#\+\_\+\+A\+\_\+\#\#ext}
+
+\Hypertarget{win32___unicode_8hpp_acc6ec428c466f0fb74fb301db19b500e}\label{win32___unicode_8hpp_acc6ec428c466f0fb74fb301db19b500e} 
+\index{win32\_Unicode.hpp@{win32\_Unicode.hpp}!\_\_PROCNAMEEXT\_AW@{\_\_PROCNAMEEXT\_AW}}
+\index{\_\_PROCNAMEEXT\_AW@{\_\_PROCNAMEEXT\_AW}!win32\_Unicode.hpp@{win32\_Unicode.hpp}}
+\doxysubsubsection{\texorpdfstring{\_\_PROCNAMEEXT\_AW}{\_\_PROCNAMEEXT\_AW}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+PROCNAMEEXT\+\_\+\+AW~\"{}A\"{}}
+
+\Hypertarget{win32___unicode_8hpp_aa26766709d1a5678faa69f7d5a791556}\label{win32___unicode_8hpp_aa26766709d1a5678faa69f7d5a791556} 
+\index{win32\_Unicode.hpp@{win32\_Unicode.hpp}!\_\_STRING\_AW@{\_\_STRING\_AW}}
+\index{\_\_STRING\_AW@{\_\_STRING\_AW}!win32\_Unicode.hpp@{win32\_Unicode.hpp}}
+\doxysubsubsection{\texorpdfstring{\_\_STRING\_AW}{\_\_STRING\_AW}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+STRING\+\_\+\+AW(\begin{DoxyParamCaption}\item[{}]{str }\end{DoxyParamCaption})~str /\texorpdfstring{$\ast$}{*} same as TEXT() from winnt.\+h \texorpdfstring{$\ast$}{*}/}
+
+\Hypertarget{win32___unicode_8hpp_a2237d82d5ede1078d7fd34fc533efb4d}\label{win32___unicode_8hpp_a2237d82d5ede1078d7fd34fc533efb4d} 
+\index{win32\_Unicode.hpp@{win32\_Unicode.hpp}!\_\_TYPEDEF\_AW@{\_\_TYPEDEF\_AW}}
+\index{\_\_TYPEDEF\_AW@{\_\_TYPEDEF\_AW}!win32\_Unicode.hpp@{win32\_Unicode.hpp}}
+\doxysubsubsection{\texorpdfstring{\_\_TYPEDEF\_AW}{\_\_TYPEDEF\_AW}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+TYPEDEF\+\_\+\+AW(\begin{DoxyParamCaption}\item[{}]{type }\end{DoxyParamCaption})~    typedef \mbox{\hyperlink{win32___unicode_8hpp_abf9442f4ff47ef00d0eb7cb89c6dbe25}{\+\_\+\+\_\+\+NAME\+\_\+\+AW}}(type) type;}
+
+\Hypertarget{win32___unicode_8hpp_a2967e34e4ed1c51a9f53d4707fa8a0cd}\label{win32___unicode_8hpp_a2967e34e4ed1c51a9f53d4707fa8a0cd} 
+\index{win32\_Unicode.hpp@{win32\_Unicode.hpp}!\_\_TYPEDEF\_UAW@{\_\_TYPEDEF\_UAW}}
+\index{\_\_TYPEDEF\_UAW@{\_\_TYPEDEF\_UAW}!win32\_Unicode.hpp@{win32\_Unicode.hpp}}
+\doxysubsubsection{\texorpdfstring{\_\_TYPEDEF\_UAW}{\_\_TYPEDEF\_UAW}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+TYPEDEF\+\_\+\+UAW(\begin{DoxyParamCaption}\item[{}]{type }\end{DoxyParamCaption})~    typedef \mbox{\hyperlink{win32___unicode_8hpp_acae9c8c2fef8d3d772158a9f0d09785a}{\+\_\+\+\_\+\+NAME\+\_\+\+UAW}}(type) type;}
+
+\Hypertarget{win32___unicode_8hpp_a273a349f02e26bdb5ba08461085bfe33}\label{win32___unicode_8hpp_a273a349f02e26bdb5ba08461085bfe33} 
+\index{win32\_Unicode.hpp@{win32\_Unicode.hpp}!\_NEED\_UNICODE@{\_NEED\_UNICODE}}
+\index{\_NEED\_UNICODE@{\_NEED\_UNICODE}!win32\_Unicode.hpp@{win32\_Unicode.hpp}}
+\doxysubsubsection{\texorpdfstring{\_NEED\_UNICODE}{\_NEED\_UNICODE}}
+{\footnotesize\ttfamily \#define \+\_\+\+NEED\+\_\+\+UNICODE~2}
+
+\Hypertarget{win32___unicode_8hpp_a8d3caeafbdeaac188f81d07656727fd6}\label{win32___unicode_8hpp_a8d3caeafbdeaac188f81d07656727fd6} 
+\index{win32\_Unicode.hpp@{win32\_Unicode.hpp}!\_WIN32\_UNOCIDE\_HPP\_@{\_WIN32\_UNOCIDE\_HPP\_}}
+\index{\_WIN32\_UNOCIDE\_HPP\_@{\_WIN32\_UNOCIDE\_HPP\_}!win32\_Unicode.hpp@{win32\_Unicode.hpp}}
+\doxysubsubsection{\texorpdfstring{\_WIN32\_UNOCIDE\_HPP\_}{\_WIN32\_UNOCIDE\_HPP\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+WIN32\+\_\+\+UNOCIDE\+\_\+\+HPP\+\_\+}
+
+
+
+Provides preprocessor handling for switching the behaviour of some important functions such as \textquotesingle{}TEXT()\textquotesingle{}, between \textquotesingle{}ANSI\textquotesingle{} and \textquotesingle{}Unicode\textquotesingle{} styles. 
+

@@ -1,0 +1,168 @@
+\doxysection{win32\+\_\+\+Standard\+Header.\+hpp}
+\hypertarget{win32___standard_header_8hpp_source}{}\label{win32___standard_header_8hpp_source}\index{include/CxxWin/modules/Win32\_core/system/win32\_StandardHeader.hpp@{include/CxxWin/modules/Win32\_core/system/win32\_StandardHeader.hpp}}
+\mbox{\hyperlink{win32___standard_header_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ \_WIN32\_STANDARDHEADER\_HPP\_}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#ifndef\ \_\_has\_attribute}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ \_\_has\_attribute(x)\ \ 0}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#ifndef\ \_\_has\_extension}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ \_\_has\_extension\ \ \ \ \ \_\_has\_feature}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#ifndef\ \_\_has\_feature}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#define\ \_\_has\_feature(x)\ \ \ \ 0}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#ifndef\ \_\_has\_include}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#define\ \_\_has\_include(x)\ \ \ \ 0}}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#ifndef\ \_\_has\_builtin}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#define\ \_\_has\_builtin(x)\ \ \ \ 0}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#ifndef\ STRINGIFY\_HELPER}}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#\ \ define\ STRINGIFY\_HELPER(X)\ \#X}}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#ifndef\ STRINGIFY}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#\ \ define\ STRINGIFY(X)\ STRINGIFY\_HELPER(X)}}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#ifndef\ CONCAT\_HELPER}}
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#\ \ define\ CONCAT\_HELPER(a,\ b)\ a\#\#b}}
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#ifndef\ CONCAT}}
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#\ \ define\ CONCAT(a,\ b)\ CONCAT\_HELPER(a,\ b)}}
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\#if\ !defined(DEC)}}
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#\ \ \ \ define\ \ DEC(n)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00067\ \textcolor{preprocessor}{\ \ \ \ \ \ \ ('0'\ +\ (((n)\ /\ 10000000)\%10)),\ \(\backslash\)}}
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\ \ \ \ \ \ \ ('0'\ +\ (((n)\ /\ 1000000)\%10)),\ \ \(\backslash\)}}
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\ \ \ \ \ \ \ ('0'\ +\ (((n)\ /\ 100000)\%10)),\ \ \ \(\backslash\)}}
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\ \ \ \ \ \ \ ('0'\ +\ (((n)\ /\ 10000)\%10)),\ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\ \ \ \ \ \ \ ('0'\ +\ (((n)\ /\ 1000)\%10)),\ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00072\ \textcolor{preprocessor}{\ \ \ \ \ \ \ ('0'\ +\ (((n)\ /\ 100)\%10)),\ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00073\ \textcolor{preprocessor}{\ \ \ \ \ \ \ ('0'\ +\ (((n)\ /\ 10)\%10)),\ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00074\ \textcolor{preprocessor}{\ \ \ \ \ \ \ ('0'\ +\ \ ((n)\ \%\ 10))}}
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\#if\ !defined(HEX)}}
+\DoxyCodeLine{00082\ \textcolor{preprocessor}{\#\ \ \ \ define\ \ HEX(n)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ ('0'\ +\ ((n)>>28\ \&\ 0xF)),\ \(\backslash\)}}
+\DoxyCodeLine{00084\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ ('0'\ +\ ((n)>>24\ \&\ 0xF)),\ \(\backslash\)}}
+\DoxyCodeLine{00085\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ ('0'\ +\ ((n)>>20\ \&\ 0xF)),\ \(\backslash\)}}
+\DoxyCodeLine{00086\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ ('0'\ +\ ((n)>>16\ \&\ 0xF)),\ \(\backslash\)}}
+\DoxyCodeLine{00087\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ ('0'\ +\ ((n)>>12\ \&\ 0xF)),\ \(\backslash\)}}
+\DoxyCodeLine{00088\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ ('0'\ +\ ((n)>>8\ \ \&\ 0xF)),\ \(\backslash\)}}
+\DoxyCodeLine{00089\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ ('0'\ +\ ((n)>>4\ \ \&\ 0xF)),\ \(\backslash\)}}
+\DoxyCodeLine{00090\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ ('0'\ +\ ((n)\ \ \ \ \ \&\ 0xF))}}
+\DoxyCodeLine{00091\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \textcolor{comment}{//==============================================================================}}
+\DoxyCodeLine{00095\ \textcolor{comment}{}\textcolor{preprocessor}{\#define\ CXXWIN\_VERSION\_MAJOR\ \ \ \ \ \ 1}}
+\DoxyCodeLine{00097\ \textcolor{preprocessor}{\#define\ CXXWIN\_VERSION\_MINOR\ \ \ \ \ \ 0}}
+\DoxyCodeLine{00099\ \textcolor{preprocessor}{\#define\ CXXWIN\_VERSION\_PATCH\ \ \ \ \ \ 1}}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00107\ \textcolor{preprocessor}{\#define\ CXXWIN\_VERSION\ \ \ ((CXXWIN\_VERSION\_MAJOR\ <<\ 16)\ +\ (CXXWIN\_VERSION\_MINOR\ <<\ 8)\ +\ CXXWIN\_VERSION\_PATCH)}}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \textcolor{preprocessor}{\#if\ !\ DOXYGEN}}
+\DoxyCodeLine{00110\ \textcolor{preprocessor}{\#define\ CXXWIN\_VERSION\_ID\ \(\backslash\)}}
+\DoxyCodeLine{00111\ \textcolor{preprocessor}{\ \ \ \ [[maybe\_unused]]\ volatile\ auto\ CxxWinVersionId\ =\ "{}cxxwin\_version\_"{}}\ STRINGIFY(CXXWIN\_VERSION\_MAJOR)\ "{}\_"{}\ STRINGIFY(CXXWIN\_VERSION\_MINOR)\ "{}\_"{}\ STRINGIFY(CXXWIN\_VERSION\_PATCH);}
+\DoxyCodeLine{00112\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00114\ \textcolor{preprocessor}{\#define\ CXXWIN\_LONG\_NAME\ TEXT("{}CxxWin"{}})\ STRINGIFY(.)\ STRINGIFY(CXXWIN\_VERSION\_MAJOR)\ STRINGIFY(.)\ STRINGIFY(CXXWIN\_VERSION\_MINOR)\ STRINGIFY(.)\ STRINGIFY(CXXWIN\_VERSION\_PATCH)}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00116\ \textcolor{comment}{//\ const\ wchar\_t*\ str\ =\ \{\ CXXWIN\_LONG\_NAME\ \};}}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ \textcolor{comment}{//==============================================================================}}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{00121\ \textcolor{preprocessor}{\#include\ <array>}}
+\DoxyCodeLine{00122\ \textcolor{preprocessor}{\#include\ <atomic>}}
+\DoxyCodeLine{00123\ \textcolor{preprocessor}{\#include\ <cmath>}}
+\DoxyCodeLine{00124\ \textcolor{preprocessor}{\#include\ <condition\_variable>}}
+\DoxyCodeLine{00125\ \textcolor{preprocessor}{\#include\ <cstddef>}}
+\DoxyCodeLine{00126\ \textcolor{preprocessor}{\#include\ <functional>}}
+\DoxyCodeLine{00127\ \textcolor{preprocessor}{\#include\ <future>}}
+\DoxyCodeLine{00128\ \textcolor{preprocessor}{\#include\ <iomanip>}}
+\DoxyCodeLine{00129\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00130\ \textcolor{preprocessor}{\#include\ <limits>}}
+\DoxyCodeLine{00131\ \textcolor{preprocessor}{\#include\ <list>}}
+\DoxyCodeLine{00132\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00133\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00134\ \textcolor{preprocessor}{\#include\ <mutex>}}
+\DoxyCodeLine{00135\ \textcolor{preprocessor}{\#include\ <numeric>}}
+\DoxyCodeLine{00136\ \textcolor{preprocessor}{\#include\ <optional>}}
+\DoxyCodeLine{00137\ \textcolor{preprocessor}{\#include\ <queue>}}
+\DoxyCodeLine{00138\ \textcolor{preprocessor}{\#include\ <set>}}
+\DoxyCodeLine{00139\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00140\ \textcolor{preprocessor}{\#include\ <thread>}}
+\DoxyCodeLine{00141\ \textcolor{preprocessor}{\#include\ <typeindex>}}
+\DoxyCodeLine{00142\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00143\ \textcolor{preprocessor}{\#include\ <unordered\_set>}}
+\DoxyCodeLine{00144\ \textcolor{preprocessor}{\#include\ <utility>}}
+\DoxyCodeLine{00145\ \textcolor{preprocessor}{\#include\ <variant>}}
+\DoxyCodeLine{00146\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ \textcolor{comment}{//==============================================================================}}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00150\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{win32___compiler_support_8hpp}{win32\_CompilerSupport.hpp}}"{}}}
+\DoxyCodeLine{00151\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{win32___platform_defs_8hpp}{win32\_PlatformDefs.hpp}}"{}}}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00153\ \textcolor{comment}{//==============================================================================}}
+\DoxyCodeLine{00154\ \textcolor{comment}{//\ Now\ we'll\ include\ some\ common\ OS\ headers..}}
+\DoxyCodeLine{00155\ \textcolor{comment}{//\ JUCE\_BEGIN\_IGNORE\_WARNINGS\_MSVC\ (4514\ 4245\ 4100)}}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00157\ \textcolor{preprocessor}{\#if\ MSVC}}
+\DoxyCodeLine{00158\ \textcolor{preprocessor}{\#\ \ include\ <intrin.h>}}
+\DoxyCodeLine{00159\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00162\ \textcolor{preprocessor}{\#if\ defined(\_\_PLATFORM\_IS\_MAC)\ ||\ defined(\_\_PLATFORM\_IS\_IOS)}}
+\DoxyCodeLine{00163\ \textcolor{preprocessor}{\#\ \ include\ <libkern/OSAtomic.h>}}
+\DoxyCodeLine{00164\ \textcolor{preprocessor}{\#\ \ include\ <xlocale.h>}}
+\DoxyCodeLine{00165\ \textcolor{preprocessor}{\#\ \ include\ <signal.h>}}
+\DoxyCodeLine{00166\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00168\ \textcolor{preprocessor}{\#if\ defined(\_\_PLATFORM\_IS\_LINUX)\ ||\ defined(\_\_PLATFORM\_IS\_BSD)}}
+\DoxyCodeLine{00169\ \textcolor{preprocessor}{\#\ \ include\ <cstring>}}
+\DoxyCodeLine{00170\ \textcolor{preprocessor}{\#\ \ include\ <signal.h>}}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00172\ \textcolor{preprocessor}{\#\ \ if\ \_\_INTEL\_COMPILER}}
+\DoxyCodeLine{00173\ \textcolor{preprocessor}{\#\ \ \ \ if\ \_\_ia64\_\_}}
+\DoxyCodeLine{00174\ \textcolor{preprocessor}{\#\ \ \ \ \ \ include\ <ia64intrin.h>}}
+\DoxyCodeLine{00175\ \textcolor{preprocessor}{\#\ \ \ \ else}}
+\DoxyCodeLine{00176\ \textcolor{preprocessor}{\#\ \ \ \ \ \ include\ <ia32intrin.h>}}
+\DoxyCodeLine{00177\ \textcolor{preprocessor}{\#\ \ \ \ endif}}
+\DoxyCodeLine{00178\ \textcolor{preprocessor}{\#\ \ endif}}
+\DoxyCodeLine{00179\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00181\ \textcolor{preprocessor}{\#if\ MSVC\ \&\&\ \_DEBUG}}
+\DoxyCodeLine{00182\ \textcolor{preprocessor}{\#\ \ include\ <crtdbg.h>}}
+\DoxyCodeLine{00183\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00185\ \textcolor{comment}{//\ JUCE\_END\_IGNORE\_WARNINGS\_MSVC}}
+\DoxyCodeLine{00186\ }
+\DoxyCodeLine{00187\ \textcolor{preprocessor}{\#ifdef\ \_\_PLATFORM\_IS\_MINGW}}
+\DoxyCodeLine{00188\ \textcolor{preprocessor}{\#\ \ include\ <cstring>}}
+\DoxyCodeLine{00189\ \textcolor{preprocessor}{\#\ \ include\ <sys/types.h>}}
+\DoxyCodeLine{00190\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00191\ }
+\DoxyCodeLine{00192\ \textcolor{preprocessor}{\#ifdef\ \_\_PLATFORM\_IS\_ANDROID}}
+\DoxyCodeLine{00193\ \textcolor{preprocessor}{\#\ \ include\ <cstring>}}
+\DoxyCodeLine{00194\ \textcolor{preprocessor}{\#\ \ include\ <byteswap.h>}}
+\DoxyCodeLine{00195\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00197\ \textcolor{comment}{//\ undef\ symbols\ that\ are\ sometimes\ set\ by\ 3rd-\/party\ headers..}}
+\DoxyCodeLine{00198\ \textcolor{comment}{//\ \#undef\ TYPE\_BOOL}}
+\DoxyCodeLine{00199\ \textcolor{preprocessor}{\#undef\ max}}
+\DoxyCodeLine{00200\ \textcolor{preprocessor}{\#undef\ min}}
+\DoxyCodeLine{00201\ \textcolor{preprocessor}{\#undef\ major}}
+\DoxyCodeLine{00202\ \textcolor{preprocessor}{\#undef\ minor}}
+\DoxyCodeLine{00203\ \textcolor{preprocessor}{\#undef\ KeyPress}}
+
+\end{DoxyCode}

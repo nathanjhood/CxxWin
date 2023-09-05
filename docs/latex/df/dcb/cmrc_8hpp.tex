@@ -1,0 +1,119 @@
+\doxysection{include/\+Cxx\+Win/modules/\+Win32\+\_\+resource/cmrc.hpp File Reference}
+\hypertarget{cmrc_8hpp}{}\label{cmrc_8hpp}\index{include/CxxWin/modules/Win32\_resource/cmrc.hpp@{include/CxxWin/modules/Win32\_resource/cmrc.hpp}}
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$iterator$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$system\+\_\+error$>$}\newline
+{\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_c_make_r_c_1_1_file}{CMake\+RC\+::\+File}}
+\item 
+class \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory}{CMake\+RC\+::\+Detail\+::\+File\+Or\+Directory}}
+\item 
+union \mbox{\hyperlink{union_c_make_r_c_1_1_detail_1_1_file_or_directory_1_1__data__t}{CMake\+RC\+::\+Detail\+::\+File\+Or\+Directory\+::\+\_\+data\+\_\+t}}
+\item 
+class \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_data}{CMake\+RC\+::\+Detail\+::\+File\+Data}}
+\item 
+struct \mbox{\hyperlink{struct_c_make_r_c_1_1_detail_1_1_created_sub_directory}{CMake\+RC\+::\+Detail\+::\+Created\+Sub\+Directory}}
+\item 
+class \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory}{CMake\+RC\+::\+Detail\+::\+Directory}}
+\item 
+class \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator}{CMake\+RC\+::\+Detail\+::\+Directory\+::\+Iterator}}
+\begin{DoxyCompactList}\small\item\em The \textquotesingle{}\doxylink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator}{Iterator}\textquotesingle{} class. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_c_make_r_c_1_1_directory_entry}{CMake\+RC\+::\+Directory\+Entry}}
+\item 
+class \mbox{\hyperlink{class_c_make_r_c_1_1_embedded_file_system}{CMake\+RC\+::\+Embedded\+File\+System}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_c_make_r_c}{CMake\+RC}}
+\begin{DoxyCompactList}\small\item\em \textquotesingle{} \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_c_make_r_c_1_1_detail}{CMake\+RC\+::\+Detail}}
+\begin{DoxyCompactList}\small\item\em \textquotesingle{} \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_detail}{Detail}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{cmrc_8hpp_a90b3371ddedc25c22f630ca47cc4edce}{CMRC\+\_\+\+NO\+\_\+\+EXCEPTIONS}}~1
+\begin{DoxyCompactList}\small\item\em If defined\+: Disable C++ exceptions in \doxylink{namespace_c_make_r_c}{CMake\+RC} structures. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{cmrc_8hpp_a9917f998182dbff85ff5698bb6582f0b}{CMRC\+\_\+\+DECLARE}}(Lib\+Id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{namespace_c_make_r_c_1_1_detail_af8b7b0ba529bcc74373e4ee395b54529}{CMake\+RC\+::\+Detail\+::\+Index\+Type}} = std\+::map$<$ std\+::string, const \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory}{CMake\+RC\+::\+Detail\+::\+File\+Or\+Directory}} \texorpdfstring{$\ast$}{*} $>$
+\item 
+using \mbox{\hyperlink{namespace_c_make_r_c_a5b0306b0207652d136c3ae6b498102cd}{CMake\+RC\+::\+Directory\+Iterator}} = \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator}{Detail\+::\+Directory\+::\+Iterator}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::pair$<$ std\+::string, std\+::string $>$ \mbox{\hyperlink{namespace_c_make_r_c_1_1_detail_a66d1ba033d0fd3128f0c20fc3652070a}{CMake\+RC\+::\+Detail\+::\+Split\+Path}} (const std\+::string \&path)
+\item 
+std\+::string \mbox{\hyperlink{namespace_c_make_r_c_1_1_detail_a6553506577f146fdcb7e1588a74dd102}{CMake\+RC\+::\+Detail\+::\+Normalize\+Path}} (std\+::string path)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+vector-\/of-\/bool \href{mailto:vectorofbool@gmail.com}{\texttt{ vectorofbool@gmail.\+com}} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.\+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2018-\/09-\/08
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2017
+\end{DoxyCopyright}
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"{}\+Software\"{}), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions\+:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \"{}\+AS IS\"{}, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{cmrc_8hpp_a9917f998182dbff85ff5698bb6582f0b}\label{cmrc_8hpp_a9917f998182dbff85ff5698bb6582f0b} 
+\index{cmrc.hpp@{cmrc.hpp}!CMRC\_DECLARE@{CMRC\_DECLARE}}
+\index{CMRC\_DECLARE@{CMRC\_DECLARE}!cmrc.hpp@{cmrc.hpp}}
+\doxysubsubsection{\texorpdfstring{CMRC\_DECLARE}{CMRC\_DECLARE}}
+{\footnotesize\ttfamily \#define CMRC\+\_\+\+DECLARE(\begin{DoxyParamCaption}\item[{}]{Lib\+Id }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_c_make_r_c}{CMakeRC}}\ \(\backslash\)}
+\DoxyCodeLine{\{\ \(\backslash\)}
+\DoxyCodeLine{\textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_detail}{Detail}}\ \(\backslash\)}
+\DoxyCodeLine{\{\ \(\backslash\)}
+\DoxyCodeLine{\textcolor{keyword}{struct\ }Dummy;\ \(\backslash\)}
+\DoxyCodeLine{static\_assert(std::is\_same<Dummy,\ ::CMakeRC::Detail::Dummy>::value,\ \textcolor{stringliteral}{"{}CMRC\_DECLARE()\ must\ only\ appear\ at\ the\ global\ namespace"{}});\ \(\backslash\)}
+\DoxyCodeLine{\}\ \(\backslash\)}
+\DoxyCodeLine{\}\ \(\backslash\)}
+\DoxyCodeLine{\textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_c_make_r_c}{CMakeRC}}\ \(\backslash\)}
+\DoxyCodeLine{\{\ \(\backslash\)}
+\DoxyCodeLine{\textcolor{keyword}{namespace\ }LibId\ \(\backslash\)}
+\DoxyCodeLine{\{\ \(\backslash\)}
+\DoxyCodeLine{\mbox{\hyperlink{class_c_make_r_c_1_1_embedded_file_system}{CMakeRC::EmbeddedFileSystem}}\ \mbox{\hyperlink{namespace_c_make_r_c_1_1_img_a0d7bf8b21dd960329ae3658a8510c405}{GetFileSystem}}();\ \(\backslash\)}
+\DoxyCodeLine{\}\ \(\backslash\)}
+\DoxyCodeLine{\}\ \textcolor{keyword}{static\_assert}(\textcolor{keyword}{true},\ \textcolor{stringliteral}{"{}"{}})}
+
+\end{DoxyCode}
+\Hypertarget{cmrc_8hpp_a90b3371ddedc25c22f630ca47cc4edce}\label{cmrc_8hpp_a90b3371ddedc25c22f630ca47cc4edce} 
+\index{cmrc.hpp@{cmrc.hpp}!CMRC\_NO\_EXCEPTIONS@{CMRC\_NO\_EXCEPTIONS}}
+\index{CMRC\_NO\_EXCEPTIONS@{CMRC\_NO\_EXCEPTIONS}!cmrc.hpp@{cmrc.hpp}}
+\doxysubsubsection{\texorpdfstring{CMRC\_NO\_EXCEPTIONS}{CMRC\_NO\_EXCEPTIONS}}
+{\footnotesize\ttfamily \#define CMRC\+\_\+\+NO\+\_\+\+EXCEPTIONS~1}
+
+
+
+If defined\+: Disable C++ exceptions in \doxylink{namespace_c_make_r_c}{CMake\+RC} structures. 
+

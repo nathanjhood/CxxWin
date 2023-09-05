@@ -1,0 +1,75 @@
+\doxysection{win32\+\_\+\+Smart\+Pointer.\+hpp}
+\hypertarget{win32___smart_pointer_8hpp_source}{}\label{win32___smart_pointer_8hpp_source}\index{include/CxxWin/modules/Win32\_core/memory/win32\_SmartPointer.hpp@{include/CxxWin/modules/Win32\_core/memory/win32\_SmartPointer.hpp}}
+\mbox{\hyperlink{win32___smart_pointer_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ \_WIN32\_SMARTPOINTER\_HPP\_}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ ComClass>}
+\DoxyCodeLine{00037\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_smart_pointer}{SmartPointer}}}
+\DoxyCodeLine{00038\ \{}
+\DoxyCodeLine{00039\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{class_smart_pointer_af23b718566d4beddf609e63d1f278459}{SmartPointer}}()\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{class_smart_pointer_af23b718566d4beddf609e63d1f278459}{SmartPointer}}(ComClass*\ obj);}
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{class_smart_pointer_af23b718566d4beddf609e63d1f278459}{SmartPointer}}(\mbox{\hyperlink{class_smart_pointer}{SmartPointer}}\&\ other);}
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{class_smart_pointer_a85bb3a40507619ca59672273ba90271d}{\string~SmartPointer}}();}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{operator}\ ComClass*()\ CONST\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00047\ \ \ \ \ ComClass\&\ \mbox{\hyperlink{class_smart_pointer_a684cf8a7fadb2431ef8486fe166537d9}{operator*}}()\ CONST\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00048\ \ \ \ \ ComClass*\ \mbox{\hyperlink{class_smart_pointer_a01c7fb69b9c39d04e85e6990dd24c5e9}{operator-\/>}}()\ CONST\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{class_smart_pointer}{SmartPointer}}\&\ \mbox{\hyperlink{class_smart_pointer_a888097211726dc2ed5ee0e948ff49bf7}{operator=\ }}(ComClass*\ CONST\ newPtr);}
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{class_smart_pointer}{SmartPointer}}\&\ \mbox{\hyperlink{class_smart_pointer_a888097211726dc2ed5ee0e948ff49bf7}{operator=\ }}(CONST\ ComClass\&\ newPtr);}
+\DoxyCodeLine{00051\ \ \ \ \ ComClass**\ \mbox{\hyperlink{class_smart_pointer_a388d5622da034786e168895b1b936100}{resetAndGetAddress}}();}
+\DoxyCodeLine{00052\ \ \ \ \ HRESULT\ \mbox{\hyperlink{class_smart_pointer_af569386f98a741151e4a6c9148fc415c}{CoCreateInstance}}(REFCLSID\ rclsid,\ DWORD\ dwClsContext\ =\ CLSCTX\_INPROC\_SERVER);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ otherComClass>}
+\DoxyCodeLine{00055\ \ \ \ \ HRESULT\ \mbox{\hyperlink{class_smart_pointer_a0fc132c1d919b1c6523789ed8687d44c}{QueryInterface}}(REFCLSID\ \ rclsid,\ \mbox{\hyperlink{class_smart_pointer}{SmartPointer<otherComClass>}}\&\ destObj)\ CONST;}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ otherComClass>}
+\DoxyCodeLine{00058\ \ \ \ \ HRESULT\ \mbox{\hyperlink{class_smart_pointer_a0fc132c1d919b1c6523789ed8687d44c}{QueryInterface}}\ (\mbox{\hyperlink{class_smart_pointer}{SmartPointer<otherComClass>}}\&\ destObj)\ CONST;}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ otherComClass>}
+\DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{class_smart_pointer}{SmartPointer<otherComClass>}}\ \mbox{\hyperlink{class_smart_pointer_a698ca40a80fd57a62e769371505f2c78}{getInterface}}()\ CONST;}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_smart_pointer_a2bfb0ebe9f8d89c4c3158e752e66737f}{release}}();}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00072\ \ \ \ \ ComClass**\ \mbox{\hyperlink{class_smart_pointer_a166c58abb98f9ad23318ca64baf65dfa}{operator\&}}()\ noexcept\ =\ delete;\ \textcolor{comment}{//\ innaccessible}}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00075\ \ \ \ \ ComClass*\ \mbox{\hyperlink{class_smart_pointer_aac6766043d71d6919260b32e3025f5ad}{ptr}}\ =\ \textcolor{keywordtype}{nullptr};}
+\DoxyCodeLine{00076\ \};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00084\ template\ <class\ First,\ class...\ ComClasses>}
+\DoxyCodeLine{00085\ class\ \mbox{\hyperlink{class_smart_pointer_helper_base}{SmartPointerHelperBase}}\ :\ public\ First,\ public\ ComClasses...}
+\DoxyCodeLine{00086\ \{}
+\DoxyCodeLine{00087\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00088\ \ \ \ \ \mbox{\hyperlink{class_smart_pointer_helper_base}{SmartPointerHelperBase}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ initRef);}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_smart_pointer_helper_base_aef037e04d1a2ee08824b405b077d4b09}{\string~SmartPointerHelperBase}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \ \ \ \ ULONG\ STDMETHODCALLTYPE\ AddRef();}
+\DoxyCodeLine{00093\ \ \ \ \ ULONG\ STDMETHODCALLTYPE\ Release();}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00101\ \ \ \ \ ULONG\ \mbox{\hyperlink{class_smart_pointer_helper_base_ad2bc91bd39ccd269a3eec9cdcce0f8cf}{refCount}};}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ Type>}
+\DoxyCodeLine{00104\ \ \ \ \ HRESULT\ STDMETHODCALLTYPE\ castToType(\textcolor{keywordtype}{void}**\ result);}
+\DoxyCodeLine{00105\ \ \ \ \ HRESULT\ STDMETHODCALLTYPE\ \mbox{\hyperlink{class_smart_pointer_a0fc132c1d919b1c6523789ed8687d44c}{QueryInterface}}(REFIID\ riid,\ \textcolor{keywordtype}{void}**\ ppvObject);}
+\DoxyCodeLine{00106\ \};}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00113\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}...\ ComClasses>}
+\DoxyCodeLine{00114\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_smart_pointer_helper}{SmartPointerHelper}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_smart_pointer_helper_base}{SmartPointerHelperBase}}<ComClasses...>}
+\DoxyCodeLine{00115\ \{}
+\DoxyCodeLine{00116\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_smart_pointer_helper}{SmartPointerHelper}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ initRef);}
+\DoxyCodeLine{00118\ \ \ \ \ HRESULT\ STDMETHODCALLTYPE\ QueryInterface(REFIID\ refId,\ \textcolor{keywordtype}{void}**\ result);}
+\DoxyCodeLine{00119\ \};}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00121\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ ComClass>}
+\DoxyCodeLine{00122\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{win32___smart_pointer_8hpp_a53522409e1312cfaf53cebc29bff8008}{SafeRelease}}(ComClass**\ \mbox{\hyperlink{class_smart_pointer_aac6766043d71d6919260b32e3025f5ad}{ptr}});}
+
+\end{DoxyCode}

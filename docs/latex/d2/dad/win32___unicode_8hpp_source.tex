@@ -1,0 +1,57 @@
+\doxysection{win32\+\_\+\+Unicode.\+hpp}
+\hypertarget{win32___unicode_8hpp_source}{}\label{win32___unicode_8hpp_source}\index{include/CxxWin/modules/Win32\_core/native/win32\_Unicode.hpp@{include/CxxWin/modules/Win32\_core/native/win32\_Unicode.hpp}}
+\mbox{\hyperlink{win32___unicode_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ \_WIN32\_UNOCIDE\_HPP\_}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#if\ !defined(\_NEED\_UNICODE)}}
+\DoxyCodeLine{00022\ \textcolor{comment}{/*\ \_NEED\_UNICODE\ defined\ based\ on\ UNICODE\ flag\ */}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#if\ defined(UNICODE)}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#\ define\ \_NEED\_UNICODE\ 1}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#\ define\ \_\_NAME\_AW(func)\ func\#\#W}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#\ define\ \_\_NAME\_AW\_EXT(func,ext)\ func\#\#W\#\#ext}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#\ define\ \_\_NAME\_UAW(func)\ func\#\#\_W}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#\ define\ \_\_NAME\_UAW\_EXT(func,ext)\ func\#\#\_W\_\#\#ext}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#\ define\ \_\_STRING\_AW(str)\ L\#\#str\ \ \ \ }\textcolor{comment}{/*\ same\ as\ TEXT()\ from\ winnt.h\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#\ define\ \_\_PROCNAMEEXT\_AW\ "{}W"{}}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#\ define\ \_NEED\_UNICODE\ 2}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#\ define\ \_\_NAME\_AW(func)\ func\#\#A}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#\ define\ \_\_NAME\_AW\_EXT(func,ext)\ func\#\#A\#\#ext}}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#\ define\ \_\_NAME\_UAW(func)\ func\#\#\_A}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#\ define\ \_\_NAME\_UAW\_EXT(func,ext)\ func\#\#\_A\_\#\#ext}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#\ define\ \_\_STRING\_AW(str)\ str\ \ \ }\textcolor{comment}{/*\ same\ as\ TEXT()\ from\ winnt.h\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#\ define\ \_\_PROCNAMEEXT\_AW\ "{}A"{}}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#define\ \_\_TYPEDEF\_AW(type)\ \ \(\backslash\)}}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\ \ \ \ typedef\ \_\_NAME\_AW(type)\ type;}}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#define\ \_\_TYPEDEF\_UAW(type)\ \(\backslash\)}}
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\ \ \ \ typedef\ \_\_NAME\_UAW(type)\ type;}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !defined(\_NEED\_UNICODE)\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_win32}{Win32}}}
+\DoxyCodeLine{00050\ \{}
+\DoxyCodeLine{00051\ \textcolor{keyword}{namespace\ }Core}
+\DoxyCodeLine{00052\ \{}
+\DoxyCodeLine{00053\ \textcolor{keyword}{namespace\ }Native}
+\DoxyCodeLine{00054\ \{}
+\DoxyCodeLine{00055\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_win32_1_1_core_1_1_native_1_1_unicode_handler}{UnicodeHandler}}}
+\DoxyCodeLine{00056\ \{}
+\DoxyCodeLine{00057\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00058\ \ \ \ \ BOOL\ \mbox{\hyperlink{class_win32_1_1_core_1_1_native_1_1_unicode_handler_aba75ad233dfb800918a8da0928696bbc}{SetVar}}(HWND\ hwnd,\ LPCTSTR\ lpText);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ BOOL\ \mbox{\hyperlink{class_win32_1_1_core_1_1_native_1_1_unicode_handler_a16caa495c648eb7fb185d8b67d2793ae}{SetVarA}}(HWND\ hwnd,\ LPCSTR\ lpText);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ BOOL\ \mbox{\hyperlink{class_win32_1_1_core_1_1_native_1_1_unicode_handler_a1bf1d390b3b0b5f820af5aed44392da6}{SetVarW}}(HWND\ hwnd,\ LPCWSTR\ lpText);}
+\DoxyCodeLine{00063\ \};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \}}
+\DoxyCodeLine{00066\ \}}
+\DoxyCodeLine{00067\ \}}
+
+\end{DoxyCode}
