@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_c_make_r_c_1_1_img_1_1anonymous__namespace_02win32__png_8cpp_03" xml:lang="en-US">
+<title>CMakeRC::Img::anonymous_namespace{win32_png.cpp} Namespace Reference</title>
+<indexterm><primary>CMakeRC::Img::anonymous_namespace{win32_png.cpp}</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>const <link linkend="_win32__resource_8hpp_1aa6bfcc93f2ea5b758d45be8c4bc500b0">IDXRES</link> &amp; <link linkend="_namespace_c_make_r_c_1_1_img_1_1anonymous__namespace_02win32__png_8cpp_03_1a8ae26bf1025e45df8c4ff32fcecce88d">GetRootIndex</link> ()</para>
+
+<para>Get the &apos;<link linkend="_namespace_c_make_r_c_1_1_detail_1af8b7b0ba529bcc74373e4ee395b54529">CMakeRC::Detail::IndexType</link>&apos; object. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespace_c_make_r_c_1_1_img_1_1anonymous__namespace_02win32__png_8cpp_03_1a8ae26bf1025e45df8c4ff32fcecce88d"/><section>
+    <title>GetRootIndex()</title>
+<indexterm><primary>GetRootIndex</primary><secondary>CMakeRC::Img::anonymous_namespace{win32_png.cpp}</secondary></indexterm>
+<indexterm><primary>CMakeRC::Img::anonymous_namespace{win32_png.cpp}</primary><secondary>GetRootIndex</secondary></indexterm>
+<para><computeroutput>const <link linkend="_win32__resource_8hpp_1aa6bfcc93f2ea5b758d45be8c4bc500b0">IDXRES</link> &amp; CMakeRC::Img::anonymous_namespace{win32_png.cpp}::GetRootIndex ( )</computeroutput></para><para>
+
+<para>Get the &apos;<link linkend="_namespace_c_make_r_c_1_1_detail_1af8b7b0ba529bcc74373e4ee395b54529">CMakeRC::Detail::IndexType</link>&apos; object. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>const &apos;<link linkend="_namespace_c_make_r_c_1_1_detail_1af8b7b0ba529bcc74373e4ee395b54529">CMakeRC::Detail::IndexType</link>&apos; &amp; </para>
+</formalpara>
+</para>
+</section>
+</section>
+</section>

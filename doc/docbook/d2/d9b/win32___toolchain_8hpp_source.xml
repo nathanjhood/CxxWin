@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_win32___toolchain_8hpp_source" xml:lang="en-US">
+<title>win32_Toolchain.hpp</title>
+<indexterm><primary>include/CxxWin/modules/Win32_core/system/win32_Toolchain.hpp</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 
+12 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+13 
+14 <emphasis role="preprocessor">#define&#32;_WIN32_CORE_SYSTEM_TOOLCHAIN_HPP_</emphasis>
+15 
+16 <emphasis role="comment">//&#32;Platforms&#32;with&#32;libdl</emphasis>
+17 <emphasis role="preprocessor">#if&#32;defined(__PLATFORM_IS_LINUX)&#32;||&#32;defined(__PLATFORM_IS_ANDROID)&#32;||&#32;defined(__PLATFORM_IS_OSX)</emphasis>
+18 <emphasis role="preprocessor">&#32;#pragma&#32;comment&#32;(lib,&#32;&quot;dl.lib&quot;</emphasis>)
+19 <emphasis role="preprocessor">#endif</emphasis>
+20 
+21 <emphasis role="comment">//&#32;Platforms&#32;with&#32;libm</emphasis>
+22 <emphasis role="preprocessor">#if&#32;defined(__PLATFORM_IS_LINUX)&#32;||&#32;defined(__PLATFORM_IS_ANDROID)&#32;||&#32;defined(__PLATFORM_IS_FREEBSD)&#32;||&#32;defined(__PLATFORM_IS_OPENBSD)&#32;||&#32;defined(__PLATFORM_IS_OSX)&#32;||&#32;defined(__PLATFORM_IS_MINGW)</emphasis>
+23 <emphasis role="preprocessor">&#32;#pragma&#32;comment&#32;(lib,&#32;&quot;m.lib&quot;</emphasis>)
+24 <emphasis role="preprocessor">#endif</emphasis>
+25 
+26 <emphasis role="comment">//&#32;Platforms&#32;with&#32;pthread</emphasis>
+27 <emphasis role="preprocessor">#if&#32;defined(__PLATFORM_IS_LINUX)&#32;||&#32;defined(__PLATFORM_IS_ANDROID)&#32;||&#32;defined(__PLATFORM_IS_FREEBSD)&#32;||&#32;defined(__PLATFORM_IS_OPENBSD)&#32;||&#32;defined(__PLATFORM_IS_OSX)&#32;||&#32;defined(__PLATFORM_IS_MINGW)</emphasis>
+28 <emphasis role="preprocessor">&#32;#pragma&#32;comment&#32;(lib,&#32;&quot;pthread.lib&quot;</emphasis>)
+29 <emphasis role="preprocessor">#endif</emphasis>
+30 
+31 <emphasis role="comment">//&#32;Platforms&#32;with&#32;libstdc++</emphasis>
+32 <emphasis role="preprocessor">#if&#32;defined(__PLATFORM_IS_LINUX)&#32;||&#32;defined(__PLATFORM_IS_ANDROID)&#32;||&#32;defined(__PLATFORM_IS_FREEBSD)&#32;||&#32;defined(__PLATFORM_IS_OPENBSD)||&#32;defined(__PLATFORM_IS_MINGW)</emphasis>
+33 <emphasis role="preprocessor">&#32;#pragma&#32;comment&#32;(lib,&#32;&quot;stdc++.lib&quot;</emphasis>)
+34 <emphasis role="preprocessor">#endif</emphasis>
+35 
+36 <emphasis role="comment">//&#32;Platforms&#32;with&#32;libc++</emphasis>
+37 <emphasis role="preprocessor">#if&#32;defined(__PLATFORM_IS_OSX)</emphasis>
+38 <emphasis role="preprocessor">&#32;#pragma&#32;comment&#32;(lib,&#32;&quot;c++.lib&quot;</emphasis>)
+39 <emphasis role="preprocessor">#endif</emphasis>
+40 
+41 <emphasis role="comment">//&#32;Platforms&#32;with&#32;librt</emphasis>
+42 <emphasis role="preprocessor">#if&#32;defined(__PLATFORM_IS_LINUX)&#32;||&#32;defined(__PLATFORM_IS_ANDROID)&#32;||&#32;defined(__PLATFORM_IS_FREEBSD)&#32;||&#32;defined(__PLATFORM_IS_OSX)&#32;||&#32;defined(__PLATFORM_IS_MINGW)</emphasis>
+43 <emphasis role="preprocessor">&#32;#pragma&#32;comment&#32;(lib,&#32;&quot;rt.lib&quot;</emphasis>)
+44 <emphasis role="preprocessor">#endif</emphasis>
+45 
+46 <emphasis role="comment">//&#32;#&#32;Platforms&#32;with&#32;GCC&#32;libs</emphasis>
+47 <emphasis role="preprocessor">#if&#32;defined(__PLATFORM_IS_LINUX)&#32;||&#32;defined(__PLATFORM_IS_ANDROID)&#32;||&#32;defined(__PLATFORM_IS_FREEBSD)&#32;||&#32;defined(__PLATFORM_IS_OPENBSD)&#32;||&#32;defined(__PLATFORM_IS_OSX)&#32;||&#32;defined(__PLATFORM_IS_MINGW)</emphasis>
+48 <emphasis role="preprocessor">&#32;#pragma&#32;comment&#32;(lib,&#32;&quot;gcc.lib&quot;</emphasis>)
+49 <emphasis role="preprocessor">&#32;#pragma&#32;comment&#32;(lib,&#32;&quot;gcc_s.lib&quot;</emphasis>)
+50 <emphasis role="preprocessor">#endif</emphasis>
+51 
+52 <emphasis role="comment">//&#32;Platforms&#32;with&#32;system&#32;iconv</emphasis>
+53 <emphasis role="preprocessor">#if&#32;defined(__PLATFORM_IS_OSX)</emphasis>
+54 <emphasis role="preprocessor">&#32;#pragma&#32;comment&#32;(lib,&#32;&quot;iconv.lib&quot;</emphasis>)
+55 <emphasis role="preprocessor">#endif</emphasis>
+56 
+57 <emphasis role="comment">//&#32;#&#32;Windows&#32;system&#32;libs</emphasis>
+58 <emphasis role="preprocessor">#if&#32;defined(__PLATFORM_IS_WINDOWS)</emphasis>
+59 <emphasis role="preprocessor">&#32;#pragma&#32;comment&#32;(lib,&#32;&quot;advapi32.lib&quot;</emphasis>)
+60 <emphasis role="preprocessor">&#32;#pragma&#32;comment&#32;(lib,&#32;&quot;bcrypt.lib&quot;</emphasis>)
+61 <emphasis role="preprocessor">&#32;#pragma&#32;comment&#32;(lib,&#32;&quot;dinput8.lib&quot;</emphasis>)
+62 <emphasis role="preprocessor">&#32;#pragma&#32;comment&#32;(lib,&#32;&quot;gdi32.lib&quot;</emphasis>)
+63 <emphasis role="preprocessor">&#32;#pragma&#32;comment&#32;(lib,&#32;&quot;imm32.lib&quot;</emphasis>)
+64 <emphasis role="preprocessor">&#32;#pragma&#32;comment&#32;(lib,&#32;&quot;oleaut32.lib&quot;</emphasis>)
+65 <emphasis role="preprocessor">&#32;#pragma&#32;comment&#32;(lib,&#32;&quot;ole32.lib&quot;</emphasis>)
+66 <emphasis role="preprocessor">&#32;#pragma&#32;comment&#32;(lib,&#32;&quot;psapi.lib&quot;</emphasis>)
+67 <emphasis role="preprocessor">&#32;#pragma&#32;comment&#32;(lib,&#32;&quot;secur32.lib&quot;</emphasis>)
+68 <emphasis role="preprocessor">&#32;#pragma&#32;comment&#32;(lib,&#32;&quot;setupapi.lib&quot;</emphasis>)
+69 <emphasis role="preprocessor">&#32;#pragma&#32;comment&#32;(lib,&#32;&quot;shell32.lib&quot;</emphasis>)
+70 <emphasis role="preprocessor">&#32;#pragma&#32;comment&#32;(lib,&#32;&quot;shlwapi.lib&quot;</emphasis>)
+71 <emphasis role="preprocessor">&#32;#pragma&#32;comment&#32;(lib,&#32;&quot;strmiids.lib&quot;</emphasis>)
+72 <emphasis role="preprocessor">&#32;#pragma&#32;comment&#32;(lib,&#32;&quot;user32.lib&quot;</emphasis>)
+73 <emphasis role="preprocessor">&#32;#pragma&#32;comment&#32;(lib,&#32;&quot;uuid.lib&quot;</emphasis>)
+74 <emphasis role="preprocessor">&#32;#pragma&#32;comment&#32;(lib,&#32;&quot;version.lib&quot;</emphasis>)
+75 <emphasis role="preprocessor">&#32;#pragma&#32;comment&#32;(lib,&#32;&quot;vfw32.lib&quot;</emphasis>)
+76 <emphasis role="preprocessor">&#32;#pragma&#32;comment&#32;(lib,&#32;&quot;winmm.lib&quot;</emphasis>)
+77 <emphasis role="preprocessor">&#32;#pragma&#32;comment&#32;(lib,&#32;&quot;wsock32.lib&quot;</emphasis>)
+78 <emphasis role="preprocessor">&#32;#pragma&#32;comment&#32;(lib,&#32;&quot;Ws2_32.lib&quot;</emphasis>)
+79 <emphasis role="preprocessor">&#32;#pragma&#32;comment&#32;(lib,&#32;&quot;wldap32.lib&quot;</emphasis>)
+80 <emphasis role="preprocessor">&#32;#pragma&#32;comment&#32;(lib,&#32;&quot;crypt32.lib&quot;</emphasis>)
+81 <emphasis role="preprocessor">#endif</emphasis>
+</programlisting></section>

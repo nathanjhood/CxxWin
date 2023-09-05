@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_win32___d_p_i_scale_8hpp" xml:lang="en-US">
+<title>include/CxxWin/modules/Win32_core/window/win32_DPIScale.hpp File Reference</title>
+<indexterm><primary>include/CxxWin/modules/Win32_core/window/win32_DPIScale.hpp</primary></indexterm>
+<para>
+
+<para>Contains the &apos;<link linkend="_class_d_p_i_scale">DPIScale</link>&apos; class. </para>
+ 
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_d_p_i_scale">DPIScale</link></para>
+
+<para>The &apos;<link linkend="_class_d_p_i_scale">DPIScale</link>&apos; class. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_win32___d_p_i_scale_8hpp_1ac12caf685759424f19e7a272235b532c">_WIN32_DPISCALE_HPP_</link></para>
+
+<para>Contains the &apos;<link linkend="_class_d_p_i_scale">DPIScale</link>&apos; class. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_win32___d_p_i_scale_8hpp_1a9fc44a3f14ec042350763628e1ba60c1">_DPIScale_T</link>&#160;&#160;&#160;<link linkend="_class_d_p_i_scale">DPIScale</link></para>
+
+<para>The &apos;<link linkend="_class_d_p_i_scale">DPIScale</link>&apos; datatype. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Typedefs    </title>
+        <itemizedlist>
+            <listitem><para>typedef class <link linkend="_win32___d_p_i_scale_8hpp_1a9fc44a3f14ec042350763628e1ba60c1">_DPIScale_T</link> <link linkend="_win32___d_p_i_scale_8hpp_1a1e9a5df60aa1e6475621ccdbb1b824f4">DPIScale</link></para>
+
+<para>The &apos;<link linkend="_class_d_p_i_scale">DPIScale</link>&apos; datatype. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Contains the &apos;<link linkend="_class_d_p_i_scale">DPIScale</link>&apos; class. </para>
+
+<para><formalpara><title>Author</title>
+
+<para>StoneyDSP (<link xlink:href="mailto:nathanjhood@googlemail.com">nathanjhood@googlemail.com</link>)</para>
+</formalpara>
+</para>
+
+<para><formalpara><title>Version</title>
+
+<para>1.0.0 </para>
+</formalpara>
+<formalpara><title>Date</title>
+
+<para>2023-08-25</para>
+</formalpara>
+<formalpara><title>Copyright</title>
+
+<para>Copyright (c) 2023 </para>
+</formalpara>
+</para>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_win32___d_p_i_scale_8hpp_1a9fc44a3f14ec042350763628e1ba60c1"/><section>
+    <title>_DPIScale_T</title>
+<indexterm><primary>_DPIScale_T</primary><secondary>win32_DPIScale.hpp</secondary></indexterm>
+<indexterm><primary>win32_DPIScale.hpp</primary><secondary>_DPIScale_T</secondary></indexterm>
+<para><computeroutput>#define _DPIScale_T&#160;&#160;&#160;<link linkend="_class_d_p_i_scale">DPIScale</link></computeroutput></para><para>
+
+<para>The &apos;<link linkend="_class_d_p_i_scale">DPIScale</link>&apos; datatype. </para>
+</para>
+</section>
+<anchor xml:id="_win32___d_p_i_scale_8hpp_1ac12caf685759424f19e7a272235b532c"/><section>
+    <title>_WIN32_DPISCALE_HPP_</title>
+<indexterm><primary>_WIN32_DPISCALE_HPP_</primary><secondary>win32_DPIScale.hpp</secondary></indexterm>
+<indexterm><primary>win32_DPIScale.hpp</primary><secondary>_WIN32_DPISCALE_HPP_</secondary></indexterm>
+<para><computeroutput>#define _WIN32_DPISCALE_HPP_</computeroutput></para><para>
+
+<para>Contains the &apos;<link linkend="_class_d_p_i_scale">DPIScale</link>&apos; class. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Typedef Documentation</title>
+<anchor xml:id="_win32___d_p_i_scale_8hpp_1a1e9a5df60aa1e6475621ccdbb1b824f4"/><section>
+    <title>DPIScale</title>
+<indexterm><primary>DPIScale</primary><secondary>win32_DPIScale.hpp</secondary></indexterm>
+<indexterm><primary>win32_DPIScale.hpp</primary><secondary>DPIScale</secondary></indexterm>
+<para><computeroutput>typedef class <link linkend="_win32___d_p_i_scale_8hpp_1a9fc44a3f14ec042350763628e1ba60c1">_DPIScale_T</link> <link linkend="_class_d_p_i_scale">DPIScale</link></computeroutput></para><para>
+
+<para>The &apos;<link linkend="_class_d_p_i_scale">DPIScale</link>&apos; datatype. </para>
+</para>
+</section>
+</section>
+</section>

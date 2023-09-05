@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_base_window" xml:lang="en-US">
+<title>BaseWindow&lt; DERIVED_TYPE &gt; Class Template Reference</title>
+<indexterm><primary>BaseWindow&lt; DERIVED_TYPE &gt;</primary></indexterm>
+<para>
+
+<para>The &apos;<link linkend="_class_base_window">BaseWindow</link>&apos; abstract class. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;win32_BaseWindow.hpp&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_base_window_1a60209fc8aa81ab0efa29263dabc52cbf">BaseWindow</link> ()</para>
+
+<para>Construct a new &apos;<link linkend="_class_base_window">BaseWindow</link>&apos; object. </para>
+</listitem>
+            <listitem><para>BOOL <link linkend="_class_base_window_1acfcb0a79ccf1f3780e353f24983b93bf">Create</link> (PCWSTR lpWindowName, DWORD dwStyle, DWORD dwExStyle=0, int x=CW_USEDEFAULT, int y=CW_USEDEFAULT, int nWidth=CW_USEDEFAULT, int nHeight=CW_USEDEFAULT, HWND hWndParent=0, HMENU hMenu=0)</para>
+
+<para>Create a new &apos;<link linkend="_class_base_window">BaseWindow</link>&apos; -derived object. </para>
+</listitem>
+            <listitem><para>HWND <link linkend="_class_base_window_1aa1507d2052aaec416ac8b085add33ba0">Window</link> () CONST</para>
+
+<para>Return the handle to the &apos;<link linkend="_class_base_window">BaseWindow</link>&apos; -derived object. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static LRESULT CALLBACK <link linkend="_class_base_window_1a61198ed120a54deccbd3e73221bf9c4d">WindowProc</link> (HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)</para>
+
+<para>&apos;LRESULT&apos; is an integer value that your program returns to Windows. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>virtual PCWSTR <link linkend="_class_base_window_1a76d1b80a812caf760c0efbed6e64b2e1">ClassName</link> () CONST PURE</para>
+
+<para>Return a string of the name of &apos;<link linkend="_class_base_window">BaseWindow</link>&apos; -derived object. </para>
+</listitem>
+            <listitem><para>virtual LRESULT <link linkend="_class_base_window_1a7612d6d879e60f4b7ded0cf0ac3dd8a9">HandleMessage</link> (UINT uMsg, WPARAM wParam, LPARAM lParam) PURE</para>
+
+<para>Handle the incoming messages. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para>HWND <link linkend="_class_base_window_1a86f5232fa1bbb141f60548a42331fc7e">m_hwnd</link></para>
+
+<para>The handle to the &apos;<link linkend="_class_base_window">BaseWindow</link>&apos; -derived object. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<simplesect><title>template&lt;class DERIVED_TYPE&gt;<?linebreak?>class BaseWindow&lt; DERIVED_TYPE &gt;</title></simplesect>
+
+<para>The &apos;<link linkend="_class_base_window">BaseWindow</link>&apos; abstract class. </para>
+
+
+
+<para>
+                <formalpara>
+                    <title>
+Template Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>DERIVED_TYPE</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_base_window_1a60209fc8aa81ab0efa29263dabc52cbf"/><section>
+    <title>BaseWindow()</title>
+<indexterm><primary>BaseWindow</primary><secondary>BaseWindow&lt; DERIVED_TYPE &gt;</secondary></indexterm>
+<indexterm><primary>BaseWindow&lt; DERIVED_TYPE &gt;</primary><secondary>BaseWindow</secondary></indexterm>
+<computeroutput>template&lt;class DERIVED_TYPE &gt; </computeroutput><para><computeroutput><link linkend="_class_base_window">BaseWindow</link>&lt; DERIVED_TYPE &gt;<link linkend="_class_base_window">::BaseWindow</link> ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Construct a new &apos;<link linkend="_class_base_window">BaseWindow</link>&apos; object. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_base_window_1a76d1b80a812caf760c0efbed6e64b2e1"/><section>
+    <title>ClassName()</title>
+<indexterm><primary>ClassName</primary><secondary>BaseWindow&lt; DERIVED_TYPE &gt;</secondary></indexterm>
+<indexterm><primary>BaseWindow&lt; DERIVED_TYPE &gt;</primary><secondary>ClassName</secondary></indexterm>
+<computeroutput>template&lt;class DERIVED_TYPE &gt; </computeroutput><para><computeroutput>virtual PCWSTR <link linkend="_class_base_window">BaseWindow</link>&lt; DERIVED_TYPE &gt;::ClassName ( )<computeroutput>[protected]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Return a string of the name of &apos;<link linkend="_class_base_window">BaseWindow</link>&apos; -derived object. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>PCWSTR </para>
+</formalpara>
+</para>
+<para>
+Reimplemented in <link linkend="_class_main_component_1a10413353888f65b0282eb32cf4a012ef">MainComponent</link>, and <link linkend="_class_main_window_1ac73b70e36c04de55a2b049637408c21e">MainWindow</link>.</para>
+</section>
+<anchor xml:id="_class_base_window_1acfcb0a79ccf1f3780e353f24983b93bf"/><section>
+    <title>Create()</title>
+<indexterm><primary>Create</primary><secondary>BaseWindow&lt; DERIVED_TYPE &gt;</secondary></indexterm>
+<indexterm><primary>BaseWindow&lt; DERIVED_TYPE &gt;</primary><secondary>Create</secondary></indexterm>
+<computeroutput>template&lt;class DERIVED_TYPE &gt; </computeroutput><para><computeroutput>BOOL <link linkend="_class_base_window">BaseWindow</link>&lt; DERIVED_TYPE &gt;::Create (PCWSTR lpWindowName, DWORD dwStyle, DWORD dwExStyle = <computeroutput>0</computeroutput>
+, int x = <computeroutput>CW_USEDEFAULT</computeroutput>
+, int y = <computeroutput>CW_USEDEFAULT</computeroutput>
+, int nWidth = <computeroutput>CW_USEDEFAULT</computeroutput>
+, int nHeight = <computeroutput>CW_USEDEFAULT</computeroutput>
+, HWND hWndParent = <computeroutput>0</computeroutput>
+, HMENU hMenu = <computeroutput>0</computeroutput>
+)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Create a new &apos;<link linkend="_class_base_window">BaseWindow</link>&apos; -derived object. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>lpWindowName</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>dwStyle</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>dwExStyle</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>x</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>y</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>nWidth</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>nHeight</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>hWndParent</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>hMenu</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>BOOL </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_base_window_1a7612d6d879e60f4b7ded0cf0ac3dd8a9"/><section>
+    <title>HandleMessage()</title>
+<indexterm><primary>HandleMessage</primary><secondary>BaseWindow&lt; DERIVED_TYPE &gt;</secondary></indexterm>
+<indexterm><primary>BaseWindow&lt; DERIVED_TYPE &gt;</primary><secondary>HandleMessage</secondary></indexterm>
+<computeroutput>template&lt;class DERIVED_TYPE &gt; </computeroutput><para><computeroutput>virtual LRESULT <link linkend="_class_base_window">BaseWindow</link>&lt; DERIVED_TYPE &gt;::HandleMessage (UINT uMsg, WPARAM wParam, LPARAM lParam)<computeroutput>[protected]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Handle the incoming messages. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>uMsg</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>wParam</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>lParam</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>LRESULT </para>
+</formalpara>
+</para>
+<para>
+Reimplemented in <link linkend="_class_main_component_1a28a911446776a6ea7777f0cde9960d16">MainComponent</link>, and <link linkend="_class_main_window_1a590370509ff31b48345edf4fd1dee572">MainWindow</link>.</para>
+</section>
+<anchor xml:id="_class_base_window_1aa1507d2052aaec416ac8b085add33ba0"/><section>
+    <title>Window()</title>
+<indexterm><primary>Window</primary><secondary>BaseWindow&lt; DERIVED_TYPE &gt;</secondary></indexterm>
+<indexterm><primary>BaseWindow&lt; DERIVED_TYPE &gt;</primary><secondary>Window</secondary></indexterm>
+<computeroutput>template&lt;class DERIVED_TYPE &gt; </computeroutput><para><computeroutput>HWND <link linkend="_class_base_window">BaseWindow</link>&lt; DERIVED_TYPE &gt;::Window ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Return the handle to the &apos;<link linkend="_class_base_window">BaseWindow</link>&apos; -derived object. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>HWND </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_base_window_1a61198ed120a54deccbd3e73221bf9c4d"/><section>
+    <title>WindowProc()</title>
+<indexterm><primary>WindowProc</primary><secondary>BaseWindow&lt; DERIVED_TYPE &gt;</secondary></indexterm>
+<indexterm><primary>BaseWindow&lt; DERIVED_TYPE &gt;</primary><secondary>WindowProc</secondary></indexterm>
+<computeroutput>template&lt;class DERIVED_TYPE &gt; </computeroutput><para><computeroutput>static LRESULT CALLBACK <link linkend="_class_base_window">BaseWindow</link>&lt; DERIVED_TYPE &gt;::WindowProc (HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)<computeroutput>[inline]</computeroutput>, <computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>&apos;LRESULT&apos; is an integer value that your program returns to Windows. </para>
+</para>
+
+<para>It contains your program&apos;s response to a particular message. The meaning of this value depends on the message code.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>hwnd</entry><entry>
+<para>is a handle to the window. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>uMsg</entry><entry>
+<para>is the message code; for example, the WM_SIZE message indicates the window was resized. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>wParam</entry><entry>
+<para>contains additional code-dependent data about the message. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>lParam</entry><entry>
+<para>contains additional code-dependent data about the message. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>&apos;LRESULT&apos; </para>
+</formalpara>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_base_window_1a86f5232fa1bbb141f60548a42331fc7e"/><section>
+    <title>m_hwnd</title>
+<indexterm><primary>m_hwnd</primary><secondary>BaseWindow&lt; DERIVED_TYPE &gt;</secondary></indexterm>
+<indexterm><primary>BaseWindow&lt; DERIVED_TYPE &gt;</primary><secondary>m_hwnd</secondary></indexterm>
+<computeroutput>template&lt;class DERIVED_TYPE &gt; </computeroutput><para><computeroutput>HWND <link linkend="_class_base_window">BaseWindow</link>&lt; DERIVED_TYPE &gt;::m_hwnd<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+
+<para>The handle to the &apos;<link linkend="_class_base_window">BaseWindow</link>&apos; -derived object. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+include/CxxWin/modules/Win32_core/window/<link linkend="_win32___base_window_8hpp">win32_BaseWindow.hpp</link></section>
+</section>

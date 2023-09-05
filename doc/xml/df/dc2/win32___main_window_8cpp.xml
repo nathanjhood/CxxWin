@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="df/dc2/win32___main_window_8cpp" kind="file" language="C++">
+    <compoundname>win32_MainWindow.cpp</compoundname>
+    <includedby refid="d1/dd0/win32__core_8cpp" local="yes">include/CxxWin/modules/Win32_core/win32_core.cpp</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/CxxWin/modules/Win32_core/win32_core.cpp</label>
+        <link refid="d1/dd0/win32__core_8cpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>include/CxxWin/modules/Win32_core/win32_core.mm</label>
+        <link refid="d9/db1/win32__core_8mm"/>
+      </node>
+      <node id="1">
+        <label>include/CxxWin/modules/Win32_core/window/win32_MainWindow.cpp</label>
+        <link refid="df/dc2/win32___main_window_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+<para>Contains a definition of the &apos;<ref refid="d9/dc6/class_main_window" kindref="compound">MainWindow</ref>&apos; class which inherits from the &apos;<ref refid="da/dc1/class_base_window" kindref="compound">BaseWindow</ref>&apos; class. Inherit this &apos;<ref refid="d9/dc6/class_main_window" kindref="compound">MainWindow</ref>&apos; class for a basic window functionality. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>StoneyDSP (<ulink url="mailto:nathanjhood@googlemail.com">nathanjhood@googlemail.com</ulink>)</para>
+</simplesect>
+</para>
+<para><simplesect kind="version"><para>1.0.0 </para>
+</simplesect>
+<simplesect kind="date"><para>2023-08-23</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="d9/dc6/class_main_window_1ac73b70e36c04de55a2b049637408c21e" refkind="member"><highlight class="normal">PCWSTR<sp/><ref refid="d9/dc6/class_main_window_1ac73b70e36c04de55a2b049637408c21e" kindref="member">MainWindow::ClassName</ref>()<sp/>CONST</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>TEXT(</highlight><highlight class="stringliteral">&quot;UDEFINED&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="d9/dc6/class_main_window_1a590370509ff31b48345edf4fd1dee572" refkind="member"><highlight class="normal">LRESULT<sp/><ref refid="d9/dc6/class_main_window_1a590370509ff31b48345edf4fd1dee572" kindref="member">MainWindow::HandleMessage</ref>(UINT<sp/>uMsg,<sp/>WPARAM<sp/>wParam,<sp/>LPARAM<sp/>lParam)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(uMsg)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>WM_DESTROY:</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Destroy<sp/>&apos;WinMain()&apos;?<sp/>So<sp/>be<sp/>it...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PostQuitMessage(0);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>WM_PAINT:</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PAINTSTRUCT<sp/>ps;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HDC<sp/>hdc<sp/>=<sp/>BeginPaint(<ref refid="da/dc1/class_base_window_1a86f5232fa1bbb141f60548a42331fc7e" kindref="member">m_hwnd</ref>,<sp/>&amp;ps);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FillRect(hdc,<sp/>&amp;ps.rcPaint,<sp/>(HBRUSH)<sp/>(COLOR_WINDOW+1));</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EndPaint(<ref refid="da/dc1/class_base_window_1a86f5232fa1bbb141f60548a42331fc7e" kindref="member">m_hwnd</ref>,<sp/>&amp;ps);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>DefWindowProc(<ref refid="da/dc1/class_base_window_1a86f5232fa1bbb141f60548a42331fc7e" kindref="member">m_hwnd</ref>,<sp/>uMsg,<sp/>wParam,<sp/>lParam);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>TRUE;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="include/CxxWin/modules/Win32_core/window/win32_MainWindow.cpp"/>
+  </compounddef>
+</doxygen>

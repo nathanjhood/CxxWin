@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="da/d36/namespace_c_make_r_c_1_1_img" kind="namespace" language="C++">
+    <compoundname>CMakeRC::Img</compoundname>
+    <innernamespace refid="d0/d57/namespace_c_make_r_c_1_1_img_1_1anonymous__namespace_02win32__png_8cpp_03">CMakeRC::Img::anonymous_namespace{win32_png.cpp}</innernamespace>
+    <innernamespace refid="dd/d06/namespace_c_make_r_c_1_1_img_1_1anonymous__namespace_02win32__png_8hpp_03">CMakeRC::Img::anonymous_namespace{win32_png.hpp}</innernamespace>
+    <innernamespace refid="db/d14/namespace_c_make_r_c_1_1_img_1_1_application_icon">CMakeRC::Img::ApplicationIcon</innernamespace>
+    <innernamespace refid="d7/db5/namespace_c_make_r_c_1_1_img_1_1_logo">CMakeRC::Img::Logo</innernamespace>
+    <innernamespace refid="d7/d01/namespace_c_make_r_c_1_1_img_1_1_small_logo">CMakeRC::Img::SmallLogo</innernamespace>
+    <innernamespace refid="d7/de8/namespace_c_make_r_c_1_1_img_1_1_small_logo44x44">CMakeRC::Img::SmallLogo44x44</innernamespace>
+    <innernamespace refid="da/d7c/namespace_c_make_r_c_1_1_img_1_1_splash_screen">CMakeRC::Img::SplashScreen</innernamespace>
+    <innernamespace refid="d8/d5c/namespace_c_make_r_c_1_1_img_1_1_store_logo">CMakeRC::Img::StoreLogo</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="da/d36/namespace_c_make_r_c_1_1_img_1a0d7bf8b21dd960329ae3658a8510c405" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d5/d1d/win32__resource_8hpp_1a5afbfa7ab227c0b123b37aeaca4963b3" kindref="member">FSEMBEDDED</ref></type>
+        <definition>FSEMBEDDED CMakeRC::Img::GetFileSystem</definition>
+        <argsstring>()</argsstring>
+        <name>GetFileSystem</name>
+        <qualifiedname>CMakeRC::Img::GetFileSystem</qualifiedname>
+        <briefdescription>
+<para>Get the &apos;<ref refid="d2/df9/class_c_make_r_c_1_1_embedded_file_system" kindref="compound">CMakeRC::EmbeddedFileSystem</ref>&apos; &apos;<ref refid="d9/def/namespace_c_make_r_c_1_1_detail_1af8b7b0ba529bcc74373e4ee395b54529" kindref="member">CMakeRC::Detail::IndexType</ref>&apos; object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>&apos;FSEMBEDDED&apos; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/img/win32_png.cpp" line="164" column="12" bodyfile="include/CxxWin/modules/Win32_resource/img/win32_png.cpp" bodystart="164" bodyend="168" declfile="include/CxxWin/modules/Win32_resource/img/win32_png.hpp" declline="46" declcolumn="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&apos; </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The &apos;<ref refid="da/d36/namespace_c_make_r_c_1_1_img" kindref="compound">Img</ref>&apos; namespace. Contains declarations and definitions of binary-compiled &apos;*.png&apos; files for interacting with <ref refid="d6/dd1/namespace_win32" kindref="compound">Win32</ref> API. </para>
+    </detaileddescription>
+    <location file="include/CxxWin/modules/Win32_resource/img/win32_ApplicationIcon_png.cpp" line="503" column="1"/>
+  </compounddef>
+</doxygen>

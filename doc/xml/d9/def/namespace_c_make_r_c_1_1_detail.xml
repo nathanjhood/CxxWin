@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d9/def/namespace_c_make_r_c_1_1_detail" kind="namespace" language="C++">
+    <compoundname>CMakeRC::Detail</compoundname>
+    <innerclass refid="d5/d8a/struct_c_make_r_c_1_1_detail_1_1_created_sub_directory" prot="public">CMakeRC::Detail::CreatedSubDirectory</innerclass>
+    <innerclass refid="d3/d17/class_c_make_r_c_1_1_detail_1_1_directory" prot="public">CMakeRC::Detail::Directory</innerclass>
+    <innerclass refid="d0/d80/class_c_make_r_c_1_1_detail_1_1_file_data" prot="public">CMakeRC::Detail::FileData</innerclass>
+    <innerclass refid="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory" prot="public">CMakeRC::Detail::FileOrDirectory</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="d9/def/namespace_c_make_r_c_1_1_detail_1af8b7b0ba529bcc74373e4ee395b54529" prot="public" static="no">
+        <type>std::map&lt; std::string, const <ref refid="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory" kindref="compound">CMakeRC::Detail::FileOrDirectory</ref> * &gt;</type>
+        <definition>using CMakeRC::Detail::IndexType = typedef std::map&lt;std::string, const CMakeRC::Detail::FileOrDirectory*&gt;</definition>
+        <argsstring></argsstring>
+        <name>IndexType</name>
+        <qualifiedname>CMakeRC::Detail::IndexType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="573" column="1" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="573" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d9/def/namespace_c_make_r_c_1_1_detail_1a66d1ba033d0fd3128f0c20fc3652070a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::pair&lt; std::string, std::string &gt;</type>
+        <definition>std::pair&lt; std::string, std::string &gt; CMakeRC::Detail::SplitPath</definition>
+        <argsstring>(const std::string &amp;path)</argsstring>
+        <name>SplitPath</name>
+        <qualifiedname>CMakeRC::Detail::SplitPath</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::pair&lt;std::string, std::string&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="308" column="18" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="308" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/def/namespace_c_make_r_c_1_1_detail_1a6553506577f146fdcb7e1588a74dd102" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string CMakeRC::Detail::NormalizePath</definition>
+        <argsstring>(std::string path)</argsstring>
+        <name>NormalizePath</name>
+        <qualifiedname>CMakeRC::Detail::NormalizePath</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>std::string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="551" column="20" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="551" bodyend="571"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&apos; </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The &apos;<ref refid="d0/d80/class_c_make_r_c_1_1_detail_1_1_file_data" kindref="compound">FileData</ref>&apos; class ::</para>
+<para>The &apos;<ref refid="d9/def/namespace_c_make_r_c_1_1_detail" kindref="compound">CMakeRC::Detail</ref>&apos; namespace.</para>
+    </detaileddescription>
+    <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="56" column="1"/>
+  </compounddef>
+</doxygen>

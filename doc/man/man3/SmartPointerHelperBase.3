@@ -1,0 +1,160 @@
+.TH "SmartPointerHelperBase< First, ComClasses >" 3Version 1.0.1" "CxxWin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SmartPointerHelperBase< First, ComClasses > \- The '\fBSmartPointerHelperBase\fP' class\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <win32_SmartPointer\&.hpp>\fP
+.PP
+Inherits First, and ComClasses\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSmartPointerHelperBase\fP (unsigned int initRef)"
+.br
+.RI "Construct a new '\fBSmartPointerHelperBase\fP' object\&. "
+.ti -1c
+.RI "virtual \fB~SmartPointerHelperBase\fP ()=default"
+.br
+.RI "Destroy the '\fBSmartPointerHelperBase\fP' object\&. "
+.ti -1c
+.RI "ULONG STDMETHODCALLTYPE \fBAddRef\fP ()"
+.br
+.RI "Add a new reference to the pointer, increasing the counter by one\&. "
+.ti -1c
+.RI "ULONG STDMETHODCALLTYPE \fBRelease\fP ()"
+.br
+.RI "Release a reference to the pointer, decreasing the counter by one\&. "
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "template<class Type > HRESULT STDMETHODCALLTYPE \fBcastToType\fP (void **result)"
+.br
+.RI "Add a new reference to the pointer (increasing the counter by one), and attempt to cast to type 'T'\&. "
+.ti -1c
+.RI "HRESULT STDMETHODCALLTYPE \fBQueryInterface\fP (REFIID riid, void **ppvObject)"
+.br
+.RI "Query a COM object for a pointer to one its interfaces, identifying the interface by a reference to its interface identifier (IID)\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "ULONG \fBrefCount\fP"
+.br
+.RI "The underlying reference counter to the pointer\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<class First, class\&.\&.\&. ComClasses>
+.br
+class SmartPointerHelperBase< First, ComClasses >"The '\fBSmartPointerHelperBase\fP' class\&. 
+
+
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fIFirst\fP 
+.br
+\fIComClasses\fP 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<class First , class\&.\&.\&. ComClasses> \fBSmartPointerHelperBase\fP< First, ComClasses >\fB::SmartPointerHelperBase\fP (unsigned int initRef)"
+
+.PP
+Construct a new '\fBSmartPointerHelperBase\fP' object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIinitRef\fP 
+.RE
+.PP
+
+.SS "template<class First , class\&.\&.\&. ComClasses> virtual \fBSmartPointerHelperBase\fP< First, ComClasses >::~\fBSmartPointerHelperBase\fP ()\fC [virtual]\fP, \fC [default]\fP"
+
+.PP
+Destroy the '\fBSmartPointerHelperBase\fP' object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "template<class First , class\&.\&.\&. ComClasses> ULONG STDMETHODCALLTYPE \fBSmartPointerHelperBase\fP< First, ComClasses >::AddRef"
+
+.PP
+Add a new reference to the pointer, increasing the counter by one\&. 
+.PP
+\fBReturns\fP
+.RS 4
+ULONG 
+.RE
+.PP
+
+.SS "template<class First , class\&.\&.\&. ComClasses> template<class Type > HRESULT STDMETHODCALLTYPE \fBSmartPointerHelperBase\fP< First, ComClasses >::castToType (void ** result)\fC [protected]\fP"
+
+.PP
+Add a new reference to the pointer (increasing the counter by one), and attempt to cast to type 'T'\&. The returned 'HRESULT' can be checked so that any unsuccessful casts might then be freed with the '\fBRelease()\fP' method\&.
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fIType\fP 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIresult\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+HRESULT 
+.RE
+.PP
+
+.SS "template<class First , class\&.\&.\&. ComClasses> HRESULT \fBSmartPointerHelperBase\fP< First, ComClasses >::QueryInterface (REFIID riid, void ** ppvObject)\fC [protected]\fP"
+
+.PP
+Query a COM object for a pointer to one its interfaces, identifying the interface by a reference to its interface identifier (IID)\&. If the COM object implements the interface, then it returns a pointer to that interface after calling '\fBSmartPointerHelperBase::AddRef()\fP' on it\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIriid\fP A reference to the identifier of the interface being queried for\&.
+.br
+\fIppvObject\fP The address of a pointer to an interface with the IID specified in the 'riid' parameter\&. Because you pass the address of an interface pointer, the method can overwrite that address with the pointer to the interface being queried for\&. Upon successful return, *ppvObject (the dereferenced address) contains a pointer to the requested interface\&. If the object doesn't support the interface, the method sets *ppvObject (the dereferenced address) to nullptr\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+HRESULT; This method returns 'S_OK' if the interface is supported, and 'E_NOINTERFACE' otherwise\&. 
+.RE
+.PP
+
+.SS "template<class First , class\&.\&.\&. ComClasses> ULONG \fBSmartPointerHelperBase\fP< First, ComClasses >::Release"
+
+.PP
+Release a reference to the pointer, decreasing the counter by one\&. 
+.PP
+\fBReturns\fP
+.RS 4
+ULONG 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "template<class First , class\&.\&.\&. ComClasses> ULONG \fBSmartPointerHelperBase\fP< First, ComClasses >::refCount\fC [protected]\fP"
+
+.PP
+The underlying reference counter to the pointer\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CxxWin from the source code\&.

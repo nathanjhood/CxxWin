@@ -1,0 +1,326 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d5/d1d/win32__resource_8hpp" kind="file" language="C++">
+    <compoundname>win32_resource.hpp</compoundname>
+    <includes refid="df/dcb/cmrc_8hpp" local="yes">cmrc.hpp</includes>
+    <includes refid="d5/d45/win32__png_8hpp" local="yes">img/win32_png.hpp</includes>
+    <includes refid="da/d8e/win32___application_icon__png_8hpp" local="yes">img/win32_ApplicationIcon_png.hpp</includes>
+    <includes refid="d3/d35/win32___logo__png_8hpp" local="yes">img/win32_Logo_png.hpp</includes>
+    <includes refid="df/d82/win32___small_logo__png_8hpp" local="yes">img/win32_SmallLogo_png.hpp</includes>
+    <includes refid="db/dea/win32___small_logo44x44__png_8hpp" local="yes">img/win32_SmallLogo44x44_png.hpp</includes>
+    <includes refid="d9/d9c/win32___splash_screen__png_8hpp" local="yes">img/win32_SplashScreen_png.hpp</includes>
+    <includes refid="d7/dc9/win32___store_logo__png_8hpp" local="yes">img/win32_StoreLogo_png.hpp</includes>
+    <includes refid="d6/dc6/win32__pfx_8hpp" local="yes">key/win32_pfx.hpp</includes>
+    <includes refid="db/d82/win32___windows___temporary_key__pfx_8hpp" local="yes">key/win32_Windows_TemporaryKey_pfx.hpp</includes>
+    <includedby refid="d5/d66/win32__resource_8cpp" local="yes">include/CxxWin/modules/Win32_resource/win32_resource.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>cmrc.hpp</label>
+        <link refid="df/dcb/cmrc_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>img/win32_ApplicationIcon_png.hpp</label>
+        <link refid="da/d8e/win32___application_icon__png_8hpp"/>
+      </node>
+      <node id="15">
+        <label>img/win32_Logo_png.hpp</label>
+        <link refid="d3/d35/win32___logo__png_8hpp"/>
+      </node>
+      <node id="17">
+        <label>img/win32_SmallLogo44x44_png.hpp</label>
+        <link refid="db/dea/win32___small_logo44x44__png_8hpp"/>
+      </node>
+      <node id="16">
+        <label>img/win32_SmallLogo_png.hpp</label>
+        <link refid="df/d82/win32___small_logo__png_8hpp"/>
+      </node>
+      <node id="18">
+        <label>img/win32_SplashScreen_png.hpp</label>
+        <link refid="d9/d9c/win32___splash_screen__png_8hpp"/>
+      </node>
+      <node id="19">
+        <label>img/win32_StoreLogo_png.hpp</label>
+        <link refid="d7/dc9/win32___store_logo__png_8hpp"/>
+      </node>
+      <node id="12">
+        <label>img/win32_png.hpp</label>
+        <link refid="d5/d45/win32__png_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>key/win32_Windows_TemporaryKey_pfx.hpp</label>
+        <link refid="db/d82/win32___windows___temporary_key__pfx_8hpp"/>
+      </node>
+      <node id="20">
+        <label>key/win32_pfx.hpp</label>
+        <link refid="d6/dc6/win32__pfx_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/CxxWin/modules/Win32_resource/win32_resource.hpp</label>
+        <link refid="d5/d1d/win32__resource_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cassert</label>
+      </node>
+      <node id="4">
+        <label>functional</label>
+      </node>
+      <node id="5">
+        <label>iterator</label>
+      </node>
+      <node id="6">
+        <label>list</label>
+      </node>
+      <node id="7">
+        <label>map</label>
+      </node>
+      <node id="8">
+        <label>mutex</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="10">
+        <label>system_error</label>
+      </node>
+      <node id="11">
+        <label>type_traits</label>
+      </node>
+      <node id="13">
+        <label>utility</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/CxxWin/modules/Win32_resource/win32_resource.cpp</label>
+        <link refid="d5/d66/win32__resource_8cpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/CxxWin/modules/Win32_resource/win32_resource.hpp</label>
+        <link refid="d5/d1d/win32__resource_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>include/CxxWin/modules/Win32_resource/win32_resource.mm</label>
+        <link refid="d3/d1f/win32__resource_8mm"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="d5/d1d/win32__resource_8hpp_1a354e5b1e54252d86062da78655a4fb92" prot="public" static="no">
+        <name>_WIN32_RESOURCE_H_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/win32_resource.hpp" line="13" column="9" bodyfile="include/CxxWin/modules/Win32_resource/win32_resource.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d5/d1d/win32__resource_8hpp_1a2e76c05ee6a9e027f414ed73d775ac84" prot="public" static="no">
+        <name>__RC_RESOURCE_T</name>
+        <initializer>const signed char</initializer>
+        <briefdescription>
+<para>The underlying &apos;RCRESOURCE&apos; typedef; maps a simple datatype to the &apos;RCRESOURCE&apos; typedef. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Can be over-ridden to other data types, for example by specifying &quot;-D__RC_RESOURCE_T=&apos;some new data type&apos;&quot; or similar when building. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/win32_resource.hpp" line="22" column="9" bodyfile="include/CxxWin/modules/Win32_resource/win32_resource.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d5/d1d/win32__resource_8hpp_1ac60ad59d611c5f6b55f27384e0a0183c" prot="public" static="no">
+        <name>__RC_RESOURCE_T_PTR</name>
+        <initializer><ref refid="d5/d1d/win32__resource_8hpp_1a3589507c444d07ca84f3ec878da0e8ff" kindref="member">RCRESOURCE</ref>*</initializer>
+        <briefdescription>
+<para>The underlying &apos;RCRESOURCEPTR&apos; type; wraps a raw pointer to the &apos;RESOURCE&apos; typedef. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/win32_resource.hpp" line="32" column="9" bodyfile="include/CxxWin/modules/Win32_resource/win32_resource.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d5/d1d/win32__resource_8hpp_1a312e6926a87e664a60c5739698529a79" prot="public" static="no">
+        <name>__FS_EMBEDDED</name>
+        <initializer><ref refid="d2/df9/class_c_make_r_c_1_1_embedded_file_system" kindref="compound">CMakeRC::EmbeddedFileSystem</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/win32_resource.hpp" line="38" column="9" bodyfile="include/CxxWin/modules/Win32_resource/win32_resource.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d5/d1d/win32__resource_8hpp_1a015eed6194d3055783885b577911818a" prot="public" static="no">
+        <name>__RES_IDX_T</name>
+        <initializer><ref refid="d9/def/namespace_c_make_r_c_1_1_detail_1af8b7b0ba529bcc74373e4ee395b54529" kindref="member">CMakeRC::Detail::IndexType</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/win32_resource.hpp" line="41" column="9" bodyfile="include/CxxWin/modules/Win32_resource/win32_resource.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="d5/d1d/win32__resource_8hpp_1a3589507c444d07ca84f3ec878da0e8ff" prot="public" static="no">
+        <type><ref refid="d5/d1d/win32__resource_8hpp_1a2e76c05ee6a9e027f414ed73d775ac84" kindref="member">__RC_RESOURCE_T</ref></type>
+        <definition>typedef __RC_RESOURCE_T RCRESOURCE</definition>
+        <argsstring></argsstring>
+        <name>RCRESOURCE</name>
+        <briefdescription>
+<para>The &apos;RCRESOURCE&apos; type; maps a simple datatype to the &apos;RCRESOURCE&apos; typedef. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Can be over-ridden to other data types, for example by specifying &quot;-D__RC_RESOURCE_T=&apos;some new data type&apos;&quot; or similar when building.. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/win32_resource.hpp" line="28" column="25" bodyfile="include/CxxWin/modules/Win32_resource/win32_resource.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d5/d1d/win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268" prot="public" static="no">
+        <type><ref refid="d5/d1d/win32__resource_8hpp_1ac60ad59d611c5f6b55f27384e0a0183c" kindref="member">__RC_RESOURCE_T_PTR</ref></type>
+        <definition>typedef __RC_RESOURCE_T_PTR RCRESOURCEPTR</definition>
+        <argsstring></argsstring>
+        <name>RCRESOURCEPTR</name>
+        <briefdescription>
+<para>The &apos;RESOURCEPTR&apos; type; wraps a raw pointer to the &apos;RESOURCE&apos; typedef. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/win32_resource.hpp" line="34" column="29" bodyfile="include/CxxWin/modules/Win32_resource/win32_resource.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d5/d1d/win32__resource_8hpp_1a5afbfa7ab227c0b123b37aeaca4963b3" prot="public" static="no">
+        <type><ref refid="d5/d1d/win32__resource_8hpp_1a312e6926a87e664a60c5739698529a79" kindref="member">__FS_EMBEDDED</ref></type>
+        <definition>typedef __FS_EMBEDDED FSEMBEDDED</definition>
+        <argsstring></argsstring>
+        <name>FSEMBEDDED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/win32_resource.hpp" line="39" column="23" bodyfile="include/CxxWin/modules/Win32_resource/win32_resource.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d5/d1d/win32__resource_8hpp_1aa6bfcc93f2ea5b758d45be8c4bc500b0" prot="public" static="no">
+        <type><ref refid="d5/d1d/win32__resource_8hpp_1a015eed6194d3055783885b577911818a" kindref="member">__RES_IDX_T</ref></type>
+        <definition>typedef __RES_IDX_T IDXRES</definition>
+        <argsstring></argsstring>
+        <name>IDXRES</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/win32_resource.hpp" line="42" column="21" bodyfile="include/CxxWin/modules/Win32_resource/win32_resource.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>StoneyDSP (<ulink url="mailto:nathanjhood@googlemail.com">nathanjhood@googlemail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>1.0.0 </para>
+</simplesect>
+<simplesect kind="date"><para>2023-09-01</para>
+</simplesect>
+<simplesect kind="copyright"><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="d5/d1d/win32__resource_8hpp_1a354e5b1e54252d86062da78655a4fb92" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_WIN32_RESOURCE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__RC_RESOURCE_T</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="d5/d1d/win32__resource_8hpp_1a2e76c05ee6a9e027f414ed73d775ac84" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__RC_RESOURCE_T<sp/>const<sp/>signed<sp/>char</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="d5/d1d/win32__resource_8hpp_1a3589507c444d07ca84f3ec878da0e8ff" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="d5/d1d/win32__resource_8hpp_1a2e76c05ee6a9e027f414ed73d775ac84" kindref="member">__RC_RESOURCE_T</ref><sp/><ref refid="d5/d1d/win32__resource_8hpp_1a3589507c444d07ca84f3ec878da0e8ff" kindref="member">RCRESOURCE</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="d5/d1d/win32__resource_8hpp_1ac60ad59d611c5f6b55f27384e0a0183c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__RC_RESOURCE_T_PTR<sp/>RCRESOURCE*</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="d5/d1d/win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="d5/d1d/win32__resource_8hpp_1ac60ad59d611c5f6b55f27384e0a0183c" kindref="member">__RC_RESOURCE_T_PTR</ref><sp/><ref refid="d5/d1d/win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268" kindref="member">RCRESOURCEPTR</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="df/dcb/cmrc_8hpp" kindref="compound">cmrc.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="d5/d1d/win32__resource_8hpp_1a312e6926a87e664a60c5739698529a79" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__FS_EMBEDDED<sp/>CMakeRC::EmbeddedFileSystem</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="d5/d1d/win32__resource_8hpp_1a5afbfa7ab227c0b123b37aeaca4963b3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="d5/d1d/win32__resource_8hpp_1a312e6926a87e664a60c5739698529a79" kindref="member">__FS_EMBEDDED</ref><sp/><ref refid="d5/d1d/win32__resource_8hpp_1a5afbfa7ab227c0b123b37aeaca4963b3" kindref="member">FSEMBEDDED</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="d5/d1d/win32__resource_8hpp_1a015eed6194d3055783885b577911818a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__RES_IDX_T<sp/>CMakeRC::Detail::IndexType</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="d5/d1d/win32__resource_8hpp_1aa6bfcc93f2ea5b758d45be8c4bc500b0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="d5/d1d/win32__resource_8hpp_1a015eed6194d3055783885b577911818a" kindref="member">__RES_IDX_T</ref><sp/><ref refid="d5/d1d/win32__resource_8hpp_1aa6bfcc93f2ea5b758d45be8c4bc500b0" kindref="member">IDXRES</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d5/d45/win32__png_8hpp" kindref="compound">img/win32_png.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="da/d8e/win32___application_icon__png_8hpp" kindref="compound">img/win32_ApplicationIcon_png.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/d35/win32___logo__png_8hpp" kindref="compound">img/win32_Logo_png.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="df/d82/win32___small_logo__png_8hpp" kindref="compound">img/win32_SmallLogo_png.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="db/dea/win32___small_logo44x44__png_8hpp" kindref="compound">img/win32_SmallLogo44x44_png.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d9/d9c/win32___splash_screen__png_8hpp" kindref="compound">img/win32_SplashScreen_png.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d7/dc9/win32___store_logo__png_8hpp" kindref="compound">img/win32_StoreLogo_png.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d6/dc6/win32__pfx_8hpp" kindref="compound">key/win32_pfx.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="db/d82/win32___windows___temporary_key__pfx_8hpp" kindref="compound">key/win32_Windows_TemporaryKey_pfx.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/CxxWin/modules/Win32_resource/win32_resource.hpp"/>
+  </compounddef>
+</doxygen>

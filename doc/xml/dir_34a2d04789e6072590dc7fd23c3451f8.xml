@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_34a2d04789e6072590dc7fd23c3451f8" kind="dir">
+    <compoundname>include/CxxWin/modules</compoundname>
+    <innerdir refid="dir_88bab166860255f959016b8c5e7512af">include/CxxWin/modules/Win32_core</innerdir>
+    <innerdir refid="dir_87018e622e39c8bc40ace5c49ff36fb4">include/CxxWin/modules/Win32_resource</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/CxxWin/modules/"/>
+  </compounddef>
+</doxygen>

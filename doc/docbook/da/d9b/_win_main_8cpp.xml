@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__win_main_8cpp" xml:lang="en-US">
+<title>include/CxxWin/WinMain.cpp File Reference</title>
+<indexterm><primary>include/CxxWin/WinMain.cpp</primary></indexterm>
+<para>
+
+<para>Contains the definitions of &apos;WinMain&apos;. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &quot;WinMain.hpp&quot;<?linebreak?></programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>int WINAPI <link linkend="__win_main_8cpp_1a779b90c8790d683d0f1eb6c66a84a412">WinMain</link> (HINSTANCE hInstance, HINSTANCE hPrevInstance, <link linkend="__win_main_8hpp_1ae5ba30db05a87373f8fd16ac9c6f8f32">LPCMDLINE</link> lpCmdLine, int nShowCmd)</para>
+
+<para>The main entry point for the runtime executable binary. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Contains the definitions of &apos;WinMain&apos;. </para>
+
+<para><formalpara><title>Author</title>
+
+<para>StoneyDSP (<link xlink:href="mailto:nathanjhood@googlemail.com">nathanjhood@googlemail.com</link>)</para>
+</formalpara>
+</para>
+
+<para><formalpara><title>Version</title>
+
+<para>1.0.0 </para>
+</formalpara>
+<formalpara><title>Date</title>
+
+<para>2023-08-23</para>
+</formalpara>
+<formalpara><title>Copyright</title>
+
+<para>Copyright (c) 2023 </para>
+</formalpara>
+</para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="__win_main_8cpp_1a779b90c8790d683d0f1eb6c66a84a412"/><section>
+    <title>WinMain()</title>
+<indexterm><primary>WinMain</primary><secondary>WinMain.cpp</secondary></indexterm>
+<indexterm><primary>WinMain.cpp</primary><secondary>WinMain</secondary></indexterm>
+<para><computeroutput>int WINAPI WinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, <link linkend="__win_main_8hpp_1ae5ba30db05a87373f8fd16ac9c6f8f32">LPCMDLINE</link> lpCmdLine, int nShowCmd)</computeroutput></para><para>
+
+<para>The main entry point for the runtime executable binary. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>hInstance</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>hPrevInstance</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>lpCmdLine</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>nShowCmd</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>int </para>
+</formalpara>
+</para>
+</section>
+</section>
+</section>

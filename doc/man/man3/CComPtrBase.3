@@ -1,0 +1,181 @@
+.TH "CComPtrBase< T >" 3Version 1.0.1" "CxxWin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CComPtrBase< T > \- The '\fBCComPtrBase\fP' class\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <win32_CComPtrBase\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB~CComPtrBase\fP ()  throw ()"
+.br
+.RI "Destroy the '\fBCComPtrBase\fP' object\&. "
+.ti -1c
+.RI "HRESULT \fBCoCreateInstance\fP (LPCOLESTR szProgID, LPUNKNOWN pUnkOuter=NULL, DWORD dwClsContext=CLSCTX_ALL)  throw ()"
+.br
+.RI "Call this method to create an object of the class associated with a specified Class ID or Program ID\&. "
+.ti -1c
+.RI "HRESULT \fBCoCreateInstance\fP (REFCLSID rclsid, LPUNKNOWN pUnkOuter=NULL, DWORD dwClsContext=CLSCTX_ALL)  throw ()"
+.br
+.RI "Call this method to create an object of the class associated with a specified Class ID or Program ID\&. "
+.ti -1c
+.RI "HRESULT \fBAdvise\fP (IUnknown *pUnk, const IID &iid, LPDWORD pdw)  throw ()"
+.br
+.RI "Call this method to create a connection between the '\fBCComPtrBase\fP's connection point and a client's sink\&. "
+.ti -1c
+.RI "void \fBAttach\fP (T *p2)  throw ()"
+.br
+.RI "Call this method to take ownership of an existing pointer\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "T * \fBp\fP"
+.br
+.RI "The pointer data member variable\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<class T>
+.br
+class CComPtrBase< T >"The '\fBCComPtrBase\fP' class\&. 
+
+This class provides a basis for smart pointer classes using COM-based memory routines\&.
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fIT\fP The object type to be referenced by the smart pointer\&.
+.RE
+.PP
+\fBRemarks\fP
+.RS 4
+This class provides the basis for other smart pointers that use COM memory management routines, such as 'CComQIPtr' and 'CComPtr'\&. The derived classes add their own constructors and operators, but rely on the methods provided by '\fBCComPtrBase\fP'\&. 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<class T > \fBCComPtrBase\fP< T >::~\fBCComPtrBase\fP ()"
+
+.PP
+Destroy the '\fBCComPtrBase\fP' object\&. 
+.PP
+\fBRemarks\fP
+.RS 4
+Releases the interface pointed to by \fBCComPtrBase\fP\&. 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "template<class T > HRESULT \fBCComPtrBase\fP< T >::Advise (IUnknown * pUnk, const IID & iid, LPDWORD pdw)"
+
+.PP
+Call this method to create a connection between the '\fBCComPtrBase\fP's connection point and a client's sink\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpUnk\fP A pointer to the client's 'IUnknown'\&.
+.br
+\fIiid\fP The GUID of the connection point\&. Typically, this GUID is the same as the outgoing interface managed by the connection point\&.
+.br
+\fIpdw\fP A pointer to the cookie that uniquely identifies the connection\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+HRESULT - Returns S_OK on success, or an error HRESULT on failure\&. 
+.RE
+.PP
+
+.SS "template<class T > void \fBCComPtrBase\fP< T >::Attach (T * p2)"
+
+.PP
+Call this method to take ownership of an existing pointer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIp2\fP The '\fBCComPtrBase\fP' object will take ownership of this pointer\&.
+.RE
+.PP
+\fBRemarks\fP
+.RS 4
+Attach calls 'CComPtrBase::Release' on the existing '\fBCComPtrBase::p\fP' member variable and then assigns 'p2' to '\fBCComPtrBase::p\fP'\&. When a '\fBCComPtrBase\fP' object takes ownership of a pointer, it will automatically call Release on the pointer, which deletes the pointer and any allocated data if the reference count on the object goes to 0\&. 
+.RE
+.PP
+
+.SS "template<class T > HRESULT \fBCComPtrBase\fP< T >::CoCreateInstance (LPCOLESTR szProgID, LPUNKNOWN pUnkOuter = \fCNULL\fP, DWORD dwClsContext = \fCCLSCTX_ALL\fP)"
+
+.PP
+Call this method to create an object of the class associated with a specified Class ID or Program ID\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIszProgID\fP Pointer to a ProgID, used to recover the 'CLSID'\&. 
+.br
+\fIpUnkOuter\fP If NULL, indicates that the object isn't being created as part of an aggregate\&. If non- NULL, is a pointer to the aggregate object's 'IUnknown' interface (the controlling 'IUnknown')\&. 
+.br
+\fIdwClsContext\fP Context in which the code that manages the newly created object will run\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+HRESULT - Returns S_OK on success, or REGDB_E_CLASSNOTREG, CLASS_E_NOAGGREGATION, CO_E_CLASSSTRING, or E_NOINTERFACE on failure\&.
+.RE
+.PP
+\fBRemarks\fP
+.RS 4
+If the first form of the method is called, CLSIDFromProgID is used to recover the CLSID\&. Both forms then call CoCreateClassInstance\&.
+.RE
+.PP
+In debug builds, an assertion error will occur if '\fBCComPtrBase::p\fP' isn't equal to NULL\&. 
+.SS "template<class T > HRESULT \fBCComPtrBase\fP< T >::CoCreateInstance (REFCLSID rclsid, LPUNKNOWN pUnkOuter = \fCNULL\fP, DWORD dwClsContext = \fCCLSCTX_ALL\fP)"
+
+.PP
+Call this method to create an object of the class associated with a specified Class ID or Program ID\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrclsid\fP CLSID associated with the data and code that will be used to create the object\&. 
+.br
+\fIpUnkOuter\fP If NULL, indicates that the object isn't being created as part of an aggregate\&. If non- NULL, is a pointer to the aggregate object's 'IUnknown' interface (the controlling 'IUnknown')\&. 
+.br
+\fIdwClsContext\fP Context in which the code that manages the newly created object will run\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+HRESULT - Returns S_OK on success, or REGDB_E_CLASSNOTREG, CLASS_E_NOAGGREGATION, CO_E_CLASSSTRING, or E_NOINTERFACE on failure\&.
+.RE
+.PP
+\fBRemarks\fP
+.RS 4
+If the first form of the method is called, CLSIDFromProgID is used to recover the CLSID\&. Both forms then call CoCreateClassInstance\&.
+.RE
+.PP
+In debug builds, an assertion error will occur if '\fBCComPtrBase::p\fP' isn't equal to NULL\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "template<class T > T* \fBCComPtrBase\fP< T >::p"
+
+.PP
+The pointer data member variable\&. 
+.PP
+\fBRemarks\fP
+.RS 4
+This member variable holds the pointer information\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CxxWin from the source code\&.

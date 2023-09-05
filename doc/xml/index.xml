@@ -1,0 +1,495 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.7" xml:lang="en-US">
+  <compound refid="d3/dd6/union_c_make_r_c_1_1_detail_1_1_file_or_directory_1_1__data__t" kind="union"><name>CMakeRC::Detail::FileOrDirectory::_data_t</name>
+    <member refid="d3/dd6/union_c_make_r_c_1_1_detail_1_1_file_or_directory_1_1__data__t_1acbf70db2aed1fbc0759700954fd99fec" kind="variable"><name>FileData</name></member>
+    <member refid="d3/dd6/union_c_make_r_c_1_1_detail_1_1_file_or_directory_1_1__data__t_1a141a50e444eccb832148435433499864" kind="variable"><name>Directory</name></member>
+  </compound>
+  <compound refid="da/dc1/class_base_window" kind="class"><name>BaseWindow</name>
+    <member refid="da/dc1/class_base_window_1a86f5232fa1bbb141f60548a42331fc7e" kind="variable"><name>m_hwnd</name></member>
+    <member refid="da/dc1/class_base_window_1a60209fc8aa81ab0efa29263dabc52cbf" kind="function"><name>BaseWindow</name></member>
+    <member refid="da/dc1/class_base_window_1acfcb0a79ccf1f3780e353f24983b93bf" kind="function"><name>Create</name></member>
+    <member refid="da/dc1/class_base_window_1aa1507d2052aaec416ac8b085add33ba0" kind="function"><name>Window</name></member>
+    <member refid="da/dc1/class_base_window_1a61198ed120a54deccbd3e73221bf9c4d" kind="function"><name>WindowProc</name></member>
+    <member refid="da/dc1/class_base_window_1a76d1b80a812caf760c0efbed6e64b2e1" kind="function"><name>ClassName</name></member>
+    <member refid="da/dc1/class_base_window_1a7612d6d879e60f4b7ded0cf0ac3dd8a9" kind="function"><name>HandleMessage</name></member>
+  </compound>
+  <compound refid="d7/de3/class_c_com_ptr_base" kind="class"><name>CComPtrBase</name>
+    <member refid="d7/de3/class_c_com_ptr_base_1a90711bda95e1d33b8d771d1f15d47a17" kind="variable"><name>p</name></member>
+    <member refid="d7/de3/class_c_com_ptr_base_1a890ee71812369fc3bab1d033dc9c8e5e" kind="function"><name>~CComPtrBase</name></member>
+    <member refid="d7/de3/class_c_com_ptr_base_1a4d1eb556a56b2cbe38dd1676c45b29f9" kind="function"><name>CoCreateInstance</name></member>
+    <member refid="d7/de3/class_c_com_ptr_base_1a779dcf0ac815f4d2fbba20cabcd01e90" kind="function"><name>CoCreateInstance</name></member>
+    <member refid="d7/de3/class_c_com_ptr_base_1a3384d24c3feb44062843fa259fc72c71" kind="function"><name>Advise</name></member>
+    <member refid="d7/de3/class_c_com_ptr_base_1afc3a9815853fe9a1029036ef41aaa7b0" kind="function"><name>Attach</name></member>
+  </compound>
+  <compound refid="d5/d8a/struct_c_make_r_c_1_1_detail_1_1_created_sub_directory" kind="struct"><name>CMakeRC::Detail::CreatedSubDirectory</name>
+    <member refid="d5/d8a/struct_c_make_r_c_1_1_detail_1_1_created_sub_directory_1a225b4cdbdb42d83831c630de10a6aa09" kind="variable"><name>Directory</name></member>
+    <member refid="d5/d8a/struct_c_make_r_c_1_1_detail_1_1_created_sub_directory_1a637b11814abbfa2c0ddac8984bb60e08" kind="variable"><name>IndexEntry</name></member>
+  </compound>
+  <compound refid="d3/d17/class_c_make_r_c_1_1_detail_1_1_directory" kind="class"><name>CMakeRC::Detail::Directory</name>
+    <member refid="d3/d17/class_c_make_r_c_1_1_detail_1_1_directory_1a9702671345e2a242f6f245987b5367fc" kind="typedef"><name>BaseIterator</name></member>
+    <member refid="d3/d17/class_c_make_r_c_1_1_detail_1_1_directory_1a4c195199ab78279ab571a8cf2dea871d" kind="typedef"><name>ConstIterator</name></member>
+    <member refid="d3/d17/class_c_make_r_c_1_1_detail_1_1_directory_1a3148cfe9eccc3819c5c15e2e1c3db8ac" kind="variable"><name>_files</name></member>
+    <member refid="d3/d17/class_c_make_r_c_1_1_detail_1_1_directory_1a23ae57416849fce4dfc61d24a43c61ce" kind="variable"><name>_dirs</name></member>
+    <member refid="d3/d17/class_c_make_r_c_1_1_detail_1_1_directory_1abab781792e29a0f758f09fe378fe7aba" kind="variable"><name>_index</name></member>
+    <member refid="d3/d17/class_c_make_r_c_1_1_detail_1_1_directory_1a11b5d65496f7c6548acb3a021c52dab9" kind="function"><name>Directory</name></member>
+    <member refid="d3/d17/class_c_make_r_c_1_1_detail_1_1_directory_1a14df5ba2e753400f86921ee8d51978de" kind="function"><name>Directory</name></member>
+    <member refid="d3/d17/class_c_make_r_c_1_1_detail_1_1_directory_1a69a33c818bec9e2afb82de42aeb331df" kind="function"><name>AddSubDir</name></member>
+    <member refid="d3/d17/class_c_make_r_c_1_1_detail_1_1_directory_1a2d68a46ef296e1419b9284404dd7f6e8" kind="function"><name>AddFile</name></member>
+    <member refid="d3/d17/class_c_make_r_c_1_1_detail_1_1_directory_1a1a37503b11b08f3267f6c33cee47fc23" kind="function"><name>Get</name></member>
+    <member refid="d3/d17/class_c_make_r_c_1_1_detail_1_1_directory_1ae1569fc4fb303b079330ca6f4241d2c2" kind="function"><name>Begin</name></member>
+    <member refid="d3/d17/class_c_make_r_c_1_1_detail_1_1_directory_1a3a51d595262bb6ca91f85b4e106b105f" kind="function"><name>End</name></member>
+  </compound>
+  <compound refid="da/d59/class_c_make_r_c_1_1_directory_entry" kind="class"><name>CMakeRC::DirectoryEntry</name>
+    <member refid="da/d59/class_c_make_r_c_1_1_directory_entry_1a646b40c7b36660599356f97d8bd506d8" kind="variable"><name>_fname</name></member>
+    <member refid="da/d59/class_c_make_r_c_1_1_directory_entry_1ae1a59731a6b7a04239dbfe8484c7ec25" kind="variable"><name>_item</name></member>
+    <member refid="da/d59/class_c_make_r_c_1_1_directory_entry_1afa4e984e646c6fd9802fc888a6adb09b" kind="function"><name>DirectoryEntry</name></member>
+    <member refid="da/d59/class_c_make_r_c_1_1_directory_entry_1adac92932fc5ad6f98cde2392fdc3dc4e" kind="function"><name>DirectoryEntry</name></member>
+    <member refid="da/d59/class_c_make_r_c_1_1_directory_entry_1a3201c2d5ac5e2268f669ed1b7aa4bdce" kind="function"><name>Filename</name></member>
+    <member refid="da/d59/class_c_make_r_c_1_1_directory_entry_1acbf4f57d8c5688879ee63e3d39634416" kind="function"><name>Filename</name></member>
+    <member refid="da/d59/class_c_make_r_c_1_1_directory_entry_1aa6f38441e073b7c203aaeb573bd43b7a" kind="function"><name>IsFile</name></member>
+    <member refid="da/d59/class_c_make_r_c_1_1_directory_entry_1a0630f2f2c01df34707c28f386ea3fa90" kind="function"><name>IsDirectory</name></member>
+  </compound>
+  <compound refid="d7/def/class_d_p_i_scale" kind="class"><name>DPIScale</name>
+    <member refid="d7/def/class_d_p_i_scale_1a3bb7db817a90eb4208dd3cbb37b450d2" kind="variable"><name>scaleX</name></member>
+    <member refid="d7/def/class_d_p_i_scale_1a42354861f68caeee9c38bd96d9079abd" kind="variable"><name>scaleY</name></member>
+    <member refid="d7/def/class_d_p_i_scale_1a16d2a9e0076698eb6a77e357fb81b89a" kind="function"><name>Initialize</name></member>
+    <member refid="d7/def/class_d_p_i_scale_1a7b527c2c60184cb8afb7262894db385f" kind="function"><name>PixelsToDips</name></member>
+  </compound>
+  <compound refid="d2/df9/class_c_make_r_c_1_1_embedded_file_system" kind="class"><name>CMakeRC::EmbeddedFileSystem</name>
+    <member refid="d2/df9/class_c_make_r_c_1_1_embedded_file_system_1a907c3ddde3effeb4b97f3c5b4d23988d" kind="variable"><name>_index</name></member>
+    <member refid="d2/df9/class_c_make_r_c_1_1_embedded_file_system_1ab8e4e1221710c44add0f329b6a3cad47" kind="function"><name>_get</name></member>
+    <member refid="d2/df9/class_c_make_r_c_1_1_embedded_file_system_1a9163d770a3ebcf479cd630690703cc05" kind="function"><name>EmbeddedFileSystem</name></member>
+    <member refid="d2/df9/class_c_make_r_c_1_1_embedded_file_system_1ae49cd6b12ff520cc722953dafc90bfe7" kind="function"><name>open</name></member>
+    <member refid="d2/df9/class_c_make_r_c_1_1_embedded_file_system_1acf69f5466bd4c59e48451a235ac7ab47" kind="function"><name>IsFile</name></member>
+    <member refid="d2/df9/class_c_make_r_c_1_1_embedded_file_system_1aacaaa6554852380e3c4e9529440482c5" kind="function"><name>IsDirectory</name></member>
+    <member refid="d2/df9/class_c_make_r_c_1_1_embedded_file_system_1acf6a8b5508470806f06e45b0394b794c" kind="function"><name>Exists</name></member>
+    <member refid="d2/df9/class_c_make_r_c_1_1_embedded_file_system_1aa295b7f7c1aef39c3ef86bc472d19a99" kind="function"><name>IterateDirectory</name></member>
+  </compound>
+  <compound refid="d6/dc7/class_c_make_r_c_1_1_file" kind="class"><name>CMakeRC::File</name>
+    <member refid="d6/dc7/class_c_make_r_c_1_1_file_1a15ff727ef2f71bdc6a6e16e909764fe0" kind="typedef"><name>Iterator</name></member>
+    <member refid="d6/dc7/class_c_make_r_c_1_1_file_1a409b19a989325a4f9c1cc853a90aa45d" kind="typedef"><name>ConstIterator</name></member>
+    <member refid="d6/dc7/class_c_make_r_c_1_1_file_1ae620455a132951e883cb61ff4af16f02" kind="variable"><name>_begin</name></member>
+    <member refid="d6/dc7/class_c_make_r_c_1_1_file_1a701343f0f39c2d7e037a7359f98f62da" kind="variable"><name>_end</name></member>
+    <member refid="d6/dc7/class_c_make_r_c_1_1_file_1a73500aa6c3dfaacf203d8d227d22ff36" kind="function"><name>File</name></member>
+    <member refid="d6/dc7/class_c_make_r_c_1_1_file_1a7490f309a3f2579ae6568bae31923aa9" kind="function"><name>File</name></member>
+    <member refid="d6/dc7/class_c_make_r_c_1_1_file_1a8190a209e6a026ee8fab3244412d11bb" kind="function"><name>Begin</name></member>
+    <member refid="d6/dc7/class_c_make_r_c_1_1_file_1affe52cb4e1449c3c522aec515631828e" kind="function"><name>CBegin</name></member>
+    <member refid="d6/dc7/class_c_make_r_c_1_1_file_1a690dfb10e300098bf1ce19e38bee236b" kind="function"><name>End</name></member>
+    <member refid="d6/dc7/class_c_make_r_c_1_1_file_1a2f16cd3bfd3bc7aeaef3eebbb882b684" kind="function"><name>CEnd</name></member>
+    <member refid="d6/dc7/class_c_make_r_c_1_1_file_1ae50497b1ca22530f084d3b9cc48da9a6" kind="function"><name>Size</name></member>
+  </compound>
+  <compound refid="d0/d80/class_c_make_r_c_1_1_detail_1_1_file_data" kind="class"><name>CMakeRC::Detail::FileData</name>
+    <member refid="d0/d80/class_c_make_r_c_1_1_detail_1_1_file_data_1a02153c6e1ef5d9aeb40abfe1023b92d3" kind="variable"><name>begin_ptr</name></member>
+    <member refid="d0/d80/class_c_make_r_c_1_1_detail_1_1_file_data_1ad2b8490904a373caa51c8a2ce4c6d935" kind="variable"><name>end_ptr</name></member>
+    <member refid="d0/d80/class_c_make_r_c_1_1_detail_1_1_file_data_1ab652c9133fdf6f086603c5cac4095b7e" kind="function"><name>FileData</name></member>
+    <member refid="d0/d80/class_c_make_r_c_1_1_detail_1_1_file_data_1a7bfd974316fceb83eab3d28069a8d91d" kind="function"><name>FileData</name></member>
+  </compound>
+  <compound refid="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory" kind="class"><name>CMakeRC::Detail::FileOrDirectory</name>
+    <member refid="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory_1a0320eaf17d4042508cb7182f0da57e32" kind="variable"><name>_data</name></member>
+    <member refid="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory_1a5f3961d4f94b3735131c2b9970f41615" kind="variable"><name>_is_file</name></member>
+    <member refid="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory_1a2038b105526e304e8dc4eaf2c08d7371" kind="function"><name>FileOrDirectory</name></member>
+    <member refid="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory_1a7ed2fb44d81150cf5b0446cc717018af" kind="function"><name>FileOrDirectory</name></member>
+    <member refid="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory_1a68fac370f8ff769caa898820b963bf14" kind="function"><name>IsFile</name></member>
+    <member refid="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory_1aafd677b5751bb0b18785bebdf5af8b76" kind="function"><name>IsDirectory</name></member>
+    <member refid="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory_1adc7825ac25d1c365981aa55071b2d960" kind="function"><name>AsDirectory</name></member>
+    <member refid="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory_1aa5d382deb2e8535c46a63b5a4d770cde" kind="function"><name>AsFile</name></member>
+  </compound>
+  <compound refid="de/d22/class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator" kind="class"><name>CMakeRC::Detail::Directory::Iterator</name>
+    <member refid="de/d22/class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_1a7b09a33b23a72041c3d60d34c793a9e1" kind="typedef"><name>ValueType</name></member>
+    <member refid="de/d22/class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_1a2939cae9653e6a7c0b679d496e01db42" kind="typedef"><name>DifferenceType</name></member>
+    <member refid="de/d22/class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_1a56480d145a258e096b732aae514a8986" kind="typedef"><name>pointer</name></member>
+    <member refid="de/d22/class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_1a8adb2bc97458deae8c4c1f7551c0ba04" kind="typedef"><name>reference</name></member>
+    <member refid="de/d22/class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_1a694b50c7e4039f4fe077ab64c9904377" kind="typedef"><name>IteratorCategory</name></member>
+    <member refid="de/d22/class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_1a90d2ad375b46f9feb1c091305227cbe8" kind="variable"><name>_base_iter</name></member>
+    <member refid="de/d22/class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_1aa71298b1f355b6b6f5716e7c5f0f0405" kind="variable"><name>_end_iter</name></member>
+    <member refid="de/d22/class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_1a3adf6d733347cd4f988f49c35b75ff93" kind="function"><name>Iterator</name></member>
+    <member refid="de/d22/class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_1abc285da5bc94423407401bcd9e6b8672" kind="function"><name>Iterator</name></member>
+    <member refid="de/d22/class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_1a33d2a59815371ffaf72a553048efc5e0" kind="function"><name>Begin</name></member>
+    <member refid="de/d22/class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_1a4339f3814d089274ebb0f1f37af2c47a" kind="function"><name>End</name></member>
+    <member refid="de/d22/class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_1ad7159b61c886fc6639a11cfa0e1d3f88" kind="function"><name>operator*</name></member>
+    <member refid="de/d22/class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_1a46c7cb35cb6cf93b52bdbe8c9f3e35a2" kind="function"><name>operator==</name></member>
+    <member refid="de/d22/class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_1ac5bacfe1875369c54eed050d0044397c" kind="function"><name>operator!=</name></member>
+    <member refid="de/d22/class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_1a0cd610a6a09fe457d447b0b283be4998" kind="function"><name>operator++</name></member>
+    <member refid="de/d22/class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_1a78e28e88ff8be18a2cbfd6c1610461d1" kind="function"><name>operator++</name></member>
+  </compound>
+  <compound refid="d2/d5e/class_main_component" kind="class"><name>MainComponent</name>
+    <member refid="d2/d5e/class_main_component_1a7d3e5127fce1bd8fde64ada377c54852" kind="variable"><name>pFactory</name></member>
+    <member refid="d2/d5e/class_main_component_1aacab24f179f68622014e624c71d5cf71" kind="variable"><name>pRenderTarget</name></member>
+    <member refid="d2/d5e/class_main_component_1a51d0525d05ee8a081a9203870dda47ee" kind="variable"><name>pBrush</name></member>
+    <member refid="d2/d5e/class_main_component_1a69d6b4a4e7e62fe992112be1820f1b05" kind="variable"><name>pBrushB</name></member>
+    <member refid="d2/d5e/class_main_component_1a9ea90fecfbc01684557afd2403c07b9d" kind="variable"><name>pBrushC</name></member>
+    <member refid="d2/d5e/class_main_component_1ac0fd3834382e2478b512564e2b4710f9" kind="variable"><name>ellipseA</name></member>
+    <member refid="d2/d5e/class_main_component_1af4f7ab51fc49751836a90ece6cf9b440" kind="variable"><name>ellipseB</name></member>
+    <member refid="d2/d5e/class_main_component_1a9691c0d06ca0ed4ad9f7a09c8b81593a" kind="variable"><name>ellipseC</name></member>
+    <member refid="d2/d5e/class_main_component_1ab97d350faaca1a25a99f8309302bdeb6" kind="variable"><name>ptMouse</name></member>
+    <member refid="d2/d5e/class_main_component_1a85254935b98beac9128189c6a577d7be" kind="function"><name>MainComponent</name></member>
+    <member refid="d2/d5e/class_main_component_1a10413353888f65b0282eb32cf4a012ef" kind="function"><name>ClassName</name></member>
+    <member refid="d2/d5e/class_main_component_1a28a911446776a6ea7777f0cde9960d16" kind="function"><name>HandleMessage</name></member>
+    <member refid="d2/d5e/class_main_component_1a13b313e495b2911a9aded8b3bf50953d" kind="function"><name>CalculateLayout</name></member>
+    <member refid="d2/d5e/class_main_component_1ad513e8d388d5e229c0d4850a7d09b5f0" kind="function"><name>CreateGraphicsResources</name></member>
+    <member refid="d2/d5e/class_main_component_1a47ac035cb7b724fe01a45a421d63cc7f" kind="function"><name>DiscardGraphicsResources</name></member>
+    <member refid="d2/d5e/class_main_component_1a9dc97c9d3abef9e02c68956cf99e43da" kind="function"><name>OnCreate</name></member>
+    <member refid="d2/d5e/class_main_component_1ae1a328c17e46ca15ffc552df49bf887e" kind="function"><name>OnPaint</name></member>
+    <member refid="d2/d5e/class_main_component_1a04f9037978c0eda84b67aec48f09a7f5" kind="function"><name>Resize</name></member>
+    <member refid="d2/d5e/class_main_component_1a10c91bf54dfeee51d23f9d5007c94fcf" kind="function"><name>OnClose</name></member>
+    <member refid="d2/d5e/class_main_component_1a2879d344d4000e1bec8782b6e152a0de" kind="function"><name>OnDestroy</name></member>
+  </compound>
+  <compound refid="d9/dc6/class_main_window" kind="class"><name>MainWindow</name>
+    <member refid="d9/dc6/class_main_window_1a0230fe7f0fab30b98c45cebfc5e224db" kind="function"><name>MainWindow</name></member>
+    <member refid="d9/dc6/class_main_window_1ac73b70e36c04de55a2b049637408c21e" kind="function"><name>ClassName</name></member>
+    <member refid="d9/dc6/class_main_window_1a590370509ff31b48345edf4fd1dee572" kind="function"><name>HandleMessage</name></member>
+  </compound>
+  <compound refid="da/d00/class_smart_pointer" kind="class"><name>SmartPointer</name>
+    <member refid="da/d00/class_smart_pointer_1aac6766043d71d6919260b32e3025f5ad" kind="variable"><name>ptr</name></member>
+    <member refid="da/d00/class_smart_pointer_1af23b718566d4beddf609e63d1f278459" kind="function"><name>SmartPointer</name></member>
+    <member refid="da/d00/class_smart_pointer_1a97fa335bc801171776f623bbb92b4757" kind="function"><name>SmartPointer</name></member>
+    <member refid="da/d00/class_smart_pointer_1a68ce3998e4b3ac9ffaca59064adfdb11" kind="function"><name>SmartPointer</name></member>
+    <member refid="da/d00/class_smart_pointer_1a85bb3a40507619ca59672273ba90271d" kind="function"><name>~SmartPointer</name></member>
+    <member refid="da/d00/class_smart_pointer_1a1a542a4be21e5f557947e271f136063a" kind="function"><name>operator ComClass *</name></member>
+    <member refid="da/d00/class_smart_pointer_1a684cf8a7fadb2431ef8486fe166537d9" kind="function"><name>operator*</name></member>
+    <member refid="da/d00/class_smart_pointer_1a01c7fb69b9c39d04e85e6990dd24c5e9" kind="function"><name>operator-&gt;</name></member>
+    <member refid="da/d00/class_smart_pointer_1a888097211726dc2ed5ee0e948ff49bf7" kind="function"><name>operator=</name></member>
+    <member refid="da/d00/class_smart_pointer_1a89af65521b23dbc25c36f8ecc197acba" kind="function"><name>operator=</name></member>
+    <member refid="da/d00/class_smart_pointer_1a388d5622da034786e168895b1b936100" kind="function"><name>resetAndGetAddress</name></member>
+    <member refid="da/d00/class_smart_pointer_1af569386f98a741151e4a6c9148fc415c" kind="function"><name>CoCreateInstance</name></member>
+    <member refid="da/d00/class_smart_pointer_1a0fc132c1d919b1c6523789ed8687d44c" kind="function"><name>QueryInterface</name></member>
+    <member refid="da/d00/class_smart_pointer_1ae8195378156382f79c9cbd10b18f961d" kind="function"><name>QueryInterface</name></member>
+    <member refid="da/d00/class_smart_pointer_1a698ca40a80fd57a62e769371505f2c78" kind="function"><name>getInterface</name></member>
+    <member refid="da/d00/class_smart_pointer_1a2bfb0ebe9f8d89c4c3158e752e66737f" kind="function"><name>release</name></member>
+    <member refid="da/d00/class_smart_pointer_1a166c58abb98f9ad23318ca64baf65dfa" kind="function"><name>operator&amp;</name></member>
+  </compound>
+  <compound refid="d9/d93/class_smart_pointer_helper" kind="class"><name>SmartPointerHelper</name>
+    <member refid="d9/d93/class_smart_pointer_helper_1a5ebedea882de1289a08b66f6fc806b9e" kind="function"><name>SmartPointerHelper</name></member>
+    <member refid="d9/d93/class_smart_pointer_helper_1a14e73f95576736f3274f54ee777761a2" kind="function"><name>QueryInterface</name></member>
+  </compound>
+  <compound refid="dd/dbb/class_smart_pointer_helper_base" kind="class"><name>SmartPointerHelperBase</name>
+    <member refid="dd/dbb/class_smart_pointer_helper_base_1ad2bc91bd39ccd269a3eec9cdcce0f8cf" kind="variable"><name>refCount</name></member>
+    <member refid="dd/dbb/class_smart_pointer_helper_base_1ac76861e9458ab17c981b2b76f5890321" kind="function"><name>SmartPointerHelperBase</name></member>
+    <member refid="dd/dbb/class_smart_pointer_helper_base_1aef037e04d1a2ee08824b405b077d4b09" kind="function"><name>~SmartPointerHelperBase</name></member>
+    <member refid="dd/dbb/class_smart_pointer_helper_base_1a2c9426410eeb136beba8123b5d84dc6e" kind="function"><name>AddRef</name></member>
+    <member refid="dd/dbb/class_smart_pointer_helper_base_1a693a3f65e96897ad99ccc1e95c7c0fcd" kind="function"><name>Release</name></member>
+    <member refid="dd/dbb/class_smart_pointer_helper_base_1accdc2a95363ae4f3e76d5dc00e8fef38" kind="function"><name>castToType</name></member>
+    <member refid="dd/dbb/class_smart_pointer_helper_base_1a93350be3711ec44389ccb85607da79e8" kind="function"><name>QueryInterface</name></member>
+  </compound>
+  <compound refid="d7/d6d/class_win32_1_1_core_1_1_native_1_1_unicode_handler" kind="class"><name>Win32::Core::Native::UnicodeHandler</name>
+    <member refid="d7/d6d/class_win32_1_1_core_1_1_native_1_1_unicode_handler_1aba75ad233dfb800918a8da0928696bbc" kind="function"><name>SetVar</name></member>
+    <member refid="d7/d6d/class_win32_1_1_core_1_1_native_1_1_unicode_handler_1a16caa495c648eb7fb185d8b67d2793ae" kind="function"><name>SetVarA</name></member>
+    <member refid="d7/d6d/class_win32_1_1_core_1_1_native_1_1_unicode_handler_1a1bf1d390b3b0b5f820af5aed44392da6" kind="function"><name>SetVarW</name></member>
+  </compound>
+  <compound refid="dd/d94/namespaceanonymous__namespace_02win32___application_icon__png_8cpp_03" kind="namespace"><name>anonymous_namespace{win32_ApplicationIcon_png.cpp}</name>
+    <member refid="dd/d94/namespaceanonymous__namespace_02win32___application_icon__png_8cpp_03_1ac6c90bce451deb9ab83bd261242e8d95" kind="variable"><name>ApplicationIcon_png_array</name></member>
+  </compound>
+  <compound refid="de/dd4/namespaceanonymous__namespace_02win32___application_icon__png_8hpp_03" kind="namespace"><name>anonymous_namespace{win32_ApplicationIcon_png.hpp}</name>
+    <member refid="de/dd4/namespaceanonymous__namespace_02win32___application_icon__png_8hpp_03_1a2864c5b2f46df3f8e75f2223936b1b71" kind="variable"><name>ApplicationIcon_png_array</name></member>
+  </compound>
+  <compound refid="d2/d49/namespaceanonymous__namespace_02win32___logo__png_8cpp_03" kind="namespace"><name>anonymous_namespace{win32_Logo_png.cpp}</name>
+    <member refid="d2/d49/namespaceanonymous__namespace_02win32___logo__png_8cpp_03_1a124391fb64ab31df38182b1f155e09fa" kind="variable"><name>Logo_png_array</name></member>
+  </compound>
+  <compound refid="d5/d7d/namespaceanonymous__namespace_02win32___logo__png_8hpp_03" kind="namespace"><name>anonymous_namespace{win32_Logo_png.hpp}</name>
+    <member refid="d5/d7d/namespaceanonymous__namespace_02win32___logo__png_8hpp_03_1a546cd21fc1510adefd4d16011370bd22" kind="variable"><name>Logo_png_array</name></member>
+  </compound>
+  <compound refid="d6/db4/namespaceanonymous__namespace_02win32___small_logo44x44__png_8cpp_03" kind="namespace"><name>anonymous_namespace{win32_SmallLogo44x44_png.cpp}</name>
+    <member refid="d6/db4/namespaceanonymous__namespace_02win32___small_logo44x44__png_8cpp_03_1aa580ad13d7f57abdcb3c8aaba6f0cd76" kind="variable"><name>SmallLogo44x44_png_array</name></member>
+  </compound>
+  <compound refid="d6/da8/namespaceanonymous__namespace_02win32___small_logo44x44__png_8hpp_03" kind="namespace"><name>anonymous_namespace{win32_SmallLogo44x44_png.hpp}</name>
+    <member refid="d6/da8/namespaceanonymous__namespace_02win32___small_logo44x44__png_8hpp_03_1a9f9fa76335ddbfab913e598b1e314511" kind="variable"><name>SmallLogo44x44_png_array</name></member>
+  </compound>
+  <compound refid="dd/d9a/namespaceanonymous__namespace_02win32___small_logo__png_8cpp_03" kind="namespace"><name>anonymous_namespace{win32_SmallLogo_png.cpp}</name>
+    <member refid="dd/d9a/namespaceanonymous__namespace_02win32___small_logo__png_8cpp_03_1ac036473f1c8238ed900bf1010b580a94" kind="variable"><name>SmallLogo_png_array</name></member>
+  </compound>
+  <compound refid="de/d59/namespaceanonymous__namespace_02win32___small_logo__png_8hpp_03" kind="namespace"><name>anonymous_namespace{win32_SmallLogo_png.hpp}</name>
+    <member refid="de/d59/namespaceanonymous__namespace_02win32___small_logo__png_8hpp_03_1a5d4bd141099ec36731caa965103f6534" kind="variable"><name>SmallLogo_png_array</name></member>
+  </compound>
+  <compound refid="dc/db0/namespaceanonymous__namespace_02win32___splash_screen__png_8cpp_03" kind="namespace"><name>anonymous_namespace{win32_SplashScreen_png.cpp}</name>
+    <member refid="dc/db0/namespaceanonymous__namespace_02win32___splash_screen__png_8cpp_03_1a23fff96e9e36951093e9e7f65354e05f" kind="variable"><name>SplashScreen_png_array</name></member>
+  </compound>
+  <compound refid="d7/d81/namespaceanonymous__namespace_02win32___splash_screen__png_8hpp_03" kind="namespace"><name>anonymous_namespace{win32_SplashScreen_png.hpp}</name>
+    <member refid="d7/d81/namespaceanonymous__namespace_02win32___splash_screen__png_8hpp_03_1a35af113e8ad9e39e58041c36441c5895" kind="variable"><name>SplashScreen_png_array</name></member>
+  </compound>
+  <compound refid="de/d43/namespaceanonymous__namespace_02win32___store_logo__png_8cpp_03" kind="namespace"><name>anonymous_namespace{win32_StoreLogo_png.cpp}</name>
+    <member refid="de/d43/namespaceanonymous__namespace_02win32___store_logo__png_8cpp_03_1a4ad0c9fc1efe8b6d4b33f61db58f7fcb" kind="variable"><name>StoreLogo_png_array</name></member>
+  </compound>
+  <compound refid="d3/d70/namespaceanonymous__namespace_02win32___store_logo__png_8hpp_03" kind="namespace"><name>anonymous_namespace{win32_StoreLogo_png.hpp}</name>
+    <member refid="d3/d70/namespaceanonymous__namespace_02win32___store_logo__png_8hpp_03_1a9d153cb022292650e2e02cb6f4eaa02d" kind="variable"><name>StoreLogo_png_array</name></member>
+  </compound>
+  <compound refid="d4/d5a/namespaceanonymous__namespace_02win32___windows___temporary_key__pfx_8cpp_03" kind="namespace"><name>anonymous_namespace{win32_Windows_TemporaryKey_pfx.cpp}</name>
+    <member refid="d4/d5a/namespaceanonymous__namespace_02win32___windows___temporary_key__pfx_8cpp_03_1a3f2fd5c7a277bb4036b7d98b56b7d0ae" kind="variable"><name>Windows_TemporaryKey_pfx_array</name></member>
+  </compound>
+  <compound refid="dd/d89/namespaceanonymous__namespace_02win32___windows___temporary_key__pfx_8hpp_03" kind="namespace"><name>anonymous_namespace{win32_Windows_TemporaryKey_pfx.hpp}</name>
+    <member refid="dd/d89/namespaceanonymous__namespace_02win32___windows___temporary_key__pfx_8hpp_03_1a977dbd25903a1734ee0bf96bfcfa1fc8" kind="variable"><name>Windows_TemporaryKey_pfx_array</name></member>
+  </compound>
+  <compound refid="d6/dcb/namespace_c_make_r_c" kind="namespace"><name>CMakeRC</name>
+    <member refid="d6/dcb/namespace_c_make_r_c_1a5b0306b0207652d136c3ae6b498102cd" kind="typedef"><name>DirectoryIterator</name></member>
+  </compound>
+  <compound refid="d9/def/namespace_c_make_r_c_1_1_detail" kind="namespace"><name>CMakeRC::Detail</name>
+    <member refid="d9/def/namespace_c_make_r_c_1_1_detail_1af8b7b0ba529bcc74373e4ee395b54529" kind="typedef"><name>IndexType</name></member>
+    <member refid="d9/def/namespace_c_make_r_c_1_1_detail_1a66d1ba033d0fd3128f0c20fc3652070a" kind="function"><name>SplitPath</name></member>
+    <member refid="d9/def/namespace_c_make_r_c_1_1_detail_1a6553506577f146fdcb7e1588a74dd102" kind="function"><name>NormalizePath</name></member>
+  </compound>
+  <compound refid="da/d36/namespace_c_make_r_c_1_1_img" kind="namespace"><name>CMakeRC::Img</name>
+    <member refid="da/d36/namespace_c_make_r_c_1_1_img_1a0d7bf8b21dd960329ae3658a8510c405" kind="function"><name>GetFileSystem</name></member>
+  </compound>
+  <compound refid="d0/d57/namespace_c_make_r_c_1_1_img_1_1anonymous__namespace_02win32__png_8cpp_03" kind="namespace"><name>CMakeRC::Img::anonymous_namespace{win32_png.cpp}</name>
+    <member refid="d0/d57/namespace_c_make_r_c_1_1_img_1_1anonymous__namespace_02win32__png_8cpp_03_1a8ae26bf1025e45df8c4ff32fcecce88d" kind="function"><name>GetRootIndex</name></member>
+  </compound>
+  <compound refid="dd/d06/namespace_c_make_r_c_1_1_img_1_1anonymous__namespace_02win32__png_8hpp_03" kind="namespace"><name>CMakeRC::Img::anonymous_namespace{win32_png.hpp}</name>
+    <member refid="dd/d06/namespace_c_make_r_c_1_1_img_1_1anonymous__namespace_02win32__png_8hpp_03_1a8ecb64d8282ff68791d533320cf6f705" kind="function"><name>GetRootIndex</name></member>
+  </compound>
+  <compound refid="db/d14/namespace_c_make_r_c_1_1_img_1_1_application_icon" kind="namespace"><name>CMakeRC::Img::ApplicationIcon</name>
+    <member refid="db/d14/namespace_c_make_r_c_1_1_img_1_1_application_icon_1ac1eae89de385dbeaea9ab828a32452ab" kind="variable"><name>ApplicationIcon_png_begin</name></member>
+    <member refid="db/d14/namespace_c_make_r_c_1_1_img_1_1_application_icon_1aa62fbd0de5ef5c7de893cb8c485e55c7" kind="variable"><name>ApplicationIcon_png_end</name></member>
+  </compound>
+  <compound refid="d7/db5/namespace_c_make_r_c_1_1_img_1_1_logo" kind="namespace"><name>CMakeRC::Img::Logo</name>
+    <member refid="d7/db5/namespace_c_make_r_c_1_1_img_1_1_logo_1a73bc68f2a1a4f72b095cfe41620fc2f6" kind="variable"><name>Logo_png_begin</name></member>
+    <member refid="d7/db5/namespace_c_make_r_c_1_1_img_1_1_logo_1ac1ee50cec4d537f6fd30cf6de616e97e" kind="variable"><name>Logo_png_end</name></member>
+  </compound>
+  <compound refid="d7/d01/namespace_c_make_r_c_1_1_img_1_1_small_logo" kind="namespace"><name>CMakeRC::Img::SmallLogo</name>
+    <member refid="d7/d01/namespace_c_make_r_c_1_1_img_1_1_small_logo_1acae4e49bf466b583e2759b895688fd28" kind="variable"><name>SmallLogo_png_begin</name></member>
+    <member refid="d7/d01/namespace_c_make_r_c_1_1_img_1_1_small_logo_1a4464ebd48296334e1e395d1bd3ee5f2a" kind="variable"><name>SmallLogo_png_end</name></member>
+  </compound>
+  <compound refid="d7/de8/namespace_c_make_r_c_1_1_img_1_1_small_logo44x44" kind="namespace"><name>CMakeRC::Img::SmallLogo44x44</name>
+    <member refid="d7/de8/namespace_c_make_r_c_1_1_img_1_1_small_logo44x44_1a5ee598d6a3df9ee6b10ea7cc70d485ee" kind="variable"><name>SmallLogo44x44_png_begin</name></member>
+    <member refid="d7/de8/namespace_c_make_r_c_1_1_img_1_1_small_logo44x44_1a6bc9302c52694082d104e00bb2133e8a" kind="variable"><name>SmallLogo44x44_png_end</name></member>
+  </compound>
+  <compound refid="da/d7c/namespace_c_make_r_c_1_1_img_1_1_splash_screen" kind="namespace"><name>CMakeRC::Img::SplashScreen</name>
+    <member refid="da/d7c/namespace_c_make_r_c_1_1_img_1_1_splash_screen_1ae90ef8aff45730d78f2e1ae1b5ed74f6" kind="variable"><name>SplashScreen_png_begin</name></member>
+    <member refid="da/d7c/namespace_c_make_r_c_1_1_img_1_1_splash_screen_1ac39bec0ecccc979bac12c7aa8c6e9e96" kind="variable"><name>SplashScreen_png_end</name></member>
+  </compound>
+  <compound refid="d8/d5c/namespace_c_make_r_c_1_1_img_1_1_store_logo" kind="namespace"><name>CMakeRC::Img::StoreLogo</name>
+    <member refid="d8/d5c/namespace_c_make_r_c_1_1_img_1_1_store_logo_1a6e1599c660b57b41569bc3bc7df2e31b" kind="variable"><name>StoreLogo_png_begin</name></member>
+    <member refid="d8/d5c/namespace_c_make_r_c_1_1_img_1_1_store_logo_1a14f9e6da55cf2f890ed328682455b481" kind="variable"><name>StoreLogo_png_end</name></member>
+  </compound>
+  <compound refid="d5/df5/namespace_c_make_r_c_1_1_key" kind="namespace"><name>CMakeRC::Key</name>
+    <member refid="d5/df5/namespace_c_make_r_c_1_1_key_1abec17c77f3a6bae3a6a946644079c963" kind="function"><name>GetFileSystem</name></member>
+  </compound>
+  <compound refid="d4/d3a/namespace_c_make_r_c_1_1_key_1_1anonymous__namespace_02win32__pfx_8cpp_03" kind="namespace"><name>CMakeRC::Key::anonymous_namespace{win32_pfx.cpp}</name>
+    <member refid="d4/d3a/namespace_c_make_r_c_1_1_key_1_1anonymous__namespace_02win32__pfx_8cpp_03_1a3638d5e7c956120d01f851ce527dd562" kind="function"><name>GetRootIndex</name></member>
+  </compound>
+  <compound refid="df/dd9/namespace_c_make_r_c_1_1_key_1_1anonymous__namespace_02win32__pfx_8hpp_03" kind="namespace"><name>CMakeRC::Key::anonymous_namespace{win32_pfx.hpp}</name>
+    <member refid="df/dd9/namespace_c_make_r_c_1_1_key_1_1anonymous__namespace_02win32__pfx_8hpp_03_1a0a4b91dbb89948c6a480192303f3ed4f" kind="function"><name>GetRootIndex</name></member>
+  </compound>
+  <compound refid="dd/d19/namespace_c_make_r_c_1_1_key_1_1_store_logo" kind="namespace"><name>CMakeRC::Key::StoreLogo</name>
+  </compound>
+  <compound refid="d0/d76/namespace_c_make_r_c_1_1_key_1_1_windows___temporary_key" kind="namespace"><name>CMakeRC::Key::Windows_TemporaryKey</name>
+    <member refid="d0/d76/namespace_c_make_r_c_1_1_key_1_1_windows___temporary_key_1a2c69701281426a4b05274544083e2eaa" kind="variable"><name>Windows_TemporaryKey_pfx_begin</name></member>
+    <member refid="d0/d76/namespace_c_make_r_c_1_1_key_1_1_windows___temporary_key_1a05f95a7cbbe5563a026b239b4c040994" kind="variable"><name>Windows_TemporaryKey_pfx_end</name></member>
+  </compound>
+  <compound refid="db/d7f/namespace_detail" kind="namespace"><name>Detail</name>
+  </compound>
+  <compound refid="d5/d23/namespace_logo" kind="namespace"><name>Logo</name>
+  </compound>
+  <compound refid="d8/dcc/namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="d6/dd1/namespace_win32" kind="namespace"><name>Win32</name>
+  </compound>
+  <compound refid="d8/d08/namespace_win32_1_1_core" kind="namespace"><name>Win32::Core</name>
+  </compound>
+  <compound refid="d5/dc1/namespace_win32_1_1_core_1_1_native" kind="namespace"><name>Win32::Core::Native</name>
+  </compound>
+  <compound refid="db/dfc/_main_component_8cpp" kind="file"><name>MainComponent.cpp</name>
+  </compound>
+  <compound refid="df/d11/_main_component_8hpp" kind="file"><name>MainComponent.hpp</name>
+    <member refid="df/d11/_main_component_8hpp_1af2a6f9782c805e3b834d63724be264a6" kind="define"><name>_MAIN_COMPONENT_HPP_</name></member>
+  </compound>
+  <compound refid="d0/d11/win32___c_com_ptr_base_8hpp" kind="file"><name>win32_CComPtrBase.hpp</name>
+    <member refid="d0/d11/win32___c_com_ptr_base_8hpp_1a4c277da141207588c2d2caf4fd8b3a14" kind="define"><name>__WIN32_CORE_MEMORY_CCOMPTRBASE_HPP__</name></member>
+  </compound>
+  <compound refid="d9/d31/win32___smart_pointer_8cpp" kind="file"><name>win32_SmartPointer.cpp</name>
+    <member refid="d9/d31/win32___smart_pointer_8cpp_1a53522409e1312cfaf53cebc29bff8008" kind="function"><name>SafeRelease</name></member>
+  </compound>
+  <compound refid="d6/d42/win32___smart_pointer_8hpp" kind="file"><name>win32_SmartPointer.hpp</name>
+    <member refid="d6/d42/win32___smart_pointer_8hpp_1ab584929d88836c1554910b37bb630c4c" kind="define"><name>_WIN32_SMARTPOINTER_HPP_</name></member>
+    <member refid="d6/d42/win32___smart_pointer_8hpp_1a53522409e1312cfaf53cebc29bff8008" kind="function"><name>SafeRelease</name></member>
+  </compound>
+  <compound refid="d2/dcb/win32___basic_native_headers_8hpp" kind="file"><name>win32_BasicNativeHeaders.hpp</name>
+    <member refid="d2/dcb/win32___basic_native_headers_8hpp_1ab4556194b9e42aac4a3d18fe60441011" kind="define"><name>_WIN32_BASICNATIVEHEADERS_HPP_</name></member>
+  </compound>
+  <compound refid="d2/dad/win32___unicode_8hpp" kind="file"><name>win32_Unicode.hpp</name>
+    <member refid="d2/dad/win32___unicode_8hpp_1a8d3caeafbdeaac188f81d07656727fd6" kind="define"><name>_WIN32_UNOCIDE_HPP_</name></member>
+    <member refid="d2/dad/win32___unicode_8hpp_1a273a349f02e26bdb5ba08461085bfe33" kind="define"><name>_NEED_UNICODE</name></member>
+    <member refid="d2/dad/win32___unicode_8hpp_1abf9442f4ff47ef00d0eb7cb89c6dbe25" kind="define"><name>__NAME_AW</name></member>
+    <member refid="d2/dad/win32___unicode_8hpp_1a070ad3774a36cbe5ba8a00456aa14145" kind="define"><name>__NAME_AW_EXT</name></member>
+    <member refid="d2/dad/win32___unicode_8hpp_1acae9c8c2fef8d3d772158a9f0d09785a" kind="define"><name>__NAME_UAW</name></member>
+    <member refid="d2/dad/win32___unicode_8hpp_1a083ea8a4789494cf0fee2e814adccdd9" kind="define"><name>__NAME_UAW_EXT</name></member>
+    <member refid="d2/dad/win32___unicode_8hpp_1aa26766709d1a5678faa69f7d5a791556" kind="define"><name>__STRING_AW</name></member>
+    <member refid="d2/dad/win32___unicode_8hpp_1acc6ec428c466f0fb74fb301db19b500e" kind="define"><name>__PROCNAMEEXT_AW</name></member>
+    <member refid="d2/dad/win32___unicode_8hpp_1a2237d82d5ede1078d7fd34fc533efb4d" kind="define"><name>__TYPEDEF_AW</name></member>
+    <member refid="d2/dad/win32___unicode_8hpp_1a2967e34e4ed1c51a9f53d4707fa8a0cd" kind="define"><name>__TYPEDEF_UAW</name></member>
+  </compound>
+  <compound refid="de/d3b/win32___compiler_support_8hpp" kind="file"><name>win32_CompilerSupport.hpp</name>
+    <member refid="de/d3b/win32___compiler_support_8hpp_1a771a335373392ce4d39460a9ecc5e137" kind="define"><name>_WIN32_COMPILERSUPPORT_HPP_</name></member>
+    <member refid="de/d3b/win32___compiler_support_8hpp_1a1088043cdbd3ef615c4030d29cd5cded" kind="define"><name>__CXX_COMPILER_NAME</name></member>
+    <member refid="de/d3b/win32___compiler_support_8hpp_1a40b8b16a5e6b11570359d0b78cb6af3d" kind="define"><name>__CXX_COMPILER_VERSION_MAJOR</name></member>
+    <member refid="de/d3b/win32___compiler_support_8hpp_1a9c527be2884f7339687a69b4aa87cf7c" kind="define"><name>__CXX_COMPILER_VERSION_MINOR</name></member>
+    <member refid="de/d3b/win32___compiler_support_8hpp_1aea66cf3b6866f8fb0eb6afb45e96c38d" kind="define"><name>__CXX_COMPILER_VERSION_PATCH</name></member>
+    <member refid="de/d3b/win32___compiler_support_8hpp_1aad29fa95ebb2e999203f7f7994b32ef2" kind="define"><name>__CXX_COMPILER_VERSION</name></member>
+    <member refid="de/d3b/win32___compiler_support_8hpp_1aa22cfca56ac7a2629500729febe792ea" kind="define"><name>__ICC_VERSION</name></member>
+    <member refid="de/d3b/win32___compiler_support_8hpp_1a2ed10fdaddb68ba36b513c0bdf9b21ef" kind="define"><name>__MSC_VERSION</name></member>
+    <member refid="de/d3b/win32___compiler_support_8hpp_1aae07d47d74c3107dc2c415606296a793" kind="define"><name>__MSC_WARNING</name></member>
+    <member refid="de/d3b/win32___compiler_support_8hpp_1a568e6bde99652b7fd271ad206cfe38f5" kind="define"><name>__BEGIN_DECLS</name></member>
+    <member refid="de/d3b/win32___compiler_support_8hpp_1a115472f6d0d1035f1885658ce0821537" kind="define"><name>__END_DECLS</name></member>
+    <member refid="de/d3b/win32___compiler_support_8hpp_1ace83bd4f23e2e86ae4adb35df4f02d2e" kind="define"><name>__HAS_FEATURE</name></member>
+    <member refid="de/d3b/win32___compiler_support_8hpp_1a74bbdc3631c955c6ef0b2cc785792fb9" kind="define"><name>__HAS_INCLUDE</name></member>
+    <member refid="de/d3b/win32___compiler_support_8hpp_1a4aa2d07d52bd568a9ee77679b02e1fc4" kind="define"><name>__HAS_ATTRIBUTE</name></member>
+    <member refid="de/d3b/win32___compiler_support_8hpp_1a0cb6b111fb8e7fac4ff7d399b9ae3b81" kind="define"><name>__HAS_C_ATTRIBUTE</name></member>
+    <member refid="de/d3b/win32___compiler_support_8hpp_1a924df9980b07a5ed4b3dc7b57bcc849b" kind="define"><name>__HAS_CPP_ATTRIBUTE</name></member>
+    <member refid="de/d3b/win32___compiler_support_8hpp_1a5e5242ae5fc14529240c69e670761cee" kind="define"><name>__HAS_BUILTIN</name></member>
+    <member refid="de/d3b/win32___compiler_support_8hpp_1a68444933c538955f7f47b22a5f8b784d" kind="define"><name>__HAS_EXTENSION</name></member>
+  </compound>
+  <compound refid="d0/d74/win32___platform_defs_8hpp" kind="file"><name>win32_PlatformDefs.hpp</name>
+    <member refid="d0/d74/win32___platform_defs_8hpp_1a09f9dc37c074670133452cb5d04c2056" kind="define"><name>_WIN32_PLATFORMDEFS_HPP_</name></member>
+    <member refid="d0/d74/win32___platform_defs_8hpp_1a964d381579febb0cc83dcc69890beec0" kind="define"><name>__DECLARE_NON_COPYABLE</name></member>
+    <member refid="d0/d74/win32___platform_defs_8hpp_1adc9b0f127fefc464e5b4e704259c8ced" kind="define"><name>__DECLARE_NON_MOVEABLE</name></member>
+    <member refid="d0/d74/win32___platform_defs_8hpp_1a25195203b724562392caff0a9a74ba84" kind="define"><name>__DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR</name></member>
+    <member refid="d0/d74/win32___platform_defs_8hpp_1aa48cf96123b508654d4c4e9a56e831cb" kind="define"><name>__PREVENT_HEAP_ALLOCATION</name></member>
+  </compound>
+  <compound refid="d6/dce/win32___standard_header_8hpp" kind="file"><name>win32_StandardHeader.hpp</name>
+    <member refid="d6/dce/win32___standard_header_8hpp_1ad1280362da42492bbc11aa78cbf776ad" kind="define"><name>DEC</name></member>
+    <member refid="d6/dce/win32___standard_header_8hpp_1a46d5d95daa1bef867bd0179594310ed5" kind="define"><name>HEX</name></member>
+    <member refid="d6/dce/win32___standard_header_8hpp_1a34ef946465e53d7c48394ac3fe34b710" kind="define"><name>CXXWIN_VERSION_MAJOR</name></member>
+    <member refid="d6/dce/win32___standard_header_8hpp_1a3420a58365670f121b4606b7c3ece482" kind="define"><name>CXXWIN_VERSION_MINOR</name></member>
+    <member refid="d6/dce/win32___standard_header_8hpp_1a258f4db1e4a861c5044652b560da3a3b" kind="define"><name>CXXWIN_VERSION_PATCH</name></member>
+    <member refid="d6/dce/win32___standard_header_8hpp_1a7682547da86a07aa8c6277893f4bfefe" kind="define"><name>CXXWIN_VERSION</name></member>
+    <member refid="d6/dce/win32___standard_header_8hpp_1afa65b5b07bc85fd4ad0c1c73f51a28b3" kind="define"><name>CXXWIN_VERSION_ID</name></member>
+    <member refid="d6/dce/win32___standard_header_8hpp_1a33a68742d73ec73e8c0d4d4585d8fe4b" kind="define"><name>CXXWIN_LONG_NAME</name></member>
+    <member refid="d6/dce/win32___standard_header_8hpp_1af0ac46c948b1f0c3cc4a9222e77a08f6" kind="define"><name>_WIN32_STANDARDHEADER_HPP_</name></member>
+    <member refid="d6/dce/win32___standard_header_8hpp_1a54d2d7742701f3f112afbcd8d4f9ccdb" kind="define"><name>__has_attribute</name></member>
+    <member refid="d6/dce/win32___standard_header_8hpp_1aea1c4f7b66a67b78ad863176338dae8d" kind="define"><name>__has_extension</name></member>
+    <member refid="d6/dce/win32___standard_header_8hpp_1af989845e24678c452b9222afdac95e7f" kind="define"><name>__has_feature</name></member>
+    <member refid="d6/dce/win32___standard_header_8hpp_1ae5510d82e4946f1656f4969911c54736" kind="define"><name>__has_include</name></member>
+    <member refid="d6/dce/win32___standard_header_8hpp_1a447121dcab4275b7839a56082b7a1ab8" kind="define"><name>__has_builtin</name></member>
+    <member refid="d6/dce/win32___standard_header_8hpp_1a2ae9b72bb13abaabfcf2ee0ba7d3fa1d" kind="define"><name>STRINGIFY_HELPER</name></member>
+    <member refid="d6/dce/win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8" kind="define"><name>STRINGIFY</name></member>
+    <member refid="d6/dce/win32___standard_header_8hpp_1afcbd7bcadc0fdb52f1453eed7446606c" kind="define"><name>CONCAT_HELPER</name></member>
+    <member refid="d6/dce/win32___standard_header_8hpp_1a88fa737059e67b4b17ec980e5877361e" kind="define"><name>CONCAT</name></member>
+  </compound>
+  <compound refid="d1/dd2/win32___target_platform_8hpp" kind="file"><name>win32_TargetPlatform.hpp</name>
+    <member refid="d1/dd2/win32___target_platform_8hpp_1a1239f1d4dd6731a9a0c5401f9e2dc58b" kind="define"><name>_WIN32_TARGETPLATFORM_HPP_</name></member>
+    <member refid="d1/dd2/win32___target_platform_8hpp_1a2640479580bf368b6efebd57632f9f87" kind="define"><name>__ARCHITECTURE_IS_X86</name></member>
+  </compound>
+  <compound refid="d2/d9b/win32___toolchain_8hpp" kind="file"><name>win32_Toolchain.hpp</name>
+    <member refid="d2/d9b/win32___toolchain_8hpp_1ae83b595d287b2260c78f34973b3553ef" kind="define"><name>_WIN32_CORE_SYSTEM_TOOLCHAIN_HPP_</name></member>
+  </compound>
+  <compound refid="d1/dd0/win32__core_8cpp" kind="file"><name>win32_core.cpp</name>
+  </compound>
+  <compound refid="d6/dbf/win32__core_8hpp" kind="file"><name>win32_core.hpp</name>
+    <member refid="d6/dbf/win32__core_8hpp_1a875b3f8f6b3853d315fbea6f94697111" kind="define"><name>_WIN32_CORE_H_</name></member>
+  </compound>
+  <compound refid="d9/db1/win32__core_8mm" kind="file"><name>win32_core.mm</name>
+  </compound>
+  <compound refid="dc/dbe/win32___base_window_8hpp" kind="file"><name>win32_BaseWindow.hpp</name>
+    <member refid="dc/dbe/win32___base_window_8hpp_1a591a97a80b7476f939155c8f397abcae" kind="define"><name>_WIN32_BASEWINDOW_HPP_</name></member>
+  </compound>
+  <compound refid="d8/dc2/win32___d_p_i_scale_8cpp" kind="file"><name>win32_DPIScale.cpp</name>
+  </compound>
+  <compound refid="d6/d27/win32___d_p_i_scale_8hpp" kind="file"><name>win32_DPIScale.hpp</name>
+    <member refid="d6/d27/win32___d_p_i_scale_8hpp_1ac12caf685759424f19e7a272235b532c" kind="define"><name>_WIN32_DPISCALE_HPP_</name></member>
+    <member refid="d6/d27/win32___d_p_i_scale_8hpp_1a9fc44a3f14ec042350763628e1ba60c1" kind="define"><name>_DPIScale_T</name></member>
+    <member refid="d6/d27/win32___d_p_i_scale_8hpp_1a1e9a5df60aa1e6475621ccdbb1b824f4" kind="typedef"><name>DPIScale</name></member>
+  </compound>
+  <compound refid="df/dc2/win32___main_window_8cpp" kind="file"><name>win32_MainWindow.cpp</name>
+  </compound>
+  <compound refid="dc/d93/win32___main_window_8hpp" kind="file"><name>win32_MainWindow.hpp</name>
+    <member refid="dc/d93/win32___main_window_8hpp_1a9e6fa2c54dbe1d3d1173891b7f33485b" kind="define"><name>_WIN32_MAINWINDOW_HPP_</name></member>
+    <member refid="dc/d93/win32___main_window_8hpp_1a603260483c79f64303e7b8162a6e4e2e" kind="define"><name>_MainWindow_T</name></member>
+    <member refid="dc/d93/win32___main_window_8hpp_1ab83146a4d730b915a1d7e0d18d755c5c" kind="typedef"><name>MainWindow</name></member>
+  </compound>
+  <compound refid="df/dcb/cmrc_8hpp" kind="file"><name>cmrc.hpp</name>
+    <member refid="df/dcb/cmrc_8hpp_1a90b3371ddedc25c22f630ca47cc4edce" kind="define"><name>CMRC_NO_EXCEPTIONS</name></member>
+    <member refid="df/dcb/cmrc_8hpp_1a9917f998182dbff85ff5698bb6582f0b" kind="define"><name>CMRC_DECLARE</name></member>
+  </compound>
+  <compound refid="d9/d12/win32___application_icon__png_8cpp" kind="file"><name>win32_ApplicationIcon_png.cpp</name>
+  </compound>
+  <compound refid="da/d8e/win32___application_icon__png_8hpp" kind="file"><name>win32_ApplicationIcon_png.hpp</name>
+    <member refid="da/d8e/win32___application_icon__png_8hpp_1a60d10ece0adf45e1e0484835187fec06" kind="define"><name>_WIN32_RESOURCE_IMG_APPLICATION_ICON_PNG_HPP_</name></member>
+  </compound>
+  <compound refid="d3/d3c/win32___logo__png_8cpp" kind="file"><name>win32_Logo_png.cpp</name>
+  </compound>
+  <compound refid="d3/d35/win32___logo__png_8hpp" kind="file"><name>win32_Logo_png.hpp</name>
+    <member refid="d3/d35/win32___logo__png_8hpp_1a35fbc02181a8e672638f81fc92507069" kind="define"><name>_WIN32_RESOURCE_IMG_LOGO_PNG_H_</name></member>
+  </compound>
+  <compound refid="d4/dfe/win32__png_8cpp" kind="file"><name>win32_png.cpp</name>
+  </compound>
+  <compound refid="d5/d45/win32__png_8hpp" kind="file"><name>win32_png.hpp</name>
+    <member refid="d5/d45/win32__png_8hpp_1ab0129df4f7c26a6f99e75620cf29b103" kind="define"><name>_WIN32_RESOURCE_IMG_PNG_H_</name></member>
+  </compound>
+  <compound refid="de/d64/win32___small_logo44x44__png_8cpp" kind="file"><name>win32_SmallLogo44x44_png.cpp</name>
+  </compound>
+  <compound refid="db/dea/win32___small_logo44x44__png_8hpp" kind="file"><name>win32_SmallLogo44x44_png.hpp</name>
+    <member refid="db/dea/win32___small_logo44x44__png_8hpp_1a66cbdd7f21436963df66dffeda709b9e" kind="define"><name>_WIN32_RESOURCE_IMG_SMALL_LOGO_44X44_PNG_H_</name></member>
+  </compound>
+  <compound refid="de/d18/win32___small_logo__png_8cpp" kind="file"><name>win32_SmallLogo_png.cpp</name>
+  </compound>
+  <compound refid="df/d82/win32___small_logo__png_8hpp" kind="file"><name>win32_SmallLogo_png.hpp</name>
+    <member refid="df/d82/win32___small_logo__png_8hpp_1a059207ec4ff811c8f8669e739405505b" kind="define"><name>_WIN32_RESOURCE_IMG_SMALL_LOGO_PNG_H_</name></member>
+  </compound>
+  <compound refid="d1/d50/win32___splash_screen__png_8cpp" kind="file"><name>win32_SplashScreen_png.cpp</name>
+  </compound>
+  <compound refid="d9/d9c/win32___splash_screen__png_8hpp" kind="file"><name>win32_SplashScreen_png.hpp</name>
+    <member refid="d9/d9c/win32___splash_screen__png_8hpp_1a072a5d2401434499bf2bc56bfccb3f99" kind="define"><name>_WIN32_RESOURCE_IMG_SPLASH_SCREEN_PNG_H_</name></member>
+  </compound>
+  <compound refid="df/d22/win32___store_logo__png_8cpp" kind="file"><name>win32_StoreLogo_png.cpp</name>
+  </compound>
+  <compound refid="d7/dc9/win32___store_logo__png_8hpp" kind="file"><name>win32_StoreLogo_png.hpp</name>
+    <member refid="d7/dc9/win32___store_logo__png_8hpp_1a62645ae930f8a3c969e1509ddefb0b64" kind="define"><name>_WIN32_RESOURCE_IMG_STORE_LOGO_PNG_H_</name></member>
+  </compound>
+  <compound refid="d2/d09/win32__pfx_8cpp" kind="file"><name>win32_pfx.cpp</name>
+  </compound>
+  <compound refid="d6/dc6/win32__pfx_8hpp" kind="file"><name>win32_pfx.hpp</name>
+    <member refid="d6/dc6/win32__pfx_8hpp_1a1480db072c39b460818b0690961368ca" kind="define"><name>_WIN32_RESOURCE_KEY_PFX_H_</name></member>
+  </compound>
+  <compound refid="d6/d09/win32___windows___temporary_key__pfx_8cpp" kind="file"><name>win32_Windows_TemporaryKey_pfx.cpp</name>
+  </compound>
+  <compound refid="db/d82/win32___windows___temporary_key__pfx_8hpp" kind="file"><name>win32_Windows_TemporaryKey_pfx.hpp</name>
+    <member refid="db/d82/win32___windows___temporary_key__pfx_8hpp_1a9146324ef890b65ce575c516a760cc1d" kind="define"><name>_WIN32_RESOURCE_KEY_WINDOWS_TEMPORARY_KEY_PFX_HPP_</name></member>
+  </compound>
+  <compound refid="d5/d66/win32__resource_8cpp" kind="file"><name>win32_resource.cpp</name>
+  </compound>
+  <compound refid="d5/d1d/win32__resource_8hpp" kind="file"><name>win32_resource.hpp</name>
+    <member refid="d5/d1d/win32__resource_8hpp_1a354e5b1e54252d86062da78655a4fb92" kind="define"><name>_WIN32_RESOURCE_H_</name></member>
+    <member refid="d5/d1d/win32__resource_8hpp_1a2e76c05ee6a9e027f414ed73d775ac84" kind="define"><name>__RC_RESOURCE_T</name></member>
+    <member refid="d5/d1d/win32__resource_8hpp_1ac60ad59d611c5f6b55f27384e0a0183c" kind="define"><name>__RC_RESOURCE_T_PTR</name></member>
+    <member refid="d5/d1d/win32__resource_8hpp_1a312e6926a87e664a60c5739698529a79" kind="define"><name>__FS_EMBEDDED</name></member>
+    <member refid="d5/d1d/win32__resource_8hpp_1a015eed6194d3055783885b577911818a" kind="define"><name>__RES_IDX_T</name></member>
+    <member refid="d5/d1d/win32__resource_8hpp_1a3589507c444d07ca84f3ec878da0e8ff" kind="typedef"><name>RCRESOURCE</name></member>
+    <member refid="d5/d1d/win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268" kind="typedef"><name>RCRESOURCEPTR</name></member>
+    <member refid="d5/d1d/win32__resource_8hpp_1a5afbfa7ab227c0b123b37aeaca4963b3" kind="typedef"><name>FSEMBEDDED</name></member>
+    <member refid="d5/d1d/win32__resource_8hpp_1aa6bfcc93f2ea5b758d45be8c4bc500b0" kind="typedef"><name>IDXRES</name></member>
+  </compound>
+  <compound refid="d3/d1f/win32__resource_8mm" kind="file"><name>win32_resource.mm</name>
+  </compound>
+  <compound refid="da/d9b/_win_main_8cpp" kind="file"><name>WinMain.cpp</name>
+    <member refid="da/d9b/_win_main_8cpp_1a779b90c8790d683d0f1eb6c66a84a412" kind="function"><name>WinMain</name></member>
+  </compound>
+  <compound refid="df/dff/_win_main_8hpp" kind="file"><name>WinMain.hpp</name>
+    <member refid="df/dff/_win_main_8hpp_1ac043de19782e10d161acc05fb100a427" kind="define"><name>_WINMAIN_HPP_</name></member>
+    <member refid="df/dff/_win_main_8hpp_1aae5f25e9b47a8343df2bc65a87501f84" kind="define"><name>WinMain</name></member>
+    <member refid="df/dff/_win_main_8hpp_1ae5ba30db05a87373f8fd16ac9c6f8f32" kind="typedef"><name>LPCMDLINE</name></member>
+  </compound>
+  <compound refid="d9/dd6/_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="dir_9bc32812666c1354c5bb25d7268c0a0c" kind="dir"><name>include/CxxWin</name>
+  </compound>
+  <compound refid="dir_93d786e57a26867bc401093746f000ce" kind="dir"><name>include/CxxWin/modules/Win32_resource/img</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_d258496776ff35f1fd9b0ab00cd395ef" kind="dir"><name>include/CxxWin/modules/Win32_resource/key</name>
+  </compound>
+  <compound refid="dir_17183c9a44c5ea42380c345b0bc4b5bd" kind="dir"><name>include/CxxWin/modules/Win32_core/memory</name>
+  </compound>
+  <compound refid="dir_34a2d04789e6072590dc7fd23c3451f8" kind="dir"><name>include/CxxWin/modules</name>
+  </compound>
+  <compound refid="dir_82e912cf391e9913c852d5e7c484a083" kind="dir"><name>include/CxxWin/modules/Win32_core/native</name>
+  </compound>
+  <compound refid="dir_88c30591ba125011a5eb0023131b82dc" kind="dir"><name>include/CxxWin/modules/Win32_core/system</name>
+  </compound>
+  <compound refid="dir_88bab166860255f959016b8c5e7512af" kind="dir"><name>include/CxxWin/modules/Win32_core</name>
+  </compound>
+  <compound refid="dir_87018e622e39c8bc40ace5c49ff36fb4" kind="dir"><name>include/CxxWin/modules/Win32_resource</name>
+  </compound>
+  <compound refid="dir_1139b8a331f9c7560d0d1bc7b398bcee" kind="dir"><name>include/CxxWin/modules/Win32_core/window</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

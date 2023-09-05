@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d2/dad/win32___unicode_8hpp" kind="file" language="C++">
+    <compoundname>win32_Unicode.hpp</compoundname>
+    <includedby refid="d6/dbf/win32__core_8hpp" local="yes">include/CxxWin/modules/Win32_core/win32_core.hpp</includedby>
+    <invincdepgraph>
+      <node id="4">
+        <label>include/CxxWin/MainComponent.cpp</label>
+        <link refid="db/dfc/_main_component_8cpp"/>
+      </node>
+      <node id="3">
+        <label>include/CxxWin/MainComponent.hpp</label>
+        <link refid="df/d11/_main_component_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>include/CxxWin/WinMain.cpp</label>
+        <link refid="da/d9b/_win_main_8cpp"/>
+      </node>
+      <node id="5">
+        <label>include/CxxWin/WinMain.hpp</label>
+        <link refid="df/dff/_win_main_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/CxxWin/modules/Win32_core/native/win32_Unicode.hpp</label>
+        <link refid="d2/dad/win32___unicode_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>include/CxxWin/modules/Win32_core/win32_core.cpp</label>
+        <link refid="d1/dd0/win32__core_8cpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/CxxWin/modules/Win32_core/win32_core.hpp</label>
+        <link refid="d6/dbf/win32__core_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>include/CxxWin/modules/Win32_core/win32_core.mm</label>
+        <link refid="d9/db1/win32__core_8mm"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d7/d6d/class_win32_1_1_core_1_1_native_1_1_unicode_handler" prot="public">Win32::Core::Native::UnicodeHandler</innerclass>
+    <innernamespace refid="d6/dd1/namespace_win32">Win32</innernamespace>
+    <innernamespace refid="d8/d08/namespace_win32_1_1_core">Win32::Core</innernamespace>
+    <innernamespace refid="d5/dc1/namespace_win32_1_1_core_1_1_native">Win32::Core::Native</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="d2/dad/win32___unicode_8hpp_1a8d3caeafbdeaac188f81d07656727fd6" prot="public" static="no">
+        <name>_WIN32_UNOCIDE_HPP_</name>
+        <briefdescription>
+<para>Provides preprocessor handling for switching the behaviour of some important functions such as &apos;TEXT()&apos;, between &apos;ANSI&apos; and &apos;Unicode&apos; styles. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/native/win32_Unicode.hpp" line="19" column="9" bodyfile="include/CxxWin/modules/Win32_core/native/win32_Unicode.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/dad/win32___unicode_8hpp_1a273a349f02e26bdb5ba08461085bfe33" prot="public" static="no">
+        <name>_NEED_UNICODE</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/native/win32_Unicode.hpp" line="33" column="11" bodyfile="include/CxxWin/modules/Win32_core/native/win32_Unicode.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/dad/win32___unicode_8hpp_1abf9442f4ff47ef00d0eb7cb89c6dbe25" prot="public" static="no">
+        <name>__NAME_AW</name>
+        <param><defname>func</defname></param>
+        <initializer>func##A</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/native/win32_Unicode.hpp" line="34" column="10" bodyfile="include/CxxWin/modules/Win32_core/native/win32_Unicode.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/dad/win32___unicode_8hpp_1a070ad3774a36cbe5ba8a00456aa14145" prot="public" static="no">
+        <name>__NAME_AW_EXT</name>
+        <param><defname>func</defname></param>
+        <param><defname>ext</defname></param>
+        <initializer>func##A##ext</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/native/win32_Unicode.hpp" line="35" column="10" bodyfile="include/CxxWin/modules/Win32_core/native/win32_Unicode.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/dad/win32___unicode_8hpp_1acae9c8c2fef8d3d772158a9f0d09785a" prot="public" static="no">
+        <name>__NAME_UAW</name>
+        <param><defname>func</defname></param>
+        <initializer>func##_A</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/native/win32_Unicode.hpp" line="36" column="10" bodyfile="include/CxxWin/modules/Win32_core/native/win32_Unicode.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/dad/win32___unicode_8hpp_1a083ea8a4789494cf0fee2e814adccdd9" prot="public" static="no">
+        <name>__NAME_UAW_EXT</name>
+        <param><defname>func</defname></param>
+        <param><defname>ext</defname></param>
+        <initializer>func##_A_##ext</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/native/win32_Unicode.hpp" line="37" column="10" bodyfile="include/CxxWin/modules/Win32_core/native/win32_Unicode.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/dad/win32___unicode_8hpp_1aa26766709d1a5678faa69f7d5a791556" prot="public" static="no">
+        <name>__STRING_AW</name>
+        <param><defname>str</defname></param>
+        <initializer>str	/* same as TEXT() from winnt.h */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/native/win32_Unicode.hpp" line="38" column="10" bodyfile="include/CxxWin/modules/Win32_core/native/win32_Unicode.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/dad/win32___unicode_8hpp_1acc6ec428c466f0fb74fb301db19b500e" prot="public" static="no">
+        <name>__PROCNAMEEXT_AW</name>
+        <initializer>&quot;A&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/native/win32_Unicode.hpp" line="39" column="10" bodyfile="include/CxxWin/modules/Win32_core/native/win32_Unicode.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/dad/win32___unicode_8hpp_1a2237d82d5ede1078d7fd34fc533efb4d" prot="public" static="no">
+        <name>__TYPEDEF_AW</name>
+        <param><defname>type</defname></param>
+        <initializer>    typedef <ref refid="d2/dad/win32___unicode_8hpp_1abf9442f4ff47ef00d0eb7cb89c6dbe25" kindref="member">__NAME_AW</ref>(type) type;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/native/win32_Unicode.hpp" line="42" column="9" bodyfile="include/CxxWin/modules/Win32_core/native/win32_Unicode.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/dad/win32___unicode_8hpp_1a2967e34e4ed1c51a9f53d4707fa8a0cd" prot="public" static="no">
+        <name>__TYPEDEF_UAW</name>
+        <param><defname>type</defname></param>
+        <initializer>    typedef <ref refid="d2/dad/win32___unicode_8hpp_1acae9c8c2fef8d3d772158a9f0d09785a" kindref="member">__NAME_UAW</ref>(type) type;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/native/win32_Unicode.hpp" line="44" column="9" bodyfile="include/CxxWin/modules/Win32_core/native/win32_Unicode.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Provides preprocessor handling for switching the behaviour of some important functions such as &apos;TEXT()&apos;, between &apos;ANSI&apos; and &apos;Unicode&apos; styles. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>StoneyDSP (<ulink url="mailto:nathanjhood@googlemail.com">nathanjhood@googlemail.com</ulink>)</para>
+</simplesect>
+</para>
+<para><simplesect kind="version"><para>1.0.0 </para>
+</simplesect>
+<simplesect kind="date"><para>2023-08-31</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="d2/dad/win32___unicode_8hpp_1a8d3caeafbdeaac188f81d07656727fd6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_WIN32_UNOCIDE_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(_NEED_UNICODE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>_NEED_UNICODE<sp/>defined<sp/>based<sp/>on<sp/>UNICODE<sp/>flag<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(UNICODE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>_NEED_UNICODE<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>__NAME_AW(func)<sp/>func##W</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>__NAME_AW_EXT(func,ext)<sp/>func##W##ext</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>__NAME_UAW(func)<sp/>func##_W</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>__NAME_UAW_EXT(func,ext)<sp/>func##_W_##ext</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>__STRING_AW(str)<sp/>L##str<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>same<sp/>as<sp/>TEXT()<sp/>from<sp/>winnt.h<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>__PROCNAMEEXT_AW<sp/>&quot;W&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="d2/dad/win32___unicode_8hpp_1a273a349f02e26bdb5ba08461085bfe33" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>_NEED_UNICODE<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="d2/dad/win32___unicode_8hpp_1abf9442f4ff47ef00d0eb7cb89c6dbe25" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>__NAME_AW(func)<sp/>func##A</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="d2/dad/win32___unicode_8hpp_1a070ad3774a36cbe5ba8a00456aa14145" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>__NAME_AW_EXT(func,ext)<sp/>func##A##ext</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="d2/dad/win32___unicode_8hpp_1acae9c8c2fef8d3d772158a9f0d09785a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>__NAME_UAW(func)<sp/>func##_A</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="d2/dad/win32___unicode_8hpp_1a083ea8a4789494cf0fee2e814adccdd9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>__NAME_UAW_EXT(func,ext)<sp/>func##_A_##ext</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="d2/dad/win32___unicode_8hpp_1aa26766709d1a5678faa69f7d5a791556" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>__STRING_AW(str)<sp/>str<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>same<sp/>as<sp/>TEXT()<sp/>from<sp/>winnt.h<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="d2/dad/win32___unicode_8hpp_1acc6ec428c466f0fb74fb301db19b500e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>__PROCNAMEEXT_AW<sp/>&quot;A&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="d2/dad/win32___unicode_8hpp_1a2237d82d5ede1078d7fd34fc533efb4d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__TYPEDEF_AW(type)<sp/><sp/>\</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>typedef<sp/>__NAME_AW(type)<sp/>type;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="d2/dad/win32___unicode_8hpp_1a2967e34e4ed1c51a9f53d4707fa8a0cd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__TYPEDEF_UAW(type)<sp/>\</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>typedef<sp/>__NAME_UAW(type)<sp/>type;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>!defined(_NEED_UNICODE)<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="d6/dd1/namespace_win32" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d6/dd1/namespace_win32" kindref="compound">Win32</ref></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51" refid="d8/d08/namespace_win32_1_1_core" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Core</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53" refid="d5/dc1/namespace_win32_1_1_core_1_1_native" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Native</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55" refid="d7/d6d/class_win32_1_1_core_1_1_native_1_1_unicode_handler" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d7/d6d/class_win32_1_1_core_1_1_native_1_1_unicode_handler" kindref="compound">UnicodeHandler</ref></highlight></codeline>
+<codeline lineno="56"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="58" refid="d7/d6d/class_win32_1_1_core_1_1_native_1_1_unicode_handler_1aba75ad233dfb800918a8da0928696bbc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOL<sp/><ref refid="d7/d6d/class_win32_1_1_core_1_1_native_1_1_unicode_handler_1aba75ad233dfb800918a8da0928696bbc" kindref="member">SetVar</ref>(HWND<sp/>hwnd,<sp/>LPCTSTR<sp/>lpText);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="d7/d6d/class_win32_1_1_core_1_1_native_1_1_unicode_handler_1a16caa495c648eb7fb185d8b67d2793ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOL<sp/><ref refid="d7/d6d/class_win32_1_1_core_1_1_native_1_1_unicode_handler_1a16caa495c648eb7fb185d8b67d2793ae" kindref="member">SetVarA</ref>(HWND<sp/>hwnd,<sp/>LPCSTR<sp/>lpText);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="d7/d6d/class_win32_1_1_core_1_1_native_1_1_unicode_handler_1a1bf1d390b3b0b5f820af5aed44392da6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOL<sp/><ref refid="d7/d6d/class_win32_1_1_core_1_1_native_1_1_unicode_handler_1a1bf1d390b3b0b5f820af5aed44392da6" kindref="member">SetVarW</ref>(HWND<sp/>hwnd,<sp/>LPCWSTR<sp/>lpText);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="include/CxxWin/modules/Win32_core/native/win32_Unicode.hpp"/>
+  </compounddef>
+</doxygen>

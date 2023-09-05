@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d6/dc6/win32__pfx_8hpp" kind="file" language="C++">
+    <compoundname>win32_pfx.hpp</compoundname>
+    <includes local="no">map</includes>
+    <includes local="no">utility</includes>
+    <includes refid="df/dcb/cmrc_8hpp" local="yes">../cmrc.hpp</includes>
+    <includedby refid="d2/d09/win32__pfx_8cpp" local="yes">include/CxxWin/modules/Win32_resource/key/win32_pfx.cpp</includedby>
+    <includedby refid="d5/d1d/win32__resource_8hpp" local="yes">include/CxxWin/modules/Win32_resource/win32_resource.hpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>../cmrc.hpp</label>
+        <link refid="df/dcb/cmrc_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/CxxWin/modules/Win32_resource/key/win32_pfx.hpp</label>
+        <link refid="d6/dc6/win32__pfx_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cassert</label>
+      </node>
+      <node id="6">
+        <label>functional</label>
+      </node>
+      <node id="7">
+        <label>iterator</label>
+      </node>
+      <node id="8">
+        <label>list</label>
+      </node>
+      <node id="2">
+        <label>map</label>
+      </node>
+      <node id="9">
+        <label>mutex</label>
+      </node>
+      <node id="10">
+        <label>string</label>
+      </node>
+      <node id="11">
+        <label>system_error</label>
+      </node>
+      <node id="12">
+        <label>type_traits</label>
+      </node>
+      <node id="3">
+        <label>utility</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/CxxWin/modules/Win32_resource/key/win32_pfx.cpp</label>
+        <link refid="d2/d09/win32__pfx_8cpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/CxxWin/modules/Win32_resource/key/win32_pfx.hpp</label>
+        <link refid="d6/dc6/win32__pfx_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>include/CxxWin/modules/Win32_resource/win32_resource.cpp</label>
+        <link refid="d5/d66/win32__resource_8cpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>include/CxxWin/modules/Win32_resource/win32_resource.hpp</label>
+        <link refid="d5/d1d/win32__resource_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>include/CxxWin/modules/Win32_resource/win32_resource.mm</label>
+        <link refid="d3/d1f/win32__resource_8mm"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="d6/dcb/namespace_c_make_r_c">CMakeRC</innernamespace>
+    <innernamespace refid="d5/df5/namespace_c_make_r_c_1_1_key">CMakeRC::Key</innernamespace>
+    <innernamespace refid="d0/d76/namespace_c_make_r_c_1_1_key_1_1_windows___temporary_key">CMakeRC::Key::Windows_TemporaryKey</innernamespace>
+    <innernamespace refid="df/dd9/namespace_c_make_r_c_1_1_key_1_1anonymous__namespace_02win32__pfx_8hpp_03">CMakeRC::Key::anonymous_namespace{win32_pfx.hpp}</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="d6/dc6/win32__pfx_8hpp_1a1480db072c39b460818b0690961368ca" prot="public" static="no">
+        <name>_WIN32_RESOURCE_KEY_PFX_H_</name>
+        <briefdescription>
+<para>Contains definitions of functions that provide access to specifically-named resources, which necessitates external linkage. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/key/win32_pfx.hpp" line="26" column="9" bodyfile="include/CxxWin/modules/Win32_resource/key/win32_pfx.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Contains pointers to named resources with external linkage, so that their respective contents can be defined elsewhere. Also contains definitions of functions that provide access to these specifically-named resources, which necessitates external linkage. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>StoneyDSP (<ulink url="mailto:nathanjhood@googlemail.com">nathanjhood@googlemail.com</ulink>)</para>
+</simplesect>
+</para>
+<para><simplesect kind="version"><para>1.0.0 </para>
+</simplesect>
+<simplesect kind="date"><para>2023-08-24</para>
+</simplesect>
+<simplesect kind="copyright"><para>This file was generated by using Vector-of-Bool&apos;s excellent &apos;<ref refid="d6/dcb/namespace_c_make_r_c" kindref="compound">CMakeRC</ref>&apos; resource compiler script from CMake&apos;s template resources for Windows. The results have been given minimal tweaks - mostly just text formatting - to provide a similar interface to the rest of the project&apos;s codebase. Please see &apos;<ref refid="df/dcb/cmrc_8hpp" kindref="compound">cmrc.hpp</ref>&apos; and Kitware.org for respective license information. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="d6/dc6/win32__pfx_8hpp_1a1480db072c39b460818b0690961368ca" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_WIN32_RESOURCE_KEY_PFX_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../cmrc.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d6/dcb/namespace_c_make_r_c" kindref="compound">CMakeRC</ref></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Key</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45" refid="d0/d76/namespace_c_make_r_c_1_1_key_1_1_windows___temporary_key" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Windows_TemporaryKey</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="d5/d1d/win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268" kindref="member">RCRESOURCEPTR</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d76/namespace_c_make_r_c_1_1_key_1_1_windows___temporary_key_1a2c69701281426a4b05274544083e2eaa" kindref="member">Windows_TemporaryKey_pfx_begin</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="d5/d1d/win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268" kindref="member">RCRESOURCEPTR</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d76/namespace_c_make_r_c_1_1_key_1_1_windows___temporary_key_1a05f95a7cbbe5563a026b239b4c040994" kindref="member">Windows_TemporaryKey_pfx_end</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Windows_TemporaryKey</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="df/dd9/namespace_c_make_r_c_1_1_key_1_1anonymous__namespace_02win32__pfx_8hpp_03" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55" refid="df/dd9/namespace_c_make_r_c_1_1_key_1_1anonymous__namespace_02win32__pfx_8hpp_03_1a0a4b91dbb89948c6a480192303f3ed4f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d5/d1d/win32__resource_8hpp_1aa6bfcc93f2ea5b758d45be8c4bc500b0" kindref="member">IDXRES</ref>&amp;<sp/>GetRootIndex();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><ref refid="d5/d1d/win32__resource_8hpp_1a5afbfa7ab227c0b123b37aeaca4963b3" kindref="member">FSEMBEDDED</ref><sp/><ref refid="d5/df5/namespace_c_make_r_c_1_1_key_1abec17c77f3a6bae3a6a946644079c963" kindref="member">GetFileSystem</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Key</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>CMakeRC</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/CxxWin/modules/Win32_resource/key/win32_pfx.hpp"/>
+  </compounddef>
+</doxygen>

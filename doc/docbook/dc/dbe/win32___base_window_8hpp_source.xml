@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_win32___base_window_8hpp_source" xml:lang="en-US">
+<title>win32_BaseWindow.hpp</title>
+<indexterm><primary>include/CxxWin/modules/Win32_core/window/win32_BaseWindow.hpp</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 
+13 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+14 
+16 <emphasis role="preprocessor">#define&#32;_WIN32_BASEWINDOW_HPP_</emphasis>
+17 
+18 <emphasis role="comment">//&#32;namespace&#32;Win32</emphasis>
+19 <emphasis role="comment">//&#32;{</emphasis>
+20 <emphasis role="comment">//&#32;namespace&#32;Core</emphasis>
+21 <emphasis role="comment">//&#32;{</emphasis>
+22 <emphasis role="comment">//&#32;namespace&#32;Window</emphasis>
+23 <emphasis role="comment">//&#32;{</emphasis>
+29 <emphasis role="comment"></emphasis><emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">class</emphasis>&#32;DERIVED_TYPE&gt;
+30 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_base_window">BaseWindow</link>
+31 {
+32 <emphasis role="keyword">public</emphasis>:
+33 
+35 &#32;&#32;&#32;&#32;<link linkend="_class_base_window_1a60209fc8aa81ab0efa29263dabc52cbf">BaseWindow</link>()&#32;:&#32;<link linkend="_class_base_window_1a86f5232fa1bbb141f60548a42331fc7e">m_hwnd</link>(NULL){}
+36 
+49 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;LRESULT&#32;CALLBACK&#32;<link linkend="_class_base_window_1a61198ed120a54deccbd3e73221bf9c4d">WindowProc</link>(HWND&#32;hwnd,&#32;UINT&#32;uMsg,&#32;WPARAM&#32;wParam,&#32;LPARAM&#32;lParam)
+50 &#32;&#32;&#32;&#32;{
+51 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;DERIVED_TYPE&#32;*pThis&#32;=&#32;NULL;
+52 
+53 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;&apos;WM_NC*&apos;&#32;definitions&#32;refer&#32;to&#32;&apos;non-client&apos;&#32;events,</emphasis>
+54 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;i.e.,&#32;mouse&#32;clicks&#32;outside&#32;of&#32;the&#32;app&#32;window.&#32;etc</emphasis>
+55 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(uMsg&#32;==&#32;WM_NCCREATE)
+56 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+57 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;CREATESTRUCT*&#32;pCreate&#32;=&#32;(CREATESTRUCT*)lParam;
+58 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;pThis&#32;=&#32;(DERIVED_TYPE*)pCreate-&gt;lpCreateParams;
+59 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SetWindowLongPtr(hwnd,&#32;GWLP_USERDATA,&#32;(LONG_PTR)pThis);
+60 
+61 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;pThis-&gt;m_hwnd&#32;=&#32;hwnd;
+62 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+63 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+64 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+65 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;pThis&#32;=&#32;(DERIVED_TYPE*)GetWindowLongPtr(hwnd,&#32;GWLP_USERDATA);
+66 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+67 
+68 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(pThis)
+69 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+70 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;pThis-&gt;HandleMessage(uMsg,&#32;wParam,&#32;lParam);
+71 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+72 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+73 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+74 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;DefWindowProc(hwnd,&#32;uMsg,&#32;wParam,&#32;lParam);
+75 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+76 &#32;&#32;&#32;&#32;}
+77 
+92 &#32;&#32;&#32;&#32;BOOL&#32;<link linkend="_class_base_window_1acfcb0a79ccf1f3780e353f24983b93bf">Create</link>(
+93 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;PCWSTR&#32;lpWindowName,
+94 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;DWORD&#32;dwStyle,
+95 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;DWORD&#32;dwExStyle&#32;=&#32;0,
+96 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;x&#32;=&#32;CW_USEDEFAULT,
+97 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;y&#32;=&#32;CW_USEDEFAULT,
+98 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;nWidth&#32;=&#32;CW_USEDEFAULT,
+99 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;nHeight&#32;=&#32;CW_USEDEFAULT,
+100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;HWND&#32;hWndParent&#32;=&#32;0,
+101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;HMENU&#32;hMenu&#32;=&#32;0
+102 &#32;&#32;&#32;&#32;)
+103 &#32;&#32;&#32;&#32;{
+104 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Initiate&#32;a&#32;window&#32;class</emphasis>
+105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;WNDCLASS&#32;wc&#32;=&#32;{0};
+106 
+107 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Enable&#32;mouse&#32;double-clicks&#32;on&#32;the&#32;window...</emphasis>
+108 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wc.style&#32;=&#32;CS_DBLCLKS;
+109 
+110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wc.lpfnWndProc&#32;&#32;&#32;=&#32;DERIVED_TYPE::WindowProc;
+111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wc.hInstance&#32;&#32;&#32;&#32;&#32;=&#32;GetModuleHandle(NULL);
+112 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;wc.lpszClassName&#32;=&#32;<link linkend="_class_base_window_1a76d1b80a812caf760c0efbed6e64b2e1">ClassName</link>();
+113 
+114 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;RegisterClass(&amp;wc);
+115 
+116 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_base_window_1a86f5232fa1bbb141f60548a42331fc7e">m_hwnd</link>&#32;=&#32;CreateWindowEx(
+117 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;dwExStyle,
+118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_base_window_1a76d1b80a812caf760c0efbed6e64b2e1">ClassName</link>(),
+119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;lpWindowName,
+120 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;dwStyle,
+121 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x,
+122 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;y,
+123 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;nWidth,
+124 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;nHeight,
+125 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;hWndParent,
+126 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;hMenu,
+127 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GetModuleHandle(NULL),
+128 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">this</emphasis>
+129 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;);
+130 
+131 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;(<link linkend="_class_base_window_1a86f5232fa1bbb141f60548a42331fc7e">m_hwnd</link>&#32;?&#32;TRUE&#32;:&#32;FALSE);
+132 &#32;&#32;&#32;&#32;}
+133 
+139 &#32;&#32;&#32;&#32;HWND&#32;<link linkend="_class_base_window_1aa1507d2052aaec416ac8b085add33ba0">Window</link>()&#32;CONST&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_base_window_1a86f5232fa1bbb141f60548a42331fc7e">m_hwnd</link>;&#32;}
+140 
+141 <emphasis role="keyword">protected</emphasis>:
+142 
+148 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;PCWSTR&#32;<link linkend="_class_base_window_1a76d1b80a812caf760c0efbed6e64b2e1">ClassName</link>()&#32;CONST&#32;PURE;
+149 
+158 &#32;&#32;&#32;&#32;virtual&#32;LRESULT&#32;<link linkend="_class_base_window_1a7612d6d879e60f4b7ded0cf0ac3dd8a9">HandleMessage</link>(UINT&#32;uMsg,&#32;WPARAM&#32;wParam,&#32;LPARAM&#32;lParam)&#32;PURE;
+159 
+164 &#32;&#32;&#32;&#32;HWND&#32;<link linkend="_class_base_window_1a86f5232fa1bbb141f60548a42331fc7e">m_hwnd</link>;
+165 
+166 &#32;&#32;&#32;&#32;<link linkend="_win32___platform_defs_8hpp_1aa48cf96123b508654d4c4e9a56e831cb">__PREVENT_HEAP_ALLOCATION</link>
+167 private:
+168 &#32;&#32;&#32;&#32;<link linkend="_win32___platform_defs_8hpp_1a964d381579febb0cc83dcc69890beec0">__DECLARE_NON_COPYABLE</link>(<link linkend="_class_base_window">BaseWindow</link>)
+169 &#32;&#32;&#32;&#32;<link linkend="_win32___platform_defs_8hpp_1adc9b0f127fefc464e5b4e704259c8ced">__DECLARE_NON_MOVEABLE</link>(<link linkend="_class_base_window">BaseWindow</link>)
+170 };
+171 
+172 <emphasis role="comment">//&#32;}&#32;//&#32;namespace&#32;Window</emphasis>
+173 <emphasis role="comment">//&#32;}&#32;//&#32;namespace&#32;Core</emphasis>
+174 <emphasis role="comment">//&#32;}&#32;//&#32;namespace&#32;Win32</emphasis>
+</programlisting></section>

@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d9/d93/class_smart_pointer_helper" kind="class" language="C++" prot="public">
+    <compoundname>SmartPointerHelper</compoundname>
+    <basecompoundref refid="dd/dbb/class_smart_pointer_helper_base" prot="public" virt="non-virtual">SmartPointerHelperBase&lt; ComClasses... &gt;</basecompoundref>
+    <includes refid="d6/d42/win32___smart_pointer_8hpp" local="no">win32_SmartPointer.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class...</type>
+        <declname>ComClasses</declname>
+        <defname>ComClasses</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/d93/class_smart_pointer_helper_1a5ebedea882de1289a08b66f6fc806b9e" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SmartPointerHelper&lt; ComClasses &gt;::SmartPointerHelper</definition>
+        <argsstring>(unsigned int initRef)</argsstring>
+        <name>SmartPointerHelper</name>
+        <qualifiedname>SmartPointerHelper::SmartPointerHelper</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>initRef</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new &apos;<ref refid="d9/d93/class_smart_pointer_helper" kindref="compound">SmartPointerHelper</ref>&apos; object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>initRef</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.hpp" line="117" column="14" bodyfile="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.cpp" bodystart="336" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d93/class_smart_pointer_helper_1a14e73f95576736f3274f54ee777761a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>HRESULT STDMETHODCALLTYPE</type>
+        <definition>HRESULT SmartPointerHelper&lt; ComClasses &gt;::QueryInterface</definition>
+        <argsstring>(REFIID refId, void **result)</argsstring>
+        <name>QueryInterface</name>
+        <qualifiedname>SmartPointerHelper::QueryInterface</qualifiedname>
+        <param>
+          <type>REFIID</type>
+          <declname>refId</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>Query the interface to the underlying COM object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>refId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>HRESULT </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.hpp" line="118" column="31" bodyfile="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.cpp" bodystart="350" bodyend="370"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The &apos;<ref refid="d9/d93/class_smart_pointer_helper" kindref="compound">SmartPointerHelper</ref>&apos; class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>ComClasses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>ComClasses</label>
+      </node>
+      <node id="3">
+        <label>ComClasses...</label>
+      </node>
+      <node id="1">
+        <label>SmartPointerHelper&lt; ComClasses &gt;</label>
+        <link refid="d9/d93/class_smart_pointer_helper"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SmartPointerHelperBase&lt; ComClasses... &gt;</label>
+        <link refid="dd/dbb/class_smart_pointer_helper_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>ComClasses</label>
+      </node>
+      <node id="3">
+        <label>ComClasses...</label>
+      </node>
+      <node id="1">
+        <label>SmartPointerHelper&lt; ComClasses &gt;</label>
+        <link refid="d9/d93/class_smart_pointer_helper"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SmartPointerHelperBase&lt; ComClasses... &gt;</label>
+        <link refid="dd/dbb/class_smart_pointer_helper_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.hpp" line="114" column="1" bodyfile="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.hpp" bodystart="115" bodyend="119"/>
+    <listofallmembers>
+      <member refid="dd/dbb/class_smart_pointer_helper_base_1a2c9426410eeb136beba8123b5d84dc6e" prot="public" virt="non-virtual"><scope>SmartPointerHelper</scope><name>AddRef</name></member>
+      <member refid="dd/dbb/class_smart_pointer_helper_base_1accdc2a95363ae4f3e76d5dc00e8fef38" prot="protected" virt="non-virtual"><scope>SmartPointerHelper</scope><name>castToType</name></member>
+      <member refid="d9/d93/class_smart_pointer_helper_1a14e73f95576736f3274f54ee777761a2" prot="public" virt="non-virtual"><scope>SmartPointerHelper</scope><name>QueryInterface</name></member>
+      <member refid="dd/dbb/class_smart_pointer_helper_base_1ad2bc91bd39ccd269a3eec9cdcce0f8cf" prot="protected" virt="non-virtual"><scope>SmartPointerHelper</scope><name>refCount</name></member>
+      <member refid="dd/dbb/class_smart_pointer_helper_base_1a693a3f65e96897ad99ccc1e95c7c0fcd" prot="public" virt="non-virtual"><scope>SmartPointerHelper</scope><name>Release</name></member>
+      <member refid="d9/d93/class_smart_pointer_helper_1a5ebedea882de1289a08b66f6fc806b9e" prot="public" virt="non-virtual"><scope>SmartPointerHelper</scope><name>SmartPointerHelper</name></member>
+      <member refid="dd/dbb/class_smart_pointer_helper_base_1ac76861e9458ab17c981b2b76f5890321" prot="public" virt="non-virtual"><scope>SmartPointerHelper</scope><name>SmartPointerHelperBase</name></member>
+      <member refid="dd/dbb/class_smart_pointer_helper_base_1aef037e04d1a2ee08824b405b077d4b09" prot="public" virt="virtual"><scope>SmartPointerHelper</scope><name>~SmartPointerHelperBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

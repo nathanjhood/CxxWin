@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d2/df9/class_c_make_r_c_1_1_embedded_file_system" kind="class" language="C++" prot="public">
+    <compoundname>CMakeRC::EmbeddedFileSystem</compoundname>
+    <includes refid="df/dcb/cmrc_8hpp" local="no">cmrc.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d2/df9/class_c_make_r_c_1_1_embedded_file_system_1a907c3ddde3effeb4b97f3c5b4d23988d" prot="private" static="no" mutable="no">
+        <type>const <ref refid="d9/def/namespace_c_make_r_c_1_1_detail_1af8b7b0ba529bcc74373e4ee395b54529" kindref="member">CMakeRC::Detail::IndexType</ref> *</type>
+        <definition>const CMakeRC::Detail::IndexType* CMakeRC::EmbeddedFileSystem::_index</definition>
+        <argsstring></argsstring>
+        <name>_index</name>
+        <qualifiedname>CMakeRC::EmbeddedFileSystem::_index</qualifiedname>
+        <briefdescription>
+<para>Never-null: </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="669" column="38" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="669" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d2/df9/class_c_make_r_c_1_1_embedded_file_system_1ab8e4e1221710c44add0f329b6a3cad47" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory" kindref="compound">Detail::FileOrDirectory</ref> *</type>
+        <definition>const Detail::FileOrDirectory * CMakeRC::EmbeddedFileSystem::_get</definition>
+        <argsstring>(std::string path) const</argsstring>
+        <name>_get</name>
+        <qualifiedname>CMakeRC::EmbeddedFileSystem::_get</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>const <ref refid="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory" kindref="compound">Detail::FileOrDirectory</ref>* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="675" column="35" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="675" bodyend="688"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d2/df9/class_c_make_r_c_1_1_embedded_file_system_1a9163d770a3ebcf479cd630690703cc05" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMakeRC::EmbeddedFileSystem::EmbeddedFileSystem</definition>
+        <argsstring>(const Detail::IndexType &amp;index)</argsstring>
+        <name>EmbeddedFileSystem</name>
+        <qualifiedname>CMakeRC::EmbeddedFileSystem::EmbeddedFileSystem</qualifiedname>
+        <param>
+          <type>const <ref refid="d9/def/namespace_c_make_r_c_1_1_detail_1af8b7b0ba529bcc74373e4ee395b54529" kindref="member">Detail::IndexType</ref> &amp;</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new &apos;<ref refid="d2/df9/class_c_make_r_c_1_1_embedded_file_system" kindref="compound">EmbeddedFileSystem</ref>&apos; object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="696" column="14" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="696" bodyend="698"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/df9/class_c_make_r_c_1_1_embedded_file_system_1ae49cd6b12ff520cc722953dafc90bfe7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d6/dc7/class_c_make_r_c_1_1_file" kindref="compound">File</ref></type>
+        <definition>File CMakeRC::EmbeddedFileSystem::open</definition>
+        <argsstring>(const std::string &amp;path) const</argsstring>
+        <name>open</name>
+        <qualifiedname>CMakeRC::EmbeddedFileSystem::open</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="d6/dc7/class_c_make_r_c_1_1_file" kindref="compound">File</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="705" column="10" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="705" bodyend="719"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/df9/class_c_make_r_c_1_1_embedded_file_system_1acf69f5466bd4c59e48451a235ac7ab47" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMakeRC::EmbeddedFileSystem::IsFile</definition>
+        <argsstring>(const std::string &amp;path) const noexcept</argsstring>
+        <name>IsFile</name>
+        <qualifiedname>CMakeRC::EmbeddedFileSystem::IsFile</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="728" column="10" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="728" bodyend="732"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/df9/class_c_make_r_c_1_1_embedded_file_system_1aacaaa6554852380e3c4e9529440482c5" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMakeRC::EmbeddedFileSystem::IsDirectory</definition>
+        <argsstring>(const std::string &amp;path) const noexcept</argsstring>
+        <name>IsDirectory</name>
+        <qualifiedname>CMakeRC::EmbeddedFileSystem::IsDirectory</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="741" column="10" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="741" bodyend="745"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/df9/class_c_make_r_c_1_1_embedded_file_system_1acf6a8b5508470806f06e45b0394b794c" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMakeRC::EmbeddedFileSystem::Exists</definition>
+        <argsstring>(const std::string &amp;path) const noexcept</argsstring>
+        <name>Exists</name>
+        <qualifiedname>CMakeRC::EmbeddedFileSystem::Exists</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="754" column="10" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="754" bodyend="757"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/df9/class_c_make_r_c_1_1_embedded_file_system_1aa295b7f7c1aef39c3ef86bc472d19a99" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="d6/dcb/namespace_c_make_r_c_1a5b0306b0207652d136c3ae6b498102cd" kindref="member">DirectoryIterator</ref></type>
+        <definition>DirectoryIterator CMakeRC::EmbeddedFileSystem::IterateDirectory</definition>
+        <argsstring>(const std::string &amp;path) const</argsstring>
+        <name>IterateDirectory</name>
+        <qualifiedname>CMakeRC::EmbeddedFileSystem::IterateDirectory</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>DirectoryIterator </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="765" column="23" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="765" bodyend="787"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>CMakeRC::EmbeddedFileSystem</label>
+        <link refid="d2/df9/class_c_make_r_c_1_1_embedded_file_system"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_index</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>K</label>
+      </node>
+      <node id="4">
+        <label>T</label>
+      </node>
+      <node id="2">
+        <label>std::map&lt; K, T &gt;</label>
+        <childnode refid="3" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="663" column="1" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="664" bodyend="788"/>
+    <listofallmembers>
+      <member refid="d2/df9/class_c_make_r_c_1_1_embedded_file_system_1ab8e4e1221710c44add0f329b6a3cad47" prot="private" virt="non-virtual"><scope>CMakeRC::EmbeddedFileSystem</scope><name>_get</name></member>
+      <member refid="d2/df9/class_c_make_r_c_1_1_embedded_file_system_1a907c3ddde3effeb4b97f3c5b4d23988d" prot="private" virt="non-virtual"><scope>CMakeRC::EmbeddedFileSystem</scope><name>_index</name></member>
+      <member refid="d2/df9/class_c_make_r_c_1_1_embedded_file_system_1a9163d770a3ebcf479cd630690703cc05" prot="public" virt="non-virtual"><scope>CMakeRC::EmbeddedFileSystem</scope><name>EmbeddedFileSystem</name></member>
+      <member refid="d2/df9/class_c_make_r_c_1_1_embedded_file_system_1acf6a8b5508470806f06e45b0394b794c" prot="public" virt="non-virtual"><scope>CMakeRC::EmbeddedFileSystem</scope><name>Exists</name></member>
+      <member refid="d2/df9/class_c_make_r_c_1_1_embedded_file_system_1aacaaa6554852380e3c4e9529440482c5" prot="public" virt="non-virtual"><scope>CMakeRC::EmbeddedFileSystem</scope><name>IsDirectory</name></member>
+      <member refid="d2/df9/class_c_make_r_c_1_1_embedded_file_system_1acf69f5466bd4c59e48451a235ac7ab47" prot="public" virt="non-virtual"><scope>CMakeRC::EmbeddedFileSystem</scope><name>IsFile</name></member>
+      <member refid="d2/df9/class_c_make_r_c_1_1_embedded_file_system_1aa295b7f7c1aef39c3ef86bc472d19a99" prot="public" virt="non-virtual"><scope>CMakeRC::EmbeddedFileSystem</scope><name>IterateDirectory</name></member>
+      <member refid="d2/df9/class_c_make_r_c_1_1_embedded_file_system_1ae49cd6b12ff520cc722953dafc90bfe7" prot="public" virt="non-virtual"><scope>CMakeRC::EmbeddedFileSystem</scope><name>open</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

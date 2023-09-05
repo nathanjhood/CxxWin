@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_c_make_r_c_1_1_detail" xml:lang="en-US">
+<title>CMakeRC::Detail Namespace Reference</title>
+<indexterm><primary>CMakeRC::Detail</primary></indexterm>
+<para>
+
+<para>&apos; </para>
+ 
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_struct_c_make_r_c_1_1_detail_1_1_created_sub_directory">CreatedSubDirectory</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_c_make_r_c_1_1_detail_1_1_directory">Directory</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_c_make_r_c_1_1_detail_1_1_file_data">FileData</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_c_make_r_c_1_1_detail_1_1_file_or_directory">FileOrDirectory</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Typedefs    </title>
+        <itemizedlist>
+            <listitem><para>using <link linkend="_namespace_c_make_r_c_1_1_detail_1af8b7b0ba529bcc74373e4ee395b54529">IndexType</link> = std::map&lt; std::string, const <link linkend="_class_c_make_r_c_1_1_detail_1_1_file_or_directory">CMakeRC::Detail::FileOrDirectory</link> * &gt;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>std::pair&lt; std::string, std::string &gt; <link linkend="_namespace_c_make_r_c_1_1_detail_1a66d1ba033d0fd3128f0c20fc3652070a">SplitPath</link> (const std::string &amp;path)</para>
+</listitem>
+            <listitem><para>std::string <link linkend="_namespace_c_make_r_c_1_1_detail_1a6553506577f146fdcb7e1588a74dd102">NormalizePath</link> (std::string path)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>&apos; </para>
+
+<para>The &apos;<link linkend="_class_c_make_r_c_1_1_detail_1_1_file_data">FileData</link>&apos; class ::</para>
+
+<para>The &apos;<link linkend="_namespace_c_make_r_c_1_1_detail">CMakeRC::Detail</link>&apos; namespace.</para>
+</section>
+<section>
+<title>Typedef Documentation</title>
+<anchor xml:id="_namespace_c_make_r_c_1_1_detail_1af8b7b0ba529bcc74373e4ee395b54529"/><section>
+    <title>IndexType</title>
+<indexterm><primary>IndexType</primary><secondary>CMakeRC::Detail</secondary></indexterm>
+<indexterm><primary>CMakeRC::Detail</primary><secondary>IndexType</secondary></indexterm>
+<para><computeroutput>using <link linkend="_namespace_c_make_r_c_1_1_detail_1af8b7b0ba529bcc74373e4ee395b54529">CMakeRC::Detail::IndexType</link> = typedef std::map&lt;std::string, const <link linkend="_class_c_make_r_c_1_1_detail_1_1_file_or_directory">CMakeRC::Detail::FileOrDirectory</link>*&gt;</computeroutput></para></section>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespace_c_make_r_c_1_1_detail_1a6553506577f146fdcb7e1588a74dd102"/><section>
+    <title>NormalizePath()</title>
+<indexterm><primary>NormalizePath</primary><secondary>CMakeRC::Detail</secondary></indexterm>
+<indexterm><primary>CMakeRC::Detail</primary><secondary>NormalizePath</secondary></indexterm>
+<para><computeroutput>std::string CMakeRC::Detail::NormalizePath (std::string path)<computeroutput>[inline]</computeroutput></computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>path</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>std::string </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_namespace_c_make_r_c_1_1_detail_1a66d1ba033d0fd3128f0c20fc3652070a"/><section>
+    <title>SplitPath()</title>
+<indexterm><primary>SplitPath</primary><secondary>CMakeRC::Detail</secondary></indexterm>
+<indexterm><primary>CMakeRC::Detail</primary><secondary>SplitPath</secondary></indexterm>
+<para><computeroutput>std::pair&lt; std::string, std::string &gt; CMakeRC::Detail::SplitPath (const std::string &amp; path)<computeroutput>[inline]</computeroutput></computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>path</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>std::pair&lt;std::string, std::string&gt; </para>
+</formalpara>
+</para>
+</section>
+</section>
+</section>

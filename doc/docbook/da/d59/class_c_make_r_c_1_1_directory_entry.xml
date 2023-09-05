@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_c_make_r_c_1_1_directory_entry" xml:lang="en-US">
+<title>CMakeRC::DirectoryEntry Class Reference</title>
+<indexterm><primary>CMakeRC::DirectoryEntry</primary></indexterm>
+<para>
+<computeroutput>#include &lt;cmrc.hpp&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_c_make_r_c_1_1_directory_entry_1afa4e984e646c6fd9802fc888a6adb09b">DirectoryEntry</link> ()=delete</para>
+
+<para>(inaccessible) Default-Construct a new &apos;<link linkend="_class_c_make_r_c_1_1_directory_entry">DirectoryEntry</link>&apos; object. </para>
+</listitem>
+            <listitem><para><link linkend="_class_c_make_r_c_1_1_directory_entry_1adac92932fc5ad6f98cde2392fdc3dc4e">DirectoryEntry</link> (std::string filename, const <link linkend="_class_c_make_r_c_1_1_detail_1_1_file_or_directory">Detail::FileOrDirectory</link> &amp;item)</para>
+
+<para>Construct a new &apos;<link linkend="_class_c_make_r_c_1_1_directory_entry">DirectoryEntry</link>&apos; object. </para>
+</listitem>
+            <listitem><para>const std::string &amp; <link linkend="_class_c_make_r_c_1_1_directory_entry_1a3201c2d5ac5e2268f669ed1b7aa4bdce">Filename</link> () const &amp;</para>
+</listitem>
+            <listitem><para>std::string <link linkend="_class_c_make_r_c_1_1_directory_entry_1acbf4f57d8c5688879ee63e3d39634416">Filename</link> () const &amp;&amp;</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_c_make_r_c_1_1_directory_entry_1aa6f38441e073b7c203aaeb573bd43b7a">IsFile</link> () const</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_c_make_r_c_1_1_directory_entry_1a0630f2f2c01df34707c28f386ea3fa90">IsDirectory</link> () const</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>std::string <link linkend="_class_c_make_r_c_1_1_directory_entry_1a646b40c7b36660599356f97d8bd506d8">_fname</link></para>
+</listitem>
+            <listitem><para>const <link linkend="_class_c_make_r_c_1_1_detail_1_1_file_or_directory">Detail::FileOrDirectory</link> * <link linkend="_class_c_make_r_c_1_1_directory_entry_1ae1a59731a6b7a04239dbfe8484c7ec25">_item</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_c_make_r_c_1_1_directory_entry_1afa4e984e646c6fd9802fc888a6adb09b"/><section>
+    <title>DirectoryEntry()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>DirectoryEntry</primary><secondary>CMakeRC::DirectoryEntry</secondary></indexterm>
+<indexterm><primary>CMakeRC::DirectoryEntry</primary><secondary>DirectoryEntry</secondary></indexterm>
+<para><computeroutput>CMakeRC::DirectoryEntry::DirectoryEntry ( )<computeroutput>[delete]</computeroutput></computeroutput></para><para>
+
+<para>(inaccessible) Default-Construct a new &apos;<link linkend="_class_c_make_r_c_1_1_directory_entry">DirectoryEntry</link>&apos; object. </para>
+</para>
+</section>
+<anchor xml:id="_class_c_make_r_c_1_1_directory_entry_1adac92932fc5ad6f98cde2392fdc3dc4e"/><section>
+    <title>DirectoryEntry()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>DirectoryEntry</primary><secondary>CMakeRC::DirectoryEntry</secondary></indexterm>
+<indexterm><primary>CMakeRC::DirectoryEntry</primary><secondary>DirectoryEntry</secondary></indexterm>
+<para><computeroutput>CMakeRC::DirectoryEntry::DirectoryEntry (std::string filename, const <link linkend="_class_c_make_r_c_1_1_detail_1_1_file_or_directory">Detail::FileOrDirectory</link> &amp; item)<computeroutput>[inline]</computeroutput>, <computeroutput>[explicit]</computeroutput></computeroutput></para><para>
+
+<para>Construct a new &apos;<link linkend="_class_c_make_r_c_1_1_directory_entry">DirectoryEntry</link>&apos; object. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>filename</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>item</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_c_make_r_c_1_1_directory_entry_1a3201c2d5ac5e2268f669ed1b7aa4bdce"/><section>
+    <title>Filename()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Filename</primary><secondary>CMakeRC::DirectoryEntry</secondary></indexterm>
+<indexterm><primary>CMakeRC::DirectoryEntry</primary><secondary>Filename</secondary></indexterm>
+<para><computeroutput>const std::string &amp; CMakeRC::DirectoryEntry::Filename ( ) const &amp;<computeroutput>[inline]</computeroutput></computeroutput></para>
+<para><formalpara><title>Returns</title>
+
+<para>const std::string&amp; </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_c_make_r_c_1_1_directory_entry_1acbf4f57d8c5688879ee63e3d39634416"/><section>
+    <title>Filename()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Filename</primary><secondary>CMakeRC::DirectoryEntry</secondary></indexterm>
+<indexterm><primary>CMakeRC::DirectoryEntry</primary><secondary>Filename</secondary></indexterm>
+<para><computeroutput>std::string CMakeRC::DirectoryEntry::Filename ( ) const &amp;&amp;<computeroutput>[inline]</computeroutput></computeroutput></para>
+<para><formalpara><title>Returns</title>
+
+<para>std::string </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_c_make_r_c_1_1_directory_entry_1a0630f2f2c01df34707c28f386ea3fa90"/><section>
+    <title>IsDirectory()</title>
+<indexterm><primary>IsDirectory</primary><secondary>CMakeRC::DirectoryEntry</secondary></indexterm>
+<indexterm><primary>CMakeRC::DirectoryEntry</primary><secondary>IsDirectory</secondary></indexterm>
+<para><computeroutput>bool CMakeRC::DirectoryEntry::IsDirectory ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para>
+<para><formalpara><title>Returns</title>
+
+<para>true </para>
+
+<para>false </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_c_make_r_c_1_1_directory_entry_1aa6f38441e073b7c203aaeb573bd43b7a"/><section>
+    <title>IsFile()</title>
+<indexterm><primary>IsFile</primary><secondary>CMakeRC::DirectoryEntry</secondary></indexterm>
+<indexterm><primary>CMakeRC::DirectoryEntry</primary><secondary>IsFile</secondary></indexterm>
+<para><computeroutput>bool CMakeRC::DirectoryEntry::IsFile ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para>
+<para><formalpara><title>Returns</title>
+
+<para>true </para>
+
+<para>false </para>
+</formalpara>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_c_make_r_c_1_1_directory_entry_1a646b40c7b36660599356f97d8bd506d8"/><section>
+    <title>_fname</title>
+<indexterm><primary>_fname</primary><secondary>CMakeRC::DirectoryEntry</secondary></indexterm>
+<indexterm><primary>CMakeRC::DirectoryEntry</primary><secondary>_fname</secondary></indexterm>
+<para><computeroutput>std::string CMakeRC::DirectoryEntry::_fname<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_c_make_r_c_1_1_directory_entry_1ae1a59731a6b7a04239dbfe8484c7ec25"/><section>
+    <title>_item</title>
+<indexterm><primary>_item</primary><secondary>CMakeRC::DirectoryEntry</secondary></indexterm>
+<indexterm><primary>CMakeRC::DirectoryEntry</primary><secondary>_item</secondary></indexterm>
+<para><computeroutput>const <link linkend="_class_c_make_r_c_1_1_detail_1_1_file_or_directory">Detail::FileOrDirectory</link>* CMakeRC::DirectoryEntry::_item<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+include/CxxWin/modules/Win32_resource/<link linkend="_cmrc_8hpp">cmrc.hpp</link></section>
+</section>

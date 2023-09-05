@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_win32__resource_8hpp_source" xml:lang="en-US">
+<title>win32_resource.hpp</title>
+<indexterm><primary>include/CxxWin/modules/Win32_resource/win32_resource.hpp</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 
+11 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+12 
+13 <emphasis role="preprocessor">#define&#32;_WIN32_RESOURCE_H_</emphasis>
+14 
+15 <emphasis role="preprocessor">#ifndef&#32;__RC_RESOURCE_T</emphasis>
+22 <emphasis role="preprocessor">#define&#32;__RC_RESOURCE_T&#32;const&#32;signed&#32;char</emphasis>
+28 <emphasis role="keyword">typedef</emphasis>&#32;<link linkend="_win32__resource_8hpp_1a2e76c05ee6a9e027f414ed73d775ac84">__RC_RESOURCE_T</link>&#32;<link linkend="_win32__resource_8hpp_1a3589507c444d07ca84f3ec878da0e8ff">RCRESOURCE</link>;
+29 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//</emphasis>
+30 
+32 <emphasis role="preprocessor">#define&#32;__RC_RESOURCE_T_PTR&#32;RCRESOURCE*</emphasis>
+34 <emphasis role="keyword">typedef</emphasis>&#32;<link linkend="_win32__resource_8hpp_1ac60ad59d611c5f6b55f27384e0a0183c">__RC_RESOURCE_T_PTR</link>&#32;<link linkend="_win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268">RCRESOURCEPTR</link>;
+35 
+36 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_cmrc_8hpp">cmrc.hpp</link>&quot;</emphasis>
+37 
+38 <emphasis role="preprocessor">#define&#32;__FS_EMBEDDED&#32;CMakeRC::EmbeddedFileSystem</emphasis>
+39 <emphasis role="keyword">typedef</emphasis>&#32;<link linkend="_win32__resource_8hpp_1a312e6926a87e664a60c5739698529a79">__FS_EMBEDDED</link>&#32;<link linkend="_win32__resource_8hpp_1a5afbfa7ab227c0b123b37aeaca4963b3">FSEMBEDDED</link>;
+40 
+41 <emphasis role="preprocessor">#define&#32;__RES_IDX_T&#32;CMakeRC::Detail::IndexType</emphasis>
+42 <emphasis role="keyword">typedef</emphasis>&#32;<link linkend="_win32__resource_8hpp_1a015eed6194d3055783885b577911818a">__RES_IDX_T</link>&#32;<link linkend="_win32__resource_8hpp_1aa6bfcc93f2ea5b758d45be8c4bc500b0">IDXRES</link>;
+43 
+44 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_win32__png_8hpp">img/win32_png.hpp</link>&quot;</emphasis>
+45 
+46 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_win32___application_icon__png_8hpp">img/win32_ApplicationIcon_png.hpp</link>&quot;</emphasis>
+47 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_win32___logo__png_8hpp">img/win32_Logo_png.hpp</link>&quot;</emphasis>
+48 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_win32___small_logo__png_8hpp">img/win32_SmallLogo_png.hpp</link>&quot;</emphasis>
+49 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_win32___small_logo44x44__png_8hpp">img/win32_SmallLogo44x44_png.hpp</link>&quot;</emphasis>
+50 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_win32___splash_screen__png_8hpp">img/win32_SplashScreen_png.hpp</link>&quot;</emphasis>
+51 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_win32___store_logo__png_8hpp">img/win32_StoreLogo_png.hpp</link>&quot;</emphasis>
+52 
+53 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_win32__pfx_8hpp">key/win32_pfx.hpp</link>&quot;</emphasis>
+54 
+55 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_win32___windows___temporary_key__pfx_8hpp">key/win32_Windows_TemporaryKey_pfx.hpp</link>&quot;</emphasis>
+</programlisting></section>

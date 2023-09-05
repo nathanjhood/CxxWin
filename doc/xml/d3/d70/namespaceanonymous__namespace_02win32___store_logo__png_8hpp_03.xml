@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d3/d70/namespaceanonymous__namespace_02win32___store_logo__png_8hpp_03" kind="namespace" language="C++">
+    <compoundname>anonymous_namespace{win32_StoreLogo_png.hpp}</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="d3/d70/namespaceanonymous__namespace_02win32___store_logo__png_8hpp_03_1a9d153cb022292650e2e02cb6f4eaa02d" prot="public" static="no" mutable="no">
+        <type><ref refid="d5/d1d/win32__resource_8hpp_1a3589507c444d07ca84f3ec878da0e8ff" kindref="member">RCRESOURCE</ref></type>
+        <definition>RCRESOURCE anonymous_namespace{win32_StoreLogo_png.hpp}::StoreLogo_png_array[228]</definition>
+        <argsstring>[228]</argsstring>
+        <name>StoreLogo_png_array</name>
+        <qualifiedname>anonymous_namespace{win32_StoreLogo_png.hpp}::StoreLogo_png_array</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/img/win32_StoreLogo_png.hpp" line="30" column="12" bodyfile="include/CxxWin/modules/Win32_resource/img/win32_StoreLogo_png.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/CxxWin/modules/Win32_resource/img/win32_StoreLogo_png.hpp" line="28" column="1"/>
+  </compounddef>
+</doxygen>

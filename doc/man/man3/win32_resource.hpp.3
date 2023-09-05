@@ -1,0 +1,125 @@
+.TH "include/CxxWin/modules/Win32_resource/win32_resource.hpp" 3Version 1.0.1" "CxxWin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+include/CxxWin/modules/Win32_resource/win32_resource.hpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'cmrc\&.hpp'\fP
+.br
+\fC#include 'img/win32_png\&.hpp'\fP
+.br
+\fC#include 'img/win32_ApplicationIcon_png\&.hpp'\fP
+.br
+\fC#include 'img/win32_Logo_png\&.hpp'\fP
+.br
+\fC#include 'img/win32_SmallLogo_png\&.hpp'\fP
+.br
+\fC#include 'img/win32_SmallLogo44x44_png\&.hpp'\fP
+.br
+\fC#include 'img/win32_SplashScreen_png\&.hpp'\fP
+.br
+\fC#include 'img/win32_StoreLogo_png\&.hpp'\fP
+.br
+\fC#include 'key/win32_pfx\&.hpp'\fP
+.br
+\fC#include 'key/win32_Windows_TemporaryKey_pfx\&.hpp'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB_WIN32_RESOURCE_H_\fP"
+.br
+.ti -1c
+.RI "#define \fB__RC_RESOURCE_T\fP   const signed char"
+.br
+.RI "The underlying 'RCRESOURCE' typedef; maps a simple datatype to the 'RCRESOURCE' typedef\&. "
+.ti -1c
+.RI "#define \fB__RC_RESOURCE_T_PTR\fP   \fBRCRESOURCE\fP*"
+.br
+.RI "The underlying 'RCRESOURCEPTR' type; wraps a raw pointer to the 'RESOURCE' typedef\&. "
+.ti -1c
+.RI "#define \fB__FS_EMBEDDED\fP   \fBCMakeRC::EmbeddedFileSystem\fP"
+.br
+.ti -1c
+.RI "#define \fB__RES_IDX_T\fP   \fBCMakeRC::Detail::IndexType\fP"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef \fB__RC_RESOURCE_T\fP \fBRCRESOURCE\fP"
+.br
+.RI "The 'RCRESOURCE' type; maps a simple datatype to the 'RCRESOURCE' typedef\&. "
+.ti -1c
+.RI "typedef \fB__RC_RESOURCE_T_PTR\fP \fBRCRESOURCEPTR\fP"
+.br
+.RI "The 'RESOURCEPTR' type; wraps a raw pointer to the 'RESOURCE' typedef\&. "
+.ti -1c
+.RI "typedef \fB__FS_EMBEDDED\fP \fBFSEMBEDDED\fP"
+.br
+.ti -1c
+.RI "typedef \fB__RES_IDX_T\fP \fBIDXRES\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+\fBAuthor\fP
+.RS 4
+StoneyDSP (nathanjhood@googlemail.com) 
+.RE
+.PP
+\fBVersion\fP
+.RS 4
+1\&.0\&.0 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+2023-09-01
+.RE
+.PP
+\fBCopyright\fP
+.RS 4
+.RE
+.PP
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __FS_EMBEDDED   \fBCMakeRC::EmbeddedFileSystem\fP"
+
+.SS "#define __RC_RESOURCE_T   const signed char"
+
+.PP
+The underlying 'RCRESOURCE' typedef; maps a simple datatype to the 'RCRESOURCE' typedef\&. Can be over-ridden to other data types, for example by specifying '-D__RC_RESOURCE_T='some new data type'' or similar when building\&. 
+.SS "#define __RC_RESOURCE_T_PTR   \fBRCRESOURCE\fP*"
+
+.PP
+The underlying 'RCRESOURCEPTR' type; wraps a raw pointer to the 'RESOURCE' typedef\&. 
+.SS "#define __RES_IDX_T   \fBCMakeRC::Detail::IndexType\fP"
+
+.SS "#define _WIN32_RESOURCE_H_"
+
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef \fB__FS_EMBEDDED\fP \fBFSEMBEDDED\fP"
+
+.SS "typedef \fB__RES_IDX_T\fP \fBIDXRES\fP"
+
+.SS "typedef \fB__RC_RESOURCE_T\fP \fBRCRESOURCE\fP"
+
+.PP
+The 'RCRESOURCE' type; maps a simple datatype to the 'RCRESOURCE' typedef\&. Can be over-ridden to other data types, for example by specifying '-D__RC_RESOURCE_T='some new data type'' or similar when building\&.\&. 
+.SS "typedef \fB__RC_RESOURCE_T_PTR\fP \fBRCRESOURCEPTR\fP"
+
+.PP
+The 'RESOURCEPTR' type; wraps a raw pointer to the 'RESOURCE' typedef\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CxxWin from the source code\&.

@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__win_main_8hpp" xml:lang="en-US">
+<title>include/CxxWin/WinMain.hpp File Reference</title>
+<indexterm><primary>include/CxxWin/WinMain.hpp</primary></indexterm>
+<para>
+
+<para>Contains the declarations of &apos;WinMain&apos;. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &quot;MainComponent.hpp&quot;<?linebreak?></programlisting><simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="__win_main_8hpp_1ac043de19782e10d161acc05fb100a427">_WINMAIN_HPP_</link></para>
+
+<para>Contains the declarations of &apos;WinMain&apos;. </para>
+</listitem>
+            <listitem><para>#define <link linkend="__win_main_8hpp_1aae5f25e9b47a8343df2bc65a87501f84">WinMain</link>&#160;&#160;&#160;WinMain</para>
+
+<para>Contains the ANSI-style declaration of &apos;WinMain&apos;. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Typedefs    </title>
+        <itemizedlist>
+            <listitem><para>typedef LPSTR <link linkend="__win_main_8hpp_1ae5ba30db05a87373f8fd16ac9c6f8f32">LPCMDLINE</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Contains the declarations of &apos;WinMain&apos;. </para>
+
+<para><formalpara><title>Author</title>
+
+<para>StoneyDSP (<link xlink:href="mailto:nathanjhood@googlemail.com">nathanjhood@googlemail.com</link>)</para>
+</formalpara>
+</para>
+
+<para><formalpara><title>Version</title>
+
+<para>1.0.0 </para>
+</formalpara>
+<formalpara><title>Date</title>
+
+<para>2023-08-23</para>
+</formalpara>
+<formalpara><title>Copyright</title>
+
+<para>Copyright (c) 2023 </para>
+</formalpara>
+</para>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="__win_main_8hpp_1ac043de19782e10d161acc05fb100a427"/><section>
+    <title>_WINMAIN_HPP_</title>
+<indexterm><primary>_WINMAIN_HPP_</primary><secondary>WinMain.hpp</secondary></indexterm>
+<indexterm><primary>WinMain.hpp</primary><secondary>_WINMAIN_HPP_</secondary></indexterm>
+<para><computeroutput>#define _WINMAIN_HPP_</computeroutput></para><para>
+
+<para>Contains the declarations of &apos;WinMain&apos;. </para>
+</para>
+</section>
+<anchor xml:id="__win_main_8hpp_1aae5f25e9b47a8343df2bc65a87501f84"/><section>
+    <title>WinMain</title>
+<indexterm><primary>WinMain</primary><secondary>WinMain.hpp</secondary></indexterm>
+<indexterm><primary>WinMain.hpp</primary><secondary>WinMain</secondary></indexterm>
+<para><computeroutput>#define WinMain&#160;&#160;&#160;WinMain</computeroutput></para><para>
+
+<para>Contains the ANSI-style declaration of &apos;WinMain&apos;. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Typedef Documentation</title>
+<anchor xml:id="__win_main_8hpp_1ae5ba30db05a87373f8fd16ac9c6f8f32"/><section>
+    <title>LPCMDLINE</title>
+<indexterm><primary>LPCMDLINE</primary><secondary>WinMain.hpp</secondary></indexterm>
+<indexterm><primary>WinMain.hpp</primary><secondary>LPCMDLINE</secondary></indexterm>
+<para><computeroutput>typedef LPSTR <link linkend="__win_main_8hpp_1ae5ba30db05a87373f8fd16ac9c6f8f32">LPCMDLINE</link></computeroutput></para></section>
+</section>
+</section>

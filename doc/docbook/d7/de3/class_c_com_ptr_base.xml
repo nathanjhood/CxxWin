@@ -1,0 +1,306 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_c_com_ptr_base" xml:lang="en-US">
+<title>CComPtrBase&lt; T &gt; Class Template Reference</title>
+<indexterm><primary>CComPtrBase&lt; T &gt;</primary></indexterm>
+<para>
+
+<para>The &apos;<link linkend="_class_c_com_ptr_base">CComPtrBase</link>&apos; class. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;win32_CComPtrBase.hpp&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_c_com_ptr_base_1a890ee71812369fc3bab1d033dc9c8e5e">~CComPtrBase</link> ()  throw ()</para>
+
+<para>Destroy the &apos;<link linkend="_class_c_com_ptr_base">CComPtrBase</link>&apos; object. </para>
+</listitem>
+            <listitem><para>HRESULT <link linkend="_class_c_com_ptr_base_1a4d1eb556a56b2cbe38dd1676c45b29f9">CoCreateInstance</link> (LPCOLESTR szProgID, LPUNKNOWN pUnkOuter=NULL, DWORD dwClsContext=CLSCTX_ALL)  throw ()</para>
+
+<para>Call this method to create an object of the class associated with a specified Class ID or Program ID. </para>
+</listitem>
+            <listitem><para>HRESULT <link linkend="_class_c_com_ptr_base_1a779dcf0ac815f4d2fbba20cabcd01e90">CoCreateInstance</link> (REFCLSID rclsid, LPUNKNOWN pUnkOuter=NULL, DWORD dwClsContext=CLSCTX_ALL)  throw ()</para>
+
+<para>Call this method to create an object of the class associated with a specified Class ID or Program ID. </para>
+</listitem>
+            <listitem><para>HRESULT <link linkend="_class_c_com_ptr_base_1a3384d24c3feb44062843fa259fc72c71">Advise</link> (IUnknown *pUnk, const IID &amp;iid, LPDWORD pdw)  throw ()</para>
+
+<para>Call this method to create a connection between the &apos;<link linkend="_class_c_com_ptr_base">CComPtrBase</link>&apos;s connection point and a client&apos;s sink. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_c_com_ptr_base_1afc3a9815853fe9a1029036ef41aaa7b0">Attach</link> (T *p2)  throw ()</para>
+
+<para>Call this method to take ownership of an existing pointer. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>T * <link linkend="_class_c_com_ptr_base_1a90711bda95e1d33b8d771d1f15d47a17">p</link></para>
+
+<para>The pointer data member variable. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<simplesect><title>template&lt;class T&gt;<?linebreak?>class CComPtrBase&lt; T &gt;</title></simplesect>
+
+<para>The &apos;<link linkend="_class_c_com_ptr_base">CComPtrBase</link>&apos; class. </para>
+
+
+
+<para>This class provides a basis for smart pointer classes using COM-based memory routines.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Template Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>T</entry><entry>
+<para>The object type to be referenced by the smart pointer.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Remarks</title>
+
+<para>This class provides the basis for other smart pointers that use COM memory management routines, such as &apos;CComQIPtr&apos; and &apos;CComPtr&apos;. The derived classes add their own constructors and operators, but rely on the methods provided by &apos;<link linkend="_class_c_com_ptr_base">CComPtrBase</link>&apos;. </para>
+</formalpara>
+</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_c_com_ptr_base_1a890ee71812369fc3bab1d033dc9c8e5e"/><section>
+    <title>~CComPtrBase()</title>
+<indexterm><primary>~CComPtrBase</primary><secondary>CComPtrBase&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>CComPtrBase&lt; T &gt;</primary><secondary>~CComPtrBase</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput><link linkend="_class_c_com_ptr_base">CComPtrBase</link>&lt; T &gt;::~<link linkend="_class_c_com_ptr_base">CComPtrBase</link> ( ) throw ( ) </computeroutput></para><para>
+
+<para>Destroy the &apos;<link linkend="_class_c_com_ptr_base">CComPtrBase</link>&apos; object. </para>
+</para>
+
+<para><formalpara><title>Remarks</title>
+
+<para>Releases the interface pointed to by <link linkend="_class_c_com_ptr_base">CComPtrBase</link>. </para>
+</formalpara>
+</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_c_com_ptr_base_1a3384d24c3feb44062843fa259fc72c71"/><section>
+    <title>Advise()</title>
+<indexterm><primary>Advise</primary><secondary>CComPtrBase&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>CComPtrBase&lt; T &gt;</primary><secondary>Advise</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput>HRESULT <link linkend="_class_c_com_ptr_base">CComPtrBase</link>&lt; T &gt;::Advise (IUnknown * pUnk, const IID &amp; iid, LPDWORD pdw) throw ( ) </computeroutput></para><para>
+
+<para>Call this method to create a connection between the &apos;<link linkend="_class_c_com_ptr_base">CComPtrBase</link>&apos;s connection point and a client&apos;s sink. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>pUnk</entry><entry>
+<para>A pointer to the client&apos;s &apos;IUnknown&apos;.</para>
+</entry>
+                            </row>
+                            <row>
+<entry>iid</entry><entry>
+<para>The GUID of the connection point. Typically, this GUID is the same as the outgoing interface managed by the connection point.</para>
+</entry>
+                            </row>
+                            <row>
+<entry>pdw</entry><entry>
+<para>A pointer to the cookie that uniquely identifies the connection.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>HRESULT - Returns S_OK on success, or an error HRESULT on failure. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_c_com_ptr_base_1afc3a9815853fe9a1029036ef41aaa7b0"/><section>
+    <title>Attach()</title>
+<indexterm><primary>Attach</primary><secondary>CComPtrBase&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>CComPtrBase&lt; T &gt;</primary><secondary>Attach</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput>void <link linkend="_class_c_com_ptr_base">CComPtrBase</link>&lt; T &gt;::Attach (T * p2) throw ( ) </computeroutput></para><para>
+
+<para>Call this method to take ownership of an existing pointer. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>p2</entry><entry>
+<para>The &apos;<link linkend="_class_c_com_ptr_base">CComPtrBase</link>&apos; object will take ownership of this pointer.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Remarks</title>
+
+<para>Attach calls &apos;CComPtrBase::Release&apos; on the existing &apos;<link linkend="_class_c_com_ptr_base_1a90711bda95e1d33b8d771d1f15d47a17">CComPtrBase::p</link>&apos; member variable and then assigns &apos;p2&apos; to &apos;<link linkend="_class_c_com_ptr_base_1a90711bda95e1d33b8d771d1f15d47a17">CComPtrBase::p</link>&apos;. When a &apos;<link linkend="_class_c_com_ptr_base">CComPtrBase</link>&apos; object takes ownership of a pointer, it will automatically call Release on the pointer, which deletes the pointer and any allocated data if the reference count on the object goes to 0. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_c_com_ptr_base_1a4d1eb556a56b2cbe38dd1676c45b29f9"/><section>
+    <title>CoCreateInstance()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>CoCreateInstance</primary><secondary>CComPtrBase&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>CComPtrBase&lt; T &gt;</primary><secondary>CoCreateInstance</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput>HRESULT <link linkend="_class_c_com_ptr_base">CComPtrBase</link>&lt; T &gt;::CoCreateInstance (LPCOLESTR szProgID, LPUNKNOWN pUnkOuter = <computeroutput>NULL</computeroutput>
+, DWORD dwClsContext = <computeroutput>CLSCTX_ALL</computeroutput>
+) throw ( ) </computeroutput></para><para>
+
+<para>Call this method to create an object of the class associated with a specified Class ID or Program ID. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>szProgID</entry><entry>
+<para>Pointer to a ProgID, used to recover the &apos;CLSID&apos;. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>pUnkOuter</entry><entry>
+<para>If NULL, indicates that the object isn&apos;t being created as part of an aggregate. If non- NULL, is a pointer to the aggregate object&apos;s &apos;IUnknown&apos; interface (the controlling &apos;IUnknown&apos;). </para>
+</entry>
+                            </row>
+                            <row>
+<entry>dwClsContext</entry><entry>
+<para>Context in which the code that manages the newly created object will run. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>HRESULT - Returns S_OK on success, or REGDB_E_CLASSNOTREG, CLASS_E_NOAGGREGATION, CO_E_CLASSSTRING, or E_NOINTERFACE on failure.</para>
+</formalpara>
+<formalpara><title>Remarks</title>
+
+<para>If the first form of the method is called, CLSIDFromProgID is used to recover the CLSID. Both forms then call CoCreateClassInstance.</para>
+</formalpara>
+In debug builds, an assertion error will occur if &apos;<link linkend="_class_c_com_ptr_base_1a90711bda95e1d33b8d771d1f15d47a17">CComPtrBase::p</link>&apos; isn&apos;t equal to NULL. </para>
+</section>
+<anchor xml:id="_class_c_com_ptr_base_1a779dcf0ac815f4d2fbba20cabcd01e90"/><section>
+    <title>CoCreateInstance()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>CoCreateInstance</primary><secondary>CComPtrBase&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>CComPtrBase&lt; T &gt;</primary><secondary>CoCreateInstance</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput>HRESULT <link linkend="_class_c_com_ptr_base">CComPtrBase</link>&lt; T &gt;::CoCreateInstance (REFCLSID rclsid, LPUNKNOWN pUnkOuter = <computeroutput>NULL</computeroutput>
+, DWORD dwClsContext = <computeroutput>CLSCTX_ALL</computeroutput>
+) throw ( ) </computeroutput></para><para>
+
+<para>Call this method to create an object of the class associated with a specified Class ID or Program ID. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>rclsid</entry><entry>
+<para>CLSID associated with the data and code that will be used to create the object. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>pUnkOuter</entry><entry>
+<para>If NULL, indicates that the object isn&apos;t being created as part of an aggregate. If non- NULL, is a pointer to the aggregate object&apos;s &apos;IUnknown&apos; interface (the controlling &apos;IUnknown&apos;). </para>
+</entry>
+                            </row>
+                            <row>
+<entry>dwClsContext</entry><entry>
+<para>Context in which the code that manages the newly created object will run. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>HRESULT - Returns S_OK on success, or REGDB_E_CLASSNOTREG, CLASS_E_NOAGGREGATION, CO_E_CLASSSTRING, or E_NOINTERFACE on failure.</para>
+</formalpara>
+<formalpara><title>Remarks</title>
+
+<para>If the first form of the method is called, CLSIDFromProgID is used to recover the CLSID. Both forms then call CoCreateClassInstance.</para>
+</formalpara>
+In debug builds, an assertion error will occur if &apos;<link linkend="_class_c_com_ptr_base_1a90711bda95e1d33b8d771d1f15d47a17">CComPtrBase::p</link>&apos; isn&apos;t equal to NULL. </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_c_com_ptr_base_1a90711bda95e1d33b8d771d1f15d47a17"/><section>
+    <title>p</title>
+<indexterm><primary>p</primary><secondary>CComPtrBase&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>CComPtrBase&lt; T &gt;</primary><secondary>p</secondary></indexterm>
+<computeroutput>template&lt;class T &gt; </computeroutput><para><computeroutput>T* <link linkend="_class_c_com_ptr_base">CComPtrBase</link>&lt; T &gt;::p</computeroutput></para><para>
+
+<para>The pointer data member variable. </para>
+</para>
+
+<para><formalpara><title>Remarks</title>
+
+<para>This member variable holds the pointer information. </para>
+</formalpara>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+include/CxxWin/modules/Win32_core/memory/<link linkend="_win32___c_com_ptr_base_8hpp">win32_CComPtrBase.hpp</link></section>
+</section>

@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d3/dd6/union_c_make_r_c_1_1_detail_1_1_file_or_directory_1_1__data__t" kind="union" language="C++" prot="private">
+    <compoundname>CMakeRC::Detail::FileOrDirectory::_data_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d3/dd6/union_c_make_r_c_1_1_detail_1_1_file_or_directory_1_1__data__t_1acbf70db2aed1fbc0759700954fd99fec" prot="public" static="no" mutable="no">
+        <type>class <ref refid="d0/d80/class_c_make_r_c_1_1_detail_1_1_file_data" kindref="compound">FileData</ref> *</type>
+        <definition>class FileData* CMakeRC::Detail::FileOrDirectory::_data_t::FileData</definition>
+        <argsstring></argsstring>
+        <name>FileData</name>
+        <qualifiedname>CMakeRC::Detail::FileOrDirectory::_data_t::FileData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="271" column="24" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/dd6/union_c_make_r_c_1_1_detail_1_1_file_or_directory_1_1__data__t_1a141a50e444eccb832148435433499864" prot="public" static="no" mutable="no">
+        <type>class <ref refid="d3/d17/class_c_make_r_c_1_1_detail_1_1_directory" kindref="compound">Directory</ref> *</type>
+        <definition>class Directory* CMakeRC::Detail::FileOrDirectory::_data_t::Directory</definition>
+        <argsstring></argsstring>
+        <name>Directory</name>
+        <qualifiedname>CMakeRC::Detail::FileOrDirectory::_data_t::Directory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="272" column="25" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>CMakeRC::Detail::Directory</label>
+        <link refid="d3/d17/class_c_make_r_c_1_1_detail_1_1_directory"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>_files</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>_dirs</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>_index</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CMakeRC::Detail::FileData</label>
+        <link refid="d0/d80/class_c_make_r_c_1_1_detail_1_1_file_data"/>
+      </node>
+      <node id="9">
+        <label>CMakeRC::Detail::FileOrDirectory</label>
+        <link refid="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CMakeRC::Detail::FileOrDirectory::_data_t</label>
+        <link refid="d3/dd6/union_c_make_r_c_1_1_detail_1_1_file_or_directory_1_1__data__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>FileData</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Directory</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>std::list&lt; CMakeRC::Detail::Directory &gt;</label>
+        <childnode refid="3" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>std::list&lt; CMakeRC::Detail::FileData &gt;</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>std::map&lt; std::string, CMakeRC::Detail::FileOrDirectory &gt;</label>
+        <childnode refid="7" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="7">
+        <label>std::string</label>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="269" column="5" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="270" bodyend="273"/>
+    <listofallmembers>
+      <member refid="d3/dd6/union_c_make_r_c_1_1_detail_1_1_file_or_directory_1_1__data__t_1a141a50e444eccb832148435433499864" prot="public" virt="non-virtual"><scope>CMakeRC::Detail::FileOrDirectory::_data_t</scope><name>Directory</name></member>
+      <member refid="d3/dd6/union_c_make_r_c_1_1_detail_1_1_file_or_directory_1_1__data__t_1acbf70db2aed1fbc0759700954fd99fec" prot="public" virt="non-virtual"><scope>CMakeRC::Detail::FileOrDirectory::_data_t</scope><name>FileData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

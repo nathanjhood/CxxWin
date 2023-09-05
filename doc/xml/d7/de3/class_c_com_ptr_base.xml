@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d7/de3/class_c_com_ptr_base" kind="class" language="C++" prot="public">
+    <compoundname>CComPtrBase</compoundname>
+    <includes refid="d0/d11/win32___c_com_ptr_base_8hpp" local="no">win32_CComPtrBase.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d7/de3/class_c_com_ptr_base_1a90711bda95e1d33b8d771d1f15d47a17" prot="public" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* CComPtrBase&lt; T &gt;::p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <qualifiedname>CComPtrBase::p</qualifiedname>
+        <briefdescription>
+<para>The pointer data member variable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>This member variable holds the pointer information. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/memory/win32_CComPtrBase.hpp" line="132" column="7" bodyfile="include/CxxWin/modules/Win32_core/memory/win32_CComPtrBase.hpp" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/de3/class_c_com_ptr_base_1a890ee71812369fc3bab1d033dc9c8e5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CComPtrBase&lt; T &gt;::~CComPtrBase</definition>
+        <argsstring>()</argsstring>
+        <name>~CComPtrBase</name>
+        <qualifiedname>CComPtrBase::~CComPtrBase</qualifiedname>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+<para>Destroy the &apos;<ref refid="d7/de3/class_c_com_ptr_base" kindref="compound">CComPtrBase</ref>&apos; object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>Releases the interface pointed to by <ref refid="d7/de3/class_c_com_ptr_base" kindref="compound">CComPtrBase</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/memory/win32_CComPtrBase.hpp" line="43" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/de3/class_c_com_ptr_base_1a4d1eb556a56b2cbe38dd1676c45b29f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>HRESULT</type>
+        <definition>HRESULT CComPtrBase&lt; T &gt;::CoCreateInstance</definition>
+        <argsstring>(LPCOLESTR szProgID, LPUNKNOWN pUnkOuter=NULL, DWORD dwClsContext=CLSCTX_ALL)</argsstring>
+        <name>CoCreateInstance</name>
+        <qualifiedname>CComPtrBase::CoCreateInstance</qualifiedname>
+        <param>
+          <type>LPCOLESTR</type>
+          <declname>szProgID</declname>
+        </param>
+        <param>
+          <type>LPUNKNOWN</type>
+          <declname>pUnkOuter</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type>DWORD</type>
+          <declname>dwClsContext</declname>
+          <defval>CLSCTX_ALL</defval>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+<para>Call this method to create an object of the class associated with a specified Class ID or Program ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>szProgID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a ProgID, used to recover the &apos;CLSID&apos;. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pUnkOuter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If NULL, indicates that the object isn&apos;t being created as part of an aggregate. If non- NULL, is a pointer to the aggregate object&apos;s &apos;IUnknown&apos; interface (the controlling &apos;IUnknown&apos;). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dwClsContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Context in which the code that manages the newly created object will run. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>HRESULT - Returns S_OK on success, or REGDB_E_CLASSNOTREG, CLASS_E_NOAGGREGATION, CO_E_CLASSSTRING, or E_NOINTERFACE on failure.</para>
+</simplesect>
+<simplesect kind="remark"><para>If the first form of the method is called, CLSIDFromProgID is used to recover the CLSID. Both forms then call CoCreateClassInstance.</para>
+</simplesect>
+In debug builds, an assertion error will occur if &apos;<ref refid="d7/de3/class_c_com_ptr_base_1a90711bda95e1d33b8d771d1f15d47a17" kindref="member">CComPtrBase::p</ref>&apos; isn&apos;t equal to NULL. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/memory/win32_CComPtrBase.hpp" line="68" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/de3/class_c_com_ptr_base_1a779dcf0ac815f4d2fbba20cabcd01e90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>HRESULT</type>
+        <definition>HRESULT CComPtrBase&lt; T &gt;::CoCreateInstance</definition>
+        <argsstring>(REFCLSID rclsid, LPUNKNOWN pUnkOuter=NULL, DWORD dwClsContext=CLSCTX_ALL)</argsstring>
+        <name>CoCreateInstance</name>
+        <qualifiedname>CComPtrBase::CoCreateInstance</qualifiedname>
+        <param>
+          <type>REFCLSID</type>
+          <declname>rclsid</declname>
+        </param>
+        <param>
+          <type>LPUNKNOWN</type>
+          <declname>pUnkOuter</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type>DWORD</type>
+          <declname>dwClsContext</declname>
+          <defval>CLSCTX_ALL</defval>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+<para>Call this method to create an object of the class associated with a specified Class ID or Program ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rclsid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>CLSID associated with the data and code that will be used to create the object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pUnkOuter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If NULL, indicates that the object isn&apos;t being created as part of an aggregate. If non- NULL, is a pointer to the aggregate object&apos;s &apos;IUnknown&apos; interface (the controlling &apos;IUnknown&apos;). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dwClsContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Context in which the code that manages the newly created object will run. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>HRESULT - Returns S_OK on success, or REGDB_E_CLASSNOTREG, CLASS_E_NOAGGREGATION, CO_E_CLASSSTRING, or E_NOINTERFACE on failure.</para>
+</simplesect>
+<simplesect kind="remark"><para>If the first form of the method is called, CLSIDFromProgID is used to recover the CLSID. Both forms then call CoCreateClassInstance.</para>
+</simplesect>
+In debug builds, an assertion error will occur if &apos;<ref refid="d7/de3/class_c_com_ptr_base_1a90711bda95e1d33b8d771d1f15d47a17" kindref="member">CComPtrBase::p</ref>&apos; isn&apos;t equal to NULL. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/memory/win32_CComPtrBase.hpp" line="94" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/de3/class_c_com_ptr_base_1a3384d24c3feb44062843fa259fc72c71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>HRESULT</type>
+        <definition>HRESULT CComPtrBase&lt; T &gt;::Advise</definition>
+        <argsstring>(IUnknown *pUnk, const IID &amp;iid, LPDWORD pdw)</argsstring>
+        <name>Advise</name>
+        <qualifiedname>CComPtrBase::Advise</qualifiedname>
+        <param>
+          <type>IUnknown *</type>
+          <declname>pUnk</declname>
+        </param>
+        <param>
+          <type>const IID &amp;</type>
+          <declname>iid</declname>
+        </param>
+        <param>
+          <type>LPDWORD</type>
+          <declname>pdw</declname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+<para>Call this method to create a connection between the &apos;<ref refid="d7/de3/class_c_com_ptr_base" kindref="compound">CComPtrBase</ref>&apos;s connection point and a client&apos;s sink. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pUnk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the client&apos;s &apos;IUnknown&apos;.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The GUID of the connection point. Typically, this GUID is the same as the outgoing interface managed by the connection point.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pdw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the cookie that uniquely identifies the connection.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>HRESULT - Returns S_OK on success, or an error HRESULT on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/memory/win32_CComPtrBase.hpp" line="110" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/de3/class_c_com_ptr_base_1afc3a9815853fe9a1029036ef41aaa7b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CComPtrBase&lt; T &gt;::Attach</definition>
+        <argsstring>(T *p2)</argsstring>
+        <name>Attach</name>
+        <qualifiedname>CComPtrBase::Attach</qualifiedname>
+        <param>
+          <type>T *</type>
+          <declname>p2</declname>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+<para>Call this method to take ownership of an existing pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The &apos;<ref refid="d7/de3/class_c_com_ptr_base" kindref="compound">CComPtrBase</ref>&apos; object will take ownership of this pointer.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="remark"><para>Attach calls &apos;CComPtrBase::Release&apos; on the existing &apos;<ref refid="d7/de3/class_c_com_ptr_base_1a90711bda95e1d33b8d771d1f15d47a17" kindref="member">CComPtrBase::p</ref>&apos; member variable and then assigns &apos;p2&apos; to &apos;<ref refid="d7/de3/class_c_com_ptr_base_1a90711bda95e1d33b8d771d1f15d47a17" kindref="member">CComPtrBase::p</ref>&apos;. When a &apos;<ref refid="d7/de3/class_c_com_ptr_base" kindref="compound">CComPtrBase</ref>&apos; object takes ownership of a pointer, it will automatically call Release on the pointer, which deletes the pointer and any allocated data if the reference count on the object goes to 0. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/memory/win32_CComPtrBase.hpp" line="124" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The &apos;<ref refid="d7/de3/class_c_com_ptr_base" kindref="compound">CComPtrBase</ref>&apos; class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class provides a basis for smart pointer classes using COM-based memory routines.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object type to be referenced by the smart pointer.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="remark"><para>This class provides the basis for other smart pointers that use COM memory management routines, such as &apos;CComQIPtr&apos; and &apos;CComPtr&apos;. The derived classes add their own constructors and operators, but rely on the methods provided by &apos;<ref refid="d7/de3/class_c_com_ptr_base" kindref="compound">CComPtrBase</ref>&apos;. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="include/CxxWin/modules/Win32_core/memory/win32_CComPtrBase.hpp" line="33" column="1" bodyfile="include/CxxWin/modules/Win32_core/memory/win32_CComPtrBase.hpp" bodystart="34" bodyend="133"/>
+    <listofallmembers>
+      <member refid="d7/de3/class_c_com_ptr_base_1a3384d24c3feb44062843fa259fc72c71" prot="public" virt="non-virtual"><scope>CComPtrBase</scope><name>Advise</name></member>
+      <member refid="d7/de3/class_c_com_ptr_base_1afc3a9815853fe9a1029036ef41aaa7b0" prot="public" virt="non-virtual"><scope>CComPtrBase</scope><name>Attach</name></member>
+      <member refid="d7/de3/class_c_com_ptr_base_1a4d1eb556a56b2cbe38dd1676c45b29f9" prot="public" virt="non-virtual"><scope>CComPtrBase</scope><name>CoCreateInstance</name></member>
+      <member refid="d7/de3/class_c_com_ptr_base_1a779dcf0ac815f4d2fbba20cabcd01e90" prot="public" virt="non-virtual"><scope>CComPtrBase</scope><name>CoCreateInstance</name></member>
+      <member refid="d7/de3/class_c_com_ptr_base_1a90711bda95e1d33b8d771d1f15d47a17" prot="public" virt="non-virtual"><scope>CComPtrBase</scope><name>p</name></member>
+      <member refid="d7/de3/class_c_com_ptr_base_1a890ee71812369fc3bab1d033dc9c8e5e" prot="public" virt="non-virtual"><scope>CComPtrBase</scope><name>~CComPtrBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

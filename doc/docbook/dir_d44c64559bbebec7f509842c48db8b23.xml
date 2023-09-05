@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_d44c64559bbebec7f509842c48db8b23" xml:lang="en-US">
+<title>include Directory Reference</title>
+<indexterm><primary>include Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_9bc32812666c1354c5bb25d7268c0a0c">CxxWin</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="da/d7c/namespace_c_make_r_c_1_1_img_1_1_splash_screen" kind="namespace" language="C++">
+    <compoundname>CMakeRC::Img::SplashScreen</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="da/d7c/namespace_c_make_r_c_1_1_img_1_1_splash_screen_1ae90ef8aff45730d78f2e1ae1b5ed74f6" prot="public" static="no" mutable="no">
+        <type><ref refid="d5/d1d/win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268" kindref="member">RCRESOURCEPTR</ref> const</type>
+        <definition>RCRESOURCEPTR const CMakeRC::Img::SplashScreen::SplashScreen_png_begin</definition>
+        <argsstring></argsstring>
+        <name>SplashScreen_png_begin</name>
+        <qualifiedname>CMakeRC::Img::SplashScreen::SplashScreen_png_begin</qualifiedname>
+        <initializer>= ::SplashScreen_png_array</initializer>
+        <briefdescription>
+<para>Pointer to the beginning of &apos;SplashScreen_png_array&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/img/win32_png.cpp" line="59" column="28" bodyfile="include/CxxWin/modules/Win32_resource/img/win32_SplashScreen_png.cpp" bodystart="221" bodyend="-1" declfile="include/CxxWin/modules/Win32_resource/img/win32_png.cpp" declline="59" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d7c/namespace_c_make_r_c_1_1_img_1_1_splash_screen_1ac39bec0ecccc979bac12c7aa8c6e9e96" prot="public" static="no" mutable="no">
+        <type><ref refid="d5/d1d/win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268" kindref="member">RCRESOURCEPTR</ref> const</type>
+        <definition>RCRESOURCEPTR const CMakeRC::Img::SplashScreen::SplashScreen_png_end</definition>
+        <argsstring></argsstring>
+        <name>SplashScreen_png_end</name>
+        <qualifiedname>CMakeRC::Img::SplashScreen::SplashScreen_png_end</qualifiedname>
+        <initializer>= ::SplashScreen_png_array + 909</initializer>
+        <briefdescription>
+<para>Pointer to the end of &apos;SplashScreen_png_array&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/img/win32_png.cpp" line="61" column="28" bodyfile="include/CxxWin/modules/Win32_resource/img/win32_SplashScreen_png.cpp" bodystart="222" bodyend="-1" declfile="include/CxxWin/modules/Win32_resource/img/win32_png.cpp" declline="61" declcolumn="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&apos; </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The &apos;<ref refid="da/d7c/namespace_c_make_r_c_1_1_img_1_1_splash_screen" kindref="compound">SplashScreen</ref>&apos; namespace. Contains declarations and definitions of binary-compiled &apos;SplashScreen.png&apos; for interacting with <ref refid="d6/dd1/namespace_win32" kindref="compound">Win32</ref> API. </para>
+    </detaileddescription>
+    <location file="include/CxxWin/modules/Win32_resource/img/win32_png.cpp" line="56" column="1"/>
+  </compounddef>
+</doxygen>

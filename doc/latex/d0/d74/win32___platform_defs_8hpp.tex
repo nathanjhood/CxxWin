@@ -1,0 +1,144 @@
+\doxysection{include/\+Cxx\+Win/modules/\+Win32\+\_\+core/system/win32\+\_\+\+Platform\+Defs.hpp File Reference}
+\hypertarget{win32___platform_defs_8hpp}{}\label{win32___platform_defs_8hpp}\index{include/CxxWin/modules/Win32\_core/system/win32\_PlatformDefs.hpp@{include/CxxWin/modules/Win32\_core/system/win32\_PlatformDefs.hpp}}
+
+
+Contains preprocessor definitions to declare classes and structs as \textquotesingle{}non-\/copyable\textquotesingle{}, \textquotesingle{}non-\/moveable\textquotesingle{}, and to add a leak detector for debugging.  
+
+
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{win32___platform_defs_8hpp_a09f9dc37c074670133452cb5d04c2056}{\+\_\+\+WIN32\+\_\+\+PLATFORMDEFS\+\_\+\+HPP\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Contains preprocessor definitions to declare classes and structs as \textquotesingle{}non-\/copyable\textquotesingle{}, \textquotesingle{}non-\/moveable\textquotesingle{}, and to add a leak detector for debugging. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{win32___platform_defs_8hpp_a964d381579febb0cc83dcc69890beec0}{\+\_\+\+\_\+\+DECLARE\+\_\+\+NON\+\_\+\+COPYABLE}}(class\+Name)
+\begin{DoxyCompactList}\small\item\em This is a shorthand macro for deleting a class\textquotesingle{}s copy constructor and copy assignment operator. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{win32___platform_defs_8hpp_adc9b0f127fefc464e5b4e704259c8ced}{\+\_\+\+\_\+\+DECLARE\+\_\+\+NON\+\_\+\+MOVEABLE}}(class\+Name)
+\begin{DoxyCompactList}\small\item\em This is a shorthand macro for deleting a class\textquotesingle{}s move constructor and move assignment operator. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{win32___platform_defs_8hpp_a25195203b724562392caff0a9a74ba84}{\+\_\+\+\_\+\+DECLARE\+\_\+\+NON\+\_\+\+COPYABLE\+\_\+\+WITH\+\_\+\+LEAK\+\_\+\+DETECTOR}}(class\+Name)
+\begin{DoxyCompactList}\small\item\em This is a shorthand way of writing both a \+\_\+\+\_\+\+DECLARE\+\_\+\+NON\+\_\+\+COPYABLE and \+\_\+\+\_\+\+LEAK\+\_\+\+DETECTOR macro for a class. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{win32___platform_defs_8hpp_aa48cf96123b508654d4c4e9a56e831cb}{\+\_\+\+\_\+\+PREVENT\+\_\+\+HEAP\+\_\+\+ALLOCATION}}
+\begin{DoxyCompactList}\small\item\em This macro can be added to class definitions to disable the use of new/delete to allocate the object on the heap, forcing it to only be used as a stack or member variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains preprocessor definitions to declare classes and structs as \textquotesingle{}non-\/copyable\textquotesingle{}, \textquotesingle{}non-\/moveable\textquotesingle{}, and to add a leak detector for debugging. 
+
+\begin{DoxyAuthor}{Author}
+Stoney\+DSP (\href{mailto:nathanjhood@googlemail.com}{\texttt{ nathanjhood@googlemail.\+com}})
+\end{DoxyAuthor}
+
+
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/08-\/30
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{win32___platform_defs_8hpp_a964d381579febb0cc83dcc69890beec0}\label{win32___platform_defs_8hpp_a964d381579febb0cc83dcc69890beec0} 
+\index{win32\_PlatformDefs.hpp@{win32\_PlatformDefs.hpp}!\_\_DECLARE\_NON\_COPYABLE@{\_\_DECLARE\_NON\_COPYABLE}}
+\index{\_\_DECLARE\_NON\_COPYABLE@{\_\_DECLARE\_NON\_COPYABLE}!win32\_PlatformDefs.hpp@{win32\_PlatformDefs.hpp}}
+\doxysubsubsection{\texorpdfstring{\_\_DECLARE\_NON\_COPYABLE}{\_\_DECLARE\_NON\_COPYABLE}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+DECLARE\+\_\+\+NON\+\_\+\+COPYABLE(\begin{DoxyParamCaption}\item[{}]{class\+Name }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ className\ (CONST\ className\&)\ =\ \textcolor{keyword}{delete};\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ className\&\ operator=\ (CONST\ className\&)\ =\ \textcolor{keyword}{delete};}
+
+\end{DoxyCode}
+
+
+This is a shorthand macro for deleting a class\textquotesingle{}s copy constructor and copy assignment operator. 
+
+For example, instead of 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class\ }MyClass}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ etc..}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{private}:}
+\DoxyCodeLine{\ \ \ \ MyClass\ (\textcolor{keyword}{const}\ MyClass\&);}
+\DoxyCodeLine{\ \ \ \ MyClass\&\ operator=\ (\textcolor{keyword}{const}\ MyClass\&);}
+\DoxyCodeLine{\};}
+
+\end{DoxyCode}
+
+
+..you can just write\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class\ }MyClass}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ etc..}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{private}:}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{win32___platform_defs_8hpp_a964d381579febb0cc83dcc69890beec0}{\_\_DECLARE\_NON\_COPYABLE}}\ (MyClass)}
+\DoxyCodeLine{\};}
+
+\end{DoxyCode}
+ \Hypertarget{win32___platform_defs_8hpp_a25195203b724562392caff0a9a74ba84}\label{win32___platform_defs_8hpp_a25195203b724562392caff0a9a74ba84} 
+\index{win32\_PlatformDefs.hpp@{win32\_PlatformDefs.hpp}!\_\_DECLARE\_NON\_COPYABLE\_WITH\_LEAK\_DETECTOR@{\_\_DECLARE\_NON\_COPYABLE\_WITH\_LEAK\_DETECTOR}}
+\index{\_\_DECLARE\_NON\_COPYABLE\_WITH\_LEAK\_DETECTOR@{\_\_DECLARE\_NON\_COPYABLE\_WITH\_LEAK\_DETECTOR}!win32\_PlatformDefs.hpp@{win32\_PlatformDefs.hpp}}
+\doxysubsubsection{\texorpdfstring{\_\_DECLARE\_NON\_COPYABLE\_WITH\_LEAK\_DETECTOR}{\_\_DECLARE\_NON\_COPYABLE\_WITH\_LEAK\_DETECTOR}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+DECLARE\+\_\+\+NON\+\_\+\+COPYABLE\+\_\+\+WITH\+\_\+\+LEAK\+\_\+\+DETECTOR(\begin{DoxyParamCaption}\item[{}]{class\+Name }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{win32___platform_defs_8hpp_a964d381579febb0cc83dcc69890beec0}{\_\_DECLARE\_NON\_COPYABLE}}(className)\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \_\_LEAK\_DETECTOR(className)}
+
+\end{DoxyCode}
+
+
+This is a shorthand way of writing both a \+\_\+\+\_\+\+DECLARE\+\_\+\+NON\+\_\+\+COPYABLE and \+\_\+\+\_\+\+LEAK\+\_\+\+DETECTOR macro for a class. 
+
+\Hypertarget{win32___platform_defs_8hpp_adc9b0f127fefc464e5b4e704259c8ced}\label{win32___platform_defs_8hpp_adc9b0f127fefc464e5b4e704259c8ced} 
+\index{win32\_PlatformDefs.hpp@{win32\_PlatformDefs.hpp}!\_\_DECLARE\_NON\_MOVEABLE@{\_\_DECLARE\_NON\_MOVEABLE}}
+\index{\_\_DECLARE\_NON\_MOVEABLE@{\_\_DECLARE\_NON\_MOVEABLE}!win32\_PlatformDefs.hpp@{win32\_PlatformDefs.hpp}}
+\doxysubsubsection{\texorpdfstring{\_\_DECLARE\_NON\_MOVEABLE}{\_\_DECLARE\_NON\_MOVEABLE}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+DECLARE\+\_\+\+NON\+\_\+\+MOVEABLE(\begin{DoxyParamCaption}\item[{}]{class\+Name }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ className\ (className\&\&)\ =\ \textcolor{keyword}{delete};\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ className\&\ operator=\ (className\&\&)\ =\ \textcolor{keyword}{delete};}
+
+\end{DoxyCode}
+
+
+This is a shorthand macro for deleting a class\textquotesingle{}s move constructor and move assignment operator. 
+
+\Hypertarget{win32___platform_defs_8hpp_aa48cf96123b508654d4c4e9a56e831cb}\label{win32___platform_defs_8hpp_aa48cf96123b508654d4c4e9a56e831cb} 
+\index{win32\_PlatformDefs.hpp@{win32\_PlatformDefs.hpp}!\_\_PREVENT\_HEAP\_ALLOCATION@{\_\_PREVENT\_HEAP\_ALLOCATION}}
+\index{\_\_PREVENT\_HEAP\_ALLOCATION@{\_\_PREVENT\_HEAP\_ALLOCATION}!win32\_PlatformDefs.hpp@{win32\_PlatformDefs.hpp}}
+\doxysubsubsection{\texorpdfstring{\_\_PREVENT\_HEAP\_ALLOCATION}{\_\_PREVENT\_HEAP\_ALLOCATION}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+PREVENT\+\_\+\+HEAP\+\_\+\+ALLOCATION}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \textcolor{keyword}{private}:\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}*\ \textcolor{keyword}{operator}\ \textcolor{keyword}{new}\ (size\_t)\ =\ \textcolor{keyword}{delete};\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \textcolor{keyword}{operator}\ \textcolor{keyword}{delete}\ (\textcolor{keywordtype}{void}*)\ =\ \textcolor{keyword}{delete};}
+
+\end{DoxyCode}
+
+
+This macro can be added to class definitions to disable the use of new/delete to allocate the object on the heap, forcing it to only be used as a stack or member variable. 
+
+\Hypertarget{win32___platform_defs_8hpp_a09f9dc37c074670133452cb5d04c2056}\label{win32___platform_defs_8hpp_a09f9dc37c074670133452cb5d04c2056} 
+\index{win32\_PlatformDefs.hpp@{win32\_PlatformDefs.hpp}!\_WIN32\_PLATFORMDEFS\_HPP\_@{\_WIN32\_PLATFORMDEFS\_HPP\_}}
+\index{\_WIN32\_PLATFORMDEFS\_HPP\_@{\_WIN32\_PLATFORMDEFS\_HPP\_}!win32\_PlatformDefs.hpp@{win32\_PlatformDefs.hpp}}
+\doxysubsubsection{\texorpdfstring{\_WIN32\_PLATFORMDEFS\_HPP\_}{\_WIN32\_PLATFORMDEFS\_HPP\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+WIN32\+\_\+\+PLATFORMDEFS\+\_\+\+HPP\+\_\+}
+
+
+
+Contains preprocessor definitions to declare classes and structs as \textquotesingle{}non-\/copyable\textquotesingle{}, \textquotesingle{}non-\/moveable\textquotesingle{}, and to add a leak detector for debugging. 
+

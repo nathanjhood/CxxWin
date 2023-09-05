@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d6/d42/win32___smart_pointer_8hpp" kind="file" language="C++">
+    <compoundname>win32_SmartPointer.hpp</compoundname>
+    <includedby refid="d9/d31/win32___smart_pointer_8cpp" local="yes">include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.cpp</includedby>
+    <includedby refid="d6/dbf/win32__core_8hpp" local="yes">include/CxxWin/modules/Win32_core/win32_core.hpp</includedby>
+    <invincdepgraph>
+      <node id="7">
+        <label>include/CxxWin/MainComponent.cpp</label>
+        <link refid="db/dfc/_main_component_8cpp"/>
+      </node>
+      <node id="6">
+        <label>include/CxxWin/MainComponent.hpp</label>
+        <link refid="df/d11/_main_component_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>include/CxxWin/WinMain.cpp</label>
+        <link refid="da/d9b/_win_main_8cpp"/>
+      </node>
+      <node id="8">
+        <label>include/CxxWin/WinMain.hpp</label>
+        <link refid="df/dff/_win_main_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.cpp</label>
+        <link refid="d9/d31/win32___smart_pointer_8cpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.hpp</label>
+        <link refid="d6/d42/win32___smart_pointer_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>include/CxxWin/modules/Win32_core/win32_core.cpp</label>
+        <link refid="d1/dd0/win32__core_8cpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>include/CxxWin/modules/Win32_core/win32_core.hpp</label>
+        <link refid="d6/dbf/win32__core_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>include/CxxWin/modules/Win32_core/win32_core.mm</label>
+        <link refid="d9/db1/win32__core_8mm"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="da/d00/class_smart_pointer" prot="public">SmartPointer</innerclass>
+    <innerclass refid="dd/dbb/class_smart_pointer_helper_base" prot="public">SmartPointerHelperBase</innerclass>
+    <innerclass refid="d9/d93/class_smart_pointer_helper" prot="public">SmartPointerHelper</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="d6/d42/win32___smart_pointer_8hpp_1ab584929d88836c1554910b37bb630c4c" prot="public" static="no">
+        <name>_WIN32_SMARTPOINTER_HPP_</name>
+        <briefdescription>
+<para>Contains the definition of a simple COM &apos;<ref refid="da/d00/class_smart_pointer" kindref="compound">SmartPointer</ref>&apos; class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.hpp" line="29" column="9" bodyfile="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d6/d42/win32___smart_pointer_8hpp_1a53522409e1312cfaf53cebc29bff8008" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class ComClass</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void SafeRelease</definition>
+        <argsstring>(ComClass **ptr)</argsstring>
+        <name>SafeRelease</name>
+        <param>
+          <type>ComClass **</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>If the pointer is valid, call the underlying &apos;Release&apos; method on it, and set it to &apos;nullptr&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>ComClass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Accepts a pointer to a COM class or struct object. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.hpp" line="122" column="6" bodyfile="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.cpp" bodystart="381" bodyend="388" declfile="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.hpp" declline="122" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Contains the definition of a simple COM &apos;<ref refid="da/d00/class_smart_pointer" kindref="compound">SmartPointer</ref>&apos; class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>StoneyDSP (<ulink url="mailto:nathanjhood@googlemail.com">nathanjhood@googlemail.com</ulink>)</para>
+</simplesect>
+</para>
+<para><simplesect kind="version"><para>1.0.0 </para>
+</simplesect>
+<simplesect kind="date"><para>2023-08-25</para>
+</simplesect>
+<simplesect kind="copyright"><para>This file is part of the JUCE library. Copyright (c) 2022 - Raw Material Software Limited</para>
+</simplesect>
+JUCE is an open source library subject to commercial or open-source licensing.</para>
+<para>The code included in this file is provided under the terms of the ISC license <ulink url="http://www.isc.org/downloads/software-support-policy/isc-license">http://www.isc.org/downloads/software-support-policy/isc-license</ulink>. Permission To use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted provided that the above copyright notice and this permission notice appear in all copies.</para>
+<para>JUCE IS PROVIDED &quot;AS IS&quot; WITHOUT ANY WARRANTY, AND ALL WARRANTIES, WHETHER EXPRESSED OR IMPLIED, INCLUDING MERCHANTABILITY AND FITNESS FOR PURPOSE, ARE DISCLAIMED. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="d6/d42/win32___smart_pointer_8hpp_1ab584929d88836c1554910b37bb630c4c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_WIN32_SMARTPOINTER_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>ComClass&gt;</highlight></codeline>
+<codeline lineno="37" refid="da/d00/class_smart_pointer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="da/d00/class_smart_pointer" kindref="compound">SmartPointer</ref></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d00/class_smart_pointer_1af23b718566d4beddf609e63d1f278459" kindref="member">SmartPointer</ref>()<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d00/class_smart_pointer_1af23b718566d4beddf609e63d1f278459" kindref="member">SmartPointer</ref>(ComClass*<sp/>obj);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d00/class_smart_pointer_1af23b718566d4beddf609e63d1f278459" kindref="member">SmartPointer</ref>(<ref refid="da/d00/class_smart_pointer" kindref="compound">SmartPointer</ref>&amp;<sp/>other);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d00/class_smart_pointer_1a85bb3a40507619ca59672273ba90271d" kindref="member">~SmartPointer</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/>ComClass*()<sp/>CONST<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>ComClass&amp;<sp/><ref refid="da/d00/class_smart_pointer_1a684cf8a7fadb2431ef8486fe166537d9" kindref="member">operator*</ref>()<sp/>CONST<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>ComClass*<sp/><ref refid="da/d00/class_smart_pointer_1a01c7fb69b9c39d04e85e6990dd24c5e9" kindref="member">operator-&gt;</ref>()<sp/>CONST<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d00/class_smart_pointer" kindref="compound">SmartPointer</ref>&amp;<sp/><ref refid="da/d00/class_smart_pointer_1a888097211726dc2ed5ee0e948ff49bf7" kindref="member">operator= </ref>(ComClass*<sp/>CONST<sp/>newPtr);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d00/class_smart_pointer" kindref="compound">SmartPointer</ref>&amp;<sp/><ref refid="da/d00/class_smart_pointer_1a888097211726dc2ed5ee0e948ff49bf7" kindref="member">operator= </ref>(CONST<sp/>ComClass&amp;<sp/>newPtr);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>ComClass**<sp/><ref refid="da/d00/class_smart_pointer_1a388d5622da034786e168895b1b936100" kindref="member">resetAndGetAddress</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>HRESULT<sp/><ref refid="da/d00/class_smart_pointer_1af569386f98a741151e4a6c9148fc415c" kindref="member">CoCreateInstance</ref>(REFCLSID<sp/>rclsid,<sp/>DWORD<sp/>dwClsContext<sp/>=<sp/>CLSCTX_INPROC_SERVER);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>otherComClass&gt;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>HRESULT<sp/><ref refid="da/d00/class_smart_pointer_1a0fc132c1d919b1c6523789ed8687d44c" kindref="member">QueryInterface</ref>(REFCLSID<sp/><sp/>rclsid,<sp/><ref refid="da/d00/class_smart_pointer" kindref="compound">SmartPointer&lt;otherComClass&gt;</ref>&amp;<sp/>destObj)<sp/>CONST;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>otherComClass&gt;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>HRESULT<sp/><ref refid="da/d00/class_smart_pointer_1a0fc132c1d919b1c6523789ed8687d44c" kindref="member">QueryInterface</ref><sp/>(<ref refid="da/d00/class_smart_pointer" kindref="compound">SmartPointer&lt;otherComClass&gt;</ref>&amp;<sp/>destObj)<sp/>CONST;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>otherComClass&gt;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d00/class_smart_pointer" kindref="compound">SmartPointer&lt;otherComClass&gt;</ref><sp/><ref refid="da/d00/class_smart_pointer_1a698ca40a80fd57a62e769371505f2c78" kindref="member">getInterface</ref>()<sp/>CONST;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="da/d00/class_smart_pointer_1a2bfb0ebe9f8d89c4c3158e752e66737f" kindref="member">release</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="da/d00/class_smart_pointer_1a166c58abb98f9ad23318ca64baf65dfa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ComClass**<sp/><ref refid="da/d00/class_smart_pointer_1a166c58abb98f9ad23318ca64baf65dfa" kindref="member">operator&amp;</ref>()<sp/>noexcept<sp/>=<sp/>delete;<sp/></highlight><highlight class="comment">//<sp/>innaccessible</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="da/d00/class_smart_pointer_1aac6766043d71d6919260b32e3025f5ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ComClass*<sp/><ref refid="da/d00/class_smart_pointer_1aac6766043d71d6919260b32e3025f5ad" kindref="member">ptr</ref><sp/>=<sp/></highlight><highlight class="keywordtype">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">template<sp/>&lt;class<sp/>First,<sp/>class...<sp/>ComClasses&gt;</highlight></codeline>
+<codeline lineno="85" refid="dd/dbb/class_smart_pointer_helper_base" refkind="compound"><highlight class="normal">class<sp/><ref refid="dd/dbb/class_smart_pointer_helper_base" kindref="compound">SmartPointerHelperBase</ref><sp/>:<sp/>public<sp/>First,<sp/>public<sp/>ComClasses...</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dd/dbb/class_smart_pointer_helper_base" kindref="compound">SmartPointerHelperBase</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>initRef);</highlight></codeline>
+<codeline lineno="90" refid="dd/dbb/class_smart_pointer_helper_base_1aef037e04d1a2ee08824b405b077d4b09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="dd/dbb/class_smart_pointer_helper_base_1aef037e04d1a2ee08824b405b077d4b09" kindref="member">~SmartPointerHelperBase</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>ULONG<sp/>STDMETHODCALLTYPE<sp/>AddRef();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>ULONG<sp/>STDMETHODCALLTYPE<sp/>Release();</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="dd/dbb/class_smart_pointer_helper_base_1ad2bc91bd39ccd269a3eec9cdcce0f8cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ULONG<sp/><ref refid="dd/dbb/class_smart_pointer_helper_base_1ad2bc91bd39ccd269a3eec9cdcce0f8cf" kindref="member">refCount</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Type&gt;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>HRESULT<sp/>STDMETHODCALLTYPE<sp/>castToType(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">**<sp/>result);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>HRESULT<sp/>STDMETHODCALLTYPE<sp/><ref refid="da/d00/class_smart_pointer_1a0fc132c1d919b1c6523789ed8687d44c" kindref="member">QueryInterface</ref>(REFIID<sp/>riid,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">**<sp/>ppvObject);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal">...<sp/>ComClasses&gt;</highlight></codeline>
+<codeline lineno="114" refid="d9/d93/class_smart_pointer_helper" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d9/d93/class_smart_pointer_helper" kindref="compound">SmartPointerHelper</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="dd/dbb/class_smart_pointer_helper_base" kindref="compound">SmartPointerHelperBase</ref>&lt;ComClasses...&gt;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="d9/d93/class_smart_pointer_helper" kindref="compound">SmartPointerHelper</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>initRef);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>HRESULT<sp/>STDMETHODCALLTYPE<sp/>QueryInterface(REFIID<sp/>refId,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">**<sp/>result);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>ComClass&gt;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d42/win32___smart_pointer_8hpp_1a53522409e1312cfaf53cebc29bff8008" kindref="member">SafeRelease</ref>(ComClass**<sp/><ref refid="da/d00/class_smart_pointer_1aac6766043d71d6919260b32e3025f5ad" kindref="member">ptr</ref>);</highlight></codeline>
+    </programlisting>
+    <location file="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.hpp"/>
+  </compounddef>
+</doxygen>

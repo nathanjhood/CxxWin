@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_c_make_r_c_1_1_img_1_1_small_logo" xml:lang="en-US">
+<title>CMakeRC::Img::SmallLogo Namespace Reference</title>
+<indexterm><primary>CMakeRC::Img::SmallLogo</primary></indexterm>
+<para>
+
+<para>The &apos;<link linkend="_namespace_c_make_r_c_1_1_img_1_1_small_logo">SmallLogo</link>&apos; namespace. </para>
+ 
+</para>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268">RCRESOURCEPTR</link> const <link linkend="_namespace_c_make_r_c_1_1_img_1_1_small_logo_1acae4e49bf466b583e2759b895688fd28">SmallLogo_png_begin</link> = ::SmallLogo_png_array</para>
+
+<para>Pointer to the beginning of &apos;SmallLogo_png_array&apos;. </para>
+</listitem>
+            <listitem><para><link linkend="_win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268">RCRESOURCEPTR</link> const <link linkend="_namespace_c_make_r_c_1_1_img_1_1_small_logo_1a4464ebd48296334e1e395d1bd3ee5f2a">SmallLogo_png_end</link> = ::SmallLogo_png_array + 167</para>
+
+<para>Pointer to the end of &apos;SmallLogo_png_array&apos;. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>The &apos;<link linkend="_namespace_c_make_r_c_1_1_img_1_1_small_logo">SmallLogo</link>&apos; namespace. </para>
+
+<para>Contains declarations and definitions of binary-compiled &apos;SmallLogo.png&apos; for interacting with <link linkend="_namespace_win32">Win32</link> API. </para>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespace_c_make_r_c_1_1_img_1_1_small_logo_1acae4e49bf466b583e2759b895688fd28"/><section>
+    <title>SmallLogo_png_begin</title>
+<indexterm><primary>SmallLogo_png_begin</primary><secondary>CMakeRC::Img::SmallLogo</secondary></indexterm>
+<indexterm><primary>CMakeRC::Img::SmallLogo</primary><secondary>SmallLogo_png_begin</secondary></indexterm>
+<para><computeroutput>const char *const CMakeRC::Img::SmallLogo::SmallLogo_png_begin = ::SmallLogo_png_array<computeroutput>[extern]</computeroutput></computeroutput></para><para>
+
+<para>Pointer to the beginning of &apos;SmallLogo_png_array&apos;. </para>
+</para>
+
+<para>Pointer to the Beginning of &apos;SmallLogo_png_array&apos;. </para>
+</section>
+<anchor xml:id="_namespace_c_make_r_c_1_1_img_1_1_small_logo_1a4464ebd48296334e1e395d1bd3ee5f2a"/><section>
+    <title>SmallLogo_png_end</title>
+<indexterm><primary>SmallLogo_png_end</primary><secondary>CMakeRC::Img::SmallLogo</secondary></indexterm>
+<indexterm><primary>CMakeRC::Img::SmallLogo</primary><secondary>SmallLogo_png_end</secondary></indexterm>
+<para><computeroutput>const char *const CMakeRC::Img::SmallLogo::SmallLogo_png_end = ::SmallLogo_png_array + 167<computeroutput>[extern]</computeroutput></computeroutput></para><para>
+
+<para>Pointer to the end of &apos;SmallLogo_png_array&apos;. </para>
+</para>
+</section>
+</section>
+</section>

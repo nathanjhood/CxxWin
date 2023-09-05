@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_win32___main_window_8hpp_source" xml:lang="en-US">
+<title>win32_MainWindow.hpp</title>
+<indexterm><primary>include/CxxWin/modules/Win32_core/window/win32_MainWindow.hpp</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 
+15 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+22 <emphasis role="preprocessor">#define&#32;_WIN32_MAINWINDOW_HPP_</emphasis>
+23 
+24 <emphasis role="comment">//&#32;namespace&#32;Win32</emphasis>
+25 <emphasis role="comment">//&#32;{</emphasis>
+26 <emphasis role="comment">//&#32;namespace&#32;Core</emphasis>
+27 <emphasis role="comment">//&#32;{</emphasis>
+28 <emphasis role="comment">//&#32;namespace&#32;Window</emphasis>
+29 <emphasis role="comment">//&#32;{</emphasis>
+34 <emphasis role="comment"></emphasis><emphasis role="keyword">class&#32;</emphasis><link linkend="_class_main_window">MainWindow</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_base_window">BaseWindow</link>&lt;MainWindow&gt;
+35 {
+36 <emphasis role="keyword">public</emphasis>:
+38 &#32;&#32;&#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_class_main_window_1a0230fe7f0fab30b98c45cebfc5e224db">MainWindow</link>()&#32;=&#32;<emphasis role="keywordflow">default</emphasis>;
+39 
+40 &#32;&#32;&#32;&#32;PCWSTR&#32;<link linkend="_class_main_window_1ac73b70e36c04de55a2b049637408c21e">ClassName</link>()&#32;CONST;
+41 
+42 &#32;&#32;&#32;&#32;LRESULT&#32;<link linkend="_class_main_window_1a590370509ff31b48345edf4fd1dee572">HandleMessage</link>(UINT&#32;uMsg,&#32;WPARAM&#32;wParam,&#32;LPARAM&#32;lParam);
+43 
+44 &#32;&#32;&#32;&#32;<link linkend="_win32___platform_defs_8hpp_1a964d381579febb0cc83dcc69890beec0">__DECLARE_NON_COPYABLE</link>(<link linkend="_class_main_window">MainWindow</link>)
+45 &#32;&#32;&#32;&#32;<link linkend="_win32___platform_defs_8hpp_1adc9b0f127fefc464e5b4e704259c8ced">__DECLARE_NON_MOVEABLE</link>(<link linkend="_class_main_window">MainWindow</link>)
+46 &#32;&#32;&#32;&#32;<link linkend="_win32___platform_defs_8hpp_1aa48cf96123b508654d4c4e9a56e831cb">__PREVENT_HEAP_ALLOCATION</link>
+47 };
+48 
+50 <emphasis role="preprocessor">#define&#32;_MainWindow_T&#32;MainWindow</emphasis>
+52 <emphasis role="keyword">typedef</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_win32___main_window_8hpp_1a603260483c79f64303e7b8162a6e4e2e">_MainWindow_T</link>&#32;<link linkend="_class_main_window">MainWindow</link>;
+53 
+54 <emphasis role="comment">//&#32;}&#32;//&#32;namespace&#32;Window</emphasis>
+55 <emphasis role="comment">//&#32;}&#32;//&#32;namespace&#32;Core</emphasis>
+56 <emphasis role="comment">//&#32;}&#32;//&#32;namespace&#32;Win32</emphasis>
+</programlisting></section>

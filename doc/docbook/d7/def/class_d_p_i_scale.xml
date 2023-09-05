@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_d_p_i_scale" xml:lang="en-US">
+<title>DPIScale Class Reference</title>
+<indexterm><primary>DPIScale</primary></indexterm>
+<para>
+
+<para>The &apos;<link linkend="_class_d_p_i_scale">DPIScale</link>&apos; class. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;win32_DPIScale.hpp&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static void <link linkend="_class_d_p_i_scale_1a16d2a9e0076698eb6a77e357fb81b89a">Initialize</link> (ID2D1Factory *pFactory)</para>
+
+<para>The &apos;Initialize&apos; function. </para>
+</listitem>
+            <listitem><para>template&lt;typename T &gt; </para><para>static D2D1_POINT_2F <link linkend="_class_d_p_i_scale_1a7b527c2c60184cb8afb7262894db385f">PixelsToDips</link> (T x, T y)</para>
+
+<para>Pixels to DIP&apos;s. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>static FLOAT <link linkend="_class_d_p_i_scale_1a3bb7db817a90eb4208dd3cbb37b450d2">scaleX</link> = { 1.0F }</para>
+
+<para>DPI-scaled position X co-ordinate. </para>
+</listitem>
+            <listitem><para>static FLOAT <link linkend="_class_d_p_i_scale_1a42354861f68caeee9c38bd96d9079abd">scaleY</link> = { 1.0F }</para>
+
+<para>DPI-scaled position Y co-ordinate. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>The &apos;<link linkend="_class_d_p_i_scale">DPIScale</link>&apos; class. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_d_p_i_scale_1a16d2a9e0076698eb6a77e357fb81b89a"/><section>
+    <title>Initialize()</title>
+<indexterm><primary>Initialize</primary><secondary>DPIScale</secondary></indexterm>
+<indexterm><primary>DPIScale</primary><secondary>Initialize</secondary></indexterm>
+<para><computeroutput>void DPIScale::Initialize (ID2D1Factory * pFactory)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>The &apos;Initialize&apos; function. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>pFactory</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_d_p_i_scale_1a7b527c2c60184cb8afb7262894db385f"/><section>
+    <title>PixelsToDips()</title>
+<indexterm><primary>PixelsToDips</primary><secondary>DPIScale</secondary></indexterm>
+<indexterm><primary>DPIScale</primary><secondary>PixelsToDips</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>D2D1_POINT_2F DPIScale::PixelsToDips (T x, T y)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Pixels to DIP&apos;s. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Template Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>T</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>x</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>y</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>D2D1_POINT_2F </para>
+</formalpara>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_d_p_i_scale_1a3bb7db817a90eb4208dd3cbb37b450d2"/><section>
+    <title>scaleX</title>
+<indexterm><primary>scaleX</primary><secondary>DPIScale</secondary></indexterm>
+<indexterm><primary>DPIScale</primary><secondary>scaleX</secondary></indexterm>
+<para><computeroutput>FLOAT DPIScale::scaleX = { 1.0F }<computeroutput>[static]</computeroutput>, <computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>DPI-scaled position X co-ordinate. </para>
+</para>
+</section>
+<anchor xml:id="_class_d_p_i_scale_1a42354861f68caeee9c38bd96d9079abd"/><section>
+    <title>scaleY</title>
+<indexterm><primary>scaleY</primary><secondary>DPIScale</secondary></indexterm>
+<indexterm><primary>DPIScale</primary><secondary>scaleY</secondary></indexterm>
+<para><computeroutput>FLOAT DPIScale::scaleY = { 1.0F }<computeroutput>[static]</computeroutput>, <computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>DPI-scaled position Y co-ordinate. </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+include/CxxWin/modules/Win32_core/window/<link linkend="_win32___d_p_i_scale_8hpp">win32_DPIScale.hpp</link>include/CxxWin/modules/Win32_core/window/<link linkend="_win32___d_p_i_scale_8cpp">win32_DPIScale.cpp</link></section>
+</section>

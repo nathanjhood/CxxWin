@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_c_make_r_c_1_1_detail_1_1_created_sub_directory" xml:lang="en-US">
+<title>CMakeRC::Detail::CreatedSubDirectory Struct Reference</title>
+<indexterm><primary>CMakeRC::Detail::CreatedSubDirectory</primary></indexterm>
+<para>
+<computeroutput>#include &lt;cmrc.hpp&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_c_make_r_c_1_1_detail_1_1_directory">Directory</link> &amp; <link linkend="_struct_c_make_r_c_1_1_detail_1_1_created_sub_directory_1a225b4cdbdb42d83831c630de10a6aa09">Directory</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_c_make_r_c_1_1_detail_1_1_file_or_directory">FileOrDirectory</link> &amp; <link linkend="_struct_c_make_r_c_1_1_detail_1_1_created_sub_directory_1a637b11814abbfa2c0ddac8984bb60e08">IndexEntry</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_struct_c_make_r_c_1_1_detail_1_1_created_sub_directory_1a225b4cdbdb42d83831c630de10a6aa09"/><section>
+    <title>Directory</title>
+<indexterm><primary>Directory</primary><secondary>CMakeRC::Detail::CreatedSubDirectory</secondary></indexterm>
+<indexterm><primary>CMakeRC::Detail::CreatedSubDirectory</primary><secondary>Directory</secondary></indexterm>
+<para><computeroutput>class <link linkend="_class_c_make_r_c_1_1_detail_1_1_directory">Directory</link>&amp; CMakeRC::Detail::CreatedSubDirectory::Directory</computeroutput></para></section>
+<anchor xml:id="_struct_c_make_r_c_1_1_detail_1_1_created_sub_directory_1a637b11814abbfa2c0ddac8984bb60e08"/><section>
+    <title>IndexEntry</title>
+<indexterm><primary>IndexEntry</primary><secondary>CMakeRC::Detail::CreatedSubDirectory</secondary></indexterm>
+<indexterm><primary>CMakeRC::Detail::CreatedSubDirectory</primary><secondary>IndexEntry</secondary></indexterm>
+<para><computeroutput>class <link linkend="_class_c_make_r_c_1_1_detail_1_1_file_or_directory">FileOrDirectory</link>&amp; CMakeRC::Detail::CreatedSubDirectory::IndexEntry</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+include/CxxWin/modules/Win32_resource/<link linkend="_cmrc_8hpp">cmrc.hpp</link></section>
+</section>

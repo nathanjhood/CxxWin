@@ -1,0 +1,314 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_main_component" xml:lang="en-US">
+<title>MainComponent Class Reference</title>
+<indexterm><primary>MainComponent</primary></indexterm>
+<para>
+
+<para>The &apos;<link linkend="_class_main_component">MainComponent</link>&apos; class. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;MainComponent.hpp&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for MainComponent:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d2/d5e/class_main_component.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_main_component_1a85254935b98beac9128189c6a577d7be">MainComponent</link> ()</para>
+
+<para>Construct a new &apos;<link linkend="_class_main_component">MainComponent</link>&apos; object. </para>
+</listitem>
+            <listitem><para>PCWSTR <link linkend="_class_main_component_1a10413353888f65b0282eb32cf4a012ef">ClassName</link> () CONST</para>
+</listitem>
+            <listitem><para>LRESULT <link linkend="_class_main_component_1a28a911446776a6ea7777f0cde9960d16">HandleMessage</link> (UINT uMsg, WPARAM wParam, LPARAM lParam)</para>
+
+<para>A typical window procedure is simply a large &apos;switch()&apos; statement that switches on the &apos;uMsg&apos; code. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_main_component_1a13b313e495b2911a9aded8b3bf50953d">CalculateLayout</link> ()</para>
+</listitem>
+            <listitem><para>HRESULT <link linkend="_class_main_component_1ad513e8d388d5e229c0d4850a7d09b5f0">CreateGraphicsResources</link> ()</para>
+
+<para>Initialize graphics resources such as brushes, colours, and layouts for further processing. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_main_component_1a47ac035cb7b724fe01a45a421d63cc7f">DiscardGraphicsResources</link> ()</para>
+</listitem>
+            <listitem><para>HRESULT <link linkend="_class_main_component_1a9dc97c9d3abef9e02c68956cf99e43da">OnCreate</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_main_component_1ae1a328c17e46ca15ffc552df49bf887e">OnPaint</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_main_component_1a04f9037978c0eda84b67aec48f09a7f5">Resize</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_main_component_1a10c91bf54dfeee51d23f9d5007c94fcf">OnClose</link> () CONST</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_main_component_1a2879d344d4000e1bec8782b6e152a0de">OnDestroy</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_main_window">MainWindow</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_main_window_1a0230fe7f0fab30b98c45cebfc5e224db">MainWindow</link> ()=default</para>
+
+<para>Default-Construct a new Main Window object. </para>
+</listitem>
+            <listitem><para>PCWSTR <link linkend="_class_main_window_1ac73b70e36c04de55a2b049637408c21e">ClassName</link> () CONST</para>
+</listitem>
+            <listitem><para>LRESULT <link linkend="_class_main_window_1a590370509ff31b48345edf4fd1dee572">HandleMessage</link> (UINT uMsg, WPARAM wParam, LPARAM lParam)</para>
+</listitem>
+        </itemizedlist>
+Public Member Functions inherited from <link linkend="_class_base_window">BaseWindow&lt; MainWindow &gt;</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_base_window_1a60209fc8aa81ab0efa29263dabc52cbf">BaseWindow</link> ()</para>
+
+<para>Construct a new &apos;<link linkend="_class_base_window">BaseWindow</link>&apos; object. </para>
+</listitem>
+            <listitem><para>BOOL <link linkend="_class_base_window_1acfcb0a79ccf1f3780e353f24983b93bf">Create</link> (PCWSTR lpWindowName, DWORD dwStyle, DWORD dwExStyle=0, int x=CW_USEDEFAULT, int y=CW_USEDEFAULT, int nWidth=CW_USEDEFAULT, int nHeight=CW_USEDEFAULT, HWND hWndParent=0, HMENU hMenu=0)</para>
+
+<para>Create a new &apos;<link linkend="_class_base_window">BaseWindow</link>&apos; -derived object. </para>
+</listitem>
+            <listitem><para>HWND <link linkend="_class_base_window_1aa1507d2052aaec416ac8b085add33ba0">Window</link> () CONST</para>
+
+<para>Return the handle to the &apos;<link linkend="_class_base_window">BaseWindow</link>&apos; -derived object. </para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>ID2D1Factory * <link linkend="_class_main_component_1a7d3e5127fce1bd8fde64ada377c54852">pFactory</link></para>
+</listitem>
+            <listitem><para>ID2D1HwndRenderTarget * <link linkend="_class_main_component_1aacab24f179f68622014e624c71d5cf71">pRenderTarget</link></para>
+</listitem>
+            <listitem><para>ID2D1SolidColorBrush * <link linkend="_class_main_component_1a51d0525d05ee8a081a9203870dda47ee">pBrush</link></para>
+</listitem>
+            <listitem><para>ID2D1SolidColorBrush * <link linkend="_class_main_component_1a69d6b4a4e7e62fe992112be1820f1b05">pBrushB</link></para>
+</listitem>
+            <listitem><para>ID2D1SolidColorBrush * <link linkend="_class_main_component_1a9ea90fecfbc01684557afd2403c07b9d">pBrushC</link></para>
+</listitem>
+            <listitem><para>D2D1_ELLIPSE <link linkend="_class_main_component_1ac0fd3834382e2478b512564e2b4710f9">ellipseA</link></para>
+</listitem>
+            <listitem><para>D2D1_ELLIPSE <link linkend="_class_main_component_1af4f7ab51fc49751836a90ece6cf9b440">ellipseB</link></para>
+</listitem>
+            <listitem><para>D2D1_ELLIPSE <link linkend="_class_main_component_1a9691c0d06ca0ed4ad9f7a09c8b81593a">ellipseC</link></para>
+</listitem>
+            <listitem><para>D2D1_POINT_2F <link linkend="_class_main_component_1ab97d350faaca1a25a99f8309302bdeb6">ptMouse</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Static Public Member Functions inherited from <link linkend="_class_base_window">BaseWindow&lt; MainWindow &gt;</link>        <itemizedlist>
+            <listitem><para>static LRESULT CALLBACK <link linkend="_class_base_window_1a61198ed120a54deccbd3e73221bf9c4d">WindowProc</link> (HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)</para>
+
+<para>&apos;LRESULT&apos; is an integer value that your program returns to Windows. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+        <itemizedlist>
+            <listitem><para>virtual PCWSTR <link linkend="_class_base_window_1a76d1b80a812caf760c0efbed6e64b2e1">ClassName</link> () CONST PURE</para>
+
+<para>Return a string of the name of &apos;<link linkend="_class_base_window">BaseWindow</link>&apos; -derived object. </para>
+</listitem>
+            <listitem><para>virtual LRESULT <link linkend="_class_base_window_1a7612d6d879e60f4b7ded0cf0ac3dd8a9">HandleMessage</link> (UINT uMsg, WPARAM wParam, LPARAM lParam) PURE</para>
+
+<para>Handle the incoming messages. </para>
+</listitem>
+        </itemizedlist>
+Protected Attributes inherited from <link linkend="_class_base_window">BaseWindow&lt; MainWindow &gt;</link>        <itemizedlist>
+            <listitem><para>HWND <link linkend="_class_base_window_1a86f5232fa1bbb141f60548a42331fc7e">m_hwnd</link></para>
+
+<para>The handle to the &apos;<link linkend="_class_base_window">BaseWindow</link>&apos; -derived object. </para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para>The &apos;<link linkend="_class_main_component">MainComponent</link>&apos; class. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_main_component_1a85254935b98beac9128189c6a577d7be"/><section>
+    <title>MainComponent()</title>
+<indexterm><primary>MainComponent</primary><secondary>MainComponent</secondary></indexterm>
+<indexterm><primary>MainComponent</primary><secondary>MainComponent</secondary></indexterm>
+<para><computeroutput>MainComponent::MainComponent ( )</computeroutput></para><para>
+
+<para>Construct a new &apos;<link linkend="_class_main_component">MainComponent</link>&apos; object. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_main_component_1a13b313e495b2911a9aded8b3bf50953d"/><section>
+    <title>CalculateLayout()</title>
+<indexterm><primary>CalculateLayout</primary><secondary>MainComponent</secondary></indexterm>
+<indexterm><primary>MainComponent</primary><secondary>CalculateLayout</secondary></indexterm>
+<para><computeroutput>void MainComponent::CalculateLayout ( )</computeroutput></para></section>
+<anchor xml:id="_class_main_component_1a10413353888f65b0282eb32cf4a012ef"/><section>
+    <title>ClassName()</title>
+<indexterm><primary>ClassName</primary><secondary>MainComponent</secondary></indexterm>
+<indexterm><primary>MainComponent</primary><secondary>ClassName</secondary></indexterm>
+<para><computeroutput>PCWSTR MainComponent::ClassName ( )<computeroutput>[virtual]</computeroutput></computeroutput></para>
+<para><formalpara><title>Returns</title>
+
+<para>PCWSTR </para>
+</formalpara>
+</para>
+<para>
+Reimplemented from <link linkend="_class_base_window_1a76d1b80a812caf760c0efbed6e64b2e1">BaseWindow&lt; MainWindow &gt;</link>.</para>
+</section>
+<anchor xml:id="_class_main_component_1ad513e8d388d5e229c0d4850a7d09b5f0"/><section>
+    <title>CreateGraphicsResources()</title>
+<indexterm><primary>CreateGraphicsResources</primary><secondary>MainComponent</secondary></indexterm>
+<indexterm><primary>MainComponent</primary><secondary>CreateGraphicsResources</secondary></indexterm>
+<para><computeroutput>HRESULT MainComponent::CreateGraphicsResources ( )</computeroutput></para><para>
+
+<para>Initialize graphics resources such as brushes, colours, and layouts for further processing. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>HRESULT </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_main_component_1a47ac035cb7b724fe01a45a421d63cc7f"/><section>
+    <title>DiscardGraphicsResources()</title>
+<indexterm><primary>DiscardGraphicsResources</primary><secondary>MainComponent</secondary></indexterm>
+<indexterm><primary>MainComponent</primary><secondary>DiscardGraphicsResources</secondary></indexterm>
+<para><computeroutput>void MainComponent::DiscardGraphicsResources ( )</computeroutput></para></section>
+<anchor xml:id="_class_main_component_1a28a911446776a6ea7777f0cde9960d16"/><section>
+    <title>HandleMessage()</title>
+<indexterm><primary>HandleMessage</primary><secondary>MainComponent</secondary></indexterm>
+<indexterm><primary>MainComponent</primary><secondary>HandleMessage</secondary></indexterm>
+<para><computeroutput>LRESULT MainComponent::HandleMessage (UINT uMsg, WPARAM wParam, LPARAM lParam)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>A typical window procedure is simply a large &apos;switch()&apos; statement that switches on the &apos;uMsg&apos; code. </para>
+</para>
+
+<para>Add cases for each message that you want to handle.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>uMsg</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>wParam</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>lParam</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>LRESULT </para>
+</formalpara>
+</para>
+<para>
+Reimplemented from <link linkend="_class_base_window_1a7612d6d879e60f4b7ded0cf0ac3dd8a9">BaseWindow&lt; MainWindow &gt;</link>.</para>
+</section>
+<anchor xml:id="_class_main_component_1a10c91bf54dfeee51d23f9d5007c94fcf"/><section>
+    <title>OnClose()</title>
+<indexterm><primary>OnClose</primary><secondary>MainComponent</secondary></indexterm>
+<indexterm><primary>MainComponent</primary><secondary>OnClose</secondary></indexterm>
+<para><computeroutput>void MainComponent::OnClose ( )</computeroutput></para></section>
+<anchor xml:id="_class_main_component_1a9dc97c9d3abef9e02c68956cf99e43da"/><section>
+    <title>OnCreate()</title>
+<indexterm><primary>OnCreate</primary><secondary>MainComponent</secondary></indexterm>
+<indexterm><primary>MainComponent</primary><secondary>OnCreate</secondary></indexterm>
+<para><computeroutput>HRESULT MainComponent::OnCreate ( )</computeroutput></para>
+<para><formalpara><title>Returns</title>
+
+<para>HRESULT </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_main_component_1a2879d344d4000e1bec8782b6e152a0de"/><section>
+    <title>OnDestroy()</title>
+<indexterm><primary>OnDestroy</primary><secondary>MainComponent</secondary></indexterm>
+<indexterm><primary>MainComponent</primary><secondary>OnDestroy</secondary></indexterm>
+<para><computeroutput>void MainComponent::OnDestroy ( )</computeroutput></para></section>
+<anchor xml:id="_class_main_component_1ae1a328c17e46ca15ffc552df49bf887e"/><section>
+    <title>OnPaint()</title>
+<indexterm><primary>OnPaint</primary><secondary>MainComponent</secondary></indexterm>
+<indexterm><primary>MainComponent</primary><secondary>OnPaint</secondary></indexterm>
+<para><computeroutput>void MainComponent::OnPaint ( )</computeroutput></para></section>
+<anchor xml:id="_class_main_component_1a04f9037978c0eda84b67aec48f09a7f5"/><section>
+    <title>Resize()</title>
+<indexterm><primary>Resize</primary><secondary>MainComponent</secondary></indexterm>
+<indexterm><primary>MainComponent</primary><secondary>Resize</secondary></indexterm>
+<para><computeroutput>void MainComponent::Resize ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_main_component_1ac0fd3834382e2478b512564e2b4710f9"/><section>
+    <title>ellipseA</title>
+<indexterm><primary>ellipseA</primary><secondary>MainComponent</secondary></indexterm>
+<indexterm><primary>MainComponent</primary><secondary>ellipseA</secondary></indexterm>
+<para><computeroutput>D2D1_ELLIPSE MainComponent::ellipseA<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_main_component_1af4f7ab51fc49751836a90ece6cf9b440"/><section>
+    <title>ellipseB</title>
+<indexterm><primary>ellipseB</primary><secondary>MainComponent</secondary></indexterm>
+<indexterm><primary>MainComponent</primary><secondary>ellipseB</secondary></indexterm>
+<para><computeroutput>D2D1_ELLIPSE MainComponent::ellipseB<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_main_component_1a9691c0d06ca0ed4ad9f7a09c8b81593a"/><section>
+    <title>ellipseC</title>
+<indexterm><primary>ellipseC</primary><secondary>MainComponent</secondary></indexterm>
+<indexterm><primary>MainComponent</primary><secondary>ellipseC</secondary></indexterm>
+<para><computeroutput>D2D1_ELLIPSE MainComponent::ellipseC<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_main_component_1a51d0525d05ee8a081a9203870dda47ee"/><section>
+    <title>pBrush</title>
+<indexterm><primary>pBrush</primary><secondary>MainComponent</secondary></indexterm>
+<indexterm><primary>MainComponent</primary><secondary>pBrush</secondary></indexterm>
+<para><computeroutput>ID2D1SolidColorBrush* MainComponent::pBrush<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_main_component_1a69d6b4a4e7e62fe992112be1820f1b05"/><section>
+    <title>pBrushB</title>
+<indexterm><primary>pBrushB</primary><secondary>MainComponent</secondary></indexterm>
+<indexterm><primary>MainComponent</primary><secondary>pBrushB</secondary></indexterm>
+<para><computeroutput>ID2D1SolidColorBrush* MainComponent::pBrushB<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_main_component_1a9ea90fecfbc01684557afd2403c07b9d"/><section>
+    <title>pBrushC</title>
+<indexterm><primary>pBrushC</primary><secondary>MainComponent</secondary></indexterm>
+<indexterm><primary>MainComponent</primary><secondary>pBrushC</secondary></indexterm>
+<para><computeroutput>ID2D1SolidColorBrush* MainComponent::pBrushC<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_main_component_1a7d3e5127fce1bd8fde64ada377c54852"/><section>
+    <title>pFactory</title>
+<indexterm><primary>pFactory</primary><secondary>MainComponent</secondary></indexterm>
+<indexterm><primary>MainComponent</primary><secondary>pFactory</secondary></indexterm>
+<para><computeroutput>ID2D1Factory* MainComponent::pFactory<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_main_component_1aacab24f179f68622014e624c71d5cf71"/><section>
+    <title>pRenderTarget</title>
+<indexterm><primary>pRenderTarget</primary><secondary>MainComponent</secondary></indexterm>
+<indexterm><primary>MainComponent</primary><secondary>pRenderTarget</secondary></indexterm>
+<para><computeroutput>ID2D1HwndRenderTarget* MainComponent::pRenderTarget<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_class_main_component_1ab97d350faaca1a25a99f8309302bdeb6"/><section>
+    <title>ptMouse</title>
+<indexterm><primary>ptMouse</primary><secondary>MainComponent</secondary></indexterm>
+<indexterm><primary>MainComponent</primary><secondary>ptMouse</secondary></indexterm>
+<para><computeroutput>D2D1_POINT_2F MainComponent::ptMouse<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following files:</para>
+include/CxxWin/<link linkend="__main_component_8hpp">MainComponent.hpp</link>include/CxxWin/<link linkend="__main_component_8cpp">MainComponent.cpp</link></section>
+</section>

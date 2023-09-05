@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__main_component_8cpp" xml:lang="en-US">
+<title>include/CxxWin/MainComponent.cpp File Reference</title>
+<indexterm><primary>include/CxxWin/MainComponent.cpp</primary></indexterm>
+<para>
+
+<para>Contains the definitions of &apos;<link linkend="_class_main_component">MainComponent</link>&apos;. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &quot;MainComponent.hpp&quot;<?linebreak?></programlisting><section>
+<title>Detailed Description</title>
+
+<para>Contains the definitions of &apos;<link linkend="_class_main_component">MainComponent</link>&apos;. </para>
+
+<para><formalpara><title>Author</title>
+
+<para>StoneyDSP (<link xlink:href="mailto:nathanjhood@googlemail.com">nathanjhood@googlemail.com</link>) </para>
+</formalpara>
+<formalpara><title>Version</title>
+
+<para>1.0.0 </para>
+</formalpara>
+<formalpara><title>Date</title>
+
+<para>2023-08-28</para>
+</formalpara>
+<formalpara><title>Copyright</title>
+
+<para>Copyright (c) 2023 </para>
+</formalpara>
+</para>
+</section>
+</section>

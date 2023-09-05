@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_win32___splash_screen__png_8hpp_source" xml:lang="en-US">
+<title>win32_SplashScreen_png.hpp</title>
+<indexterm><primary>include/CxxWin/modules/Win32_resource/img/win32_SplashScreen_png.hpp</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 
+21 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+22 
+28 <emphasis role="preprocessor">#define&#32;_WIN32_RESOURCE_IMG_SPLASH_SCREEN_PNG_H_</emphasis>
+29 
+30 <emphasis role="keyword">namespace</emphasis>
+31 {
+33 <link linkend="_win32__resource_8hpp_1a3589507c444d07ca84f3ec878da0e8ff">RCRESOURCE</link>&#32;<link linkend="_namespaceanonymous__namespace_02win32___splash_screen__png_8hpp_03_1a35af113e8ad9e39e58041c36441c5895">SplashScreen_png_array</link>[910];
+34 }
+35 
+36 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_c_make_r_c_1_1_img">CMakeRC::Img</link>
+37 {
+45 <emphasis role="keyword">namespace&#32;</emphasis>SplashScreen
+46 {
+48 <emphasis role="keyword">extern</emphasis>&#32;<link linkend="_win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268">RCRESOURCEPTR</link>&#32;<emphasis role="keyword">const</emphasis>&#32;<link linkend="_namespace_c_make_r_c_1_1_img_1_1_splash_screen_1ae90ef8aff45730d78f2e1ae1b5ed74f6">SplashScreen_png_begin</link>;
+50 <emphasis role="keyword">extern</emphasis>&#32;<link linkend="_win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268">RCRESOURCEPTR</link>&#32;<emphasis role="keyword">const</emphasis>&#32;<link linkend="_namespace_c_make_r_c_1_1_img_1_1_splash_screen_1ac39bec0ecccc979bac12c7aa8c6e9e96">SplashScreen_png_end</link>;
+51 }&#32;<emphasis role="comment">//&#32;namespace&#32;SplashScreen</emphasis>
+52 }&#32;<emphasis role="comment">//&#32;namespace&#32;CMakeRC::Img</emphasis>
+</programlisting></section>

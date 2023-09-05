@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d8/d5c/namespace_c_make_r_c_1_1_img_1_1_store_logo" kind="namespace" language="C++">
+    <compoundname>CMakeRC::Img::StoreLogo</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="d8/d5c/namespace_c_make_r_c_1_1_img_1_1_store_logo_1a6e1599c660b57b41569bc3bc7df2e31b" prot="public" static="no" mutable="no">
+        <type><ref refid="d5/d1d/win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268" kindref="member">RCRESOURCEPTR</ref> const</type>
+        <definition>RCRESOURCEPTR const CMakeRC::Img::StoreLogo::StoreLogo_png_begin</definition>
+        <argsstring></argsstring>
+        <name>StoreLogo_png_begin</name>
+        <qualifiedname>CMakeRC::Img::StoreLogo::StoreLogo_png_begin</qualifiedname>
+        <initializer>= ::StoreLogo_png_array</initializer>
+        <briefdescription>
+<para>Pointer to the beginning of &apos;StoreLogo_png_array&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/img/win32_png.cpp" line="66" column="28" bodyfile="include/CxxWin/modules/Win32_resource/img/win32_StoreLogo_png.cpp" bodystart="86" bodyend="-1" declfile="include/CxxWin/modules/Win32_resource/img/win32_png.cpp" declline="66" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d5c/namespace_c_make_r_c_1_1_img_1_1_store_logo_1a14f9e6da55cf2f890ed328682455b481" prot="public" static="no" mutable="no">
+        <type><ref refid="d5/d1d/win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268" kindref="member">RCRESOURCEPTR</ref> const</type>
+        <definition>RCRESOURCEPTR const CMakeRC::Img::StoreLogo::StoreLogo_png_end</definition>
+        <argsstring></argsstring>
+        <name>StoreLogo_png_end</name>
+        <qualifiedname>CMakeRC::Img::StoreLogo::StoreLogo_png_end</qualifiedname>
+        <initializer>= ::StoreLogo_png_array + 227</initializer>
+        <briefdescription>
+<para>Pointer to the end of &apos;StoreLogo_png_array&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/img/win32_png.cpp" line="68" column="28" bodyfile="include/CxxWin/modules/Win32_resource/img/win32_StoreLogo_png.cpp" bodystart="88" bodyend="-1" declfile="include/CxxWin/modules/Win32_resource/img/win32_png.cpp" declline="68" declcolumn="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/CxxWin/modules/Win32_resource/img/win32_png.cpp" line="63" column="1"/>
+  </compounddef>
+</doxygen>

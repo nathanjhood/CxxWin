@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_smart_pointer_helper" xml:lang="en-US">
+<title>SmartPointerHelper&lt; ComClasses &gt; Class Template Reference</title>
+<indexterm><primary>SmartPointerHelper&lt; ComClasses &gt;</primary></indexterm>
+<para>
+
+<para>The &apos;<link linkend="_class_smart_pointer_helper">SmartPointerHelper</link>&apos; class. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;win32_SmartPointer.hpp&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for SmartPointerHelper&lt; ComClasses &gt;:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d9/d93/class_smart_pointer_helper.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_smart_pointer_helper_1a5ebedea882de1289a08b66f6fc806b9e">SmartPointerHelper</link> (unsigned int initRef)</para>
+
+<para>Construct a new &apos;<link linkend="_class_smart_pointer_helper">SmartPointerHelper</link>&apos; object. </para>
+</listitem>
+            <listitem><para>HRESULT STDMETHODCALLTYPE <link linkend="_class_smart_pointer_helper_1a14e73f95576736f3274f54ee777761a2">QueryInterface</link> (REFIID refId, void **result)</para>
+
+<para>Query the interface to the underlying COM object. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_smart_pointer_helper_base">SmartPointerHelperBase&lt; ComClasses... &gt;</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_smart_pointer_helper_base_1ac76861e9458ab17c981b2b76f5890321">SmartPointerHelperBase</link> (unsigned int initRef)</para>
+
+<para>Construct a new &apos;<link linkend="_class_smart_pointer_helper_base">SmartPointerHelperBase</link>&apos; object. </para>
+</listitem>
+            <listitem><para>virtual <link linkend="_class_smart_pointer_helper_base_1aef037e04d1a2ee08824b405b077d4b09">~SmartPointerHelperBase</link> ()=default</para>
+
+<para>Destroy the &apos;<link linkend="_class_smart_pointer_helper_base">SmartPointerHelperBase</link>&apos; object. </para>
+</listitem>
+            <listitem><para>ULONG STDMETHODCALLTYPE <link linkend="_class_smart_pointer_helper_base_1a2c9426410eeb136beba8123b5d84dc6e">AddRef</link> ()</para>
+
+<para>Add a new reference to the pointer, increasing the counter by one. </para>
+</listitem>
+            <listitem><para>ULONG STDMETHODCALLTYPE <link linkend="_class_smart_pointer_helper_base_1a693a3f65e96897ad99ccc1e95c7c0fcd">Release</link> ()</para>
+
+<para>Release a reference to the pointer, decreasing the counter by one. </para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Protected Member Functions inherited from <link linkend="_class_smart_pointer_helper_base">SmartPointerHelperBase&lt; ComClasses... &gt;</link>        <itemizedlist>
+            <listitem><para>HRESULT STDMETHODCALLTYPE <link linkend="_class_smart_pointer_helper_base_1accdc2a95363ae4f3e76d5dc00e8fef38">castToType</link> (void **result)</para>
+
+<para>Add a new reference to the pointer (increasing the counter by one), and attempt to cast to type &apos;T&apos;. </para>
+</listitem>
+            <listitem><para>HRESULT STDMETHODCALLTYPE <link linkend="_class_smart_pointer_helper_base_1a93350be3711ec44389ccb85607da79e8">QueryInterface</link> (REFIID riid, void **ppvObject)</para>
+
+<para>Query a COM object for a pointer to one its interfaces, identifying the interface by a reference to its interface identifier (IID). </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Protected Attributes inherited from <link linkend="_class_smart_pointer_helper_base">SmartPointerHelperBase&lt; ComClasses... &gt;</link>        <itemizedlist>
+            <listitem><para>ULONG <link linkend="_class_smart_pointer_helper_base_1ad2bc91bd39ccd269a3eec9cdcce0f8cf">refCount</link></para>
+
+<para>The underlying reference counter to the pointer. </para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+<simplesect><title>template&lt;class... ComClasses&gt;<?linebreak?>class SmartPointerHelper&lt; ComClasses &gt;</title></simplesect>
+
+<para>The &apos;<link linkend="_class_smart_pointer_helper">SmartPointerHelper</link>&apos; class. </para>
+
+
+
+<para>
+                <formalpara>
+                    <title>
+Template Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ComClasses</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_smart_pointer_helper_1a5ebedea882de1289a08b66f6fc806b9e"/><section>
+    <title>SmartPointerHelper()</title>
+<indexterm><primary>SmartPointerHelper</primary><secondary>SmartPointerHelper&lt; ComClasses &gt;</secondary></indexterm>
+<indexterm><primary>SmartPointerHelper&lt; ComClasses &gt;</primary><secondary>SmartPointerHelper</secondary></indexterm>
+<computeroutput>template&lt;class... ComClasses&gt; </computeroutput><para><computeroutput><link linkend="_class_smart_pointer_helper">SmartPointerHelper</link>&lt; ComClasses &gt;<link linkend="_class_smart_pointer_helper">::SmartPointerHelper</link> (unsigned int initRef)<computeroutput>[explicit]</computeroutput></computeroutput></para><para>
+
+<para>Construct a new &apos;<link linkend="_class_smart_pointer_helper">SmartPointerHelper</link>&apos; object. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>initRef</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_smart_pointer_helper_1a14e73f95576736f3274f54ee777761a2"/><section>
+    <title>QueryInterface()</title>
+<indexterm><primary>QueryInterface</primary><secondary>SmartPointerHelper&lt; ComClasses &gt;</secondary></indexterm>
+<indexterm><primary>SmartPointerHelper&lt; ComClasses &gt;</primary><secondary>QueryInterface</secondary></indexterm>
+<computeroutput>template&lt;class... ComClasses&gt; </computeroutput><para><computeroutput>HRESULT <link linkend="_class_smart_pointer_helper">SmartPointerHelper</link>&lt; ComClasses &gt;::QueryInterface (REFIID refId, void ** result)</computeroutput></para><para>
+
+<para>Query the interface to the underlying COM object. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>refId</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>result</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>HRESULT </para>
+</formalpara>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+include/CxxWin/modules/Win32_core/memory/<link linkend="_win32___smart_pointer_8hpp">win32_SmartPointer.hpp</link>include/CxxWin/modules/Win32_core/memory/<link linkend="_win32___smart_pointer_8cpp">win32_SmartPointer.cpp</link></section>
+</section>

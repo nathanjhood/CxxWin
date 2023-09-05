@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_logo" xml:lang="en-US">
+<title>Logo Namespace Reference</title>
+<indexterm><primary>Logo</primary></indexterm>
+<para>
+
+<para>&apos; </para>
+ 
+</para>
+<section>
+<title>Detailed Description</title>
+
+<para>&apos; </para>
+
+<para>The &apos;<link linkend="_namespace_logo">Logo</link>&apos; namespace. Contains declarations and definitions of binary-compiled &apos;Logo.png&apos; for interacting with <link linkend="_namespace_win32">Win32</link> API.</para>
+
+<para><formalpara><title>See also</title>
+
+<para>&apos;Logo.png&apos; </para>
+</formalpara>
+</para>
+</section>
+</section>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_88c30591ba125011a5eb0023131b82dc" xml:lang="en-US">
+<title>include/CxxWin/modules/Win32_core/system Directory Reference</title>
+<indexterm><primary>include/CxxWin/modules/Win32_core/system Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_win32___compiler_support_8hpp">win32_CompilerSupport.hpp</link></para>
+
+<para>Contains preprocessor definitions that attempt to detect compiler information. </para>
+</listitem>
+            <listitem><para>file <link linkend="_win32___platform_defs_8hpp">win32_PlatformDefs.hpp</link></para>
+
+<para>Contains preprocessor definitions to declare classes and structs as &apos;non-copyable&apos;, &apos;non-moveable&apos;, and to add a leak detector for debugging. </para>
+</listitem>
+            <listitem><para>file <link linkend="_win32___standard_header_8hpp">win32_StandardHeader.hpp</link></para>
+
+<para>Contains some standard definitions, functions, and includes familiar to all supported platforms and architectures. </para>
+</listitem>
+            <listitem><para>file <link linkend="_win32___target_platform_8hpp">win32_TargetPlatform.hpp</link></para>
+
+<para>Provides some preprocessor feature detection handlers to attempt to ascertain information about the build architecture and platform. </para>
+</listitem>
+            <listitem><para>file <link linkend="_win32___toolchain_8hpp">win32_Toolchain.hpp</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

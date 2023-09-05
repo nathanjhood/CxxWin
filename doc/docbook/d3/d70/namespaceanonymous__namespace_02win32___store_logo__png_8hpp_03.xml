@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespaceanonymous__namespace_02win32___store_logo__png_8hpp_03" xml:lang="en-US">
+<title>anonymous_namespace{win32_StoreLogo_png.hpp} Namespace Reference</title>
+<indexterm><primary>anonymous_namespace{win32_StoreLogo_png.hpp}</primary></indexterm>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_win32__resource_8hpp_1a3589507c444d07ca84f3ec878da0e8ff">RCRESOURCE</link> <link linkend="_namespaceanonymous__namespace_02win32___store_logo__png_8hpp_03_1a9d153cb022292650e2e02cb6f4eaa02d">StoreLogo_png_array</link> [228]</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespaceanonymous__namespace_02win32___store_logo__png_8hpp_03_1a9d153cb022292650e2e02cb6f4eaa02d"/><section>
+    <title>StoreLogo_png_array</title>
+<indexterm><primary>StoreLogo_png_array</primary><secondary>anonymous_namespace{win32_StoreLogo_png.hpp}</secondary></indexterm>
+<indexterm><primary>anonymous_namespace{win32_StoreLogo_png.hpp}</primary><secondary>StoreLogo_png_array</secondary></indexterm>
+<para><computeroutput><link linkend="_win32__resource_8hpp_1a3589507c444d07ca84f3ec878da0e8ff">RCRESOURCE</link> anonymous_namespace{win32_StoreLogo_png.hpp}::StoreLogo_png_array[228]</computeroutput></para></section>
+</section>
+</section>

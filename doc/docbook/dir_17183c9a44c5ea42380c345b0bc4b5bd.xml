@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_17183c9a44c5ea42380c345b0bc4b5bd" xml:lang="en-US">
+<title>include/CxxWin/modules/Win32_core/memory Directory Reference</title>
+<indexterm><primary>include/CxxWin/modules/Win32_core/memory Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_win32___c_com_ptr_base_8hpp">win32_CComPtrBase.hpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_win32___smart_pointer_8cpp">win32_SmartPointer.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_win32___smart_pointer_8hpp">win32_SmartPointer.hpp</link></para>
+
+<para>Contains the definition of a simple COM &apos;<link linkend="_class_smart_pointer">SmartPointer</link>&apos; class. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

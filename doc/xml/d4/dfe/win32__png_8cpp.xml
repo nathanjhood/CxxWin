@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d4/dfe/win32__png_8cpp" kind="file" language="C++">
+    <compoundname>win32_png.cpp</compoundname>
+    <includes refid="d5/d45/win32__png_8hpp" local="yes">win32_png.hpp</includes>
+    <includedby refid="d5/d66/win32__resource_8cpp" local="yes">include/CxxWin/modules/Win32_resource/win32_resource.cpp</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>../cmrc.hpp</label>
+        <link refid="df/dcb/cmrc_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/CxxWin/modules/Win32_resource/img/win32_png.cpp</label>
+        <link refid="d4/dfe/win32__png_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>win32_png.hpp</label>
+        <link refid="d5/d45/win32__png_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>cassert</label>
+      </node>
+      <node id="7">
+        <label>functional</label>
+      </node>
+      <node id="8">
+        <label>iterator</label>
+      </node>
+      <node id="9">
+        <label>list</label>
+      </node>
+      <node id="3">
+        <label>map</label>
+      </node>
+      <node id="10">
+        <label>mutex</label>
+      </node>
+      <node id="11">
+        <label>string</label>
+      </node>
+      <node id="12">
+        <label>system_error</label>
+      </node>
+      <node id="13">
+        <label>type_traits</label>
+      </node>
+      <node id="4">
+        <label>utility</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/CxxWin/modules/Win32_resource/img/win32_png.cpp</label>
+        <link refid="d4/dfe/win32__png_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/CxxWin/modules/Win32_resource/win32_resource.cpp</label>
+        <link refid="d5/d66/win32__resource_8cpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>include/CxxWin/modules/Win32_resource/win32_resource.mm</label>
+        <link refid="d3/d1f/win32__resource_8mm"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="d6/dcb/namespace_c_make_r_c">CMakeRC</innernamespace>
+    <innernamespace refid="da/d36/namespace_c_make_r_c_1_1_img">CMakeRC::Img</innernamespace>
+    <innernamespace refid="db/d14/namespace_c_make_r_c_1_1_img_1_1_application_icon">CMakeRC::Img::ApplicationIcon</innernamespace>
+    <innernamespace refid="d7/db5/namespace_c_make_r_c_1_1_img_1_1_logo">CMakeRC::Img::Logo</innernamespace>
+    <innernamespace refid="d7/d01/namespace_c_make_r_c_1_1_img_1_1_small_logo">CMakeRC::Img::SmallLogo</innernamespace>
+    <innernamespace refid="d7/de8/namespace_c_make_r_c_1_1_img_1_1_small_logo44x44">CMakeRC::Img::SmallLogo44x44</innernamespace>
+    <innernamespace refid="da/d7c/namespace_c_make_r_c_1_1_img_1_1_splash_screen">CMakeRC::Img::SplashScreen</innernamespace>
+    <innernamespace refid="d8/d5c/namespace_c_make_r_c_1_1_img_1_1_store_logo">CMakeRC::Img::StoreLogo</innernamespace>
+    <innernamespace refid="d0/d57/namespace_c_make_r_c_1_1_img_1_1anonymous__namespace_02win32__png_8cpp_03">CMakeRC::Img::anonymous_namespace{win32_png.cpp}</innernamespace>
+    <briefdescription>
+<para>Contains pointers to named resources with external linkage, so that their respective contents can be defined elsewhere. Also contains definitions of functions that provide access to these specifically-named resources, which necessitates external linkage. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>StoneyDSP (<ulink url="mailto:nathanjhood@googlemail.com">nathanjhood@googlemail.com</ulink>)</para>
+</simplesect>
+</para>
+<para><simplesect kind="version"><para>1.0.0 </para>
+</simplesect>
+<simplesect kind="date"><para>2023-08-24</para>
+</simplesect>
+<simplesect kind="copyright"><para>This file was generated by using Vector-of-Bool&apos;s excellent &apos;<ref refid="d6/dcb/namespace_c_make_r_c" kindref="compound">CMakeRC</ref>&apos; resource compiler script from CMake&apos;s template resources for Windows. The results have been given minimal tweaks - mostly just text formatting - to provide a similar interface to the rest of the project&apos;s codebase. Please see &apos;<ref refid="df/dcb/cmrc_8hpp" kindref="compound">cmrc.hpp</ref>&apos; and Kitware.org for respective license information. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d5/d45/win32__png_8hpp" kindref="compound">win32_png.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d6/dcb/namespace_c_make_r_c" kindref="compound">CMakeRC</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Img</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">ApplicationIcon</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="d5/d1d/win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268" kindref="member">RCRESOURCEPTR</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/d14/namespace_c_make_r_c_1_1_img_1_1_application_icon_1ac1eae89de385dbeaea9ab828a32452ab" kindref="member">ApplicationIcon_png_begin</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="d5/d1d/win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268" kindref="member">RCRESOURCEPTR</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="db/d14/namespace_c_make_r_c_1_1_img_1_1_application_icon_1aa62fbd0de5ef5c7de893cb8c485e55c7" kindref="member">ApplicationIcon_png_end</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="d5/d23/namespace_logo" kindref="compound">Logo</ref></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="d5/d1d/win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268" kindref="member">RCRESOURCEPTR</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/db5/namespace_c_make_r_c_1_1_img_1_1_logo_1a73bc68f2a1a4f72b095cfe41620fc2f6" kindref="member">Logo_png_begin</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="d5/d1d/win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268" kindref="member">RCRESOURCEPTR</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/db5/namespace_c_make_r_c_1_1_img_1_1_logo_1ac1ee50cec4d537f6fd30cf6de616e97e" kindref="member">Logo_png_end</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42" refid="d7/d01/namespace_c_make_r_c_1_1_img_1_1_small_logo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">SmallLogo</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="d5/d1d/win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268" kindref="member">RCRESOURCEPTR</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/d01/namespace_c_make_r_c_1_1_img_1_1_small_logo_1acae4e49bf466b583e2759b895688fd28" kindref="member">SmallLogo_png_begin</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="d5/d1d/win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268" kindref="member">RCRESOURCEPTR</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/d01/namespace_c_make_r_c_1_1_img_1_1_small_logo_1a4464ebd48296334e1e395d1bd3ee5f2a" kindref="member">SmallLogo_png_end</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49" refid="d7/de8/namespace_c_make_r_c_1_1_img_1_1_small_logo44x44" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">SmallLogo44x44</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="d5/d1d/win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268" kindref="member">RCRESOURCEPTR</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/de8/namespace_c_make_r_c_1_1_img_1_1_small_logo44x44_1a5ee598d6a3df9ee6b10ea7cc70d485ee" kindref="member">SmallLogo44x44_png_begin</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="d5/d1d/win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268" kindref="member">RCRESOURCEPTR</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d7/de8/namespace_c_make_r_c_1_1_img_1_1_small_logo44x44_1a6bc9302c52694082d104e00bb2133e8a" kindref="member">SmallLogo44x44_png_end</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56" refid="da/d7c/namespace_c_make_r_c_1_1_img_1_1_splash_screen" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">SplashScreen</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="d5/d1d/win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268" kindref="member">RCRESOURCEPTR</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="da/d7c/namespace_c_make_r_c_1_1_img_1_1_splash_screen_1ae90ef8aff45730d78f2e1ae1b5ed74f6" kindref="member">SplashScreen_png_begin</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="d5/d1d/win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268" kindref="member">RCRESOURCEPTR</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="da/d7c/namespace_c_make_r_c_1_1_img_1_1_splash_screen_1ac39bec0ecccc979bac12c7aa8c6e9e96" kindref="member">SplashScreen_png_end</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63" refid="d8/d5c/namespace_c_make_r_c_1_1_img_1_1_store_logo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">StoreLogo</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="d5/d1d/win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268" kindref="member">RCRESOURCEPTR</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d8/d5c/namespace_c_make_r_c_1_1_img_1_1_store_logo_1a6e1599c660b57b41569bc3bc7df2e31b" kindref="member">StoreLogo_png_begin</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="d5/d1d/win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268" kindref="member">RCRESOURCEPTR</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d8/d5c/namespace_c_make_r_c_1_1_img_1_1_store_logo_1a14f9e6da55cf2f890ed328682455b481" kindref="member">StoreLogo_png_end</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="d0/d57/namespace_c_make_r_c_1_1_img_1_1anonymous__namespace_02win32__png_8cpp_03" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78" refid="d0/d57/namespace_c_make_r_c_1_1_img_1_1anonymous__namespace_02win32__png_8cpp_03_1a8ae26bf1025e45df8c4ff32fcecce88d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d5/d1d/win32__resource_8hpp_1aa6bfcc93f2ea5b758d45be8c4bc500b0" kindref="member">IDXRES</ref>&amp;<sp/><ref refid="d0/d57/namespace_c_make_r_c_1_1_img_1_1anonymous__namespace_02win32__png_8cpp_03_1a8ae26bf1025e45df8c4ff32fcecce88d" kindref="member">GetRootIndex</ref>()</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="d3/d17/class_c_make_r_c_1_1_detail_1_1_directory" kindref="compound">CMakeRC::Detail::Directory</ref><sp/>root_directory_;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory" kindref="compound">CMakeRC::Detail::FileOrDirectory</ref><sp/>root_directory_fod{root_directory_};</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="d9/def/namespace_c_make_r_c_1_1_detail_1af8b7b0ba529bcc74373e4ee395b54529" kindref="member">CMakeRC::Detail::IndexType</ref><sp/>root_index;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>root_index.emplace(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>&amp;root_directory_fod);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">dir_inl</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d3/d17/class_c_make_r_c_1_1_detail_1_1_directory" kindref="compound">CMakeRC::Detail::Directory</ref>&amp;<sp/>Directory;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>dir_inl<sp/>root_directory_dir{root_directory_};</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>(void)root_directory_dir;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>root_index.emplace</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>(</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;ApplicationIcon.png&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>root_directory_dir.Directory.AddFile</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;ApplicationIcon.png&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d14/namespace_c_make_r_c_1_1_img_1_1_application_icon_1ac1eae89de385dbeaea9ab828a32452ab" kindref="member">ApplicationIcon::ApplicationIcon_png_begin</ref>,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d14/namespace_c_make_r_c_1_1_img_1_1_application_icon_1aa62fbd0de5ef5c7de893cb8c485e55c7" kindref="member">ApplicationIcon::ApplicationIcon_png_end</ref></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>root_index.emplace</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>(</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Logo.png&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>root_directory_dir.Directory.AddFile</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Logo.png&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/db5/namespace_c_make_r_c_1_1_img_1_1_logo_1a73bc68f2a1a4f72b095cfe41620fc2f6" kindref="member">Logo::Logo_png_begin</ref>,</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/db5/namespace_c_make_r_c_1_1_img_1_1_logo_1ac1ee50cec4d537f6fd30cf6de616e97e" kindref="member">Logo::Logo_png_end</ref></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>root_index.emplace</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>(</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;SmallLogo.png&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>root_directory_dir.Directory.AddFile</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;SmallLogo.png&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d01/namespace_c_make_r_c_1_1_img_1_1_small_logo_1acae4e49bf466b583e2759b895688fd28" kindref="member">SmallLogo::SmallLogo_png_begin</ref>,</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d01/namespace_c_make_r_c_1_1_img_1_1_small_logo_1a4464ebd48296334e1e395d1bd3ee5f2a" kindref="member">SmallLogo::SmallLogo_png_end</ref></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>root_index.emplace</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>(</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;SmallLogo44x44.png&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>root_directory_dir.Directory.AddFile</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;SmallLogo44x44.png&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/de8/namespace_c_make_r_c_1_1_img_1_1_small_logo44x44_1a5ee598d6a3df9ee6b10ea7cc70d485ee" kindref="member">SmallLogo44x44::SmallLogo44x44_png_begin</ref>,</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/de8/namespace_c_make_r_c_1_1_img_1_1_small_logo44x44_1a6bc9302c52694082d104e00bb2133e8a" kindref="member">SmallLogo44x44::SmallLogo44x44_png_end</ref></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>root_index.emplace</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>(</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;SplashScreen.png&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>root_directory_dir.Directory.AddFile</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;SplashScreen.png&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d7c/namespace_c_make_r_c_1_1_img_1_1_splash_screen_1ae90ef8aff45730d78f2e1ae1b5ed74f6" kindref="member">SplashScreen::SplashScreen_png_begin</ref>,</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d7c/namespace_c_make_r_c_1_1_img_1_1_splash_screen_1ac39bec0ecccc979bac12c7aa8c6e9e96" kindref="member">SplashScreen::SplashScreen_png_end</ref></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>root_index.emplace</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>(</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;StoreLogo.png&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>root_directory_dir.Directory.AddFile</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;StoreLogo.png&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/d5c/namespace_c_make_r_c_1_1_img_1_1_store_logo_1a6e1599c660b57b41569bc3bc7df2e31b" kindref="member">StoreLogo::StoreLogo_png_begin</ref>,</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/d5c/namespace_c_make_r_c_1_1_img_1_1_store_logo_1a14f9e6da55cf2f890ed328682455b481" kindref="member">StoreLogo::StoreLogo_png_end</ref></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>root_index;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="da/d36/namespace_c_make_r_c_1_1_img_1a0d7bf8b21dd960329ae3658a8510c405" refkind="member"><highlight class="normal"><ref refid="d5/d1d/win32__resource_8hpp_1a5afbfa7ab227c0b123b37aeaca4963b3" kindref="member">FSEMBEDDED</ref><sp/><ref refid="da/d36/namespace_c_make_r_c_1_1_img_1a0d7bf8b21dd960329ae3658a8510c405" kindref="member">GetFileSystem</ref>()</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>index<sp/>=<sp/>GetRootIndex();</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d2/df9/class_c_make_r_c_1_1_embedded_file_system" kindref="compound">CMakeRC::EmbeddedFileSystem</ref>{index};</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>Img</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>CMakeRC</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/CxxWin/modules/Win32_resource/img/win32_png.cpp"/>
+  </compounddef>
+</doxygen>

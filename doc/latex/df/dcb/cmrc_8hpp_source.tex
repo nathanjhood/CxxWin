@@ -1,0 +1,433 @@
+\doxysection{cmrc.\+hpp}
+\hypertarget{cmrc_8hpp_source}{}\label{cmrc_8hpp_source}\index{include/CxxWin/modules/Win32\_resource/cmrc.hpp@{include/CxxWin/modules/Win32\_resource/cmrc.hpp}}
+\mbox{\hyperlink{cmrc_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#ifndef\ CMRC\_CMRC\_HPP\_INCLUDED}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#define\ CMRC\_CMRC\_HPP\_INCLUDED}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#include\ <cassert>}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#include\ <functional>}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#include\ <iterator>}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#include\ <list>}}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#include\ <mutex>}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#include\ <system\_error>}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#include\ <type\_traits>}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#if\ !(defined(\_\_EXCEPTIONS)\ ||\ defined(\_\_cpp\_exceptions)\ ||\ defined(\_CPPUNWIND)\ ||\ defined(CMRC\_NO\_EXCEPTIONS))}}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#\ \ define\ CMRC\_NO\_EXCEPTIONS\ 1}}
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00053\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_c_make_r_c}{CMakeRC}}}
+\DoxyCodeLine{00054\ \{}
+\DoxyCodeLine{00061\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_detail}{Detail}}}
+\DoxyCodeLine{00062\ \{}
+\DoxyCodeLine{00070\ \textcolor{keyword}{struct\ }Dummy;}
+\DoxyCodeLine{00071\ \}}
+\DoxyCodeLine{00072\ \}}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \textcolor{preprocessor}{\#define\ CMRC\_DECLARE(LibId)\ \(\backslash\)}}
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{namespace\ CMakeRC\ \(\backslash\)}}
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\{\ \(\backslash\)}}
+\DoxyCodeLine{00077\ \textcolor{preprocessor}{namespace\ Detail\ \(\backslash\)}}
+\DoxyCodeLine{00078\ \textcolor{preprocessor}{\{\ \(\backslash\)}}
+\DoxyCodeLine{00079\ \textcolor{preprocessor}{struct\ Dummy;\ \(\backslash\)}}
+\DoxyCodeLine{00080\ \textcolor{preprocessor}{static\_assert(std::is\_same<Dummy,\ ::CMakeRC::Detail::Dummy>::value,\ "{}CMRC\_DECLARE()\ must\ only\ appear\ at\ the\ global\ namespace"{}});\ \(\backslash\)}
+\DoxyCodeLine{00081\ \}\ \(\backslash\)}
+\DoxyCodeLine{00082\ \}\ \(\backslash\)}
+\DoxyCodeLine{00083\ namespace\ CMakeRC\ \(\backslash\)}
+\DoxyCodeLine{00084\ \{\ \(\backslash\)}
+\DoxyCodeLine{00085\ namespace\ LibId\ \(\backslash\)}
+\DoxyCodeLine{00086\ \{\ \(\backslash\)}
+\DoxyCodeLine{00087\ CMakeRC::EmbeddedFileSystem\ GetFileSystem();\ \(\backslash\)}
+\DoxyCodeLine{00088\ \}\ \(\backslash\)}
+\DoxyCodeLine{00089\ \}\ static\_assert(true,\ "{}"{})}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_c_make_r_c}{CMakeRC}}}
+\DoxyCodeLine{00092\ \{}
+\DoxyCodeLine{00098\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_make_r_c_1_1_file}{File}}}
+\DoxyCodeLine{00099\ \{}
+\DoxyCodeLine{00100\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_c_make_r_c_1_1_file_a15ff727ef2f71bdc6a6e16e909764fe0}{Iterator}}\ =\ \mbox{\hyperlink{win32__resource_8hpp_af13d0262d2bbd96845361a8cc0e0c268}{RCRESOURCEPTR}};}
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_c_make_r_c_1_1_file_a409b19a989325a4f9c1cc853a90aa45d}{ConstIterator}}\ =\ \mbox{\hyperlink{class_c_make_r_c_1_1_file_a15ff727ef2f71bdc6a6e16e909764fe0}{Iterator}};}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00108\ \ \ \ \ \mbox{\hyperlink{class_c_make_r_c_1_1_file_a73500aa6c3dfaacf203d8d227d22ff36}{File}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00115\ \ \ \ \ \mbox{\hyperlink{class_c_make_r_c_1_1_file_a7490f309a3f2579ae6568bae31923aa9}{File}}(\mbox{\hyperlink{class_c_make_r_c_1_1_file_a15ff727ef2f71bdc6a6e16e909764fe0}{Iterator}}\ beg,\ \mbox{\hyperlink{class_c_make_r_c_1_1_file_a15ff727ef2f71bdc6a6e16e909764fe0}{Iterator}}\ end)\ noexcept\ :\ \mbox{\hyperlink{class_c_make_r_c_1_1_file_ae620455a132951e883cb61ff4af16f02}{\_begin}}(beg),\ \mbox{\hyperlink{class_c_make_r_c_1_1_file_a701343f0f39c2d7e037a7359f98f62da}{\_end}}(end)\ \{\}}
+\DoxyCodeLine{00121\ \ \ \ \ \mbox{\hyperlink{class_c_make_r_c_1_1_file_a15ff727ef2f71bdc6a6e16e909764fe0}{Iterator}}\ \mbox{\hyperlink{class_c_make_r_c_1_1_file_a8190a209e6a026ee8fab3244412d11bb}{Begin}}()\ const\ noexcept}
+\DoxyCodeLine{00122\ \ \ \ \ \{}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_make_r_c_1_1_file_ae620455a132951e883cb61ff4af16f02}{\_begin}};}
+\DoxyCodeLine{00124\ \ \ \ \ \}}
+\DoxyCodeLine{00130\ \ \ \ \ \mbox{\hyperlink{class_c_make_r_c_1_1_file_a15ff727ef2f71bdc6a6e16e909764fe0}{Iterator}}\ \mbox{\hyperlink{class_c_make_r_c_1_1_file_affe52cb4e1449c3c522aec515631828e}{CBegin}}()\ const\ noexcept}
+\DoxyCodeLine{00131\ \ \ \ \ \{}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_make_r_c_1_1_file_ae620455a132951e883cb61ff4af16f02}{\_begin}};}
+\DoxyCodeLine{00133\ \ \ \ \ \}}
+\DoxyCodeLine{00139\ \ \ \ \ \mbox{\hyperlink{class_c_make_r_c_1_1_file_a15ff727ef2f71bdc6a6e16e909764fe0}{Iterator}}\ \mbox{\hyperlink{class_c_make_r_c_1_1_file_a690dfb10e300098bf1ce19e38bee236b}{End}}()\ const\ noexcept}
+\DoxyCodeLine{00140\ \ \ \ \ \{}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_make_r_c_1_1_file_a701343f0f39c2d7e037a7359f98f62da}{\_end}};}
+\DoxyCodeLine{00142\ \ \ \ \ \}}
+\DoxyCodeLine{00148\ \ \ \ \ \mbox{\hyperlink{class_c_make_r_c_1_1_file_a15ff727ef2f71bdc6a6e16e909764fe0}{Iterator}}\ \mbox{\hyperlink{class_c_make_r_c_1_1_file_a2f16cd3bfd3bc7aeaef3eebbb882b684}{CEnd}}()\ const\ noexcept}
+\DoxyCodeLine{00149\ \ \ \ \ \{}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_make_r_c_1_1_file_a701343f0f39c2d7e037a7359f98f62da}{\_end}};}
+\DoxyCodeLine{00151\ \ \ \ \ \}}
+\DoxyCodeLine{00157\ \ \ \ \ std::size\_t\ \mbox{\hyperlink{class_c_make_r_c_1_1_file_ae50497b1ca22530f084d3b9cc48da9a6}{Size}}()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00158\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{static\_cast<}std::size\_t\textcolor{keyword}{>}(std::distance(\mbox{\hyperlink{class_c_make_r_c_1_1_file_a8190a209e6a026ee8fab3244412d11bb}{Begin}}(),\ \mbox{\hyperlink{class_c_make_r_c_1_1_file_a690dfb10e300098bf1ce19e38bee236b}{End}}()));}
+\DoxyCodeLine{00160\ \ \ \ \ \}}
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00162\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00167\ \ \ \ \ \mbox{\hyperlink{win32__resource_8hpp_af13d0262d2bbd96845361a8cc0e0c268}{RCRESOURCEPTR}}\ \mbox{\hyperlink{class_c_make_r_c_1_1_file_ae620455a132951e883cb61ff4af16f02}{\_begin}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00172\ \ \ \ \ \mbox{\hyperlink{win32__resource_8hpp_af13d0262d2bbd96845361a8cc0e0c268}{RCRESOURCEPTR}}\ \mbox{\hyperlink{class_c_make_r_c_1_1_file_a701343f0f39c2d7e037a7359f98f62da}{\_end}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00173\ \};}
+\DoxyCodeLine{00174\ }
+\DoxyCodeLine{00180\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_make_r_c_1_1_directory_entry}{DirectoryEntry}};}
+\DoxyCodeLine{00181\ }
+\DoxyCodeLine{00182\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_detail}{Detail}}}
+\DoxyCodeLine{00183\ \{}
+\DoxyCodeLine{00190\ \textcolor{keyword}{class\ }Directory;}
+\DoxyCodeLine{00191\ }
+\DoxyCodeLine{00198\ \textcolor{keyword}{class\ }FileData;}
+\DoxyCodeLine{00199\ }
+\DoxyCodeLine{00206\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory}{FileOrDirectory}}}
+\DoxyCodeLine{00207\ \{}
+\DoxyCodeLine{00208\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00214\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory_a2038b105526e304e8dc4eaf2c08d7371}{FileOrDirectory}}(\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_data}{FileData}}\&\ f)}
+\DoxyCodeLine{00215\ \ \ \ \ \{}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory_a0320eaf17d4042508cb7182f0da57e32}{\_data}}.\mbox{\hyperlink{union_c_make_r_c_1_1_detail_1_1_file_or_directory_1_1__data__t_acbf70db2aed1fbc0759700954fd99fec}{FileData}}\ =\ \&f;}
+\DoxyCodeLine{00217\ \ \ \ \ \}}
+\DoxyCodeLine{00223\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory_a7ed2fb44d81150cf5b0446cc717018af}{FileOrDirectory}}(\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory}{Directory}}\&\ d)}
+\DoxyCodeLine{00224\ \ \ \ \ \{}
+\DoxyCodeLine{00225\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory_a0320eaf17d4042508cb7182f0da57e32}{\_data}}.\mbox{\hyperlink{union_c_make_r_c_1_1_detail_1_1_file_or_directory_1_1__data__t_a141a50e444eccb832148435433499864}{Directory}}\ =\ \&d;}
+\DoxyCodeLine{00226\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory_a5f3961d4f94b3735131c2b9970f41615}{\_is\_file}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00227\ \ \ \ \ \}}
+\DoxyCodeLine{00234\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory_a68fac370f8ff769caa898820b963bf14}{IsFile}}()\ const\ noexcept}
+\DoxyCodeLine{00235\ \ \ \ \ \{}
+\DoxyCodeLine{00236\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory_a5f3961d4f94b3735131c2b9970f41615}{\_is\_file}};}
+\DoxyCodeLine{00237\ \ \ \ \ \}}
+\DoxyCodeLine{00244\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory_aafd677b5751bb0b18785bebdf5af8b76}{IsDirectory}}()\ const\ noexcept}
+\DoxyCodeLine{00245\ \ \ \ \ \{}
+\DoxyCodeLine{00246\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ !\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory_a68fac370f8ff769caa898820b963bf14}{IsFile}}();}
+\DoxyCodeLine{00247\ \ \ \ \ \}}
+\DoxyCodeLine{00253\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory}{Directory}}\&\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory_adc7825ac25d1c365981aa55071b2d960}{AsDirectory}}()\ const\ noexcept}
+\DoxyCodeLine{00254\ \ \ \ \ \{}
+\DoxyCodeLine{00255\ \ \ \ \ \ \ \ \ assert(!\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory_a68fac370f8ff769caa898820b963bf14}{IsFile}}());}
+\DoxyCodeLine{00256\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory_a0320eaf17d4042508cb7182f0da57e32}{\_data}}.\mbox{\hyperlink{union_c_make_r_c_1_1_detail_1_1_file_or_directory_1_1__data__t_a141a50e444eccb832148435433499864}{Directory}};}
+\DoxyCodeLine{00257\ \ \ \ \ \}}
+\DoxyCodeLine{00263\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_data}{FileData}}\&\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory_aa5d382deb2e8535c46a63b5a4d770cde}{AsFile}}()\ const\ noexcept}
+\DoxyCodeLine{00264\ \ \ \ \ \{}
+\DoxyCodeLine{00265\ \ \ \ \ \ \ \ \ assert(\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory_a68fac370f8ff769caa898820b963bf14}{IsFile}}());}
+\DoxyCodeLine{00266\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory_a0320eaf17d4042508cb7182f0da57e32}{\_data}}.\mbox{\hyperlink{union_c_make_r_c_1_1_detail_1_1_file_or_directory_1_1__data__t_acbf70db2aed1fbc0759700954fd99fec}{FileData}};}
+\DoxyCodeLine{00267\ \ \ \ \ \}}
+\DoxyCodeLine{00268\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00269\ \ \ \ \ \textcolor{keyword}{union\ }\mbox{\hyperlink{union_c_make_r_c_1_1_detail_1_1_file_or_directory_1_1__data__t}{\_data\_t}}}
+\DoxyCodeLine{00270\ \ \ \ \ \{}
+\DoxyCodeLine{00271\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_data}{FileData}}*\ \mbox{\hyperlink{union_c_make_r_c_1_1_detail_1_1_file_or_directory_1_1__data__t_acbf70db2aed1fbc0759700954fd99fec}{FileData}};}
+\DoxyCodeLine{00272\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory}{Directory}}*\ \mbox{\hyperlink{union_c_make_r_c_1_1_detail_1_1_file_or_directory_1_1__data__t_a141a50e444eccb832148435433499864}{Directory}};}
+\DoxyCodeLine{00273\ \ \ \ \ \}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory_a0320eaf17d4042508cb7182f0da57e32}{\_data}};}
+\DoxyCodeLine{00274\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory_a5f3961d4f94b3735131c2b9970f41615}{\_is\_file}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00275\ \};}
+\DoxyCodeLine{00276\ }
+\DoxyCodeLine{00282\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_data}{FileData}}}
+\DoxyCodeLine{00283\ \{}
+\DoxyCodeLine{00284\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00291\ \ \ \ \ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_data_ab652c9133fdf6f086603c5cac4095b7e}{FileData}}(\mbox{\hyperlink{win32__resource_8hpp_af13d0262d2bbd96845361a8cc0e0c268}{RCRESOURCEPTR}}\ b,\ \mbox{\hyperlink{win32__resource_8hpp_af13d0262d2bbd96845361a8cc0e0c268}{RCRESOURCEPTR}}\ e)\ :\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_data_a02153c6e1ef5d9aeb40abfe1023b92d3}{begin\_ptr}}(b),\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_data_ad2b8490904a373caa51c8a2ce4c6d935}{end\_ptr}}(e)\ \{\}}
+\DoxyCodeLine{00296\ \ \ \ \ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_data_a7bfd974316fceb83eab3d28069a8d91d}{FileData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_data}{FileData}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00297\ }
+\DoxyCodeLine{00298\ \ \ \ \ \mbox{\hyperlink{win32__resource_8hpp_af13d0262d2bbd96845361a8cc0e0c268}{RCRESOURCEPTR}}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_data_a02153c6e1ef5d9aeb40abfe1023b92d3}{begin\_ptr}};}
+\DoxyCodeLine{00299\ \ \ \ \ \mbox{\hyperlink{win32__resource_8hpp_af13d0262d2bbd96845361a8cc0e0c268}{RCRESOURCEPTR}}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_data_ad2b8490904a373caa51c8a2ce4c6d935}{end\_ptr}};}
+\DoxyCodeLine{00300\ \};}
+\DoxyCodeLine{00301\ }
+\DoxyCodeLine{00308\ \textcolor{keyword}{inline}\ std::pair<std::string,\ std::string>\ \mbox{\hyperlink{namespace_c_make_r_c_1_1_detail_a66d1ba033d0fd3128f0c20fc3652070a}{SplitPath}}(\textcolor{keyword}{const}\ std::string\&\ path)}
+\DoxyCodeLine{00309\ \{}
+\DoxyCodeLine{00310\ \ \ \ \ \textcolor{keyword}{auto}\ first\_sep\ =\ path.find(\textcolor{stringliteral}{"{}/"{}});}
+\DoxyCodeLine{00311\ }
+\DoxyCodeLine{00312\ \ \ \ \ \textcolor{keywordflow}{if}\ (first\_sep\ ==\ path.npos)}
+\DoxyCodeLine{00313\ \ \ \ \ \{}
+\DoxyCodeLine{00314\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::make\_pair(path,\ \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{00315\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00316\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::make\_pair(path.substr(0,\ first\_sep),\ path.substr(first\_sep\ +\ 1));}
+\DoxyCodeLine{00317\ \ \ \ \ \}}
+\DoxyCodeLine{00318\ \}}
+\DoxyCodeLine{00319\ }
+\DoxyCodeLine{00326\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_c_make_r_c_1_1_detail_1_1_created_sub_directory}{CreatedSubDirectory}}}
+\DoxyCodeLine{00327\ \{}
+\DoxyCodeLine{00328\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory}{Directory}}\&\ \mbox{\hyperlink{struct_c_make_r_c_1_1_detail_1_1_created_sub_directory_a225b4cdbdb42d83831c630de10a6aa09}{Directory}};}
+\DoxyCodeLine{00329\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory}{FileOrDirectory}}\&\ \mbox{\hyperlink{struct_c_make_r_c_1_1_detail_1_1_created_sub_directory_a637b11814abbfa2c0ddac8984bb60e08}{IndexEntry}};}
+\DoxyCodeLine{00330\ \};}
+\DoxyCodeLine{00331\ }
+\DoxyCodeLine{00338\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory}{Directory}}}
+\DoxyCodeLine{00339\ \{}
+\DoxyCodeLine{00340\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_a9702671345e2a242f6f245987b5367fc}{BaseIterator}}\ =\ std::map<std::string,\ FileOrDirectory>::const\_iterator;}
+\DoxyCodeLine{00341\ }
+\DoxyCodeLine{00342\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00347\ \ \ \ \ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_a11b5d65496f7c6548acb3a021c52dab9}{Directory}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00348\ }
+\DoxyCodeLine{00353\ \ \ \ \ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_a14df5ba2e753400f86921ee8d51978de}{Directory}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory}{Directory}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00354\ }
+\DoxyCodeLine{00361\ \ \ \ \ \mbox{\hyperlink{struct_c_make_r_c_1_1_detail_1_1_created_sub_directory}{CreatedSubDirectory}}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_a69a33c818bec9e2afb82de42aeb331df}{AddSubDir}}(std::string\ name)\ \&}
+\DoxyCodeLine{00362\ \ \ \ \ \{}
+\DoxyCodeLine{00363\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_a23ae57416849fce4dfc61d24a43c61ce}{\_dirs}}.emplace\_back();}
+\DoxyCodeLine{00364\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\&\ back\ =\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_a23ae57416849fce4dfc61d24a43c61ce}{\_dirs}}.back();}
+\DoxyCodeLine{00365\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\&\ fod\ =\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_abab781792e29a0f758f09fe378fe7aba}{\_index}}.emplace(name,\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory}{FileOrDirectory}}\{back\}).first-\/>second;}
+\DoxyCodeLine{00366\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{struct_c_make_r_c_1_1_detail_1_1_created_sub_directory}{CreatedSubDirectory}}\{back,\ fod\};}
+\DoxyCodeLine{00367\ \ \ \ \ \}}
+\DoxyCodeLine{00368\ }
+\DoxyCodeLine{00377\ \ \ \ \ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory}{FileOrDirectory}}*\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_a2d68a46ef296e1419b9284404dd7f6e8}{AddFile}}(std::string\ name,\ \mbox{\hyperlink{win32__resource_8hpp_af13d0262d2bbd96845361a8cc0e0c268}{RCRESOURCEPTR}}\ begin,\ \mbox{\hyperlink{win32__resource_8hpp_af13d0262d2bbd96845361a8cc0e0c268}{RCRESOURCEPTR}}\ end)\ \&}
+\DoxyCodeLine{00378\ \ \ \ \ \{}
+\DoxyCodeLine{00379\ \ \ \ \ \ \ \ \ assert(\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_abab781792e29a0f758f09fe378fe7aba}{\_index}}.find(name)\ ==\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_abab781792e29a0f758f09fe378fe7aba}{\_index}}.end());}
+\DoxyCodeLine{00380\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_a3148cfe9eccc3819c5c15e2e1c3db8ac}{\_files}}.emplace\_back(begin,\ end);}
+\DoxyCodeLine{00381\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \&\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_abab781792e29a0f758f09fe378fe7aba}{\_index}}.emplace(name,\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory}{FileOrDirectory}}\{\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_a3148cfe9eccc3819c5c15e2e1c3db8ac}{\_files}}.back()\}).first-\/>second;}
+\DoxyCodeLine{00382\ \ \ \ \ \}}
+\DoxyCodeLine{00383\ }
+\DoxyCodeLine{00390\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory}{FileOrDirectory}}*\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_a1a37503b11b08f3267f6c33cee47fc23}{Get}}(\textcolor{keyword}{const}\ std::string\&\ path)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00391\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00392\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ pair\ =\ \mbox{\hyperlink{namespace_c_make_r_c_1_1_detail_a66d1ba033d0fd3128f0c20fc3652070a}{SplitPath}}(path);}
+\DoxyCodeLine{00393\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ child\ =\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_abab781792e29a0f758f09fe378fe7aba}{\_index}}.find(pair.first);}
+\DoxyCodeLine{00394\ }
+\DoxyCodeLine{00395\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (child\ ==\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_abab781792e29a0f758f09fe378fe7aba}{\_index}}.end())}
+\DoxyCodeLine{00396\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00397\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00398\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00399\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\&\ entry\ \ =\ child-\/>second;}
+\DoxyCodeLine{00400\ }
+\DoxyCodeLine{00401\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (pair.second.empty())}
+\DoxyCodeLine{00402\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00403\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ We're\ at\ the\ end\ of\ the\ path}}
+\DoxyCodeLine{00404\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \&entry;}
+\DoxyCodeLine{00405\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00406\ }
+\DoxyCodeLine{00407\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (entry.IsFile())}
+\DoxyCodeLine{00408\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00409\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ We\ can't\ traverse\ into\ a\ file.\ Stop.}}
+\DoxyCodeLine{00410\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00411\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00412\ }
+\DoxyCodeLine{00413\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Keep\ going\ down}}
+\DoxyCodeLine{00414\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ entry.AsDirectory().Get(pair.second);}
+\DoxyCodeLine{00415\ \ \ \ \ \}}
+\DoxyCodeLine{00416\ }
+\DoxyCodeLine{00421\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator}{Iterator}}}
+\DoxyCodeLine{00422\ \ \ \ \ \{}
+\DoxyCodeLine{00423\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00424\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_c_make_r_c_1_1_directory_entry}{ValueType}}\ =\ \mbox{\hyperlink{class_c_make_r_c_1_1_directory_entry}{DirectoryEntry}};}
+\DoxyCodeLine{00425\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_a2939cae9653e6a7c0b679d496e01db42}{DifferenceType}}\ =\ std::ptrdiff\_t;}
+\DoxyCodeLine{00426\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_c_make_r_c_1_1_directory_entry}{pointer}}\ =\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_make_r_c_1_1_directory_entry}{ValueType}}*;}
+\DoxyCodeLine{00427\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_c_make_r_c_1_1_directory_entry}{reference}}\ =\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_make_r_c_1_1_directory_entry}{ValueType}}\&;}
+\DoxyCodeLine{00428\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_a694b50c7e4039f4fe077ab64c9904377}{IteratorCategory}}\ =\ std::input\_iterator\_tag;}
+\DoxyCodeLine{00429\ }
+\DoxyCodeLine{00434\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_a3adf6d733347cd4f988f49c35b75ff93}{Iterator}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00435\ }
+\DoxyCodeLine{00442\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_abc285da5bc94423407401bcd9e6b8672}{Iterator}}(\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_a9702671345e2a242f6f245987b5367fc}{BaseIterator}}\ iter,\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_a9702671345e2a242f6f245987b5367fc}{BaseIterator}}\ end)\ :\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_a90d2ad375b46f9feb1c091305227cbe8}{\_base\_iter}}(iter),\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_aa71298b1f355b6b6f5716e7c5f0f0405}{\_end\_iter}}(end)\ \{\}}
+\DoxyCodeLine{00443\ }
+\DoxyCodeLine{00448\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator}{Iterator}}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_a33d2a59815371ffaf72a553048efc5e0}{Begin}}()\ const\ noexcept}
+\DoxyCodeLine{00449\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00450\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00451\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00452\ }
+\DoxyCodeLine{00457\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator}{Iterator}}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_a4339f3814d089274ebb0f1f37af2c47a}{End}}()\ const\ noexcept}
+\DoxyCodeLine{00458\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00459\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_a3adf6d733347cd4f988f49c35b75ff93}{Iterator}}(\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_aa71298b1f355b6b6f5716e7c5f0f0405}{\_end\_iter}},\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_aa71298b1f355b6b6f5716e7c5f0f0405}{\_end\_iter}});}
+\DoxyCodeLine{00460\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00461\ }
+\DoxyCodeLine{00466\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_a7b09a33b23a72041c3d60d34c793a9e1}{ValueType}}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_ad7159b61c886fc6639a11cfa0e1d3f88}{operator*}}()\ const\ noexcept;}
+\DoxyCodeLine{00467\ }
+\DoxyCodeLine{00474\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ operator==(const\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator}{Iterator}}\&\ rhs)\ const\ noexcept}
+\DoxyCodeLine{00475\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00476\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_a90d2ad375b46f9feb1c091305227cbe8}{\_base\_iter}}\ ==\ rhs.\_base\_iter;}
+\DoxyCodeLine{00477\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00478\ }
+\DoxyCodeLine{00486\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_ac5bacfe1875369c54eed050d0044397c}{operator!=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator}{Iterator}}\&\ rhs)\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept}}
+\DoxyCodeLine{00487\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00488\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ !(*\textcolor{keyword}{this}\ ==\ rhs);}
+\DoxyCodeLine{00489\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00490\ }
+\DoxyCodeLine{00496\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator}{Iterator}}\&\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_a0cd610a6a09fe457d447b0b283be4998}{operator++}}()\ noexcept}
+\DoxyCodeLine{00497\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00498\ \ \ \ \ \ \ \ \ \ \ \ \ ++\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_a90d2ad375b46f9feb1c091305227cbe8}{\_base\_iter}};}
+\DoxyCodeLine{00499\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00500\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00501\ }
+\DoxyCodeLine{00506\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator}{Iterator}}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_a78e28e88ff8be18a2cbfd6c1610461d1}{operator++}}(\textcolor{keywordtype}{int})\ \textcolor{keyword}{noexcept}}
+\DoxyCodeLine{00507\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00508\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ cp\ =\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00509\ \ \ \ \ \ \ \ \ \ \ \ \ ++\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_a90d2ad375b46f9feb1c091305227cbe8}{\_base\_iter}};}
+\DoxyCodeLine{00510\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ cp;}
+\DoxyCodeLine{00511\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00512\ }
+\DoxyCodeLine{00513\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00514\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_a9702671345e2a242f6f245987b5367fc}{BaseIterator}}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_a90d2ad375b46f9feb1c091305227cbe8}{\_base\_iter}};}
+\DoxyCodeLine{00515\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_a9702671345e2a242f6f245987b5367fc}{BaseIterator}}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_aa71298b1f355b6b6f5716e7c5f0f0405}{\_end\_iter}};}
+\DoxyCodeLine{00516\ \ \ \ \ \};}
+\DoxyCodeLine{00517\ }
+\DoxyCodeLine{00518\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator}{ConstIterator}}\ =\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator}{Iterator}};}
+\DoxyCodeLine{00519\ }
+\DoxyCodeLine{00525\ \ \ \ \ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator}{Iterator}}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_ae1569fc4fb303b079330ca6f4241d2c2}{Begin}}()\ const\ noexcept}
+\DoxyCodeLine{00526\ \ \ \ \ \{}
+\DoxyCodeLine{00527\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator}{Iterator}}(\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_abab781792e29a0f758f09fe378fe7aba}{\_index}}.begin(),\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_abab781792e29a0f758f09fe378fe7aba}{\_index}}.end());}
+\DoxyCodeLine{00528\ \ \ \ \ \}}
+\DoxyCodeLine{00529\ }
+\DoxyCodeLine{00535\ \ \ \ \ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator}{Iterator}}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_a3a51d595262bb6ca91f85b4e106b105f}{End}}()\ const\ noexcept}
+\DoxyCodeLine{00536\ \ \ \ \ \{}
+\DoxyCodeLine{00537\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator}{Iterator}}();}
+\DoxyCodeLine{00538\ \ \ \ \ \}}
+\DoxyCodeLine{00539\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00540\ \ \ \ \ std::list<FileData>\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_a3148cfe9eccc3819c5c15e2e1c3db8ac}{\_files}};}
+\DoxyCodeLine{00541\ \ \ \ \ std::list<Directory>\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_a23ae57416849fce4dfc61d24a43c61ce}{\_dirs}};}
+\DoxyCodeLine{00542\ \ \ \ \ std::map<std::string,\ FileOrDirectory>\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_abab781792e29a0f758f09fe378fe7aba}{\_index}};}
+\DoxyCodeLine{00543\ \};}
+\DoxyCodeLine{00544\ }
+\DoxyCodeLine{00551\ \textcolor{keyword}{inline}\ std::string\ \mbox{\hyperlink{namespace_c_make_r_c_1_1_detail_a6553506577f146fdcb7e1588a74dd102}{NormalizePath}}(std::string\ path)}
+\DoxyCodeLine{00552\ \{}
+\DoxyCodeLine{00553\ \ \ \ \ \textcolor{keywordflow}{while}\ (path.find(\textcolor{stringliteral}{"{}/"{}})\ ==\ 0)}
+\DoxyCodeLine{00554\ \ \ \ \ \{}
+\DoxyCodeLine{00555\ \ \ \ \ \ \ \ \ path.erase(path.begin());}
+\DoxyCodeLine{00556\ \ \ \ \ \}}
+\DoxyCodeLine{00557\ }
+\DoxyCodeLine{00558\ \ \ \ \ \textcolor{keywordflow}{while}\ (!path.empty()\ \&\&\ (path.rfind(\textcolor{stringliteral}{"{}/"{}})\ ==\ path.size()\ -\/\ 1))}
+\DoxyCodeLine{00559\ \ \ \ \ \{}
+\DoxyCodeLine{00560\ \ \ \ \ \ \ \ \ path.pop\_back();}
+\DoxyCodeLine{00561\ \ \ \ \ \}}
+\DoxyCodeLine{00562\ }
+\DoxyCodeLine{00563\ \ \ \ \ \textcolor{keyword}{auto}\ off\ =\ path.npos;}
+\DoxyCodeLine{00564\ }
+\DoxyCodeLine{00565\ \ \ \ \ \textcolor{keywordflow}{while}\ ((off\ =\ path.find(\textcolor{stringliteral}{"{}//"{}}))\ !=\ path.npos)}
+\DoxyCodeLine{00566\ \ \ \ \ \{}
+\DoxyCodeLine{00567\ \ \ \ \ \ \ \ \ path.erase(path.begin()\ +\ \textcolor{keyword}{static\_cast<}std::string::difference\_type\textcolor{keyword}{>}(off));}
+\DoxyCodeLine{00568\ \ \ \ \ \}}
+\DoxyCodeLine{00569\ }
+\DoxyCodeLine{00570\ \ \ \ \ \textcolor{keywordflow}{return}\ path;}
+\DoxyCodeLine{00571\ \}}
+\DoxyCodeLine{00572\ }
+\DoxyCodeLine{00573\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_c_make_r_c_1_1_detail_af8b7b0ba529bcc74373e4ee395b54529}{IndexType}}\ =\ std::map<std::string,\ const\ CMakeRC::Detail::FileOrDirectory*>;}
+\DoxyCodeLine{00574\ }
+\DoxyCodeLine{00575\ \}\ \textcolor{comment}{//\ namespace\ CMakeRC::Detail}}
+\DoxyCodeLine{00576\ }
+\DoxyCodeLine{00582\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_make_r_c_1_1_directory_entry}{DirectoryEntry}}}
+\DoxyCodeLine{00583\ \{}
+\DoxyCodeLine{00584\ \ \ \ \ std::string\ \mbox{\hyperlink{class_c_make_r_c_1_1_directory_entry_a646b40c7b36660599356f97d8bd506d8}{\_fname}};}
+\DoxyCodeLine{00585\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory}{Detail::FileOrDirectory}}*\ \mbox{\hyperlink{class_c_make_r_c_1_1_directory_entry_ae1a59731a6b7a04239dbfe8484c7ec25}{\_item}};}
+\DoxyCodeLine{00586\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00591\ \ \ \ \ \mbox{\hyperlink{class_c_make_r_c_1_1_directory_entry_afa4e984e646c6fd9802fc888a6adb09b}{DirectoryEntry}}()\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00592\ }
+\DoxyCodeLine{00599\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_c_make_r_c_1_1_directory_entry_adac92932fc5ad6f98cde2392fdc3dc4e}{DirectoryEntry}}(std::string\ filename,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory}{Detail::FileOrDirectory}}\&\ item)}
+\DoxyCodeLine{00600\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_c_make_r_c_1_1_directory_entry_a646b40c7b36660599356f97d8bd506d8}{\_fname}}(filename)}
+\DoxyCodeLine{00601\ \ \ \ \ \ \ \ \ ,\ \mbox{\hyperlink{class_c_make_r_c_1_1_directory_entry_ae1a59731a6b7a04239dbfe8484c7ec25}{\_item}}(\&item)}
+\DoxyCodeLine{00602\ \ \ \ \ \{\}}
+\DoxyCodeLine{00603\ }
+\DoxyCodeLine{00609\ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_c_make_r_c_1_1_directory_entry_a3201c2d5ac5e2268f669ed1b7aa4bdce}{Filename}}()\ const\ \&}
+\DoxyCodeLine{00610\ \ \ \ \ \{}
+\DoxyCodeLine{00611\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_make_r_c_1_1_directory_entry_a646b40c7b36660599356f97d8bd506d8}{\_fname}};}
+\DoxyCodeLine{00612\ \ \ \ \ \}}
+\DoxyCodeLine{00613\ }
+\DoxyCodeLine{00619\ \ \ \ \ std::string\ \mbox{\hyperlink{class_c_make_r_c_1_1_directory_entry_acbf4f57d8c5688879ee63e3d39634416}{Filename}}()\ const\ \&\&}
+\DoxyCodeLine{00620\ \ \ \ \ \{}
+\DoxyCodeLine{00621\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::move(\mbox{\hyperlink{class_c_make_r_c_1_1_directory_entry_a646b40c7b36660599356f97d8bd506d8}{\_fname}});}
+\DoxyCodeLine{00622\ \ \ \ \ \}}
+\DoxyCodeLine{00623\ }
+\DoxyCodeLine{00630\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_c_make_r_c_1_1_directory_entry_aa6f38441e073b7c203aaeb573bd43b7a}{IsFile}}()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00631\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00632\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_make_r_c_1_1_directory_entry_ae1a59731a6b7a04239dbfe8484c7ec25}{\_item}}-\/>\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory_a68fac370f8ff769caa898820b963bf14}{IsFile}}();}
+\DoxyCodeLine{00633\ \ \ \ \ \}}
+\DoxyCodeLine{00634\ }
+\DoxyCodeLine{00641\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_c_make_r_c_1_1_directory_entry_a0630f2f2c01df34707c28f386ea3fa90}{IsDirectory}}()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00642\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00643\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_make_r_c_1_1_directory_entry_ae1a59731a6b7a04239dbfe8484c7ec25}{\_item}}-\/>\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory_aafd677b5751bb0b18785bebdf5af8b76}{IsDirectory}}();}
+\DoxyCodeLine{00644\ \ \ \ \ \}}
+\DoxyCodeLine{00645\ \};}
+\DoxyCodeLine{00646\ }
+\DoxyCodeLine{00651\ \mbox{\hyperlink{class_c_make_r_c_1_1_directory_entry}{DirectoryEntry}}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_ad7159b61c886fc6639a11cfa0e1d3f88}{Detail::Directory::Iterator::operator*}}()\ const\ noexcept}
+\DoxyCodeLine{00652\ \{}
+\DoxyCodeLine{00653\ \ \ \ \ assert(\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_a33d2a59815371ffaf72a553048efc5e0}{Begin}}()\ !=\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_a4339f3814d089274ebb0f1f37af2c47a}{End}}());}
+\DoxyCodeLine{00654\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_make_r_c_1_1_directory_entry}{DirectoryEntry}}(\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_a90d2ad375b46f9feb1c091305227cbe8}{\_base\_iter}}-\/>first,\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator_a90d2ad375b46f9feb1c091305227cbe8}{\_base\_iter}}-\/>second);}
+\DoxyCodeLine{00655\ \}}
+\DoxyCodeLine{00656\ }
+\DoxyCodeLine{00657\ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator}{DirectoryIterator}}\ =\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator}{Detail::Directory::Iterator}};}
+\DoxyCodeLine{00658\ }
+\DoxyCodeLine{00663\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_c_make_r_c_1_1_embedded_file_system}{EmbeddedFileSystem}}}
+\DoxyCodeLine{00664\ \{}
+\DoxyCodeLine{00665\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00669\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_c_make_r_c_1_1_detail_af8b7b0ba529bcc74373e4ee395b54529}{CMakeRC::Detail::IndexType}}*\ \mbox{\hyperlink{class_c_make_r_c_1_1_embedded_file_system_a907c3ddde3effeb4b97f3c5b4d23988d}{\_index}};}
+\DoxyCodeLine{00675\ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_file_or_directory}{Detail::FileOrDirectory}}*\ \mbox{\hyperlink{class_c_make_r_c_1_1_embedded_file_system_ab8e4e1221710c44add0f329b6a3cad47}{\_get}}(std::string\ path)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00676\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00677\ \ \ \ \ \ \ \ \ path\ =\ Detail::NormalizePath(path);}
+\DoxyCodeLine{00678\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ found\ =\ \_index-\/>find(path);}
+\DoxyCodeLine{00679\ }
+\DoxyCodeLine{00680\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (found\ ==\ \_index-\/>end())}
+\DoxyCodeLine{00681\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00682\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00683\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00684\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00685\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00686\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ found-\/>second;}
+\DoxyCodeLine{00687\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00688\ \ \ \ \ \}}
+\DoxyCodeLine{00689\ }
+\DoxyCodeLine{00690\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00696\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_c_make_r_c_1_1_embedded_file_system_a9163d770a3ebcf479cd630690703cc05}{EmbeddedFileSystem}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespace_c_make_r_c_1_1_detail_af8b7b0ba529bcc74373e4ee395b54529}{Detail::IndexType}}\&\ index)}
+\DoxyCodeLine{00697\ \ \ \ \ \ \ \ \ :\ \_index(\&index)}
+\DoxyCodeLine{00698\ \ \ \ \ \{\}}
+\DoxyCodeLine{00699\ }
+\DoxyCodeLine{00705\ \ \ \ \ \mbox{\hyperlink{class_c_make_r_c_1_1_file}{File}}\ \mbox{\hyperlink{class_c_make_r_c_1_1_embedded_file_system_ae49cd6b12ff520cc722953dafc90bfe7}{open}}(\textcolor{keyword}{const}\ std::string\&\ path)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00706\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00707\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ entry\_ptr\ =\ \_get(path);}
+\DoxyCodeLine{00708\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!entry\_ptr\ ||\ !entry\_ptr-\/>IsFile())}
+\DoxyCodeLine{00709\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00710\ \textcolor{preprocessor}{\#ifdef\ CMRC\_NO\_EXCEPTIONS}}
+\DoxyCodeLine{00711\ \ \ \ \ \ \ \ \ \ \ \ \ fprintf(stderr,\ \textcolor{stringliteral}{"{}Error\ no\ such\ file\ or\ directory:\ \%s\(\backslash\)n"{}},\ path.c\_str());}
+\DoxyCodeLine{00712\ \ \ \ \ \ \ \ \ \ \ \ \ abort();}
+\DoxyCodeLine{00713\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00714\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::system\_error(make\_error\_code(std::errc::no\_such\_file\_or\_directory),\ path);}
+\DoxyCodeLine{00715\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00716\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00717\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\&\ dat\ =\ entry\_ptr-\/>AsFile();}
+\DoxyCodeLine{00718\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_c_make_r_c_1_1_file}{File}}\{dat.begin\_ptr,\ dat.end\_ptr\};}
+\DoxyCodeLine{00719\ \ \ \ \ \}}
+\DoxyCodeLine{00720\ }
+\DoxyCodeLine{00728\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_c_make_r_c_1_1_embedded_file_system_acf69f5466bd4c59e48451a235ac7ab47}{IsFile}}(\textcolor{keyword}{const}\ std::string\&\ path)\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept}}
+\DoxyCodeLine{00729\ \ \ \ \ \{}
+\DoxyCodeLine{00730\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ entry\_ptr\ =\ \_get(path);}
+\DoxyCodeLine{00731\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ entry\_ptr\ \&\&\ entry\_ptr-\/>IsFile();}
+\DoxyCodeLine{00732\ \ \ \ \ \}}
+\DoxyCodeLine{00733\ }
+\DoxyCodeLine{00741\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_c_make_r_c_1_1_embedded_file_system_aacaaa6554852380e3c4e9529440482c5}{IsDirectory}}(\textcolor{keyword}{const}\ std::string\&\ path)\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept}}
+\DoxyCodeLine{00742\ \ \ \ \ \{}
+\DoxyCodeLine{00743\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ entry\_ptr\ =\ \_get(path);}
+\DoxyCodeLine{00744\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ entry\_ptr\ \&\&\ entry\_ptr-\/>IsDirectory();}
+\DoxyCodeLine{00745\ \ \ \ \ \}}
+\DoxyCodeLine{00746\ }
+\DoxyCodeLine{00754\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_c_make_r_c_1_1_embedded_file_system_acf6a8b5508470806f06e45b0394b794c}{Exists}}(\textcolor{keyword}{const}\ std::string\&\ path)\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept}}
+\DoxyCodeLine{00755\ \ \ \ \ \{}
+\DoxyCodeLine{00756\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ !!\_get(path);}
+\DoxyCodeLine{00757\ \ \ \ \ \}}
+\DoxyCodeLine{00758\ }
+\DoxyCodeLine{00765\ \ \ \ \ \mbox{\hyperlink{class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator}{DirectoryIterator}}\ \mbox{\hyperlink{class_c_make_r_c_1_1_embedded_file_system_aa295b7f7c1aef39c3ef86bc472d19a99}{IterateDirectory}}(\textcolor{keyword}{const}\ std::string\&\ path)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{00766\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00767\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ entry\_ptr\ =\ \_get(path);}
+\DoxyCodeLine{00768\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!entry\_ptr)}
+\DoxyCodeLine{00769\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00770\ \textcolor{preprocessor}{\#ifdef\ CMRC\_NO\_EXCEPTIONS}}
+\DoxyCodeLine{00771\ \ \ \ \ \ \ \ \ \ \ \ \ fprintf(stderr,\ \textcolor{stringliteral}{"{}Error\ no\ such\ file\ or\ directory:\ \%s\(\backslash\)n"{}},\ path.c\_str());}
+\DoxyCodeLine{00772\ \ \ \ \ \ \ \ \ \ \ \ \ abort();}
+\DoxyCodeLine{00773\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00774\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::system\_error(make\_error\_code(std::errc::no\_such\_file\_or\_directory),\ path);}
+\DoxyCodeLine{00775\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00776\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00777\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!entry\_ptr-\/>IsDirectory())}
+\DoxyCodeLine{00778\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00779\ \textcolor{preprocessor}{\#ifdef\ CMRC\_NO\_EXCEPTIONS}}
+\DoxyCodeLine{00780\ \ \ \ \ \ \ \ \ \ \ \ \ fprintf(stderr,\ \textcolor{stringliteral}{"{}Error\ not\ a\ directory:\ \%s\(\backslash\)n"{}},\ path.c\_str());}
+\DoxyCodeLine{00781\ \ \ \ \ \ \ \ \ \ \ \ \ abort();}
+\DoxyCodeLine{00782\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00783\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::system\_error(make\_error\_code(std::errc::not\_a\_directory),\ path);}
+\DoxyCodeLine{00784\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00785\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00786\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ entry\_ptr-\/>AsDirectory().Begin();}
+\DoxyCodeLine{00787\ \ \ \ \ \}}
+\DoxyCodeLine{00788\ \};}
+\DoxyCodeLine{00789\ }
+\DoxyCodeLine{00790\ \}\ \textcolor{comment}{//\ namespace\ CMakeRC}}
+\DoxyCodeLine{00791\ }
+\DoxyCodeLine{00792\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CMRC\_CMRC\_HPP\_INCLUDED}}
+
+\end{DoxyCode}

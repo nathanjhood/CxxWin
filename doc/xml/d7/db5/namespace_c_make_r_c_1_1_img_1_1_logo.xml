@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d7/db5/namespace_c_make_r_c_1_1_img_1_1_logo" kind="namespace" language="C++">
+    <compoundname>CMakeRC::Img::Logo</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="d7/db5/namespace_c_make_r_c_1_1_img_1_1_logo_1a73bc68f2a1a4f72b095cfe41620fc2f6" prot="public" static="no" mutable="no">
+        <type><ref refid="d5/d1d/win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268" kindref="member">RCRESOURCEPTR</ref> const</type>
+        <definition>RCRESOURCEPTR const CMakeRC::Img::Logo::Logo_png_begin</definition>
+        <argsstring></argsstring>
+        <name>Logo_png_begin</name>
+        <qualifiedname>CMakeRC::Img::Logo::Logo_png_begin</qualifiedname>
+        <initializer>= ::Logo_png_array</initializer>
+        <briefdescription>
+<para>Pointer to the beginning of &apos;Logo_png_array&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/img/win32_Logo_png.cpp" line="146" column="28" bodyfile="include/CxxWin/modules/Win32_resource/img/win32_Logo_png.hpp" bodystart="47" bodyend="-1" declfile="include/CxxWin/modules/Win32_resource/img/win32_Logo_png.cpp" declline="146" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/db5/namespace_c_make_r_c_1_1_img_1_1_logo_1ac1ee50cec4d537f6fd30cf6de616e97e" prot="public" static="no" mutable="no">
+        <type><ref refid="d5/d1d/win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268" kindref="member">RCRESOURCEPTR</ref> const</type>
+        <definition>RCRESOURCEPTR const CMakeRC::Img::Logo::Logo_png_end</definition>
+        <argsstring></argsstring>
+        <name>Logo_png_end</name>
+        <qualifiedname>CMakeRC::Img::Logo::Logo_png_end</qualifiedname>
+        <initializer>= ::Logo_png_array + 488</initializer>
+        <briefdescription>
+<para>Pointer to the end of &apos;Logo_png_array&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/img/win32_Logo_png.cpp" line="147" column="28" bodyfile="include/CxxWin/modules/Win32_resource/img/win32_Logo_png.hpp" bodystart="49" bodyend="-1" declfile="include/CxxWin/modules/Win32_resource/img/win32_Logo_png.cpp" declline="147" declcolumn="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&apos; </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The &apos;<ref refid="d7/db5/namespace_c_make_r_c_1_1_img_1_1_logo" kindref="compound">Logo</ref>&apos; namespace. Contains declarations and definitions of binary-compiled &apos;Logo.png&apos; for interacting with <ref refid="d6/dd1/namespace_win32" kindref="compound">Win32</ref> API. </para>
+    </detaileddescription>
+    <location file="include/CxxWin/modules/Win32_resource/img/win32_Logo_png.cpp" line="144" column="1"/>
+  </compounddef>
+</doxygen>

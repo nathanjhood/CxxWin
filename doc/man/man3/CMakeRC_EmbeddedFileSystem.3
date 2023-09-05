@@ -1,0 +1,163 @@
+.TH "CMakeRC::EmbeddedFileSystem" 3Version 1.0.1" "CxxWin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CMakeRC::EmbeddedFileSystem
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <cmrc\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBEmbeddedFileSystem\fP (const \fBDetail::IndexType\fP &index)"
+.br
+.RI "Construct a new '\fBEmbeddedFileSystem\fP' object\&. "
+.ti -1c
+.RI "\fBFile\fP \fBopen\fP (const std::string &path) const"
+.br
+.ti -1c
+.RI "bool \fBIsFile\fP (const std::string &path) const noexcept"
+.br
+.ti -1c
+.RI "bool \fBIsDirectory\fP (const std::string &path) const noexcept"
+.br
+.ti -1c
+.RI "bool \fBExists\fP (const std::string &path) const noexcept"
+.br
+.ti -1c
+.RI "\fBDirectoryIterator\fP \fBIterateDirectory\fP (const std::string &path) const"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "const \fBDetail::FileOrDirectory\fP * \fB_get\fP (std::string path) const"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "const \fBCMakeRC::Detail::IndexType\fP * \fB_index\fP"
+.br
+.RI "Never-null: "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CMakeRC::EmbeddedFileSystem::EmbeddedFileSystem (const \fBDetail::IndexType\fP & index)\fC [inline]\fP, \fC [explicit]\fP"
+
+.PP
+Construct a new '\fBEmbeddedFileSystem\fP' object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIindex\fP 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "const \fBDetail::FileOrDirectory\fP * CMakeRC::EmbeddedFileSystem::_get (std::string path) const\fC [inline]\fP, \fC [private]\fP"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIpath\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+const \fBDetail::FileOrDirectory\fP* 
+.RE
+.PP
+
+.SS "bool CMakeRC::EmbeddedFileSystem::Exists (const std::string & path) const\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIpath\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true 
+.PP
+false 
+.RE
+.PP
+
+.SS "bool CMakeRC::EmbeddedFileSystem::IsDirectory (const std::string & path) const\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIpath\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true 
+.PP
+false 
+.RE
+.PP
+
+.SS "bool CMakeRC::EmbeddedFileSystem::IsFile (const std::string & path) const\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIpath\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true 
+.PP
+false 
+.RE
+.PP
+
+.SS "\fBDirectoryIterator\fP CMakeRC::EmbeddedFileSystem::IterateDirectory (const std::string & path) const\fC [inline]\fP"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIpath\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+DirectoryIterator 
+.RE
+.PP
+
+.SS "\fBFile\fP CMakeRC::EmbeddedFileSystem::open (const std::string & path) const\fC [inline]\fP"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIpath\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBFile\fP 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "const \fBCMakeRC::Detail::IndexType\fP* CMakeRC::EmbeddedFileSystem::_index\fC [private]\fP"
+
+.PP
+Never-null: 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CxxWin from the source code\&.

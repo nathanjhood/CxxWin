@@ -1,0 +1,115 @@
+.TH "CMakeRC::DirectoryEntry" 3Version 1.0.1" "CxxWin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CMakeRC::DirectoryEntry
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <cmrc\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBDirectoryEntry\fP ()=delete"
+.br
+.RI "(inaccessible) Default-Construct a new '\fBDirectoryEntry\fP' object\&. "
+.ti -1c
+.RI "\fBDirectoryEntry\fP (std::string filename, const \fBDetail::FileOrDirectory\fP &item)"
+.br
+.RI "Construct a new '\fBDirectoryEntry\fP' object\&. "
+.ti -1c
+.RI "const std::string & \fBFilename\fP () const &"
+.br
+.ti -1c
+.RI "std::string \fBFilename\fP () const &&"
+.br
+.ti -1c
+.RI "bool \fBIsFile\fP () const"
+.br
+.ti -1c
+.RI "bool \fBIsDirectory\fP () const"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string \fB_fname\fP"
+.br
+.ti -1c
+.RI "const \fBDetail::FileOrDirectory\fP * \fB_item\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CMakeRC::DirectoryEntry::DirectoryEntry ()\fC [delete]\fP"
+
+.PP
+(inaccessible) Default-Construct a new '\fBDirectoryEntry\fP' object\&. 
+.SS "CMakeRC::DirectoryEntry::DirectoryEntry (std::string filename, const \fBDetail::FileOrDirectory\fP & item)\fC [inline]\fP, \fC [explicit]\fP"
+
+.PP
+Construct a new '\fBDirectoryEntry\fP' object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfilename\fP 
+.br
+\fIitem\fP 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "const std::string & CMakeRC::DirectoryEntry::Filename () const &\fC [inline]\fP"
+
+.PP
+\fBReturns\fP
+.RS 4
+const std::string& 
+.RE
+.PP
+
+.SS "std::string CMakeRC::DirectoryEntry::Filename () const &&\fC [inline]\fP"
+
+.PP
+\fBReturns\fP
+.RS 4
+std::string 
+.RE
+.PP
+
+.SS "bool CMakeRC::DirectoryEntry::IsDirectory () const\fC [inline]\fP"
+
+.PP
+\fBReturns\fP
+.RS 4
+true 
+.PP
+false 
+.RE
+.PP
+
+.SS "bool CMakeRC::DirectoryEntry::IsFile () const\fC [inline]\fP"
+
+.PP
+\fBReturns\fP
+.RS 4
+true 
+.PP
+false 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "std::string CMakeRC::DirectoryEntry::_fname\fC [private]\fP"
+
+.SS "const \fBDetail::FileOrDirectory\fP* CMakeRC::DirectoryEntry::_item\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CxxWin from the source code\&.

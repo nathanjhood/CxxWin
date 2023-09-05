@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dd/d19/namespace_c_make_r_c_1_1_key_1_1_store_logo" kind="namespace" language="C++">
+    <compoundname>CMakeRC::Key::StoreLogo</compoundname>
+    <briefdescription>
+<para>&apos; </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The &apos;<ref refid="dd/d19/namespace_c_make_r_c_1_1_key_1_1_store_logo" kindref="compound">StoreLogo</ref>&apos; namespace. Contains declarations and definitions of binary-compiled &apos;StoreLogo.png&apos; for interacting with <ref refid="d6/dd1/namespace_win32" kindref="compound">Win32</ref> API. </para>
+    </detaileddescription>
+    <location file="include/CxxWin/modules/Win32_resource/img/win32_StoreLogo_png.hpp" line="38" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_34a2d04789e6072590dc7fd23c3451f8" xml:lang="en-US">
+<title>include/CxxWin/modules Directory Reference</title>
+<indexterm><primary>include/CxxWin/modules Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_88bab166860255f959016b8c5e7512af">Win32_core</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_87018e622e39c8bc40ace5c49ff36fb4">Win32_resource</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_win32__resource_8cpp_source" xml:lang="en-US">
+<title>win32_resource.cpp</title>
+<indexterm><primary>include/CxxWin/modules/Win32_resource/win32_resource.cpp</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 
+12 <emphasis role="preprocessor">#ifdef&#32;_WIN32_RESOURCE_H_</emphasis>
+13 <emphasis role="preprocessor">#&#32;&#32;error&#32;&quot;Incorrect&#32;useage&#32;of&#32;&apos;win32_resource.cpp&apos;&#32;file!&quot;</emphasis>
+14 <emphasis role="preprocessor">#endif</emphasis>
+15 
+16 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_win32__resource_8hpp">win32_resource.hpp</link>&quot;</emphasis>
+17 
+18 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_win32__png_8cpp">img/win32_png.cpp</link>&quot;</emphasis>
+19 
+20 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_win32___application_icon__png_8cpp">img/win32_ApplicationIcon_png.cpp</link>&quot;</emphasis>
+21 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_win32___logo__png_8cpp">img/win32_Logo_png.cpp</link>&quot;</emphasis>
+22 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_win32___small_logo__png_8cpp">img/win32_SmallLogo_png.cpp</link>&quot;</emphasis>
+23 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_win32___small_logo44x44__png_8cpp">img/win32_SmallLogo44x44_png.cpp</link>&quot;</emphasis>
+24 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_win32___splash_screen__png_8cpp">img/win32_SplashScreen_png.cpp</link>&quot;</emphasis>
+25 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_win32___store_logo__png_8cpp">img/win32_StoreLogo_png.cpp</link>&quot;</emphasis>
+26 
+27 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_win32__pfx_8cpp">key/win32_pfx.cpp</link>&quot;</emphasis>
+28 
+29 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_win32___windows___temporary_key__pfx_8cpp">key/win32_Windows_TemporaryKey_pfx.cpp</link>&quot;</emphasis>
+</programlisting></section>

@@ -1,0 +1,435 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="db/dfc/_main_component_8cpp" kind="file" language="C++">
+    <compoundname>MainComponent.cpp</compoundname>
+    <includes refid="df/d11/_main_component_8hpp" local="yes">MainComponent.hpp</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>include/CxxWin/MainComponent.cpp</label>
+        <link refid="db/dfc/_main_component_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MainComponent.hpp</label>
+        <link refid="df/d11/_main_component_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>memory/win32_SmartPointer.hpp</label>
+        <link refid="d6/d42/win32___smart_pointer_8hpp"/>
+      </node>
+      <node id="5">
+        <label>native/win32_BasicNativeHeaders.hpp</label>
+        <link refid="d2/dcb/win32___basic_native_headers_8hpp"/>
+      </node>
+      <node id="36">
+        <label>native/win32_Unicode.hpp</label>
+        <link refid="d2/dad/win32___unicode_8hpp"/>
+      </node>
+      <node id="34">
+        <label>win32_CompilerSupport.hpp</label>
+        <link refid="de/d3b/win32___compiler_support_8hpp"/>
+      </node>
+      <node id="35">
+        <label>win32_PlatformDefs.hpp</label>
+        <link refid="d0/d74/win32___platform_defs_8hpp"/>
+      </node>
+      <node id="6">
+        <label>system/win32_StandardHeader.hpp</label>
+        <link refid="d6/dce/win32___standard_header_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>system/win32_TargetPlatform.hpp</label>
+        <link refid="d1/dd2/win32___target_platform_8hpp"/>
+      </node>
+      <node id="3">
+        <label>modules/Win32_core/win32_core.hpp</label>
+        <link refid="d6/dbf/win32__core_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>window/win32_BaseWindow.hpp</label>
+        <link refid="dc/dbe/win32___base_window_8hpp"/>
+      </node>
+      <node id="38">
+        <label>window/win32_DPIScale.hpp</label>
+        <link refid="d6/d27/win32___d_p_i_scale_8hpp"/>
+      </node>
+      <node id="40">
+        <label>window/win32_MainWindow.hpp</label>
+        <link refid="dc/d93/win32___main_window_8hpp"/>
+      </node>
+      <node id="7">
+        <label>algorithm</label>
+      </node>
+      <node id="8">
+        <label>array</label>
+      </node>
+      <node id="9">
+        <label>atomic</label>
+      </node>
+      <node id="10">
+        <label>cmath</label>
+      </node>
+      <node id="11">
+        <label>condition_variable</label>
+      </node>
+      <node id="12">
+        <label>cstddef</label>
+      </node>
+      <node id="13">
+        <label>functional</label>
+      </node>
+      <node id="14">
+        <label>future</label>
+      </node>
+      <node id="15">
+        <label>iomanip</label>
+      </node>
+      <node id="16">
+        <label>iostream</label>
+      </node>
+      <node id="17">
+        <label>limits</label>
+      </node>
+      <node id="18">
+        <label>list</label>
+      </node>
+      <node id="19">
+        <label>map</label>
+      </node>
+      <node id="20">
+        <label>memory</label>
+      </node>
+      <node id="21">
+        <label>mutex</label>
+      </node>
+      <node id="22">
+        <label>numeric</label>
+      </node>
+      <node id="23">
+        <label>optional</label>
+      </node>
+      <node id="24">
+        <label>queue</label>
+      </node>
+      <node id="25">
+        <label>set</label>
+      </node>
+      <node id="26">
+        <label>sstream</label>
+      </node>
+      <node id="27">
+        <label>thread</label>
+      </node>
+      <node id="28">
+        <label>typeindex</label>
+      </node>
+      <node id="29">
+        <label>unordered_map</label>
+      </node>
+      <node id="30">
+        <label>unordered_set</label>
+      </node>
+      <node id="31">
+        <label>utility</label>
+      </node>
+      <node id="32">
+        <label>variant</label>
+      </node>
+      <node id="33">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>Contains the definitions of &apos;<ref refid="d2/d5e/class_main_component" kindref="compound">MainComponent</ref>&apos;. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>StoneyDSP (<ulink url="mailto:nathanjhood@googlemail.com">nathanjhood@googlemail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>1.0.0 </para>
+</simplesect>
+<simplesect kind="date"><para>2023-08-28</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&quot;modules/Win32_core/win32_core.mm&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="df/d11/_main_component_8hpp" kindref="compound">MainComponent.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><ref refid="d2/d5e/class_main_component_1a85254935b98beac9128189c6a577d7be" kindref="member">MainComponent::MainComponent</ref>()</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>:<sp/>pFactory<sp/>(NULL)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>,<sp/>pRenderTarget<sp/>(NULL)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>,<sp/>pBrush<sp/>(NULL)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>,<sp/>pBrushB<sp/>(NULL)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>,<sp/>pBrushC<sp/>(NULL)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>,<sp/>ellipseA<sp/>(D2D1::Ellipse(D2D1::Point2F(),<sp/>0.0F,<sp/>0.0F))</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>,<sp/>ellipseB<sp/>(D2D1::Ellipse(D2D1::Point2F(),<sp/>0.0F,<sp/>0.0F))</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>,<sp/>ellipseC<sp/>(D2D1::Ellipse(D2D1::Point2F(),<sp/>0.0F,<sp/>0.0F))</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>,<sp/>ptMouse<sp/>(D2D1::Point2F())</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">PCWSTR<sp/><ref refid="d2/d5e/class_main_component_1a10413353888f65b0282eb32cf4a012ef" kindref="member">MainComponent::ClassName</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="40"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d6/dce/win32___standard_header_8hpp_1a33a68742d73ec73e8c0d4d4585d8fe4b" kindref="member">CXXWIN_LONG_NAME</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">LRESULT<sp/><ref refid="d2/d5e/class_main_component_1a28a911446776a6ea7777f0cde9960d16" kindref="member">MainComponent::HandleMessage</ref>(UINT<sp/>uMsg,<sp/>WPARAM<sp/>wParam,<sp/>LPARAM<sp/>lParam)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(uMsg)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>WM_CREATE:</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(FAILED(<ref refid="d2/d5e/class_main_component_1a9dc97c9d3abef9e02c68956cf99e43da" kindref="member">OnCreate</ref>()))</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/def/class_d_p_i_scale_1a16d2a9e0076698eb6a77e357fb81b89a" kindref="member">DPIScale::Initialize</ref>(<ref refid="d2/d5e/class_main_component_1a7d3e5127fce1bd8fde64ada377c54852" kindref="member">pFactory</ref>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>WM_CLOSE:</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/d5e/class_main_component_1a10c91bf54dfeee51d23f9d5007c94fcf" kindref="member">OnClose</ref>();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>WM_DESTROY:</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/d5e/class_main_component_1a2879d344d4000e1bec8782b6e152a0de" kindref="member">OnDestroy</ref>();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>WM_SIZE:</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/d5e/class_main_component_1a04f9037978c0eda84b67aec48f09a7f5" kindref="member">Resize</ref>();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>WM_PAINT:</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/d5e/class_main_component_1ae1a328c17e46ca15ffc552df49bf887e" kindref="member">OnPaint</ref>();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>DefWindowProc(<ref refid="da/dc1/class_base_window_1a86f5232fa1bbb141f60548a42331fc7e" kindref="member">m_hwnd</ref>,<sp/>uMsg,<sp/>wParam,<sp/>lParam);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>TRUE;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/d5e/class_main_component_1a04f9037978c0eda84b67aec48f09a7f5" kindref="member">MainComponent::Resize</ref>()</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d2/d5e/class_main_component_1aacab24f179f68622014e624c71d5cf71" kindref="member">pRenderTarget</ref><sp/>!=<sp/>NULL)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RECT<sp/>rc;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetClientRect(<ref refid="da/dc1/class_base_window_1a86f5232fa1bbb141f60548a42331fc7e" kindref="member">m_hwnd</ref>,<sp/>&amp;rc);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D2D1_SIZE_U<sp/>size<sp/>=<sp/>D2D1::SizeU(rc.right,<sp/>rc.bottom);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/d5e/class_main_component_1aacab24f179f68622014e624c71d5cf71" kindref="member">pRenderTarget</ref>-&gt;Resize(size);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/d5e/class_main_component_1a13b313e495b2911a9aded8b3bf50953d" kindref="member">CalculateLayout</ref>();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InvalidateRect(<ref refid="da/dc1/class_base_window_1a86f5232fa1bbb141f60548a42331fc7e" kindref="member">m_hwnd</ref>,<sp/>NULL,<sp/>FALSE);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/d5e/class_main_component_1a13b313e495b2911a9aded8b3bf50953d" kindref="member">MainComponent::CalculateLayout</ref>()</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d2/d5e/class_main_component_1aacab24f179f68622014e624c71d5cf71" kindref="member">pRenderTarget</ref><sp/>!=<sp/>NULL)</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D2D1_SIZE_F<sp/>size<sp/>=<sp/><ref refid="d2/d5e/class_main_component_1aacab24f179f68622014e624c71d5cf71" kindref="member">pRenderTarget</ref>-&gt;GetSize();</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>size.width<sp/>/<sp/>2.0F;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y<sp/>=<sp/>size.height<sp/>/<sp/>2.0F;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radius<sp/>=<sp/>(((x)<sp/>&lt;<sp/>(y))<sp/>?<sp/>(x)<sp/>:<sp/>(y));</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/d5e/class_main_component_1ac0fd3834382e2478b512564e2b4710f9" kindref="member">ellipseA</ref><sp/>=<sp/>D2D1::Ellipse(D2D1::Point2F(x,<sp/>y),<sp/>radius,<sp/>radius);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>halfX<sp/>=<sp/>x<sp/>/<sp/>2.0F;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>halfY<sp/>=<sp/>y<sp/>/<sp/>2.0F;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>halfPi<sp/>=<sp/>radius<sp/>/<sp/>2.0F;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/d5e/class_main_component_1af4f7ab51fc49751836a90ece6cf9b440" kindref="member">ellipseB</ref><sp/>=<sp/>D2D1::Ellipse(D2D1::Point2F(halfX,<sp/>halfY),<sp/>halfPi,<sp/>halfPi);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>quartX<sp/>=<sp/>halfX<sp/>/<sp/>2.0F;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>quartY<sp/>=<sp/>halfY<sp/>/<sp/>2.0F;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>quartPi<sp/>=<sp/>halfPi<sp/>/<sp/>2.0F;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/d5e/class_main_component_1a9691c0d06ca0ed4ad9f7a09c8b81593a" kindref="member">ellipseC</ref><sp/>=<sp/>D2D1::Ellipse(D2D1::Point2F(quartX,<sp/>quartY),<sp/>quartPi,<sp/>quartPi);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/d5e/class_main_component_1ae1a328c17e46ca15ffc552df49bf887e" kindref="member">MainComponent::OnPaint</ref>()</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>HRESULT<sp/>hr<sp/>=<sp/><ref refid="d2/d5e/class_main_component_1ad513e8d388d5e229c0d4850a7d09b5f0" kindref="member">CreateGraphicsResources</ref>();</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(SUCCEEDED(hr))</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PAINTSTRUCT<sp/>ps;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BeginPaint(<ref refid="da/dc1/class_base_window_1a86f5232fa1bbb141f60548a42331fc7e" kindref="member">m_hwnd</ref>,<sp/>&amp;ps);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/d5e/class_main_component_1aacab24f179f68622014e624c71d5cf71" kindref="member">pRenderTarget</ref>-&gt;BeginDraw();</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/d5e/class_main_component_1aacab24f179f68622014e624c71d5cf71" kindref="member">pRenderTarget</ref>-&gt;Clear(D2D1::ColorF(D2D1::ColorF::CadetBlue));</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/d5e/class_main_component_1aacab24f179f68622014e624c71d5cf71" kindref="member">pRenderTarget</ref>-&gt;FillEllipse(<ref refid="d2/d5e/class_main_component_1ac0fd3834382e2478b512564e2b4710f9" kindref="member">ellipseA</ref>,<sp/><ref refid="d2/d5e/class_main_component_1a51d0525d05ee8a081a9203870dda47ee" kindref="member">pBrush</ref>);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/d5e/class_main_component_1aacab24f179f68622014e624c71d5cf71" kindref="member">pRenderTarget</ref>-&gt;FillEllipse(<ref refid="d2/d5e/class_main_component_1af4f7ab51fc49751836a90ece6cf9b440" kindref="member">ellipseB</ref>,<sp/><ref refid="d2/d5e/class_main_component_1a69d6b4a4e7e62fe992112be1820f1b05" kindref="member">pBrushB</ref>);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/d5e/class_main_component_1aacab24f179f68622014e624c71d5cf71" kindref="member">pRenderTarget</ref>-&gt;FillEllipse(<ref refid="d2/d5e/class_main_component_1a9691c0d06ca0ed4ad9f7a09c8b81593a" kindref="member">ellipseC</ref>,<sp/><ref refid="d2/d5e/class_main_component_1a9ea90fecfbc01684557afd2403c07b9d" kindref="member">pBrushC</ref>);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hr<sp/>=<sp/><ref refid="d2/d5e/class_main_component_1aacab24f179f68622014e624c71d5cf71" kindref="member">pRenderTarget</ref>-&gt;EndDraw();</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(FAILED(hr)<sp/>||<sp/>hr<sp/>==<sp/>D2DERR_RECREATE_TARGET)</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/d5e/class_main_component_1a47ac035cb7b724fe01a45a421d63cc7f" kindref="member">DiscardGraphicsResources</ref>();</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EndPaint(<ref refid="da/dc1/class_base_window_1a86f5232fa1bbb141f60548a42331fc7e" kindref="member">m_hwnd</ref>,<sp/>&amp;ps);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal">HRESULT<sp/><ref refid="d2/d5e/class_main_component_1ad513e8d388d5e229c0d4850a7d09b5f0" kindref="member">MainComponent::CreateGraphicsResources</ref>()</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>HRESULT<sp/>hr<sp/>=<sp/>S_OK;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d2/d5e/class_main_component_1aacab24f179f68622014e624c71d5cf71" kindref="member">pRenderTarget</ref><sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RECT<sp/>rc;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetClientRect(<ref refid="da/dc1/class_base_window_1a86f5232fa1bbb141f60548a42331fc7e" kindref="member">m_hwnd</ref>,<sp/>&amp;rc);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D2D1_SIZE_U<sp/>size<sp/>=<sp/>D2D1::SizeU(rc.right,<sp/>rc.bottom);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hr<sp/>=<sp/><ref refid="d2/d5e/class_main_component_1a7d3e5127fce1bd8fde64ada377c54852" kindref="member">pFactory</ref>-&gt;CreateHwndRenderTarget(</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D2D1::RenderTargetProperties(),</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>D2D1::HwndRenderTargetProperties(<ref refid="da/dc1/class_base_window_1a86f5232fa1bbb141f60548a42331fc7e" kindref="member">m_hwnd</ref>,<sp/>size),</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;<ref refid="d2/d5e/class_main_component_1aacab24f179f68622014e624c71d5cf71" kindref="member">pRenderTarget</ref></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(SUCCEEDED(hr))</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>D2D1_COLOR_F<sp/>color<sp/>=<sp/>D2D1::ColorF(1.0F,<sp/>1.0F,<sp/>0.0F,<sp/>0.5F);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hr<sp/>=<sp/><ref refid="d2/d5e/class_main_component_1aacab24f179f68622014e624c71d5cf71" kindref="member">pRenderTarget</ref>-&gt;CreateSolidColorBrush(color,<sp/>&amp;<ref refid="d2/d5e/class_main_component_1a51d0525d05ee8a081a9203870dda47ee" kindref="member">pBrush</ref>);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(SUCCEEDED(hr))</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>D2D1_COLOR_F<sp/>colorB<sp/>=<sp/>D2D1::ColorF(1.0F,<sp/>0.0F,<sp/>0.0F,<sp/>0.5F);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hr<sp/>=<sp/><ref refid="d2/d5e/class_main_component_1aacab24f179f68622014e624c71d5cf71" kindref="member">pRenderTarget</ref>-&gt;CreateSolidColorBrush(colorB,<sp/>&amp;<ref refid="d2/d5e/class_main_component_1a69d6b4a4e7e62fe992112be1820f1b05" kindref="member">pBrushB</ref>);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(SUCCEEDED(hr))</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>D2D1_COLOR_F<sp/>colorC<sp/>=<sp/>D2D1::ColorF(0.0F,<sp/>0.0F,<sp/>1.0F,<sp/>0.5F);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hr<sp/>=<sp/><ref refid="d2/d5e/class_main_component_1aacab24f179f68622014e624c71d5cf71" kindref="member">pRenderTarget</ref>-&gt;CreateSolidColorBrush(colorC,<sp/>&amp;<ref refid="d2/d5e/class_main_component_1a9ea90fecfbc01684557afd2403c07b9d" kindref="member">pBrushC</ref>);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(SUCCEEDED(hr))</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/d5e/class_main_component_1a13b313e495b2911a9aded8b3bf50953d" kindref="member">CalculateLayout</ref>();</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>hr;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/d5e/class_main_component_1a47ac035cb7b724fe01a45a421d63cc7f" kindref="member">MainComponent::DiscardGraphicsResources</ref>()</highlight></codeline>
+<codeline lineno="232"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d31/win32___smart_pointer_8cpp_1a53522409e1312cfaf53cebc29bff8008" kindref="member">SafeRelease</ref>(&amp;<ref refid="d2/d5e/class_main_component_1aacab24f179f68622014e624c71d5cf71" kindref="member">pRenderTarget</ref>);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d31/win32___smart_pointer_8cpp_1a53522409e1312cfaf53cebc29bff8008" kindref="member">SafeRelease</ref>(&amp;<ref refid="d2/d5e/class_main_component_1a51d0525d05ee8a081a9203870dda47ee" kindref="member">pBrush</ref>);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d31/win32___smart_pointer_8cpp_1a53522409e1312cfaf53cebc29bff8008" kindref="member">SafeRelease</ref>(&amp;<ref refid="d2/d5e/class_main_component_1a69d6b4a4e7e62fe992112be1820f1b05" kindref="member">pBrushB</ref>);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d31/win32___smart_pointer_8cpp_1a53522409e1312cfaf53cebc29bff8008" kindref="member">SafeRelease</ref>(&amp;<ref refid="d2/d5e/class_main_component_1a9ea90fecfbc01684557afd2403c07b9d" kindref="member">pBrushC</ref>);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal">HRESULT<sp/><ref refid="d2/d5e/class_main_component_1a9dc97c9d3abef9e02c68956cf99e43da" kindref="member">MainComponent::OnCreate</ref>()</highlight></codeline>
+<codeline lineno="245"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(D2D1CreateFactory(D2D1_FACTORY_TYPE_SINGLE_THREADED,<sp/>&amp;<ref refid="d2/d5e/class_main_component_1a7d3e5127fce1bd8fde64ada377c54852" kindref="member">pFactory</ref>));</highlight></codeline>
+<codeline lineno="247"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/d5e/class_main_component_1a10c91bf54dfeee51d23f9d5007c94fcf" kindref="member">MainComponent::OnClose</ref>()<sp/>CONST</highlight></codeline>
+<codeline lineno="254"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(MessageBox(<ref refid="da/dc1/class_base_window_1a86f5232fa1bbb141f60548a42331fc7e" kindref="member">m_hwnd</ref>,<sp/>TEXT(</highlight><highlight class="stringliteral">&quot;Sure?&quot;</highlight><highlight class="normal">),<sp/><ref refid="d2/d5e/class_main_component_1a10413353888f65b0282eb32cf4a012ef" kindref="member">ClassName</ref>(),<sp/>MB_OKCANCEL)<sp/>==<sp/>IDOK)</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DestroyWindow(<ref refid="da/dc1/class_base_window_1a86f5232fa1bbb141f60548a42331fc7e" kindref="member">m_hwnd</ref>);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="259"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/d5e/class_main_component_1a2879d344d4000e1bec8782b6e152a0de" kindref="member">MainComponent::OnDestroy</ref>()</highlight></codeline>
+<codeline lineno="266"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d2/d5e/class_main_component_1a47ac035cb7b724fe01a45a421d63cc7f" kindref="member">DiscardGraphicsResources</ref>();</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d31/win32___smart_pointer_8cpp_1a53522409e1312cfaf53cebc29bff8008" kindref="member">SafeRelease</ref>(&amp;<ref refid="d2/d5e/class_main_component_1a7d3e5127fce1bd8fde64ada377c54852" kindref="member">pFactory</ref>);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>PostQuitMessage(0);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="include/CxxWin/MainComponent.cpp"/>
+  </compounddef>
+</doxygen>

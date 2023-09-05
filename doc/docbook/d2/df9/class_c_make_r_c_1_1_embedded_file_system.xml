@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_c_make_r_c_1_1_embedded_file_system" xml:lang="en-US">
+<title>CMakeRC::EmbeddedFileSystem Class Reference</title>
+<indexterm><primary>CMakeRC::EmbeddedFileSystem</primary></indexterm>
+<para>
+<computeroutput>#include &lt;cmrc.hpp&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_c_make_r_c_1_1_embedded_file_system_1a9163d770a3ebcf479cd630690703cc05">EmbeddedFileSystem</link> (const <link linkend="_namespace_c_make_r_c_1_1_detail_1af8b7b0ba529bcc74373e4ee395b54529">Detail::IndexType</link> &amp;index)</para>
+
+<para>Construct a new &apos;<link linkend="_class_c_make_r_c_1_1_embedded_file_system">EmbeddedFileSystem</link>&apos; object. </para>
+</listitem>
+            <listitem><para><link linkend="_class_c_make_r_c_1_1_file">File</link> <link linkend="_class_c_make_r_c_1_1_embedded_file_system_1ae49cd6b12ff520cc722953dafc90bfe7">open</link> (const std::string &amp;path) const</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_c_make_r_c_1_1_embedded_file_system_1acf69f5466bd4c59e48451a235ac7ab47">IsFile</link> (const std::string &amp;path) const noexcept</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_c_make_r_c_1_1_embedded_file_system_1aacaaa6554852380e3c4e9529440482c5">IsDirectory</link> (const std::string &amp;path) const noexcept</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_c_make_r_c_1_1_embedded_file_system_1acf6a8b5508470806f06e45b0394b794c">Exists</link> (const std::string &amp;path) const noexcept</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_c_make_r_c_1a5b0306b0207652d136c3ae6b498102cd">DirectoryIterator</link> <link linkend="_class_c_make_r_c_1_1_embedded_file_system_1aa295b7f7c1aef39c3ef86bc472d19a99">IterateDirectory</link> (const std::string &amp;path) const</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>const <link linkend="_class_c_make_r_c_1_1_detail_1_1_file_or_directory">Detail::FileOrDirectory</link> * <link linkend="_class_c_make_r_c_1_1_embedded_file_system_1ab8e4e1221710c44add0f329b6a3cad47">_get</link> (std::string path) const</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>const <link linkend="_namespace_c_make_r_c_1_1_detail_1af8b7b0ba529bcc74373e4ee395b54529">CMakeRC::Detail::IndexType</link> * <link linkend="_class_c_make_r_c_1_1_embedded_file_system_1a907c3ddde3effeb4b97f3c5b4d23988d">_index</link></para>
+
+<para>Never-null: </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_c_make_r_c_1_1_embedded_file_system_1a9163d770a3ebcf479cd630690703cc05"/><section>
+    <title>EmbeddedFileSystem()</title>
+<indexterm><primary>EmbeddedFileSystem</primary><secondary>CMakeRC::EmbeddedFileSystem</secondary></indexterm>
+<indexterm><primary>CMakeRC::EmbeddedFileSystem</primary><secondary>EmbeddedFileSystem</secondary></indexterm>
+<para><computeroutput>CMakeRC::EmbeddedFileSystem::EmbeddedFileSystem (const <link linkend="_namespace_c_make_r_c_1_1_detail_1af8b7b0ba529bcc74373e4ee395b54529">Detail::IndexType</link> &amp; index)<computeroutput>[inline]</computeroutput>, <computeroutput>[explicit]</computeroutput></computeroutput></para><para>
+
+<para>Construct a new &apos;<link linkend="_class_c_make_r_c_1_1_embedded_file_system">EmbeddedFileSystem</link>&apos; object. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>index</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_c_make_r_c_1_1_embedded_file_system_1ab8e4e1221710c44add0f329b6a3cad47"/><section>
+    <title>_get()</title>
+<indexterm><primary>_get</primary><secondary>CMakeRC::EmbeddedFileSystem</secondary></indexterm>
+<indexterm><primary>CMakeRC::EmbeddedFileSystem</primary><secondary>_get</secondary></indexterm>
+<para><computeroutput>const <link linkend="_class_c_make_r_c_1_1_detail_1_1_file_or_directory">Detail::FileOrDirectory</link> * CMakeRC::EmbeddedFileSystem::_get (std::string path) const<computeroutput>[inline]</computeroutput>, <computeroutput>[private]</computeroutput></computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>path</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>const <link linkend="_class_c_make_r_c_1_1_detail_1_1_file_or_directory">Detail::FileOrDirectory</link>* </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_c_make_r_c_1_1_embedded_file_system_1acf6a8b5508470806f06e45b0394b794c"/><section>
+    <title>Exists()</title>
+<indexterm><primary>Exists</primary><secondary>CMakeRC::EmbeddedFileSystem</secondary></indexterm>
+<indexterm><primary>CMakeRC::EmbeddedFileSystem</primary><secondary>Exists</secondary></indexterm>
+<para><computeroutput>bool CMakeRC::EmbeddedFileSystem::Exists (const std::string &amp; path) const<computeroutput>[inline]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>path</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>true </para>
+
+<para>false </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_c_make_r_c_1_1_embedded_file_system_1aacaaa6554852380e3c4e9529440482c5"/><section>
+    <title>IsDirectory()</title>
+<indexterm><primary>IsDirectory</primary><secondary>CMakeRC::EmbeddedFileSystem</secondary></indexterm>
+<indexterm><primary>CMakeRC::EmbeddedFileSystem</primary><secondary>IsDirectory</secondary></indexterm>
+<para><computeroutput>bool CMakeRC::EmbeddedFileSystem::IsDirectory (const std::string &amp; path) const<computeroutput>[inline]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>path</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>true </para>
+
+<para>false </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_c_make_r_c_1_1_embedded_file_system_1acf69f5466bd4c59e48451a235ac7ab47"/><section>
+    <title>IsFile()</title>
+<indexterm><primary>IsFile</primary><secondary>CMakeRC::EmbeddedFileSystem</secondary></indexterm>
+<indexterm><primary>CMakeRC::EmbeddedFileSystem</primary><secondary>IsFile</secondary></indexterm>
+<para><computeroutput>bool CMakeRC::EmbeddedFileSystem::IsFile (const std::string &amp; path) const<computeroutput>[inline]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>path</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>true </para>
+
+<para>false </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_c_make_r_c_1_1_embedded_file_system_1aa295b7f7c1aef39c3ef86bc472d19a99"/><section>
+    <title>IterateDirectory()</title>
+<indexterm><primary>IterateDirectory</primary><secondary>CMakeRC::EmbeddedFileSystem</secondary></indexterm>
+<indexterm><primary>CMakeRC::EmbeddedFileSystem</primary><secondary>IterateDirectory</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_c_make_r_c_1a5b0306b0207652d136c3ae6b498102cd">DirectoryIterator</link> CMakeRC::EmbeddedFileSystem::IterateDirectory (const std::string &amp; path) const<computeroutput>[inline]</computeroutput></computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>path</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>DirectoryIterator </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_c_make_r_c_1_1_embedded_file_system_1ae49cd6b12ff520cc722953dafc90bfe7"/><section>
+    <title>open()</title>
+<indexterm><primary>open</primary><secondary>CMakeRC::EmbeddedFileSystem</secondary></indexterm>
+<indexterm><primary>CMakeRC::EmbeddedFileSystem</primary><secondary>open</secondary></indexterm>
+<para><computeroutput><link linkend="_class_c_make_r_c_1_1_file">File</link> CMakeRC::EmbeddedFileSystem::open (const std::string &amp; path) const<computeroutput>[inline]</computeroutput></computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>path</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para><link linkend="_class_c_make_r_c_1_1_file">File</link> </para>
+</formalpara>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_c_make_r_c_1_1_embedded_file_system_1a907c3ddde3effeb4b97f3c5b4d23988d"/><section>
+    <title>_index</title>
+<indexterm><primary>_index</primary><secondary>CMakeRC::EmbeddedFileSystem</secondary></indexterm>
+<indexterm><primary>CMakeRC::EmbeddedFileSystem</primary><secondary>_index</secondary></indexterm>
+<para><computeroutput>const <link linkend="_namespace_c_make_r_c_1_1_detail_1af8b7b0ba529bcc74373e4ee395b54529">CMakeRC::Detail::IndexType</link>* CMakeRC::EmbeddedFileSystem::_index<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Never-null: </para>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+include/CxxWin/modules/Win32_resource/<link linkend="_cmrc_8hpp">cmrc.hpp</link></section>
+</section>

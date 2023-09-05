@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_c_make_r_c_1_1_img" xml:lang="en-US">
+<title>CMakeRC::Img Namespace Reference</title>
+<indexterm><primary>CMakeRC::Img</primary></indexterm>
+<para>
+
+<para>&apos; </para>
+ 
+</para>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_c_make_r_c_1_1_img_1_1anonymous__namespace_02win32__png_8cpp_03">anonymous_namespace{win32_png.cpp}</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_c_make_r_c_1_1_img_1_1anonymous__namespace_02win32__png_8hpp_03">anonymous_namespace{win32_png.hpp}</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_c_make_r_c_1_1_img_1_1_application_icon">ApplicationIcon</link></para>
+
+<para>&apos; </para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_c_make_r_c_1_1_img_1_1_logo">Logo</link></para>
+
+<para>&apos; </para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_c_make_r_c_1_1_img_1_1_small_logo">SmallLogo</link></para>
+
+<para>The &apos;<link linkend="_namespace_c_make_r_c_1_1_img_1_1_small_logo">SmallLogo</link>&apos; namespace. </para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_c_make_r_c_1_1_img_1_1_small_logo44x44">SmallLogo44x44</link></para>
+
+<para>The &apos;<link linkend="_namespace_c_make_r_c_1_1_img_1_1_small_logo44x44">SmallLogo44x44</link>&apos; namespace. </para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_c_make_r_c_1_1_img_1_1_splash_screen">SplashScreen</link></para>
+
+<para>&apos; </para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_c_make_r_c_1_1_img_1_1_store_logo">StoreLogo</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_win32__resource_8hpp_1a5afbfa7ab227c0b123b37aeaca4963b3">FSEMBEDDED</link> <link linkend="_namespace_c_make_r_c_1_1_img_1a0d7bf8b21dd960329ae3658a8510c405">GetFileSystem</link> ()</para>
+
+<para>Get the &apos;<link linkend="_class_c_make_r_c_1_1_embedded_file_system">CMakeRC::EmbeddedFileSystem</link>&apos; &apos;<link linkend="_namespace_c_make_r_c_1_1_detail_1af8b7b0ba529bcc74373e4ee395b54529">CMakeRC::Detail::IndexType</link>&apos; object. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>&apos; </para>
+
+<para>The &apos;<link linkend="_namespace_c_make_r_c_1_1_img">Img</link>&apos; namespace. Contains declarations and definitions of binary-compiled &apos;*.png&apos; files for interacting with <link linkend="_namespace_win32">Win32</link> API. </para>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespace_c_make_r_c_1_1_img_1a0d7bf8b21dd960329ae3658a8510c405"/><section>
+    <title>GetFileSystem()</title>
+<indexterm><primary>GetFileSystem</primary><secondary>CMakeRC::Img</secondary></indexterm>
+<indexterm><primary>CMakeRC::Img</primary><secondary>GetFileSystem</secondary></indexterm>
+<para><computeroutput><link linkend="_win32__resource_8hpp_1a5afbfa7ab227c0b123b37aeaca4963b3">FSEMBEDDED</link> CMakeRC::Img::GetFileSystem ( )</computeroutput></para><para>
+
+<para>Get the &apos;<link linkend="_class_c_make_r_c_1_1_embedded_file_system">CMakeRC::EmbeddedFileSystem</link>&apos; &apos;<link linkend="_namespace_c_make_r_c_1_1_detail_1af8b7b0ba529bcc74373e4ee395b54529">CMakeRC::Detail::IndexType</link>&apos; object. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>&apos;FSEMBEDDED&apos; </para>
+</formalpara>
+</para>
+</section>
+</section>
+</section>

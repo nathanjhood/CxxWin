@@ -1,0 +1,188 @@
+.TH "BaseWindow< DERIVED_TYPE >" 3Version 1.0.1" "CxxWin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+BaseWindow< DERIVED_TYPE > \- The '\fBBaseWindow\fP' abstract class\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <win32_BaseWindow\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBaseWindow\fP ()"
+.br
+.RI "Construct a new '\fBBaseWindow\fP' object\&. "
+.ti -1c
+.RI "BOOL \fBCreate\fP (PCWSTR lpWindowName, DWORD dwStyle, DWORD dwExStyle=0, int x=CW_USEDEFAULT, int y=CW_USEDEFAULT, int nWidth=CW_USEDEFAULT, int nHeight=CW_USEDEFAULT, HWND hWndParent=0, HMENU hMenu=0)"
+.br
+.RI "Create a new '\fBBaseWindow\fP' -derived object\&. "
+.ti -1c
+.RI "HWND \fBWindow\fP () CONST"
+.br
+.RI "Return the handle to the '\fBBaseWindow\fP' -derived object\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static LRESULT CALLBACK \fBWindowProc\fP (HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)"
+.br
+.RI "'LRESULT' is an integer value that your program returns to Windows\&. "
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual PCWSTR \fBClassName\fP () CONST PURE"
+.br
+.RI "Return a string of the name of '\fBBaseWindow\fP' -derived object\&. "
+.ti -1c
+.RI "virtual LRESULT \fBHandleMessage\fP (UINT uMsg, WPARAM wParam, LPARAM lParam) PURE"
+.br
+.RI "Handle the incoming messages\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "HWND \fBm_hwnd\fP"
+.br
+.RI "The handle to the '\fBBaseWindow\fP' -derived object\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<class DERIVED_TYPE>
+.br
+class BaseWindow< DERIVED_TYPE >"The '\fBBaseWindow\fP' abstract class\&. 
+
+
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fIDERIVED_TYPE\fP 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<class DERIVED_TYPE > \fBBaseWindow\fP< DERIVED_TYPE >\fB::BaseWindow\fP ()\fC [inline]\fP"
+
+.PP
+Construct a new '\fBBaseWindow\fP' object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "template<class DERIVED_TYPE > virtual PCWSTR \fBBaseWindow\fP< DERIVED_TYPE >::ClassName ()\fC [protected]\fP, \fC [virtual]\fP"
+
+.PP
+Return a string of the name of '\fBBaseWindow\fP' -derived object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+PCWSTR 
+.RE
+.PP
+
+.PP
+Reimplemented in \fBMainComponent\fP, and \fBMainWindow\fP\&.
+.SS "template<class DERIVED_TYPE > BOOL \fBBaseWindow\fP< DERIVED_TYPE >::Create (PCWSTR lpWindowName, DWORD dwStyle, DWORD dwExStyle = \fC0\fP, int x = \fCCW_USEDEFAULT\fP, int y = \fCCW_USEDEFAULT\fP, int nWidth = \fCCW_USEDEFAULT\fP, int nHeight = \fCCW_USEDEFAULT\fP, HWND hWndParent = \fC0\fP, HMENU hMenu = \fC0\fP)\fC [inline]\fP"
+
+.PP
+Create a new '\fBBaseWindow\fP' -derived object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIlpWindowName\fP 
+.br
+\fIdwStyle\fP 
+.br
+\fIdwExStyle\fP 
+.br
+\fIx\fP 
+.br
+\fIy\fP 
+.br
+\fInWidth\fP 
+.br
+\fInHeight\fP 
+.br
+\fIhWndParent\fP 
+.br
+\fIhMenu\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+BOOL 
+.RE
+.PP
+
+.SS "template<class DERIVED_TYPE > virtual LRESULT \fBBaseWindow\fP< DERIVED_TYPE >::HandleMessage (UINT uMsg, WPARAM wParam, LPARAM lParam)\fC [protected]\fP, \fC [virtual]\fP"
+
+.PP
+Handle the incoming messages\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIuMsg\fP 
+.br
+\fIwParam\fP 
+.br
+\fIlParam\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+LRESULT 
+.RE
+.PP
+
+.PP
+Reimplemented in \fBMainComponent\fP, and \fBMainWindow\fP\&.
+.SS "template<class DERIVED_TYPE > HWND \fBBaseWindow\fP< DERIVED_TYPE >::Window ()\fC [inline]\fP"
+
+.PP
+Return the handle to the '\fBBaseWindow\fP' -derived object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+HWND 
+.RE
+.PP
+
+.SS "template<class DERIVED_TYPE > static LRESULT CALLBACK \fBBaseWindow\fP< DERIVED_TYPE >::WindowProc (HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+'LRESULT' is an integer value that your program returns to Windows\&. It contains your program's response to a particular message\&. The meaning of this value depends on the message code\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIhwnd\fP is a handle to the window\&. 
+.br
+\fIuMsg\fP is the message code; for example, the WM_SIZE message indicates the window was resized\&. 
+.br
+\fIwParam\fP contains additional code-dependent data about the message\&. 
+.br
+\fIlParam\fP contains additional code-dependent data about the message\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+'LRESULT' 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "template<class DERIVED_TYPE > HWND \fBBaseWindow\fP< DERIVED_TYPE >::m_hwnd\fC [protected]\fP"
+
+.PP
+The handle to the '\fBBaseWindow\fP' -derived object\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CxxWin from the source code\&.

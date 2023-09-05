@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d4/d3a/namespace_c_make_r_c_1_1_key_1_1anonymous__namespace_02win32__pfx_8cpp_03" kind="namespace" language="C++">
+    <compoundname>CMakeRC::Key::anonymous_namespace{win32_pfx.cpp}</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d4/d3a/namespace_c_make_r_c_1_1_key_1_1anonymous__namespace_02win32__pfx_8cpp_03_1a3638d5e7c956120d01f851ce527dd562" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="d5/d1d/win32__resource_8hpp_1aa6bfcc93f2ea5b758d45be8c4bc500b0" kindref="member">IDXRES</ref> &amp;</type>
+        <definition>const IDXRES &amp; CMakeRC::Key::anonymous_namespace{win32_pfx.cpp}::GetRootIndex</definition>
+        <argsstring>()</argsstring>
+        <name>GetRootIndex</name>
+        <qualifiedname>CMakeRC::Key::anonymous_namespace{win32_pfx.cpp}::GetRootIndex</qualifiedname>
+        <briefdescription>
+<para>Get the &apos;<ref refid="d9/def/namespace_c_make_r_c_1_1_detail_1af8b7b0ba529bcc74373e4ee395b54529" kindref="member">CMakeRC::Detail::IndexType</ref>&apos; object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const &apos;IDXRES&apos; &amp; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/key/win32_pfx.cpp" line="33" column="14" bodyfile="include/CxxWin/modules/Win32_resource/key/win32_pfx.cpp" bodystart="33" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/CxxWin/modules/Win32_resource/key/win32_pfx.cpp" line="26" column="1"/>
+  </compounddef>
+</doxygen>

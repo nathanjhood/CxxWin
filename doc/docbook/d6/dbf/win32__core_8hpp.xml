@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_win32__core_8hpp" xml:lang="en-US">
+<title>include/CxxWin/modules/Win32_core/win32_core.hpp File Reference</title>
+<indexterm><primary>include/CxxWin/modules/Win32_core/win32_core.hpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;system/win32_TargetPlatform.hpp&quot;<?linebreak?>#include &quot;native/win32_BasicNativeHeaders.hpp&quot;<?linebreak?>#include &quot;system/win32_StandardHeader.hpp&quot;<?linebreak?>#include &quot;native/win32_Unicode.hpp&quot;<?linebreak?>#include &quot;memory/win32_SmartPointer.hpp&quot;<?linebreak?>#include &quot;window/win32_DPIScale.hpp&quot;<?linebreak?>#include &quot;window/win32_BaseWindow.hpp&quot;<?linebreak?>#include &quot;window/win32_MainWindow.hpp&quot;<?linebreak?></programlisting><simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_win32__core_8hpp_1a875b3f8f6b3853d315fbea6f94697111">_WIN32_CORE_H_</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_win32__core_8hpp_1a875b3f8f6b3853d315fbea6f94697111"/><section>
+    <title>_WIN32_CORE_H_</title>
+<indexterm><primary>_WIN32_CORE_H_</primary><secondary>win32_core.hpp</secondary></indexterm>
+<indexterm><primary>win32_core.hpp</primary><secondary>_WIN32_CORE_H_</secondary></indexterm>
+<para><computeroutput>#define _WIN32_CORE_H_</computeroutput></para></section>
+</section>
+</section>

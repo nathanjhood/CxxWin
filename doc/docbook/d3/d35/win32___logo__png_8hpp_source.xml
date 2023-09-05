@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_win32___logo__png_8hpp_source" xml:lang="en-US">
+<title>win32_Logo_png.hpp</title>
+<indexterm><primary>include/CxxWin/modules/Win32_resource/img/win32_Logo_png.hpp</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 
+21 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+27 <emphasis role="preprocessor">#define&#32;_WIN32_RESOURCE_IMG_LOGO_PNG_H_</emphasis>
+28 
+29 <emphasis role="keyword">namespace</emphasis>
+30 {
+32 <link linkend="_win32__resource_8hpp_1a3589507c444d07ca84f3ec878da0e8ff">RCRESOURCE</link>&#32;<link linkend="_namespaceanonymous__namespace_02win32___logo__png_8hpp_03_1a546cd21fc1510adefd4d16011370bd22">Logo_png_array</link>[489];
+33 }&#32;<emphasis role="comment">//&#32;namespace</emphasis>
+34 
+35 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_c_make_r_c_1_1_img">CMakeRC::Img</link>
+36 {
+44 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_logo">Logo</link>
+45 {
+47 <emphasis role="keyword">extern</emphasis>&#32;<link linkend="_win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268">RCRESOURCEPTR</link>&#32;<emphasis role="keyword">const</emphasis>&#32;<link linkend="_namespace_c_make_r_c_1_1_img_1_1_logo_1a73bc68f2a1a4f72b095cfe41620fc2f6">Logo_png_begin</link>;
+49 <emphasis role="keyword">extern</emphasis>&#32;<link linkend="_win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268">RCRESOURCEPTR</link>&#32;<emphasis role="keyword">const</emphasis>&#32;<link linkend="_namespace_c_make_r_c_1_1_img_1_1_logo_1ac1ee50cec4d537f6fd30cf6de616e97e">Logo_png_end</link>;
+50 }&#32;<emphasis role="comment">//&#32;namespace&#32;Logo</emphasis>
+51 }&#32;<emphasis role="comment">//&#32;namespace&#32;CMakeRC::Img</emphasis>
+</programlisting></section>

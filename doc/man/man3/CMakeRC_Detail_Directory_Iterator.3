@@ -1,0 +1,198 @@
+.TH "CMakeRC::Detail::Directory::Iterator" 3Version 1.0.1" "CxxWin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CMakeRC::Detail::Directory::Iterator \- The '\fBIterator\fP' class\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <cmrc\&.hpp>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "using \fBValueType\fP = \fBDirectoryEntry\fP"
+.br
+.ti -1c
+.RI "using \fBDifferenceType\fP = std::ptrdiff_t"
+.br
+.ti -1c
+.RI "using \fBpointer\fP = const \fBValueType\fP *"
+.br
+.ti -1c
+.RI "using \fBreference\fP = const \fBValueType\fP &"
+.br
+.ti -1c
+.RI "using \fBIteratorCategory\fP = std::input_iterator_tag"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBIterator\fP ()=default"
+.br
+.RI "Default-Construct a new '\fBIterator\fP' object\&. "
+.ti -1c
+.RI "\fBIterator\fP (\fBBaseIterator\fP iter, \fBBaseIterator\fP end)"
+.br
+.RI "Construct a new '\fBIterator\fP' object\&. "
+.ti -1c
+.RI "\fBIterator\fP \fBBegin\fP () const noexcept"
+.br
+.ti -1c
+.RI "\fBIterator\fP \fBEnd\fP () const noexcept"
+.br
+.ti -1c
+.RI "\fBValueType\fP \fBoperator*\fP () const noexcept"
+.br
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBIterator\fP &rhs) const noexcept"
+.br
+.ti -1c
+.RI "bool \fBoperator!=\fP (const \fBIterator\fP &rhs) const noexcept"
+.br
+.ti -1c
+.RI "\fBIterator\fP & \fBoperator++\fP () noexcept"
+.br
+.ti -1c
+.RI "\fBIterator\fP \fBoperator++\fP (int) noexcept"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBBaseIterator\fP \fB_base_iter\fP"
+.br
+.ti -1c
+.RI "\fBBaseIterator\fP \fB_end_iter\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The '\fBIterator\fP' class\&. 
+.SH "Member Typedef Documentation"
+.PP 
+.SS "using \fBCMakeRC::Detail::Directory::Iterator::DifferenceType\fP =  std::ptrdiff_t"
+
+.SS "using \fBCMakeRC::Detail::Directory::Iterator::IteratorCategory\fP =  std::input_iterator_tag"
+
+.SS "using \fBCMakeRC::Detail::Directory::Iterator::pointer\fP =  const \fBValueType\fP*"
+
+.SS "using \fBCMakeRC::Detail::Directory::Iterator::reference\fP =  const \fBValueType\fP&"
+
+.SS "using \fBCMakeRC::Detail::Directory::Iterator::ValueType\fP =  \fBDirectoryEntry\fP"
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CMakeRC::Detail::Directory::Iterator::Iterator ()\fC [default]\fP"
+
+.PP
+Default-Construct a new '\fBIterator\fP' object\&. 
+.SS "CMakeRC::Detail::Directory::Iterator::Iterator (\fBBaseIterator\fP iter, \fBBaseIterator\fP end)\fC [inline]\fP, \fC [explicit]\fP"
+
+.PP
+Construct a new '\fBIterator\fP' object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIiter\fP 
+.br
+\fIend\fP 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBIterator\fP CMakeRC::Detail::Directory::Iterator::Begin () const\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+\fBReturns\fP
+.RS 4
+\fBIterator\fP 
+.RE
+.PP
+
+.SS "\fBIterator\fP CMakeRC::Detail::Directory::Iterator::End () const\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+\fBReturns\fP
+.RS 4
+\fBIterator\fP 
+.RE
+.PP
+
+.SS "bool CMakeRC::Detail::Directory::Iterator::operator!= (const \fBIterator\fP & rhs) const\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIrhs\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true 
+.PP
+false 
+.RE
+.PP
+
+.SS "\fBDirectoryEntry\fP CMakeRC::Detail::Directory::Iterator::operator* () const\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+\fBReturns\fP
+.RS 4
+ValueType
+.PP
+\fBDirectoryEntry\fP 
+.RE
+.PP
+
+.SS "\fBIterator\fP & CMakeRC::Detail::Directory::Iterator::operator++ ()\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+\fBReturns\fP
+.RS 4
+\fBIterator\fP& 
+.RE
+.PP
+
+.SS "\fBIterator\fP CMakeRC::Detail::Directory::Iterator::operator++ (int)\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+\fBReturns\fP
+.RS 4
+\fBIterator\fP 
+.RE
+.PP
+
+.SS "bool CMakeRC::Detail::Directory::Iterator::operator== (const \fBIterator\fP & rhs) const\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIrhs\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true 
+.PP
+false 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBBaseIterator\fP CMakeRC::Detail::Directory::Iterator::_base_iter\fC [private]\fP"
+
+.SS "\fBBaseIterator\fP CMakeRC::Detail::Directory::Iterator::_end_iter\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CxxWin from the source code\&.

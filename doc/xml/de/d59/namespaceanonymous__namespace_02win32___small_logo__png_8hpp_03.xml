@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="de/d59/namespaceanonymous__namespace_02win32___small_logo__png_8hpp_03" kind="namespace" language="C++">
+    <compoundname>anonymous_namespace{win32_SmallLogo_png.hpp}</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="de/d59/namespaceanonymous__namespace_02win32___small_logo__png_8hpp_03_1a5d4bd141099ec36731caa965103f6534" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char anonymous_namespace{win32_SmallLogo_png.hpp}::SmallLogo_png_array[168]</definition>
+        <argsstring>[168]</argsstring>
+        <name>SmallLogo_png_array</name>
+        <qualifiedname>anonymous_namespace{win32_SmallLogo_png.hpp}::SmallLogo_png_array</qualifiedname>
+        <briefdescription>
+<para>An array of bytes representing &apos;Logo.png&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/img/win32_SmallLogo_png.hpp" line="33" column="12" bodyfile="include/CxxWin/modules/Win32_resource/img/win32_SmallLogo_png.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/CxxWin/modules/Win32_resource/img/win32_SmallLogo_png.hpp" line="30" column="1"/>
+  </compounddef>
+</doxygen>

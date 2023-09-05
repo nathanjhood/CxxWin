@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_annotated" xml:lang="en-US">
+<title>Class List</title>
+Here are the classes, structs, unions and interfaces with brief descriptions:<link linkend="_union_c_make_r_c_1_1_detail_1_1_file_or_directory_1_1__data__t">CMakeRC::Detail::FileOrDirectory::_data_t</link><link linkend="_class_base_window">BaseWindow&lt; DERIVED_TYPE &gt;</link>
+<para>The &apos;<link linkend="_class_base_window">BaseWindow</link>&apos; abstract class </para>
+<link linkend="_class_c_com_ptr_base">CComPtrBase&lt; T &gt;</link>
+<para>The &apos;<link linkend="_class_c_com_ptr_base">CComPtrBase</link>&apos; class </para>
+<link linkend="_struct_c_make_r_c_1_1_detail_1_1_created_sub_directory">CMakeRC::Detail::CreatedSubDirectory</link><link linkend="_class_c_make_r_c_1_1_detail_1_1_directory">CMakeRC::Detail::Directory</link><link linkend="_class_c_make_r_c_1_1_directory_entry">CMakeRC::DirectoryEntry</link><link linkend="_class_d_p_i_scale">DPIScale</link>
+<para>The &apos;<link linkend="_class_d_p_i_scale">DPIScale</link>&apos; class </para>
+<link linkend="_class_c_make_r_c_1_1_embedded_file_system">CMakeRC::EmbeddedFileSystem</link><link linkend="_class_c_make_r_c_1_1_file">CMakeRC::File</link><link linkend="_class_c_make_r_c_1_1_detail_1_1_file_data">CMakeRC::Detail::FileData</link><link linkend="_class_c_make_r_c_1_1_detail_1_1_file_or_directory">CMakeRC::Detail::FileOrDirectory</link><link linkend="_class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator">CMakeRC::Detail::Directory::Iterator</link>
+<para>The &apos;<link linkend="_class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator">Iterator</link>&apos; class </para>
+<link linkend="_class_main_component">MainComponent</link>
+<para>The &apos;<link linkend="_class_main_component">MainComponent</link>&apos; class </para>
+<link linkend="_class_main_window">MainWindow</link>
+<para>The &apos;<link linkend="_class_main_window">MainWindow</link>&apos; class </para>
+<link linkend="_class_smart_pointer">SmartPointer&lt; ComClass &gt;</link>
+<para>The &apos;<link linkend="_class_smart_pointer">SmartPointer</link>&apos; class </para>
+<link linkend="_class_smart_pointer_helper">SmartPointerHelper&lt; ComClasses &gt;</link>
+<para>The &apos;<link linkend="_class_smart_pointer_helper">SmartPointerHelper</link>&apos; class </para>
+<link linkend="_class_smart_pointer_helper_base">SmartPointerHelperBase&lt; First, ComClasses &gt;</link>
+<para>The &apos;<link linkend="_class_smart_pointer_helper_base">SmartPointerHelperBase</link>&apos; class </para>
+<link linkend="_class_win32_1_1_core_1_1_native_1_1_unicode_handler">Win32::Core::Native::UnicodeHandler</link></section>

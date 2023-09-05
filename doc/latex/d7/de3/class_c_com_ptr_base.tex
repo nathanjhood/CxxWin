@@ -1,0 +1,182 @@
+\doxysection{CCom\+Ptr\+Base\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_c_com_ptr_base}{}\label{class_c_com_ptr_base}\index{CComPtrBase$<$ T $>$@{CComPtrBase$<$ T $>$}}
+
+
+The \textquotesingle{}\doxylink{class_c_com_ptr_base}{CCom\+Ptr\+Base}\textquotesingle{} class.  
+
+
+
+
+{\ttfamily \#include $<$win32\+\_\+\+CCom\+Ptr\+Base.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_com_ptr_base_a890ee71812369fc3bab1d033dc9c8e5e}{\texorpdfstring{$\sim$}{\string~}\+CCom\+Ptr\+Base}} ()  throw ()
+\begin{DoxyCompactList}\small\item\em Destroy the \textquotesingle{}\doxylink{class_c_com_ptr_base}{CCom\+Ptr\+Base}\textquotesingle{} object. \end{DoxyCompactList}\item 
+HRESULT \mbox{\hyperlink{class_c_com_ptr_base_a4d1eb556a56b2cbe38dd1676c45b29f9}{Co\+Create\+Instance}} (LPCOLESTR sz\+Prog\+ID, LPUNKNOWN p\+Unk\+Outer=NULL, DWORD dw\+Cls\+Context=CLSCTX\+\_\+\+ALL)  throw ()
+\begin{DoxyCompactList}\small\item\em Call this method to create an object of the class associated with a specified Class ID or Program ID. \end{DoxyCompactList}\item 
+HRESULT \mbox{\hyperlink{class_c_com_ptr_base_a779dcf0ac815f4d2fbba20cabcd01e90}{Co\+Create\+Instance}} (REFCLSID rclsid, LPUNKNOWN p\+Unk\+Outer=NULL, DWORD dw\+Cls\+Context=CLSCTX\+\_\+\+ALL)  throw ()
+\begin{DoxyCompactList}\small\item\em Call this method to create an object of the class associated with a specified Class ID or Program ID. \end{DoxyCompactList}\item 
+HRESULT \mbox{\hyperlink{class_c_com_ptr_base_a3384d24c3feb44062843fa259fc72c71}{Advise}} (IUnknown \texorpdfstring{$\ast$}{*}p\+Unk, const IID \&iid, LPDWORD pdw)  throw ()
+\begin{DoxyCompactList}\small\item\em Call this method to create a connection between the \textquotesingle{}\doxylink{class_c_com_ptr_base}{CCom\+Ptr\+Base}\textquotesingle{}s connection point and a client\textquotesingle{}s sink. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_com_ptr_base_afc3a9815853fe9a1029036ef41aaa7b0}{Attach}} (T \texorpdfstring{$\ast$}{*}p2)  throw ()
+\begin{DoxyCompactList}\small\item\em Call this method to take ownership of an existing pointer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_c_com_ptr_base_a90711bda95e1d33b8d771d1f15d47a17}{p}}
+\begin{DoxyCompactList}\small\item\em The pointer data member variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class CCom\+Ptr\+Base$<$ T $>$}
+The \textquotesingle{}\doxylink{class_c_com_ptr_base}{CCom\+Ptr\+Base}\textquotesingle{} class. 
+
+This class provides a basis for smart pointer classes using COM-\/based memory routines.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The object type to be referenced by the smart pointer.\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyRemark}{Remarks}
+This class provides the basis for other smart pointers that use COM memory management routines, such as \textquotesingle{}CCom\+QIPtr\textquotesingle{} and \textquotesingle{}CCom\+Ptr\textquotesingle{}. The derived classes add their own constructors and operators, but rely on the methods provided by \textquotesingle{}\doxylink{class_c_com_ptr_base}{CCom\+Ptr\+Base}\textquotesingle{}. 
+\end{DoxyRemark}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_c_com_ptr_base_a890ee71812369fc3bab1d033dc9c8e5e}\label{class_c_com_ptr_base_a890ee71812369fc3bab1d033dc9c8e5e} 
+\index{CComPtrBase$<$ T $>$@{CComPtrBase$<$ T $>$}!````~CComPtrBase@{\texorpdfstring{$\sim$}{\string~}CComPtrBase}}
+\index{````~CComPtrBase@{\texorpdfstring{$\sim$}{\string~}CComPtrBase}!CComPtrBase$<$ T $>$@{CComPtrBase$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}CComPtrBase()}{\string~CComPtrBase()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_c_com_ptr_base}{CCom\+Ptr\+Base}}$<$ T $>$\+::\texorpdfstring{$\sim$}{\string~}\mbox{\hyperlink{class_c_com_ptr_base}{CCom\+Ptr\+Base}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throw ( ) }
+
+
+
+Destroy the \textquotesingle{}\doxylink{class_c_com_ptr_base}{CCom\+Ptr\+Base}\textquotesingle{} object. 
+
+\begin{DoxyRemark}{Remarks}
+Releases the interface pointed to by \doxylink{class_c_com_ptr_base}{CCom\+Ptr\+Base}. 
+\end{DoxyRemark}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_c_com_ptr_base_a3384d24c3feb44062843fa259fc72c71}\label{class_c_com_ptr_base_a3384d24c3feb44062843fa259fc72c71} 
+\index{CComPtrBase$<$ T $>$@{CComPtrBase$<$ T $>$}!Advise@{Advise}}
+\index{Advise@{Advise}!CComPtrBase$<$ T $>$@{CComPtrBase$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Advise()}{Advise()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+HRESULT \mbox{\hyperlink{class_c_com_ptr_base}{CCom\+Ptr\+Base}}$<$ T $>$\+::\+Advise (\begin{DoxyParamCaption}\item[{IUnknown \texorpdfstring{$\ast$}{*}}]{p\+Unk,  }\item[{const IID \&}]{iid,  }\item[{LPDWORD}]{pdw }\end{DoxyParamCaption}) throw ( ) }
+
+
+
+Call this method to create a connection between the \textquotesingle{}\doxylink{class_c_com_ptr_base}{CCom\+Ptr\+Base}\textquotesingle{}s connection point and a client\textquotesingle{}s sink. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Unk} & A pointer to the client\textquotesingle{}s \textquotesingle{}IUnknown\textquotesingle{}.\\
+\hline
+{\em iid} & The GUID of the connection point. Typically, this GUID is the same as the outgoing interface managed by the connection point.\\
+\hline
+{\em pdw} & A pointer to the cookie that uniquely identifies the connection.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+HRESULT -\/ Returns S\+\_\+\+OK on success, or an error HRESULT on failure. 
+\end{DoxyReturn}
+\Hypertarget{class_c_com_ptr_base_afc3a9815853fe9a1029036ef41aaa7b0}\label{class_c_com_ptr_base_afc3a9815853fe9a1029036ef41aaa7b0} 
+\index{CComPtrBase$<$ T $>$@{CComPtrBase$<$ T $>$}!Attach@{Attach}}
+\index{Attach@{Attach}!CComPtrBase$<$ T $>$@{CComPtrBase$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Attach()}{Attach()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_c_com_ptr_base}{CCom\+Ptr\+Base}}$<$ T $>$\+::\+Attach (\begin{DoxyParamCaption}\item[{T \texorpdfstring{$\ast$}{*}}]{p2 }\end{DoxyParamCaption}) throw ( ) }
+
+
+
+Call this method to take ownership of an existing pointer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p2} & The \textquotesingle{}\doxylink{class_c_com_ptr_base}{CCom\+Ptr\+Base}\textquotesingle{} object will take ownership of this pointer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Attach calls \textquotesingle{}CCom\+Ptr\+Base\+::\+Release\textquotesingle{} on the existing \textquotesingle{}\doxylink{class_c_com_ptr_base_a90711bda95e1d33b8d771d1f15d47a17}{CCom\+Ptr\+Base\+::p}\textquotesingle{} member variable and then assigns \textquotesingle{}p2\textquotesingle{} to \textquotesingle{}\doxylink{class_c_com_ptr_base_a90711bda95e1d33b8d771d1f15d47a17}{CCom\+Ptr\+Base\+::p}\textquotesingle{}. When a \textquotesingle{}\doxylink{class_c_com_ptr_base}{CCom\+Ptr\+Base}\textquotesingle{} object takes ownership of a pointer, it will automatically call Release on the pointer, which deletes the pointer and any allocated data if the reference count on the object goes to 0. 
+\end{DoxyRemark}
+\Hypertarget{class_c_com_ptr_base_a4d1eb556a56b2cbe38dd1676c45b29f9}\label{class_c_com_ptr_base_a4d1eb556a56b2cbe38dd1676c45b29f9} 
+\index{CComPtrBase$<$ T $>$@{CComPtrBase$<$ T $>$}!CoCreateInstance@{CoCreateInstance}}
+\index{CoCreateInstance@{CoCreateInstance}!CComPtrBase$<$ T $>$@{CComPtrBase$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CoCreateInstance()}{CoCreateInstance()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+HRESULT \mbox{\hyperlink{class_c_com_ptr_base}{CCom\+Ptr\+Base}}$<$ T $>$\+::\+Co\+Create\+Instance (\begin{DoxyParamCaption}\item[{LPCOLESTR}]{sz\+Prog\+ID,  }\item[{LPUNKNOWN}]{p\+Unk\+Outer = {\ttfamily NULL},  }\item[{DWORD}]{dw\+Cls\+Context = {\ttfamily CLSCTX\+\_\+ALL} }\end{DoxyParamCaption}) throw ( ) }
+
+
+
+Call this method to create an object of the class associated with a specified Class ID or Program ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sz\+Prog\+ID} & Pointer to a Prog\+ID, used to recover the \textquotesingle{}CLSID\textquotesingle{}. \\
+\hline
+{\em p\+Unk\+Outer} & If NULL, indicates that the object isn\textquotesingle{}t being created as part of an aggregate. If non-\/ NULL, is a pointer to the aggregate object\textquotesingle{}s \textquotesingle{}IUnknown\textquotesingle{} interface (the controlling \textquotesingle{}IUnknown\textquotesingle{}). \\
+\hline
+{\em dw\+Cls\+Context} & Context in which the code that manages the newly created object will run. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+HRESULT -\/ Returns S\+\_\+\+OK on success, or REGDB\+\_\+\+E\+\_\+\+CLASSNOTREG, CLASS\+\_\+\+E\+\_\+\+NOAGGREGATION, CO\+\_\+\+E\+\_\+\+CLASSSTRING, or E\+\_\+\+NOINTERFACE on failure.
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+If the first form of the method is called, CLSIDFrom\+Prog\+ID is used to recover the CLSID. Both forms then call Co\+Create\+Class\+Instance.
+\end{DoxyRemark}
+In debug builds, an assertion error will occur if \textquotesingle{}\doxylink{class_c_com_ptr_base_a90711bda95e1d33b8d771d1f15d47a17}{CCom\+Ptr\+Base\+::p}\textquotesingle{} isn\textquotesingle{}t equal to NULL. \Hypertarget{class_c_com_ptr_base_a779dcf0ac815f4d2fbba20cabcd01e90}\label{class_c_com_ptr_base_a779dcf0ac815f4d2fbba20cabcd01e90} 
+\index{CComPtrBase$<$ T $>$@{CComPtrBase$<$ T $>$}!CoCreateInstance@{CoCreateInstance}}
+\index{CoCreateInstance@{CoCreateInstance}!CComPtrBase$<$ T $>$@{CComPtrBase$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CoCreateInstance()}{CoCreateInstance()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+HRESULT \mbox{\hyperlink{class_c_com_ptr_base}{CCom\+Ptr\+Base}}$<$ T $>$\+::\+Co\+Create\+Instance (\begin{DoxyParamCaption}\item[{REFCLSID}]{rclsid,  }\item[{LPUNKNOWN}]{p\+Unk\+Outer = {\ttfamily NULL},  }\item[{DWORD}]{dw\+Cls\+Context = {\ttfamily CLSCTX\+\_\+ALL} }\end{DoxyParamCaption}) throw ( ) }
+
+
+
+Call this method to create an object of the class associated with a specified Class ID or Program ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rclsid} & CLSID associated with the data and code that will be used to create the object. \\
+\hline
+{\em p\+Unk\+Outer} & If NULL, indicates that the object isn\textquotesingle{}t being created as part of an aggregate. If non-\/ NULL, is a pointer to the aggregate object\textquotesingle{}s \textquotesingle{}IUnknown\textquotesingle{} interface (the controlling \textquotesingle{}IUnknown\textquotesingle{}). \\
+\hline
+{\em dw\+Cls\+Context} & Context in which the code that manages the newly created object will run. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+HRESULT -\/ Returns S\+\_\+\+OK on success, or REGDB\+\_\+\+E\+\_\+\+CLASSNOTREG, CLASS\+\_\+\+E\+\_\+\+NOAGGREGATION, CO\+\_\+\+E\+\_\+\+CLASSSTRING, or E\+\_\+\+NOINTERFACE on failure.
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+If the first form of the method is called, CLSIDFrom\+Prog\+ID is used to recover the CLSID. Both forms then call Co\+Create\+Class\+Instance.
+\end{DoxyRemark}
+In debug builds, an assertion error will occur if \textquotesingle{}\doxylink{class_c_com_ptr_base_a90711bda95e1d33b8d771d1f15d47a17}{CCom\+Ptr\+Base\+::p}\textquotesingle{} isn\textquotesingle{}t equal to NULL. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_c_com_ptr_base_a90711bda95e1d33b8d771d1f15d47a17}\label{class_c_com_ptr_base_a90711bda95e1d33b8d771d1f15d47a17} 
+\index{CComPtrBase$<$ T $>$@{CComPtrBase$<$ T $>$}!p@{p}}
+\index{p@{p}!CComPtrBase$<$ T $>$@{CComPtrBase$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_c_com_ptr_base}{CCom\+Ptr\+Base}}$<$ T $>$\+::p}
+
+
+
+The pointer data member variable. 
+
+\begin{DoxyRemark}{Remarks}
+This member variable holds the pointer information. 
+\end{DoxyRemark}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Cxx\+Win/modules/\+Win32\+\_\+core/memory/\mbox{\hyperlink{win32___c_com_ptr_base_8hpp}{win32\+\_\+\+CCom\+Ptr\+Base.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_9bc32812666c1354c5bb25d7268c0a0c" kind="dir">
+    <compoundname>include/CxxWin</compoundname>
+    <innerdir refid="dir_34a2d04789e6072590dc7fd23c3451f8">include/CxxWin/modules</innerdir>
+    <innerfile refid="db/dfc/_main_component_8cpp">MainComponent.cpp</innerfile>
+    <innerfile refid="df/d11/_main_component_8hpp">MainComponent.hpp</innerfile>
+    <innerfile refid="da/d9b/_win_main_8cpp">WinMain.cpp</innerfile>
+    <innerfile refid="df/dff/_win_main_8hpp">WinMain.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/CxxWin/"/>
+  </compounddef>
+</doxygen>

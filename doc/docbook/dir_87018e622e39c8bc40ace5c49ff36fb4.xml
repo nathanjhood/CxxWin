@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_87018e622e39c8bc40ace5c49ff36fb4" xml:lang="en-US">
+<title>include/CxxWin/modules/Win32_resource Directory Reference</title>
+<indexterm><primary>include/CxxWin/modules/Win32_resource Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_93d786e57a26867bc401093746f000ce">img</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_d258496776ff35f1fd9b0ab00cd395ef">key</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_cmrc_8hpp">cmrc.hpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_win32__resource_8cpp">win32_resource.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_win32__resource_8hpp">win32_resource.hpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_win32__resource_8mm">win32_resource.mm</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

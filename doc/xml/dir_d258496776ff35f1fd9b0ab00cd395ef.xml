@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dir_d258496776ff35f1fd9b0ab00cd395ef" kind="dir">
+    <compoundname>include/CxxWin/modules/Win32_resource/key</compoundname>
+    <innerfile refid="d2/d09/win32__pfx_8cpp">win32_pfx.cpp</innerfile>
+    <innerfile refid="d6/dc6/win32__pfx_8hpp">win32_pfx.hpp</innerfile>
+    <innerfile refid="d6/d09/win32___windows___temporary_key__pfx_8cpp">win32_Windows_TemporaryKey_pfx.cpp</innerfile>
+    <innerfile refid="db/d82/win32___windows___temporary_key__pfx_8hpp">win32_Windows_TemporaryKey_pfx.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/CxxWin/modules/Win32_resource/key/"/>
+  </compounddef>
+</doxygen>

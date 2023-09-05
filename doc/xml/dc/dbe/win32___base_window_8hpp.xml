@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dc/dbe/win32___base_window_8hpp" kind="file" language="C++">
+    <compoundname>win32_BaseWindow.hpp</compoundname>
+    <includedby refid="d6/dbf/win32__core_8hpp" local="yes">include/CxxWin/modules/Win32_core/win32_core.hpp</includedby>
+    <invincdepgraph>
+      <node id="4">
+        <label>include/CxxWin/MainComponent.cpp</label>
+        <link refid="db/dfc/_main_component_8cpp"/>
+      </node>
+      <node id="3">
+        <label>include/CxxWin/MainComponent.hpp</label>
+        <link refid="df/d11/_main_component_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>include/CxxWin/WinMain.cpp</label>
+        <link refid="da/d9b/_win_main_8cpp"/>
+      </node>
+      <node id="5">
+        <label>include/CxxWin/WinMain.hpp</label>
+        <link refid="df/dff/_win_main_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>include/CxxWin/modules/Win32_core/win32_core.cpp</label>
+        <link refid="d1/dd0/win32__core_8cpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/CxxWin/modules/Win32_core/win32_core.hpp</label>
+        <link refid="d6/dbf/win32__core_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>include/CxxWin/modules/Win32_core/win32_core.mm</label>
+        <link refid="d9/db1/win32__core_8mm"/>
+      </node>
+      <node id="1">
+        <label>include/CxxWin/modules/Win32_core/window/win32_BaseWindow.hpp</label>
+        <link refid="dc/dbe/win32___base_window_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="da/dc1/class_base_window" prot="public">BaseWindow</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="dc/dbe/win32___base_window_8hpp_1a591a97a80b7476f939155c8f397abcae" prot="public" static="no">
+        <name>_WIN32_BASEWINDOW_HPP_</name>
+        <briefdescription>
+<para>Contains the &apos;<ref refid="da/dc1/class_base_window" kindref="compound">BaseWindow</ref>&apos; interface. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/window/win32_BaseWindow.hpp" line="16" column="9" bodyfile="include/CxxWin/modules/Win32_core/window/win32_BaseWindow.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Contains the &apos;<ref refid="da/dc1/class_base_window" kindref="compound">BaseWindow</ref>&apos; interface. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>StoneyDSP (<ulink url="mailto:nathanjhood@googlemail.com">nathanjhood@googlemail.com</ulink>)</para>
+</simplesect>
+</para>
+<para><simplesect kind="version"><para>1.0.0 </para>
+</simplesect>
+<simplesect kind="date"><para>2023-08-23</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="dc/dbe/win32___base_window_8hpp_1a591a97a80b7476f939155c8f397abcae" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_WIN32_BASEWINDOW_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>namespace<sp/>Win32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>namespace<sp/>Core</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>namespace<sp/>Window</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>DERIVED_TYPE&gt;</highlight></codeline>
+<codeline lineno="30" refid="da/dc1/class_base_window" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="da/dc1/class_base_window" kindref="compound">BaseWindow</ref></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="da/dc1/class_base_window_1a60209fc8aa81ab0efa29263dabc52cbf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/dc1/class_base_window_1a60209fc8aa81ab0efa29263dabc52cbf" kindref="member">BaseWindow</ref>()<sp/>:<sp/><ref refid="da/dc1/class_base_window_1a86f5232fa1bbb141f60548a42331fc7e" kindref="member">m_hwnd</ref>(NULL){}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="da/dc1/class_base_window_1a61198ed120a54deccbd3e73221bf9c4d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>LRESULT<sp/>CALLBACK<sp/><ref refid="da/dc1/class_base_window_1a61198ed120a54deccbd3e73221bf9c4d" kindref="member">WindowProc</ref>(HWND<sp/>hwnd,<sp/>UINT<sp/>uMsg,<sp/>WPARAM<sp/>wParam,<sp/>LPARAM<sp/>lParam)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DERIVED_TYPE<sp/>*pThis<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>&apos;WM_NC*&apos;<sp/>definitions<sp/>refer<sp/>to<sp/>&apos;non-client&apos;<sp/>events,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>i.e.,<sp/>mouse<sp/>clicks<sp/>outside<sp/>of<sp/>the<sp/>app<sp/>window.<sp/>etc</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(uMsg<sp/>==<sp/>WM_NCCREATE)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CREATESTRUCT*<sp/>pCreate<sp/>=<sp/>(CREATESTRUCT*)lParam;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pThis<sp/>=<sp/>(DERIVED_TYPE*)pCreate-&gt;lpCreateParams;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SetWindowLongPtr(hwnd,<sp/>GWLP_USERDATA,<sp/>(LONG_PTR)pThis);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pThis-&gt;m_hwnd<sp/>=<sp/>hwnd;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pThis<sp/>=<sp/>(DERIVED_TYPE*)GetWindowLongPtr(hwnd,<sp/>GWLP_USERDATA);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pThis)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pThis-&gt;HandleMessage(uMsg,<sp/>wParam,<sp/>lParam);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>DefWindowProc(hwnd,<sp/>uMsg,<sp/>wParam,<sp/>lParam);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="da/dc1/class_base_window_1acfcb0a79ccf1f3780e353f24983b93bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOL<sp/><ref refid="da/dc1/class_base_window_1acfcb0a79ccf1f3780e353f24983b93bf" kindref="member">Create</ref>(</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PCWSTR<sp/>lpWindowName,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DWORD<sp/>dwStyle,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DWORD<sp/>dwExStyle<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>CW_USEDEFAULT,</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y<sp/>=<sp/>CW_USEDEFAULT,</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nWidth<sp/>=<sp/>CW_USEDEFAULT,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nHeight<sp/>=<sp/>CW_USEDEFAULT,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HWND<sp/>hWndParent<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HMENU<sp/>hMenu<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Initiate<sp/>a<sp/>window<sp/>class</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WNDCLASS<sp/>wc<sp/>=<sp/>{0};</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Enable<sp/>mouse<sp/>double-clicks<sp/>on<sp/>the<sp/>window...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wc.style<sp/>=<sp/>CS_DBLCLKS;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wc.lpfnWndProc<sp/><sp/><sp/>=<sp/>DERIVED_TYPE::WindowProc;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wc.hInstance<sp/><sp/><sp/><sp/><sp/>=<sp/>GetModuleHandle(NULL);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wc.lpszClassName<sp/>=<sp/><ref refid="da/dc1/class_base_window_1a76d1b80a812caf760c0efbed6e64b2e1" kindref="member">ClassName</ref>();</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RegisterClass(&amp;wc);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/dc1/class_base_window_1a86f5232fa1bbb141f60548a42331fc7e" kindref="member">m_hwnd</ref><sp/>=<sp/>CreateWindowEx(</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dwExStyle,</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/dc1/class_base_window_1a76d1b80a812caf760c0efbed6e64b2e1" kindref="member">ClassName</ref>(),</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lpWindowName,</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dwStyle,</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x,</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y,</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nWidth,</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nHeight,</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hWndParent,</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hMenu,</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetModuleHandle(NULL),</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="da/dc1/class_base_window_1a86f5232fa1bbb141f60548a42331fc7e" kindref="member">m_hwnd</ref><sp/>?<sp/>TRUE<sp/>:<sp/>FALSE);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="da/dc1/class_base_window_1aa1507d2052aaec416ac8b085add33ba0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>HWND<sp/><ref refid="da/dc1/class_base_window_1aa1507d2052aaec416ac8b085add33ba0" kindref="member">Window</ref>()<sp/>CONST<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="da/dc1/class_base_window_1a86f5232fa1bbb141f60548a42331fc7e" kindref="member">m_hwnd</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="da/dc1/class_base_window_1a76d1b80a812caf760c0efbed6e64b2e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>PCWSTR<sp/><ref refid="da/dc1/class_base_window_1a76d1b80a812caf760c0efbed6e64b2e1" kindref="member">ClassName</ref>()<sp/>CONST<sp/>PURE;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="da/dc1/class_base_window_1a7612d6d879e60f4b7ded0cf0ac3dd8a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/>LRESULT<sp/><ref refid="da/dc1/class_base_window_1a7612d6d879e60f4b7ded0cf0ac3dd8a9" kindref="member">HandleMessage</ref>(UINT<sp/>uMsg,<sp/>WPARAM<sp/>wParam,<sp/>LPARAM<sp/>lParam)<sp/>PURE;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="da/dc1/class_base_window_1a86f5232fa1bbb141f60548a42331fc7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>HWND<sp/><ref refid="da/dc1/class_base_window_1a86f5232fa1bbb141f60548a42331fc7e" kindref="member">m_hwnd</ref>;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d74/win32___platform_defs_8hpp_1aa48cf96123b508654d4c4e9a56e831cb" kindref="member">__PREVENT_HEAP_ALLOCATION</ref></highlight></codeline>
+<codeline lineno="167"><highlight class="normal">private:</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d74/win32___platform_defs_8hpp_1a964d381579febb0cc83dcc69890beec0" kindref="member">__DECLARE_NON_COPYABLE</ref>(<ref refid="da/dc1/class_base_window" kindref="compound">BaseWindow</ref>)</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d74/win32___platform_defs_8hpp_1adc9b0f127fefc464e5b4e704259c8ced" kindref="member">__DECLARE_NON_MOVEABLE</ref>(<ref refid="da/dc1/class_base_window" kindref="compound">BaseWindow</ref>)</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="comment">//<sp/>}<sp/>//<sp/>namespace<sp/>Window</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="comment">//<sp/>}<sp/>//<sp/>namespace<sp/>Core</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="comment">//<sp/>}<sp/>//<sp/>namespace<sp/>Win32</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/CxxWin/modules/Win32_core/window/win32_BaseWindow.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d5/dc1/namespace_win32_1_1_core_1_1_native" kind="namespace" language="C++">
+    <compoundname>Win32::Core::Native</compoundname>
+    <innerclass refid="d7/d6d/class_win32_1_1_core_1_1_native_1_1_unicode_handler" prot="public">Win32::Core::Native::UnicodeHandler</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/CxxWin/modules/Win32_core/native/win32_Unicode.hpp" line="53" column="1"/>
+  </compounddef>
+</doxygen>

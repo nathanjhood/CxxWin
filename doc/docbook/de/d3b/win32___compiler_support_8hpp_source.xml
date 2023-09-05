@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_win32___compiler_support_8hpp_source" xml:lang="en-US">
+<title>win32_CompilerSupport.hpp</title>
+<indexterm><primary>include/CxxWin/modules/Win32_core/system/win32_CompilerSupport.hpp</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 
+14 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+15 
+21 <emphasis role="preprocessor">#define&#32;_WIN32_COMPILERSUPPORT_HPP_</emphasis>
+22 
+27 <emphasis role="preprocessor">#if&#32;defined&#32;(__clang__)</emphasis>
+28 <emphasis role="preprocessor">#elif&#32;defined&#32;(__GNUC__)</emphasis>
+29 <emphasis role="preprocessor">#elif&#32;defined&#32;(_MSC_VER)</emphasis>
+30 <emphasis role="preprocessor">#else</emphasis>
+31 <emphasis role="preprocessor">#&#32;&#32;error&#32;&quot;Compiler&#32;unknown?&quot;</emphasis>
+32 <emphasis role="preprocessor">#endif</emphasis>
+33 
+34 <emphasis role="preprocessor">#if&#32;defined(__clang__)&#32;&amp;&amp;&#32;!defined(__ibxml__)</emphasis>
+35 
+36 <emphasis role="preprocessor">#&#32;&#32;define&#32;__C_COMPILER_IS_CLANG&#32;INT&#32;1</emphasis>
+37 
+38 <emphasis role="preprocessor">#&#32;&#32;define&#32;__C_COMPILER_NAME&#32;__PM_STRING(Clang)</emphasis>
+39 <emphasis role="preprocessor">#&#32;&#32;define&#32;__C_COMPILER_VERSION_MAJOR&#32;INT&#32;__clang_major__</emphasis>
+40 <emphasis role="preprocessor">#&#32;&#32;define&#32;__C_COMPILER_VERSION_MINOR&#32;INT&#32;__clang_minor__</emphasis>
+41 <emphasis role="preprocessor">#&#32;&#32;define&#32;__C_COMPILER_VERSION_PATCH&#32;INT&#32;__clang_patchlevel__</emphasis>
+42 
+43 <emphasis role="preprocessor">#&#32;&#32;define&#32;__C_COMPILER_VERSION&#32;(__clang_major__&#32;*&#32;INT&#32;100&#32;+&#32;__clang_minor__)</emphasis>
+44 
+45 <emphasis role="preprocessor">#elif&#32;defined(__GNUC__)&#32;&amp;&amp;&#32;!defined(__clang__)&#32;&amp;&amp;&#32;!defined(__INTEL_COMPILER)&#32;&amp;&amp;&#32;!defined(__NVCOMPILER)</emphasis>
+46 
+47 <emphasis role="preprocessor">#&#32;&#32;define&#32;__C_COMPILER_IS_GNU&#32;INT&#32;1</emphasis>
+48 
+49 <emphasis role="preprocessor">#&#32;&#32;define&#32;__C_COMPILER_NAME&#32;TEXT(&quot;GNU&quot;</emphasis>)
+50 <emphasis role="preprocessor">#&#32;&#32;define&#32;__C_COMPILER_VERSION_MAJOR&#32;INT&#32;__GNUC__</emphasis>
+51 <emphasis role="preprocessor">#&#32;&#32;define&#32;__C_COMPILER_VERSION_MINOR&#32;INT&#32;__GNUC_MINOR__</emphasis>
+52 <emphasis role="preprocessor">#&#32;&#32;define&#32;__C_COMPILER_VERSION_PATCH&#32;INT&#32;__GNUC_PATCHLEVEL__</emphasis>
+53 <emphasis role="preprocessor">#&#32;&#32;define&#32;__C_COMPILER_VERSION&#32;(__GNUC__&#32;*&#32;INT&#32;100&#32;+&#32;__GNUC_MINOR__)</emphasis>
+54 
+55 <emphasis role="preprocessor">#endif</emphasis>
+56 
+57 <emphasis role="preprocessor">#&#32;&#32;define&#32;__CXX_COMPILER_NAME&#32;__C_COMPILER_NAME</emphasis>
+58 <emphasis role="preprocessor">#&#32;&#32;define&#32;__CXX_COMPILER_VERSION_MAJOR&#32;__C_COMPILER_VERSION_MAJOR</emphasis>
+59 <emphasis role="preprocessor">#&#32;&#32;define&#32;__CXX_COMPILER_VERSION_MINOR&#32;__C_COMPILER_VERSION_MINOR</emphasis>
+60 <emphasis role="preprocessor">#&#32;&#32;define&#32;__CXX_COMPILER_VERSION_PATCH&#32;__C_COMPILER_VERSION_PATCH</emphasis>
+61 <emphasis role="preprocessor">#&#32;&#32;define&#32;__CXX_COMPILER_VERSION&#32;__C_COMPILER_VERSION</emphasis>
+62 
+63 <emphasis role="preprocessor">#ifdef&#32;__ICL</emphasis>
+64 <emphasis role="preprocessor">#&#32;&#32;&#32;define&#32;__ICC_VERSION&#32;INT&#32;__ICL</emphasis>
+65 <emphasis role="preprocessor">#elif&#32;defined(__INTEL_COMPILER)</emphasis>
+66 <emphasis role="preprocessor">#&#32;&#32;&#32;define&#32;__ICC_VERSION&#32;INT&#32;__INTEL_COMPILER</emphasis>
+67 <emphasis role="preprocessor">#else</emphasis>
+68 <emphasis role="preprocessor">#&#32;&#32;&#32;define&#32;__ICC_VERSION&#32;0</emphasis>
+69 <emphasis role="preprocessor">#endif</emphasis>
+70 
+71 <emphasis role="preprocessor">#ifdef&#32;_MSC_VER</emphasis>
+72 <emphasis role="preprocessor">#&#32;&#32;&#32;define&#32;__MSC_VERSION&#32;_MSC_VER</emphasis>
+73 <emphasis role="preprocessor">#&#32;&#32;&#32;define&#32;__MSC_WARNING(...)&#32;__pragma(warning(__VA_ARGS__))</emphasis>
+74 <emphasis role="preprocessor">#else</emphasis>
+75 <emphasis role="preprocessor">#&#32;&#32;&#32;define&#32;__MSC_VERSION&#32;0</emphasis>
+76 <emphasis role="preprocessor">#&#32;&#32;&#32;define&#32;__MSC_WARNING(...)</emphasis>
+77 <emphasis role="preprocessor">#endif</emphasis>
+78 
+79 <emphasis role="preprocessor">#if&#32;defined(__cplusplus)</emphasis>
+80 <emphasis role="preprocessor">#&#32;&#32;&#32;define&#32;__USING_CXX&#32;__cplusplus</emphasis>
+81 <emphasis role="preprocessor">#elif&#32;defined(_MSVC_LANG)</emphasis>
+82 <emphasis role="preprocessor">#&#32;&#32;&#32;define&#32;__USING_CXX&#32;_MSVC_LANG</emphasis>
+83 <emphasis role="preprocessor">#else</emphasis>
+84 <emphasis role="preprocessor">#&#32;&#32;&#32;undef&#32;&#32;__USING_CXX</emphasis>
+85 <emphasis role="preprocessor">#endif</emphasis>
+86 
+91 <emphasis role="preprocessor">#ifdef&#32;&#32;__USING_CXX</emphasis>
+92 <emphasis role="preprocessor">#&#32;&#32;define&#32;__BEGIN_DECLS&#32;&#32;extern&#32;&quot;C&quot;</emphasis>&#32;{
+93 <emphasis role="preprocessor">#&#32;&#32;define&#32;__END_DECLS&#32;&#32;&#32;&#32;}</emphasis>
+94 <emphasis role="preprocessor">#else</emphasis>
+95 <emphasis role="preprocessor">#&#32;&#32;define&#32;__BEGIN_DECLS</emphasis>
+96 <emphasis role="preprocessor">#&#32;&#32;define&#32;__END_DECLS</emphasis>
+97 <emphasis role="preprocessor">#endif</emphasis>
+98 
+99 <emphasis role="preprocessor">#ifdef&#32;__has_feature</emphasis>
+100 <emphasis role="preprocessor">#&#32;&#32;&#32;define&#32;__HAS_FEATURE(x)&#32;__has_feature(x)</emphasis>
+101 <emphasis role="preprocessor">#else</emphasis>
+102 <emphasis role="preprocessor">#&#32;&#32;&#32;define&#32;__HAS_FEATURE(x)&#32;FALSE</emphasis>
+103 <emphasis role="preprocessor">#endif</emphasis>
+104 
+105 <emphasis role="preprocessor">#if&#32;defined(__has_include)&#32;||&#32;__ICC_VERSION&#32;&gt;=&#32;1600&#32;||&#32;__MSC_VERSION&#32;&gt;=&#32;1900</emphasis>
+106 <emphasis role="preprocessor">#&#32;&#32;&#32;define&#32;__HAS_INCLUDE(x)&#32;__has_include(x)</emphasis>
+107 <emphasis role="preprocessor">#else</emphasis>
+108 <emphasis role="preprocessor">#&#32;&#32;&#32;define&#32;__HAS_INCLUDE(x)&#32;FALSE</emphasis>
+109 <emphasis role="preprocessor">#endif</emphasis>
+110 
+111 <emphasis role="preprocessor">#ifdef&#32;__has_attribute</emphasis>
+112 <emphasis role="preprocessor">#&#32;&#32;&#32;define&#32;__HAS_ATTRIBUTE(x)&#32;__has_attribute(x)</emphasis>
+113 <emphasis role="preprocessor">#else</emphasis>
+114 <emphasis role="preprocessor">#&#32;&#32;&#32;define&#32;__HAS_ATTRIBUTE(x)&#32;FALSE</emphasis>
+115 <emphasis role="preprocessor">#endif</emphasis>
+116 
+117 <emphasis role="preprocessor">#ifdef&#32;__has_c_attribute</emphasis>
+118 <emphasis role="preprocessor">#&#32;&#32;&#32;define&#32;__HAS_C_ATTRIBUTE(x)&#32;__has_c_attribute(x)</emphasis>
+119 <emphasis role="preprocessor">#else</emphasis>
+120 <emphasis role="preprocessor">#&#32;&#32;&#32;define&#32;__HAS_C_ATTRIBUTE(x)&#32;FALSE</emphasis>
+121 <emphasis role="preprocessor">#endif</emphasis>
+122 
+123 <emphasis role="preprocessor">#ifdef&#32;__has_cpp_attribute</emphasis>
+124 <emphasis role="preprocessor">#&#32;&#32;&#32;define&#32;__HAS_CPP_ATTRIBUTE(x)&#32;__has_cpp_attribute(x)</emphasis>
+125 <emphasis role="preprocessor">#else</emphasis>
+126 <emphasis role="preprocessor">#&#32;&#32;&#32;define&#32;__HAS_CPP_ATTRIBUTE(x)&#32;FALSE</emphasis>
+127 <emphasis role="preprocessor">#endif</emphasis>
+128 
+129 <emphasis role="preprocessor">#ifdef&#32;__has_builtin</emphasis>
+130 <emphasis role="preprocessor">#&#32;&#32;&#32;define&#32;__HAS_BUILTIN(x)&#32;__has_builtin(x)</emphasis>
+131 <emphasis role="preprocessor">#else</emphasis>
+132 <emphasis role="preprocessor">#&#32;&#32;&#32;define&#32;__HAS_BUILTIN(x)&#32;FALSE</emphasis>
+133 <emphasis role="preprocessor">#endif</emphasis>
+134 
+135 <emphasis role="preprocessor">#ifdef&#32;__has_extension</emphasis>
+136 <emphasis role="preprocessor">#&#32;&#32;&#32;define&#32;__HAS_EXTENSION(x)&#32;__has_extension(x)</emphasis>
+137 <emphasis role="preprocessor">#else</emphasis>
+138 <emphasis role="preprocessor">#&#32;&#32;&#32;define&#32;__HAS_EXTENSION(x)&#32;FALSE</emphasis>
+139 <emphasis role="preprocessor">#endif</emphasis>
+</programlisting></section>

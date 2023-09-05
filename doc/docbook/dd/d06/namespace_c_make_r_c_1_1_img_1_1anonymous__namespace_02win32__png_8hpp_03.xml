@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_c_make_r_c_1_1_img_1_1anonymous__namespace_02win32__png_8hpp_03" xml:lang="en-US">
+<title>CMakeRC::Img::anonymous_namespace{win32_png.hpp} Namespace Reference</title>
+<indexterm><primary>CMakeRC::Img::anonymous_namespace{win32_png.hpp}</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>const <link linkend="_win32__resource_8hpp_1aa6bfcc93f2ea5b758d45be8c4bc500b0">IDXRES</link> &amp; <link linkend="_namespace_c_make_r_c_1_1_img_1_1anonymous__namespace_02win32__png_8hpp_03_1a8ecb64d8282ff68791d533320cf6f705">GetRootIndex</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespace_c_make_r_c_1_1_img_1_1anonymous__namespace_02win32__png_8hpp_03_1a8ecb64d8282ff68791d533320cf6f705"/><section>
+    <title>GetRootIndex()</title>
+<indexterm><primary>GetRootIndex</primary><secondary>CMakeRC::Img::anonymous_namespace{win32_png.hpp}</secondary></indexterm>
+<indexterm><primary>CMakeRC::Img::anonymous_namespace{win32_png.hpp}</primary><secondary>GetRootIndex</secondary></indexterm>
+<para><computeroutput>const <link linkend="_win32__resource_8hpp_1aa6bfcc93f2ea5b758d45be8c4bc500b0">IDXRES</link> &amp; CMakeRC::Img::anonymous_namespace{win32_png.hpp}::GetRootIndex ( )</computeroutput></para></section>
+</section>
+</section>

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d0/d11/win32___c_com_ptr_base_8hpp" kind="file" language="C++">
+    <compoundname>win32_CComPtrBase.hpp</compoundname>
+    <innerclass refid="d7/de3/class_c_com_ptr_base" prot="public">CComPtrBase</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="d0/d11/win32___c_com_ptr_base_8hpp_1a4c277da141207588c2d2caf4fd8b3a14" prot="public" static="no">
+        <name>__WIN32_CORE_MEMORY_CCOMPTRBASE_HPP__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/memory/win32_CComPtrBase.hpp" line="16" column="9" bodyfile="include/CxxWin/modules/Win32_core/memory/win32_CComPtrBase.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>StoneyDSP (<ulink url="mailto:nathanjhood@googlemail.com">nathanjhood@googlemail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>1.0.0 </para>
+</simplesect>
+<simplesect kind="date"><para>2023-09-04</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2023</para>
+</simplesect>
+<ref refid="" kindref="compound">https://learn.microsoft.com/en-us/cpp/atl/reference/ccomptrbase-class?view=msvc-170</ref></para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="d0/d11/win32___c_com_ptr_base_8hpp_1a4c277da141207588c2d2caf4fd8b3a14" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__WIN32_CORE_MEMORY_CCOMPTRBASE_HPP__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="33" refid="d7/de3/class_c_com_ptr_base" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d7/de3/class_c_com_ptr_base" kindref="compound">CComPtrBase</ref></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="d7/de3/class_c_com_ptr_base_1a890ee71812369fc3bab1d033dc9c8e5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/de3/class_c_com_ptr_base_1a890ee71812369fc3bab1d033dc9c8e5e" kindref="member">~CComPtrBase</ref>()<sp/>throw();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="d7/de3/class_c_com_ptr_base_1a4d1eb556a56b2cbe38dd1676c45b29f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>HRESULT<sp/><ref refid="d7/de3/class_c_com_ptr_base_1a4d1eb556a56b2cbe38dd1676c45b29f9" kindref="member">CoCreateInstance</ref>(LPCOLESTR<sp/>szProgID,<sp/>LPUNKNOWN<sp/>pUnkOuter<sp/>=<sp/>NULL,<sp/>DWORD<sp/>dwClsContext<sp/>=<sp/>CLSCTX_ALL)<sp/>throw();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="d7/de3/class_c_com_ptr_base_1a779dcf0ac815f4d2fbba20cabcd01e90" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>HRESULT<sp/><ref refid="d7/de3/class_c_com_ptr_base_1a4d1eb556a56b2cbe38dd1676c45b29f9" kindref="member">CoCreateInstance</ref>(REFCLSID<sp/>rclsid,<sp/>LPUNKNOWN<sp/>pUnkOuter<sp/>=<sp/>NULL,<sp/>DWORD<sp/>dwClsContext<sp/>=<sp/>CLSCTX_ALL)<sp/>throw();</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="d7/de3/class_c_com_ptr_base_1a3384d24c3feb44062843fa259fc72c71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>HRESULT<sp/><ref refid="d7/de3/class_c_com_ptr_base_1a3384d24c3feb44062843fa259fc72c71" kindref="member">Advise</ref>(IUnknown*<sp/>pUnk,<sp/>const<sp/>IID&amp;<sp/>iid,<sp/>LPDWORD<sp/>pdw)<sp/>throw();</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="d7/de3/class_c_com_ptr_base_1afc3a9815853fe9a1029036ef41aaa7b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/de3/class_c_com_ptr_base_1afc3a9815853fe9a1029036ef41aaa7b0" kindref="member">Attach</ref>(T*<sp/>p2)<sp/>throw();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="d7/de3/class_c_com_ptr_base_1a90711bda95e1d33b8d771d1f15d47a17" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T*<sp/><ref refid="d7/de3/class_c_com_ptr_base_1a90711bda95e1d33b8d771d1f15d47a17" kindref="member">p</ref>;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="include/CxxWin/modules/Win32_core/memory/win32_CComPtrBase.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_cmrc_8hpp" xml:lang="en-US">
+<title>include/CxxWin/modules/Win32_resource/cmrc.hpp File Reference</title>
+<indexterm><primary>include/CxxWin/modules/Win32_resource/cmrc.hpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;cassert&gt;<?linebreak?>#include &lt;functional&gt;<?linebreak?>#include &lt;iterator&gt;<?linebreak?>#include &lt;list&gt;<?linebreak?>#include &lt;map&gt;<?linebreak?>#include &lt;mutex&gt;<?linebreak?>#include &lt;string&gt;<?linebreak?>#include &lt;system_error&gt;<?linebreak?>#include &lt;type_traits&gt;<?linebreak?></programlisting><simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_c_make_r_c_1_1_file">CMakeRC::File</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_c_make_r_c_1_1_detail_1_1_file_or_directory">CMakeRC::Detail::FileOrDirectory</link></para>
+</listitem>
+            <listitem><para>union <link linkend="_union_c_make_r_c_1_1_detail_1_1_file_or_directory_1_1__data__t">CMakeRC::Detail::FileOrDirectory::_data_t</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_c_make_r_c_1_1_detail_1_1_file_data">CMakeRC::Detail::FileData</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_c_make_r_c_1_1_detail_1_1_created_sub_directory">CMakeRC::Detail::CreatedSubDirectory</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_c_make_r_c_1_1_detail_1_1_directory">CMakeRC::Detail::Directory</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator">CMakeRC::Detail::Directory::Iterator</link></para>
+
+<para>The &apos;<link linkend="_class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator">Iterator</link>&apos; class. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_c_make_r_c_1_1_directory_entry">CMakeRC::DirectoryEntry</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_c_make_r_c_1_1_embedded_file_system">CMakeRC::EmbeddedFileSystem</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_c_make_r_c">CMakeRC</link></para>
+
+<para>&apos; </para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_c_make_r_c_1_1_detail">CMakeRC::Detail</link></para>
+
+<para>&apos; </para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespace_detail">Detail</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_cmrc_8hpp_1a90b3371ddedc25c22f630ca47cc4edce">CMRC_NO_EXCEPTIONS</link>&#160;&#160;&#160;1</para>
+
+<para>If defined: Disable C++ exceptions in <link linkend="_namespace_c_make_r_c">CMakeRC</link> structures. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_cmrc_8hpp_1a9917f998182dbff85ff5698bb6582f0b">CMRC_DECLARE</link>(LibId)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Typedefs    </title>
+        <itemizedlist>
+            <listitem><para>using <link linkend="_namespace_c_make_r_c_1_1_detail_1af8b7b0ba529bcc74373e4ee395b54529">CMakeRC::Detail::IndexType</link> = std::map&lt; std::string, const <link linkend="_class_c_make_r_c_1_1_detail_1_1_file_or_directory">CMakeRC::Detail::FileOrDirectory</link> * &gt;</para>
+</listitem>
+            <listitem><para>using <link linkend="_namespace_c_make_r_c_1a5b0306b0207652d136c3ae6b498102cd">CMakeRC::DirectoryIterator</link> = <link linkend="_class_c_make_r_c_1_1_detail_1_1_directory_1_1_iterator">Detail::Directory::Iterator</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>std::pair&lt; std::string, std::string &gt; <link linkend="_namespace_c_make_r_c_1_1_detail_1a66d1ba033d0fd3128f0c20fc3652070a">CMakeRC::Detail::SplitPath</link> (const std::string &amp;path)</para>
+</listitem>
+            <listitem><para>std::string <link linkend="_namespace_c_make_r_c_1_1_detail_1a6553506577f146fdcb7e1588a74dd102">CMakeRC::Detail::NormalizePath</link> (std::string path)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><formalpara><title>Author</title>
+
+<para>vector-of-bool <link xlink:href="mailto:vectorofbool@gmail.com">vectorofbool@gmail.com</link> </para>
+</formalpara>
+<formalpara><title>Version</title>
+
+<para>2.0.1 </para>
+</formalpara>
+<formalpara><title>Date</title>
+
+<para>2018-09-08</para>
+</formalpara>
+<formalpara><title>Copyright</title>
+
+<para>Copyright (c) 2017</para>
+</formalpara>
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</para>
+
+<para>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</para>
+
+<para>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. </para>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_cmrc_8hpp_1a9917f998182dbff85ff5698bb6582f0b"/><section>
+    <title>CMRC_DECLARE</title>
+<indexterm><primary>CMRC_DECLARE</primary><secondary>cmrc.hpp</secondary></indexterm>
+<indexterm><primary>cmrc.hpp</primary><secondary>CMRC_DECLARE</secondary></indexterm>
+<para><computeroutput>#define CMRC_DECLARE( LibId)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered"><emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_c_make_r_c">CMakeRC</link>&#32;\
+{&#32;\
+<emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_detail">Detail</link>&#32;\
+{&#32;\
+<emphasis role="keyword">struct&#32;</emphasis>Dummy;&#32;\
+static_assert(std::is_same&lt;Dummy,&#32;::CMakeRC::Detail::Dummy&gt;::value,&#32;<emphasis role="stringliteral">&quot;CMRC_DECLARE()&#32;must&#32;only&#32;appear&#32;at&#32;the&#32;global&#32;namespace&quot;</emphasis>);&#32;\
+}&#32;\
+}&#32;\
+<emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_c_make_r_c">CMakeRC</link>&#32;\
+{&#32;\
+<emphasis role="keyword">namespace&#32;</emphasis>LibId&#32;\
+{&#32;\
+<link linkend="_class_c_make_r_c_1_1_embedded_file_system">CMakeRC::EmbeddedFileSystem</link>&#32;<link linkend="_namespace_c_make_r_c_1_1_img_1a0d7bf8b21dd960329ae3658a8510c405">GetFileSystem</link>();&#32;\
+}&#32;\
+}&#32;<emphasis role="keyword">static_assert</emphasis>(<emphasis role="keyword">true</emphasis>,&#32;<emphasis role="stringliteral">&quot;&quot;</emphasis>)
+</programlisting></section>
+<anchor xml:id="_cmrc_8hpp_1a90b3371ddedc25c22f630ca47cc4edce"/><section>
+    <title>CMRC_NO_EXCEPTIONS</title>
+<indexterm><primary>CMRC_NO_EXCEPTIONS</primary><secondary>cmrc.hpp</secondary></indexterm>
+<indexterm><primary>cmrc.hpp</primary><secondary>CMRC_NO_EXCEPTIONS</secondary></indexterm>
+<para><computeroutput>#define CMRC_NO_EXCEPTIONS&#160;&#160;&#160;1</computeroutput></para><para>
+
+<para>If defined: Disable C++ exceptions in <link linkend="_namespace_c_make_r_c">CMakeRC</link> structures. </para>
+</para>
+</section>
+</section>
+</section>

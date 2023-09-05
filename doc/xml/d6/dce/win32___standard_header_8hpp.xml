@@ -1,0 +1,663 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d6/dce/win32___standard_header_8hpp" kind="file" language="C++">
+    <compoundname>win32_StandardHeader.hpp</compoundname>
+    <includes local="no">algorithm</includes>
+    <includes local="no">array</includes>
+    <includes local="no">atomic</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">condition_variable</includes>
+    <includes local="no">cstddef</includes>
+    <includes local="no">functional</includes>
+    <includes local="no">future</includes>
+    <includes local="no">iomanip</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">limits</includes>
+    <includes local="no">list</includes>
+    <includes local="no">map</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">mutex</includes>
+    <includes local="no">numeric</includes>
+    <includes local="no">optional</includes>
+    <includes local="no">queue</includes>
+    <includes local="no">set</includes>
+    <includes local="no">sstream</includes>
+    <includes local="no">thread</includes>
+    <includes local="no">typeindex</includes>
+    <includes local="no">unordered_map</includes>
+    <includes local="no">unordered_set</includes>
+    <includes local="no">utility</includes>
+    <includes local="no">variant</includes>
+    <includes local="no">vector</includes>
+    <includes refid="de/d3b/win32___compiler_support_8hpp" local="yes">win32_CompilerSupport.hpp</includes>
+    <includes refid="d0/d74/win32___platform_defs_8hpp" local="yes">win32_PlatformDefs.hpp</includes>
+    <includedby refid="d6/dbf/win32__core_8hpp" local="yes">include/CxxWin/modules/Win32_core/win32_core.hpp</includedby>
+    <incdepgraph>
+      <node id="29">
+        <label>win32_CompilerSupport.hpp</label>
+        <link refid="de/d3b/win32___compiler_support_8hpp"/>
+      </node>
+      <node id="30">
+        <label>win32_PlatformDefs.hpp</label>
+        <link refid="d0/d74/win32___platform_defs_8hpp"/>
+      </node>
+      <node id="1">
+        <label>include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp</label>
+        <link refid="d6/dce/win32___standard_header_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>algorithm</label>
+      </node>
+      <node id="3">
+        <label>array</label>
+      </node>
+      <node id="4">
+        <label>atomic</label>
+      </node>
+      <node id="5">
+        <label>cmath</label>
+      </node>
+      <node id="6">
+        <label>condition_variable</label>
+      </node>
+      <node id="7">
+        <label>cstddef</label>
+      </node>
+      <node id="8">
+        <label>functional</label>
+      </node>
+      <node id="9">
+        <label>future</label>
+      </node>
+      <node id="10">
+        <label>iomanip</label>
+      </node>
+      <node id="11">
+        <label>iostream</label>
+      </node>
+      <node id="12">
+        <label>limits</label>
+      </node>
+      <node id="13">
+        <label>list</label>
+      </node>
+      <node id="14">
+        <label>map</label>
+      </node>
+      <node id="15">
+        <label>memory</label>
+      </node>
+      <node id="16">
+        <label>mutex</label>
+      </node>
+      <node id="17">
+        <label>numeric</label>
+      </node>
+      <node id="18">
+        <label>optional</label>
+      </node>
+      <node id="19">
+        <label>queue</label>
+      </node>
+      <node id="20">
+        <label>set</label>
+      </node>
+      <node id="21">
+        <label>sstream</label>
+      </node>
+      <node id="22">
+        <label>thread</label>
+      </node>
+      <node id="23">
+        <label>typeindex</label>
+      </node>
+      <node id="24">
+        <label>unordered_map</label>
+      </node>
+      <node id="25">
+        <label>unordered_set</label>
+      </node>
+      <node id="26">
+        <label>utility</label>
+      </node>
+      <node id="27">
+        <label>variant</label>
+      </node>
+      <node id="28">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>include/CxxWin/MainComponent.cpp</label>
+        <link refid="db/dfc/_main_component_8cpp"/>
+      </node>
+      <node id="3">
+        <label>include/CxxWin/MainComponent.hpp</label>
+        <link refid="df/d11/_main_component_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>include/CxxWin/WinMain.cpp</label>
+        <link refid="da/d9b/_win_main_8cpp"/>
+      </node>
+      <node id="5">
+        <label>include/CxxWin/WinMain.hpp</label>
+        <link refid="df/dff/_win_main_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp</label>
+        <link refid="d6/dce/win32___standard_header_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>include/CxxWin/modules/Win32_core/win32_core.cpp</label>
+        <link refid="d1/dd0/win32__core_8cpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/CxxWin/modules/Win32_core/win32_core.hpp</label>
+        <link refid="d6/dbf/win32__core_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>include/CxxWin/modules/Win32_core/win32_core.mm</label>
+        <link refid="d9/db1/win32__core_8mm"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="user-defined">
+      <header>DEC</header>
+      <description><para>Convert integer to decimal digit literals. </para>
+</description>
+      <memberdef kind="define" id="d6/dce/win32___standard_header_8hpp_1ad1280362da42492bbc11aa78cbf776ad" prot="public" static="no">
+        <name>DEC</name>
+        <param><defname>n</defname></param>
+        <initializer>	   (&apos;0&apos; + (((n) / 10000000)%10)), \
+	   (&apos;0&apos; + (((n) / 1000000)%10)),  \
+	   (&apos;0&apos; + (((n) / 100000)%10)),   \
+	   (&apos;0&apos; + (((n) / 10000)%10)),    \
+	   (&apos;0&apos; + (((n) / 1000)%10)),     \
+	   (&apos;0&apos; + (((n) / 100)%10)),      \
+	   (&apos;0&apos; + (((n) / 10)%10)),       \
+	   (&apos;0&apos; +  ((n) % 10))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" line="66" column="12" bodyfile="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>HEX</header>
+      <description><para>Convert integer to hex digit literals. </para>
+</description>
+      <memberdef kind="define" id="d6/dce/win32___standard_header_8hpp_1a46d5d95daa1bef867bd0179594310ed5" prot="public" static="no">
+        <name>HEX</name>
+        <param><defname>n</defname></param>
+        <initializer>	    (&apos;0&apos; + ((n)&gt;&gt;28 &amp; 0xF)), \
+	    (&apos;0&apos; + ((n)&gt;&gt;24 &amp; 0xF)), \
+	    (&apos;0&apos; + ((n)&gt;&gt;20 &amp; 0xF)), \
+	    (&apos;0&apos; + ((n)&gt;&gt;16 &amp; 0xF)), \
+	    (&apos;0&apos; + ((n)&gt;&gt;12 &amp; 0xF)), \
+	    (&apos;0&apos; + ((n)&gt;&gt;8  &amp; 0xF)), \
+		(&apos;0&apos; + ((n)&gt;&gt;4  &amp; 0xF)), \
+	 	(&apos;0&apos; + ((n)     &amp; 0xF))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" line="82" column="12" bodyfile="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d6/dce/win32___standard_header_8hpp_1a34ef946465e53d7c48394ac3fe34b710" prot="public" static="no">
+        <name>CXXWIN_VERSION_MAJOR</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Current version number (major). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" line="95" column="9" bodyfile="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d6/dce/win32___standard_header_8hpp_1a3420a58365670f121b4606b7c3ece482" prot="public" static="no">
+        <name>CXXWIN_VERSION_MINOR</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>Current version number (minor). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" line="97" column="9" bodyfile="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d6/dce/win32___standard_header_8hpp_1a258f4db1e4a861c5044652b560da3a3b" prot="public" static="no">
+        <name>CXXWIN_VERSION_PATCH</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Current version number (patch). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" line="99" column="9" bodyfile="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d6/dce/win32___standard_header_8hpp_1a7682547da86a07aa8c6277893f4bfefe" prot="public" static="no">
+        <name>CXXWIN_VERSION</name>
+        <initializer>((<ref refid="d6/dce/win32___standard_header_8hpp_1a34ef946465e53d7c48394ac3fe34b710" kindref="member">CXXWIN_VERSION_MAJOR</ref> &lt;&lt; 16) + (<ref refid="d6/dce/win32___standard_header_8hpp_1a3420a58365670f121b4606b7c3ece482" kindref="member">CXXWIN_VERSION_MINOR</ref> &lt;&lt; 8) + <ref refid="d6/dce/win32___standard_header_8hpp_1a258f4db1e4a861c5044652b560da3a3b" kindref="member">CXXWIN_VERSION_PATCH</ref>)</initializer>
+        <briefdescription>
+<para>Current version number. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Bits 16 to 32 = major version. Bits 8 to 16 = minor version. Bits 0 to 8 = point release. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" line="107" column="9" bodyfile="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d6/dce/win32___standard_header_8hpp_1afa65b5b07bc85fd4ad0c1c73f51a28b3" prot="public" static="no">
+        <name>CXXWIN_VERSION_ID</name>
+        <initializer>    [[maybe_unused]] volatile auto CxxWinVersionId = &quot;cxxwin_version_&quot; <ref refid="d6/dce/win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8" kindref="member">STRINGIFY</ref>(<ref refid="d6/dce/win32___standard_header_8hpp_1a34ef946465e53d7c48394ac3fe34b710" kindref="member">CXXWIN_VERSION_MAJOR</ref>) &quot;_&quot; <ref refid="d6/dce/win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8" kindref="member">STRINGIFY</ref>(<ref refid="d6/dce/win32___standard_header_8hpp_1a3420a58365670f121b4606b7c3ece482" kindref="member">CXXWIN_VERSION_MINOR</ref>) &quot;_&quot; <ref refid="d6/dce/win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8" kindref="member">STRINGIFY</ref>(<ref refid="d6/dce/win32___standard_header_8hpp_1a258f4db1e4a861c5044652b560da3a3b" kindref="member">CXXWIN_VERSION_PATCH</ref>);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" line="110" column="9" bodyfile="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d6/dce/win32___standard_header_8hpp_1a33a68742d73ec73e8c0d4d4585d8fe4b" prot="public" static="no">
+        <name>CXXWIN_LONG_NAME</name>
+        <initializer>TEXT(&quot;CxxWin&quot;) <ref refid="d6/dce/win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8" kindref="member">STRINGIFY</ref>(.) <ref refid="d6/dce/win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8" kindref="member">STRINGIFY</ref>(<ref refid="d6/dce/win32___standard_header_8hpp_1a34ef946465e53d7c48394ac3fe34b710" kindref="member">CXXWIN_VERSION_MAJOR</ref>) <ref refid="d6/dce/win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8" kindref="member">STRINGIFY</ref>(.) <ref refid="d6/dce/win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8" kindref="member">STRINGIFY</ref>(<ref refid="d6/dce/win32___standard_header_8hpp_1a3420a58365670f121b4606b7c3ece482" kindref="member">CXXWIN_VERSION_MINOR</ref>) <ref refid="d6/dce/win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8" kindref="member">STRINGIFY</ref>(.) <ref refid="d6/dce/win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8" kindref="member">STRINGIFY</ref>(<ref refid="d6/dce/win32___standard_header_8hpp_1a258f4db1e4a861c5044652b560da3a3b" kindref="member">CXXWIN_VERSION_PATCH</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" line="114" column="9" bodyfile="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="d6/dce/win32___standard_header_8hpp_1af0ac46c948b1f0c3cc4a9222e77a08f6" prot="public" static="no">
+        <name>_WIN32_STANDARDHEADER_HPP_</name>
+        <briefdescription>
+<para>Contains some standard definitions, functions, and includes familiar to all supported platforms and architectures. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" line="20" column="9" bodyfile="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d6/dce/win32___standard_header_8hpp_1a54d2d7742701f3f112afbcd8d4f9ccdb" prot="public" static="no">
+        <name>__has_attribute</name>
+        <param><defname>x</defname></param>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>If the compiler does not have __has_*(), pretend the answer is always no. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" line="26" column="9" bodyfile="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d6/dce/win32___standard_header_8hpp_1aea1c4f7b66a67b78ad863176338dae8d" prot="public" static="no">
+        <name>__has_extension</name>
+        <initializer><ref refid="d6/dce/win32___standard_header_8hpp_1af989845e24678c452b9222afdac95e7f" kindref="member">__has_feature</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" line="29" column="9" bodyfile="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d6/dce/win32___standard_header_8hpp_1af989845e24678c452b9222afdac95e7f" prot="public" static="no">
+        <name>__has_feature</name>
+        <param><defname>x</defname></param>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" line="32" column="9" bodyfile="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d6/dce/win32___standard_header_8hpp_1ae5510d82e4946f1656f4969911c54736" prot="public" static="no">
+        <name>__has_include</name>
+        <param><defname>x</defname></param>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" line="35" column="9" bodyfile="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d6/dce/win32___standard_header_8hpp_1a447121dcab4275b7839a56082b7a1ab8" prot="public" static="no">
+        <name>__has_builtin</name>
+        <param><defname>x</defname></param>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" line="38" column="9" bodyfile="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d6/dce/win32___standard_header_8hpp_1a2ae9b72bb13abaabfcf2ee0ba7d3fa1d" prot="public" static="no">
+        <name>STRINGIFY_HELPER</name>
+        <param><defname>X</defname></param>
+        <initializer>#X</initializer>
+        <briefdescription>
+<para>Helper macro to quote an argument, turning it into a string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" line="43" column="11" bodyfile="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d6/dce/win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8" prot="public" static="no">
+        <name>STRINGIFY</name>
+        <param><defname>X</defname></param>
+        <initializer><ref refid="d6/dce/win32___standard_header_8hpp_1a2ae9b72bb13abaabfcf2ee0ba7d3fa1d" kindref="member">STRINGIFY_HELPER</ref>(X)</initializer>
+        <briefdescription>
+<para>Quote the argument, turning it into a string. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" line="48" column="11" bodyfile="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d6/dce/win32___standard_header_8hpp_1afcbd7bcadc0fdb52f1453eed7446606c" prot="public" static="no">
+        <name>CONCAT_HELPER</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer>a##b</initializer>
+        <briefdescription>
+<para>Helper macro to concatenate two tokens to form a new token. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" line="53" column="11" bodyfile="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d6/dce/win32___standard_header_8hpp_1a88fa737059e67b4b17ec980e5877361e" prot="public" static="no">
+        <name>CONCAT</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer><ref refid="d6/dce/win32___standard_header_8hpp_1afcbd7bcadc0fdb52f1453eed7446606c" kindref="member">CONCAT_HELPER</ref>(a, b)</initializer>
+        <briefdescription>
+<para>Concatenate two tokens to form a new token. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" line="58" column="11" bodyfile="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Contains some standard definitions, functions, and includes familiar to all supported platforms and architectures. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>StoneyDSP (<ulink url="mailto:nathanjhood@googlemail.com">nathanjhood@googlemail.com</ulink>)</para>
+</simplesect>
+</para>
+<para><simplesect kind="version"><para>1.0.0 </para>
+</simplesect>
+<simplesect kind="date"><para>2023-08-24</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="d6/dce/win32___standard_header_8hpp_1af0ac46c948b1f0c3cc4a9222e77a08f6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_WIN32_STANDARDHEADER_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__has_attribute</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="d6/dce/win32___standard_header_8hpp_1a54d2d7742701f3f112afbcd8d4f9ccdb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__has_attribute(x)<sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__has_extension</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="d6/dce/win32___standard_header_8hpp_1aea1c4f7b66a67b78ad863176338dae8d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__has_extension<sp/><sp/><sp/><sp/><sp/>__has_feature</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__has_feature</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="d6/dce/win32___standard_header_8hpp_1af989845e24678c452b9222afdac95e7f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__has_feature(x)<sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__has_include</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="d6/dce/win32___standard_header_8hpp_1ae5510d82e4946f1656f4969911c54736" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__has_include(x)<sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__has_builtin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="d6/dce/win32___standard_header_8hpp_1a447121dcab4275b7839a56082b7a1ab8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__has_builtin(x)<sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>STRINGIFY_HELPER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="d6/dce/win32___standard_header_8hpp_1a2ae9b72bb13abaabfcf2ee0ba7d3fa1d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>STRINGIFY_HELPER(X)<sp/>#X</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>STRINGIFY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="d6/dce/win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>STRINGIFY(X)<sp/>STRINGIFY_HELPER(X)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CONCAT_HELPER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="d6/dce/win32___standard_header_8hpp_1afcbd7bcadc0fdb52f1453eed7446606c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>CONCAT_HELPER(a,<sp/>b)<sp/>a##b</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CONCAT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="d6/dce/win32___standard_header_8hpp_1a88fa737059e67b4b17ec980e5877361e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>CONCAT(a,<sp/>b)<sp/>CONCAT_HELPER(a,<sp/>b)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(DEC)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="d6/dce/win32___standard_header_8hpp_1ad1280362da42492bbc11aa78cbf776ad" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/>define<sp/><sp/>DEC(n)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>(((n)<sp/>/<sp/>10000000)%10)),<sp/>\</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>(((n)<sp/>/<sp/>1000000)%10)),<sp/><sp/>\</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>(((n)<sp/>/<sp/>100000)%10)),<sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>(((n)<sp/>/<sp/>10000)%10)),<sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>(((n)<sp/>/<sp/>1000)%10)),<sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>(((n)<sp/>/<sp/>100)%10)),<sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>(((n)<sp/>/<sp/>10)%10)),<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(&apos;0&apos;<sp/>+<sp/><sp/>((n)<sp/>%<sp/>10))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(HEX)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="d6/dce/win32___standard_header_8hpp_1a46d5d95daa1bef867bd0179594310ed5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/>define<sp/><sp/>HEX(n)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>((n)&gt;&gt;28<sp/>&amp;<sp/>0xF)),<sp/>\</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>((n)&gt;&gt;24<sp/>&amp;<sp/>0xF)),<sp/>\</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>((n)&gt;&gt;20<sp/>&amp;<sp/>0xF)),<sp/>\</highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>((n)&gt;&gt;16<sp/>&amp;<sp/>0xF)),<sp/>\</highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>((n)&gt;&gt;12<sp/>&amp;<sp/>0xF)),<sp/>\</highlight></codeline>
+<codeline lineno="88"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>((n)&gt;&gt;8<sp/><sp/>&amp;<sp/>0xF)),<sp/>\</highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>((n)&gt;&gt;4<sp/><sp/>&amp;<sp/>0xF)),<sp/>\</highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(&apos;0&apos;<sp/>+<sp/>((n)<sp/><sp/><sp/><sp/><sp/>&amp;<sp/>0xF))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment">//==============================================================================</highlight></codeline>
+<codeline lineno="95" refid="d6/dce/win32___standard_header_8hpp_1a34ef946465e53d7c48394ac3fe34b710" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>CXXWIN_VERSION_MAJOR<sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="d6/dce/win32___standard_header_8hpp_1a3420a58365670f121b4606b7c3ece482" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CXXWIN_VERSION_MINOR<sp/><sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="d6/dce/win32___standard_header_8hpp_1a258f4db1e4a861c5044652b560da3a3b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CXXWIN_VERSION_PATCH<sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="d6/dce/win32___standard_header_8hpp_1a7682547da86a07aa8c6277893f4bfefe" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CXXWIN_VERSION<sp/><sp/><sp/>((CXXWIN_VERSION_MAJOR<sp/>&lt;&lt;<sp/>16)<sp/>+<sp/>(CXXWIN_VERSION_MINOR<sp/>&lt;&lt;<sp/>8)<sp/>+<sp/>CXXWIN_VERSION_PATCH)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!<sp/>DOXYGEN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="d6/dce/win32___standard_header_8hpp_1afa65b5b07bc85fd4ad0c1c73f51a28b3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CXXWIN_VERSION_ID<sp/>\</highlight></codeline>
+<codeline lineno="111"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>[[maybe_unused]]<sp/>volatile<sp/>auto<sp/>CxxWinVersionId<sp/>=<sp/>&quot;cxxwin_version_&quot;</highlight><highlight class="normal"><sp/>STRINGIFY(CXXWIN_VERSION_MAJOR)<sp/>&quot;_&quot;<sp/>STRINGIFY(CXXWIN_VERSION_MINOR)<sp/>&quot;_&quot;<sp/>STRINGIFY(CXXWIN_VERSION_PATCH);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="d6/dce/win32___standard_header_8hpp_1a33a68742d73ec73e8c0d4d4585d8fe4b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CXXWIN_LONG_NAME<sp/>TEXT(&quot;CxxWin&quot;</highlight><highlight class="normal">)<sp/>STRINGIFY(.)<sp/>STRINGIFY(CXXWIN_VERSION_MAJOR)<sp/>STRINGIFY(.)<sp/>STRINGIFY(CXXWIN_VERSION_MINOR)<sp/>STRINGIFY(.)<sp/>STRINGIFY(CXXWIN_VERSION_PATCH)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">//<sp/>const<sp/>wchar_t*<sp/>str<sp/>=<sp/>{<sp/>CXXWIN_LONG_NAME<sp/>};</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="comment">//==============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;array&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;atomic&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;condition_variable&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstddef&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;future&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iomanip&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;limits&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;list&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mutex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;numeric&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;optional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;queue&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;thread&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;typeindex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unordered_map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unordered_set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;variant&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="comment">//==============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="de/d3b/win32___compiler_support_8hpp" kindref="compound">win32_CompilerSupport.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d0/d74/win32___platform_defs_8hpp" kindref="compound">win32_PlatformDefs.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="comment">//==============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Now<sp/>we&apos;ll<sp/>include<sp/>some<sp/>common<sp/>OS<sp/>headers..</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="comment">//<sp/>JUCE_BEGIN_IGNORE_WARNINGS_MSVC<sp/>(4514<sp/>4245<sp/>4100)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>MSVC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>include<sp/>&lt;intrin.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__PLATFORM_IS_MAC)<sp/>||<sp/>defined(__PLATFORM_IS_IOS)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>include<sp/>&lt;libkern/OSAtomic.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>include<sp/>&lt;xlocale.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>include<sp/>&lt;signal.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__PLATFORM_IS_LINUX)<sp/>||<sp/>defined(__PLATFORM_IS_BSD)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>include<sp/>&lt;signal.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>if<sp/>__INTEL_COMPILER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/>if<sp/>__ia64__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/><sp/><sp/>include<sp/>&lt;ia64intrin.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/>else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/><sp/><sp/>include<sp/>&lt;ia32intrin.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/><sp/><sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>MSVC<sp/>&amp;&amp;<sp/>_DEBUG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>include<sp/>&lt;crtdbg.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="comment">//<sp/>JUCE_END_IGNORE_WARNINGS_MSVC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__PLATFORM_IS_MINGW</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>include<sp/>&lt;sys/types.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__PLATFORM_IS_ANDROID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>include<sp/>&lt;byteswap.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="comment">//<sp/>undef<sp/>symbols<sp/>that<sp/>are<sp/>sometimes<sp/>set<sp/>by<sp/>3rd-party<sp/>headers..</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#undef<sp/>TYPE_BOOL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>max</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>min</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>major</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>minor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>KeyPress</highlight></codeline>
+    </programlisting>
+    <location file="include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp"/>
+  </compounddef>
+</doxygen>

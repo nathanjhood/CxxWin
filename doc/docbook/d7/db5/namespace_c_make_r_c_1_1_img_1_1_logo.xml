@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_c_make_r_c_1_1_img_1_1_logo" xml:lang="en-US">
+<title>CMakeRC::Img::Logo Namespace Reference</title>
+<indexterm><primary>CMakeRC::Img::Logo</primary></indexterm>
+<para>
+
+<para>&apos; </para>
+ 
+</para>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268">RCRESOURCEPTR</link> const <link linkend="_namespace_c_make_r_c_1_1_img_1_1_logo_1a73bc68f2a1a4f72b095cfe41620fc2f6">Logo_png_begin</link> = ::Logo_png_array</para>
+
+<para>Pointer to the beginning of &apos;Logo_png_array&apos;. </para>
+</listitem>
+            <listitem><para><link linkend="_win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268">RCRESOURCEPTR</link> const <link linkend="_namespace_c_make_r_c_1_1_img_1_1_logo_1ac1ee50cec4d537f6fd30cf6de616e97e">Logo_png_end</link> = ::Logo_png_array + 488</para>
+
+<para>Pointer to the end of &apos;Logo_png_array&apos;. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>&apos; </para>
+
+<para>The &apos;<link linkend="_namespace_c_make_r_c_1_1_img_1_1_logo">Logo</link>&apos; namespace. Contains declarations and definitions of binary-compiled &apos;Logo.png&apos; for interacting with <link linkend="_namespace_win32">Win32</link> API. </para>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespace_c_make_r_c_1_1_img_1_1_logo_1a73bc68f2a1a4f72b095cfe41620fc2f6"/><section>
+    <title>Logo_png_begin</title>
+<indexterm><primary>Logo_png_begin</primary><secondary>CMakeRC::Img::Logo</secondary></indexterm>
+<indexterm><primary>CMakeRC::Img::Logo</primary><secondary>Logo_png_begin</secondary></indexterm>
+<para><computeroutput><link linkend="_win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268">RCRESOURCEPTR</link> const CMakeRC::Img::Logo::Logo_png_begin = ::Logo_png_array<computeroutput>[extern]</computeroutput></computeroutput></para><para>
+
+<para>Pointer to the beginning of &apos;Logo_png_array&apos;. </para>
+</para>
+</section>
+<anchor xml:id="_namespace_c_make_r_c_1_1_img_1_1_logo_1ac1ee50cec4d537f6fd30cf6de616e97e"/><section>
+    <title>Logo_png_end</title>
+<indexterm><primary>Logo_png_end</primary><secondary>CMakeRC::Img::Logo</secondary></indexterm>
+<indexterm><primary>CMakeRC::Img::Logo</primary><secondary>Logo_png_end</secondary></indexterm>
+<para><computeroutput><link linkend="_win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268">RCRESOURCEPTR</link> const CMakeRC::Img::Logo::Logo_png_end = ::Logo_png_array + 488<computeroutput>[extern]</computeroutput></computeroutput></para><para>
+
+<para>Pointer to the end of &apos;Logo_png_array&apos;. </para>
+</para>
+</section>
+</section>
+</section>

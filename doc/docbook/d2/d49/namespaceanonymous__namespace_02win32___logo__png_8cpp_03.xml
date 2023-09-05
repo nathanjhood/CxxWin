@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespaceanonymous__namespace_02win32___logo__png_8cpp_03" xml:lang="en-US">
+<title>anonymous_namespace{win32_Logo_png.cpp} Namespace Reference</title>
+<indexterm><primary>anonymous_namespace{win32_Logo_png.cpp}</primary></indexterm>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_win32__resource_8hpp_1a3589507c444d07ca84f3ec878da0e8ff">RCRESOURCE</link> <link linkend="_namespaceanonymous__namespace_02win32___logo__png_8cpp_03_1a124391fb64ab31df38182b1f155e09fa">Logo_png_array</link> [489]</para>
+
+<para>An array of bytes representing &apos;Logo.png&apos;. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespaceanonymous__namespace_02win32___logo__png_8cpp_03_1a124391fb64ab31df38182b1f155e09fa"/><section>
+    <title>Logo_png_array</title>
+<indexterm><primary>Logo_png_array</primary><secondary>anonymous_namespace{win32_Logo_png.cpp}</secondary></indexterm>
+<indexterm><primary>anonymous_namespace{win32_Logo_png.cpp}</primary><secondary>Logo_png_array</secondary></indexterm>
+<para><computeroutput><link linkend="_win32__resource_8hpp_1a3589507c444d07ca84f3ec878da0e8ff">RCRESOURCE</link> anonymous_namespace{win32_Logo_png.cpp}::Logo_png_array[489]</computeroutput></para><para>
+
+<para>An array of bytes representing &apos;Logo.png&apos;. </para>
+</para>
+
+<para><formalpara><title>See also</title>
+
+<para>&apos;Logo.png&apos; </para>
+</formalpara>
+</para>
+</section>
+</section>
+</section>

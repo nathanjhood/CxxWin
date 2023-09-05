@@ -1,0 +1,88 @@
+.TH "DPIScale" 3Version 1.0.1" "CxxWin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DPIScale \- The '\fBDPIScale\fP' class\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <win32_DPIScale\&.hpp>\fP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBInitialize\fP (ID2D1Factory *pFactory)"
+.br
+.RI "The 'Initialize' function\&. "
+.ti -1c
+.RI "template<typename T > static D2D1_POINT_2F \fBPixelsToDips\fP (T x, T y)"
+.br
+.RI "Pixels to DIP's\&. "
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static FLOAT \fBscaleX\fP = { 1\&.0F }"
+.br
+.RI "DPI-scaled position X co-ordinate\&. "
+.ti -1c
+.RI "static FLOAT \fBscaleY\fP = { 1\&.0F }"
+.br
+.RI "DPI-scaled position Y co-ordinate\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+The '\fBDPIScale\fP' class\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void DPIScale::Initialize (ID2D1Factory * pFactory)\fC [static]\fP"
+
+.PP
+The 'Initialize' function\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpFactory\fP 
+.RE
+.PP
+
+.SS "template<typename T > D2D1_POINT_2F DPIScale::PixelsToDips (T x, T y)\fC [static]\fP"
+
+.PP
+Pixels to DIP's\&. 
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fIT\fP 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIx\fP 
+.br
+\fIy\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+D2D1_POINT_2F 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "FLOAT DPIScale::scaleX = { 1\&.0F }\fC [static]\fP, \fC [private]\fP"
+
+.PP
+DPI-scaled position X co-ordinate\&. 
+.SS "FLOAT DPIScale::scaleY = { 1\&.0F }\fC [static]\fP, \fC [private]\fP"
+
+.PP
+DPI-scaled position Y co-ordinate\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CxxWin from the source code\&.

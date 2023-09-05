@@ -1,0 +1,502 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="da/d00/class_smart_pointer" kind="class" language="C++" prot="public">
+    <compoundname>SmartPointer</compoundname>
+    <includes refid="d6/d42/win32___smart_pointer_8hpp" local="no">win32_SmartPointer.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class ComClass</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="da/d00/class_smart_pointer_1aac6766043d71d6919260b32e3025f5ad" prot="private" static="no" mutable="no">
+        <type>ComClass *</type>
+        <definition>ComClass* SmartPointer&lt; ComClass &gt;::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <qualifiedname>SmartPointer::ptr</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>The underlying pointer member. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.hpp" line="75" column="14" bodyfile="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="da/d00/class_smart_pointer_1af23b718566d4beddf609e63d1f278459" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>SmartPointer&lt; ComClass &gt;::SmartPointer</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>SmartPointer</name>
+        <qualifiedname>SmartPointer::SmartPointer</qualifiedname>
+        <briefdescription>
+<para>Default-construct a new &apos;<ref refid="da/d00/class_smart_pointer" kindref="compound">SmartPointer</ref>&apos; object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.hpp" line="41" column="5" bodyfile="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.cpp" bodystart="34" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/class_smart_pointer_1a97fa335bc801171776f623bbb92b4757" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SmartPointer&lt; ComClass &gt;::SmartPointer</definition>
+        <argsstring>(ComClass *obj)</argsstring>
+        <name>SmartPointer</name>
+        <qualifiedname>SmartPointer::SmartPointer</qualifiedname>
+        <param>
+          <type>ComClass *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Copy-Construct a new &apos;<ref refid="da/d00/class_smart_pointer" kindref="compound">SmartPointer</ref>&apos; object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.hpp" line="42" column="5" bodyfile="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.cpp" bodystart="45" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/class_smart_pointer_1a68ce3998e4b3ac9ffaca59064adfdb11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SmartPointer&lt; ComClass &gt;::SmartPointer</definition>
+        <argsstring>(SmartPointer &amp;other)</argsstring>
+        <name>SmartPointer</name>
+        <qualifiedname>SmartPointer::SmartPointer</qualifiedname>
+        <param>
+          <type><ref refid="da/d00/class_smart_pointer" kindref="compound">SmartPointer</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Move-Construct a new &apos;<ref refid="da/d00/class_smart_pointer" kindref="compound">SmartPointer</ref>&apos; object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.hpp" line="43" column="5" bodyfile="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.cpp" bodystart="58" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/class_smart_pointer_1a85bb3a40507619ca59672273ba90271d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SmartPointer&lt; ComClass &gt;::~SmartPointer</definition>
+        <argsstring>()</argsstring>
+        <name>~SmartPointer</name>
+        <qualifiedname>SmartPointer::~SmartPointer</qualifiedname>
+        <briefdescription>
+<para>Destroy the &apos;<ref refid="da/d00/class_smart_pointer" kindref="compound">SmartPointer</ref>&apos; object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.hpp" line="44" column="5" bodyfile="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.cpp" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/class_smart_pointer_1a1a542a4be21e5f557947e271f136063a" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>SmartPointer&lt; ComClass &gt;::operator ComClass *</definition>
+        <argsstring>() CONST noexcept</argsstring>
+        <name>operator ComClass *</name>
+        <qualifiedname>SmartPointer::operator ComClass *</qualifiedname>
+        <briefdescription>
+<para>Conversion operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>ComClass* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.hpp" line="46" column="5" bodyfile="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.cpp" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/class_smart_pointer_1a684cf8a7fadb2431ef8486fe166537d9" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>ComClass &amp;</type>
+        <definition>ComClass &amp; SmartPointer&lt; ComClass &gt;::operator*</definition>
+        <argsstring>() CONST noexcept</argsstring>
+        <name>operator*</name>
+        <qualifiedname>SmartPointer::operator*</qualifiedname>
+        <briefdescription>
+<para>Conversion operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>ComClass&amp; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.hpp" line="47" column="14" bodyfile="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.cpp" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/class_smart_pointer_1a01c7fb69b9c39d04e85e6990dd24c5e9" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>ComClass *</type>
+        <definition>ComClass * SmartPointer&lt; ComClass &gt;::operator-&gt;</definition>
+        <argsstring>() CONST noexcept</argsstring>
+        <name>operator-&gt;</name>
+        <qualifiedname>SmartPointer::operator-&gt;</qualifiedname>
+        <briefdescription>
+<para>Conversion operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>ComClass* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.hpp" line="48" column="14" bodyfile="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.cpp" bodystart="102" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/class_smart_pointer_1a888097211726dc2ed5ee0e948ff49bf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="da/d00/class_smart_pointer" kindref="compound">SmartPointer</ref> &amp;</type>
+        <definition>SmartPointer&lt; ComClass &gt; &amp; SmartPointer&lt; ComClass &gt;::operator=</definition>
+        <argsstring>(ComClass *CONST newPtr)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>SmartPointer::operator=</qualifiedname>
+        <param>
+          <type>ComClass *CONST</type>
+          <declname>newPtr</declname>
+        </param>
+        <briefdescription>
+<para>Copy operator (pass-by-value). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newPtr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="da/d00/class_smart_pointer" kindref="compound">SmartPointer</ref>&amp; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.hpp" line="49" column="18" bodyfile="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.cpp" bodystart="114" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/class_smart_pointer_1a89af65521b23dbc25c36f8ecc197acba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="da/d00/class_smart_pointer" kindref="compound">SmartPointer</ref> &amp;</type>
+        <definition>SmartPointer&lt; ComClass &gt; &amp; SmartPointer&lt; ComClass &gt;::operator=</definition>
+        <argsstring>(CONST ComClass &amp;newPtr)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>SmartPointer::operator=</qualifiedname>
+        <param>
+          <type>CONST ComClass &amp;</type>
+          <declname>newPtr</declname>
+        </param>
+        <briefdescription>
+<para>Copy operator (const pass-by-reference). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newPtr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="da/d00/class_smart_pointer" kindref="compound">SmartPointer</ref>&amp; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.hpp" line="50" column="18" bodyfile="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.cpp" bodystart="130" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/class_smart_pointer_1a388d5622da034786e168895b1b936100" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ComClass **</type>
+        <definition>ComClass ** SmartPointer&lt; ComClass &gt;::resetAndGetAddress</definition>
+        <argsstring>()</argsstring>
+        <name>resetAndGetAddress</name>
+        <qualifiedname>SmartPointer::resetAndGetAddress</qualifiedname>
+        <briefdescription>
+<para>Release and nullify this pointer, and return it&apos;s memory address. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>ComClass** </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.hpp" line="51" column="14" bodyfile="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.cpp" bodystart="141" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/class_smart_pointer_1af569386f98a741151e4a6c9148fc415c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>HRESULT</type>
+        <definition>HRESULT SmartPointer&lt; ComClass &gt;::CoCreateInstance</definition>
+        <argsstring>(REFCLSID rclsid, DWORD dwClsContext=CLSCTX_INPROC_SERVER)</argsstring>
+        <name>CoCreateInstance</name>
+        <qualifiedname>SmartPointer::CoCreateInstance</qualifiedname>
+        <param>
+          <type>REFCLSID</type>
+          <declname>rclsid</declname>
+        </param>
+        <param>
+          <type>DWORD</type>
+          <declname>dwClsContext</declname>
+          <defval>CLSCTX_INPROC_SERVER</defval>
+        </param>
+        <briefdescription>
+<para>Creates and default-initializes a single object of the class associated with a specified &apos;CLSID&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rclsid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The &apos;CLSID&apos; associated with the data and code that will be used to create the object.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dwClsContext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>HRESULT </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.hpp" line="52" column="13" bodyfile="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.cpp" bodystart="159" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/class_smart_pointer_1a0fc132c1d919b1c6523789ed8687d44c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class otherComClass</type>
+          </param>
+        </templateparamlist>
+        <type>HRESULT</type>
+        <definition>HRESULT SmartPointer&lt; ComClass &gt;::QueryInterface</definition>
+        <argsstring>(REFCLSID rclsid, SmartPointer&lt; otherComClass &gt; &amp;destObj) CONST</argsstring>
+        <name>QueryInterface</name>
+        <qualifiedname>SmartPointer::QueryInterface</qualifiedname>
+        <param>
+          <type>REFCLSID</type>
+          <declname>rclsid</declname>
+        </param>
+        <param>
+          <type><ref refid="da/d00/class_smart_pointer" kindref="compound">SmartPointer</ref>&lt; otherComClass &gt; &amp;</type>
+          <declname>destObj</declname>
+        </param>
+        <briefdescription>
+<para>Query the interface to the underlying COM object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>otherComClass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rclsid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destObj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>HRESULT </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.hpp" line="55" column="13" bodyfile="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.cpp" bodystart="185" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/class_smart_pointer_1ae8195378156382f79c9cbd10b18f961d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class otherComClass</type>
+          </param>
+        </templateparamlist>
+        <type>HRESULT</type>
+        <definition>HRESULT SmartPointer&lt; ComClass &gt;::QueryInterface</definition>
+        <argsstring>(SmartPointer&lt; otherComClass &gt; &amp;destObj) CONST</argsstring>
+        <name>QueryInterface</name>
+        <qualifiedname>SmartPointer::QueryInterface</qualifiedname>
+        <param>
+          <type><ref refid="da/d00/class_smart_pointer" kindref="compound">SmartPointer</ref>&lt; otherComClass &gt; &amp;</type>
+          <declname>destObj</declname>
+        </param>
+        <briefdescription>
+<para>Query the interface to the underlying COM object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>otherComClass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>destObj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>HRESULT </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.hpp" line="58" column="13" bodyfile="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.cpp" bodystart="202" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/class_smart_pointer_1a698ca40a80fd57a62e769371505f2c78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class otherComClass</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="da/d00/class_smart_pointer" kindref="compound">SmartPointer</ref>&lt; otherComClass &gt;</type>
+        <definition>SmartPointer&lt; otherComClass &gt; SmartPointer&lt; ComClass &gt;::getInterface</definition>
+        <argsstring>() CONST</argsstring>
+        <name>getInterface</name>
+        <qualifiedname>SmartPointer::getInterface</qualifiedname>
+        <briefdescription>
+<para>Get an interface to the underlying COM object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>otherComClass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SmartPointer&lt;otherComClass&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.hpp" line="61" column="18" bodyfile="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.cpp" bodystart="215" bodyend="223"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="da/d00/class_smart_pointer_1a2bfb0ebe9f8d89c4c3158e752e66737f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SmartPointer&lt; ComClass &gt;::release</definition>
+        <argsstring>()</argsstring>
+        <name>release</name>
+        <qualifiedname>SmartPointer::release</qualifiedname>
+        <briefdescription>
+<para>Call the templated COM object pointer&apos;s underlying &apos;Release()&apos; method. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.hpp" line="65" column="10" bodyfile="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.cpp" bodystart="232" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d00/class_smart_pointer_1a166c58abb98f9ad23318ca64baf65dfa" prot="private" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>ComClass **</type>
+        <definition>ComClass ** SmartPointer&lt; ComClass &gt;::operator&amp;</definition>
+        <argsstring>() noexcept=delete</argsstring>
+        <name>operator&amp;</name>
+        <qualifiedname>SmartPointer::operator&amp;</qualifiedname>
+        <briefdescription>
+<para>&apos;Address-Of&apos; operator (innaccessible). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>ComClass** </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.hpp" line="72" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The &apos;<ref refid="da/d00/class_smart_pointer" kindref="compound">SmartPointer</ref>&apos; class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>ComClass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <location file="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.hpp" line="37" column="1" bodyfile="include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.hpp" bodystart="38" bodyend="76"/>
+    <listofallmembers>
+      <member refid="da/d00/class_smart_pointer_1af569386f98a741151e4a6c9148fc415c" prot="public" virt="non-virtual"><scope>SmartPointer</scope><name>CoCreateInstance</name></member>
+      <member refid="da/d00/class_smart_pointer_1a698ca40a80fd57a62e769371505f2c78" prot="public" virt="non-virtual"><scope>SmartPointer</scope><name>getInterface</name></member>
+      <member refid="da/d00/class_smart_pointer_1a1a542a4be21e5f557947e271f136063a" prot="public" virt="non-virtual"><scope>SmartPointer</scope><name>operator ComClass *</name></member>
+      <member refid="da/d00/class_smart_pointer_1a166c58abb98f9ad23318ca64baf65dfa" prot="private" virt="non-virtual"><scope>SmartPointer</scope><name>operator&amp;</name></member>
+      <member refid="da/d00/class_smart_pointer_1a684cf8a7fadb2431ef8486fe166537d9" prot="public" virt="non-virtual"><scope>SmartPointer</scope><name>operator*</name></member>
+      <member refid="da/d00/class_smart_pointer_1a01c7fb69b9c39d04e85e6990dd24c5e9" prot="public" virt="non-virtual"><scope>SmartPointer</scope><name>operator-&gt;</name></member>
+      <member refid="da/d00/class_smart_pointer_1a888097211726dc2ed5ee0e948ff49bf7" prot="public" virt="non-virtual"><scope>SmartPointer</scope><name>operator=</name></member>
+      <member refid="da/d00/class_smart_pointer_1a89af65521b23dbc25c36f8ecc197acba" prot="public" virt="non-virtual"><scope>SmartPointer</scope><name>operator=</name></member>
+      <member refid="da/d00/class_smart_pointer_1aac6766043d71d6919260b32e3025f5ad" prot="private" virt="non-virtual"><scope>SmartPointer</scope><name>ptr</name></member>
+      <member refid="da/d00/class_smart_pointer_1a0fc132c1d919b1c6523789ed8687d44c" prot="public" virt="non-virtual"><scope>SmartPointer</scope><name>QueryInterface</name></member>
+      <member refid="da/d00/class_smart_pointer_1ae8195378156382f79c9cbd10b18f961d" prot="public" virt="non-virtual"><scope>SmartPointer</scope><name>QueryInterface</name></member>
+      <member refid="da/d00/class_smart_pointer_1a2bfb0ebe9f8d89c4c3158e752e66737f" prot="private" virt="non-virtual"><scope>SmartPointer</scope><name>release</name></member>
+      <member refid="da/d00/class_smart_pointer_1a388d5622da034786e168895b1b936100" prot="public" virt="non-virtual"><scope>SmartPointer</scope><name>resetAndGetAddress</name></member>
+      <member refid="da/d00/class_smart_pointer_1af23b718566d4beddf609e63d1f278459" prot="public" virt="non-virtual"><scope>SmartPointer</scope><name>SmartPointer</name></member>
+      <member refid="da/d00/class_smart_pointer_1a97fa335bc801171776f623bbb92b4757" prot="public" virt="non-virtual"><scope>SmartPointer</scope><name>SmartPointer</name></member>
+      <member refid="da/d00/class_smart_pointer_1a68ce3998e4b3ac9ffaca59064adfdb11" prot="public" virt="non-virtual"><scope>SmartPointer</scope><name>SmartPointer</name></member>
+      <member refid="da/d00/class_smart_pointer_1a85bb3a40507619ca59672273ba90271d" prot="public" virt="non-virtual"><scope>SmartPointer</scope><name>~SmartPointer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

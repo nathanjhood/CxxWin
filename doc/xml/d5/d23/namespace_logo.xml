@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d5/d23/namespace_logo" kind="namespace" language="C++">
+    <compoundname>Logo</compoundname>
+    <briefdescription>
+<para>&apos; </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The &apos;<ref refid="d5/d23/namespace_logo" kindref="compound">Logo</ref>&apos; namespace. Contains declarations and definitions of binary-compiled &apos;Logo.png&apos; for interacting with <ref refid="d6/dd1/namespace_win32" kindref="compound">Win32</ref> API.</para>
+<para><simplesect kind="see"><para>&apos;Logo.png&apos; </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="include/CxxWin/modules/Win32_resource/img/win32_Logo_png.cpp" line="136" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d7/d6d/class_win32_1_1_core_1_1_native_1_1_unicode_handler" kind="class" language="C++" prot="public">
+    <compoundname>Win32::Core::Native::UnicodeHandler</compoundname>
+    <includes refid="d2/dad/win32___unicode_8hpp" local="no">win32_Unicode.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/d6d/class_win32_1_1_core_1_1_native_1_1_unicode_handler_1aba75ad233dfb800918a8da0928696bbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL Win32::Core::Native::UnicodeHandler::SetVar</definition>
+        <argsstring>(HWND hwnd, LPCTSTR lpText)</argsstring>
+        <name>SetVar</name>
+        <qualifiedname>Win32::Core::Native::UnicodeHandler::SetVar</qualifiedname>
+        <param>
+          <type>HWND</type>
+          <declname>hwnd</declname>
+        </param>
+        <param>
+          <type>LPCTSTR</type>
+          <declname>lpText</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/native/win32_Unicode.hpp" line="58" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d6d/class_win32_1_1_core_1_1_native_1_1_unicode_handler_1a16caa495c648eb7fb185d8b67d2793ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL Win32::Core::Native::UnicodeHandler::SetVarA</definition>
+        <argsstring>(HWND hwnd, LPCSTR lpText)</argsstring>
+        <name>SetVarA</name>
+        <qualifiedname>Win32::Core::Native::UnicodeHandler::SetVarA</qualifiedname>
+        <param>
+          <type>HWND</type>
+          <declname>hwnd</declname>
+        </param>
+        <param>
+          <type>LPCSTR</type>
+          <declname>lpText</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/native/win32_Unicode.hpp" line="60" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d6d/class_win32_1_1_core_1_1_native_1_1_unicode_handler_1a1bf1d390b3b0b5f820af5aed44392da6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL Win32::Core::Native::UnicodeHandler::SetVarW</definition>
+        <argsstring>(HWND hwnd, LPCWSTR lpText)</argsstring>
+        <name>SetVarW</name>
+        <qualifiedname>Win32::Core::Native::UnicodeHandler::SetVarW</qualifiedname>
+        <param>
+          <type>HWND</type>
+          <declname>hwnd</declname>
+        </param>
+        <param>
+          <type>LPCWSTR</type>
+          <declname>lpText</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/native/win32_Unicode.hpp" line="62" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/CxxWin/modules/Win32_core/native/win32_Unicode.hpp" line="55" column="1" bodyfile="include/CxxWin/modules/Win32_core/native/win32_Unicode.hpp" bodystart="56" bodyend="63"/>
+    <listofallmembers>
+      <member refid="d7/d6d/class_win32_1_1_core_1_1_native_1_1_unicode_handler_1aba75ad233dfb800918a8da0928696bbc" prot="public" virt="non-virtual"><scope>Win32::Core::Native::UnicodeHandler</scope><name>SetVar</name></member>
+      <member refid="d7/d6d/class_win32_1_1_core_1_1_native_1_1_unicode_handler_1a16caa495c648eb7fb185d8b67d2793ae" prot="public" virt="non-virtual"><scope>Win32::Core::Native::UnicodeHandler</scope><name>SetVarA</name></member>
+      <member refid="d7/d6d/class_win32_1_1_core_1_1_native_1_1_unicode_handler_1a1bf1d390b3b0b5f820af5aed44392da6" prot="public" virt="non-virtual"><scope>Win32::Core::Native::UnicodeHandler</scope><name>SetVarW</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

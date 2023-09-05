@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_win32___smart_pointer_8hpp_source" xml:lang="en-US">
+<title>win32_SmartPointer.hpp</title>
+<indexterm><primary>include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.hpp</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 
+27 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+29 <emphasis role="preprocessor">#define&#32;_WIN32_SMARTPOINTER_HPP_</emphasis>
+30 
+36 <emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">class</emphasis>&#32;ComClass&gt;
+37 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_smart_pointer">SmartPointer</link>
+38 {
+39 <emphasis role="keyword">public</emphasis>:
+40 
+41 &#32;&#32;&#32;&#32;<link linkend="_class_smart_pointer_1af23b718566d4beddf609e63d1f278459">SmartPointer</link>()&#32;<emphasis role="keyword">noexcept</emphasis>;
+42 &#32;&#32;&#32;&#32;<link linkend="_class_smart_pointer_1af23b718566d4beddf609e63d1f278459">SmartPointer</link>(ComClass*&#32;obj);
+43 &#32;&#32;&#32;&#32;<link linkend="_class_smart_pointer_1af23b718566d4beddf609e63d1f278459">SmartPointer</link>(<link linkend="_class_smart_pointer">SmartPointer</link>&amp;&#32;other);
+44 &#32;&#32;&#32;&#32;<link linkend="_class_smart_pointer_1a85bb3a40507619ca59672273ba90271d">~SmartPointer</link>();
+45 
+46 &#32;&#32;&#32;&#32;<emphasis role="keyword">operator</emphasis>&#32;ComClass*()&#32;CONST&#32;<emphasis role="keyword">noexcept</emphasis>;
+47 &#32;&#32;&#32;&#32;ComClass&amp;&#32;<link linkend="_class_smart_pointer_1a684cf8a7fadb2431ef8486fe166537d9">operator*</link>()&#32;CONST&#32;<emphasis role="keyword">noexcept</emphasis>;
+48 &#32;&#32;&#32;&#32;ComClass*&#32;<link linkend="_class_smart_pointer_1a01c7fb69b9c39d04e85e6990dd24c5e9">operator-&gt;</link>()&#32;CONST&#32;<emphasis role="keyword">noexcept</emphasis>;
+49 &#32;&#32;&#32;&#32;<link linkend="_class_smart_pointer">SmartPointer</link>&amp;&#32;<link linkend="_class_smart_pointer_1a888097211726dc2ed5ee0e948ff49bf7">operator= </link>(ComClass*&#32;CONST&#32;newPtr);
+50 &#32;&#32;&#32;&#32;<link linkend="_class_smart_pointer">SmartPointer</link>&amp;&#32;<link linkend="_class_smart_pointer_1a888097211726dc2ed5ee0e948ff49bf7">operator= </link>(CONST&#32;ComClass&amp;&#32;newPtr);
+51 &#32;&#32;&#32;&#32;ComClass**&#32;<link linkend="_class_smart_pointer_1a388d5622da034786e168895b1b936100">resetAndGetAddress</link>();
+52 &#32;&#32;&#32;&#32;HRESULT&#32;<link linkend="_class_smart_pointer_1af569386f98a741151e4a6c9148fc415c">CoCreateInstance</link>(REFCLSID&#32;rclsid,&#32;DWORD&#32;dwClsContext&#32;=&#32;CLSCTX_INPROC_SERVER);
+53 
+54 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">class</emphasis>&#32;otherComClass&gt;
+55 &#32;&#32;&#32;&#32;HRESULT&#32;<link linkend="_class_smart_pointer_1a0fc132c1d919b1c6523789ed8687d44c">QueryInterface</link>(REFCLSID&#32;&#32;rclsid,&#32;<link linkend="_class_smart_pointer">SmartPointer&lt;otherComClass&gt;</link>&amp;&#32;destObj)&#32;CONST;
+56 
+57 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">class</emphasis>&#32;otherComClass&gt;
+58 &#32;&#32;&#32;&#32;HRESULT&#32;<link linkend="_class_smart_pointer_1a0fc132c1d919b1c6523789ed8687d44c">QueryInterface</link>&#32;(<link linkend="_class_smart_pointer">SmartPointer&lt;otherComClass&gt;</link>&amp;&#32;destObj)&#32;CONST;
+59 
+60 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">class</emphasis>&#32;otherComClass&gt;
+61 &#32;&#32;&#32;&#32;<link linkend="_class_smart_pointer">SmartPointer&lt;otherComClass&gt;</link>&#32;<link linkend="_class_smart_pointer_1a698ca40a80fd57a62e769371505f2c78">getInterface</link>()&#32;CONST;
+62 
+63 <emphasis role="keyword">private</emphasis>:
+64 
+65 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_smart_pointer_1a2bfb0ebe9f8d89c4c3158e752e66737f">release</link>();
+66 
+72 &#32;&#32;&#32;&#32;ComClass**&#32;<link linkend="_class_smart_pointer_1a166c58abb98f9ad23318ca64baf65dfa">operator&amp;</link>()&#32;noexcept&#32;=&#32;delete;&#32;<emphasis role="comment">//&#32;innaccessible</emphasis>
+73 
+75 &#32;&#32;&#32;&#32;ComClass*&#32;<link linkend="_class_smart_pointer_1aac6766043d71d6919260b32e3025f5ad">ptr</link>&#32;=&#32;<emphasis role="keywordtype">nullptr</emphasis>;
+76 };
+77 
+84 template&#32;&lt;class&#32;First,&#32;class...&#32;ComClasses&gt;
+85 class&#32;<link linkend="_class_smart_pointer_helper_base">SmartPointerHelperBase</link>&#32;:&#32;public&#32;First,&#32;public&#32;ComClasses...
+86 {
+87 <emphasis role="keyword">public</emphasis>:
+88 &#32;&#32;&#32;&#32;<link linkend="_class_smart_pointer_helper_base">SmartPointerHelperBase</link>(<emphasis role="keywordtype">unsigned</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;initRef);
+90 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_class_smart_pointer_helper_base_1aef037e04d1a2ee08824b405b077d4b09">~SmartPointerHelperBase</link>()&#32;=&#32;<emphasis role="keywordflow">default</emphasis>;
+91 
+92 &#32;&#32;&#32;&#32;ULONG&#32;STDMETHODCALLTYPE&#32;AddRef();
+93 &#32;&#32;&#32;&#32;ULONG&#32;STDMETHODCALLTYPE&#32;Release();
+94 
+95 <emphasis role="keyword">protected</emphasis>:
+96 
+101 &#32;&#32;&#32;&#32;ULONG&#32;<link linkend="_class_smart_pointer_helper_base_1ad2bc91bd39ccd269a3eec9cdcce0f8cf">refCount</link>;
+102 
+103 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">class</emphasis>&#32;Type&gt;
+104 &#32;&#32;&#32;&#32;HRESULT&#32;STDMETHODCALLTYPE&#32;castToType(<emphasis role="keywordtype">void</emphasis>**&#32;result);
+105 &#32;&#32;&#32;&#32;HRESULT&#32;STDMETHODCALLTYPE&#32;<link linkend="_class_smart_pointer_1a0fc132c1d919b1c6523789ed8687d44c">QueryInterface</link>(REFIID&#32;riid,&#32;<emphasis role="keywordtype">void</emphasis>**&#32;ppvObject);
+106 };
+107 
+113 <emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">class</emphasis>...&#32;ComClasses&gt;
+114 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_smart_pointer_helper">SmartPointerHelper</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_smart_pointer_helper_base">SmartPointerHelperBase</link>&lt;ComClasses...&gt;
+115 {
+116 <emphasis role="keyword">public</emphasis>:
+117 &#32;&#32;&#32;&#32;<emphasis role="keyword">explicit</emphasis>&#32;<link linkend="_class_smart_pointer_helper">SmartPointerHelper</link>(<emphasis role="keywordtype">unsigned</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;initRef);
+118 &#32;&#32;&#32;&#32;HRESULT&#32;STDMETHODCALLTYPE&#32;QueryInterface(REFIID&#32;refId,&#32;<emphasis role="keywordtype">void</emphasis>**&#32;result);
+119 };
+120 
+121 <emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">class</emphasis>&#32;ComClass&gt;
+122 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_win32___smart_pointer_8hpp_1a53522409e1312cfaf53cebc29bff8008">SafeRelease</link>(ComClass**&#32;<link linkend="_class_smart_pointer_1aac6766043d71d6919260b32e3025f5ad">ptr</link>);
+</programlisting></section>

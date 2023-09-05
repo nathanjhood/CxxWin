@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory" kind="class" language="C++" prot="public">
+    <compoundname>CMakeRC::Detail::FileOrDirectory</compoundname>
+    <includes refid="df/dcb/cmrc_8hpp" local="no">cmrc.hpp</includes>
+    <innerclass refid="d3/dd6/union_c_make_r_c_1_1_detail_1_1_file_or_directory_1_1__data__t" prot="private">CMakeRC::Detail::FileOrDirectory::_data_t</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory_1a0320eaf17d4042508cb7182f0da57e32" prot="private" static="no" mutable="no">
+        <type>union <ref refid="d3/dd6/union_c_make_r_c_1_1_detail_1_1_file_or_directory_1_1__data__t" kindref="compound">CMakeRC::Detail::FileOrDirectory::_data_t</ref></type>
+        <definition>union CMakeRC::Detail::FileOrDirectory::_data_t CMakeRC::Detail::FileOrDirectory::_data</definition>
+        <argsstring></argsstring>
+        <name>_data</name>
+        <qualifiedname>CMakeRC::Detail::FileOrDirectory::_data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="273" column="11"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory_1a5f3961d4f94b3735131c2b9970f41615" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CMakeRC::Detail::FileOrDirectory::_is_file</definition>
+        <argsstring></argsstring>
+        <name>_is_file</name>
+        <qualifiedname>CMakeRC::Detail::FileOrDirectory::_is_file</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="274" column="10" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory_1a2038b105526e304e8dc4eaf2c08d7371" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMakeRC::Detail::FileOrDirectory::FileOrDirectory</definition>
+        <argsstring>(FileData &amp;f)</argsstring>
+        <name>FileOrDirectory</name>
+        <qualifiedname>CMakeRC::Detail::FileOrDirectory::FileOrDirectory</qualifiedname>
+        <param>
+          <type><ref refid="d0/d80/class_c_make_r_c_1_1_detail_1_1_file_data" kindref="compound">FileData</ref> &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new &apos;<ref refid="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory" kindref="compound">FileOrDirectory</ref>&apos; object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="214" column="14" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="214" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory_1a7ed2fb44d81150cf5b0446cc717018af" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMakeRC::Detail::FileOrDirectory::FileOrDirectory</definition>
+        <argsstring>(Directory &amp;d)</argsstring>
+        <name>FileOrDirectory</name>
+        <qualifiedname>CMakeRC::Detail::FileOrDirectory::FileOrDirectory</qualifiedname>
+        <param>
+          <type><ref refid="d3/d17/class_c_make_r_c_1_1_detail_1_1_directory" kindref="compound">Directory</ref> &amp;</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new &apos;<ref refid="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory" kindref="compound">FileOrDirectory</ref>&apos; object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="223" column="14" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="223" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory_1a68fac370f8ff769caa898820b963bf14" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMakeRC::Detail::FileOrDirectory::IsFile</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>IsFile</name>
+        <qualifiedname>CMakeRC::Detail::FileOrDirectory::IsFile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="234" column="10" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="234" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory_1aafd677b5751bb0b18785bebdf5af8b76" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CMakeRC::Detail::FileOrDirectory::IsDirectory</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>IsDirectory</name>
+        <qualifiedname>CMakeRC::Detail::FileOrDirectory::IsDirectory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="244" column="10" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="244" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory_1adc7825ac25d1c365981aa55071b2d960" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const <ref refid="d3/d17/class_c_make_r_c_1_1_detail_1_1_directory" kindref="compound">Directory</ref> &amp;</type>
+        <definition>const Directory &amp; CMakeRC::Detail::FileOrDirectory::AsDirectory</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>AsDirectory</name>
+        <qualifiedname>CMakeRC::Detail::FileOrDirectory::AsDirectory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const <ref refid="d3/d17/class_c_make_r_c_1_1_detail_1_1_directory" kindref="compound">Directory</ref>&amp; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="253" column="21" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="253" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory_1aa5d382deb2e8535c46a63b5a4d770cde" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>const <ref refid="d0/d80/class_c_make_r_c_1_1_detail_1_1_file_data" kindref="compound">FileData</ref> &amp;</type>
+        <definition>const FileData &amp; CMakeRC::Detail::FileOrDirectory::AsFile</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>AsFile</name>
+        <qualifiedname>CMakeRC::Detail::FileOrDirectory::AsFile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const <ref refid="d0/d80/class_c_make_r_c_1_1_detail_1_1_file_data" kindref="compound">FileData</ref>&amp; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="263" column="20" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="263" bodyend="267"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>CMakeRC::Detail::Directory</label>
+        <link refid="d3/d17/class_c_make_r_c_1_1_detail_1_1_directory"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>_files</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>_dirs</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>_index</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CMakeRC::Detail::FileData</label>
+        <link refid="d0/d80/class_c_make_r_c_1_1_detail_1_1_file_data"/>
+      </node>
+      <node id="1">
+        <label>CMakeRC::Detail::FileOrDirectory</label>
+        <link refid="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CMakeRC::Detail::FileOrDirectory::_data_t</label>
+        <link refid="d3/dd6/union_c_make_r_c_1_1_detail_1_1_file_or_directory_1_1__data__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>FileData</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>Directory</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>std::list&lt; CMakeRC::Detail::Directory &gt;</label>
+        <childnode refid="4" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>std::list&lt; CMakeRC::Detail::FileData &gt;</label>
+        <childnode refid="3" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>std::map&lt; std::string, CMakeRC::Detail::FileOrDirectory &gt;</label>
+        <childnode refid="8" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="8">
+        <label>std::string</label>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="206" column="1" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="207" bodyend="275"/>
+    <listofallmembers>
+      <member refid="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory_1a0320eaf17d4042508cb7182f0da57e32" prot="private" virt="non-virtual"><scope>CMakeRC::Detail::FileOrDirectory</scope><name>_data</name></member>
+      <member refid="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory_1a5f3961d4f94b3735131c2b9970f41615" prot="private" virt="non-virtual"><scope>CMakeRC::Detail::FileOrDirectory</scope><name>_is_file</name></member>
+      <member refid="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory_1adc7825ac25d1c365981aa55071b2d960" prot="public" virt="non-virtual"><scope>CMakeRC::Detail::FileOrDirectory</scope><name>AsDirectory</name></member>
+      <member refid="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory_1aa5d382deb2e8535c46a63b5a4d770cde" prot="public" virt="non-virtual"><scope>CMakeRC::Detail::FileOrDirectory</scope><name>AsFile</name></member>
+      <member refid="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory_1a2038b105526e304e8dc4eaf2c08d7371" prot="public" virt="non-virtual"><scope>CMakeRC::Detail::FileOrDirectory</scope><name>FileOrDirectory</name></member>
+      <member refid="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory_1a7ed2fb44d81150cf5b0446cc717018af" prot="public" virt="non-virtual"><scope>CMakeRC::Detail::FileOrDirectory</scope><name>FileOrDirectory</name></member>
+      <member refid="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory_1aafd677b5751bb0b18785bebdf5af8b76" prot="public" virt="non-virtual"><scope>CMakeRC::Detail::FileOrDirectory</scope><name>IsDirectory</name></member>
+      <member refid="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory_1a68fac370f8ff769caa898820b963bf14" prot="public" virt="non-virtual"><scope>CMakeRC::Detail::FileOrDirectory</scope><name>IsFile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

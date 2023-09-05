@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_main_window" xml:lang="en-US">
+<title>MainWindow Class Reference</title>
+<indexterm><primary>MainWindow</primary></indexterm>
+<para>
+
+<para>The &apos;<link linkend="_class_main_window">MainWindow</link>&apos; class. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;win32_MainWindow.hpp&gt;</computeroutput>
+</para>
+<para>Inheritance diagram for MainWindow:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d9/dc6/class_main_window.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_main_window_1a0230fe7f0fab30b98c45cebfc5e224db">MainWindow</link> ()=default</para>
+
+<para>Default-Construct a new Main Window object. </para>
+</listitem>
+            <listitem><para>PCWSTR <link linkend="_class_main_window_1ac73b70e36c04de55a2b049637408c21e">ClassName</link> () CONST</para>
+</listitem>
+            <listitem><para>LRESULT <link linkend="_class_main_window_1a590370509ff31b48345edf4fd1dee572">HandleMessage</link> (UINT uMsg, WPARAM wParam, LPARAM lParam)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_base_window">BaseWindow&lt; MainWindow &gt;</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_base_window_1a60209fc8aa81ab0efa29263dabc52cbf">BaseWindow</link> ()</para>
+
+<para>Construct a new &apos;<link linkend="_class_base_window">BaseWindow</link>&apos; object. </para>
+</listitem>
+            <listitem><para>BOOL <link linkend="_class_base_window_1acfcb0a79ccf1f3780e353f24983b93bf">Create</link> (PCWSTR lpWindowName, DWORD dwStyle, DWORD dwExStyle=0, int x=CW_USEDEFAULT, int y=CW_USEDEFAULT, int nWidth=CW_USEDEFAULT, int nHeight=CW_USEDEFAULT, HWND hWndParent=0, HMENU hMenu=0)</para>
+
+<para>Create a new &apos;<link linkend="_class_base_window">BaseWindow</link>&apos; -derived object. </para>
+</listitem>
+            <listitem><para>HWND <link linkend="_class_base_window_1aa1507d2052aaec416ac8b085add33ba0">Window</link> () CONST</para>
+
+<para>Return the handle to the &apos;<link linkend="_class_base_window">BaseWindow</link>&apos; -derived object. </para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Static Public Member Functions inherited from <link linkend="_class_base_window">BaseWindow&lt; MainWindow &gt;</link>        <itemizedlist>
+            <listitem><para>static LRESULT CALLBACK <link linkend="_class_base_window_1a61198ed120a54deccbd3e73221bf9c4d">WindowProc</link> (HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)</para>
+
+<para>&apos;LRESULT&apos; is an integer value that your program returns to Windows. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+        <itemizedlist>
+            <listitem><para>virtual PCWSTR <link linkend="_class_base_window_1a76d1b80a812caf760c0efbed6e64b2e1">ClassName</link> () CONST PURE</para>
+
+<para>Return a string of the name of &apos;<link linkend="_class_base_window">BaseWindow</link>&apos; -derived object. </para>
+</listitem>
+            <listitem><para>virtual LRESULT <link linkend="_class_base_window_1a7612d6d879e60f4b7ded0cf0ac3dd8a9">HandleMessage</link> (UINT uMsg, WPARAM wParam, LPARAM lParam) PURE</para>
+
+<para>Handle the incoming messages. </para>
+</listitem>
+        </itemizedlist>
+Protected Attributes inherited from <link linkend="_class_base_window">BaseWindow&lt; MainWindow &gt;</link>        <itemizedlist>
+            <listitem><para>HWND <link linkend="_class_base_window_1a86f5232fa1bbb141f60548a42331fc7e">m_hwnd</link></para>
+
+<para>The handle to the &apos;<link linkend="_class_base_window">BaseWindow</link>&apos; -derived object. </para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para>The &apos;<link linkend="_class_main_window">MainWindow</link>&apos; class. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_main_window_1a0230fe7f0fab30b98c45cebfc5e224db"/><section>
+    <title>MainWindow()</title>
+<indexterm><primary>MainWindow</primary><secondary>MainWindow</secondary></indexterm>
+<indexterm><primary>MainWindow</primary><secondary>MainWindow</secondary></indexterm>
+<para><computeroutput>MainWindow::MainWindow ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[default]</computeroutput></computeroutput></para><para>
+
+<para>Default-Construct a new Main Window object. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_main_window_1ac73b70e36c04de55a2b049637408c21e"/><section>
+    <title>ClassName()</title>
+<indexterm><primary>ClassName</primary><secondary>MainWindow</secondary></indexterm>
+<indexterm><primary>MainWindow</primary><secondary>ClassName</secondary></indexterm>
+<para><computeroutput>PCWSTR MainWindow::ClassName ( )<computeroutput>[virtual]</computeroutput></computeroutput></para>
+<para><formalpara><title>Returns</title>
+
+<para>PCWSTR </para>
+</formalpara>
+</para>
+<para>
+Reimplemented from <link linkend="_class_base_window_1a76d1b80a812caf760c0efbed6e64b2e1">BaseWindow&lt; MainWindow &gt;</link>.</para>
+</section>
+<anchor xml:id="_class_main_window_1a590370509ff31b48345edf4fd1dee572"/><section>
+    <title>HandleMessage()</title>
+<indexterm><primary>HandleMessage</primary><secondary>MainWindow</secondary></indexterm>
+<indexterm><primary>MainWindow</primary><secondary>HandleMessage</secondary></indexterm>
+<para><computeroutput>LRESULT MainWindow::HandleMessage (UINT uMsg, WPARAM wParam, LPARAM lParam)<computeroutput>[virtual]</computeroutput></computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>uMsg</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>wParam</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>lParam</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>LRESULT </para>
+</formalpara>
+</para>
+<para>
+Reimplemented from <link linkend="_class_base_window_1a7612d6d879e60f4b7ded0cf0ac3dd8a9">BaseWindow&lt; MainWindow &gt;</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+include/CxxWin/modules/Win32_core/window/<link linkend="_win32___main_window_8hpp">win32_MainWindow.hpp</link>include/CxxWin/modules/Win32_core/window/<link linkend="_win32___main_window_8cpp">win32_MainWindow.cpp</link></section>
+</section>

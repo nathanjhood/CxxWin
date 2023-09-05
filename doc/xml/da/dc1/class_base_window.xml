@@ -1,0 +1,372 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="da/dc1/class_base_window" kind="class" language="C++" prot="public">
+    <compoundname>BaseWindow</compoundname>
+    <includes refid="dc/dbe/win32___base_window_8hpp" local="no">win32_BaseWindow.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class DERIVED_TYPE</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="da/dc1/class_base_window_1a86f5232fa1bbb141f60548a42331fc7e" prot="protected" static="no" mutable="no">
+        <type>HWND</type>
+        <definition>HWND BaseWindow&lt; DERIVED_TYPE &gt;::m_hwnd</definition>
+        <argsstring></argsstring>
+        <name>m_hwnd</name>
+        <qualifiedname>BaseWindow::m_hwnd</qualifiedname>
+        <briefdescription>
+<para>The handle to the &apos;<ref refid="da/dc1/class_base_window" kindref="compound">BaseWindow</ref>&apos; -derived object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/window/win32_BaseWindow.hpp" line="164" column="10" bodyfile="include/CxxWin/modules/Win32_core/window/win32_BaseWindow.hpp" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="da/dc1/class_base_window_1a60209fc8aa81ab0efa29263dabc52cbf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BaseWindow&lt; DERIVED_TYPE &gt;::BaseWindow</definition>
+        <argsstring>()</argsstring>
+        <name>BaseWindow</name>
+        <qualifiedname>BaseWindow::BaseWindow</qualifiedname>
+        <briefdescription>
+<para>Construct a new &apos;<ref refid="da/dc1/class_base_window" kindref="compound">BaseWindow</ref>&apos; object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/window/win32_BaseWindow.hpp" line="35" column="5" bodyfile="include/CxxWin/modules/Win32_core/window/win32_BaseWindow.hpp" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dc1/class_base_window_1acfcb0a79ccf1f3780e353f24983b93bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BOOL</type>
+        <definition>BOOL BaseWindow&lt; DERIVED_TYPE &gt;::Create</definition>
+        <argsstring>(PCWSTR lpWindowName, DWORD dwStyle, DWORD dwExStyle=0, int x=CW_USEDEFAULT, int y=CW_USEDEFAULT, int nWidth=CW_USEDEFAULT, int nHeight=CW_USEDEFAULT, HWND hWndParent=0, HMENU hMenu=0)</argsstring>
+        <name>Create</name>
+        <qualifiedname>BaseWindow::Create</qualifiedname>
+        <param>
+          <type>PCWSTR</type>
+          <declname>lpWindowName</declname>
+        </param>
+        <param>
+          <type>DWORD</type>
+          <declname>dwStyle</declname>
+        </param>
+        <param>
+          <type>DWORD</type>
+          <declname>dwExStyle</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+          <defval>CW_USEDEFAULT</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+          <defval>CW_USEDEFAULT</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nWidth</declname>
+          <defval>CW_USEDEFAULT</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nHeight</declname>
+          <defval>CW_USEDEFAULT</defval>
+        </param>
+        <param>
+          <type>HWND</type>
+          <declname>hWndParent</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>HMENU</type>
+          <declname>hMenu</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Create a new &apos;<ref refid="da/dc1/class_base_window" kindref="compound">BaseWindow</ref>&apos; -derived object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lpWindowName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dwStyle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dwExStyle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nWidth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nHeight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hWndParent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hMenu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BOOL </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/window/win32_BaseWindow.hpp" line="92" column="10" bodyfile="include/CxxWin/modules/Win32_core/window/win32_BaseWindow.hpp" bodystart="92" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dc1/class_base_window_1aa1507d2052aaec416ac8b085add33ba0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>HWND</type>
+        <definition>HWND BaseWindow&lt; DERIVED_TYPE &gt;::Window</definition>
+        <argsstring>() CONST</argsstring>
+        <name>Window</name>
+        <qualifiedname>BaseWindow::Window</qualifiedname>
+        <briefdescription>
+<para>Return the handle to the &apos;<ref refid="da/dc1/class_base_window" kindref="compound">BaseWindow</ref>&apos; -derived object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>HWND </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/window/win32_BaseWindow.hpp" line="139" column="10" bodyfile="include/CxxWin/modules/Win32_core/window/win32_BaseWindow.hpp" bodystart="139" bodyend="139"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="da/dc1/class_base_window_1a61198ed120a54deccbd3e73221bf9c4d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>LRESULT CALLBACK</type>
+        <definition>static LRESULT CALLBACK BaseWindow&lt; DERIVED_TYPE &gt;::WindowProc</definition>
+        <argsstring>(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)</argsstring>
+        <name>WindowProc</name>
+        <qualifiedname>BaseWindow::WindowProc</qualifiedname>
+        <param>
+          <type>HWND</type>
+          <declname>hwnd</declname>
+        </param>
+        <param>
+          <type>UINT</type>
+          <declname>uMsg</declname>
+        </param>
+        <param>
+          <type>WPARAM</type>
+          <declname>wParam</declname>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lParam</declname>
+        </param>
+        <briefdescription>
+<para>&apos;LRESULT&apos; is an integer value that your program returns to Windows. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It contains your program&apos;s response to a particular message. The meaning of this value depends on the message code.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hwnd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a handle to the window. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>uMsg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the message code; for example, the WM_SIZE message indicates the window was resized. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>contains additional code-dependent data about the message. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>contains additional code-dependent data about the message. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&apos;LRESULT&apos; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/window/win32_BaseWindow.hpp" line="49" column="29" bodyfile="include/CxxWin/modules/Win32_core/window/win32_BaseWindow.hpp" bodystart="49" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="da/dc1/class_base_window_1a76d1b80a812caf760c0efbed6e64b2e1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>PCWSTR</type>
+        <definition>virtual PCWSTR BaseWindow&lt; DERIVED_TYPE &gt;::ClassName</definition>
+        <argsstring>() CONST PURE</argsstring>
+        <name>ClassName</name>
+        <qualifiedname>BaseWindow::ClassName</qualifiedname>
+        <reimplementedby refid="d2/d5e/class_main_component_1a10413353888f65b0282eb32cf4a012ef">ClassName</reimplementedby>
+        <reimplementedby refid="d9/dc6/class_main_window_1ac73b70e36c04de55a2b049637408c21e">ClassName</reimplementedby>
+        <briefdescription>
+<para>Return a string of the name of &apos;<ref refid="da/dc1/class_base_window" kindref="compound">BaseWindow</ref>&apos; -derived object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>PCWSTR </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/window/win32_BaseWindow.hpp" line="148" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="da/dc1/class_base_window_1a7612d6d879e60f4b7ded0cf0ac3dd8a9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>LRESULT</type>
+        <definition>virtual LRESULT BaseWindow&lt; DERIVED_TYPE &gt;::HandleMessage</definition>
+        <argsstring>(UINT uMsg, WPARAM wParam, LPARAM lParam) PURE</argsstring>
+        <name>HandleMessage</name>
+        <qualifiedname>BaseWindow::HandleMessage</qualifiedname>
+        <reimplementedby refid="d2/d5e/class_main_component_1a28a911446776a6ea7777f0cde9960d16">HandleMessage</reimplementedby>
+        <reimplementedby refid="d9/dc6/class_main_window_1a590370509ff31b48345edf4fd1dee572">HandleMessage</reimplementedby>
+        <param>
+          <type>UINT</type>
+          <declname>uMsg</declname>
+        </param>
+        <param>
+          <type>WPARAM</type>
+          <declname>wParam</declname>
+        </param>
+        <param>
+          <type>LPARAM</type>
+          <declname>lParam</declname>
+        </param>
+        <briefdescription>
+<para>Handle the incoming messages. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>uMsg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lParam</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LRESULT </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_core/window/win32_BaseWindow.hpp" line="158" column="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The &apos;<ref refid="da/dc1/class_base_window" kindref="compound">BaseWindow</ref>&apos; abstract class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>DERIVED_TYPE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <location file="include/CxxWin/modules/Win32_core/window/win32_BaseWindow.hpp" line="30" column="1" bodyfile="include/CxxWin/modules/Win32_core/window/win32_BaseWindow.hpp" bodystart="31" bodyend="170"/>
+    <listofallmembers>
+      <member refid="da/dc1/class_base_window_1a60209fc8aa81ab0efa29263dabc52cbf" prot="public" virt="non-virtual"><scope>BaseWindow</scope><name>BaseWindow</name></member>
+      <member refid="da/dc1/class_base_window_1a76d1b80a812caf760c0efbed6e64b2e1" prot="protected" virt="virtual"><scope>BaseWindow</scope><name>ClassName</name></member>
+      <member refid="da/dc1/class_base_window_1acfcb0a79ccf1f3780e353f24983b93bf" prot="public" virt="non-virtual"><scope>BaseWindow</scope><name>Create</name></member>
+      <member refid="da/dc1/class_base_window_1a7612d6d879e60f4b7ded0cf0ac3dd8a9" prot="protected" virt="virtual"><scope>BaseWindow</scope><name>HandleMessage</name></member>
+      <member refid="da/dc1/class_base_window_1a86f5232fa1bbb141f60548a42331fc7e" prot="protected" virt="non-virtual"><scope>BaseWindow</scope><name>m_hwnd</name></member>
+      <member refid="da/dc1/class_base_window_1aa1507d2052aaec416ac8b085add33ba0" prot="public" virt="non-virtual"><scope>BaseWindow</scope><name>Window</name></member>
+      <member refid="da/dc1/class_base_window_1a61198ed120a54deccbd3e73221bf9c4d" prot="public" virt="non-virtual"><scope>BaseWindow</scope><name>WindowProc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_win32___standard_header_8hpp" xml:lang="en-US">
+<title>include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp File Reference</title>
+<indexterm><primary>include/CxxWin/modules/Win32_core/system/win32_StandardHeader.hpp</primary></indexterm>
+<para>
+
+<para>Contains some standard definitions, functions, and includes familiar to all supported platforms and architectures. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &lt;algorithm&gt;<?linebreak?>#include &lt;array&gt;<?linebreak?>#include &lt;atomic&gt;<?linebreak?>#include &lt;cmath&gt;<?linebreak?>#include &lt;condition_variable&gt;<?linebreak?>#include &lt;cstddef&gt;<?linebreak?>#include &lt;functional&gt;<?linebreak?>#include &lt;future&gt;<?linebreak?>#include &lt;iomanip&gt;<?linebreak?>#include &lt;iostream&gt;<?linebreak?>#include &lt;limits&gt;<?linebreak?>#include &lt;list&gt;<?linebreak?>#include &lt;map&gt;<?linebreak?>#include &lt;memory&gt;<?linebreak?>#include &lt;mutex&gt;<?linebreak?>#include &lt;numeric&gt;<?linebreak?>#include &lt;optional&gt;<?linebreak?>#include &lt;queue&gt;<?linebreak?>#include &lt;set&gt;<?linebreak?>#include &lt;sstream&gt;<?linebreak?>#include &lt;thread&gt;<?linebreak?>#include &lt;typeindex&gt;<?linebreak?>#include &lt;unordered_map&gt;<?linebreak?>#include &lt;unordered_set&gt;<?linebreak?>#include &lt;utility&gt;<?linebreak?>#include &lt;variant&gt;<?linebreak?>#include &lt;vector&gt;<?linebreak?>#include &quot;win32_CompilerSupport.hpp&quot;<?linebreak?>#include &quot;win32_PlatformDefs.hpp&quot;<?linebreak?></programlisting><simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_win32___standard_header_8hpp_1af0ac46c948b1f0c3cc4a9222e77a08f6">_WIN32_STANDARDHEADER_HPP_</link></para>
+
+<para>Contains some standard definitions, functions, and includes familiar to all supported platforms and architectures. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_win32___standard_header_8hpp_1a54d2d7742701f3f112afbcd8d4f9ccdb">__has_attribute</link>(x)&#160;&#160;&#160;0</para>
+
+<para>If the compiler does not have __has_*(), pretend the answer is always no. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_win32___standard_header_8hpp_1aea1c4f7b66a67b78ad863176338dae8d">__has_extension</link>&#160;&#160;&#160;<link linkend="_win32___standard_header_8hpp_1af989845e24678c452b9222afdac95e7f">__has_feature</link></para>
+</listitem>
+            <listitem><para>#define <link linkend="_win32___standard_header_8hpp_1af989845e24678c452b9222afdac95e7f">__has_feature</link>(x)&#160;&#160;&#160;0</para>
+</listitem>
+            <listitem><para>#define <link linkend="_win32___standard_header_8hpp_1ae5510d82e4946f1656f4969911c54736">__has_include</link>(x)&#160;&#160;&#160;0</para>
+</listitem>
+            <listitem><para>#define <link linkend="_win32___standard_header_8hpp_1a447121dcab4275b7839a56082b7a1ab8">__has_builtin</link>(x)&#160;&#160;&#160;0</para>
+</listitem>
+            <listitem><para>#define <link linkend="_win32___standard_header_8hpp_1a2ae9b72bb13abaabfcf2ee0ba7d3fa1d">STRINGIFY_HELPER</link>(X)&#160;&#160;&#160;#X</para>
+
+<para>Helper macro to quote an argument, turning it into a string. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8">STRINGIFY</link>(X)&#160;&#160;&#160;<link linkend="_win32___standard_header_8hpp_1a2ae9b72bb13abaabfcf2ee0ba7d3fa1d">STRINGIFY_HELPER</link>(X)</para>
+
+<para>Quote the argument, turning it into a string. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_win32___standard_header_8hpp_1afcbd7bcadc0fdb52f1453eed7446606c">CONCAT_HELPER</link>(a,  b)&#160;&#160;&#160;a##b</para>
+
+<para>Helper macro to concatenate two tokens to form a new token. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_win32___standard_header_8hpp_1a88fa737059e67b4b17ec980e5877361e">CONCAT</link>(a,  b)&#160;&#160;&#160;<link linkend="_win32___standard_header_8hpp_1afcbd7bcadc0fdb52f1453eed7446606c">CONCAT_HELPER</link>(a, b)</para>
+
+<para>Concatenate two tokens to form a new token. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect><title>DEC</title>
+
+<para>Convert integer to decimal digit literals. </para>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_win32___standard_header_8hpp_1ad1280362da42492bbc11aa78cbf776ad">DEC</link>(n)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect><title>HEX</title>
+
+<para>Convert integer to hex digit literals. </para>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_win32___standard_header_8hpp_1a46d5d95daa1bef867bd0179594310ed5">HEX</link>(n)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_win32___standard_header_8hpp_1a34ef946465e53d7c48394ac3fe34b710">CXXWIN_VERSION_MAJOR</link>&#160;&#160;&#160;1</para>
+
+<para>Current version number (major). </para>
+</listitem>
+            <listitem><para>#define <link linkend="_win32___standard_header_8hpp_1a3420a58365670f121b4606b7c3ece482">CXXWIN_VERSION_MINOR</link>&#160;&#160;&#160;0</para>
+
+<para>Current version number (minor). </para>
+</listitem>
+            <listitem><para>#define <link linkend="_win32___standard_header_8hpp_1a258f4db1e4a861c5044652b560da3a3b">CXXWIN_VERSION_PATCH</link>&#160;&#160;&#160;1</para>
+
+<para>Current version number (patch). </para>
+</listitem>
+            <listitem><para>#define <link linkend="_win32___standard_header_8hpp_1a7682547da86a07aa8c6277893f4bfefe">CXXWIN_VERSION</link>&#160;&#160;&#160;((<link linkend="_win32___standard_header_8hpp_1a34ef946465e53d7c48394ac3fe34b710">CXXWIN_VERSION_MAJOR</link> &lt;&lt; 16) + (<link linkend="_win32___standard_header_8hpp_1a3420a58365670f121b4606b7c3ece482">CXXWIN_VERSION_MINOR</link> &lt;&lt; 8) + <link linkend="_win32___standard_header_8hpp_1a258f4db1e4a861c5044652b560da3a3b">CXXWIN_VERSION_PATCH</link>)</para>
+
+<para>Current version number. </para>
+</listitem>
+            <listitem><para>#define <link linkend="_win32___standard_header_8hpp_1afa65b5b07bc85fd4ad0c1c73f51a28b3">CXXWIN_VERSION_ID</link>&#160;&#160;&#160;    [[maybe_unused]] volatile auto CxxWinVersionId = &quot;cxxwin_version_&quot; <link linkend="_win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8">STRINGIFY</link>(<link linkend="_win32___standard_header_8hpp_1a34ef946465e53d7c48394ac3fe34b710">CXXWIN_VERSION_MAJOR</link>) &quot;_&quot; <link linkend="_win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8">STRINGIFY</link>(<link linkend="_win32___standard_header_8hpp_1a3420a58365670f121b4606b7c3ece482">CXXWIN_VERSION_MINOR</link>) &quot;_&quot; <link linkend="_win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8">STRINGIFY</link>(<link linkend="_win32___standard_header_8hpp_1a258f4db1e4a861c5044652b560da3a3b">CXXWIN_VERSION_PATCH</link>);</para>
+</listitem>
+            <listitem><para>#define <link linkend="_win32___standard_header_8hpp_1a33a68742d73ec73e8c0d4d4585d8fe4b">CXXWIN_LONG_NAME</link>&#160;&#160;&#160;TEXT(&quot;CxxWin&quot;) <link linkend="_win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8">STRINGIFY</link>(.) <link linkend="_win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8">STRINGIFY</link>(<link linkend="_win32___standard_header_8hpp_1a34ef946465e53d7c48394ac3fe34b710">CXXWIN_VERSION_MAJOR</link>) <link linkend="_win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8">STRINGIFY</link>(.) <link linkend="_win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8">STRINGIFY</link>(<link linkend="_win32___standard_header_8hpp_1a3420a58365670f121b4606b7c3ece482">CXXWIN_VERSION_MINOR</link>) <link linkend="_win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8">STRINGIFY</link>(.) <link linkend="_win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8">STRINGIFY</link>(<link linkend="_win32___standard_header_8hpp_1a258f4db1e4a861c5044652b560da3a3b">CXXWIN_VERSION_PATCH</link>)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Contains some standard definitions, functions, and includes familiar to all supported platforms and architectures. </para>
+
+<para><formalpara><title>Author</title>
+
+<para>StoneyDSP (<link xlink:href="mailto:nathanjhood@googlemail.com">nathanjhood@googlemail.com</link>)</para>
+</formalpara>
+</para>
+
+<para><formalpara><title>Version</title>
+
+<para>1.0.0 </para>
+</formalpara>
+<formalpara><title>Date</title>
+
+<para>2023-08-24</para>
+</formalpara>
+<formalpara><title>Copyright</title>
+
+<para>Copyright (c) 2023 </para>
+</formalpara>
+</para>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_win32___standard_header_8hpp_1a54d2d7742701f3f112afbcd8d4f9ccdb"/><section>
+    <title>__has_attribute</title>
+<indexterm><primary>__has_attribute</primary><secondary>win32_StandardHeader.hpp</secondary></indexterm>
+<indexterm><primary>win32_StandardHeader.hpp</primary><secondary>__has_attribute</secondary></indexterm>
+<para><computeroutput>#define __has_attribute( x)&#160;&#160;&#160;0</computeroutput></para><para>
+
+<para>If the compiler does not have __has_*(), pretend the answer is always no. </para>
+</para>
+</section>
+<anchor xml:id="_win32___standard_header_8hpp_1a447121dcab4275b7839a56082b7a1ab8"/><section>
+    <title>__has_builtin</title>
+<indexterm><primary>__has_builtin</primary><secondary>win32_StandardHeader.hpp</secondary></indexterm>
+<indexterm><primary>win32_StandardHeader.hpp</primary><secondary>__has_builtin</secondary></indexterm>
+<para><computeroutput>#define __has_builtin( x)&#160;&#160;&#160;0</computeroutput></para></section>
+<anchor xml:id="_win32___standard_header_8hpp_1aea1c4f7b66a67b78ad863176338dae8d"/><section>
+    <title>__has_extension</title>
+<indexterm><primary>__has_extension</primary><secondary>win32_StandardHeader.hpp</secondary></indexterm>
+<indexterm><primary>win32_StandardHeader.hpp</primary><secondary>__has_extension</secondary></indexterm>
+<para><computeroutput>#define __has_extension&#160;&#160;&#160;<link linkend="_win32___standard_header_8hpp_1af989845e24678c452b9222afdac95e7f">__has_feature</link></computeroutput></para></section>
+<anchor xml:id="_win32___standard_header_8hpp_1af989845e24678c452b9222afdac95e7f"/><section>
+    <title>__has_feature</title>
+<indexterm><primary>__has_feature</primary><secondary>win32_StandardHeader.hpp</secondary></indexterm>
+<indexterm><primary>win32_StandardHeader.hpp</primary><secondary>__has_feature</secondary></indexterm>
+<para><computeroutput>#define __has_feature( x)&#160;&#160;&#160;0</computeroutput></para></section>
+<anchor xml:id="_win32___standard_header_8hpp_1ae5510d82e4946f1656f4969911c54736"/><section>
+    <title>__has_include</title>
+<indexterm><primary>__has_include</primary><secondary>win32_StandardHeader.hpp</secondary></indexterm>
+<indexterm><primary>win32_StandardHeader.hpp</primary><secondary>__has_include</secondary></indexterm>
+<para><computeroutput>#define __has_include( x)&#160;&#160;&#160;0</computeroutput></para></section>
+<anchor xml:id="_win32___standard_header_8hpp_1af0ac46c948b1f0c3cc4a9222e77a08f6"/><section>
+    <title>_WIN32_STANDARDHEADER_HPP_</title>
+<indexterm><primary>_WIN32_STANDARDHEADER_HPP_</primary><secondary>win32_StandardHeader.hpp</secondary></indexterm>
+<indexterm><primary>win32_StandardHeader.hpp</primary><secondary>_WIN32_STANDARDHEADER_HPP_</secondary></indexterm>
+<para><computeroutput>#define _WIN32_STANDARDHEADER_HPP_</computeroutput></para><para>
+
+<para>Contains some standard definitions, functions, and includes familiar to all supported platforms and architectures. </para>
+</para>
+</section>
+<anchor xml:id="_win32___standard_header_8hpp_1a88fa737059e67b4b17ec980e5877361e"/><section>
+    <title>CONCAT</title>
+<indexterm><primary>CONCAT</primary><secondary>win32_StandardHeader.hpp</secondary></indexterm>
+<indexterm><primary>win32_StandardHeader.hpp</primary><secondary>CONCAT</secondary></indexterm>
+<para><computeroutput>#define CONCAT( a,  b)&#160;&#160;&#160;<link linkend="_win32___standard_header_8hpp_1afcbd7bcadc0fdb52f1453eed7446606c">CONCAT_HELPER</link>(a, b)</computeroutput></para><para>
+
+<para>Concatenate two tokens to form a new token. </para>
+</para>
+</section>
+<anchor xml:id="_win32___standard_header_8hpp_1afcbd7bcadc0fdb52f1453eed7446606c"/><section>
+    <title>CONCAT_HELPER</title>
+<indexterm><primary>CONCAT_HELPER</primary><secondary>win32_StandardHeader.hpp</secondary></indexterm>
+<indexterm><primary>win32_StandardHeader.hpp</primary><secondary>CONCAT_HELPER</secondary></indexterm>
+<para><computeroutput>#define CONCAT_HELPER( a,  b)&#160;&#160;&#160;a##b</computeroutput></para><para>
+
+<para>Helper macro to concatenate two tokens to form a new token. </para>
+</para>
+</section>
+<anchor xml:id="_win32___standard_header_8hpp_1a33a68742d73ec73e8c0d4d4585d8fe4b"/><section>
+    <title>CXXWIN_LONG_NAME</title>
+<indexterm><primary>CXXWIN_LONG_NAME</primary><secondary>win32_StandardHeader.hpp</secondary></indexterm>
+<indexterm><primary>win32_StandardHeader.hpp</primary><secondary>CXXWIN_LONG_NAME</secondary></indexterm>
+<para><computeroutput>#define CXXWIN_LONG_NAME&#160;&#160;&#160;TEXT(&quot;CxxWin&quot;) <link linkend="_win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8">STRINGIFY</link>(.) <link linkend="_win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8">STRINGIFY</link>(<link linkend="_win32___standard_header_8hpp_1a34ef946465e53d7c48394ac3fe34b710">CXXWIN_VERSION_MAJOR</link>) <link linkend="_win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8">STRINGIFY</link>(.) <link linkend="_win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8">STRINGIFY</link>(<link linkend="_win32___standard_header_8hpp_1a3420a58365670f121b4606b7c3ece482">CXXWIN_VERSION_MINOR</link>) <link linkend="_win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8">STRINGIFY</link>(.) <link linkend="_win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8">STRINGIFY</link>(<link linkend="_win32___standard_header_8hpp_1a258f4db1e4a861c5044652b560da3a3b">CXXWIN_VERSION_PATCH</link>)</computeroutput></para></section>
+<anchor xml:id="_win32___standard_header_8hpp_1a7682547da86a07aa8c6277893f4bfefe"/><section>
+    <title>CXXWIN_VERSION</title>
+<indexterm><primary>CXXWIN_VERSION</primary><secondary>win32_StandardHeader.hpp</secondary></indexterm>
+<indexterm><primary>win32_StandardHeader.hpp</primary><secondary>CXXWIN_VERSION</secondary></indexterm>
+<para><computeroutput>#define CXXWIN_VERSION&#160;&#160;&#160;((<link linkend="_win32___standard_header_8hpp_1a34ef946465e53d7c48394ac3fe34b710">CXXWIN_VERSION_MAJOR</link> &lt;&lt; 16) + (<link linkend="_win32___standard_header_8hpp_1a3420a58365670f121b4606b7c3ece482">CXXWIN_VERSION_MINOR</link> &lt;&lt; 8) + <link linkend="_win32___standard_header_8hpp_1a258f4db1e4a861c5044652b560da3a3b">CXXWIN_VERSION_PATCH</link>)</computeroutput></para><para>
+
+<para>Current version number. </para>
+</para>
+
+<para>Bits 16 to 32 = major version. Bits 8 to 16 = minor version. Bits 0 to 8 = point release. </para>
+</section>
+<anchor xml:id="_win32___standard_header_8hpp_1afa65b5b07bc85fd4ad0c1c73f51a28b3"/><section>
+    <title>CXXWIN_VERSION_ID</title>
+<indexterm><primary>CXXWIN_VERSION_ID</primary><secondary>win32_StandardHeader.hpp</secondary></indexterm>
+<indexterm><primary>win32_StandardHeader.hpp</primary><secondary>CXXWIN_VERSION_ID</secondary></indexterm>
+<para><computeroutput>#define CXXWIN_VERSION_ID&#160;&#160;&#160;    [[maybe_unused]] volatile auto CxxWinVersionId = &quot;cxxwin_version_&quot; <link linkend="_win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8">STRINGIFY</link>(<link linkend="_win32___standard_header_8hpp_1a34ef946465e53d7c48394ac3fe34b710">CXXWIN_VERSION_MAJOR</link>) &quot;_&quot; <link linkend="_win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8">STRINGIFY</link>(<link linkend="_win32___standard_header_8hpp_1a3420a58365670f121b4606b7c3ece482">CXXWIN_VERSION_MINOR</link>) &quot;_&quot; <link linkend="_win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8">STRINGIFY</link>(<link linkend="_win32___standard_header_8hpp_1a258f4db1e4a861c5044652b560da3a3b">CXXWIN_VERSION_PATCH</link>);</computeroutput></para></section>
+<anchor xml:id="_win32___standard_header_8hpp_1a34ef946465e53d7c48394ac3fe34b710"/><section>
+    <title>CXXWIN_VERSION_MAJOR</title>
+<indexterm><primary>CXXWIN_VERSION_MAJOR</primary><secondary>win32_StandardHeader.hpp</secondary></indexterm>
+<indexterm><primary>win32_StandardHeader.hpp</primary><secondary>CXXWIN_VERSION_MAJOR</secondary></indexterm>
+<para><computeroutput>#define CXXWIN_VERSION_MAJOR&#160;&#160;&#160;1</computeroutput></para><para>
+
+<para>Current version number (major). </para>
+</para>
+</section>
+<anchor xml:id="_win32___standard_header_8hpp_1a3420a58365670f121b4606b7c3ece482"/><section>
+    <title>CXXWIN_VERSION_MINOR</title>
+<indexterm><primary>CXXWIN_VERSION_MINOR</primary><secondary>win32_StandardHeader.hpp</secondary></indexterm>
+<indexterm><primary>win32_StandardHeader.hpp</primary><secondary>CXXWIN_VERSION_MINOR</secondary></indexterm>
+<para><computeroutput>#define CXXWIN_VERSION_MINOR&#160;&#160;&#160;0</computeroutput></para><para>
+
+<para>Current version number (minor). </para>
+</para>
+</section>
+<anchor xml:id="_win32___standard_header_8hpp_1a258f4db1e4a861c5044652b560da3a3b"/><section>
+    <title>CXXWIN_VERSION_PATCH</title>
+<indexterm><primary>CXXWIN_VERSION_PATCH</primary><secondary>win32_StandardHeader.hpp</secondary></indexterm>
+<indexterm><primary>win32_StandardHeader.hpp</primary><secondary>CXXWIN_VERSION_PATCH</secondary></indexterm>
+<para><computeroutput>#define CXXWIN_VERSION_PATCH&#160;&#160;&#160;1</computeroutput></para><para>
+
+<para>Current version number (patch). </para>
+</para>
+</section>
+<anchor xml:id="_win32___standard_header_8hpp_1ad1280362da42492bbc11aa78cbf776ad"/><section>
+    <title>DEC</title>
+<indexterm><primary>DEC</primary><secondary>win32_StandardHeader.hpp</secondary></indexterm>
+<indexterm><primary>win32_StandardHeader.hpp</primary><secondary>DEC</secondary></indexterm>
+<para><computeroutput>#define DEC( n)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="charliteral">&apos;0&apos;</emphasis>&#32;+&#32;(((n)&#32;/&#32;10000000)%10)),&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="charliteral">&apos;0&apos;</emphasis>&#32;+&#32;(((n)&#32;/&#32;1000000)%10)),&#32;&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="charliteral">&apos;0&apos;</emphasis>&#32;+&#32;(((n)&#32;/&#32;100000)%10)),&#32;&#32;&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="charliteral">&apos;0&apos;</emphasis>&#32;+&#32;(((n)&#32;/&#32;10000)%10)),&#32;&#32;&#32;&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="charliteral">&apos;0&apos;</emphasis>&#32;+&#32;(((n)&#32;/&#32;1000)%10)),&#32;&#32;&#32;&#32;&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="charliteral">&apos;0&apos;</emphasis>&#32;+&#32;(((n)&#32;/&#32;100)%10)),&#32;&#32;&#32;&#32;&#32;&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="charliteral">&apos;0&apos;</emphasis>&#32;+&#32;(((n)&#32;/&#32;10)%10)),&#32;&#32;&#32;&#32;&#32;&#32;&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="charliteral">&apos;0&apos;</emphasis>&#32;+&#32;&#32;((n)&#32;%&#32;10))
+</programlisting></section>
+<anchor xml:id="_win32___standard_header_8hpp_1a46d5d95daa1bef867bd0179594310ed5"/><section>
+    <title>HEX</title>
+<indexterm><primary>HEX</primary><secondary>win32_StandardHeader.hpp</secondary></indexterm>
+<indexterm><primary>win32_StandardHeader.hpp</primary><secondary>HEX</secondary></indexterm>
+<para><computeroutput>#define HEX( n)</computeroutput></para><emphasis role="strong">Value:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="charliteral">&apos;0&apos;</emphasis>&#32;+&#32;((n)&gt;&gt;28&#32;&amp;&#32;0xF)),&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="charliteral">&apos;0&apos;</emphasis>&#32;+&#32;((n)&gt;&gt;24&#32;&amp;&#32;0xF)),&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="charliteral">&apos;0&apos;</emphasis>&#32;+&#32;((n)&gt;&gt;20&#32;&amp;&#32;0xF)),&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="charliteral">&apos;0&apos;</emphasis>&#32;+&#32;((n)&gt;&gt;16&#32;&amp;&#32;0xF)),&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="charliteral">&apos;0&apos;</emphasis>&#32;+&#32;((n)&gt;&gt;12&#32;&amp;&#32;0xF)),&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="charliteral">&apos;0&apos;</emphasis>&#32;+&#32;((n)&gt;&gt;8&#32;&#32;&amp;&#32;0xF)),&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="charliteral">&apos;0&apos;</emphasis>&#32;+&#32;((n)&gt;&gt;4&#32;&#32;&amp;&#32;0xF)),&#32;\
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="charliteral">&apos;0&apos;</emphasis>&#32;+&#32;((n)&#32;&#32;&#32;&#32;&#32;&amp;&#32;0xF))
+</programlisting></section>
+<anchor xml:id="_win32___standard_header_8hpp_1a43e1cad902b6477bec893cb6430bd6c8"/><section>
+    <title>STRINGIFY</title>
+<indexterm><primary>STRINGIFY</primary><secondary>win32_StandardHeader.hpp</secondary></indexterm>
+<indexterm><primary>win32_StandardHeader.hpp</primary><secondary>STRINGIFY</secondary></indexterm>
+<para><computeroutput>#define STRINGIFY( X)&#160;&#160;&#160;<link linkend="_win32___standard_header_8hpp_1a2ae9b72bb13abaabfcf2ee0ba7d3fa1d">STRINGIFY_HELPER</link>(X)</computeroutput></para><para>
+
+<para>Quote the argument, turning it into a string. </para>
+</para>
+</section>
+<anchor xml:id="_win32___standard_header_8hpp_1a2ae9b72bb13abaabfcf2ee0ba7d3fa1d"/><section>
+    <title>STRINGIFY_HELPER</title>
+<indexterm><primary>STRINGIFY_HELPER</primary><secondary>win32_StandardHeader.hpp</secondary></indexterm>
+<indexterm><primary>win32_StandardHeader.hpp</primary><secondary>STRINGIFY_HELPER</secondary></indexterm>
+<para><computeroutput>#define STRINGIFY_HELPER( X)&#160;&#160;&#160;#X</computeroutput></para><para>
+
+<para>Helper macro to quote an argument, turning it into a string. </para>
+</para>
+</section>
+</section>
+</section>

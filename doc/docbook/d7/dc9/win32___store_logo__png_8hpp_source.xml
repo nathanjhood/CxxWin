@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_win32___store_logo__png_8hpp_source" xml:lang="en-US">
+<title>win32_StoreLogo_png.hpp</title>
+<indexterm><primary>include/CxxWin/modules/Win32_resource/img/win32_StoreLogo_png.hpp</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 
+21 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+26 <emphasis role="preprocessor">#define&#32;_WIN32_RESOURCE_IMG_STORE_LOGO_PNG_H_</emphasis>
+27 
+28 <emphasis role="keyword">namespace</emphasis>
+29 {
+30 <link linkend="_win32__resource_8hpp_1a3589507c444d07ca84f3ec878da0e8ff">RCRESOURCE</link>&#32;<link linkend="_namespaceanonymous__namespace_02win32___store_logo__png_8hpp_03_1a9d153cb022292650e2e02cb6f4eaa02d">StoreLogo_png_array</link>[228];
+31 }
+32 
+33 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_c_make_r_c">CMakeRC</link>
+34 {
+35 <emphasis role="keyword">namespace&#32;</emphasis>Img
+36 {
+44 <emphasis role="keyword">namespace&#32;</emphasis>StoreLogo
+45 {
+47 <emphasis role="keyword">extern</emphasis>&#32;<link linkend="_win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268">RCRESOURCEPTR</link>&#32;<emphasis role="keyword">const</emphasis>&#32;<link linkend="_namespace_c_make_r_c_1_1_img_1_1_store_logo_1a6e1599c660b57b41569bc3bc7df2e31b">StoreLogo_png_begin</link>;
+49 <emphasis role="keyword">extern</emphasis>&#32;<link linkend="_win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268">RCRESOURCEPTR</link>&#32;<emphasis role="keyword">const</emphasis>&#32;<link linkend="_namespace_c_make_r_c_1_1_img_1_1_store_logo_1a14f9e6da55cf2f890ed328682455b481">StoreLogo_png_end</link>;
+50 }&#32;<emphasis role="comment">//&#32;namespace&#32;StoreLogo</emphasis>
+51 }&#32;<emphasis role="comment">//&#32;namespace&#32;Img</emphasis>
+52 }&#32;<emphasis role="comment">//&#32;namespace&#32;CMakeRC</emphasis>
+</programlisting></section>

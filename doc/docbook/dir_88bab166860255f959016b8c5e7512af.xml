@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_88bab166860255f959016b8c5e7512af" xml:lang="en-US">
+<title>include/CxxWin/modules/Win32_core Directory Reference</title>
+<indexterm><primary>include/CxxWin/modules/Win32_core Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_17183c9a44c5ea42380c345b0bc4b5bd">memory</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_82e912cf391e9913c852d5e7c484a083">native</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_88c30591ba125011a5eb0023131b82dc">system</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_1139b8a331f9c7560d0d1bc7b398bcee">window</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_win32__core_8cpp">win32_core.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_win32__core_8hpp">win32_core.hpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_win32__core_8mm">win32_core.mm</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

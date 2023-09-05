@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_win32___smart_pointer_8cpp_source" xml:lang="en-US">
+<title>win32_SmartPointer.cpp</title>
+<indexterm><primary>include/CxxWin/modules/Win32_core/memory/win32_SmartPointer.cpp</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 
+27 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_win32___smart_pointer_8hpp">win32_SmartPointer.hpp</link>&quot;</emphasis>
+28 
+33 <emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">class</emphasis>&#32;ComClass&gt;
+34 <link linkend="_class_smart_pointer_1af23b718566d4beddf609e63d1f278459">SmartPointer&lt;ComClass&gt;::SmartPointer</link>()&#32;noexcept
+35 {
+36 
+37 }
+38 
+44 <emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">class</emphasis>&#32;ComClass&gt;
+45 <link linkend="_class_smart_pointer_1af23b718566d4beddf609e63d1f278459">SmartPointer&lt;ComClass&gt;::SmartPointer</link>(ComClass*&#32;obj)
+46 &#32;:&#32;ptr(obj)
+47 {
+48 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(<link linkend="_class_smart_pointer_1aac6766043d71d6919260b32e3025f5ad">ptr</link>)
+49 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_smart_pointer_1aac6766043d71d6919260b32e3025f5ad">ptr</link>-&gt;AddRef();
+50 }
+51 
+57 <emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">class</emphasis>&#32;ComClass&gt;
+58 <link linkend="_class_smart_pointer_1af23b718566d4beddf609e63d1f278459">SmartPointer&lt;ComClass&gt;::SmartPointer</link>(<link linkend="_class_smart_pointer">SmartPointer</link>&amp;&#32;other)&#32;:&#32;ptr(other.ptr)
+59 {
+60 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(<link linkend="_class_smart_pointer_1aac6766043d71d6919260b32e3025f5ad">ptr</link>)
+61 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_smart_pointer_1aac6766043d71d6919260b32e3025f5ad">ptr</link>-&gt;AddRef();
+62 }
+63 
+68 <emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">class</emphasis>&#32;ComClass&gt;
+69 <link linkend="_class_smart_pointer_1a85bb3a40507619ca59672273ba90271d">SmartPointer&lt;ComClass&gt;::~SmartPointer</link>()
+70 {
+71 &#32;&#32;&#32;&#32;release();
+72 }
+73 
+79 <emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">class</emphasis>&#32;ComClass&gt;
+80 <link linkend="_class_smart_pointer">SmartPointer&lt;ComClass&gt;::operator</link>&#32;ComClass*()&#32;CONST&#32;<emphasis role="keyword">noexcept</emphasis>
+81 {
+82 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;ptr;
+83 }
+84 
+90 <emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">class</emphasis>&#32;ComClass&gt;
+91 ComClass&amp;&#32;<link linkend="_class_smart_pointer_1a684cf8a7fadb2431ef8486fe166537d9">SmartPointer&lt;ComClass&gt;::operator*</link>()&#32;CONST&#32;noexcept
+92 {
+93 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;*ptr;
+94 }
+95 
+101 <emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">class</emphasis>&#32;ComClass&gt;
+102 ComClass*&#32;<link linkend="_class_smart_pointer_1a01c7fb69b9c39d04e85e6990dd24c5e9">SmartPointer&lt;ComClass&gt;::operator-&gt;</link>()&#32;CONST&#32;noexcept
+103 {
+104 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;ptr;
+105 }
+106 
+113 <emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">class</emphasis>&#32;ComClass&gt;
+114 <link linkend="_class_smart_pointer">SmartPointer&lt;ComClass&gt;</link>&amp;&#32;<link linkend="_class_smart_pointer_1a888097211726dc2ed5ee0e948ff49bf7">SmartPointer&lt;ComClass&gt;::operator= </link>(ComClass*&#32;CONST&#32;newPtr)
+115 {
+116 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(newPtr&#32;!=&#32;<emphasis role="keyword">nullptr</emphasis>)
+117 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;newPtr-&gt;AddRef();
+118 &#32;&#32;&#32;&#32;release();
+119 &#32;&#32;&#32;&#32;ptr&#32;=&#32;newPtr;
+120 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;*<emphasis role="keyword">this</emphasis>;
+121 }
+122 
+129 <emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">class</emphasis>&#32;ComClass&gt;
+130 <link linkend="_class_smart_pointer">SmartPointer&lt;ComClass&gt;</link>&amp;&#32;<link linkend="_class_smart_pointer_1a888097211726dc2ed5ee0e948ff49bf7">SmartPointer&lt;ComClass&gt;::operator= </link>(CONST&#32;ComClass&amp;&#32;newPtr)
+131 {
+132 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;operator=&#32;(newPtr.ptr);
+133 }
+134 
+140 <emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">class</emphasis>&#32;ComClass&gt;
+141 ComClass**&#32;<link linkend="_class_smart_pointer_1a388d5622da034786e168895b1b936100">SmartPointer&lt;ComClass&gt;::resetAndGetAddress</link>()
+142 {
+143 &#32;&#32;&#32;&#32;release();
+144 &#32;&#32;&#32;&#32;ptr&#32;=&#32;<emphasis role="keyword">nullptr</emphasis>;
+145 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;&amp;ptr;
+146 }
+147 
+158 <emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">class</emphasis>&#32;ComClass&gt;
+159 HRESULT&#32;<link linkend="_class_smart_pointer_1af569386f98a741151e4a6c9148fc415c">SmartPointer&lt;ComClass&gt;::CoCreateInstance</link>(REFCLSID&#32;rclsid,&#32;DWORD&#32;dwClsContext)
+160 {
+161 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;This&#32;*must*&#32;call&#32;the&#32;global&#32;function,&#32;not&#32;the&#32;local.</emphasis>
+162 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Consider&#32;overriding&#32;the&#32;return&#32;type&#32;def&#32;if&#32;any&#32;clashes...</emphasis>
+163 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;(see&#32;JUCE&#32;Com&#32;Pointer)</emphasis>
+164 &#32;&#32;&#32;&#32;HRESULT&#32;hr&#32;=&#32;::CoCreateInstance(
+165 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;rclsid,
+166 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">nullptr</emphasis>,
+167 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;dwClsContext,
+168 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;__uuidof(ComClass),
+169 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(<emphasis role="keywordtype">void</emphasis>**)&#32;resetAndGetAddress()
+170 &#32;&#32;&#32;&#32;);
+171 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;assert(hr&#32;!=&#32;CO_E_NOTINITIALIZED);</emphasis>
+172 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;(hr&#32;!=&#32;CO_E_NOTINITIALIZED)&#32;?&#32;hr&#32;:&#32;CO_E_NOTINITIALIZED;
+173 }
+174 
+183 <emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">class</emphasis>&#32;ComClass&gt;
+184 <emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">class</emphasis>&#32;otherComClass&gt;
+185 HRESULT&#32;<link linkend="_class_smart_pointer_1a0fc132c1d919b1c6523789ed8687d44c">SmartPointer&lt;ComClass&gt;::QueryInterface</link>(REFCLSID&#32;rclsid,&#32;<link linkend="_class_smart_pointer">SmartPointer&lt;otherComClass&gt;</link>&amp;&#32;destObj)&#32;CONST
+186 {
+187 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(ptr&#32;==&#32;<emphasis role="keyword">nullptr</emphasis>)
+188 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;E_POINTER;
+189 
+190 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;ptr-&gt;QueryInterface(rclsid,&#32;(<emphasis role="keywordtype">void</emphasis>**)&#32;destObj.resetAndGetAddress());
+191 }
+192 
+200 <emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">class</emphasis>&#32;ComClass&gt;
+201 <emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">class</emphasis>&#32;otherComClass&gt;
+202 HRESULT&#32;<link linkend="_class_smart_pointer_1a0fc132c1d919b1c6523789ed8687d44c">SmartPointer&lt;ComClass&gt;::QueryInterface</link>&#32;(<link linkend="_class_smart_pointer">SmartPointer&lt;otherComClass&gt;</link>&amp;&#32;destObj)&#32;CONST
+203 {
+204 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;this-&gt;QueryInterface(__uuidof(otherComClass),&#32;destObj);
+205 }
+206 
+213 <emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">class</emphasis>&#32;ComClass&gt;
+214 <emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">class</emphasis>&#32;otherComClass&gt;
+215 <link linkend="_class_smart_pointer">SmartPointer&lt;otherComClass&gt;</link>&#32;<link linkend="_class_smart_pointer_1a698ca40a80fd57a62e769371505f2c78">SmartPointer&lt;ComClass&gt;::getInterface</link>()&#32;CONST
+216 {
+217 &#32;&#32;&#32;&#32;<link linkend="_class_smart_pointer">SmartPointer&lt;otherComClass&gt;</link>&#32;destObj;
+218 
+219 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(QueryInterface(destObj)&#32;==&#32;S_OK)
+220 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;destObj;
+221 
+222 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">nullptr</emphasis>;
+223 }
+224 
+225 
+231 <emphasis role="keyword">template</emphasis>&lt;<emphasis role="keyword">class</emphasis>&#32;ComClass&gt;
+232 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_smart_pointer_1a2bfb0ebe9f8d89c4c3158e752e66737f">SmartPointer&lt;ComClass&gt;::release</link>()
+233 {
+234 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(ptr&#32;!=&#32;<emphasis role="keyword">nullptr</emphasis>)&#32;ptr-&gt;Release();
+235 }
+236 
+242 <emphasis role="keyword">template</emphasis>&lt;<emphasis role="keyword">class&#32;</emphasis>First,&#32;<emphasis role="keyword">class</emphasis>...&#32;ComClasses&gt;
+243 <link linkend="_class_smart_pointer_helper_base_1ac76861e9458ab17c981b2b76f5890321">SmartPointerHelperBase&lt;First, ComClasses...&gt;::SmartPointerHelperBase</link>(<emphasis role="keywordtype">unsigned</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;initRef)
+244 &#32;:&#32;refCount(initRef)
+245 {
+246 
+247 }
+248 
+254 <emphasis role="keyword">template</emphasis>&lt;<emphasis role="keyword">class&#32;</emphasis>First,&#32;<emphasis role="keyword">class</emphasis>...&#32;ComClasses&gt;
+255 ULONG&#32;STDMETHODCALLTYPE&#32;<link linkend="_class_smart_pointer_helper_base_1a2c9426410eeb136beba8123b5d84dc6e">SmartPointerHelperBase&lt;First, ComClasses...&gt;::AddRef</link>()
+256 {
+257 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;++refCount;
+258 }
+259 
+265 <emphasis role="keyword">template</emphasis>&lt;<emphasis role="keyword">class&#32;</emphasis>First,&#32;<emphasis role="keyword">class</emphasis>...&#32;ComClasses&gt;
+266 ULONG&#32;<link linkend="_class_smart_pointer_helper_base_1a693a3f65e96897ad99ccc1e95c7c0fcd">SmartPointerHelperBase&lt;First, ComClasses...&gt;::Release</link>()
+267 {
+268 &#32;&#32;&#32;&#32;<emphasis role="keyword">auto</emphasis>&#32;r&#32;=&#32;--refCount;
+269 
+270 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(r&#32;==&#32;0)
+271 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">delete</emphasis>&#32;<emphasis role="keyword">this</emphasis>;
+272 
+273 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;r;
+274 }
+275 
+286 <emphasis role="keyword">template</emphasis>&lt;<emphasis role="keyword">class&#32;</emphasis>First,&#32;<emphasis role="keyword">class</emphasis>...&#32;ComClasses&gt;
+287 <emphasis role="keyword">template</emphasis>&lt;<emphasis role="keyword">class</emphasis>&#32;Type&gt;
+288 HRESULT&#32;STDMETHODCALLTYPE&#32;<link linkend="_class_smart_pointer_helper_base_1accdc2a95363ae4f3e76d5dc00e8fef38">SmartPointerHelperBase&lt;First, ComClasses...&gt;::castToType</link>(<emphasis role="keywordtype">void</emphasis>&#32;**result)
+289 {
+290 &#32;&#32;&#32;&#32;this-&gt;AddRef();
+291 &#32;&#32;&#32;&#32;*result&#32;=&#32;<emphasis role="keyword">dynamic_cast&lt;</emphasis>Type*<emphasis role="keyword">&gt;</emphasis>(<emphasis role="keyword">this</emphasis>);
+292 
+293 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;S_OK;
+294 }
+295 
+317 <emphasis role="keyword">template</emphasis>&lt;<emphasis role="keyword">class&#32;</emphasis>First,&#32;<emphasis role="keyword">class</emphasis>...&#32;ComClasses&gt;
+318 HRESULT&#32;<link linkend="_class_smart_pointer_helper_base_1a93350be3711ec44389ccb85607da79e8">SmartPointerHelperBase&lt;First, ComClasses...&gt;::QueryInterface</link>(CONST&#32;IID&#32;&amp;riid,&#32;<emphasis role="keywordtype">void</emphasis>&#32;**ppvObject)
+319 {
+320 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(riid&#32;==&#32;__uuidof&#32;(IUnknown))
+321 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;castToType&lt;First&gt;&#32;(ppvObject);
+322 
+323 &#32;&#32;&#32;&#32;*ppvObject&#32;=&#32;<emphasis role="keyword">nullptr</emphasis>;
+324 
+325 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;E_NOINTERFACE;
+326 }
+327 
+328 
+329 
+335 <emphasis role="keyword">template</emphasis>&lt;<emphasis role="keyword">class</emphasis>...&#32;ComClasses&gt;
+336 <link linkend="_class_smart_pointer_helper_1a5ebedea882de1289a08b66f6fc806b9e">SmartPointerHelper&lt;ComClasses...&gt;::SmartPointerHelper</link>(<emphasis role="keywordtype">unsigned</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;initRef)
+337 &#32;:&#32;<link linkend="_class_smart_pointer_helper_base">SmartPointerHelperBase</link>&lt;ComClasses...&gt;(initRef)
+338 {
+339 
+340 }
+341 
+349 <emphasis role="keyword">template</emphasis>&lt;<emphasis role="keyword">class</emphasis>...&#32;ComClasses&gt;
+350 HRESULT&#32;<link linkend="_class_smart_pointer_helper_1a14e73f95576736f3274f54ee777761a2">SmartPointerHelper&lt;ComClasses...&gt;::QueryInterface</link>(REFIID&#32;refId,&#32;<emphasis role="keywordtype">void</emphasis>&#32;**result)
+351 {
+352 &#32;&#32;&#32;&#32;CONST&#32;std::tuple&lt;IID,&#32;void*&gt;&#32;bases[]
+353 &#32;&#32;&#32;&#32;{
+354 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::make_tuple&#32;(__uuidof(ComClasses),&#32;<emphasis role="keyword">static_cast&lt;</emphasis><emphasis role="keywordtype">void</emphasis>*<emphasis role="keyword">&gt;</emphasis>&#32;(<emphasis role="keyword">static_cast&lt;</emphasis>ComClasses*<emphasis role="keyword">&gt;</emphasis>&#32;(<emphasis role="keyword">this</emphasis>)))...
+355 &#32;&#32;&#32;&#32;};
+356 
+357 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Query&#32;a&#32;ranged&#32;&apos;for&apos;&#32;loop&#32;(each&#32;&apos;base&apos;&#32;in&#32;the&#32;&apos;bases&apos;&#32;tuple&#32;array)</emphasis>
+358 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(CONST&#32;<emphasis role="keyword">auto</emphasis>&amp;&#32;base&#32;:&#32;bases)
+359 &#32;&#32;&#32;&#32;{
+360 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(refId&#32;==&#32;std::get&lt;0&gt;&#32;(base))
+361 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+362 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;AddRef();
+363 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*result&#32;=&#32;std::get&lt;1&gt;&#32;(base);
+364 
+365 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;S_OK;
+366 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+367 &#32;&#32;&#32;&#32;}
+368 
+369 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_smart_pointer_helper_base_1a93350be3711ec44389ccb85607da79e8">SmartPointerHelperBase&lt;ComClasses...&gt;::QueryInterface</link>&#32;(refId,&#32;result);
+370 }
+371 
+372 
+380 <emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">class</emphasis>&#32;ComClass&gt;
+381 <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_win32___smart_pointer_8cpp_1a53522409e1312cfaf53cebc29bff8008">SafeRelease</link>(ComClass**&#32;ptr)
+382 {
+383 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(*ptr)
+384 &#32;&#32;&#32;&#32;{
+385 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(*ptr)-&gt;Release();
+386 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*ptr&#32;=&#32;<emphasis role="keyword">nullptr</emphasis>;
+387 &#32;&#32;&#32;&#32;}
+388 }
+</programlisting></section>

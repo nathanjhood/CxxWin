@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_win32___main_window_8cpp" xml:lang="en-US">
+<title>include/CxxWin/modules/Win32_core/window/win32_MainWindow.cpp File Reference</title>
+<indexterm><primary>include/CxxWin/modules/Win32_core/window/win32_MainWindow.cpp</primary></indexterm>
+<para>
+
+<para>Contains a definition of the &apos;<link linkend="_class_main_window">MainWindow</link>&apos; class which inherits from the &apos;<link linkend="_class_base_window">BaseWindow</link>&apos; class. Inherit this &apos;<link linkend="_class_main_window">MainWindow</link>&apos; class for a basic window functionality. </para>
+ 
+</para>
+<section>
+<title>Detailed Description</title>
+
+<para>Contains a definition of the &apos;<link linkend="_class_main_window">MainWindow</link>&apos; class which inherits from the &apos;<link linkend="_class_base_window">BaseWindow</link>&apos; class. Inherit this &apos;<link linkend="_class_main_window">MainWindow</link>&apos; class for a basic window functionality. </para>
+
+<para><formalpara><title>Author</title>
+
+<para>StoneyDSP (<link xlink:href="mailto:nathanjhood@googlemail.com">nathanjhood@googlemail.com</link>)</para>
+</formalpara>
+</para>
+
+<para><formalpara><title>Version</title>
+
+<para>1.0.0 </para>
+</formalpara>
+<formalpara><title>Date</title>
+
+<para>2023-08-23</para>
+</formalpara>
+<formalpara><title>Copyright</title>
+
+<para>Copyright (c) 2023 </para>
+</formalpara>
+</para>
+</section>
+</section>

@@ -1,0 +1,119 @@
+.TH "MainWindow" 3Version 1.0.1" "CxxWin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MainWindow \- The '\fBMainWindow\fP' class\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <win32_MainWindow\&.hpp>\fP
+.PP
+Inherits \fBBaseWindow< MainWindow >\fP\&.
+.PP
+Inherited by \fBMainComponent\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMainWindow\fP ()=default"
+.br
+.RI "Default-Construct a new Main Window object\&. "
+.ti -1c
+.RI "PCWSTR \fBClassName\fP () CONST"
+.br
+.ti -1c
+.RI "LRESULT \fBHandleMessage\fP (UINT uMsg, WPARAM wParam, LPARAM lParam)"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBBaseWindow< MainWindow >\fP
+.in +1c
+.ti -1c
+.RI "\fBBaseWindow\fP ()"
+.br
+.RI "Construct a new '\fBBaseWindow\fP' object\&. "
+.ti -1c
+.RI "BOOL \fBCreate\fP (PCWSTR lpWindowName, DWORD dwStyle, DWORD dwExStyle=0, int x=CW_USEDEFAULT, int y=CW_USEDEFAULT, int nWidth=CW_USEDEFAULT, int nHeight=CW_USEDEFAULT, HWND hWndParent=0, HMENU hMenu=0)"
+.br
+.RI "Create a new '\fBBaseWindow\fP' -derived object\&. "
+.ti -1c
+.RI "HWND \fBWindow\fP () CONST"
+.br
+.RI "Return the handle to the '\fBBaseWindow\fP' -derived object\&. "
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Static Public Member Functions inherited from \fBBaseWindow< MainWindow >\fP
+.in +1c
+.ti -1c
+.RI "static LRESULT CALLBACK \fBWindowProc\fP (HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)"
+.br
+.RI "'LRESULT' is an integer value that your program returns to Windows\&. "
+.in -1c
+.in +1c
+.ti -1c
+.RI "virtual PCWSTR \fBClassName\fP () CONST PURE"
+.br
+.RI "Return a string of the name of '\fBBaseWindow\fP' -derived object\&. "
+.ti -1c
+.RI "virtual LRESULT \fBHandleMessage\fP (UINT uMsg, WPARAM wParam, LPARAM lParam) PURE"
+.br
+.RI "Handle the incoming messages\&. "
+.in -1c
+
+Protected Attributes inherited from \fBBaseWindow< MainWindow >\fP
+.in +1c
+.ti -1c
+.RI "HWND \fBm_hwnd\fP"
+.br
+.RI "The handle to the '\fBBaseWindow\fP' -derived object\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+The '\fBMainWindow\fP' class\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "MainWindow::MainWindow ()\fC [inline]\fP, \fC [default]\fP"
+
+.PP
+Default-Construct a new Main Window object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "PCWSTR MainWindow::ClassName ()\fC [virtual]\fP"
+
+.PP
+\fBReturns\fP
+.RS 4
+PCWSTR 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBBaseWindow< MainWindow >\fP\&.
+.SS "LRESULT MainWindow::HandleMessage (UINT uMsg, WPARAM wParam, LPARAM lParam)\fC [virtual]\fP"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIuMsg\fP 
+.br
+\fIwParam\fP 
+.br
+\fIlParam\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+LRESULT 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBBaseWindow< MainWindow >\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CxxWin from the source code\&.

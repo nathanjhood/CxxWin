@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d5/d8a/struct_c_make_r_c_1_1_detail_1_1_created_sub_directory" kind="struct" language="C++" prot="public">
+    <compoundname>CMakeRC::Detail::CreatedSubDirectory</compoundname>
+    <includes refid="df/dcb/cmrc_8hpp" local="no">cmrc.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d5/d8a/struct_c_make_r_c_1_1_detail_1_1_created_sub_directory_1a225b4cdbdb42d83831c630de10a6aa09" prot="public" static="no" mutable="no">
+        <type>class <ref refid="d3/d17/class_c_make_r_c_1_1_detail_1_1_directory" kindref="compound">Directory</ref> &amp;</type>
+        <definition>class Directory&amp; CMakeRC::Detail::CreatedSubDirectory::Directory</definition>
+        <argsstring></argsstring>
+        <name>Directory</name>
+        <qualifiedname>CMakeRC::Detail::CreatedSubDirectory::Directory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="328" column="21" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d8a/struct_c_make_r_c_1_1_detail_1_1_created_sub_directory_1a637b11814abbfa2c0ddac8984bb60e08" prot="public" static="no" mutable="no">
+        <type>class <ref refid="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory" kindref="compound">FileOrDirectory</ref> &amp;</type>
+        <definition>class FileOrDirectory&amp; CMakeRC::Detail::CreatedSubDirectory::IndexEntry</definition>
+        <argsstring></argsstring>
+        <name>IndexEntry</name>
+        <qualifiedname>CMakeRC::Detail::CreatedSubDirectory::IndexEntry</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="329" column="27" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>CMakeRC::Detail::CreatedSubDirectory</label>
+        <link refid="d5/d8a/struct_c_make_r_c_1_1_detail_1_1_created_sub_directory"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Directory</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>IndexEntry</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CMakeRC::Detail::Directory</label>
+        <link refid="d3/d17/class_c_make_r_c_1_1_detail_1_1_directory"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_files</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>_dirs</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>_index</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>CMakeRC::Detail::FileData</label>
+        <link refid="d0/d80/class_c_make_r_c_1_1_detail_1_1_file_data"/>
+      </node>
+      <node id="9">
+        <label>CMakeRC::Detail::FileOrDirectory</label>
+        <link refid="d1/da2/class_c_make_r_c_1_1_detail_1_1_file_or_directory"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>_data</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>CMakeRC::Detail::FileOrDirectory::_data_t</label>
+        <link refid="d3/dd6/union_c_make_r_c_1_1_detail_1_1_file_or_directory_1_1__data__t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>FileData</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Directory</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>std::list&lt; CMakeRC::Detail::Directory &gt;</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::list&lt; CMakeRC::Detail::FileData &gt;</label>
+        <childnode refid="4" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>std::map&lt; std::string, CMakeRC::Detail::FileOrDirectory &gt;</label>
+        <childnode refid="7" relation="usage">
+          <edgelabel>keys</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>std::basic_string&lt; Char &gt;</label>
+      </node>
+      <node id="7">
+        <label>std::string</label>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="326" column="1" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="327" bodyend="330"/>
+    <listofallmembers>
+      <member refid="d5/d8a/struct_c_make_r_c_1_1_detail_1_1_created_sub_directory_1a225b4cdbdb42d83831c630de10a6aa09" prot="public" virt="non-virtual"><scope>CMakeRC::Detail::CreatedSubDirectory</scope><name>Directory</name></member>
+      <member refid="d5/d8a/struct_c_make_r_c_1_1_detail_1_1_created_sub_directory_1a637b11814abbfa2c0ddac8984bb60e08" prot="public" virt="non-virtual"><scope>CMakeRC::Detail::CreatedSubDirectory</scope><name>IndexEntry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

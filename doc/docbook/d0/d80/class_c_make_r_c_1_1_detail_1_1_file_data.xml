@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_c_make_r_c_1_1_detail_1_1_file_data" xml:lang="en-US">
+<title>CMakeRC::Detail::FileData Class Reference</title>
+<indexterm><primary>CMakeRC::Detail::FileData</primary></indexterm>
+<para>
+<computeroutput>#include &lt;cmrc.hpp&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_c_make_r_c_1_1_detail_1_1_file_data_1ab652c9133fdf6f086603c5cac4095b7e">FileData</link> (<link linkend="_win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268">RCRESOURCEPTR</link> b, <link linkend="_win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268">RCRESOURCEPTR</link> e)</para>
+
+<para>Construct a new &apos;<link linkend="_class_c_make_r_c_1_1_detail_1_1_file_data">FileData</link>&apos; object. </para>
+</listitem>
+            <listitem><para><link linkend="_class_c_make_r_c_1_1_detail_1_1_file_data_1a7bfd974316fceb83eab3d28069a8d91d">FileData</link> (const <link linkend="_class_c_make_r_c_1_1_detail_1_1_file_data">FileData</link> &amp;)=delete</para>
+
+<para>(inaccessible) Move-Construct a new &apos;<link linkend="_class_c_make_r_c_1_1_detail_1_1_file_data">FileData</link>&apos; object </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268">RCRESOURCEPTR</link> <link linkend="_class_c_make_r_c_1_1_detail_1_1_file_data_1a02153c6e1ef5d9aeb40abfe1023b92d3">begin_ptr</link></para>
+</listitem>
+            <listitem><para><link linkend="_win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268">RCRESOURCEPTR</link> <link linkend="_class_c_make_r_c_1_1_detail_1_1_file_data_1ad2b8490904a373caa51c8a2ce4c6d935">end_ptr</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_c_make_r_c_1_1_detail_1_1_file_data_1ab652c9133fdf6f086603c5cac4095b7e"/><section>
+    <title>FileData()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>FileData</primary><secondary>CMakeRC::Detail::FileData</secondary></indexterm>
+<indexterm><primary>CMakeRC::Detail::FileData</primary><secondary>FileData</secondary></indexterm>
+<para><computeroutput>CMakeRC::Detail::FileData::FileData (<link linkend="_win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268">RCRESOURCEPTR</link> b, <link linkend="_win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268">RCRESOURCEPTR</link> e)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Construct a new &apos;<link linkend="_class_c_make_r_c_1_1_detail_1_1_file_data">FileData</link>&apos; object. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>b</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>e</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_c_make_r_c_1_1_detail_1_1_file_data_1a7bfd974316fceb83eab3d28069a8d91d"/><section>
+    <title>FileData()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>FileData</primary><secondary>CMakeRC::Detail::FileData</secondary></indexterm>
+<indexterm><primary>CMakeRC::Detail::FileData</primary><secondary>FileData</secondary></indexterm>
+<para><computeroutput>CMakeRC::Detail::FileData::FileData (const <link linkend="_class_c_make_r_c_1_1_detail_1_1_file_data">FileData</link> &amp; )<computeroutput>[delete]</computeroutput></computeroutput></para><para>
+
+<para>(inaccessible) Move-Construct a new &apos;<link linkend="_class_c_make_r_c_1_1_detail_1_1_file_data">FileData</link>&apos; object </para>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_c_make_r_c_1_1_detail_1_1_file_data_1a02153c6e1ef5d9aeb40abfe1023b92d3"/><section>
+    <title>begin_ptr</title>
+<indexterm><primary>begin_ptr</primary><secondary>CMakeRC::Detail::FileData</secondary></indexterm>
+<indexterm><primary>CMakeRC::Detail::FileData</primary><secondary>begin_ptr</secondary></indexterm>
+<para><computeroutput><link linkend="_win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268">RCRESOURCEPTR</link> CMakeRC::Detail::FileData::begin_ptr</computeroutput></para></section>
+<anchor xml:id="_class_c_make_r_c_1_1_detail_1_1_file_data_1ad2b8490904a373caa51c8a2ce4c6d935"/><section>
+    <title>end_ptr</title>
+<indexterm><primary>end_ptr</primary><secondary>CMakeRC::Detail::FileData</secondary></indexterm>
+<indexterm><primary>CMakeRC::Detail::FileData</primary><secondary>end_ptr</secondary></indexterm>
+<para><computeroutput><link linkend="_win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268">RCRESOURCEPTR</link> CMakeRC::Detail::FileData::end_ptr</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+include/CxxWin/modules/Win32_resource/<link linkend="_cmrc_8hpp">cmrc.hpp</link></section>
+</section>

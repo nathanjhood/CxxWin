@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dd/d94/namespaceanonymous__namespace_02win32___application_icon__png_8cpp_03" kind="namespace" language="C++">
+    <compoundname>anonymous_namespace{win32_ApplicationIcon_png.cpp}</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="dd/d94/namespaceanonymous__namespace_02win32___application_icon__png_8cpp_03_1ac6c90bce451deb9ab83bd261242e8d95" prot="public" static="no" mutable="no">
+        <type><ref refid="d5/d1d/win32__resource_8hpp_1a3589507c444d07ca84f3ec878da0e8ff" kindref="member">RCRESOURCE</ref></type>
+        <definition>RCRESOURCE anonymous_namespace{win32_ApplicationIcon_png.cpp}::ApplicationIcon_png_array[2336]</definition>
+        <argsstring>[2336]</argsstring>
+        <name>ApplicationIcon_png_array</name>
+        <qualifiedname>anonymous_namespace{win32_ApplicationIcon_png.cpp}::ApplicationIcon_png_array</qualifiedname>
+        <briefdescription>
+<para>An array of bytes representing &quot;ApplicationIcon.png&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para>&apos;ApplicationIcon.png&apos; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/img/win32_ApplicationIcon_png.cpp" line="32" column="12" bodyfile="include/CxxWin/modules/Win32_resource/img/win32_ApplicationIcon_png.cpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/CxxWin/modules/Win32_resource/img/win32_ApplicationIcon_png.cpp" line="24" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="dd/d89/namespaceanonymous__namespace_02win32___windows___temporary_key__pfx_8hpp_03" kind="namespace" language="C++">
+    <compoundname>anonymous_namespace{win32_Windows_TemporaryKey_pfx.hpp}</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="dd/d89/namespaceanonymous__namespace_02win32___windows___temporary_key__pfx_8hpp_03_1a977dbd25903a1734ee0bf96bfcfa1fc8" prot="public" static="no" mutable="no">
+        <type><ref refid="d5/d1d/win32__resource_8hpp_1a3589507c444d07ca84f3ec878da0e8ff" kindref="member">RCRESOURCE</ref></type>
+        <definition>RCRESOURCE anonymous_namespace{win32_Windows_TemporaryKey_pfx.hpp}::Windows_TemporaryKey_pfx_array[2561]</definition>
+        <argsstring>[2561]</argsstring>
+        <name>Windows_TemporaryKey_pfx_array</name>
+        <qualifiedname>anonymous_namespace{win32_Windows_TemporaryKey_pfx.hpp}::Windows_TemporaryKey_pfx_array</qualifiedname>
+        <briefdescription>
+<para>An array of bytes representing &apos;Windows_TemporaryKey.pfx&apos;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/key/win32_Windows_TemporaryKey_pfx.hpp" line="32" column="12" bodyfile="include/CxxWin/modules/Win32_resource/key/win32_Windows_TemporaryKey_pfx.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/CxxWin/modules/Win32_resource/key/win32_Windows_TemporaryKey_pfx.hpp" line="29" column="1"/>
+  </compounddef>
+</doxygen>

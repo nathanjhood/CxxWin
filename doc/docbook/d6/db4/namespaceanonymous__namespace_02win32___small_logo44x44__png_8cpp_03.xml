@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespaceanonymous__namespace_02win32___small_logo44x44__png_8cpp_03" xml:lang="en-US">
+<title>anonymous_namespace{win32_SmallLogo44x44_png.cpp} Namespace Reference</title>
+<indexterm><primary>anonymous_namespace{win32_SmallLogo44x44_png.cpp}</primary></indexterm>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_win32__resource_8hpp_1a3589507c444d07ca84f3ec878da0e8ff">RCRESOURCE</link> <link linkend="_namespaceanonymous__namespace_02win32___small_logo44x44__png_8cpp_03_1aa580ad13d7f57abdcb3c8aaba6f0cd76">SmallLogo44x44_png_array</link> [266]</para>
+
+<para>An array of bytes representing &apos;SmallLogo44x44.png&apos;. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespaceanonymous__namespace_02win32___small_logo44x44__png_8cpp_03_1aa580ad13d7f57abdcb3c8aaba6f0cd76"/><section>
+    <title>SmallLogo44x44_png_array</title>
+<indexterm><primary>SmallLogo44x44_png_array</primary><secondary>anonymous_namespace{win32_SmallLogo44x44_png.cpp}</secondary></indexterm>
+<indexterm><primary>anonymous_namespace{win32_SmallLogo44x44_png.cpp}</primary><secondary>SmallLogo44x44_png_array</secondary></indexterm>
+<para><computeroutput><link linkend="_win32__resource_8hpp_1a3589507c444d07ca84f3ec878da0e8ff">RCRESOURCE</link> anonymous_namespace{win32_SmallLogo44x44_png.cpp}::SmallLogo44x44_png_array[266]</computeroutput></para><para>
+
+<para>An array of bytes representing &apos;SmallLogo44x44.png&apos;. </para>
+</para>
+</section>
+</section>
+</section>

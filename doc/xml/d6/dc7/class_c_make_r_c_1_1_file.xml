@@ -1,0 +1,237 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="d6/dc7/class_c_make_r_c_1_1_file" kind="class" language="C++" prot="public">
+    <compoundname>CMakeRC::File</compoundname>
+    <includes refid="df/dcb/cmrc_8hpp" local="no">cmrc.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="d6/dc7/class_c_make_r_c_1_1_file_1a15ff727ef2f71bdc6a6e16e909764fe0" prot="public" static="no">
+        <type><ref refid="d5/d1d/win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268" kindref="member">RCRESOURCEPTR</ref></type>
+        <definition>using CMakeRC::File::Iterator =  RCRESOURCEPTR</definition>
+        <argsstring></argsstring>
+        <name>Iterator</name>
+        <qualifiedname>CMakeRC::File::Iterator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="101" column="5" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d6/dc7/class_c_make_r_c_1_1_file_1a409b19a989325a4f9c1cc853a90aa45d" prot="public" static="no">
+        <type><ref refid="d6/dc7/class_c_make_r_c_1_1_file_1a15ff727ef2f71bdc6a6e16e909764fe0" kindref="member">Iterator</ref></type>
+        <definition>using CMakeRC::File::ConstIterator =  Iterator</definition>
+        <argsstring></argsstring>
+        <name>ConstIterator</name>
+        <qualifiedname>CMakeRC::File::ConstIterator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="102" column="5" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d6/dc7/class_c_make_r_c_1_1_file_1ae620455a132951e883cb61ff4af16f02" prot="private" static="no" mutable="no">
+        <type><ref refid="d5/d1d/win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268" kindref="member">RCRESOURCEPTR</ref></type>
+        <definition>RCRESOURCEPTR CMakeRC::File::_begin</definition>
+        <argsstring></argsstring>
+        <name>_begin</name>
+        <qualifiedname>CMakeRC::File::_begin</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>The first char of an array which contains a &apos;file&apos; object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="167" column="19" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/dc7/class_c_make_r_c_1_1_file_1a701343f0f39c2d7e037a7359f98f62da" prot="private" static="no" mutable="no">
+        <type><ref refid="d5/d1d/win32__resource_8hpp_1af13d0262d2bbd96845361a8cc0e0c268" kindref="member">RCRESOURCEPTR</ref></type>
+        <definition>RCRESOURCEPTR CMakeRC::File::_end</definition>
+        <argsstring></argsstring>
+        <name>_end</name>
+        <qualifiedname>CMakeRC::File::_end</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>The last char of an array which contains a &apos;file&apos; object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="172" column="19" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d6/dc7/class_c_make_r_c_1_1_file_1a73500aa6c3dfaacf203d8d227d22ff36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CMakeRC::File::File</definition>
+        <argsstring>()=default</argsstring>
+        <name>File</name>
+        <qualifiedname>CMakeRC::File::File</qualifiedname>
+        <briefdescription>
+<para>Default-Construct a new &apos;<ref refid="d6/dc7/class_c_make_r_c_1_1_file" kindref="compound">File</ref>&apos; object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="108" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dc7/class_c_make_r_c_1_1_file_1a7490f309a3f2579ae6568bae31923aa9" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>CMakeRC::File::File</definition>
+        <argsstring>(Iterator beg, Iterator end) noexcept</argsstring>
+        <name>File</name>
+        <qualifiedname>CMakeRC::File::File</qualifiedname>
+        <param>
+          <type><ref refid="d6/dc7/class_c_make_r_c_1_1_file_1a15ff727ef2f71bdc6a6e16e909764fe0" kindref="member">Iterator</ref></type>
+          <declname>beg</declname>
+        </param>
+        <param>
+          <type><ref refid="d6/dc7/class_c_make_r_c_1_1_file_1a15ff727ef2f71bdc6a6e16e909764fe0" kindref="member">Iterator</ref></type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new &apos;<ref refid="d6/dc7/class_c_make_r_c_1_1_file" kindref="compound">File</ref>&apos; object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>beg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="115" column="5" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="115" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dc7/class_c_make_r_c_1_1_file_1a8190a209e6a026ee8fab3244412d11bb" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="d6/dc7/class_c_make_r_c_1_1_file_1a15ff727ef2f71bdc6a6e16e909764fe0" kindref="member">Iterator</ref></type>
+        <definition>Iterator CMakeRC::File::Begin</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>Begin</name>
+        <qualifiedname>CMakeRC::File::Begin</qualifiedname>
+        <briefdescription>
+<para>Return the beginning of an array which contains a &apos;<ref refid="d6/dc7/class_c_make_r_c_1_1_file" kindref="compound">File</ref>&apos; object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Iterator </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="121" column="14" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="121" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dc7/class_c_make_r_c_1_1_file_1affe52cb4e1449c3c522aec515631828e" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="d6/dc7/class_c_make_r_c_1_1_file_1a15ff727ef2f71bdc6a6e16e909764fe0" kindref="member">Iterator</ref></type>
+        <definition>Iterator CMakeRC::File::CBegin</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>CBegin</name>
+        <qualifiedname>CMakeRC::File::CBegin</qualifiedname>
+        <briefdescription>
+<para>Return the beginning of an array which contains a &apos;<ref refid="d6/dc7/class_c_make_r_c_1_1_file" kindref="compound">File</ref>&apos; object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Iterator </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="130" column="14" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="130" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dc7/class_c_make_r_c_1_1_file_1a690dfb10e300098bf1ce19e38bee236b" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="d6/dc7/class_c_make_r_c_1_1_file_1a15ff727ef2f71bdc6a6e16e909764fe0" kindref="member">Iterator</ref></type>
+        <definition>Iterator CMakeRC::File::End</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>End</name>
+        <qualifiedname>CMakeRC::File::End</qualifiedname>
+        <briefdescription>
+<para>Return the end of an array which contains a &apos;<ref refid="d6/dc7/class_c_make_r_c_1_1_file" kindref="compound">File</ref>&apos; object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Iterator </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="139" column="14" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dc7/class_c_make_r_c_1_1_file_1a2f16cd3bfd3bc7aeaef3eebbb882b684" prot="public" static="no" const="yes" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="d6/dc7/class_c_make_r_c_1_1_file_1a15ff727ef2f71bdc6a6e16e909764fe0" kindref="member">Iterator</ref></type>
+        <definition>Iterator CMakeRC::File::CEnd</definition>
+        <argsstring>() const noexcept</argsstring>
+        <name>CEnd</name>
+        <qualifiedname>CMakeRC::File::CEnd</qualifiedname>
+        <briefdescription>
+<para>Return the end of an array which contains a &apos;<ref refid="d6/dc7/class_c_make_r_c_1_1_file" kindref="compound">File</ref>&apos; object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Iterator </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="148" column="14" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="148" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="d6/dc7/class_c_make_r_c_1_1_file_1ae50497b1ca22530f084d3b9cc48da9a6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t CMakeRC::File::Size</definition>
+        <argsstring>() const</argsstring>
+        <name>Size</name>
+        <qualifiedname>CMakeRC::File::Size</qualifiedname>
+        <briefdescription>
+<para>Return the size of an array which contains a &apos;<ref refid="d6/dc7/class_c_make_r_c_1_1_file" kindref="compound">File</ref>&apos; object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::size_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="157" column="17" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="157" bodyend="160"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/CxxWin/modules/Win32_resource/cmrc.hpp" line="98" column="1" bodyfile="include/CxxWin/modules/Win32_resource/cmrc.hpp" bodystart="99" bodyend="173"/>
+    <listofallmembers>
+      <member refid="d6/dc7/class_c_make_r_c_1_1_file_1ae620455a132951e883cb61ff4af16f02" prot="private" virt="non-virtual"><scope>CMakeRC::File</scope><name>_begin</name></member>
+      <member refid="d6/dc7/class_c_make_r_c_1_1_file_1a701343f0f39c2d7e037a7359f98f62da" prot="private" virt="non-virtual"><scope>CMakeRC::File</scope><name>_end</name></member>
+      <member refid="d6/dc7/class_c_make_r_c_1_1_file_1a8190a209e6a026ee8fab3244412d11bb" prot="public" virt="non-virtual"><scope>CMakeRC::File</scope><name>Begin</name></member>
+      <member refid="d6/dc7/class_c_make_r_c_1_1_file_1affe52cb4e1449c3c522aec515631828e" prot="public" virt="non-virtual"><scope>CMakeRC::File</scope><name>CBegin</name></member>
+      <member refid="d6/dc7/class_c_make_r_c_1_1_file_1a2f16cd3bfd3bc7aeaef3eebbb882b684" prot="public" virt="non-virtual"><scope>CMakeRC::File</scope><name>CEnd</name></member>
+      <member refid="d6/dc7/class_c_make_r_c_1_1_file_1a409b19a989325a4f9c1cc853a90aa45d" prot="public" virt="non-virtual"><scope>CMakeRC::File</scope><name>ConstIterator</name></member>
+      <member refid="d6/dc7/class_c_make_r_c_1_1_file_1a690dfb10e300098bf1ce19e38bee236b" prot="public" virt="non-virtual"><scope>CMakeRC::File</scope><name>End</name></member>
+      <member refid="d6/dc7/class_c_make_r_c_1_1_file_1a73500aa6c3dfaacf203d8d227d22ff36" prot="public" virt="non-virtual"><scope>CMakeRC::File</scope><name>File</name></member>
+      <member refid="d6/dc7/class_c_make_r_c_1_1_file_1a7490f309a3f2579ae6568bae31923aa9" prot="public" virt="non-virtual"><scope>CMakeRC::File</scope><name>File</name></member>
+      <member refid="d6/dc7/class_c_make_r_c_1_1_file_1a15ff727ef2f71bdc6a6e16e909764fe0" prot="public" virt="non-virtual"><scope>CMakeRC::File</scope><name>Iterator</name></member>
+      <member refid="d6/dc7/class_c_make_r_c_1_1_file_1ae50497b1ca22530f084d3b9cc48da9a6" prot="public" virt="non-virtual"><scope>CMakeRC::File</scope><name>Size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

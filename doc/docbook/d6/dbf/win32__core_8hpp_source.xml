@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_win32__core_8hpp_source" xml:lang="en-US">
+<title>win32_core.hpp</title>
+<indexterm><primary>include/CxxWin/modules/Win32_core/win32_core.hpp</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 
+13 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+14 
+15 <emphasis role="preprocessor">#define&#32;_WIN32_CORE_H_</emphasis>
+16 
+17 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_win32___target_platform_8hpp">system/win32_TargetPlatform.hpp</link>&quot;</emphasis>
+18 
+19 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_win32___basic_native_headers_8hpp">native/win32_BasicNativeHeaders.hpp</link>&quot;</emphasis>
+20 
+21 <emphasis role="preprocessor">#ifdef&#32;__PLATFORM_IS_WINDOWS</emphasis>
+22 <emphasis role="preprocessor">&#32;#undef&#32;small</emphasis>
+23 <emphasis role="preprocessor">#endif</emphasis>
+24 
+25 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_win32___standard_header_8hpp">system/win32_StandardHeader.hpp</link>&quot;</emphasis>
+26 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_win32___unicode_8hpp">native/win32_Unicode.hpp</link>&quot;</emphasis>
+27 
+28 <emphasis role="comment">//&#32;#include&#32;&quot;memory/win32_CComPtrBase.hpp&quot;</emphasis>
+29 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_win32___smart_pointer_8hpp">memory/win32_SmartPointer.hpp</link>&quot;</emphasis>
+30 
+31 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_win32___d_p_i_scale_8hpp">window/win32_DPIScale.hpp</link>&quot;</emphasis>
+32 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_win32___base_window_8hpp">window/win32_BaseWindow.hpp</link>&quot;</emphasis>
+33 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_win32___main_window_8hpp">window/win32_MainWindow.hpp</link>&quot;</emphasis>
+34 
+35 
+36 <emphasis role="comment">//&#32;#include&#32;&quot;system/win32_Toolchain.hpp&quot;</emphasis>
+</programlisting></section>

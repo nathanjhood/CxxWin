@@ -1,0 +1,135 @@
+.TH "include/CxxWin/modules/Win32_core/system/win32_PlatformDefs.hpp" 3Version 1.0.1" "CxxWin" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+include/CxxWin/modules/Win32_core/system/win32_PlatformDefs.hpp \- Contains preprocessor definitions to declare classes and structs as 'non-copyable', 'non-moveable', and to add a leak detector for debugging\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB_WIN32_PLATFORMDEFS_HPP_\fP"
+.br
+.RI "Contains preprocessor definitions to declare classes and structs as 'non-copyable', 'non-moveable', and to add a leak detector for debugging\&. "
+.ti -1c
+.RI "#define \fB__DECLARE_NON_COPYABLE\fP(className)"
+.br
+.RI "This is a shorthand macro for deleting a class's copy constructor and copy assignment operator\&. "
+.ti -1c
+.RI "#define \fB__DECLARE_NON_MOVEABLE\fP(className)"
+.br
+.RI "This is a shorthand macro for deleting a class's move constructor and move assignment operator\&. "
+.ti -1c
+.RI "#define \fB__DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR\fP(className)"
+.br
+.RI "This is a shorthand way of writing both a __DECLARE_NON_COPYABLE and __LEAK_DETECTOR macro for a class\&. "
+.ti -1c
+.RI "#define \fB__PREVENT_HEAP_ALLOCATION\fP"
+.br
+.RI "This macro can be added to class definitions to disable the use of new/delete to allocate the object on the heap, forcing it to only be used as a stack or member variable\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Contains preprocessor definitions to declare classes and structs as 'non-copyable', 'non-moveable', and to add a leak detector for debugging\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+StoneyDSP (nathanjhood@googlemail.com)
+.RE
+.PP
+.PP
+\fBVersion\fP
+.RS 4
+1\&.0\&.0 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+2023-08-30
+.RE
+.PP
+\fBCopyright\fP
+.RS 4
+Copyright (c) 2023 
+.RE
+.PP
+
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define __DECLARE_NON_COPYABLE(className)"
+\fBValue:\fP.PP
+.nf
+    className (CONST className&) = delete;\\
+    className& operator= (CONST className&) = delete;
+.fi
+
+.PP
+This is a shorthand macro for deleting a class's copy constructor and copy assignment operator\&. For example, instead of 
+.PP
+.nf
+class MyClass
+{
+    etc\&.\&.
+
+private:
+    MyClass (const MyClass&);
+    MyClass& operator= (const MyClass&);
+};
+
+.fi
+.PP
+.PP
+\&.\&.you can just write:
+.PP
+.PP
+.nf
+class MyClass
+{
+    etc\&.\&.
+
+private:
+    __DECLARE_NON_COPYABLE (MyClass)
+};
+.fi
+.PP
+ 
+.SS "#define __DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(className)"
+\fBValue:\fP.PP
+.nf
+    __DECLARE_NON_COPYABLE(className) \\
+    __LEAK_DETECTOR(className)
+.fi
+
+.PP
+This is a shorthand way of writing both a __DECLARE_NON_COPYABLE and __LEAK_DETECTOR macro for a class\&. 
+.SS "#define __DECLARE_NON_MOVEABLE(className)"
+\fBValue:\fP.PP
+.nf
+    className (className&&) = delete;\\
+    className& operator= (className&&) = delete;
+.fi
+
+.PP
+This is a shorthand macro for deleting a class's move constructor and move assignment operator\&. 
+.SS "#define __PREVENT_HEAP_ALLOCATION"
+\fBValue:\fP.PP
+.nf
+   private: \\
+    static void* operator new (size_t) = delete; \\
+    static void operator delete (void*) = delete;
+.fi
+
+.PP
+This macro can be added to class definitions to disable the use of new/delete to allocate the object on the heap, forcing it to only be used as a stack or member variable\&. 
+.SS "#define _WIN32_PLATFORMDEFS_HPP_"
+
+.PP
+Contains preprocessor definitions to declare classes and structs as 'non-copyable', 'non-moveable', and to add a leak detector for debugging\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CxxWin from the source code\&.

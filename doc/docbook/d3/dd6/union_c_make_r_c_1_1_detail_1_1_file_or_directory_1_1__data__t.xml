@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_union_c_make_r_c_1_1_detail_1_1_file_or_directory_1_1__data__t" xml:lang="en-US">
+<title>CMakeRC::Detail::FileOrDirectory::_data_t Union Reference</title>
+<indexterm><primary>CMakeRC::Detail::FileOrDirectory::_data_t</primary></indexterm>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_c_make_r_c_1_1_detail_1_1_file_data">FileData</link> * <link linkend="_union_c_make_r_c_1_1_detail_1_1_file_or_directory_1_1__data__t_1acbf70db2aed1fbc0759700954fd99fec">FileData</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_c_make_r_c_1_1_detail_1_1_directory">Directory</link> * <link linkend="_union_c_make_r_c_1_1_detail_1_1_file_or_directory_1_1__data__t_1a141a50e444eccb832148435433499864">Directory</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_union_c_make_r_c_1_1_detail_1_1_file_or_directory_1_1__data__t_1a141a50e444eccb832148435433499864"/><section>
+    <title>Directory</title>
+<indexterm><primary>Directory</primary><secondary>CMakeRC::Detail::FileOrDirectory::_data_t</secondary></indexterm>
+<indexterm><primary>CMakeRC::Detail::FileOrDirectory::_data_t</primary><secondary>Directory</secondary></indexterm>
+<para><computeroutput>class <link linkend="_class_c_make_r_c_1_1_detail_1_1_directory">Directory</link>* CMakeRC::Detail::FileOrDirectory::_data_t::Directory</computeroutput></para></section>
+<anchor xml:id="_union_c_make_r_c_1_1_detail_1_1_file_or_directory_1_1__data__t_1acbf70db2aed1fbc0759700954fd99fec"/><section>
+    <title>FileData</title>
+<indexterm><primary>FileData</primary><secondary>CMakeRC::Detail::FileOrDirectory::_data_t</secondary></indexterm>
+<indexterm><primary>CMakeRC::Detail::FileOrDirectory::_data_t</primary><secondary>FileData</secondary></indexterm>
+<para><computeroutput>class <link linkend="_class_c_make_r_c_1_1_detail_1_1_file_data">FileData</link>* CMakeRC::Detail::FileOrDirectory::_data_t::FileData</computeroutput></para></section>
+<para>
+The documentation for this union was generated from the following file:</para>
+include/CxxWin/modules/Win32_resource/<link linkend="_cmrc_8hpp">cmrc.hpp</link></section>
+</section>
