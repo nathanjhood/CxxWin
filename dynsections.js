@@ -1,4 +1,4 @@
-/*
+/**
  @licstart  The following is the entire license notice for the JavaScript code in this file.
 
  The MIT License (MIT)
@@ -22,33 +22,33 @@
 
  @licend  The above is the entire license notice for the JavaScript code in this file
  */
+
+
 function toggleVisibility(linkObj)
 {
- var base = $(linkObj).attr('id');
- var summary = $('#'+base+'-summary');
- var content = $('#'+base+'-content');
- var trigger = $('#'+base+'-trigger');
- var src=$(trigger).attr('src');
- if (content.is(':visible')===true) {
-   content.hide();
-   summary.show();
-   $(linkObj).addClass('closed').removeClass('opened');
-   $(trigger).attr('src',src.substring(0,src.length-8)+'closed.png');
- } else {
-   content.show();
-   summary.hide();
-   $(linkObj).removeClass('closed').addClass('opened');
-   $(trigger).attr('src',src.substring(0,src.length-10)+'open.png');
- }
- return false;
+  var base = $(linkObj).attr('id');
+  var summary = $('#'+base+'-summary');
+  var content = $('#'+base+'-content');
+  var trigger = $('#'+base+'-trigger');
+  var src=$(trigger).attr('src');
+  if (content.is(':visible')===true) {
+    content.hide();
+    summary.show();
+    $(linkObj).addClass('closed').removeClass('opened');
+    $(trigger).attr('src',src.substring(0,src.length-8)+'closed.png');
+  } else {
+    content.show();
+    summary.hide();
+    $(linkObj).removeClass('closed').addClass('opened');
+    $(trigger).attr('src',src.substring(0,src.length-10)+'open.png');
+  }
+  return false;
 }
 
 function updateStripes()
 {
-  $('table.directory tr').
-       removeClass('even').filter(':visible:even').addClass('even');
-  $('table.directory tr').
-       removeClass('odd').filter(':visible:odd').addClass('odd');
+  $('table.directory tr').removeClass('even').filter(':visible:even').addClass('even');
+  $('table.directory tr').removeClass('odd').filter(':visible:odd').addClass('odd');
 }
 
 function toggleLevel(level)

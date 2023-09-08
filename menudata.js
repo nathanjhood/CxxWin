@@ -22,28 +22,98 @@
 
  @licend  The above is the entire license notice for the JavaScript code in this file
 */
-var menudata={children:[
-{text:"Home",url:"https://stoneydsp.github.io/index.html"},
-{text:"CxxWin",url:"index.html"},
-{text:"Namespaces",url:"namespaces.html",children:[
-{text:"Namespace List",url:"namespaces.html"},
-{text:"Namespace Members",url:"namespacemembers.html",children:[
-{text:"All",url:"namespacemembers.html",children:[
-{text:"a",url:"namespacemembers.html#index_a"},
-{text:"d",url:"namespacemembers.html#index_d"},
-{text:"g",url:"namespacemembers.html#index_g"},
-{text:"i",url:"namespacemembers.html#index_i"},
-{text:"l",url:"namespacemembers.html#index_l"},
-{text:"n",url:"namespacemembers.html#index_n"},
-{text:"s",url:"namespacemembers.html#index_s"},
-{text:"w",url:"namespacemembers.html#index_w"}]},
-{text:"Functions",url:"namespacemembers_func.html"},
-{text:"Variables",url:"namespacemembers_vars.html"},
-{text:"Typedefs",url:"namespacemembers_type.html"}]}]},
-{text:"Classes",url:"annotated.html",children:[
-{text:"Class List",url:"annotated.html"},
-{text:"Class Index",url:"classes.html"},
-{text:"Class Hierarchy",url:"hierarchy.html"},
+var menudata={
+  children: [
+    {
+      text: "Home",
+      url: "https://stoneydsp.github.io/index.html"
+    },
+  {
+    text: "CxxWin",
+    url: "index.html"
+  },
+  {
+    text: "Namespaces",
+    url: "namespaces.html",
+    children: [
+      {
+        text:" Namespace List",
+        url:"namespaces.html"
+      },
+      {
+        text: "Namespace Members",
+        url: "namespacemembers.html",
+        children: [
+          {
+            text: "All",
+            url: "namespacemembers.html",
+            children: [
+              {
+                text: "a",
+                url: "namespacemembers.html#index_a"
+              },
+              {
+                text: "d",
+                url: "namespacemembers.html#index_d"
+              },
+              {
+                text: "g",
+                url: "namespacemembers.html#index_g"
+              },
+              {
+                text: "i",
+                url: "namespacemembers.html#index_i"
+              },
+              {
+                text: "l",
+                url: "namespacemembers.html#index_l"
+              },
+              {
+                text: "n",
+                url: "namespacemembers.html#index_n"
+              },
+              {
+                text: "s",
+                url: "namespacemembers.html#index_s"
+              },
+              {
+                text: "w",
+                url: "namespacemembers.html#index_w"
+              }
+            ]
+          },
+          {
+            text: "Functions",
+            url: "namespacemembers_func.html"
+          },
+          {
+            text: "Variables",
+            url: "namespacemembers_vars.html"
+          },
+          {
+            text: "Typedefs",
+            url: "namespacemembers_type.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    text: "Classes",
+    url: "annotated.html",
+    children: [
+      {
+        text: "Class List",
+        url: "annotated.html"
+      },
+      {
+        text: "Class Index",
+        url: "classes.html"
+      },
+      {
+        text: "Class Hierarchy",
+        url: "hierarchy.html"
+      },
 {text:"Class Members",url:"functions.html",children:[
 {text:"All",url:"functions.html",children:[
 {text:"_",url:"functions.html#index__5F"},
