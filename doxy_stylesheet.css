@@ -663,7 +663,7 @@ div.fragment {
 
 div.line {
 	font-family: var(--font-family-monospace);
-        font-size: 13px;
+    font-size: 13px;
 	min-height: 13px;
 	line-height: 1.2;
 	text-wrap: unrestricted;
@@ -1017,20 +1017,20 @@ table.memberdecls {
 }
 
 .memproto, dl.reflist dt {
-        border-top: 1px solid var(--memdef-border-color);
-        border-left: 1px solid var(--memdef-border-color);
-        border-right: 1px solid var(--memdef-border-color);
-        padding: 6px 0px 6px 0px;
-        color: var(--memdef-proto-text-color);
-        font-weight: bold;
-        text-shadow: var(--memdef-proto-text-shadow);
-        background-color: var(--memdef-proto-background-color);
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
-        border-top-right-radius: 4px;
+	border-top: 1px solid var(--memdef-border-color);
+	border-left: 1px solid var(--memdef-border-color);
+	border-right: 1px solid var(--memdef-border-color);
+	padding: 6px 0px 6px 0px;
+	color: var(--memdef-proto-text-color);
+	font-weight: bold;
+	text-shadow: var(--memdef-proto-text-shadow);
+	background-color: var(--memdef-proto-background-color);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+	border-top-right-radius: 4px;
 }
 
 .overload {
-        font-family: var(--font-family-monospace);
+    font-family: var(--font-family-monospace);
 	font-size: 65%;
 }
 

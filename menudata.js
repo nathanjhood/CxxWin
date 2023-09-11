@@ -26,7 +26,7 @@ var menudata={
   children: [
     {
       text: "Home",
-      url: "https://stoneydsp.github.io/index.html"
+      url: "index.html"
     },
   {
     text: "CxxWin",
