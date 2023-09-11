@@ -34,3 +34,4 @@
 !/share/CxxWin/img/StoreLogo.png
 
 node_modules
+.vercel
