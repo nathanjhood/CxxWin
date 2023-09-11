@@ -1,5 +1,20 @@
-/* The standard CSS for doxygen 1.9.7*/
+@charset "UTF-8";
+@import url("./src/assets/css/framework/fonts/microsoft/cascadia/font-cascadia-dynamic.css") layer(fontFace);
+/* @import url("./src/assets/css/framework/reset.css") layer(reset); */
+@import url("./src/assets/css/framework/support.css") layer(defaults.support);
+@import url("./src/assets/css/framework/defaults.css") layer(defaults);
+@import url("./src/assets/css/framework/global.css") layer(global);
+/* @import url("./framework/helpers.css") layer(global.helpers); */
+/* @import url("./src/assets/css/framework/animations/animations.css") layer(site.animations); */
+@import url("./src/assets/css/framework/site.css") layer(site);
+/* @import url("./framework/components/header.css") layer(header); */
+/* @import url("./framework/components/footer.css") layer(footer); */
 
+/* @import url("./src/assets/css/framework/debug/dbg.css") layer(site.dbg); */
+/* @import url("./src/assets/css/framework/debug/lint.css") layer(site.dbg.lint); */
+
+
+/* The standard CSS for doxygen 1.9.7*/
 html {
 /* page base colors */
 --page-background-color: white;
@@ -154,14 +169,14 @@ html {
 --tooltip-shadow: 1px 1px 7px gray;
 
 /** font-family */
---font-family-normal: Roboto,sans-serif;
---font-family-monospace: 'JetBrains Mono',Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace,fixed;
+--font-family-normal: Cascadia,sans-serif;
+--font-family-monospace: 'Cascadia Mono',Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace,fixed;
 --font-family-nav: 'Lucida Grande',Geneva,Helvetica,Arial,sans-serif;
 --font-family-title: Tahoma,Arial,sans-serif;
 --font-family-toc: Verdana,'DejaVu Sans',Geneva,sans-serif;
 --font-family-search: Arial,Verdana,sans-serif;
 --font-family-icon: Arial,Helvetica;
---font-family-tooltip: Roboto,sans-serif;
+--font-family-tooltip: Cascadia,sans-serif;
 
 }
 
@@ -319,27 +334,33 @@ html.dark-mode {
 --tooltip-shadow: none;
 
 /** font-family */
---font-family-normal: Roboto,sans-serif;
---font-family-monospace: 'JetBrains Mono',Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace,fixed;
+--font-family-normal: Cascadia,sans-serif;
+--font-family-monospace: 'Cascadia Mono',Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace,fixed;
 --font-family-nav: 'Lucida Grande',Geneva,Helvetica,Arial,sans-serif;
 --font-family-title: Tahoma,Arial,sans-serif;
 --font-family-toc: Verdana,'DejaVu Sans',Geneva,sans-serif;
 --font-family-search: Arial,Verdana,sans-serif;
 --font-family-icon: Arial,Helvetica;
---font-family-tooltip: Roboto,sans-serif;
+--font-family-tooltip: Cascadia,sans-serif;
 
 }
 
 body {
     background-color: var(--page-background-color);
     color: var(--page-foreground-color);
+	font-size: calc(15.00px + 0.390625vw);
 }
 
 body, table, div, p, dl {
 	font-weight: 400;
-	font-size: 14px;
+	/* font-size: calc(15.00px + 0.390625vw); */
+	/* font-size: 14px; */
 	font-family: var(--font-family-normal);
 	line-height: 22px;
+}
+
+table, div, p, dl {
+	font-size: 1rem;
 }
 
 /* @group Heading Levels */
@@ -749,7 +770,7 @@ img.light-mode-visible {
 }
 
 img.formulaDsp {
-	
+
 }
 
 img.formulaInl, img.inline {
@@ -818,19 +839,19 @@ span.xmlcdata {
 	color: var(--code-xml-cdata-color);
 }
 
-span.vhdldigit { 
+span.vhdldigit {
 	color: var(--code-vhdl-digit-color);
 }
 
-span.vhdlchar { 
+span.vhdlchar {
 	color: var(--code-vhdl-char-color);
 }
 
-span.vhdlkeyword { 
+span.vhdlkeyword {
 	color: var(--code-vhdl-keyword-color);
 }
 
-span.vhdllogic { 
+span.vhdllogic {
 	color: var(--code-vhdl-logic-color);
 }
 
@@ -1555,12 +1576,12 @@ dl.section dd {
 	vertical-align: bottom;
 	border-collapse: separate;
 }
- 
+
 #projectlogo img
-{ 
+{
 	border: 0px none;
 }
- 
+
 #projectalign
 {
         vertical-align: middle;
@@ -1994,4 +2015,3 @@ details[open]>summary::before {
     padding-right:4px;
     font-size: 80%;
 }
-
